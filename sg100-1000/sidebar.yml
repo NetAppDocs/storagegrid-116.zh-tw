@@ -1,0 +1,136 @@
+---
+section: sg100-1000
+title: SG100與SG1000服務應用裝置
+entries:
+- title: 總覽
+  pdf-filename: SSG100與SG1000服務應用裝置StorageGRID
+  url: "/sg100-1000/index.html"
+- title: SG100與SG1000應用程式
+  url: "/sg100-1000/sg100-and-sg1000-applications.html"
+- title: 安裝與部署總覽
+  url: "/sg100-1000/installation-and-deployment-overview.html"
+- title: 準備安裝（SG100和SG1000）
+  url: "/sg100-1000/preparing-for-installation-sg100-and-sg1000.html"
+  entries:
+  - title: 準備站台（SG100和SG1000）
+    url: "/sg100-1000/preparing-site-sg100-and-sg1000.html"
+  - title: 打開包裝箱（SG100和SG1000）
+    url: "/sg100-1000/unpacking-boxes-sg100-and-sg1000.html"
+  - title: 取得額外的設備與工具（SG100和SG1000）
+    url: "/sg100-1000/obtaining-additional-equipment-and-tools-sg100-and-sg1000.html"
+  - title: 檢視應用裝置網路連線（SG100和SG1000）
+    url: "/sg100-1000/reviewing-appliance-network-connections-sg100-and-sg1000.html"
+    entries:
+    - title: SG100和SG1000應用裝置的連接埠連結模式
+      url: "/sg100-1000/port-bond-modes-for-sg100-and-sg1000.html"
+      entries:
+      - title: 網路連結模式
+        url: "/sg100-1000/network-bond-modes-sg100-and-sg1000.html"
+      - title: 管理連接埠的網路連結模式
+        url: "/sg100-1000/network-bond-modes-for-management-ports-sg100-and-sg1000.html"
+  - title: 收集安裝資訊（SG100和SG1000）
+    url: "/sg100-1000/gathering-installation-information-sg100-and-sg1000.html"
+- title: 安裝硬體（SG100和SG1000）
+  entries:
+  - title: 註冊硬體
+    url: "/sg100-1000/registering-hardware-sg100-and-sg1000.html"
+  - title: 將應用裝置安裝到機櫃或機架（SG100和SG1000）
+    url: "/sg100-1000/installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.html"
+  - title: 纜線應用裝置（SG100和SG1000）
+    url: "/sg100-1000/cabling-appliance-sg100-and-sg1000.html"
+  - title: 連接電源線並接上電源（SG100和SG1000）
+    url: "/sg100-1000/connecting-power-cords-and-applying-power-sg100-and-sg1000.html"
+  - title: 檢視SG100和SG1000應用裝置的狀態指標
+    url: "/sg100-1000/viewing-status-indicators-on-sg100-and-sg1000-appliances.html"
+- title: 設定StorageGRID 鏈接（SG100和SG1000）
+  url: "/sg100-1000/configuring-storagegrid-connections-sg100-and-sg1000.html"
+  entries:
+  - title: 存取StorageGRID 產品安裝程式
+    url: "/sg100-1000/accessing-storagegrid-appliance-installer-sg100-and-sg1000.html"
+  - title: 驗StorageGRID 證並升級版本的應用程式
+    url: "/sg100-1000/verifying-and-upgrading-storagegrid-appliance-installer-version.html"
+  - title: 設定網路連結（SG100和SG1000）
+    url: "/sg100-1000/configuring-network-links-sg100-and-sg1000.html"
+  - title: 設定StorageGRID 靜態IP位址
+    url: "/sg100-1000/configuring-storagegrid-ip-addresses-sg100-and-sg1000.html"
+  - title: 驗證網路連線
+    url: "/sg100-1000/verifying-network-connections.html"
+  - title: 驗證連接埠層級的網路連線
+    url: "/sg100-1000/verifying-port-level-network-connections.html"
+- title: 設定BMC介面（SG100和SG1000）
+  url: "/sg100-1000/configuring-bmc-interface-sg1000.html"
+  entries:
+  - title: 變更BMC介面的root密碼
+    url: "/sg100-1000/changing-root-password-for-bmc-interface-sg1000.html"
+  - title: 設定BMC管理連接埠的IP位址
+    url: "/sg100-1000/setting-ip-address-for-bmc-management-port-sg1000.html"
+  - title: 存取BMC介面
+    url: "/sg100-1000/accessing-bmc-interface-sg1000.html"
+  - title: 設定服務應用裝置的SNMP設定
+    url: "/sg100-1000/configuring-snmp-settings-for-sg1000.html"
+  - title: 設定警示的電子郵件通知
+    url: "/sg100-1000/setting-up-email-notifications-for-alerts.html"
+- title: 選用：啟用節點加密
+  url: "/sg100-1000/optional-enabling-node-encryption.html"
+- title: 部署服務應用裝置節點
+  url: "/sg100-1000/deploying-services-appliance-node.html"
+  entries:
+  - title: 將服務應用裝置部署為主要管理節點
+    url: "/sg100-1000/deploying-services-appliance-as-primary-admin-node.html"
+  - title: 將服務應用裝置部署為閘道或非主要管理節點
+    url: "/sg100-1000/deploying-services-appliance-as-gateway-or-non-primary-admin-node.html"
+  - title: 監控服務應用裝置安裝
+    url: "/sg100-1000/monitoring-services-appliance-installation.html"
+  - title: 自動化設備安裝與組態（SG100和SG1000）
+    url: "/sg100-1000/automating-appliance-installation-and-configuration.html"
+    entries:
+    - title: 使用StorageGRID 應用程式安裝程式來自動化應用裝置組態
+      url: "/sg100-1000/automating-appliance-configuration-using-storagegrid-appliance-installer.html"
+    - title: 使用configure-sga.py指令碼自動安裝及設定應用裝置節點
+      url: "/sg100-1000/automating-installation-configuration-appliance-nodes-configure-sga-py-script.html"
+    - title: 自動化StorageGRID 設定功能
+      url: "/sg100-1000/automating-configuration-of-storagegrid.html"
+  - title: 安裝REST API總覽
+    url: "/sg100-1000/overview-of-installation-rest-apis.html"
+- title: 疑難排解硬體安裝（SG100和SG1000）
+  url: "/sg100-1000/troubleshooting-hardware-installation-sg100-and-sg1000.html"
+  entries:
+  - title: 檢視應用裝置的開機代碼
+    url: "/sg100-1000/viewing-boot-up-codes-for-appliance-sg100-and-sg1000.html"
+  - title: 檢視應用裝置的錯誤代碼
+    url: "/sg100-1000/viewing-error-codes-for-sg1000-controller-sg100-and-sg1000.html"
+  - title: 硬體設定似乎當機（SG100和SG1000）
+    url: "/sg100-1000/hardware-setup-appears-to-hang-sg100-and-sg1000.html"
+  - title: 疑難排解連線問題（SG100和SG1000）
+    url: "/sg100-1000/troubleshooting-connection-issues-sg100-and-sg1000.html"
+  - title: 在執行應用程式的情況下重新啟動服務應用裝置StorageGRID
+    url: "/sg100-1000/rebooting-services-appliance-while-sg-appliance-installer-is-running-sg100-and-sg1000.html"
+- title: 維護應用裝置
+  url: "/sg100-1000/maintaining-services-appliance-sg100-and-sg1000.html"
+  entries:
+  - title: 將應用裝置置於維護模式
+    url: "/sg100-1000/placing-appliance-into-maintenance-mode.html"
+  - title: 開啟和關閉控制器識別LED
+    url: "/sg100-1000/turning-controller-identify-led-on-and-off.html"
+  - title: 在資料中心找到控制器
+    url: "/sg100-1000/locating-controller-in-data-center.html"
+  - title: 關閉產品電源
+    url: "/sg100-1000/shut-down-sg100-and-sg1000.html"
+  - title: 更換服務應用裝置
+    url: "/sg100-1000/replacing-services-appliance.html"
+  - title: 更換服務應用裝置中的一個或兩個電源供應器
+    url: "/sg100-1000/replacing-one-or-more-power-supplies-in-services-appliance.html"
+  - title: 更換服務應用裝置中的風扇
+    url: "/sg100-1000/replacing-fan-in-services-appliance.html"
+  - title: 更換服務應用裝置中的磁碟機
+    url: "/sg100-1000/replacing-drive-in-services-appliance.html"
+  - title: 變更服務應用裝置的連結組態
+    url: "/sg100-1000/changing-link-configuration-of-services-appliance.html"
+  - title: 變更MTU設定
+    url: "/sg100-1000/changing-mtu-setting.html"
+  - title: 檢查DNS伺服器組態
+    url: "/sg100-1000/checking-dns-server-configuration.html"
+  - title: 在維護模式下監控節點加密（SG100和SG1000）
+    url: "/sg100-1000/monitoring-node-encryption-in-maintenance-mode.html"
+  - title: 清除金鑰管理伺服器組態
+    url: "/sg100-1000/clearing-key-management-server-configuration.html"

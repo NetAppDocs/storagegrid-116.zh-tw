@@ -1,0 +1,114 @@
+---
+permalink: fabricpool/information-needed-to-attach-storagegrid-as-cloud-tier.html 
+sidebar: sidebar 
+keywords: StorageGRID, fabricPool, ONTAP System Manager, ONTAP CLI, port, FQDN, object store name 
+summary: 在您可以附加StorageGRID 作FabricPool 為雲端層的功能來執行某些StorageGRID 組態步驟以利執行某些設定步驟、並取得特定的價值。 
+---
+= 以StorageGRID 雲端層形式附加解決方案所需的資訊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在您可以附加StorageGRID 作FabricPool 為雲端層的功能來執行某些StorageGRID 組態步驟以利執行某些設定步驟、並取得特定的價值。
+
+下表列出ONTAP 當您將StorageGRID 下列資訊附加為FabricPool 供使用的雲端層時、必須提供給才能使用的資訊。本節主題將說明如何使用StorageGRID 「功能區塊管理程式」和「租戶管理程式」來取得您所需的資訊。
+
+
+NOTE: 所列的確切欄位名稱和輸入ONTAP 所需值的程序、取決於您使用ONTAP 的是S時 序介面（儲存Aggregate object-store組態建立）或ONTAP 是系統管理程式（* Storage *>* Aggregate & Disks*>* Cloud Tier-*）。
+
+如需詳細資訊、請參閱下列內容：
+
+* https://www.netapp.com/pdf.html?item=/media/17239-tr4598pdf.pdf["TR-4598：FabricPool 《完美實務》ONTAP （《TR-4598：》）、《完美實務》（英文"^]
+* https://docs.netapp.com/us-en/ontap/index.html["供應說明文件ONTAP"^]
+
+
+[cols="1a,2a"]
+|===
+| 領域ONTAP | 說明 
+
+
+ a| 
+物件存放區名稱
+ a| 
+任何唯一且描述性的名稱。例如、「torageGRID_Cloud層級」。
+
+
+
+ a| 
+供應商類型
+ a| 
+例如、系統管理程式（S25）或「系統管理程式」（SGBCLI）StorageGRID ONTAP ONTAP 。
+
+
+
+ a| 
+連接埠
+ a| 
+連接到各處時、將會使用這個連接埠FabricPool 。StorageGRID您可以決定定義StorageGRID 「平衡負載平衡器」端點時要使用的連接埠號碼。
+
+xref:creating-load-balancer-endpoint-for-fabricpool.adoc[建立FabricPool 負載平衡器端點以供使用]
+
+
+
+ a| 
+伺服器名稱
+ a| 
+適用於Is卸 載平衡器端點的完整網域名稱（FQDN）StorageGRID 。例如，"sh3.storagegrid.company.com`。
+
+請注意下列事項：
+
+* 您在此處指定的網域名稱、必須符合您上傳的CA憑證上的網域名稱、以供StorageGRID 用於負載平衡器端點。
+* 此網域名稱的DNS記錄必須對應至您將用於連線StorageGRID 至各處的每個IP位址。
+
+
+xref:configuring-dns-for-storagegrid-ip-addresses.adoc[將DNS伺服器設定為StorageGRID 使用靜態IP位址]
+
+
+
+ a| 
+容器名稱
+ a| 
+您將搭配此叢集使用的這個景點名稱StorageGRID 。ONTAP例如、「fabricpool桶」。您可以在Tenant Manager中建立此儲存庫、或從ONTAP 功能區9.10 System Manager開始、使用FabricPool 「功能區設定精靈」建立儲存庫。
+
+請注意下列事項：
+
+* 一旦建立組態、就無法變更儲存區名稱。
+* 庫位無法啟用版本管理功能。
+* 您必須為每ONTAP 個將資料分層至StorageGRID 各個不相同的叢集使用不同的儲存區。
+
+
+xref:creating-s3-bucket-and-access-key.adoc[建立S3儲存區並取得存取金鑰]
+
+
+
+ a| 
+存取金鑰和密碼
+ a| 
+存取金鑰和StorageGRID 機密存取金鑰、用於Und租 戶帳戶。
+
+您可以在租戶管理程式中產生這些值。
+
+xref:creating-s3-bucket-and-access-key.adoc[建立S3儲存區並取得存取金鑰]
+
+
+
+ a| 
+SSL
+ a| 
+必須啟用。
+
+
+
+ a| 
+物件存放區憑證
+ a| 
+您在建立StorageGRID ESHIP負載平衡器端點時上傳的CA憑證。
+
+*附註：*如果中介CA核發StorageGRID 了此功能驗證、您必須提供中繼CA憑證。如果StorageGRID 此驗證是由根CA直接發出、您必須提供根CA憑證。
+
+xref:creating-load-balancer-endpoint-for-fabricpool.adoc[建立FabricPool 負載平衡器端點以供使用]
+
+|===
+取得所需StorageGRID 的各項資訊後、您可以前往ONTAP 下列網址加入StorageGRID 「以供參考」作為雲端層、將雲端層新增為集合體、以及設定Volume分層原則。

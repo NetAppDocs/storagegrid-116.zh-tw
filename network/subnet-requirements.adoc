@@ -1,0 +1,27 @@
+---
+permalink: network/subnet-requirements.html 
+sidebar: sidebar 
+keywords: network subnets 
+summary: 請遵循下列網路子網路需求與準則。 
+---
+= 子網路需求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+請遵循下列網路子網路需求與準則。
+
+
+IMPORTANT: 每個網路都必須連線至自己的子網路、而不會與節點上的任何其他網路重疊。
+
+下列限制會在部署期間由Grid Manager強制執行。此處提供這些工具、可協助您進行部署前的網路規劃。
+
+* 任何網路IP位址的子網路遮罩不可為255．255．255或255．255．255（CIDR表示法為/31或/32）。
+* 網路介面IP位址和子網路遮罩（CIDR）所定義的子網路、不能與同一個節點上所設定的任何其他介面的子網路重疊。
+* 每個節點的Grid Network子網路必須包含在GNSL中。
+* 管理網路子網路不能與Grid Network子網路、用戶端網路子網路或GNSL中的任何子網路重疊。
+* Aesl中的子網路不能與GNSL中的任何子網路重疊。
+* 用戶端網路子網路不能與Grid Network子網路、管理網路子網路、GNSL中的任何子網路或Aesl中的任何子網路重疊。
+

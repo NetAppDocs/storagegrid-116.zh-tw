@@ -1,0 +1,128 @@
+---
+permalink: sg5600/reviewing-appliance-network-connections-sg5600.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, network connections, network connection, network, connection, grid, admin, client, management, SANtricity System Manager, SANtricity 
+summary: 安裝StorageGRID 此產品之前、您應該先瞭解哪些網路可以連線到應用裝置、以及如何使用每個控制器上的連接埠。 
+---
+= 審查應用裝置網路連線（SG5600）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安裝StorageGRID 此產品之前、您應該先瞭解哪些網路可以連線到應用裝置、以及如何使用每個控制器上的連接埠。
+
+
+
+== 應用網路StorageGRID
+
+當您將StorageGRID 某個應用程式部署為儲存節點時、可以將其連接至下列網路：
+
+* * Grid Network for StorageGRID Sfor Sfor Sfor *：Grid Network用於所有內部StorageGRID 的資訊流量。它可在網格中的所有節點之間、跨所有站台和子網路提供連線功能。網格網路為必填項目。
+* *《StorageGRID Administration Network for S供 參考*：管理網路》是一種封閉網路、用於系統管理與維護。管理網路通常是私有網路、不需要在站台之間進行路由傳送。管理網路為選用網路。
+* *《Client Network for StorageGRID Sfor S供*：用戶端網路》是開放式網路、可用來存取用戶端應用程式、包括S3和Swift。用戶端網路可提供用戶端傳輸協定存取網格、因此網格網路可以隔離及保護。用戶端網路為選用項目。
+* * SANtricity 《Management network for Sfor the S廳Storage Manager* SANtricity 》（選用）：E2700控制器會連線至安裝了此功能的管理網路、讓您監控及管理應用裝置中的硬體元件。此管理網路可以與管理員網路StorageGRID 相同、也可以是獨立的管理網路。
++
+如果選用SANtricity 的無法連接到選用的功能區、您可能無法使用SANtricity 某些功能區。
+
+
+
+
+NOTE: 如需StorageGRID 有關鏈路的詳細資訊、請參閱_網格入門_。
+
+
+
+== 連接到應用裝置StorageGRID
+
+當您安裝StorageGRID 一套不含任何功能的應用程式時、必須將兩個控制器彼此連接、並連接至所需的網路。圖中顯示SG5660中的兩個控制器、E2700控制器位於頂端、E5600SG控制器位於底部。在SG5612中、E2700控制器位於E5600SG控制器的左側。
+
+image::../media/cabling_diagram.gif[顯示連線的SG5660後視圖]
+
+|===
+| 項目 | 連接埠 | 連接埠類型 | 功能 
+
+
+ a| 
+1.
+ a| 
+E2700控制器上的管理連接埠1
+ a| 
+1-GB（RJ-45）乙太網路
+ a| 
+將E2700控制器連接至SANtricity 安裝了ENetApp Storage Manager的網路。
+
+
+
+ a| 
+2.
+ a| 
+E2700控制器上的管理連接埠2
+ a| 
+1-GB（RJ-45）乙太網路
+ a| 
+在安裝期間、將E2700控制器連接至服務筆記型電腦。
+
+
+
+ a| 
+3.
+ a| 
+每個控制器上有兩個SAS互連連接埠、分別標示為「CH 1」和「CH 2」
+ a| 
+E2700控制器：Mini-SAS-HD
+
+E5600SG控制器：Mini-SAS
+ a| 
+將兩個控制器彼此連接。
+
+
+
+ a| 
+4.
+ a| 
+E5600SG控制器上的管理連接埠1
+ a| 
+1-GB（RJ-45）乙太網路
+ a| 
+將E5600SG控制器連線至管理網路以供StorageGRID 實現
+
+
+
+ a| 
+5.
+ a| 
+E5600SG控制器上的管理連接埠2
+ a| 
+1-GB（RJ-45）乙太網路
+ a| 
+* 如果您想要與管理網路建立備援連線、可以與管理連接埠1連結。
+* 可保持無線連線、並可用於暫用本機存取（IP 169.254.0.1）。
+* 可在安裝期間、將E5600SG控制器連接至服務筆記型電腦（如果DHCP指派的IP位址無法使用）。
+
+
+
+
+ a| 
+6.
+ a| 
+E5600SG控制器上有四個網路連接埠
+ a| 
+10-GbE（光纖）
+ a| 
+連線到Grid Network和Client Network for StorageGRID the請參閱「E5600SG控制器的10-GbE連接埠連線」。
+
+|===
+xref:port-bond-modes-for-e5600sg-controller-ports.adoc[E5600SG控制器連接埠的連接埠連結模式]
+
+xref:gathering-installation-information-sg5600.adoc[收集安裝資訊（SG5600）]
+
+xref:cabling-appliance-sg5600.adoc[纜線應用裝置（SG5600）]
+
+xref:../network/index.adoc[網路準則]
+
+xref:../vmware/index.adoc[安裝VMware]
+
+xref:../rhel/index.adoc[安裝Red Hat Enterprise Linux或CentOS]
+
+xref:../ubuntu/index.adoc[安裝Ubuntu或DEBIAN]

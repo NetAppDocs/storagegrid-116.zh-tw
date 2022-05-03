@@ -1,0 +1,47 @@
+---
+permalink: sg100-1000/network-bond-modes-for-management-ports-sg100-and-sg1000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, Network bond, Network bonding, Network bond mode, Network-bond mode, independent, active-backup, active backup, management, management port, management ports 
+summary: 對於服務應用裝置上的兩個1-GbE管理連接埠、您可以選擇「獨立網路連結模式」或「主動備份網路連結模式」來連線至選用的管理網路。 
+---
+= 管理連接埠的網路連結模式
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+對於服務應用裝置上的兩個1-GbE管理連接埠、您可以選擇「獨立網路連結模式」或「主動備份網路連結模式」來連線至選用的管理網路。
+
+* SG100網路管理連接埠*
+
+image::../media/sg100_bonded_management_ports.png[sg100連結式管理連接埠]
+
+* SG1000網路管理連接埠*
+
+image::../media/sg1000_bonded_management_ports.png[SG1000網路管理連接埠]
+
+在獨立模式中、只有左側的管理連接埠會連線至管理網路。此模式不提供備援路徑。右側的管理連接埠未連線、可用於暫用本機連線（使用IP位址169.254.0.1）
+
+在主動備份模式中、兩個管理連接埠都會連線至管理網路。一次只有一個連接埠處於作用中狀態。如果作用中連接埠故障、其備份連接埠會自動提供容錯移轉連線。將這兩個實體連接埠結合成一個邏輯管理連接埠、可提供通往管理網路的備援路徑。
+
+
+NOTE: 如果您需要在將1-GbE管理連接埠設定為「主動備份」模式時、在本機暫時連線至服務應用裝置、請從兩個管理連接埠拔下纜線、將暫用纜線插入右側的管理連接埠、然後使用IP位址169.254.0.1存取應用裝置。
+
+|===
+| 標註 | 網路連結模式 
+
+
+ a| 
+答
+ a| 
+主動備份模式。這兩個管理連接埠都連結至連接至管理網路的一個邏輯管理連接埠。
+
+
+
+ a| 
+我
+ a| 
+獨立模式。左側連接埠已連線至管理網路。右側連接埠可用於暫用本機連線（IP位址169.254.0.1）。
+
+|===

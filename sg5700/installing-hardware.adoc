@@ -1,0 +1,14 @@
+---
+permalink: sg5700/installing-hardware.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5700, storage node, storage appliance, hardware, install, installing 
+summary: 硬體安裝需要將應用裝置安裝到機櫃或機架、連接纜線並接上電源。 
+---
+= 安裝硬體（SG5700）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+硬體安裝需要將應用裝置安裝到機櫃或機架、連接纜線並接上電源。

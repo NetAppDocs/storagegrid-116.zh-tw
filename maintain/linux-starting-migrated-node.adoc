@@ -1,0 +1,38 @@
+---
+permalink: maintain/linux-starting-migrated-node.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, linux, start node 
+summary: 驗證移轉的節點之後、您可以在目標Linux主機上執行命令來啟動節點。 
+---
+= Linux：開始移轉節點
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+驗證移轉的節點之後、您可以在目標Linux主機上執行命令來啟動節點。
+
+.步驟
+. 在新主機上啟動節點。
++
+[listing]
+----
+sudo storagegrid node start DC1-S3
+Starting node DC1-S3
+----
+. 在Grid Manager中、確認節點的狀態為綠色、且不會發出任何警示。
++
+
+IMPORTANT: 驗證節點狀態是否為綠色、可確保移轉的節點已完全重新啟動並重新加入網格。如果狀態不是綠色、請勿移轉任何其他節點、以免有多個節點無法使用服務。
+
++
+如果您無法存取Grid Manager、請等待10分鐘、然後執行下列命令：
+
++
+「Udo StorageGRID 現象節點狀態*節點名稱_*」
+
++
+確認移轉的節點執行狀態為「執行中」。
+
+

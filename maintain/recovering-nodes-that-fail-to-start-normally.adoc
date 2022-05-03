@@ -1,0 +1,26 @@
+---
+permalink: maintain/recovering-nodes-that-fail-to-start-normally.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, node did not start, node fail to start 
+summary: 如果StorageGRID 某個節點無法正常重新加入網格、且未顯示為可恢復、則可能已毀損。您可以強制節點進入恢復模式。 
+---
+= 恢復無法正常啟動的節點
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果StorageGRID 某個節點無法正常重新加入網格、且未顯示為可恢復、則可能已毀損。您可以強制節點進入恢復模式。
+
+若要強制節點進入恢復模式：
+
+「Udo StorageGRID 節點強制恢復_norme-name_」
+
+
+TIP: 在發出此命令之前、請確認節點的網路組態正確無誤、因為網路介面對應不正確或網格網路IP位址或閘道不正確、所以可能無法重新加入網格。
+
+
+IMPORTANT: 在發出「StorageGRID flex不要 節點強制恢復_norme-name_」命令之後、您必須為_norme-name_執行其他恢復步驟。
+
+xref:whats-next-performing-additional-recovery-steps-if-required.adoc[接下來：視需要執行其他恢復步驟]

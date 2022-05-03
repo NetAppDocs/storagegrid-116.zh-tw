@@ -1,0 +1,88 @@
+---
+permalink: upgrade/changes-to-grid-management-api.html 
+sidebar: sidebar 
+keywords: grid management api, api, api version, swagger, rest api 
+summary: 利用Grid Management API的第3版。StorageGRID第3版取代第2版、但仍支援第1版和第2版。 
+---
+= 網格管理API的變更
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+利用Grid Management API的第3版。StorageGRID第3版取代第2版、但仍支援第1版和第2版。
+
+
+IMPORTANT: 您可以繼續使用StorageGRID 版本1和版本2的管理API搭配使用。不過、StorageGRID 在未來發行的更新版本中、將會移除對這些版本API的支援。升級StorageGRID 至Ev11.6s之後、可使用「PUT /GRID / config / management」API停用已過時的v1和v2 API。
+
+若要深入瞭解、請前往 xref:../admin/using-grid-management-api.adoc[使用Grid Management API]。
+
+
+
+== 可存取Swagger文件進行私有API作業
+
+您現在可以從Grid Manager存取私有API的Swagger文件。若要查看可用的作業、請選取Grid Manager說明圖示、然後選取* API Documentation *。然後、從StorageGRID 「畫面管理API」頁面選取*移至私有API文件*。
+
+不另行通知、可變更不含資訊的私有API。StorageGRID私有端點也會忽略該要求的API版本。StorageGRID
+
+
+
+== 已過時的警示型API
+
+11.6-版本取代了所有的警示型API。下列API受此變更影響：
+
+* 「Get /GRID /警示」：完全過時
+* 「Get /GRID / heat健/拓撲」：完全過時
+* 「Get /GRID / healmy」：回應的「alarm－清點」區段已過時
+
+
+
+
+== 可匯入S3存取金鑰
+
+您現在可以使用Grid Management API為租戶使用者匯入S3存取金鑰。例如、您可以將存取金鑰從另一個S3供應商移轉到StorageGRID Suse、或使用此功能、在網格之間維持相同的使用者認證。
+
+
+IMPORTANT: 啟用此功能時、任何具有變更租戶根密碼權限的Grid Manager使用者都能完整存取租戶資料。使用後立即停用此功能以保護租戶資料。
+
+
+
+== 新帳戶營運
+
+新增三項全新的「GRID /帳戶API作業：
+
+* 「POST /gridf/site-enable帳戶S3金鑰匯入」：此要求可啟用「匯入S3認證」功能。您必須擁有root存取權限才能啟用此功能。
+* 「POST /gridesk/selet/｛id｝/使用者sesk/｛user_id｝fari/s3-access-keys」：此要求會匯入租戶帳戶中特定使用者的S3認證資料。您必須擁有root存取權或變更租戶root密碼權限、而且必須知道使用者ID和租戶帳戶ID。
+* 「POST /gridf/site-actable-s3-key-import'：此要求會停用「匯入S3認證」功能。您必須具有root存取權限才能停用此功能。
+
+
+
+
+== 已過時的修補方法
+
+修補方法現已過時、將在未來的版本中移除。視需要執行PUT作業來取代資源、而非使用修補程式作業來修改資源。
+
+
+
+== 新增至網格/記錄/收集端點
+
+「GRID /記錄/收集」端點新增四個布林值：
+
+* 「ApplicationLogs」：技術支援最常用於疑難排解的應用程式專屬記錄。收集的記錄是可用應用程式記錄的子集。預設值為「true」。
+* 「auditLogs」：包含正常系統作業期間所產生之稽核訊息的記錄。預設值為「true」。
+* 「網路追蹤」：用於網路偵錯的記錄。預設值為「假」。
+* 「prometheusDatabase」：所有節點上服務的時間序列指標。預設值為「假」。
+
+
+
+
+== 全新的節點詳細資料/網格更新/服務ID端點
+
+全新的「Sides/grides/service-ids」端點提供節點UUID對應至相關節點名稱、服務ID和服務類型的功能。
+
+
+
+== 可擷取網格節點主控台密碼
+
+您現在可以使用「POST（發佈）/ GRID（網格）/節點主控台密碼」來擷取網格節點清單及其相關的主控台密碼。

@@ -1,0 +1,86 @@
+---
+permalink: ilm/azure-authentication-details-for-cloud-storage-pool.html 
+sidebar: sidebar 
+keywords: cloud storage pool, azure blob storage 
+summary: 當您建立Azure Blob儲存設備的Cloud Storage Pool時、必須為StorageGRID 外部Container指定帳戶名稱和帳戶金鑰、以便用來儲存物件。 
+---
+= Azure：指定雲端儲存資源池的驗證詳細資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當您建立Azure Blob儲存設備的Cloud Storage Pool時、必須為StorageGRID 外部Container指定帳戶名稱和帳戶金鑰、以便用來儲存物件。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您已輸入Cloud Storage Pool的基本資訊、並將* Azure Blob Storage*指定為供應商類型。*共享密鑰*顯示在*驗證類型*字段中。
++
+image::../media/cloud_storage_pool_create_azure.png[雲端儲存資源池建立Azure]
+
+* 您知道用來存取雲端儲存資源池所用Blob儲存容器的統一資源識別元（URI）。
+* 您知道儲存帳戶的名稱和秘密金鑰。您可以使用Azure入口網站來尋找這些價值。
+
+
+.步驟
+. 在「*服務端點*」區段中、輸入用於存取用於雲端儲存集區之Blob儲存容器的統一資源識別元（URI）。
++
+以下列其中一種格式指定URI：
+
++
+** https://host:port+`
+** http://host:port+`
+
+
++
+如果您未指定連接埠、預設會將連接埠443用於HTTPS URI、而連接埠80用於HTTP URI。++* Azure Blob儲存Container的範例URI：+「https://_myaccount_.blob.core.windows.net`」
+
+. 在*驗證*區段中、提供下列資訊：
++
+.. 針對*帳戶名稱*、輸入擁有外部服務容器的Blob儲存帳戶名稱。
+.. 針對*帳戶金鑰*、輸入Blob儲存帳戶的秘密金鑰。
+
+
++
+
+NOTE: 對於Azure端點、您必須使用共享金鑰驗證。
+
+. 在*伺服器驗證*區段中、選取驗證TLS連線至雲端儲存池之憑證的方法：
++
+[cols="1a,2a"]
+|===
+| 選項 | 說明 
+
+
+ a| 
+使用作業系統CA憑證
+ a| 
+使用安裝在作業系統上的Grid CA憑證來保護連線安全。
+
+
+
+ a| 
+使用自訂CA憑證
+ a| 
+使用自訂CA憑證。選取*選取「New*（新增）」、然後上傳PEP-編碼的憑證。
+
+
+
+ a| 
+請勿驗證憑證
+ a| 
+用於TLS連線的憑證尚未驗證。
+
+|===
+. 選擇*保存*。
+
+
+當您儲存雲端儲存資源池時StorageGRID 、下列功能將會隨之執行：
+
+* 驗證容器和URI是否存在、以及是否可以使用您指定的認證來連線。
+* 將標記檔案寫入容器、以將其識別為雲端儲存資源池。請勿移除名為「x-ntap-sgws-Cloud Pool - uuid」的檔案。
+
+
+如果Cloud Storage Pool驗證失敗、您會收到錯誤訊息、說明驗證失敗的原因。例如、如果發生憑證錯誤或您指定的容器不存在、可能會報告錯誤。
+
+請參閱的說明 xref:troubleshooting-cloud-storage-pools.adoc[疑難排解雲端儲存資源池]、解決此問題、然後再次嘗試儲存雲端儲存資源池。

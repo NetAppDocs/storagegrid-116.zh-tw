@@ -1,0 +1,463 @@
+---
+permalink: monitor/commonly-used-prometheus-metrics.html 
+sidebar: sidebar 
+keywords: prometheus, Prometheus metrics, metrics 
+summary: 管理節點上的Prometheus服務會從所有節點上的服務收集時間序列指標。雖然Prometheus收集的指標超過一千項、但監控最關鍵StorageGRID 的非功能性操作所需的數據卻相對較少。 
+---
+= 常用的Prometheus指標
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+管理節點上的Prometheus服務會從所有節點上的服務收集時間序列指標。雖然Prometheus收集的指標超過一千項、但監控最關鍵StorageGRID 的非功能性操作所需的數據卻相對較少。
+
+度量會儲存在每個管理節點上、直到保留給Prometheus資料的空間已滿為止。當/var/local/mysql_ibdata/'磁碟區達到容量時、最舊的度量會先刪除。
+
+若要取得完整的度量清單、請使用Grid Management API。
+
+. 從Grid Manager的頂端選取說明圖示、然後選取* API Documentation *。
+. 找出*指標*作業。
+. 執行「Get /GRID / metric names」作業。
+. 下載結果。
+
+
+下表列出最常用的Prometheus指標。您可以參閱此清單、進一步瞭解預設警示規則中的條件、或是建構自訂警示規則的條件。
+
+
+NOTE: 名稱中包含_Private的指標僅供內部使用、StorageGRID 可能會在不另行通知的情況下於各個版本之間變更。
+
+|===
+| Prometheus指標 | 說明 
+
+
+ a| 
+alertmanager_notifications失敗總計
+ a| 
+失敗警示通知的總數。
+
+
+
+ a| 
+node_filesystem_可用 字節
+ a| 
+非root使用者可用的檔案系統空間量（以位元組為單位）。
+
+
+
+ a| 
+node_memory_MemAvailable_bytes
+ a| 
+記憶體資訊欄位Mem可用 位元組。
+
+
+
+ a| 
+node_network_carrier_
+ a| 
+/sys/class/net/<iface>的載體值。
+
+
+
+ a| 
+node_network_receip_errs_total
+ a| 
+網路裝置統計接收錯誤。
+
+
+
+ a| 
+node_network_Transmim_errs_total
+ a| 
+網路裝置統計資料Transm送_errs。
+
+
+
+ a| 
+storagegRid_管理 性關機
+ a| 
+由於預期原因、節點未連線至網格。例如、節點或節點上的服務已正常關機、節點正在重新開機、或軟體正在升級。
+
+
+
+ a| 
+storagegRid_applie_compute控制器硬體狀態
+ a| 
+應用裝置中的運算控制器硬體狀態。
+
+
+
+ a| 
+storagegRid_applie_fred_disks
+ a| 
+對於設備中的儲存控制器、不是最佳的磁碟機數量。
+
+
+
+ a| 
+儲存格RID_applie_storage_控制 器硬體狀態
+ a| 
+設備中儲存控制器硬體的整體狀態。
+
+
+
+ a| 
+storagegRid_content_bucks_and容器
+ a| 
+此儲存節點已知的S3儲存區和Swift容器總數。
+
+
+
+ a| 
+storagegRid_content_objects
+ a| 
+此儲存節點已知的S3和Swift資料物件總數。計數僅適用於用戶端應用程式所建立的資料物件、這些資料物件透過S3或Swift與系統連接。
+
+
+
+ a| 
+storagegRid_content_objects_lost
+ a| 
+此服務偵測到StorageGRID 的物件總數在整個系統中遺失。應採取行動來判斷損失原因、以及是否有可能恢復。
+
+xref:troubleshooting-lost-and-missing-object-data.adoc[疑難排解遺失和遺失的物件資料]
+
+
+
+ a| 
+storagegRid_http工作階段傳入嘗試
+ a| 
+嘗試存取儲存節點的HTTP工作階段總數。
+
+
+
+ a| 
+storagegRid_http工作階段傳入的_current_Estimated
+ a| 
+儲存節點上目前作用中（開啟）的HTTP工作階段數目。
+
+
+
+ a| 
+storagegRid_htt_sessions_incoming_f失敗
+ a| 
+由於HTTP要求格式錯誤或處理作業失敗而無法成功完成的HTTP工作階段總數。
+
+
+
+ a| 
+storagegRid_htt_sesss_incoming_Successful
+ a| 
+已成功完成的HTTP工作階段總數。
+
+
+
+ a| 
+儲存格RID_ILM_waiting背景物件
+ a| 
+此節點上等待掃描進行ILM評估的物件總數。
+
+
+
+ a| 
+儲存格RID_ILM_waiting用戶端評估物件數_per秒
+ a| 
+根據此節點上的ILM原則評估物件的目前速度。
+
+
+
+ a| 
+儲存格RID_ILM_waiting用戶端物件
+ a| 
+此節點上等待用戶端作業（例如擷取）ILM評估的物件總數。
+
+
+
+ a| 
+storagegRid_lm_waiding_total_objects
+ a| 
+等待ILM評估的物件總數。
+
+
+
+ a| 
+儲存格RID_ILM_SCAN_objects_per秒
+ a| 
+此節點擁有的物件掃描並佇列ILM的速度。
+
+
+
+ a| 
+儲存格RID_ILM掃描_期間_預估_分鐘
+ a| 
+完成此節點上完整ILM掃描的預估時間。
+
+*附註：*完整掃描並不保證ILM已套用至此節點擁有的所有物件。
+
+
+
+ a| 
+storagegRid_load_平衡 器端點_cert過期時間
+ a| 
+負載平衡器端點憑證的到期時間、從上一時期開始算起的秒數。
+
+
+
+ a| 
+storagegRid_meta數據查詢_average_dimetime_m毫秒
+ a| 
+透過此服務針對中繼資料儲存區執行查詢所需的平均時間。
+
+
+
+ a| 
+storagegRid_network_receiped_bytes
+ a| 
+自安裝以來接收的資料總量。
+
+
+
+ a| 
+storagegrid網路傳輸的位元組
+ a| 
+安裝後傳送的資料總量。
+
+
+
+ a| 
+儲存格RID_node_cpo_utilation_Percentage
+ a| 
+此服務目前使用的可用CPU時間百分比。指出服務的忙碌程度。可用的CPU時間量取決於伺服器的CPU數量。
+
+
+
+ a| 
+儲存格RID_NTP_chosed_time_source_offset_毫秒
+ a| 
+系統化地抵銷所選時間來源所提供的時間。當到達時間來源的延遲與時間來源到達NTP用戶端所需的時間不一致時、便會採用偏移。
+
+
+
+ a| 
+儲存格RID_NTP_Locked
+ a| 
+節點未鎖定至網路時間傳輸協定（NTP）伺服器。
+
+
+
+ a| 
+storagegRid_sm_data_Transfers字節_ingfed
+ a| 
+自上次重設屬性以來、從S3用戶端擷取至此儲存節點的資料總量。
+
+
+
+ a| 
+已擷取storagegRID_S3資料傳輸位元組
+ a| 
+自上次重設屬性以來、S3用戶端從此儲存節點擷取的資料總量。
+
+
+
+ a| 
+storagegRID_S2_operations失敗
+ a| 
+S3作業失敗的總數（HTTP狀態代碼4xx和5xx）、不包括由S3授權失敗所造成的作業。
+
+
+
+ a| 
+storagegRID_S2_operations成功
+ a| 
+成功S3作業的總數（HTTP狀態代碼2xx）。
+
+
+
+ a| 
+storagegRID_S3作業_未獲授權
+ a| 
+因授權失敗而失敗的S3作業總數。
+
+
+
+ a| 
+storagegRid_servercert_management介面_cert_expire_days
+ a| 
+管理介面憑證過期的天數。
+
+
+
+ a| 
+storagegRid_servercert_storage_API_Enders_cert_expiry_days
+ a| 
+物件儲存API憑證過期的天數。
+
+
+
+ a| 
+storagegRid_service_cpo_seconds
+ a| 
+自安裝以來、此服務已使用CPU的累計時間量。
+
+
+
+ a| 
+storagegRid_service_memory_usage_bytes
+ a| 
+此服務目前使用的記憶體容量（RAM）。此值與Linux Top公用程式顯示的RES.
+
+
+
+ a| 
+storagegRid_service_network_receiped_bytes
+ a| 
+自安裝以來、此服務所接收的資料總量。
+
+
+
+ a| 
+storagegRid_service_network_forted_bytes
+ a| 
+此服務傳送的資料總量。
+
+
+
+ a| 
+storagegRid_service_restarts
+ a| 
+服務重新啟動的總次數。
+
+
+
+ a| 
+storagegrid_service_rid_seconds
+ a| 
+安裝後服務執行的總時間。
+
+
+
+ a| 
+storagegRid_service_upde_seconds
+ a| 
+自上次重新啟動服務以來、服務一直在執行的總時間。
+
+
+
+ a| 
+storagegRid_storage_ista_current
+ a| 
+儲存服務的目前狀態。屬性值包括：
+
+* 10 =離線
+* 15 =維護
+* 20 =唯讀
+* 30 =線上
+
+
+
+
+ a| 
+storagegRid_storage_STATUS
+ a| 
+儲存服務的目前狀態。屬性值包括：
+
+* 0 =無錯誤
+* 10 =轉換中
+* 20 =可用空間不足
+* 30 = Volume不可用
+* 40 =錯誤
+
+
+
+
+ a| 
+storagegRid_storage_utilation_madda_bytes
+ a| 
+預估儲存節點上複寫與銷毀編碼物件資料的總大小。
+
+
+
+ a| 
+storagegRid_storage_utilation_maddenta_allowed_bytes
+ a| 
+每個儲存節點的Volume 0上允許用於物件中繼資料的總空間。此值一律低於節點上為中繼資料保留的實際空間、因為必要的資料庫作業（例如壓縮和修復）以及未來的硬體和軟體升級需要一部分保留空間。物件中繼資料所允許的空間可控制整體物件容量。
+
+
+
+ a| 
+storagegRid_storage_utilation_madda_bytes
+ a| 
+儲存Volume 0上的物件中繼資料量、以位元組為單位。
+
+
+
+ a| 
+storagegRid_storage_utilation_total_space_bytes
+ a| 
+分配給所有物件存放區的儲存空間總量。
+
+
+
+ a| 
+storagegRid_storage_utilation_可用 空間位元組
+ a| 
+物件儲存空間的總剩餘量。計算方法是將儲存節點上所有物件存放區的可用空間量一併新增。
+
+
+
+ a| 
+storagegRid_swift_data_Transfers字節_ingfed
+ a| 
+自上次重設屬性以來、從Swift用戶端擷取到此儲存節點的資料總量。
+
+
+
+ a| 
+已擷取storagegRid_swift_data_Transfers位元組
+ a| 
+自上次重設屬性以來、Swift用戶端從此儲存節點擷取的資料總量。
+
+
+
+ a| 
+storagegRid_swift_operations失敗
+ a| 
+Swift作業失敗的總數（HTTP狀態代碼4xx和5xx）、不包括Swift授權失敗所造成的作業。
+
+
+
+ a| 
+storagegRid_swift_operations成功
+ a| 
+成功Swift作業的總數（HTTP狀態代碼2xx）。
+
+
+
+ a| 
+storagegRid_swift_operations未獲授權
+ a| 
+因授權失敗而失敗的Swift作業總數（HTTP狀態代碼401、403、405）。
+
+
+
+ a| 
+storagegRid_enture_usage_data_bytes
+ a| 
+租戶所有物件的邏輯大小。
+
+
+
+ a| 
+storagegRid_enture_usage_object_count
+ a| 
+租戶的物件數目。
+
+
+
+ a| 
+storagegRid_enture_usage_quota位元組
+ a| 
+租戶物件可用的最大邏輯空間量。如果未提供配額度量、則可用空間不限。
+
+|===

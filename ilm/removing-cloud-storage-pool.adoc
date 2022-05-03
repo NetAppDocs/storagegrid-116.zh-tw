@@ -1,0 +1,50 @@
+---
+permalink: ilm/removing-cloud-storage-pool.html 
+sidebar: sidebar 
+keywords: remove cloud storage pool 
+summary: 您可以移除ILM規則中未使用且不含物件資料的雲端儲存池。 
+---
+= 移除雲端儲存資源池
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以移除ILM規則中未使用且不含物件資料的雲端儲存池。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+* 您擁有特定的存取權限。
+* 您已確認S3儲存區或Azure容器不含任何物件。如果您嘗試移除包含物件的雲端儲存池、就會發生錯誤。請參閱 xref:troubleshooting-cloud-storage-pools.adoc[疑難排解雲端儲存資源池]。
++
+
+NOTE: 當您建立Cloud Storage Pool時StorageGRID 、將標記檔案寫入儲存庫或容器、以將其識別為雲端儲存池。請勿移除名為「x-ntap-sgws-Cloud Pool - uuid」的檔案。
+
+* 您已經移除可能使用集區的任何ILM規則。
+
+
+.步驟
+. 選擇* ILM *>* Storage Pools*。
++
+此時將出現「儲存資源池」頁面。
+
+. 選取目前未在ILM規則中使用之雲端儲存池的選項按鈕。
++
+如果在ILM規則中使用Cloud Storage Pool、則無法將其移除。「*移除*」按鈕已停用。
+
++
+image::../media/cloud_storage_pool_used_in_ilm_rule.png[ILM規則中使用的雲端儲存資源池]
+
+. 選擇*移除*。
++
+隨即顯示確認警告。
+
++
+image::../media/cloud_storage_pool_remove.gif[移除雲端儲存資源池]
+
+. 選擇*確定*。
++
+雲端儲存資源池即會移除。
+
+

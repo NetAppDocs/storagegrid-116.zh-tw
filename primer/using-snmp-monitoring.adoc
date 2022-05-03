@@ -1,0 +1,39 @@
+---
+permalink: primer/using-snmp-monitoring.html 
+sidebar: sidebar 
+keywords: snmp, simple network management protocol, agent, trap, inform, mib 
+summary: 如果您想StorageGRID 要使用簡易網路管理傳輸協定（SNMP）來監控功能、可以使用Grid Manager來設定SNMP代理程式。 
+---
+= 使用SNMP監控
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您想StorageGRID 要使用簡單網路管理傳輸協定（SNMP）來監控效能、可以使用Grid Manager來設定SNMP代理程式。
+
+每StorageGRID 個支援節點都會執行SNMP代理程式或精靈、以提供管理資訊庫（mib）。此功能包含警示和警示的表格和通知定義。StorageGRID每StorageGRID 個支援MIB-II物件的子集。
+
+一開始、所有節點上的SNMP都會停用。當您設定SNMP代理程式時、所有StorageGRID 的Sing節點都會收到相同的組態。
+
+支援所有三種版本的SNMP傳輸協定的Sof SNMP代理程式。StorageGRID代理程式可針對查詢提供唯讀的MIB存取、並可將兩種事件導向通知傳送至管理系統：
+
+* * Trap*是SNMP代理程式傳送的通知、不需要管理系統確認。陷阱可讓管理系統知道StorageGRID 在某些情況下發生、例如觸發警示。SNMP的所有三個版本均支援陷阱。
+* *通知*類似於陷阱、但需要管理系統確認。如果SNMP代理程式在一定時間內未收到確認訊息、則會重新傳送通知、直到收到確認訊息或達到最大重試值為止。在SNMPv2c和v3中支援通知。
+
+
+在下列情況下會傳送陷阱和通知：
+
+* 預設或自訂警示會在任何嚴重性層級觸發。若要隱藏警示的SNMP通知、您必須設定警示的靜音。警示通知是由任何設定為偏好傳送者的管理節點所傳送。
+* 某些警示（舊系統）會在指定的嚴重性等級或更高的等級觸發。
++
+
+NOTE: SNMP通知不會針對每個警示或每個警示嚴重性傳送。
+
+
+
+*相關資訊*
+
+* xref:../monitor/index.adoc[監控及疑難排解]
+

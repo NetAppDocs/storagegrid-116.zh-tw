@@ -1,0 +1,79 @@
+---
+permalink: sg5600/network-bond-modes-for-10-gbe-ports.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, Network bond, Network bonding, Network bond mode, Network-bond mode, fixed, Aggregate, 10-gbe, 10 gbe, e5600sg 
+summary: E5600SG控制器上的10-GbE網路連接埠支援固定連接埠連結模式、或是Grid Network和用戶端網路連線的Aggregate連接埠連結模式。 
+---
+= 10-GbE連接埠的網路連結模式
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+E5600SG控制器上的10-GbE網路連接埠支援固定連接埠連結模式、或是Grid Network和用戶端網路連線的Aggregate連接埠連結模式。
+
+
+
+== 固定連接埠連結模式
+
+固定模式是10-GbE網路連接埠的預設組態。
+
+image::../media/e5600sg_fixed_port.gif[用於固定連接埠繫結模式的連接埠]
+
+|===
+| 標註 | 連結哪些連接埠 
+
+
+ a| 
+c
+ a| 
+如果使用此網路、用戶端網路的連接埠1和3會連結在一起。
+
+
+
+ a| 
+G
+ a| 
+連接埠2和4會連結至Grid Network。
+
+|===
+使用固定連接埠連結模式時、可使用主動備份模式或連結集合控制傳輸協定模式（LACP 802.3ad）連結連接埠。
+
+* 在主動備份模式（預設）中、一次只有一個連接埠處於作用中狀態。如果作用中連接埠故障、其備份連接埠會自動提供容錯移轉連線。連接埠4提供連接埠2（Grid Network）的備份路徑、連接埠3則提供連接埠1（用戶端網路）的備份路徑。
+* 在LACP模式中、每對連接埠會形成控制器與網路之間的邏輯通道、以提高處理量。如果一個連接埠故障、另一個連接埠會繼續提供該通道。處理量減少、但連線能力不受影響。
+
+
+
+NOTE: 如果您不需要備援連線、則每個網路只能使用一個連接埠。不過請注意StorageGRID 、安裝完功能後、Grid Manager會發出警示、表示纜線已拔下。您可以安全地確認此警報以清除警報。
+
+
+
+== Aggregate連接埠連結模式
+
+Aggregate連接埠連結模式可大幅增加每StorageGRID 個支援網的整體效能、並提供額外的容錯移轉路徑。
+
+image::../media/e5600sg_aggregate_port.gif[用於Aggregate連接埠連結模式的連接埠]
+
+|===
+| 標註 | 連結哪些連接埠 
+
+
+ a| 
+1.
+ a| 
+所有連接的連接埠都集中在單一LACP連結中、允許所有連接埠用於Grid Network和Client Network流量。
+
+|===
+如果您打算使用Aggregate連接埠連結模式：
+
+* 您必須使用LACP網路連結模式。
+* 您必須為每個網路指定唯一的VLAN標記。此VLAN標記將新增至每個網路封包、以確保網路流量路由傳送至正確的網路。
+* 連接埠必須連接至可支援VLAN和LACP的交換器。如果有多個交換器參與LACP連結、交換器必須支援多機箱連結集合群組（MLAG）或等效群組。
+* 您必須瞭解如何將交換器設定為使用VLAN、LACP和MLAG或同等功能。
+
+
+如果您不想使用全部四個10-GbE連接埠、可以使用一個、兩個或三個連接埠。使用一個以上的連接埠、可大幅提高當10-GbE連接埠之一故障時、仍有部分網路連線可用的機率。
+
+
+NOTE: 如果您選擇使用少於四個連接埠、請注意StorageGRID 、安裝完效益分析之後、Grid Manager會發出一或多個警示、表示纜線已拔下。您可以安全地確認警報以清除警報。

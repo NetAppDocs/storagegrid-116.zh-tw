@@ -1,0 +1,49 @@
+---
+permalink: sg6000/accessing-bmc-interface-sg6000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, BMC, baseboard management controller, access, open, login 
+summary: 您可以使用BMC管理連接埠的DHCP或靜態IP位址來存取SG6000-CNs控制器上的BMC介面。 
+---
+= 存取BMC介面
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用BMC管理連接埠的DHCP或靜態IP位址來存取SG6000-CNs控制器上的BMC介面。
+
+.您需要的是 #8217 ；需要的是什麼
+* SG6000-CN-控制器上的BMC管理連接埠會連接到您打算使用的管理網路。
++
+image::../media/sg6000_cn_bmc_management_port.gif[SG6000-CN-控制器上的BMC管理連接埠]
+
+* 管理用戶端使用 xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+
+
+.步驟
+. 輸入BMC介面的URL：+`* https://_BMC_Port_IP_*`
++
+若為「_BM_Port_IP_」、請使用DHCP或靜態IP位址作為BMC管理連接埠。
+
++
+此時會出現BMC登入頁面。
+
++
+
+NOTE: 如果您尚未設定「BMC連接埠IP」、請依照中的指示進行 xref:configuring-bmc-interface-sg6000.adoc[設定BMC介面（SG6000）]。如果由於硬體問題而無法執行該程序、而且尚未設定BMC IP位址、您可能仍能存取BMC。根據預設、BMC會使用DHCP取得IP位址。如果BMC網路上已啟用DHCP、您的網路管理員可以提供指派給BMC MAC的IP位址、該位址會列印在SG6000-CN-控制器正面的標籤上。如果BMC網路上未啟用DHCP、BMC將在幾分鐘後不會回應、並將預設靜態IP「192．168．0．120」指派給自己。您可能需要將筆記型電腦直接連接至BMC連接埠、然後變更網路設定、將IP指派給筆記型電腦、例如「192．168．0．200/24」、以便瀏覽至「192．168．0．120」。
+
+. 輸入root使用者名稱和密碼、並使用您在使用時設定的密碼 xref:changing-root-password-for-bmc-interface-sg6000.adoc[變更預設root密碼]：
++
+image::../media/bmc_signin_page.gif[BMC登入頁面]
+
+. 選取*登入*。
++
+image::../media/bmc_dashboard.gif[BMC儀表板]
+
+. 或者、選取*設定*>*使用者管理*、然後按一下任何「停用」使用者、即可建立其他使用者。
++
+
+NOTE: 使用者第一次登入時、系統可能會提示他們變更密碼、以提高安全性。
+
+

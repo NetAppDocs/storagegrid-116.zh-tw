@@ -1,0 +1,294 @@
+---
+permalink: swift/configuring-tenant-accounts-and-connections.html 
+sidebar: sidebar 
+keywords: swift configure tenant account, swift configure tenant connection 
+summary: 若要設定StorageGRID 從用戶端應用程式接受連線、需要建立一或多個租戶帳戶並設定連線。 
+---
+= 設定租戶帳戶和連線
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要設定StorageGRID 從用戶端應用程式接受連線、需要建立一或多個租戶帳戶並設定連線。
+
+
+
+== 建立及設定Swift租戶帳戶
+
+Swift API用戶端必須先有Swift租戶帳戶、才能將物件儲存及擷取StorageGRID 到靜止不動的地方。每個租戶帳戶都有自己的帳戶ID、群組和使用者、以及容器和物件。
+
+Swift租戶帳戶是StorageGRID 由使用Grid Manager或Grid Management API的資訊網管理員所建立。
+
+建立Swift租戶帳戶時、網格管理員會指定下列資訊：
+
+* 租戶的顯示名稱（租戶的帳戶ID會自動指派、無法變更）
+* 或者、租戶帳戶的儲存配額、也就是租戶物件可用的GB、TB或PB上限。租戶的儲存配額代表邏輯容量（物件大小）、而非實體容量（磁碟大小）。
+* 如果StorageGRID 不使用單一登入（SSO）進行支援、則租戶帳戶是使用自己的身分識別來源、還是共用網格的身分識別來源、以及租戶本機root使用者的初始密碼。
+* 如果啟用SSO、則哪個聯盟群組具有root存取權限可設定租戶帳戶。
+
+
+建立Swift租戶帳戶之後、具有「根存取」權限的使用者就能存取租戶管理程式來執行下列工作：
+
+* 設定身分識別聯盟（除非身分識別來源與網格共用）、以及建立本機群組和使用者
+* 監控儲存使用量
+
+
+
+IMPORTANT: Swift使用者必須擁有root存取權限、才能存取租戶管理程式。不過、「根存取」權限不允許使用者驗證Swift REST API、以建立容器和擷取物件。使用者必須具有Swift Administrator權限、才能驗證到Swift REST API。
+
+xref:../admin/index.adoc[管理StorageGRID]
+
+xref:../tenant/index.adoc[使用租戶帳戶]
+
+xref:supported-swift-api-endpoints.adoc[支援的Swift API端點]
+
+
+
+== 如何設定用戶端連線
+
+網格管理員會做出組態選擇、影響Swift用戶端連線StorageGRID 至以儲存及擷取資料的方式。建立連線所需的特定資訊取決於所選的組態。
+
+用戶端應用程式可連線至下列任一項目、以儲存或擷取物件：
+
+* 管理節點或閘道節點上的負載平衡器服務、或是管理節點或閘道節點之高可用度（HA）群組的虛擬IP位址（可選）
+* 閘道節點上的CLB服務、或是閘道節點高可用度群組的虛擬IP位址（可選）
++
+
+NOTE: CLB服務已過時。在發佈版推出之前設定的用戶端StorageGRID 、可以繼續在閘道節點上使用CLB服務。所有其他仰賴StorageGRID 以提供負載平衡的用戶端應用程式、都應該使用負載平衡器服務進行連線。
+
+* 儲存節點、無論是否有外部負載平衡器
+
+
+設定StorageGRID 功能時、網格管理員可以使用Grid Manager或Grid Management API來執行下列步驟、這些步驟都是選用的：
+
+. 設定負載平衡器服務的端點。
++
+您必須設定端點以使用負載平衡器服務。管理節點或閘道節點上的負載平衡器服務會將傳入的網路連線從用戶端應用程式分散到儲存節點。建立負載平衡器端點時StorageGRID 、系統管理員會指定連接埠號碼、端點是否接受HTTP或HTTPS連線、使用端點的用戶端類型（S3或Swift）、以及用於HTTPS連線的憑證（若適用）。
+
+. 設定不受信任的用戶端網路。
++
+如果StorageGRID 某個節點的用戶端網路設定為不受信任、則該節點僅接受用戶端網路上明確設定為負載平衡器端點之連接埠的傳入連線。
+
+. 設定高可用度群組。
++
+如果系統管理員建立HA群組、則多個管理節點或閘道節點的網路介面會置於主動備份組態中。用戶端連線是使用HA群組的虛擬IP位址進行。
+
+
+
+如需每個選項的詳細資訊、請參閱《關於管理StorageGRID 功能的說明》。
+
+
+
+=== 摘要：用於用戶端連線的IP位址和連接埠
+
+用戶端應用程式StorageGRID 會使用網格節點的IP位址和該節點上服務的連接埠號碼來連線至功能區。如果已設定高可用度（HA）群組、用戶端應用程式就可以使用HA群組的虛擬IP位址進行連線。
+
+
+
+==== 建立用戶端連線所需的資訊
+
+下表摘要說明用戶端連線StorageGRID 至靜態的不同方式、以及每種連線類型所使用的IP位址和連接埠。如StorageGRID 需更多資訊、請聯絡您的管理員、或參閱《管理StorageGRID 》的說明、以瞭解如何在Grid Manager中找到這些資訊。
+
+|===
+| 連線位置 | 用戶端連線的服務 | IP 位址 | 連接埠 
+
+
+ a| 
+HA群組
+ a| 
+負載平衡器
+ a| 
+HA群組的虛擬IP位址
+ a| 
+* 負載平衡器端點連接埠
+
+
+
+
+ a| 
+HA群組
+ a| 
+CLB
+
+*附註：* CLB服務已過時。
+ a| 
+HA群組的虛擬IP位址
+ a| 
+預設Swift連接埠：
+
+* HTTPS：8083
+* HTTP：8085
+
+
+
+
+ a| 
+管理節點
+ a| 
+負載平衡器
+ a| 
+管理節點的IP位址
+ a| 
+* 負載平衡器端點連接埠
+
+
+
+
+ a| 
+閘道節點
+ a| 
+負載平衡器
+ a| 
+閘道節點的IP位址
+ a| 
+* 負載平衡器端點連接埠
+
+
+
+
+ a| 
+閘道節點
+ a| 
+CLB
+
+*附註：* CLB服務已過時。
+ a| 
+閘道節點的IP位址
+
+*附註：*根據預設、不會啟用CLB和LDR的HTTP連接埠。
+ a| 
+預設Swift連接埠：
+
+* HTTPS：8083
+* HTTP：8085
+
+
+
+
+ a| 
+儲存節點
+ a| 
+LdR
+ a| 
+儲存節點的IP位址
+ a| 
+預設Swift連接埠：
+
+* HTTPS：18083
+* HTTP：18085
+
+
+|===
+
+
+==== 範例
+
+若要將Swift用戶端連線至閘道節點HA群組的負載平衡器端點、請使用結構如下所示的URL：
+
+* https://_VIP-of-HA-group:LB-endpoint-port_`
+
+
+例如、如果HA群組的虛擬IP位址為192.0.2.6、而Swift負載平衡器端點的連接埠號碼為104444、則Swift用戶端可使用下列URL連線StorageGRID 到Sender:
+
+* https://192.0.2.6:10444`
+
+
+您可以為用戶端用來連線StorageGRID 到靜態的IP位址設定DNS名稱。請聯絡您的本機網路管理員。
+
+
+
+=== 決定使用HTTPS或HTTP連線
+
+使用負載平衡器端點進行用戶端連線時、必須使用為該端點指定的傳輸協定（HTTP或HTTPS）來建立連線。若要在用戶端連線至儲存節點或閘道節點上的CLB服務時使用HTTP、您必須啟用它的使用。
+
+根據預設、當用戶端應用程式連線至閘道節點上的儲存節點或CLB服務時、它們必須使用加密的HTTPS進行所有連線。或者、您也可以選取「Grid Manager（網格管理器）」中的*「Enable HTTP Connection* Grid（啟用HTTP連線*網格）」選項、來啟用較不安全的HTTP連線。例如、用戶端應用程式在非正式作業環境中測試與儲存節點的連線時、可能會使用HTTP。
+
+
+IMPORTANT: 啟用正式作業網格的HTTP時請務必小心、因為要求會以不加密的方式傳送。
+
+
+NOTE: CLB服務已過時。
+
+如果選取*「啟用HTTP連線*」選項、則用戶端的HTTP連接埠必須與HTTPS使用的連接埠不同。請參閱「管理StorageGRID 功能」的說明。
+
+xref:../admin/index.adoc[管理StorageGRID]
+
+
+
+== 在Swift API組態中測試連線
+
+您可以使用Swift CLI來測試與StorageGRID 該系統的連線、並驗證您是否可以讀取物件並將物件寫入系統。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您必須下載並安裝python swiftClient、Swift命令列用戶端。
++
+https://platform.swiftstack.com/docs/integration/python-swiftclient.html["SwiftStack：Python-swiftClient"^]
+
+* 您必須在StorageGRID 整個作業系統中擁有Swift租戶帳戶。
+
+
+如果您尚未設定安全性、則必須將「不安全」旗標新增至這些命令。
+
+.步驟
+. 查詢StorageGRID 資訊URL以進行您的NetApp Swift部署：
++
+[listing]
+----
+swift
+-U <Tenant_Account_ID:Account_User_Name>
+-K <User_Password>
+-A https://<FQDN | IP>:<Port>/info
+capabilities
+----
++
+這足以測試您的Swift部署是否正常運作。若要儲存物件以進一步測試帳戶組態、請繼續執行其他步驟。
+
+. 將物件放入容器：
++
+[listing]
+----
+touch test_object
+swift
+-U <Tenant_Account_ID:Account_User_Name>
+-K <User_Password>
+-A https://<FQDN | IP>:<Port>/auth/v1.0
+upload test_container test_object
+--object-name test_object
+----
+. 取得容器以驗證物件：
++
+[listing]
+----
+swift
+-U <Tenant_Account_ID:Account_User_Name>
+-K <User_Password>
+-A https://<FQDN | IP>:<Port>/auth/v1.0
+list test_container
+----
+. 刪除物件：
++
+[listing]
+----
+swift
+-U <Tenant_Account_ID:Account_User_Name>
+-K <User_Password>
+-A https://<FQDN | IP>:<Port>/auth/v1.0
+delete test_container test_object
+----
+. 刪除容器：
++
+[listing]
+----
+swift
+-U `<_Tenant_Account_ID:Account_User_Name_>`
+-K `<_User_Password_>`
+-A `\https://<_FQDN_ | _IP_>:<_Port_>/auth/v1.0'
+delete test_container
+----
+
+
+xref:configuring-tenant-accounts-and-connections.adoc[建立及設定Swift租戶帳戶]
+
+xref:configuring-security-for-rest-api.adoc[設定REST API的安全性]

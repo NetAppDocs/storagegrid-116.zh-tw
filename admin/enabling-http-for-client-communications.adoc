@@ -1,0 +1,43 @@
+---
+permalink: admin/enabling-http-for-client-communications.html 
+sidebar: sidebar 
+keywords: enable http, clb connections, storage node connections 
+summary: 根據預設、用戶端應用程式會使用HTTPS網路傳輸協定來連線至儲存節點或閘道節點上已過時的CLB服務。您可以選擇性地為這些連線啟用HTTP、例如在測試非正式作業網格時。 
+---
+= 啟用HTTP以進行用戶端通訊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+根據預設、用戶端應用程式會使用HTTPS網路傳輸協定來連線至儲存節點或閘道節點上已過時的CLB服務。您可以選擇性地為這些連線啟用HTTP、例如在測試非正式作業網格時。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+* 您擁有特定的存取權限。
+
+
+只有當S3和Swift用戶端需要直接建立HTTP連線至儲存節點或閘道節點上已過時的CLB服務時、才需完成此工作。
+
+您不需要為只使用HTTPS連線的用戶端或連線至負載平衡器服務的用戶端完成此工作（因為您可以將每個負載平衡器端點設定為使用HTTP或HTTPS）。如需詳細資訊、請參閱設定負載平衡器端點的相關資訊。
+
+請參閱 xref:summary-ip-addresses-and-ports-for-client-connections.adoc[摘要：用於用戶端連線的IP位址和連接埠] 以瞭解使用HTTP或HTTPS連線至儲存節點或過時的CLB服務時、S3和Swift用戶端會使用哪些連接埠
+
+
+IMPORTANT: 啟用正式作業網格的HTTP時請務必小心、因為要求會以未加密的方式傳送。
+
+.步驟
+. 選擇*組態*>*系統*>*網格選項*。
+. 在「網路選項」區段中、選取「*啟用HTTP連線*」核取方塊。
++
+image::../media/http_enabled.png[啟用HTTP連線]
+
+. 選擇*保存*。
+
+
+.相關資訊
+* xref:configuring-load-balancer-endpoints.adoc[設定負載平衡器端點]
+* xref:../s3/index.adoc[使用S3]
+* xref:../swift/index.adoc[使用Swift]
+

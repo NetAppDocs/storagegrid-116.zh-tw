@@ -1,0 +1,53 @@
+---
+permalink: sg100-1000/shut-down-sg1000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg1000, SG100, power off, turn off, shut off, shutdown, shut down, 
+summary: 關閉服務應用裝置以執行硬體維護。 
+---
+= 關閉服務應用裝置
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+關閉服務應用裝置以執行硬體維護。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您有 xref:locating-controller-in-data-center.adoc[實際定位服務應用裝置]。
+* 本產品已經使用過 xref:placing-appliance-into-maintenance-mode.adoc[進入維護模式]。
+
+
+為了避免服務中斷、請在正常預期服務中斷期間、於排定的維護期間關閉服務應用裝置。
+
+.步驟
+. 當產品處於維護模式時、請關閉產品電源：
++
+
+CAUTION: 您必須輸入下列指定的命令、以控制控制控制器的關機。使用電源開關關閉設備會導致資料遺失。
+
++
+.. 使用Putty或其他ssh用戶端登入網格節點：
++
+... 輸入下列命令：「sh admin@_grid_node_ip_`」
+... 輸入「passwords.txt」檔案中所列的密碼。
+... 輸入下列命令以切換至root：「u -」
+... 輸入「passwords.txt」檔案中所列的密碼。
++
+以root登入時、提示會從「$」變更為「#」。
+
+
+
+.. 關閉服務應用裝置：+`* shut-h now*
++
+此命令可能需要10分鐘才能完成。
+
+
+
+. 請使用下列其中一種方法、確認裝置電源已關閉：
++
+** 查看產品正面的電源LED、確認電源已關閉。
+** 請查看BMC介面的「電源控制」頁面、確認裝置已關閉。
+
+
+

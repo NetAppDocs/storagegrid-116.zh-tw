@@ -1,0 +1,42 @@
+---
+permalink: primer/configuring-system-settings.html 
+sidebar: sidebar 
+keywords: system settings, grid manager, configure, configuration, display options, grid options, key management server, S3 object lock, storage options 
+summary: 您可以從Grid Manager設定各種系統設定、以微調StorageGRID 您的作業系統運作。 
+---
+= 設定系統設定
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以從Grid Manager設定各種系統設定、以微調StorageGRID 您的作業系統運作。
+
+
+
+== 顯示選項
+
+顯示選項可讓您指定使用者工作階段的逾時期間、並抑制舊版警示和事件觸發AutoSupport 的等字訊息的電子郵件通知。
+
+
+
+== 網格選項
+
+您可以使用Grid Options（網格選項）來設定StorageGRID 儲存在您的還原系統中的所有物件設定、包括儲存的物件壓縮、儲存的物件加密。和儲存的物件雜湊。
+
+您也可以使用這些選項來指定S3和Swift用戶端作業的全域設定。
+
+
+
+== S3物件鎖定
+
+「物件鎖定」功能是物件保護解決方案、StorageGRID 相當於Amazon Simple Storage Service（Amazon S3）中的S3物件鎖定。您可以啟用StorageGRID 整個S3物件鎖定功能、讓S3租戶帳戶在啟用S3物件鎖定的情況下建立貯體。然後租戶可以使用S3用戶端應用程式、針對這些儲存區中的物件、選擇性地指定保留設定（保留至日期、合法保留或兩者皆保留）。此外、啟用S3物件鎖定的每個儲存區都可以選擇預設保留模式和保留期間、如果在儲存區中新增物件而不使用其本身的保留設定、則會套用此保留期間。
+
+image::../media/s3_object_lock_architecture.png[S3物件鎖定架構]
+
+
+
+== 儲存選項
+
+儲存選項可讓您控制物件分割、並覆寫儲存Volume浮水印設定、以管理儲存節點的可用儲存空間。

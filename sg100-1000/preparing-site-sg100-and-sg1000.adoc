@@ -1,0 +1,48 @@
+---
+permalink: sg100-1000/preparing-site-sg100-and-sg1000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, install, installation, site prep, site preparating, preparing site, site requirements, requirements, site, dimensions, weight, weights, temperature, humidity, altitude, airflow, heat, wiring, power, grounding, facility 
+summary: 安裝本產品之前、您必須確定您打算使用的場地和機櫃或機架符合StorageGRID 有關產品的規格。 
+---
+= 準備站台（SG100和SG1000）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安裝本產品之前、您必須確定您打算使用的場地和機櫃或機架符合StorageGRID 有關產品的規格。
+
+.步驟
+. 確認場地符合溫度、濕度、海拔高度範圍、氣流、散熱、 配線、電源和接地。如Hardware Universe 需詳細資訊、請參閱NetApp解決方案。
+. 確認您所在位置的AC電源電壓正確（在120至240 V AC範圍內）。
+. 取得19吋（48.3公分）機櫃或機架以安裝此尺寸的機櫃（不含纜線）：
++
+|===
+| 高度 | 寬度 | 深度 | 最大重量 
+
+
+ a| 
+1.70英吋
+
+（4.32公分）
+ a| 
+17.32英吋
+
+（44.0公分）
+ a| 
+32.0吋
+
+（81.3公分）
+ a| 
+39磅
+
+（17.7公斤）
+
+|===
+. 決定裝置的安裝位置。
+
+
+https://hwu.netapp.com["NetApp Hardware Universe"^]
+
+https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]

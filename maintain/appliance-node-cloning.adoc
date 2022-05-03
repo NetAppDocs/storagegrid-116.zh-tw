@@ -1,0 +1,14 @@
+---
+permalink: maintain/appliance-node-cloning.html 
+sidebar: sidebar 
+keywords: node cloning, clone node 
+summary: 您可以在StorageGRID 更新設計或增強功能的應用裝置上、複製到位的應用裝置節點。複製功能會將現有節點上的所有資訊傳輸至新的應用裝置、提供易於執行的硬體升級程序、並提供汰換與擴充的替代方案、以取代應用裝置。 
+---
+= 應用裝置節點複製
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在StorageGRID 更新設計或增強功能的應用裝置上、複製到位的應用裝置節點。複製功能會將現有節點上的所有資訊傳輸至新的應用裝置、提供易於執行的硬體升級程序、並提供汰換與擴充的替代方案、以取代應用裝置。

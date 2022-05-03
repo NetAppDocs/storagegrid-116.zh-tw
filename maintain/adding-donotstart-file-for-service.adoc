@@ -1,0 +1,46 @@
+---
+permalink: maintain/adding-donotstart-file-for-service.html 
+sidebar: sidebar 
+keywords: storagegrid, add do not start file, adding do not start file, service 
+summary: 您可以將DoNotStart檔案新增至網格節點上的服務目錄、以防止個別服務啟動。 
+---
+= 新增服務的DoNotStart檔案
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將DoNotStart檔案新增至網格節點上的服務目錄、以防止個別服務啟動。
+
+您必須擁有「passwors.txt」檔案。
+
+.步驟
+. 登入網格節點：
++
+.. 輸入下列命令：「sh admin@_grid_node_ip_`」
+.. 輸入「passwords.txt」檔案中所列的密碼。
+.. 輸入下列命令以切換至root：「u -」
+.. 輸入「passwords.txt」檔案中所列的密碼。
+
+
++
+以root登入時、提示會從「$」變更為「#」。
+
+. 新增DoNotStart檔案：「Touch /etc/SV /_service_/DoNotStart」
++
+其中「服務」是要禁止啟動的服務名稱。例如、
+
++
+[listing]
+----
+touch /etc/sv/ldr/DoNotStart
+----
++
+已建立DoNotStart檔案。不需要檔案內容。
+
++
+重新啟動伺服器管理員或網格節點時、伺服器管理員會重新啟動、但服務不會。
+
+. 登出命令Shell：「exit」
+

@@ -1,0 +1,59 @@
+---
+permalink: sg5700/troubleshooting-connection-issues.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5700, storage node, storage appliance, troubleshoot, troubleshooting, connection 
+summary: 如果StorageGRID 在安裝過程中遇到連線問題、您應該執行列出的修正行動步驟。 
+---
+= 疑難排解連線問題（SG5700）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果StorageGRID 在安裝過程中遇到連線問題、您應該執行列出的修正行動步驟。
+
+
+
+== 無法連線至應用裝置
+
+如果您無法連線至應用裝置、可能是網路問題、或是硬體安裝未成功完成。
+
+.步驟
+. 如果您無法連線SANtricity 到《系統管理程式》：
++
+.. 請嘗試使用管理網路上E2800控制器的IP位址來ping應用裝置SANtricity 、以利執行《系統管理程式：+》、「* ping _E2800_Controller_IP_*」
+.. 如果ping沒有回應、請確認您使用的是正確的IP位址。
++
+使用E2800控制器上管理連接埠1的IP位址。
+
+.. 如果IP位址正確、請檢查設備纜線和網路設定。
++
+如果仍無法解決問題、請聯絡技術支援部門。
+
+.. 如果ping成功、請開啟網頁瀏覽器。
+.. 輸入SANtricity URL for the URL for the EtrySystem Manager:+`* https://_E2800_Controller_IP_*`
++
+畫面會出現「登入SANtricity 頁面、以供使用。
+
+
+
+. 如果您無法連線至E5700SG控制器：
++
+.. 嘗試使用E5700SG控制器的IP位址ping應用裝置：+「* ping _E5700SG_Controller_IP_*」
+.. 如果ping沒有回應、請確認您使用的是正確的IP位址。
++
+您可以在Grid Network、管理網路或用戶端網路上使用應用裝置的IP位址。
+
+.. 如果IP位址正確、請檢查設備纜線、SFP收發器和網路設定。
++
+如果仍無法解決問題、請聯絡技術支援部門。
+
+.. 如果ping成功、請開啟網頁瀏覽器。
+.. 輸入StorageGRID URL for the URL for the EASEUREAppliance Installer:+`* https://_E5700SG_Controller_IP_:8443*`
++
+隨即顯示首頁。
+
+
+
+

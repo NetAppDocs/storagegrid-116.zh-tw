@@ -1,0 +1,188 @@
+---
+permalink: s3/put-object-copy.html 
+sidebar: sidebar 
+keywords: object, add object, put, put object request 
+summary: 您可以使用「S3放置物件-複製」要求來建立S3中已儲存物件的複本。「放置物件」-「複製」作業與執行「取得」和「放置」相同。 
+---
+= 放置物件-複製
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「S3放置物件-複製」要求來建立S3中已儲存物件的複本。「放置物件」-「複製」作業與執行「取得」和「放置」相同。
+
+
+
+== 解決衝突
+
+衝突的用戶端要求（例如兩個寫入同一個金鑰的用戶端）會以「最新致勝」的方式解決。「最新致勝」評估的時間取決於StorageGRID 何時由VMware系統完成指定的要求、而非S3用戶端開始作業的時間。
+
+
+
+== 物件大小
+
+單一放置物件作業的最大_Recommended大小為5 GiB（5、368、709、120位元組）。如果您的物件大於5 GiB、請改用多部份上傳。
+
+
+IMPORTANT: 在S2011.6中StorageGRID 、單一放置物件作業的最大_supported大小為5 TiB（5、497、558、13880位元組）。但是、如果您嘗試上傳超過5 GiB的物件、則會觸發* S3「Pure Object size too large *（將物件大小設為太大*）」警示。
+
+
+
+== 使用者中繼資料中的UTF-8字元
+
+如果要求在使用者定義的中繼資料金鑰名稱或值中包含（未轉義）utf-8值、StorageGRID 則無法定義任何不正常的行為。
+
+不剖析或解譯使用者定義之中繼資料的金鑰名稱或值中包含的轉義式utf-8字元。StorageGRID轉義的UTF-8字元會視為Ascii字元：
+
+* 如果使用者定義的中繼資料包含轉義的utf-8字元、則要求會成功。
+* 如果關鍵字名稱或值的解譯值包含不可列印的字元、則不傳回「x-amz-misse-meta」標頭。StorageGRID
+
+
+
+
+== 支援的要求標頭
+
+支援下列要求標頭：
+
+* 「內容類型」
+* 《X-amz-copy-source-》
+* 「x-amz-copy-source-if-match」
+* 「x-amz-copy-source-if-none-MATCH」
+* 「x-amz-copy-source-if-modif-since」
+* 《X-amz-copy-source-if-modif-s自》
+* 「x-amz-meta-」、接著是包含使用者定義中繼資料的名稱值配對
+* 「x-amz-meta中繼資料指令」：預設值為「copy」、可讓您複製物件及相關的中繼資料。
++
+您可以指定「放置」、以在複製物件時覆寫現有的中繼資料、或更新物件中繼資料。
+
+* 「X-amz-storage等級」
+* 「x-amz-tagging指令」：預設值為「copy」、可讓您複製物件和所有標記。
++
+您可以指定「放置」、以在複製物件時覆寫現有的標記、或是更新標記。
+
+* S3物件鎖定要求標頭：
++
+** 「X-amz-object-lock-mode」
+** 《X-amz-object-lock-Retain直到日期》
+** 「X-amz-object-lock-legal hold」
++
+如果提出的要求沒有這些標頭、則會使用儲存庫預設保留設定來計算物件版本的保留日期。
+
++
+xref:using-s3-object-lock.adoc[使用S3物件鎖定]
+
+
+
+* SSe要求標頭：
++
+** 「X-amz-copy-sourceSection-server-s側 邊邊邊邊邊邊邊邊邊邊邊邊邊邊邊邊邊邊邊邊邊邊邊邊邊邊邊邊邊邊邊邊邊邊邊邊
+** 「X-amz-copy-sourcez-server端加密客戶金鑰」
+** 「X-amz-copy-sourceSe-ser-side -ence-customer-key-md5」
+** 「X-amz-server端點加密」
+** 「X-amz-server端加密- customer-key-md5」
+** 「X-amz-server端加密客戶金鑰」
+** 「X-amz-server端加密- customer-演算 法」
++
+請參閱 <<Request headers for server-side encryption>>
+
+
+
+
+
+
+
+== 不支援的要求標頭
+
+不支援下列要求標頭：
+
+* 「快取控制」
+* 「內容處理」
+* 「內容編碼」
+* 《內容-語言》
+* 《過期》
+* 「X-amz-website - redirect-location」
+
+
+
+
+== 儲存類別選項
+
+支援「x-amz-Storage-Class」要求標頭、如果StorageGRID 相符的ILM規則指定「雙重認可」或「平衡」的擷取行為、則會影響到所建立的物件複本數量。
+
+* 《標準》
++
+（預設）當ILM規則使用雙重提交選項、或平衡選項回到建立臨時複本時、指定雙重提交擷取作業。
+
+* "educed_deete"
++
+當ILM規則使用雙重提交選項、或平衡選項回到建立過渡複本時、指定單一提交擷取作業。
+
++
+
+NOTE: 如果在啟用S3物件鎖定的情況下、將物件放入儲存區、則會忽略「已儲存的備援」選項。如果您將物件放入符合舊規範的儲存區、則「educed_de隊」選項會傳回錯誤。執行「雙重承諾」的程序時、務必確保符合法規遵循要求。StorageGRID
+
+
+
+
+
+== 在「放置物件-複製」中使用x-amz-copy-來源
+
+如果在「x-amz-copy-SOUR來源」標頭中指定的來源儲存區和金鑰與目的地儲存區和金鑰不同、則會將來源物件資料的複本寫入目的地。
+
+如果來源和目的地相符、且「x-amz-madmad瞭-指令」標頭指定為「放置」、則會使用要求中提供的中繼資料值來更新物件的中繼資料。在這種情況StorageGRID 下、無法重新擷取物件。這有兩個重要後果：
+
+* 您無法使用「放置物件」-「複製」來加密現有物件、或是變更現有物件的加密。如果您提供「x-amz-server端加密」標頭或「x-amz-server端加密- customer-amer-演算法」標頭、StorageGRID 則無法接受要求、並傳回「XNotImplemed」。
+* 不會使用相符ILM規則中指定的擷取行為選項。當ILM由正常背景ILM程序重新評估時、會對更新所觸發的物件放置位置進行任何變更。
++
+這表示、如果ILM規則使用嚴格選項來擷取行為、則無法進行所需的物件放置（例如、因為新需要的位置無法使用）、則不會採取任何行動。更新後的物件會保留其目前的放置位置、直到能夠放置所需的位置為止。
+
+
+
+
+
+== 要求伺服器端加密的標頭
+
+如果您使用伺服器端加密、所提供的要求標頭取決於來源物件是否加密、以及您是否打算加密目標物件。
+
+* 如果來源物件是使用客戶提供的金鑰（SSE-C）加密、您必須在「放置物件-複製」要求中包含下列三個標頭、以便解密物件、然後複製：
++
+** 《x-amz-copy-sourceese-sider-se-ridionese-customer-alr演算 法》指定「AES256」。
+** 「x-amz-copy-sourcez-server端加密客戶金鑰」指定您在建立來源物件時所提供的加密金鑰。
+** 「x-amz-copy-sourceze-server端加密-客戶金鑰-md5」：指定您在建立來源物件時所提供的md5摘要。
+
+
+* 如果您要使用您提供及管理的唯一金鑰來加密目標物件（複本）、請包含下列三個標頭：
++
+** 「X-amz-server端加密客戶演算法」：指定「AES256」。
+** 「X-amz-server端加密客戶金鑰」：為目標物件指定新的加密金鑰。
+** 「X-amz-server端加密- customer-key-md5」：指定新加密金鑰的md5摘要。
+
+
+
+
+*注意：*您提供的加密金鑰永遠不會儲存。如果您遺失加密金鑰、就會遺失對應的物件。在使用客戶提供的金鑰來保護物件資料之前、請先檢閱「使用伺服器端加密」中的考量事項。
+
+* 如果您想要使用StorageGRID 由支援對象（複本）的獨特金鑰來加密目標物件（複本）、請在「放置物件-複製」要求中加入此標頭：
++
+** 「X-amz-server端點加密」
+
+
+
+
+*注意：*無法更新物件的「伺服器端加密」值。相反地、請使用「x-amz-madmite-指令」（「放置」）、使用新的「伺服器端加密」值來製作複本。
+
+
+
+== 版本管理
+
+如果來源儲存區已有版本、您可以使用「x-amz-copy-source-」標頭來複製物件的最新版本。若要複製物件的特定版本、您必須使用「版本ID」子資源明確指定要複製的版本。如果目標儲存區版本已有版本、則產生的版本會傳回「x-amz-verse-id」回應標頭中。如果暫停目標儲存區的版本設定、則「x-amz-version-id」會傳回「null」值。
+
+xref:../ilm/index.adoc[使用ILM管理物件]
+
+xref:using-server-side-encryption.adoc[使用伺服器端加密]
+
+xref:s3-operations-tracked-in-audit-logs.adoc[在稽核記錄中追蹤S3作業]
+
+xref:put-object.adoc[放置物件]

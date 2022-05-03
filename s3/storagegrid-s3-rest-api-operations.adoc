@@ -1,0 +1,52 @@
+---
+permalink: s3/storagegrid-s3-rest-api-operations.html 
+sidebar: sidebar 
+keywords: S3 REST API, S3 operations 
+summary: S3 REST API上新增了特定StorageGRID 於該系統的作業。 
+---
+= 支援SS3 REST API作業StorageGRID
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+S3 REST API上新增了特定StorageGRID 於該系統的作業。
+
+* xref:../s3/get-bucket-consistency-request.adoc[取得時段一致性要求]
++
+「Get Bucket一致性」要求可讓您決定套用至特定Bucket的一致性層級。
+
+* xref:../s3/put-bucket-consistency-request.adoc[置入時段一致性要求]
++
+「放入庫位一致性」要求可讓您指定要套用至庫位執行作業的一致性層級。
+
+* xref:../s3/get-bucket-last-access-time-request.adoc[取得時段上次存取時間要求]
++
+「取得時段上次存取時間」要求可讓您決定是否為個別的時區啟用或停用上次存取時間更新。
+
+* xref:../s3/put-bucket-last-access-time-request.adoc[將時段放入上次存取時間要求]
++
+「放置時段上次存取時間」要求可讓您針對個別的時段啟用或停用上次存取時間更新。停用上次存取時間更新可改善效能、是所有以10.3.0版或更新版本建立之儲存區的預設設定。
+
+* xref:../s3/delete-bucket-metadata-notification-configuration-request.adoc[刪除時段中繼資料通知組態要求]
++
+刪除庫位中繼資料通知組態要求可讓您刪除組態XML、以停用個別庫位的搜尋整合服務。
+
+* xref:../s3/get-bucket-metadata-notification-configuration-request.adoc[取得Bucket中繼資料通知組態要求]
++
+「Get Bucket中繼資料」通知組態要求可讓您擷取組態XML、以設定個別儲存區的搜尋整合。
+
+* xref:../s3/put-bucket-metadata-notification-configuration-request.adoc[放置時段中繼資料通知組態要求]
++
+「置入庫位元資料」通知組態要求可讓您針對個別的庫位啟用搜尋整合服務。您在要求本文中提供的中繼資料通知組態XML、會指定將中繼資料傳送至目的地搜尋索引的物件。
+
+* xref:../s3/get-storage-usage-request.adoc[取得儲存使用量要求]
++
+「Get Storage使用量」要求會告訴您某個帳戶所使用的總儲存容量、以及與該帳戶相關聯的每個儲存區容量。
+
+* xref:../s3/deprecated-bucket-requests-for-legacy-compliance.adoc[舊版法規遵循的已過時資源桶要求]
++
+您可能需要使用StorageGRID Sfs3 REST API來管理使用舊版Compliance功能所建立的儲存區。
+
+

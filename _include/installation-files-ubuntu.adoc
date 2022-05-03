@@ -1,0 +1,73 @@
+= 
+:allow-uri-read: 
+
+
+[cols="1a,1a"]
+|===
+| 路徑和檔案名稱 | 說明 
+
+
+| 每個問題/讀我檔案  a| 
+說明StorageGRID 包含在更新檔中的所有檔案的文字檔。
+
+
+
+| ./cebs/NLF000000.txt  a| 
+非正式作業的NetApp授權檔案、可用於測試及概念驗證部署。
+
+
+
+| ./cebs/storagegrid-webscale-images-version-SHA.deb  a| 
+Deb套件、用於在StorageGRID Ubuntu或Debian主機上安裝不含節點的映像。
+
+
+
+| ./cebs/storagegrid-webscale-images-version-SHA.deb.md5  a| 
+檔案「/debs/storagegrid-webscale-images-version-SHA.deb`」的MD5 Checksum。
+
+
+
+| ./cebs/storagegrid-webscale-service-version-SHA.deb  a| 
+Deb套件、用於在StorageGRID Ubuntu或Debian主機上安裝支援功能主機服務。
+
+
+
+| 部署指令碼工具 | 說明 
+
+
+| ./cebs/configure-storagegrid.py  a| 
+Python指令碼、用於自動化StorageGRID 組態的功能。
+
+
+
+| ./cebs/configure-sga.py  a| 
+Python指令碼、用於自動化StorageGRID 設定不必要的應用程式。
+
+
+
+| ./cebs/storagegrid-ssoauth.py  a| 
+啟用單一登入時、您可用來登入Grid Management API的Python指令碼範例。
+
+
+
+| ./cebs/configure儲存格RID、same.json  a| 
+與「configure - storagegrid：py」指令碼搭配使用的組態檔範例。
+
+
+
+| ./cebs/configure儲存格GRID、blank、json  a| 
+空白組態檔、可搭配「configure - storagegrid．py」指令碼使用。
+
+
+
+| /扣款/額外費用/可選  a| 
+範例Ansible角色與方針、可用來設定Ubuntu或Debian主機以StorageGRID 進行列舉容器部署。您可以視需要自訂角色或方針。
+
+
+
+| ./扣款/其他項目/ API架構  a| 
+API架構StorageGRID 。
+
+*附註*：在執行升級之前、您可以使用這些架構、確認如果StorageGRID 您沒有非正式作業的更新相容性測試用的更新版、您所撰寫的任何程式碼都能與新StorageGRID 版的更新版相容StorageGRID 。
+
+|===

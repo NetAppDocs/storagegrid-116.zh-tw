@@ -1,0 +1,298 @@
+---
+permalink: sg5600/e5600sg-controller-seven-segment-display-codes.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, seven-segment display, seven segment display, 7-segment display, 7 segment display, display, code, codes, status, error, boot-up, power-up, boot, e5600sg, Service Action Allowed LED, Service Action Required LED, Service Action Allowed, Service Action Required, LED, 19, 68, AA, FF, HI, PP, HP, RB, FP, HE, HC, HO, HA, 22, 23, 2A, 2B, 40, 41, 42, 51, 92, 93, 94, 95 96, A0, A1, A2 A3, AB, AE, EA, E8, EU, EP 
+summary: E5600SG控制器上的七區段顯示會在裝置開機時、以及在硬體初始化時顯示狀態和錯誤代碼。您可以使用這些代碼來判斷狀態並疑難排解錯誤。 
+---
+= E5600SG控制器七段顯示代碼
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+E5600SG控制器上的七區段顯示會在裝置開機時、以及在硬體初始化時顯示狀態和錯誤代碼。您可以使用這些代碼來判斷狀態並疑難排解錯誤。
+
+檢閱E5600SG控制器上的狀態和錯誤代碼時、您應該查看下列代碼類型：
+
+* *一般開機代碼*
++
+代表標準開機事件。
+
+* *正常開機代碼*
++
+代表應用裝置中發生的正常開機事件。
+
+* *錯誤代碼*
++
+指出開機事件期間發生的問題。
+
+
+
+僅在E5600SG控制器上控制下列LED、且只有在啟動了《SESSE應用程式安裝程式：StorageGRID StorageGRID
+
+* 允許服務動作LED
+* 所需服務行動LED
+* 七區段顯示
+
+
+image::../media/appliance_e5600_leds.gif[E5600SG控制器上的LED和七段顯示器]
+
+本產品不使用七段顯示器上的小數位數StorageGRID ：
+
+* 最小有效位數旁的上十進位點是平台診斷LED。
++
+這會在重設和初始硬體組態期間開啟。否則、它會關閉。
+
+* 最重要數字旁邊的較低小十進位點會關閉。
+
+
+若要診斷其他問題、您可能需要查看下列資源：
+
+* 若要查看所有其他硬體和環境診斷資訊、請參閱E系列作業系統硬體診斷。
++
+這包括尋找電力、溫度和磁碟機等硬體問題。應用裝置仰賴E系列作業系統來監控所有平台環境狀態。
+
+* 若要判斷韌體和驅動程式問題、請查看SAS和網路連接埠上的連結指示燈。
++
+如需詳細資料、請參閱E系列E5600文件。
+
+
+
+
+
+== 一般開機代碼
+
+在開機期間或硬體硬體重設之後、硬體初始化時、「允許的服務動作」和「需要的服務動作」LED會亮起。七區段顯示器會顯示E系列硬體的相同代碼順序、而非E5600SG控制器特有的代碼順序。
+
+在開機期間、現場可程式化閘陣列（FPGA）會控制硬體的功能和初始化。
+
+|===
+| 程式碼 | 指示 
+
+
+ a| 
+19
+ a| 
+FPGA初始化：
+
+
+
+ a| 
+68
+ a| 
+FPGA初始化：
+
+
+
+ a| 
+...
+ a| 
+FPGA初始化。這是快速的一連串程式碼。
+
+
+
+ a| 
+機管局
+ a| 
+平台BIOS開機：
+
+
+
+ a| 
+FF
+ a| 
+BIOS開機完成。這是E5600SG控制器初始化及管理LED以指出狀態之前的中間狀態。
+
+|===
+顯示AA和FF代碼後、可能會出現正常開機代碼或顯示錯誤代碼。此外、「允許的服務行動」和「需要的服務行動」LED燈也會關閉。
+
+
+
+== 正常開機代碼
+
+這些代碼代表設備中發生的正常開機事件、依時間順序排列。
+
+|===
+| 程式碼 | 指示 
+
+
+ a| 
+嗨
+ a| 
+主開機指令碼已啟動。
+
+
+
+ a| 
+PP
+ a| 
+平台FPGA韌體正在檢查更新。
+
+
+
+ a| 
+HP
+ a| 
+主機介面卡（HIC）正在檢查更新。
+
+
+
+ a| 
+經常預算
+ a| 
+韌體更新之後、系統會在必要時重新開機。
+
+
+
+ a| 
+FP
+ a| 
+韌體更新檢查已完成。啟動與E2700控制器通訊及管理的程序（utmagent)。此程序有助於設備資源配置。
+
+
+
+ a| 
+他
+ a| 
+系統正在與E系列作業系統同步。
+
+
+
+ a| 
+硬拷貝
+ a| 
+正在檢查此安裝。StorageGRID
+
+
+
+ a| 
+好
+ a| 
+安裝管理和主動式介面正在進行。
+
+
+
+ a| 
+HA
+ a| 
+Linux作業系統和StorageGRID 功能不再是問題。
+
+|===
+
+
+== E5600SG控制器錯誤代碼
+
+這些代碼代表當設備開機時、E5600SG控制器上可能會顯示的錯誤狀況。如果發生特定的低層硬體錯誤、則會顯示其他兩位數的十六進位代碼。如果上述任一代碼持續超過一或兩秒鐘、或您無法依照其中一項規定的疑難排解程序來解決錯誤、請聯絡技術支援部門。
+
+|===
+| 程式碼 | 指示 
+
+
+ a| 
+22
+ a| 
+在任何開機裝置上找不到主要開機記錄。
+
+
+
+ a| 
+23
+ a| 
+未安裝SATA磁碟機。
+
+
+
+ a| 
+2A、2B
+ a| 
+匯流排卡住、無法讀取DIMM SPD資料。
+
+
+
+ a| 
+40
+ a| 
+無效的DIMM。
+
+
+
+ a| 
+41.
+ a| 
+無效的DIMM。
+
+
+
+ a| 
+42.
+ a| 
+記憶體測試失敗。
+
+
+
+ a| 
+51.
+ a| 
+SPD讀取失敗。
+
+
+
+ a| 
+92至96
+ a| 
+PCI匯流排初始化。
+
+
+
+ a| 
+從A0到A3.
+ a| 
+SATA磁碟機初始化。
+
+
+
+ a| 
+AB
+ a| 
+替代開機代碼。
+
+
+
+ a| 
+AE
+ a| 
+開機作業系統：
+
+
+
+ a| 
+企業
+ a| 
+DDR3訓練失敗。
+
+
+
+ a| 
+E8.
+ a| 
+未安裝記憶體。
+
+
+
+ a| 
+歐盟
+ a| 
+找不到安裝指令碼。
+
+
+
+ a| 
+EP
+ a| 
+「ManageSGA」代碼表示與E2700控制器的預先網格通訊失敗。
+
+|===
+xref:troubleshooting-hardware-installation.adoc[疑難排解硬體安裝（SG5600）]
+
+https://mysupport.netapp.com/site/global/dashboard["NetApp支援"^]

@@ -1,0 +1,40 @@
+---
+permalink: maintain/checking-systems-condition-before-applying-hotfix.html 
+sidebar: sidebar 
+keywords: storagegrid, hotfix 
+summary: 您必須驗證系統是否已準備好容納此修復程式。 
+---
+= 在套用修補程式之前、請先檢查系統狀況
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須驗證系統是否已準備好容納此修復程式。
+
+. 使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+. 如有可能、請確定系統正常運作、且所有網格節點均已連接至網格。
++
+連接的節點有綠色核取符號 image:../media/icon_alert_green_checkmark.png["圖示警示綠色勾選標記"] 在節點頁面上。
+
+. 如有可能、請檢查並解決任何目前的警示。
++
+如需特定警示的相關資訊、請參閱監控StorageGRID 和疑難排解功能的說明。
+
+. 確保沒有其他維護程序在進行中、例如升級、恢復、擴充或取消委任程序。
++
+在套用修補程式之前、您應該先等待任何作用中的維護程序完成。
+
++
+當另一個維護程序正在執行時、您無法套用StorageGRID 此修復程式。例如、當取消委任、擴充或還原程序執行時、您無法套用修補程式。
+
++
+
+NOTE: 如果節點或站台停用程序暫停、您可以安全地套用修補程式。此外、StorageGRID 您也可以在更新程序的最後階段套用修補程式。如需詳細資訊、請參閱升級StorageGRID 版的介紹。
+
+
+
+xref:../monitor/index.adoc[監控及疑難排解]
+
+xref:pausing-and-resuming-decommission-process-for-storage-nodes.adoc[暫停並恢復儲存節點的取消委任程序]

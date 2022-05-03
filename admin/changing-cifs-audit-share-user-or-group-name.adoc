@@ -1,0 +1,26 @@
+---
+permalink: admin/changing-cifs-audit-share-user-or-group-name.html 
+sidebar: sidebar 
+keywords: CIFS audit share, change group name, change use for CIFS 
+summary: 您可以新增新的使用者或群組、然後刪除舊的使用者或群組、來變更CIFS稽核共用的使用者或群組名稱。 
+---
+= 變更CIFS稽核共用使用者或群組名稱
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以新增新的使用者或群組、然後刪除舊的使用者或群組、來變更CIFS稽核共用的使用者或群組名稱。
+
+透過CIFS/Samba進行的稽核匯出已過時、將在未來StorageGRID 的版本中移除。
+
+.步驟
+. 將新的使用者或群組以更新名稱新增至稽核共用區。
+. 刪除舊的使用者或群組名稱。
+
+
+.相關資訊
+* xref:adding-user-or-group-to-cifs-audit-share.adoc[將使用者或群組新增至CIFS稽核共用區]
+* xref:removing-user-or-group-from-cifs-audit-share.adoc[從CIFS稽核共用區移除使用者或群組]
+

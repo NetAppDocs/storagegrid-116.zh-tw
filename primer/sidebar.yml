@@ -1,0 +1,61 @@
+---
+section: primer
+title: 網格入門指南
+entries:
+- title: 總覽
+  pdf-filename: 網格入門指南StorageGRID
+  url: "/primer/index.html"
+- title: 混合雲StorageGRID 與功能
+  url: "/primer/hybrid-clouds-with-storagegrid.html"
+- title: 架構與網路拓撲
+  url: "/primer/storagegrid-architecture-and-network-topology.html"
+- title: 物件管理
+  entries:
+  - title: 如何管理資料StorageGRID
+    url: "/primer/how-storagegrid-manages-data.html"
+  - title: 物件生命週期
+    entries:
+    - title: 物件的壽命
+      url: "/primer/life-of-object.html"
+    - title: 擷取資料流
+      url: "/primer/ingest-data-flow.html"
+    - title: 複本管理
+      url: "/primer/copy-management.html"
+    - title: 擷取資料流
+      url: "/primer/retrieve-data-flow.html"
+    - title: 刪除資料流程
+      url: "/primer/delete-data-flow.html"
+- title: 如何使用StorageGRID 此功能
+  entries:
+  - title: 瀏覽Grid Manager
+    url: "/primer/exploring-grid-manager.html"
+  - title: 探索租戶管理程式
+    url: "/primer/exploring-tenant-manager.html"
+  - title: 控制StorageGRID 功能存取
+    url: "/primer/controlling-storagegrid-access.html"
+  - title: 管理租戶和用戶端連線
+    url: "/primer/managing-tenants-and-client-connections.html"
+  - title: 設定網路設定
+    url: "/primer/configuring-network-settings.html"
+  - title: 設定安全性設定
+    url: "/primer/configuring-security-settings.html"
+  - title: 設定系統設定
+    url: "/primer/configuring-system-settings.html"
+  - title: 使用資訊生命週期管理
+    url: "/primer/using-information-lifecycle-management.html"
+  - title: 監控作業
+    entries:
+    - title: 檢視節點頁面
+      url: "/primer/viewing-nodes-page.html"
+    - title: 監控及管理警示
+      url: "/primer/monitoring-and-managing-alerts.html"
+    - title: 使用SNMP監控
+      url: "/primer/using-snmp-monitoring.html"
+    - title: 檢閱稽核訊息
+      url: "/primer/reviewing-audit-messages.html"
+  - title: 執行維護
+    url: "/primer/performing-maintenance-procedures.html"
+  - title: 下載恢復套件
+    url: "/primer/downloading-recovery-package.html"
+  - title: 使用支援選項
+    url: "/primer/using-storagegrid-support-options.html"

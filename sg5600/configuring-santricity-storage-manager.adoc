@@ -1,0 +1,14 @@
+---
+permalink: sg5600/configuring-santricity-storage-manager.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, SANtricity Storage Manager, SANtricity, Storage Manager, configure, configuring, setup, set up, setting up, e2700 
+summary: 您可以使用SANtricity NetApp儲存管理程式來監控StorageGRID 您的應用程式中儲存磁碟和硬體元件的狀態。若要存取此軟體、您必須知道E2700控制器（應用裝置中的儲存控制器）上管理連接埠1的IP位址。 
+---
+= 設定SANtricity NetApp儲存管理程式
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用SANtricity NetApp儲存管理程式來監控StorageGRID 您的應用程式中儲存磁碟和硬體元件的狀態。若要存取此軟體、您必須知道E2700控制器（應用裝置中的儲存控制器）上管理連接埠1的IP位址。

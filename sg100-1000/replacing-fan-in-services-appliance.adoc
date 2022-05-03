@@ -1,0 +1,82 @@
+---
+permalink: sg100-1000/replacing-fan-in-services-appliance.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, Replacing, replace, fan, remove, removing, removal, install, installing, installation 
+summary: 服務應用裝置有八個冷卻風扇。如果其中一個風扇故障、您必須儘快更換、以確保產品具有適當的冷卻效果。 
+---
+= 更換服務應用裝置中的風扇
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+服務應用裝置有八個冷卻風扇。如果其中一個風扇故障、您必須儘快更換、以確保產品具有適當的冷卻效果。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您已將替換風扇解壓縮。
+* 您有 xref:locating-controller-in-data-center.adoc[實際放置設備]。
+* 您已確認其他風扇已安裝並執行。
+* 您有 xref:placing-appliance-into-maintenance-mode.adoc[將設備置於維護模式]。
+
+
+更換風扇時、無法存取應用裝置節點。
+
+圖示為服務應用裝置的風扇。將產品的頂蓋從產品上卸下後、即可接觸到冷卻風扇。
+
+
+NOTE: 兩個電源供應器單元中的每個單元都有一個風扇。這些風扇不包含在此程序中。
+
+image::../media/fan_fru.png[風扇FRU]
+
+.步驟
+. 當產品處於維護模式時、請關閉產品電源。
++
+.. 登入網格節點：
++
+... 輸入下列命令：「sh admin@_grid_node_ip_`」
+... 輸入「passwords.txt」檔案中所列的密碼。
+... 輸入下列命令以切換至root：「u -」
+... 輸入「passwords.txt」檔案中所列的密碼。
++
+以root登入時、提示會從「$」變更為「#」。
+
+
+
+.. 關閉服務應用裝置：+`* shut-h now*
+
+
+. 請使用下列兩種方法之一、確認服務應用裝置的電源已關閉：
++
+** 產品正面的電源指示燈LED會熄滅。
+** BMC介面的「電源控制」頁面表示裝置已關閉。
+
+
+. 將產品從機架中拉出。
+. 提起頂蓋上的栓鎖、然後從產品上取下外蓋。
+. 找出故障的風扇。
++
+image::../media/fan_location.png[風扇位置]
+
+. 將故障風扇從機箱中提出。
++
+image::../media/fan_removal.png[卸下風扇]
+
+. 將替換風扇滑入機箱的開放式插槽。
++
+將風扇邊緣與導銷對齊。照片中的大頭針會圈起。
+
++
+image::../media/fan_guide_pin.png[風扇導引插銷]
+
+. 將風扇的連接器穩固地按入電路板。
++
+image::../media/fan_connector_check.png[風扇連接器檢查]
+
+. 將頂蓋裝回產品上、然後按下栓鎖、將護蓋固定到位。
+. 開啟應用裝置電源、並監控控制器LED和開機代碼。
++
+使用BMC介面來監控開機狀態。
+
+. 確認應用裝置節點出現在Grid Manager中、且未顯示任何警示。
+

@@ -1,0 +1,42 @@
+---
+permalink: sg5600/obtaining-additional-equipment-and-tools-sg5600.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, additional, equipment, tools 
+summary: 安裝SG5600應用裝置之前、請確認您擁有所需的所有額外設備和工具。 
+---
+= 取得額外設備與工具（SG5600）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安裝SG5600應用裝置之前、請確認您擁有所需的所有額外設備和工具。
+
+* *螺絲起子*
++
+image::../media/appliance_screwdrivers.gif[螺絲起子]
+
++
+飛利浦編號2個螺絲起子
+
++
+中型扁平刀鋒螺絲起子
+
+* *電子化軟線帶*
++
+image::../media/appliance_wriststrap.gif[ESD腕帶]
+
+* *乙太網路纜線*
++
+image::../media/appliance_ethernet_cables.gif[乙太網路纜線]
+
+* *乙太網路交換器*
++
+image::../media/appliance_ethernet_switch_network_hub.gif[乙太網路集線器]
+
+* *服務筆記型電腦*xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]
++
+image::../media/appliance_laptop.gif[管理站]
+
+

@@ -1,0 +1,41 @@
+---
+permalink: admin/deleting-traffic-classification-policy.html 
+sidebar: sidebar 
+keywords: delete traffic classification policy 
+summary: 如果不再需要流量分類原則、您可以將其刪除。 
+---
+= 刪除流量分類原則
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果不再需要流量分類原則、您可以將其刪除。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+* 您擁有root存取權限。
+
+
+.步驟
+. 選擇*組態*>*網路*>*流量分類*。
++
+「流量分類原則」頁面隨即出現、表中會列出現有的原則。
+
++
+image::../media/traffic_classification_policies_main_screen_w_examples.png[流量分類原則範例]
+
+. 選取您要刪除之原則左側的選項按鈕。
+. 選擇*移除*。
++
+此時會出現警告對話方塊。
+
++
+image::../media/traffic_classification_policy_delete.png[刪除流量分類原則]
+
+. 選擇*確定*以確認您要刪除原則。
++
+原則即會刪除。
+
+

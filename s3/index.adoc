@@ -1,0 +1,14 @@
+---
+permalink: s3/index.html 
+sidebar: sidebar 
+keywords: about s3, s3 overview 
+summary: 支援Simple Storage Service（S3）API、這是一組代表性狀態傳輸（REST）網路服務。StorageGRID支援S3 REST API、可讓您將專為S3網路服務開發的服務導向應用程式、連接到使用StorageGRID 該系統的內部部署物件儲存設備。這需要對用戶端應用程式目前使用S3 REST API呼叫進行最少的變更。 
+---
+= 使用S3：總覽
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+支援簡單儲存服務（S3）API、此API是以代表狀態傳輸（REST）網路服務的形式實作。StorageGRID支援S3 REST API、可讓您將專為S3網路服務開發的服務導向應用程式、連接到使用StorageGRID 該系統的內部部署物件儲存設備。這需要將用戶端應用程式目前使用S3 REST API呼叫的變更降至最低。

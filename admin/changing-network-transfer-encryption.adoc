@@ -1,0 +1,30 @@
+---
+permalink: admin/changing-network-transfer-encryption.html 
+sidebar: sidebar 
+keywords: network transfer encryption, TLS algorithm 
+summary: 此系統使用傳輸層安全性（TLS）來保護網格節點之間的內部控制流量。StorageGRID「網路傳輸加密」選項可設定TLS用來加密網格節點之間的控制流量的演算法。此設定不會影響資料加密。 
+---
+= 變更網路傳輸加密
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此系統使用傳輸層安全（TLS）StorageGRID 來保護網格節點之間的內部控制流量。「網路傳輸加密」選項可設定TLS用來加密網格節點之間的控制流量的演算法。此設定不會影響資料加密。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+* 您擁有特定的存取權限。
+
+
+依預設、網路傳輸加密使用ES256-SHA演算法。控制流量也可使用ES128/SHA演算法加密。
+
+.步驟
+. 選擇*組態*>*系統*>*網格選項*。
+. 在「Network Options（網路選項）」區段中、將「Network Transfer Encryption（網路傳輸加密）」變更為* AES128/SHA*或* AES256-SHA*（預設）。
++
+image::../media/network_transfer_encryption.png[網格組態網路加密]
+
+. 選擇*保存*。
+

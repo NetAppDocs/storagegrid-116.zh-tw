@@ -1,0 +1,21 @@
+---
+permalink: maintain/hotfix-planning-and-preparation.html 
+sidebar: sidebar 
+keywords: storagegrid, hotfix, prepare for a hotfix, plan for a hotfix 
+summary: 您必須事先規劃、再套用修補程式、以確保StorageGRID 盡量減少對您的作業系統造成的中斷。 
+---
+= 規劃並準備熱修復
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須事先規劃、再套用修補程式、以確保StorageGRID 盡量減少對您的作業系統造成的中斷。
+
+.步驟
+* xref:how-your-system-is-affected-when-you-apply-hotfix.adoc[套用熱修復程式時、系統受到的影響]
+* xref:obtaining-required-materials-for-hotfix.adoc[取得修補程式所需的資料]
+* xref:downloading-hotfix-file.adoc[正在下載熱修復檔案]
+* xref:checking-systems-condition-before-applying-hotfix.adoc[在套用修補程式之前、請先檢查系統的狀況]
+

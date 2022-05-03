@@ -1,0 +1,21 @@
+---
+permalink: ilm/using-storage-pool-as-temporary-location-deprecated.html 
+sidebar: sidebar 
+keywords: storage pool temporary location 
+summary: 當您使用包含單一儲存資源池的物件放置方式建立ILM規則時、系統會提示您指定第二個儲存資源池作為暫用位置。 
+---
+= 使用儲存資源池做為暫用位置（已過時）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當您使用包含單一儲存資源池的物件放置方式建立ILM規則時、系統會提示您指定第二個儲存資源池作為暫用位置。
+
+暫用位置已過時、未來版本將會移除。您不應該選取儲存資源池做為新ILM規則的暫用位置。
+
+
+NOTE: 如果您選取嚴格擷取行為（建立ILM規則精靈的步驟3）、則會忽略暫存位置。
+
+xref:data-protection-options-for-ingest.adoc[用於擷取的資料保護選項]

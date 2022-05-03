@@ -1,0 +1,58 @@
+---
+permalink: maintain/service-with-error-state.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, service error state, error, error state 
+summary: 如果偵測到某項服務已進入錯誤狀態、請嘗試重新啟動該服務。 
+---
+= 具有錯誤狀態的服務
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果偵測到某項服務已進入錯誤狀態、請嘗試重新啟動該服務。
+
+您必須擁有「passwors.txt」檔案。
+
+伺服器管理程式會監控服務、並重新啟動任何非預期停止的服務。如果某項服務失敗、伺服器管理員會嘗試重新啟動該服務。如果在五分鐘內有三次嘗試啟動服務失敗、服務會進入錯誤狀態。伺服器管理程式不會嘗試重新啟動。
+
+.步驟
+. 登入網格節點：
++
+.. 輸入下列命令：「sh admin@_grid_node_ip_`」
+.. 輸入「passwords.txt」檔案中所列的密碼。
+.. 輸入下列命令以切換至root：「u -」
+.. 輸入「passwords.txt」檔案中所列的密碼。
+
+
++
+以root登入時、提示會從「$」變更為「#」。
+
+. 確認服務的錯誤狀態：「servicervice _servicenamenam__ STATUS」（服務_服務名稱_狀態）
++
+例如：
+
++
+[listing]
+----
+service ldr status
+----
++
+如果服務處於錯誤狀態、則會傳回下列訊息：「_servicename_ in error現況」。例如：
+
++
+[listing]
+----
+ldr in error state
+----
++
+
+NOTE: 如果服務狀態為「停用」、請參閱的說明 xref:removing-donotstart-file-for-service.adoc[移除服務的DoNotStart檔案]。
+
+. 嘗試重新啟動服務以移除錯誤狀態：「servicervice _servicenamen_ reamt」
++
+如果服務無法重新啟動、請聯絡技術支援部門。
+
+. 登出命令Shell：「exit」
+

@@ -1,0 +1,14 @@
+---
+permalink: sg100-1000/configuring-storagegrid-connections-sg100-and-sg1000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, storagegrid connections, connections, configure, setup, set up 
+summary: 您StorageGRID 必須先設定應用裝置與您計畫使用的網路之間的連線、才能將服務應用裝置部署為作業系統的節點。您可以瀏覽StorageGRID 至預先安裝在服務應用裝置上的《支援服務應用程式安裝程式」、以設定網路功能。 
+---
+= 設定StorageGRID 鏈接（SG100和SG1000）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您StorageGRID 必須先設定應用裝置與您計畫使用的網路之間的連線、才能將服務應用裝置部署為作業系統的節點。您可以瀏覽StorageGRID 至預先安裝在服務應用裝置上的《支援服務應用程式安裝程式」、以設定網路功能。

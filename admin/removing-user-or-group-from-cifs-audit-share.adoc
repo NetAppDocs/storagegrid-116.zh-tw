@@ -1,0 +1,84 @@
+---
+permalink: admin/removing-user-or-group-from-cifs-audit-share.html 
+sidebar: sidebar 
+keywords: cifs audit client 
+summary: 您無法移除上次允許存取稽核共用的使用者或群組。 
+---
+= 從CIFS稽核共用區移除使用者或群組
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您無法移除上次允許存取稽核共用的使用者或群組。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您的「Passwords．txt」檔案含有root帳戶密碼（可在上述套件中找到）。
+* 您有「Configuration．TXT」檔案（可在上述套件中找到）。
+
+
+透過CIFS/Samba進行的稽核匯出已過時、將在未來StorageGRID 的版本中移除。
+
+.步驟
+. 登入主要管理節點：
++
+.. 輸入下列命令：「sh admin@_primary管理節點IP」
+.. 輸入「passwords.txt」檔案中所列的密碼。
+.. 輸入下列命令以切換至root：「u -」
+.. 輸入「passwords.txt」檔案中所列的密碼。
++
+以root登入時、提示會從「$」變更為「#」。
+
+
+
+. 啟動CIFS組態公用程式：「config_CIFs.rb」
++
+[listing]
+----
+
+---------------------------------------------------------------------
+| Shares                 | Authentication         | Config          |
+---------------------------------------------------------------------
+| add-audit-share        | set-authentication     | validate-config |
+| enable-disable-share   | set-netbios-name       | help            |
+| add-user-to-share      | join-domain            | exit            |
+| remove-user-from-share | add-password-server    |                 |
+| modify-group           | remove-password-server |                 |
+|                        | add-wins-server        |                 |
+|                        | remove-wins-server     |                 |
+---------------------------------------------------------------------
+----
+. 開始移除使用者或群組：「移除使用者自共用區」
++
+系統會顯示管理節點可用稽核共用的編號清單。稽核共用會標示為稽核匯出。
+
+. 輸入稽核共用區的編號：「_nap_share_number_」
+. 當系統提示您移除使用者或群組時：「使用者」或「群組」
++
+隨即顯示稽核共用的使用者或群組編號清單。
+
+. 輸入您要移除的使用者或群組對應的號碼：「_number_」
++
+稽核共用區將會更新、且使用者或群組不再允許存取稽核共用區。例如：
+
++
+[listing]
+----
+Enabled shares
+ 1. audit-export
+Select the share to change: 1
+Remove user or group? [User/group]: User
+Valid users for this share
+1. audituser
+2. newaudituser
+Select the user to remove: 1
+
+Removed user "audituser" from share "audit-export".
+
+Press return to continue.
+----
+. 關閉CIFS組態公用程式：「Exit（結束）」
+. 如果StorageGRID 此功能包括其他站台的管理節點、請視需要停用每個站台的稽核共用。
+. 設定完成時、請登出每個命令Shell：「exit」
+

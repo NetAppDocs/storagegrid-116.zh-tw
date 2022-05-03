@@ -1,0 +1,26 @@
+---
+permalink: maintain/fixing-mssing-network-interface-errors.html 
+sidebar: sidebar 
+keywords: storagegrid, network interface, network interface error 
+summary: 如果主機網路設定不正確或名稱拼錯、StorageGRID 當執行下列動作時、會發生錯誤：當檢查/etc/storagegRID / nodes/<node-name\>.conf檔案中指定的對應時、出現錯誤。 
+---
+= 修正遺失的網路介面錯誤
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果主機網路設定不正確、或名稱拼錯、StorageGRID 則當執行下列動作時、會發生錯誤：檢查在/etc/storagegRid/nodes/_noce-name_.conf檔案中指定的對應。
+
+您可能會看到與此模式相符的錯誤或警告：
+
+「正在檢查節點_node-name_...的組態檔/etc/storagegrid / nodes/_noce-name_.conf」 「錯誤：_norme-name_：GRID_NETWORD_target =_host-interface-name_」'_node-name_：介面「_host-interface-name_」不存在。
+
+可能會針對Grid Network、管理網路或用戶端網路回報錯誤。此錯誤表示、/etc/storagegRid/nodes/_noce-name_.conf檔案會將所示StorageGRID 的支援網路對應至名為「_host-interface-name_」的主機介面、但目前主機上沒有該名稱的介面。
+
+如果收到此錯誤、請確認您已完成中的步驟 xref:deploying-new-linux-hosts.adoc[部署新的Linux主機]。對所有主機介面使用與原始主機相同的名稱。
+
+如果無法命名主機介面以符合節點組態檔、您可以編輯節點組態檔、並變更GRID_NETWORD_target、ADD_NETWORD_target或用戶端網路目標的值、以符合現有的主機介面。
+
+確定主機介面可存取適當的實體網路連接埠或VLAN、而且介面不會直接參照連結或橋接裝置。您必須在主機上的連結裝置上設定VLAN（或其他虛擬介面）、或使用橋接器和虛擬乙太網路（vith）配對。

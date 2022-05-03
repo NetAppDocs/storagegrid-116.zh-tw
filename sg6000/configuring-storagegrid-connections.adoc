@@ -1,0 +1,14 @@
+---
+permalink: sg6000/configuring-storagegrid-connections.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, storagegrid connections, connections, configure, setup, set up 
+summary: 您必須先設定應用裝置與您計畫使用的網路之間的連線、才能將StorageGRID 該應用裝置部署為StorageGRID 作業系統的儲存節點。您可以瀏覽StorageGRID 至預先安裝在SG6000-CNTM控制器（運算控制器）上的《Setse-Appliance Installer》（更新版本）、以設定網路功能。 
+---
+= 設定StorageGRID 鏈接（SG6000）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須先設定應用裝置與您計畫使用的網路之間的連線、才能將StorageGRID 該應用裝置部署為StorageGRID 作業系統的儲存節點。您可以瀏覽StorageGRID 至預先安裝在SG6000-CNTM控制器（運算控制器）上的《SESSE-Appliance安裝程式》、以設定網路功能。

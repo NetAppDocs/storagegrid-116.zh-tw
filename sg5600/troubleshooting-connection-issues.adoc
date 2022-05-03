@@ -1,0 +1,46 @@
+---
+permalink: sg5600/troubleshooting-connection-issues.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, troubleshoot, troubleshooting, connection 
+summary: 如果StorageGRID 在安裝過程中遇到連線問題、您應該執行列出的修正行動步驟。 
+---
+= 疑難排解連線問題（SG5600）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果StorageGRID 在安裝過程中遇到連線問題、您應該執行列出的修正行動步驟。
+
+
+
+== 無法StorageGRID 透過網路連線至無法使用的應用裝置
+
+如果您無法連線至應用裝置、可能是網路問題、或是硬體安裝未成功完成。
+
+* *問題*
++
+您無法連線至產品。
+
+* *原因*
++
+如果發生網路問題或硬體安裝未成功完成、就可能發生這種情況。
+
+* *修正行動*
++
+.. Ping應用裝置：+`* ping _E5600_控制 器_ip_*
+.. 開啟瀏覽器並輸入下列命令、即可存取StorageGRID 《NetApp®產品安裝程式》：+`* https://_Management_Port_IP_:8443*`
++
+針對Management_Port_IP、輸入E5600SG控制器上管理連接埠1的IP位址（在實體安裝期間配置）。
+
+.. 按一下「*設定管理網路*」、然後檢查IP。
+.. 如果您收到來自ping的回應、請檢查防火牆中的連接埠8443是否已開啟。
+.. 重新啟動應用裝置。
+.. 重新整理安裝網頁。
+.. 如果這無法解決連線問題、請聯絡NetApp支援網站： http://mysupport.netapp.com/["mysupport.netapp.com"^]。
+
+
+
+
+xref:e5600sg-controller-seven-segment-display-codes.adoc[E5600SG控制器七段顯示代碼]

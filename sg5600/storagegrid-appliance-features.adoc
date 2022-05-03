@@ -1,0 +1,24 @@
+---
+permalink: sg5600/storagegrid-appliance-features.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, features 
+summary: 該產品提供整合式儲存解決方案、可用來建立新的支援系統或擴充現有系統的容量。StorageGRID StorageGRID 
+---
+= 應用程式功能StorageGRID
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+該產品提供整合式儲存解決方案、可用來建立新的支援系統或擴充現有系統的容量。StorageGRID StorageGRID
+
+本產品提供下列功能：StorageGRID
+
+* 將「穩定儲存節點」運算與儲存元件結合StorageGRID 成單一、高效率、整合式的解決方案
+* 簡化儲存節點的安裝與組態、將大部分必要程序自動化
+* 提供高密度儲存解決方案、提供兩種機箱選項：一個是2U、另一個是4U
+* 直接使用10-GbE IP介面連至儲存節點、不需要使用FC或iSCSI等中繼儲存介面
+* 可用於使用StorageGRID 各種功能的混合式網格環境、其中使用了各種功能完善的應用程式、以及虛擬（軟體型）儲存節點
+* 內含預先設定的儲存設備、並預先載入StorageGRID 《Some Appliance Installer》（E5600SG控制器上）、以利現場就緒的軟體部署與整合
+

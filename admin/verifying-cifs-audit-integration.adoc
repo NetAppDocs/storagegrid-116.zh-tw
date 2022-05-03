@@ -1,0 +1,14 @@
+---
+permalink: admin/verifying-cifs-audit-integration.html 
+sidebar: sidebar 
+keywords: verify cifs, cift audit share 
+summary: 稽核共用為唯讀。記錄檔是供電腦應用程式讀取、驗證不包括開啟檔案。稽核日誌檔顯示在Windows檔案總管視窗中的驗證已足夠。連線驗證完成後、請關閉所有視窗。 
+---
+= 驗證CIFS稽核整合
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+稽核共用為唯讀。記錄檔是供電腦應用程式讀取、驗證不包括開啟檔案。稽核日誌檔顯示在Windows檔案總管視窗中的驗證已足夠。連線驗證完成後、請關閉所有視窗。

@@ -1,0 +1,16 @@
+---
+permalink: admin/global-certificate-types.html 
+sidebar: sidebar 
+keywords: rsa, ecdsa, custom certificate encryption 
+summary: 支援使用RSA或ECDSA（Elliptic曲線數位簽章演算法）加密的伺服器StorageGRID 憑證。 
+---
+= 支援的伺服器憑證類型
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+支援使用RSA或ECDSA（Elliptic曲線數位簽章演算法）加密的自訂憑證。StorageGRID
+
+如需StorageGRID 更多關於如何保護REST API用戶端連線的資訊、請參閱 xref:../s3/index.adoc[使用S3] 或 xref:../swift/index.adoc[使用Swift]。

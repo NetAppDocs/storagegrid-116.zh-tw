@@ -1,0 +1,67 @@
+---
+permalink: admin/editing-tenant-account.html 
+sidebar: sidebar 
+keywords: edit tenant account, change tenant name, allow platform services, tenant quota 
+summary: 您可以編輯租戶帳戶以變更顯示名稱、變更身分識別來源設定、允許或禁止平台服務、或輸入儲存配額。 
+---
+= 編輯租戶帳戶
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以編輯租戶帳戶以變更顯示名稱、變更身分識別來源設定、允許或禁止平台服務、或輸入儲存配額。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+* 您擁有特定的存取權限。
+
+
+.步驟
+. 選取*租戶*。
++
+image::../media/tenant_accounts_page.png[租戶帳戶頁面]
+
+. 選取您要編輯的租戶帳戶。
++
+使用搜尋方塊、依名稱或租戶ID搜尋租戶帳戶。
+
+. 從「動作」下拉式清單中、選取*「編輯」*。
++
+此範例適用於不使用單一登入（SSO）的網格。此租戶帳戶尚未設定自己的身分識別來源。
+
++
+image::../media/edit_tenant_account.png[編輯租戶帳戶]
+
+. 視需要變更這些欄位的值：
++
+** *名稱*
+** *說明*
+** *用戶端類型*
+** *儲存配額*
+
+
+. 選擇*繼續*。
+. 選取或取消選取租戶帳戶的權限。
++
+** 如果您停用已在使用的租戶*平台服務*、則他們針對S3儲存區所設定的服務將停止運作。不會傳送錯誤訊息給租戶。例如、如果租戶已設定S3儲存區的CloudMirror複寫、他們仍可將物件儲存在儲存區中、但這些物件的複本將不再建立在已設定為端點的外部S3儲存區中。
+** 變更*使用自己的身分識別來源*核取方塊的設定、以判斷租戶帳戶是否使用自己的身分識別來源、或是為Grid Manager設定的身分識別來源。
++
+如果*使用自己的身分識別來源*核取方塊為：
+
++
+*** 停用並勾選、表示租戶已啟用自己的身分識別來源。租戶必須先停用其身分識別來源、才能使用為Grid Manager設定的身分識別來源。
+*** 停用或取消核取、StorageGRID SSO會啟用以供整個作業系統使用。租戶必須使用為Grid Manager設定的身分識別來源。
+
+
+** 視需要啟用或停用* S3 Select *。請參閱 xref:manage-s3-select-for-tenant-accounts.adoc[管理用戶帳戶的S3 Select]。
+
+
+. 選擇*保存*。
+
+
+.相關資訊
+* xref:manage-platform-services-for-tenants.adoc[管理S3租戶帳戶的平台服務]
+* xref:../tenant/index.adoc[使用租戶帳戶]
+

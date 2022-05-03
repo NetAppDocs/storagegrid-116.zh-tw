@@ -1,0 +1,74 @@
+---
+permalink: ilm/step-3-of-3-define-ingest-behavior.html 
+sidebar: sidebar 
+keywords: ilm rule step 3, define ingest behavior 
+summary: 建立ILM規則精靈的步驟3（定義擷取行為）可讓您選擇此規則篩選的物件在擷取時如何受到保護。 
+---
+= 步驟3之3：定義擷取行為
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+建立ILM規則精靈的步驟3（定義擷取行為）可讓您選擇此規則篩選的物件在擷取時如何受到保護。
+
+可以製作過渡複本、並將物件排入佇列、以便稍後進行ILM評估、也可以製作複本、以立即符合規則的放置指示。StorageGRID
+
+image::../media/define_ingest_behavior_for_ilm_rule.png[建立ILM規則步驟3（共3步）]
+
+.步驟
+. 選取要在擷取物件時使用的資料保護選項：
++
+[cols="1a,2a"]
+|===
+| 選項 | 說明 
+
+
+ a| 
+嚴格
+ a| 
+請務必在擷取時使用此規則的放置位置。無法進行此規則的放置時、擷取作業會失敗。
+
+
+
+ a| 
+平衡
+ a| 
+最佳ILM效率。在擷取時嘗試此規則的放置位置。無法建立過渡複本。
+
+
+
+ a| 
+雙重承諾
+ a| 
+在擷取時建立過渡複本、並於稍後套用此規則的放置位置。
+
+|===
++
+Balanced結合了資料安全性與效率、在大多數情況下都適用。嚴格或雙重承諾通常用於滿足特定需求。
+
++
+請參閱 xref:data-protection-options-for-ingest.adoc[用於擷取的資料保護選項] 和 xref:advantages-disadvantages-of-ingest-options.adoc[資料保護選項的優點、缺點及限制] 以取得更多資訊。
+
++
+[NOTE]
+====
+如果您選取「嚴格」或「平衡」選項、且規則使用下列其中一個放置位置、就會出現錯誤訊息：
+
+** 第0天的雲端儲存資源池
+** 第0天的歸檔節點
+** 當規則使用使用者定義的建立時間做為參考時間時、即為雲端儲存池或歸檔節點
+
+
+====
+. 選擇*保存*。
++
+ILM規則即會儲存。此規則在新增至ILM原則並啟動該原則之前、不會變成作用中狀態。
+
+
+
+.相關資訊
+* xref:example-5-ilm-rules-and-policy-for-strict-ingest-behavior.adoc[範例5：嚴格擷取行為的ILM規則與原則]
+* xref:creating-ilm-policy.adoc[建立ILM原則]
+

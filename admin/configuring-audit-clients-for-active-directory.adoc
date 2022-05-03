@@ -1,0 +1,189 @@
+---
+permalink: admin/configuring-audit-clients-for-active-directory.html 
+sidebar: sidebar 
+keywords: audit client for ad, active directory 
+summary: 針對StorageGRID 您要從中擷取稽核訊息的各個執行此程序、以利執行此程序。 
+---
+= 設定Active Directory的稽核用戶端
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+針對StorageGRID 您要從中擷取稽核訊息的各個執行此程序、以利執行此程序。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您有「Passwords．txt」檔案、其中包含root / admin帳戶密碼（可在上述套件中找到）。
+* 您有CIFS Active Directory使用者名稱和密碼。
+* 您有「Configuration．TXT」檔案（可在上述套件中找到）。
+
+
+
+NOTE: 透過CIFS/Samba進行的稽核匯出已過時、將在未來StorageGRID 的版本中移除。
+
+.步驟
+. 登入主要管理節點：
++
+.. 輸入下列命令：「sh admin@_primary管理節點IP」
+.. 輸入「passwords.txt」檔案中所列的密碼。
+.. 輸入下列命令以切換至root：「u -」
+.. 輸入「passwords.txt」檔案中所列的密碼。
++
+以root登入時、提示會從「$」變更為「#」。
+
+
+
+. 確認所有服務的狀態均為執行中或已驗證：「toragegrid狀態」
++
+如果所有服務均未執行或「已驗證」、請先解決問題再繼續。
+
+. 返回命令列、按* Ctrl-+* C*。
+. 啟動CIFS組態公用程式：「config_CIFs.rb」
++
+[listing]
+----
+
+---------------------------------------------------------------------
+| Shares                 | Authentication         | Config          |
+---------------------------------------------------------------------
+| add-audit-share        | set-authentication     | validate-config |
+| enable-disable-share   | set-netbios-name       | help            |
+| add-user-to-share      | join-domain            | exit            |
+| remove-user-from-share | add-password-server    |                 |
+| modify-group           | remove-password-server |                 |
+|                        | add-wins-server        |                 |
+|                        | remove-wins-server     |                 |
+---------------------------------------------------------------------
+----
+. 設定Active Directory驗證：「設定驗證」
++
+在大多數部署中、您必須先設定驗證、才能新增稽核用戶端。如果已設定驗證、則會顯示摘要報告訊息。如果已設定驗證、請前往下一步。
+
++
+.. 當系統提示您進行工作群組或Active Directory安裝時：「ad」（廣告）
+.. 出現提示時、請輸入AD網域名稱（簡短網域名稱）。
+.. 出現提示時、請輸入網域控制器的IP位址或DNS主機名稱。
+.. 出現提示時、請輸入完整的網域領域名稱。
++
+使用大寫字母。
+
+.. 當系統提示您啟用winbind支援時、請輸入* y*。
++
+winbind用於從AD伺服器解析使用者和群組資訊。
+
+.. 出現提示時、請輸入NetBios名稱。
+.. 出現提示時、請按* Enter *。
++
+此時會顯示CIFS組態公用程式。
+
+
+
+. 加入網域：
++
+.. 如果尚未啟動、請啟動CIFS組態公用程式：「config_CIFs.rb」
+.. 加入網域：「join網域」
+.. 系統會提示您測試管理節點目前是否為網域的有效成員。如果此管理節點先前尚未加入網域、請輸入：「no」
+.. 出現提示時、請提供系統管理員的使用者名稱：「_Administrator _username_'」
++
+其中、「_Administrator使用者名稱_」是CIFS Active Directory使用者名稱、而非StorageGRID 指不實的使用者名稱。
+
+.. 出現提示時、請提供系統管理員的密碼：「_Administrator密碼_」
++
+「_Administrator密碼」是CIFS Active Directory使用者名稱、而非StorageGRID 「功能密碼」。
+
+.. 出現提示時、請按* Enter *。
++
+此時會顯示CIFS組態公用程式。
+
+
+
+. 確認您已正確加入網域：
++
+.. 加入網域：「join網域」
+.. 當系統提示您測試伺服器目前是否為網域的有效成員時、請輸入：「y」
++
+如果您收到訊息「Join is OK、」、表示您已成功加入網域。如果您沒有收到此回應、請嘗試設定驗證並再次加入網域。
+
+.. 出現提示時、請按* Enter *。
++
+此時會顯示CIFS組態公用程式。
+
+
+
+. 新增稽核用戶端：「add-稽 核共用區」
++
+.. 當系統提示您新增使用者或群組時、請輸入：「user'（使用者）」
+.. 當系統提示您輸入稽核使用者名稱時、請輸入稽核使用者名稱。
+.. 出現提示時、請按* Enter *。
++
+此時會顯示CIFS組態公用程式。
+
+
+
+. 如果允許多個使用者或群組存取稽核共用區、請新增其他使用者：「add-user-to共用區」
++
+隨即顯示已啟用共享區的編號清單。
+
++
+.. 輸入稽核匯出共用的數量。
+.. 當系統提示您新增使用者或群組時、請輸入：「group（群組）」
++
+系統會提示您輸入稽核群組名稱。
+
+.. 當系統提示您輸入稽核群組名稱時、請輸入稽核使用者群組的名稱。
+.. 出現提示時、請按* Enter *。
++
+此時會顯示CIFS組態公用程式。
+
+.. 針對每個具有稽核共用存取權的其他使用者或群組、重複此步驟。
+
+
+. 或者、請驗證您的組態：「valide-config」
++
+系統會檢查並顯示這些服務。您可以安全地忽略下列訊息：
+
++
+** 找不到包含檔案「/etc/samba/includes/cifs-interfaces.inc`」
+** 找不到包含檔案「/etc/samba/includes/cifs-filesystem.inc`」
+** 找不到包含檔案「/etc/samba/includes/cifs-interfaces.inc`」
+** 找不到包含檔案「/etc/samba/includes/cifs-custom-config.inc`」
+** 找不到包含檔案「/etc/samba/includes/cifs-shares.inc`」
+** rlim_max：將rlimation_max（1024）增加至最小Windows限制（16384）
++
+
+IMPORTANT: 請勿將「ecurity=ads」設定與「密碼伺服器」參數結合使用。（根據預設、Samba會自動探索正確的DC）。
+
++
+... 出現提示時、請按* Enter *以顯示稽核用戶端組態。
+... 出現提示時、請按* Enter *。
++
+此時會顯示CIFS組態公用程式。
+
+
+
+
+
+. 關閉CIFS組態公用程式：「Exit（結束）」
+. 如果StorageGRID 這個部署是單一站台、請前往下一步。
++
+或
+
++
+或者、如果StorageGRID 此功能的支援包括其他站台的管理節點、請視需要啟用這些稽核共用：
+
++
+.. 遠端登入站台的管理節點：
++
+... 輸入下列命令：「sh admin@_grid_node_ip_`」
+... 輸入「passwords.txt」檔案中所列的密碼。
+... 輸入下列命令以切換至root：「u -」
+... 輸入「passwords.txt」檔案中所列的密碼。
+
+
+.. 重複這些步驟、為每個管理節點設定稽核共用。
+.. 關閉管理節點的遠端安全Shell登入：「Exit（結束）」
+
+
+. 登出命令Shell：「exit」
+

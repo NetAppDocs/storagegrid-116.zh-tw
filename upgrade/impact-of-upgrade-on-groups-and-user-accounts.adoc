@@ -1,0 +1,33 @@
+---
+permalink: upgrade/impact-of-upgrade-on-groups-and-user-accounts.html 
+sidebar: sidebar 
+keywords: upgrade, permissions 
+summary: 您必須瞭解StorageGRID 升級過程的影響、才能在升級完成後適當地更新群組和使用者帳戶。 
+---
+= 升級對群組和使用者帳戶的影響
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須瞭解StorageGRID 升級過程的影響、才能在升級完成後適當地更新群組和使用者帳戶。
+
+
+
+== 群組權限和選項的變更
+
+升級StorageGRID 到S1611.6之後、可選擇下列更新或新的權限和選項（*組態*>*存取控制*>*管理群組*）。
+
+[cols="1a,2a"]
+|===
+| 權限或選項 | 說明 
+
+
+ a| 
+租戶帳戶
+ a| 
+除了允許使用者建立、編輯及移除租戶帳戶之外、此權限現在還可讓管理員使用者檢視現有的流量分類原則（*組態*>*網路*>*流量分類*）。
+
+|===
+請參閱 xref:../admin/managing-admin-groups.adoc[管理管理群組]。

@@ -1,0 +1,14 @@
+---
+permalink: audit/audit-message-categories.html 
+sidebar: sidebar 
+keywords: storagegrid, audit, message, categories, category, group, groups, organization, class, classes 
+summary: 您應該熟悉稽核訊息分組的各種類別。這些群組是根據訊息所代表的活動類別來組織。 
+---
+= 稽核訊息類別
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您應該熟悉稽核訊息分組的各種類別。這些群組是根據訊息所代表的活動類別來組織。

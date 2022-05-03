@@ -1,0 +1,82 @@
+---
+permalink: sg6000/shutting-down-sg6000-cn-controller.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, power off, turn off, shut off, shutdown, shut down, sg6000-cn, controller 
+summary: 關閉SG6000-CN-控制器以執行硬體維護。 
+---
+= 關閉SG6000-CN.控制器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+關閉SG6000-CN-控制器以執行硬體維護。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您已實際找到需要在資料中心進行維護的SG6000-CN.控制器。
++
+xref:locating-controller-in-data-center.adoc[在資料中心找到控制器]
+
+* 本產品已經使用過 xref:placing-appliance-into-maintenance-mode.adoc[進入維護模式]。
+
+
+為了避免服務中斷、請在關閉控制器之前、確認所有其他儲存節點均已連接至網格、或在可接受服務中斷期間的排程維護期間關閉控制器。如需使用資訊生命週期管理來管理物件的指示、請參閱關於判斷節點連線狀態的資訊。
+
+
+IMPORTANT: 如果您曾經使用過僅建立物件複本的ILM規則、則必須在排程的維護期間關閉控制器。否則、在此程序期間、您可能會暫時失去對這些物件的存取權。
+
++查看資訊生命週期管理的物件管理資訊。
+
+.步驟
+. 當設備進入維護模式時、請關閉SG6000-CN-控制器：
++
+
+CAUTION: 您必須輸入下列指定的命令、以控制控制控制器的關機。使用電源開關關閉控制器會導致資料遺失。
+
++
+.. 使用Putty或其他ssh用戶端登入網格節點：
++
+... 輸入下列命令：「sh admin@_grid_node_ip_`」
+... 輸入「passwords.txt」檔案中所列的密碼。
+... 輸入下列命令以切換至root：「u -」
+... 輸入「passwords.txt」檔案中所列的密碼。
++
+以root登入時、提示會從「$」變更為「#」。
+
+
+
+.. 關閉SG6000-CN-控制器：+`* shut-h now*
++
+此命令可能需要10分鐘才能完成。
+
+
+
+. 請使用下列其中一種方法來驗證SG6000-CN-控制器是否已關機：
++
+** 查看控制器正面的藍色電源LED、確認其已關閉。
++
+image::../media/sg6060_front_panel_power_led_off.jpg[SG6060前面板電源LED -關閉]
+
+** 查看控制器背面兩個電源供應器上的綠色LED、確認它們以正常速度（約每秒一次閃爍）閃爍。
++
+image::../media/sg6060_rear_panel_power_led_on.jpg[SG6060後面板電源LED]
+
+** 使用控制器BMC介面：
++
+... 存取控制器BMC介面。
++
+xref:accessing-bmc-interface-sg6000.adoc[存取BMC介面]
+
+... 選擇*電源控制*。
+... 確認「Power Actions（電源動作）」表示主機目前已關閉。
++
+image::../media/bmc_power_control_page_controller_off.png[BMC Power Control頁面-控制器關閉]
+
+
+
+
+
+
+
+xref:removing-sg6000-cn-controller-from-cabinet-or-rack.adoc[從機櫃或機架上卸下SG6000-CN.控制器]

@@ -1,0 +1,133 @@
+---
+permalink: sg6000/unpacking-boxes-sg6000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, install, installation, unpack, unbox, prepare, inventory, components, contents 
+summary: 安裝StorageGRID 此產品之前、請先打開所有包裝箱的包裝、然後比較包裝單上的物品。 
+---
+= 打開包裝箱（SG6000）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安裝StorageGRID 此產品之前、請先打開所有包裝箱的包裝、然後比較包裝單上的物品。
+
+
+
+== SG6060
+
+* * SG6000-CN*控制器
++
+image::../media/sg6000_cn_front_without_bezel.gif[SG6000-CN.控制器]
+
+* *未安裝磁碟機的E2860控制器機櫃*
++
+image::../media/de460c_table_size.gif[SG5760 4U應用裝置]
+
+* *兩個前擋板*
++
+image::../media/sg6000_front_bezels_for_table.gif[前擋板]
+
+* *兩套軌道套件、附有指示*
++
+image::../media/rail_kit.gif[軌道套件]
+
+* * 60個磁碟機（2個SSD和58 NL-SAS）*
++
+image::../media/sg5760_drive.gif[磁碟機]
+
+* *四個處理點*
++
+image::../media/handles.gif[SG5760處理]
+
+* *用於安裝方孔機架的後支架和鎖緊螺帽*
++
+image::../media/back_brackets_table_size.gif[SG5760的背板和鎖緊螺帽]
+
+
+
+
+
+== SG6060擴充櫃
+
+* *未安裝磁碟機的擴充櫃*
++
+image::../media/de460c_table_size.gif[SG5760 4U應用裝置]
+
+* *前擋板*
++
+image::../media/front_bezel_for_table_de460c.gif[前擋板DE460C]
+
+* * 60 NL-SAS磁碟機*
++
+image::../media/sg5760_drive.gif[磁碟機]
+
+* *單一軌道套件附有說明*
++
+image::../media/rail_kit.gif[軌道套件]
+
+* *四個處理點*
++
+image::../media/handles.gif[SG5760處理]
+
+* *用於安裝方孔機架的後支架和鎖緊螺帽*
++
+image::../media/back_brackets_table_size.gif[SG5760的背板和鎖緊螺帽]
+
+
+
+
+
+== SGF6024
+
+* * SG6000-CN*控制器
++
+image::../media/sg6000_cn_front_without_bezel.gif[SG6000-CN.控制器]
+
+* *安裝24個固態（Flash）磁碟機的EF570 Flash Array *
++
+image::../media/de224c_with_drives.gif[EF570控制器機櫃]
+
+* *兩個前擋板*
++
+image::../media/sgf6024_front_bezels_for_table.png[SG6024前擋板]
+
+* *兩套軌道套件、附有指示*
++
+image::../media/rail_kit.gif[軌道套件]
+
+* *機櫃端蓋*
++
+image::../media/endcaps.png[端點]
+
+
+
+
+
+== 纜線與連接器
+
+產品隨附StorageGRID 下列纜線和接頭：
+
+* *您所在國家/地區的四條電源線*
++
+image::../media/power_cords.gif[電源線]
+
++
+您的機櫃可能有特殊的電源線、您可以使用這些電源線、而非產品隨附的電源線。
+
+* *光纖纜線與SFP收發器*
++
+image::../media/fc_cable_and_sfp.gif[光纖纜線與SFP]
+
++
+四條光纖纜線用於FC互連連接埠
+
++
+四個SFP+收發器、支援16Gb/s FC
+
+* *選購：兩條SAS纜線、用於連接每個SG6060擴充櫃*
++
+image::../media/sas_cable.gif[SAS纜線]
+
+

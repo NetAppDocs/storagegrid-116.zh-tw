@@ -1,0 +1,59 @@
+---
+permalink: audit/object-retrieve-transactions.html 
+sidebar: sidebar 
+keywords: storagegrid, audit, message, Object retrieve, messages, transaction, transactions, s3, swift, trace, SGET, WGET 
+summary: 您可以找出API特定（S3和Swift）稽核訊息、以識別稽核記錄中的物件擷取交易。 
+---
+= 物件擷取交易
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以找出API特定（S3和Swift）稽核訊息、以識別稽核記錄中的物件擷取交易。
+
+下列表格並未列出擷取交易期間產生的所有稽核訊息。僅包含追蹤擷取交易所需的訊息。
+
+
+
+== S3擷取稽核訊息
+
+[cols="1a,1a,2a,1a,1a"]
+|===
+| 程式碼 | 名稱 | 說明 | 追蹤 | 請參閱 
+
+
+ a| 
+SGET
+ a| 
+S3取得
+ a| 
+要求從儲存區擷取物件。
+ a| 
+CBID、S3BK、S3KY
+ a| 
+xref:sget-s3-get.adoc[SGET：S3取得]
+
+|===
+
+
+== 快速擷取稽核訊息
+
+[cols="1a,1a,2a,1a,1a"]
+|===
+| 程式碼 | 名稱 | 說明 | 追蹤 | 請參閱 
+
+
+ a| 
+WGet
+ a| 
+Swift Get
+ a| 
+要求從容器擷取物件。
+ a| 
+CBID、WCON、WOBJ
+ a| 
+xref:wget-swift-get.adoc[WGet：Swift Get]
+
+|===

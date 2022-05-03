@@ -1,0 +1,16 @@
+---
+permalink: sg5600/port-bond-modes-for-e5600sg-controller-ports.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, port bond, port bonding, port bond mode, port-bond mode 
+summary: 設定E5600SG控制器連接埠的網路連結時、您可以使用連接埠連結連接至Grid Network和選用的Client Network的10-GbE連接埠、以及連接至選用管理網路的1-GbE管理連接埠。連接埠連結功能可在StorageGRID 各個解決方案之間提供備援路徑、協助您保護資料。 
+---
+= E5600SG控制器連接埠的連接埠連結模式
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+設定E5600SG控制器連接埠的網路連結時、您可以使用連接埠連結連接至Grid Network和選用的Client Network的10-GbE連接埠、以及連接至選用管理網路的1-GbE管理連接埠。連接埠連結功能可在StorageGRID 各個解決方案之間提供備援路徑、協助您保護資料。
+
+xref:configuring-network-links-sg5600.adoc[設定網路連結（SG5600）]

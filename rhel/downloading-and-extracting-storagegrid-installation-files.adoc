@@ -1,0 +1,105 @@
+---
+permalink: rhel/downloading-and-extracting-storagegrid-installation-files.html 
+sidebar: sidebar 
+keywords: red hat linux installation files, how to download installation files 
+summary: 您必須下載StorageGRID 安裝檔案庫、並擷取所需的檔案。 
+---
+= 下載並解壓縮StorageGRID 安裝檔案
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須下載StorageGRID 安裝檔案庫、並擷取所需的檔案。
+
+.步驟
+. 前往 https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["NetApp下載頁StorageGRID 面"^]。
+. 選取下載最新版本的按鈕、或從下拉式功能表中選取其他版本、然後選取*執行*。
+. 以您NetApp帳戶的使用者名稱和密碼登入。
+. 如果出現Caution/MustRead說明、請閱讀並勾選核取方塊。
++
+
+IMPORTANT: 安裝StorageGRID 完此版本的更新後、您必須套用所有必要的修補程式。如需詳細資訊、請參閱 xref:../maintain/storagegrid-hotfix-procedure.adoc[修復與維護指示中的修復程序程序]。
+
+. 閱讀使用者授權合約、勾選核取方塊、然後選取*接受並繼續*。
+. 在* Install StorageGRID Sort*（安裝）欄中、選取適用於Red Hat Enterprise Linux或CentOS的.tgz或.zip檔案。
++
+
+NOTE: 如果您是在服務筆記型電腦上執行Windows、請選取「.Zip」檔案。
+
+. 儲存並擷取歸檔檔案。
+. 從下列清單中選擇您需要的檔案。
++
+您需要的檔案取決於您規劃的網格拓撲、以及如何部署StorageGRID 您的作業系統。
+
++
+
+NOTE: 表中列出的路徑是相對於擷取安裝歸檔所安裝的最上層目錄
+
+
+
+[cols="1a,1a"]
+|===
+| 路徑和檔案名稱 | 說明 
+
+
+| ./rpms/README  a| 
+說明StorageGRID 包含在更新檔中的所有檔案的文字檔。
+
+
+
+| ./rpms/NLF000000.txt  a| 
+不提供產品任何支援權利的免費授權。
+
+
+
+| ./rpms/StorageGRID-Webscale-Images-_version_-SHA.rpm  a| 
+RPM套件、可在StorageGRID RHEL或CentOS主機上安裝節點鏡像。
+
+
+
+| ./rpms/StorageGRID-Webscale-Service-_version_-SHA.rpm  a| 
+RPM套件、用於在StorageGRID RHEL或CentOS主機上安裝R地 資訊主機服務。
+
+
+
+| 部署指令碼工具 | 說明 
+
+
+| ./rpms/configure-storagegrid.py  a| 
+Python指令碼、用於自動化StorageGRID 組態的功能。
+
+
+
+| ./rpms/configure-sga.py  a| 
+Python指令碼、用於自動化StorageGRID 設定不必要的應用程式。
+
+
+
+| ./rpms/configure儲存格RID、same.json  a| 
+與「configure - storagegrid：py」指令碼搭配使用的組態檔範例。
+
+
+
+| ./rpms/storagegrid-ssoauth.py  a| 
+啟用單一登入時、您可用來登入Grid Management API的Python指令碼範例。
+
+
+
+| ./rpms/configure儲存格RID、blank、json  a| 
+空白組態檔、可搭配「configure - storagegrid．py」指令碼使用。
+
+
+
+| ./rpms/Extas/Ansible  a| 
+設定RHEL或CentOS主機以StorageGRID 進行支援容器部署的Ansible角色與方針範例。您可以視需要自訂角色或方針。
+
+
+
+| ./rpms/Extps/API-架構  a| 
+API架構StorageGRID 。
+
+*附註*：在執行升級之前、您可以使用這些架構、確認如果StorageGRID 您沒有非正式作業的更新相容性測試用的更新版、您所撰寫的任何程式碼都能與新StorageGRID 版的更新版相容StorageGRID 。
+
+|===

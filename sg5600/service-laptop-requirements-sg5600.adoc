@@ -1,0 +1,27 @@
+---
+permalink: sg5600/service-laptop-requirements-sg5600.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, service, laptop, console 
+summary: 安裝StorageGRID 完此款產品硬體之前、您應該先檢查維修用筆記型電腦是否具備所需的最低資源。 
+---
+= 服務筆記型電腦需求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安裝StorageGRID 完此款產品硬體之前、您應該先檢查維修用筆記型電腦是否具備所需的最低資源。
+
+硬體安裝所需的服務筆記型電腦必須符合下列需求：
+
+* Microsoft Windows作業系統
+* 網路連接埠
+* xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]
+* NetApp SANtricity 解決方案儲存管理程式11.40版或更新版本
+* SSH用戶端（例如Putty）
+
+
+xref:../admin/web-browser-requirements.adoc[網頁瀏覽器需求]
+
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61197["NetApp文件：SANtricity NetApp Storage Manager"^]

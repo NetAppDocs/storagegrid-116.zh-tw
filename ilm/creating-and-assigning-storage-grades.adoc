@@ -1,0 +1,69 @@
+---
+permalink: ilm/creating-and-assigning-storage-grades.html 
+sidebar: sidebar 
+keywords: what is a storage grade, create storage grade 
+summary: 儲存等級可識別儲存節點所使用的儲存類型。如果您想要ILM規則將特定物件放置在特定的儲存節點上、而非放置在站台的所有節點上、則可以建立儲存等級。例如、您可能想要將某些物件儲存在最快的儲存節點上、例如StorageGRID ：整合式All Flash儲存設備。 
+---
+= 建立及指派儲存等級
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+儲存等級可識別儲存節點所使用的儲存類型。如果您想要ILM規則將特定物件放置在特定的儲存節點上、而非放置在站台的所有節點上、則可以建立儲存等級。例如、您可能想要將某些物件儲存在最快的儲存節點上、例如StorageGRID ：整合式All Flash儲存設備。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+* 您擁有特定的存取權限。
+
+
+如果您使用一種以上的儲存設備、您可以選擇性地建立儲存設備等級來識別每種類型。建立儲存等級可讓您在設定儲存資源池時、選取特定類型的儲存節點。
+
+如果不擔心儲存等級（例如、所有儲存節點都相同）、您可以跳過此程序、並在設定儲存資源池時使用「All Storage Node」（所有儲存節點）預設儲存等級。
+
+當您在擴充中新增儲存節點時、該節點會新增至All Storage Node預設儲存等級。因此：
+
+* 如果ILM規則使用具有All Storage Node等級的儲存資源池、則可在擴充完成後立即使用新節點。
+* 如果ILM規則使用具有自訂儲存等級的儲存資源池、則除非您手動將自訂儲存等級指派給節點、否則不會使用新節點、如下所述。
+
+
+
+NOTE: 建立儲存等級時、請勿建立比必要更多的儲存等級。例如、請勿為每個儲存節點建立一個儲存等級。而是將每個儲存等級指派給兩個以上的節點。如果只指派給一個節點的儲存等級無法使用、可能會導致ILM待處理記錄。
+
+.步驟
+. 選擇* ILM *>* Storage等級*。
+. 建立儲存等級：
++
+.. 針對您需要定義的每個儲存等級、選取* Insert * image:../media/icon_nms_insert.gif["插入圖示"] 若要新增列並輸入儲存等級的標籤。
++
+無法修改預設儲存等級。它保留給StorageGRID 在進行系統擴充時新增的儲存節點。
+
++
+image::../media/editing_storage_grades.gif[儲存等級頁面]
+
+.. 若要編輯現有的儲存等級、請選取*編輯* image:../media/icon_nms_edit.gif["編輯圖示"] 並視需要修改標籤。
++
+
+NOTE: 您無法刪除儲存成績。
+
+.. 選取*套用變更*。
++
+這些儲存等級現在可指派給儲存節點。
+
+
+
+. 將儲存等級指派給儲存節點：
++
+.. 對於每個儲存節點的LMR服務、請選取*編輯* image:../media/icon_nms_edit.gif["編輯圖示"] 並從清單中選取儲存等級。
++
+image::../media/assigning_storage_grades_to_storage_nodes.gif[儲存等級頁面]
+
++
+
+IMPORTANT: 只能將儲存等級指派給指定的儲存節點一次。從故障中恢復的儲存節點會維持先前指派的儲存等級。在ILM原則啟動之後、請勿變更此指派。如果指派變更、資料會根據新的儲存等級儲存。
+
+.. 選取*套用變更*。
+
+
+

@@ -1,0 +1,17 @@
+---
+permalink: admin/configuring-audit-clients-for-cifs.html 
+sidebar: sidebar 
+keywords: audit client for cifs 
+summary: 用來設定稽核用戶端的程序取決於驗證方法：Windows工作群組或Windows Active Directory（AD）。新增時、稽核共用區會自動啟用為唯讀共用區。 
+---
+= 設定CIFS的稽核用戶端
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+用來設定稽核用戶端的程序取決於驗證方法：Windows工作群組或Windows Active Directory（AD）。新增時、稽核共用區會自動啟用為唯讀共用區。
+
+
+NOTE: 透過CIFS/Samba進行的稽核匯出已過時、將在未來StorageGRID 的版本中移除。

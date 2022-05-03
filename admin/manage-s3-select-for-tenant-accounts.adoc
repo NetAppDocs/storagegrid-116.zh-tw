@@ -1,0 +1,47 @@
+---
+permalink: admin/manage-s3-select-for-tenant-accounts.html 
+sidebar: sidebar 
+keywords: s3 select, selectobjectcontent, best practices 
+summary: 您可以允許某些S3租戶使用S3 Select針對個別物件發出SelectObjectContent要求。 
+---
+= 管理用戶帳戶的S3 Select
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以允許某些S3租戶使用S3 Select針對個別物件發出SelectObjectContent要求。
+
+S3 Select提供一種有效率的方法來搜尋大量資料、而不需要部署資料庫和相關資源來啟用搜尋。它也能降低擷取資料的成本與延遲。
+
+
+
+== 什麼是S3 Select？
+
+S3 Select可讓S3用戶端使用SelectObjectContent要求來篩選及擷取物件所需的資料。S3 Select的支援功能包括S3 Select命令與功能的子集。StorageGRID
+
+
+
+== 使用S3 Select的考量與要求
+
+S3 Select查詢需要下列項目：StorageGRID
+
+* 您要查詢的物件為CSV格式、或是含有CSV格式檔案的GZIP或bzip2壓縮檔。
+* 租戶必須由網格管理員授予S3 Select功能。選取*「允許S3選取*時機」 xref:creating-tenant-account.adoc[建立租戶] 或 xref:editing-tenant-account.adoc[編輯租戶]。
+* 必須將SelectObjectContent要求傳送至 xref:configuring-load-balancer-endpoints.adoc[負載平衡器端點StorageGRID]。端點使用的管理節點和閘道節點必須是SG100或SG1000應用裝置節點、或是VMware軟體節點。
+
+
+請注意下列限制：
+
+* 不支援裸機負載平衡器節點。
+* 查詢無法直接傳送至儲存節點。
+* 不支援透過過時CLB服務傳送的查詢。
+
+
+
+IMPORTANT: SelectObjectContent要求可降低所有S3用戶端和所有租戶的負載平衡器效能。只有在必要時才啟用此功能、而且僅適用於信任的租戶。
+
+請參閱 xref:../s3/use-s3-select.adoc[使用S3 Select的說明]。
+
+以檢視 xref:../monitor/reviewing-support-metrics.adoc[Grafana圖表] 對於S3 Select作業、請在Grid Manager中選取* support*>* Tools*>* Metrics *。

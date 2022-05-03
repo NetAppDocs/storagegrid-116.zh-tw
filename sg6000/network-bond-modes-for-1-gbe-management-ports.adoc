@@ -1,0 +1,41 @@
+---
+permalink: sg6000/network-bond-modes-for-1-gbe-management-ports.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, Network bond, Network bonding, Network bond mode, Network-bond mode, independent, active-backup, active backup, 1-gbe, 1 gbe, sg6000-cn 
+summary: 對於SG6000-CN-控制器上的兩個1-GbE管理連接埠、您可以選擇「獨立網路連結模式」或「主動備份網路連結模式」來連線至選用的管理網路。 
+---
+= 1 GbE管理連接埠的網路連結模式
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+對於SG6000-CN-控制器上的兩個1-GbE管理連接埠、您可以選擇「獨立網路連結模式」或「主動備份網路連結模式」來連線至選用的管理網路。
+
+在獨立模式中、只有左側的管理連接埠會連線至管理網路。此模式不提供備援路徑。右側的管理連接埠未連線、可用於暫用本機連線（使用IP位址169.254.0.1）
+
+在主動備份模式中、兩個管理連接埠都會連線至管理網路。一次只有一個連接埠處於作用中狀態。如果作用中連接埠故障、其備份連接埠會自動提供容錯移轉連線。將這兩個實體連接埠結合成一個邏輯管理連接埠、可提供通往管理網路的備援路徑。
+
+
+NOTE: 如果您需要在將1-GbE管理連接埠設定為「主動備份」模式時、暫時將SG6000-CN-控制器連線至本機、請從兩個管理連接埠拔下纜線、將暫時纜線插入右側的管理連接埠、然後使用IP位址169.254.0.1存取應用裝置。
+
+image::../media/sg6000_cn_bonded_managemente_ports.gif[1-GbE連接埠]
+
+|===
+| 標註 | 網路連結模式 
+
+
+ a| 
+答
+ a| 
+這兩個管理連接埠都連結至連接至管理網路的一個邏輯管理連接埠。
+
+
+
+ a| 
+我
+ a| 
+左側連接埠已連線至管理網路。右側連接埠可用於暫用本機連線（IP位址169.254.0.1）。
+
+|===

@@ -1,0 +1,71 @@
+---
+permalink: primer/configuring-network-settings.html 
+sidebar: sidebar 
+keywords: network settings, configure, configuring, configuration, domain name, virtual hosted-style requests 
+summary: 您可以從Grid Manager設定各種網路設定、以微調StorageGRID 您的系統運作。 
+---
+= 設定網路設定
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以從Grid Manager設定各種網路設定、以微調StorageGRID 您的系統運作。
+
+
+
+== 網域名稱
+
+如果您打算支援S3虛擬託管樣式的要求、則必須設定S3用戶端所連線的端點網域名稱清單。例如「3.example.com」、「3.example.co.uk」和「3-east.example.com」。
+
+設定的伺服器憑證必須符合端點網域名稱。
+
+
+
+== 高可用度群組
+
+您可以使用高可用度（HA）群組、為S3和Swift用戶端提供高可用度的資料連線、或提供高可用度的Grid Manager和Tenant Manager連線。
+
+當您建立HA群組時、會為一個或多個節點選取網路介面。每個HA群組均可存取所選節點上的共享服務。
+
+* HA群組包含閘道節點、管理節點或兩者上的介面、可為S3和Swift用戶端提供高可用度的資料連線。
+* 包含管理節點介面的HA群組僅提供高可用度的Grid Manager和Tenant Manager連線。
+
+
+介面可以屬於Grid Network（eth0）、Client Network（eth2）或VLAN網路。
+
+您最多可為每個HA群組指派10個虛擬IP（VIP）位址。您可以將一個介面指定為主要介面、並依優先順序排列任何其他介面。主介面是作用中介面、除非發生故障。如果作用中介面故障、VIP位址會依照優先順序移至第一個備份介面。如果該介面故障、VIP位址會移至下一個備份介面、依此類推。
+
+
+
+== 連結成本
+
+您可以調整連結成本、以反映站台之間的延遲。當有兩個以上的資料中心站台存在時、連結成本會優先考慮哪些資料中心站台應提供所要求的服務。
+
+
+
+== 負載平衡器端點
+
+您可以使用負載平衡器來處理S3和Swift用戶端的擷取和擷取工作負載。負載平衡功能可將工作負載和連線分散到多個儲存節點、以最大化速度和連線容量。
+
+如果您想要使用StorageGRID 包含在管理節點和閘道節點上的「動態負載平衡器」服務、則必須設定一或多個負載平衡器端點。每個端點都會為S3和Swift要求儲存節點定義閘道節點或管理節點連接埠。
+
+
+
+== 流量分類
+
+您可以建立流量分類原則來識別及處理不同類型的網路流量、包括與特定儲存區、租戶、用戶端子網路或負載平衡器端點相關的流量。這些原則可協助限制流量及監控。
+
+
+
+== VLAN介面
+
+您可以建立虛擬LAN（VLAN）介面來隔離和分割流量、以確保安全性、靈活度和效能。每個VLAN介面都會與管理節點和閘道節點上的一個或多個父介面相關聯。您可以使用HA群組和負載平衡器端點中的VLAN介面、依應用程式或租戶來隔離用戶端或管理流量。
+
+例如、您的網路可能會使用VLAN 100作為FabricPool 不二次流量傳輸、而使用VLAN 200作為歸檔應用程式。
+
+.相關資訊
+* xref:../admin/index.adoc[管理StorageGRID]
+* xref:managing-tenants-and-client-connections.adoc[管理租戶和用戶端連線]
+

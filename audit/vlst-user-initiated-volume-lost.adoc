@@ -1,0 +1,63 @@
+---
+permalink: audit/vlst-user-initiated-volume-lost.html 
+sidebar: sidebar 
+keywords: storagegrid, audit, message, VLST, User Initiated Volume Lost 
+summary: 此訊息會在執行/proc/CMSI/Volume_lost命令時發出。 
+---
+= VLST：使用者起始的Volume Lost
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此訊息會在執行「/proc/CMSI/Volume_lost」命令時發出。
+
+|===
+| 程式碼 | 欄位 | 說明 
+
+
+ a| 
+VOLL
+ a| 
+Volume識別碼較低
+ a| 
+受影響Volume範圍的較低端或單一Volume。
+
+
+
+ a| 
+VOLU
+ a| 
+Volume識別碼上限
+ a| 
+受影響Volume範圍的上限。如果是單一Volume、則等於VOLL。
+
+
+
+ a| 
+NOID
+ a| 
+來源節點ID
+ a| 
+遺失位置的節點ID。
+
+
+
+ a| 
+LTYP
+ a| 
+位置類型
+ a| 
+「CLDI」（線上）或「CLNL」（近線）。如果未指定、則預設為「CLDI」。
+
+
+
+ a| 
+RSRLT
+ a| 
+結果
+ a| 
+一律「無」。RSRLT為必填訊息欄位、但與此訊息無關。使用「無」而非「UCS」、因此不會篩選此訊息。
+
+|===

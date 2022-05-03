@@ -1,0 +1,92 @@
+---
+permalink: fabricpool/creating-load-balancer-endpoint-for-fabricpool.html 
+sidebar: sidebar 
+keywords: fabricPool, load balancer, endpoint, load balancing, create, creating, certificate 
+summary: 設定StorageGRID 搭配FabricPool 使用的功能時、您必須設定負載平衡器端點並上傳負載平衡器端點憑證、以確保ONTAP 連接不中斷。StorageGRID 
+---
+= 建立FabricPool 負載平衡器端點以供使用
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+設定StorageGRID 搭配FabricPool 使用的功能時、您必須設定負載平衡器端點並上傳負載平衡器端點憑證、以確保ONTAP 連接不中斷。StorageGRID
+
+.您需要的是 #8217 ；需要的是什麼
+* 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+* 您擁有root存取權限。
+* 您有下列檔案：
++
+** 伺服器憑證：自訂伺服器憑證檔案。
+** 伺服器憑證私密金鑰：自訂伺服器憑證私密金鑰檔。
+** CA產品組合：單一選用檔案、內含來自每個中繼發行憑證授權單位（CA）的憑證。檔案應包含以憑證鏈順序串聯的每個由PEE編碼的CA憑證檔案。
+
+
+
+
+如需此工作的詳細資訊、請參閱 xref:../admin/configuring-load-balancer-endpoints.adoc[設定負載平衡器端點]。
+
+.步驟
+. 選擇*組態*>*網路*>*負載平衡器端點*。
+. 選擇* Create *（建立*）。
++
+image::../media/load_balancer_endpoint_create_http.png[建立磅端點]
+
+. 輸入端點詳細資料。
++
+[cols="1a,2a"]
+|===
+| 欄位 | 說明 
+
+
+ a| 
+名稱
+ a| 
+端點的描述性名稱
+
+
+
+ a| 
+連接埠
+ a| 
+您要用於負載平衡的選用功能。StorageGRID此欄位預設為10433、但您可以輸入任何未使用的外部連接埠。如果輸入80或443、端點只會在閘道節點上設定、因為這些連接埠是保留在管理節點上。
+
+*附註：*不允許其他網格服務使用的連接埠。請參閱xref:../network/network-port-reference.adoc[網路連接埠參考]。
+
+當您附加作爲一個名爲「雲層」的功能時、ONTAP 必須將此連接埠號碼提供給S時。StorageGRID FabricPool
+
+
+
+ a| 
+用戶端類型
+ a| 
+選擇* S三*。
+
+
+
+ a| 
+網路傳輸協定
+ a| 
+選擇* HTTPS *。
+
+*附註*：支援* HTTP *、但不建議使用。
+
+|===
+. 選擇*繼續*。
+. 指定綁定模式。
++
+使用* Global *設定（建議使用）、或將此端點的存取限制為下列其中一項：
+
++
+** 特定節點的特定網路介面。
+** 特定高可用度（HA）虛擬IP位址（VIP）。只有當您需要更高層級的工作負載隔離時、才可使用此選項。
+
+
+. 選擇*繼續*。
+. 選取*上傳憑證*（建議使用）、然後瀏覽至您的伺服器憑證、憑證私密金鑰及選用的CA套裝組合。
+. 選擇* Create *（建立*）。
+
+
+
+NOTE: 對端點憑證所做的變更、可能需要15分鐘才能套用至所有節點。

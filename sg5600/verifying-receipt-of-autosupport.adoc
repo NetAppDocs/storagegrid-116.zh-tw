@@ -1,0 +1,42 @@
+---
+permalink: sg5600/verifying-receipt-of-autosupport.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, verify, verification, verifying, confirm, confirmation, confirming, autosupport, auto-support, status 
+summary: 您應該確認技術支援人員是否收到AutoSupport 您的不實訊息。您可以AutoSupport 在Active IQ 這個入口網站上找到系統的資訊。如果您需要協助、請確認收到這些訊息、以確保技術支援人員能提供您所需的資訊。 
+---
+= 確認收到AutoSupport 的資訊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您應該確認技術支援人員是否收到AutoSupport 您的不實訊息。您可以AutoSupport 在Active IQ 這個入口網站上找到系統的資訊。如果您需要協助、請確認收到這些訊息、以確保技術支援人員能提供您所需的資訊。
+
+下列狀態之一可顯示：AutoSupport
+
+* *開啟*
++
+「On（開）AutoSupport 」狀態表示技術支援目前正在接收系統的不全訊息。
+
+* *關*
++
+「關機AutoSupport 」狀態表示您可能已停用了不支援功能、因為技術支援部門在過去15個行事曆天內未收到系統的「每週記錄」、或者您的環境或組態可能發生變更（例如）。
+
+* *拒絕*
++
+拒絕狀態表示您已通知技術支援部門、您將無法啟用AutoSupport 此功能。
+
+
+
+技術支援從系統收到每週記錄後AutoSupport 、此功能的狀態會變更為「On（開）」。
+
+.步驟
+. 請前往NetApp支援網站： http://mysupport.netapp.com/["mysupport.netapp.com"^]、然後登入Active IQ 這個資訊網站。
+. 如果AutoSupport 不正確、但您認為不正確、請完成下列步驟：
++
+.. 請檢查系統組態、確定您已開啟AutoSupport 了「功能驗證」。
+.. 檢查您的網路環境和組態、確保系統能傳送訊息給技術支援人員。
+
+
+

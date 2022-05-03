@@ -1,0 +1,119 @@
+---
+permalink: primer/using-storagegrid-support-options.html 
+sidebar: sidebar 
+keywords: autosupport, active IQ, logs, audit.log, metrics, diagnostics 
+summary: Grid Manager提供多種選項、可協助您在StorageGRID 遇到問題時、與技術支援人員合作。 
+---
+= 使用StorageGRID 支援選項
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Grid Manager提供多種選項、可協助您在StorageGRID 遇到問題時、與技術支援人員合作。
+
+
+
+== 設定AutoSupport 功能
+
+利用此功能、您的整套系統可將健全狀況和狀態訊息傳送給技術支援部門。AutoSupport StorageGRID使用NetApp可大幅加速問題的判斷與解決。AutoSupport技術支援也能監控系統的儲存需求、協助您判斷是否需要新增節點或站台。或者、您可以設定AutoSupport 要傳送至另一個目的地的消息。
+
+您AutoSupport 可以使用Grid Manager（*支援*>*工具*>* AutoSupport 鏡像*）來設定支援功能。*《*》*《*》*頁面有兩個索引標籤：*《設定*》AutoSupport 和*《結果*》。
+
+image::../media/autosupport_accessing_settings.png[Grid Manager中的AutoSupport]
+
+
+
+=== 資訊包含在AutoSupport 消息中
+
+包含下列資訊的資訊：AutoSupport
+
+* 軟體版本StorageGRID
+* 作業系統版本
+* 系統層級和位置層級的屬性資訊
+* 最近的警示和警示（舊系統）
+* 所有網格工作（包括歷史資料）的目前狀態
+* 管理節點資料庫使用量
+* 遺失或遺失物件的數量
+* 網格組態設定
+* NMS實體
+* 作用中ILM原則
+* 已配置的網格規格檔案
+* 診斷指標
+
+
+您可以在AutoSupport 第一次安裝時啟用「支援」功能和個別AutoSupport 的「支援」選項StorageGRID 、也可以稍後啟用。如果AutoSupport 未啟用此功能、網格管理器儀表板上會顯示一則訊息。此訊息包含AutoSupport 指向「資訊功能」組態頁面的連結。
+
+image::../media/autosupport_disabled_message.png[無法使用的訊息AutoSupport]
+
+如果您關閉訊息、它將不會再次出現、直到您的瀏覽器快取被清除為止、即使AutoSupport 停用的是停用的。
+
+
+
+=== 使用Active IQ
+
+NetApp是雲端型數位顧問、運用NetApp安裝基礎上的預測分析和社群智慧。Active IQ其持續風險評估、預測性警示、說明性指引及自動化行動、可協助您在問題發生之前預防問題發生、進而改善系統健全狀況並提高系統可用度。
+
+如果您想要使用NetApp支援網站上的「支援資訊」儀表板和功能、則必須啟用AutoSupport 「支援」Active IQ 。
+
+https://docs.netapp.com/us-en/active-iq/index.html["《 VMware 數位顧問文件》 Active IQ"^]
+
+
+
+== 收集StorageGRID 資料
+
+為了協助疑難排解問題、您可能需要收集記錄檔並將其轉送給技術支援部門。
+
+使用記錄檔來擷取事件、診斷訊息和錯誤狀況。StorageGRIDbycast.log檔案會針對每個網格節點進行維護、而且是主要的疑難排解檔案。此外、還會建立記錄檔、以供個別的支援服務、與部署和維護活動相關的記錄檔、以及與協力廠商應用程式相關的記錄檔。StorageGRID StorageGRID
+
+擁有適當權限且知道StorageGRID 您的系統資源配置通關密碼的使用者、可以使用Grid Manager中的「記錄」頁面來收集記錄檔、系統資料和組態資料。收集記錄時、您可以選取節點或節點、然後指定一個時段。資料會以「.tar.gz」檔案來收集和歸檔、您可以下載到本機電腦。在此檔案中、每個網格節點都有一個記錄檔歸檔。
+
+image::../media/support_logs_select_nodes.png[記錄集合UI的快照]
+
+
+
+== 使用指標並執行診斷
+
+疑難排解問題時、您可以與技術支援部門合作、檢閱StorageGRID 有關您的整套系統的詳細指標和圖表。您也可以執行預先建構的診斷查詢、主動評估StorageGRID 您的故障診斷系統的關鍵值。
+
+
+
+=== 「度量」頁面
+
+「指標」頁面可讓您存取Prometheus和Grafana使用者介面。Prometheus是開放原始碼軟體、可用來收集指標。Grafana是開放原始碼軟體、可用於指標視覺化。
+
+
+IMPORTANT: 「指標」頁面上提供的工具僅供技術支援使用。這些工具中的某些功能和功能表項目會刻意無法運作、而且可能會有所變更。
+
+image::../media/metrics_page.png[度量頁面]
+
+「指標」頁面的Prometheus區段中的連結可讓您查詢StorageGRID 目前的各項指標值、並檢視一段時間內的值圖表。
+
+image::../media/metrics_page_prometheus.png[指標頁面Prometheus]
+
+
+NOTE: 名稱中包含_Private的指標僅供內部使用、StorageGRID 可能會在不另行通知的情況下於各個版本之間變更。
+
+「指標」頁面的Grafana區段中的連結可讓您存取預先建構的儀表板、其中包含StorageGRID 一段時間內的各項指標圖表。
+
+image::../media/metrics_page_grafana.png[度量頁面Grafana]
+
+
+
+=== 診斷頁
+
+「診斷」頁面會針對網格的目前狀態、執行一組預先建構的診斷檢查。在範例中、所有診斷都會顯示正常狀態。
+
+image::../media/support_diagnostics_page.png[支援診斷頁面]
+
+按一下特定診斷可讓您查看診斷及其目前結果的詳細資料。
+
+在此範例StorageGRID 中、會顯示目前的CPU使用率、供整個系統的每個節點使用。所有節點值均低於注意和注意臨界值、因此診斷的整體狀態為正常。
+
+image::../media/support_diagnostics_cpu_utilization.png[支援診斷CPU使用率]
+
+.相關資訊
+* xref:../admin/index.adoc[管理StorageGRID]
+* xref:configuring-network-settings.adoc[設定網路設定]
+

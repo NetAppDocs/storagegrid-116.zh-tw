@@ -1,0 +1,79 @@
+---
+permalink: monitor/monitoring-network-connections-and-performance.html 
+sidebar: sidebar 
+keywords: monitoring, monitoring network connections, network, network performance 
+summary: 網格節點必須能夠彼此通訊、才能讓網格運作。節點與站台之間的網路完整性、以及站台之間的網路頻寬、都是有效營運的關鍵。 
+---
+= 監控網路連線與效能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+網格節點必須能夠彼此通訊、才能讓網格運作。節點與站台之間的網路完整性、以及站台之間的網路頻寬、都是有效營運的關鍵。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您必須使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+* 您必須擁有特定的存取權限。
+
+
+如果您的資訊生命週期管理（ILM）原則使用提供站台遺失保護的方案、在站台之間複製複寫的物件、或是儲存以銷毀編碼的物件、那麼網路連線能力和頻寬就特別重要。如果站台之間的網路無法使用、網路延遲太高、或網路頻寬不足、則部分ILM規則可能無法將物件放置在預期位置。這可能會導致擷取失敗（如果ILM規則選擇了嚴格擷取選項）、或只是擷取效能不佳和ILM待處理項目。
+
+您可以使用Grid Manager來監控連線能力和網路效能、以便迅速解決任何問題。
+
+此外、請考慮建立網路流量分類原則、以監控和限制特定租戶、分區、子網路或負載平衡器端點的流量。請參閱 xref:../admin/index.adoc[關於管理StorageGRID 功能的說明]。
+
+.步驟
+. 選擇*節點*。
++
+此時會出現「節點」頁面。網格中的每個節點都會以表格格式列出。
+
++
+image::../media/nodes_menu.png[節點功能表]
+
+. 選取網格名稱、特定資料中心站台或網格節點、然後選取*網路*索引標籤。
++
+網路流量圖表提供整個網格、資料中心站台或節點的整體網路流量摘要。
+
++
+image::../media/nodes_page_network_traffic_graph.png[節點頁面網路流量圖]
+
++
+.. 如果您選取了網格節點、請向下捲動以檢閱頁面的「*網路介面*」區段。
++
+image::../media/nodes_page_network_interfaces.png[節點頁面網路介面]
+
+.. 對於網格節點、請向下捲動以檢閱頁面的「*網路通訊*」區段。
++
+「接收和傳輸」表格顯示已在每個網路上接收和傳送多少位元組和封包、以及其他接收和傳輸度量。
+
++
+image::../media/nodes_page_network_communication.png[節點頁面網路通訊]
+
+
+
+. 使用與流量分類原則相關的度量來監控網路流量。
++
+.. 選擇*組態*>*網路*>*流量分類*。
++
+「流量分類原則」頁面隨即出現、表中會列出現有的原則。
+
++
+image::../media/traffic_classification_policies_main_screen_w_examples.png[圖表的流量原則範例]
+
+.. 若要檢視顯示與原則相關聯之網路度量的圖表、請選取原則左側的選項按鈕、然後按一下* Metrics *。
+.. 檢閱圖表以瞭解與原則相關的網路流量。
++
+如果流量分類原則是設計用來限制網路流量、請分析流量受限的頻率、並決定原則是否持續符合您的需求。視需要不時調整每個流量分類原則。
+
++
+若要建立、編輯或刪除流量分類原則、請參閱 xref:../admin/index.adoc[關於管理StorageGRID 功能的說明]。
+
+
+
+
+
+xref:viewing-network-tab.adoc[檢視「網路」索引標籤]
+
+xref:monitoring-node-connection-states.adoc[監控節點連線狀態]

@@ -1,0 +1,7 @@
+= 
+:allow-uri-read: 
+
+
+「torageGRID-Webscale」（英文）-_VERSION（英文）-VMware-_uniqueID_.Zip
+
+「torageGRID-Webscale」（英文）-_VERSION __ VMware（英文）-uniqueID_.tgz（英文）

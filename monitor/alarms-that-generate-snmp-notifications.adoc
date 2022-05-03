@@ -1,0 +1,525 @@
+---
+permalink: monitor/alarms-that-generate-snmp-notifications.html 
+sidebar: sidebar 
+keywords: alarms, monitor alarms, snmp notification, snmp 
+summary: 下表列出產生SNMP通知的舊版警示。不同於警示、並非所有警示都會產生SNMP通知。只有列出的警示會產生SNMP通知、而且僅會以指定的嚴重性或更高的嚴重性發出通知。 
+---
+= 產生SNMP通知的警示（舊系統）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+下表列出產生SNMP通知的舊版警示。不同於警示、並非所有警示都會產生SNMP通知。只有列出的警示會產生SNMP通知、而且僅會以指定的嚴重性或更高的嚴重性發出通知。
+
+
+NOTE: 雖然舊版警示系統仍持續受到支援、但警示系統可提供顯著效益、而且使用起來更輕鬆。
+
+[cols="1a,2a,1a"]
+|===
+| 程式碼 | 名稱 | 嚴重性 
+
+
+ a| 
+ACMs
+ a| 
+可用的中繼資料服務
+ a| 
+關鍵
+
+
+
+ a| 
+AITE
+ a| 
+擷取狀態
+ a| 
+次要
+
+
+
+ a| 
+AITU-
+ a| 
+擷取狀態
+ a| 
+主要
+
+
+
+ a| 
+AMQS
+ a| 
+已排入佇列的稽核訊息
+ a| 
+注意
+
+
+
+ a| 
+AOTE
+ a| 
+儲存狀態
+ a| 
+次要
+
+
+
+ a| 
+AOTU
+ a| 
+儲存狀態
+ a| 
+主要
+
+
+
+ a| 
+AR
+ a| 
+已佇列的物件
+ a| 
+次要
+
+
+
+ a| 
+ARRF
+ a| 
+要求失敗
+ a| 
+主要
+
+
+
+ a| 
+ARRV-
+ a| 
+驗證失敗
+ a| 
+主要
+
+
+
+ a| 
+ARVF
+ a| 
+儲存失敗
+ a| 
+主要
+
+
+
+ a| 
+ASXP
+ a| 
+稽核共用
+ a| 
+次要
+
+
+
+ a| 
+Auma
+ a| 
+AMS狀態
+ a| 
+次要
+
+
+
+ a| 
+輔助
+ a| 
+稽核匯出狀態
+ a| 
+次要
+
+
+
+ a| 
+BTOF
+ a| 
+偏移
+ a| 
+注意
+
+
+
+ a| 
+CAHP
+ a| 
+Java堆積使用率百分比
+ a| 
+主要
+
+
+
+ a| 
+CAQH
+ a| 
+可用目的地數目
+ a| 
+注意
+
+
+
+ a| 
+卡薩
+ a| 
+資料儲存區狀態
+ a| 
+主要
+
+
+
+ a| 
+CDLP
+ a| 
+中繼資料已用空間（百分比）
+ a| 
+主要
+
+
+
+ a| 
+CLBE
+ a| 
+CLB狀態
+ a| 
+關鍵
+
+
+
+ a| 
+DNST
+ a| 
+DNS狀態
+ a| 
+關鍵
+
+
+
+ a| 
+ECST
+ a| 
+驗證狀態
+ a| 
+主要
+
+
+
+ a| 
+HSTE
+ a| 
+HTTP狀態
+ a| 
+主要
+
+
+
+ a| 
+HTAS
+ a| 
+自動啟動HTTP
+ a| 
+注意
+
+
+
+ a| 
+損失
+ a| 
+遺失物件
+ a| 
+主要
+
+
+
+ a| 
+MINQ
+ a| 
+電子郵件通知已排入佇列
+ a| 
+注意
+
+
+
+ a| 
+分
+ a| 
+電子郵件通知狀態
+ a| 
+次要
+
+
+
+ a| 
+南
+ a| 
+網路自動交涉設定
+ a| 
+注意
+
+
+
+ a| 
+NDUP
+ a| 
+網路雙工設定
+ a| 
+次要
+
+
+
+ a| 
+NLNK
+ a| 
+網路連結偵測
+ a| 
+次要
+
+
+
+ a| 
+NERR
+ a| 
+接收錯誤
+ a| 
+注意
+
+
+
+ a| 
+NSPD
+ a| 
+速度
+ a| 
+注意
+
+
+
+ a| 
+nter
+ a| 
+傳輸錯誤
+ a| 
+注意
+
+
+
+ a| 
+NTFQ
+ a| 
+NTP頻率偏移
+ a| 
+次要
+
+
+
+ a| 
+NTLK
+ a| 
+NTP鎖定
+ a| 
+次要
+
+
+
+ a| 
+NTOF
+ a| 
+NTP時間偏移
+ a| 
+次要
+
+
+
+ a| 
+NTSJ
+ a| 
+選定的時間來源提交人
+ a| 
+次要
+
+
+
+ a| 
+Ntsu
+ a| 
+NTP狀態
+ a| 
+主要
+
+
+
+ a| 
+OPST
+ a| 
+整體電力狀態
+ a| 
+主要
+
+
+
+ a| 
+ORSU
+ a| 
+傳出複寫狀態
+ a| 
+注意
+
+
+
+ a| 
+SSA
+ a| 
+電源供應器A狀態
+ a| 
+主要
+
+
+
+ a| 
+PSBs
+ a| 
+電源供應器B狀態
+ a| 
+主要
+
+
+
+ a| 
+RDTE
+ a| 
+Tivoli Storage Manager狀態
+ a| 
+注意
+
+
+
+ a| 
+RDTU
+ a| 
+Tivoli Storage Manager狀態
+ a| 
+主要
+
+
+
+ a| 
+SAVP
+ a| 
+可用空間總計（百分比）
+ a| 
+注意
+
+
+
+ a| 
+SHLH
+ a| 
+健全狀況
+ a| 
+注意
+
+
+
+ a| 
+SLSA
+ a| 
+CPU負載平均
+ a| 
+注意
+
+
+
+ a| 
+SMtT
+ a| 
+活動總計
+ a| 
+注意
+
+
+
+ a| 
+SNST
+ a| 
+狀態
+ a| 
+
+
+
+ a| 
+Soss
+ a| 
+儲存作業系統狀態
+ a| 
+注意
+
+
+
+ a| 
+SSTS
+ a| 
+儲存狀態
+ a| 
+注意
+
+
+
+ a| 
+SVST
+ a| 
+狀態
+ a| 
+注意
+
+
+
+ a| 
+TMEM
+ a| 
+安裝的記憶體
+ a| 
+次要
+
+
+
+ a| 
+密執安
+ a| 
+可用記憶體
+ a| 
+次要
+
+
+
+ a| 
+VMST
+ a| 
+狀態
+ a| 
+次要
+
+
+
+ a| 
+VPRI
+ a| 
+驗證優先順序
+ a| 
+注意
+
+
+
+ a| 
+VSTU
+ a| 
+物件驗證狀態
+ a| 
+注意
+
+|===

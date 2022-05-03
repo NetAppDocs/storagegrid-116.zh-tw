@@ -1,0 +1,24 @@
+---
+permalink: maintain/restoring-existing-nodes.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, restore node to host 
+summary: 若要將故障的網格節點還原至新的Linux主機、請使用適當的命令來還原節點組態檔。 
+---
+= 將網格節點還原至主機
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要將故障的網格節點還原至新的Linux主機、請使用適當的命令來還原節點組態檔。
+
+執行全新安裝時、您會為要安裝在主機上的每個網格節點建立節點組態檔。將網格節點還原至替換主機時、您可以還原或取代任何故障網格節點的節點組態檔。
+
+如果任何區塊儲存磁碟區是從先前的主機保留下來、您可能必須執行其他的還原程序。本節中的命令可協助您決定需要哪些額外程序。
+
+.步驟
+* xref:restoring-and-validating-grid-nodes.adoc[還原及驗證網格節點]
+* xref:starting-storagegrid-host-service.adoc[啟動StorageGRID 支援服務]
+* xref:recovering-nodes-that-fail-to-start-normally.adoc[恢復無法正常啟動的節點]
+

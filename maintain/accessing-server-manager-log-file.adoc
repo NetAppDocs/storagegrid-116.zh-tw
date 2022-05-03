@@ -1,0 +1,18 @@
+---
+permalink: maintain/accessing-server-manager-log-file.html 
+sidebar: sidebar 
+keywords: storagegrid, server manager, log file 
+summary: 如果使用伺服器管理員時發生問題、請檢查其記錄檔。 
+---
+= Access Server Manager記錄檔
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果使用伺服器管理員時發生問題、請檢查其記錄檔。
+
+伺服器管理員的相關錯誤訊息會擷取在伺服器管理員記錄檔中、該檔案位於：「/var/local/log/servermanager.log」
+
+請查看此檔案、以瞭解有關故障的錯誤訊息。如有需要、請將問題提報給技術支援部門。系統可能會要求您將記錄檔轉寄給技術支援部門。

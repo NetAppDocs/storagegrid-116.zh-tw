@@ -1,0 +1,82 @@
+---
+permalink: expand/configuring-expanded-storagegrid-system.html 
+sidebar: sidebar 
+keywords: expansion, configuration 
+summary: 完成擴充之後、您必須執行其他整合與組態步驟。 
+---
+= 擴充後的組態步驟
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+完成擴充之後、您必須執行其他整合與組態步驟。
+
+您必須完成以下所列的組態工作、才能在擴充中新增網格節點。某些工作可能是選用的、取決於安裝和管理系統時所選的選項、以及您要如何設定擴充期間新增的網格節點。
+
+.步驟
+. 如果您新增了儲存節點、請完成下列組態工作：
++
+.. 檢閱ILM規則中所使用的儲存資源池、以確保使用新的儲存設備。請參閱 xref:../ilm/index.adoc[使用ILM管理物件]。
++
+*** 如果您新增站台、請為站台建立儲存資源池、並更新ILM規則以使用新的儲存資源池。
+*** 如果您將儲存節點新增至現有站台、請確認新節點使用正確的儲存等級。
++
+
+NOTE: 根據預設、新的儲存節點會指派給「所有儲存節點」儲存等級、並新增至使用該等級的儲存資源池。如果您想要新節點使用自訂儲存等級、則必須手動將其指派至自訂等級（* ILM *>* Storage等級*）。
+
+
+
+.. 確認儲存節點正在擷取物件。請參閱 xref:verifying-storage-node-is-active.adoc[確認儲存節點處於作用中狀態]。
+.. 重新平衡銷毀編碼資料（僅當您無法新增建議的儲存節點數時）。請參閱xref:rebalancing-erasure-coded-data-after-adding-storage-nodes.adoc[新增儲存節點後、重新平衡以銷毀編碼的資料]。
+
+
+. 如果您新增了閘道節點、請完成下列組態工作：
++
+** 如果使用高可用度（HA）群組進行用戶端連線、請選擇性地將閘道節點新增至HA群組。選取*組態*>*網路*>*高可用度群組*、以檢閱現有HA群組的清單、並新增新節點。請參閱 xref:../admin/index.adoc[管理StorageGRID]。
+
+
+. 如果您新增了管理節點、請完成下列組態工作：
++
+.. 如果StorageGRID 您的系統啟用單一登入（SSO）、請為新的管理節點建立信賴關係人信任。您必須先建立此信賴關係人信任、才能登入節點。請參閱xref:../admin/configuring-sso.adoc[設定單一登入]。
+.. 如果您打算在管理節點上使用負載平衡器服務、請選擇性地將新的管理節點新增至HA群組。選取*組態*>*網路*>*高可用度群組*、以檢閱現有HA群組的清單、並新增新節點。請參閱 xref:../admin/index.adoc[管理StorageGRID]。
+.. 或者、如果您想在每個管理節點上保持屬性和稽核資訊一致、請將管理節點資料庫從主要管理節點複製到擴充管理節點。請參閱 xref:copying-admin-node-database.adoc[複製管理節點資料庫]。
+.. 或者、如果您想在每個管理節點上保持歷史數據一致、請將Prometheus資料庫從主要管理節點複製到擴充管理節點。請參閱 xref:copying-prometheus-metrics.adoc[複製Prometheus指標]。
+.. 或者、如果您想要在每個管理節點上保持記錄資訊一致、請將現有的稽核記錄從主要管理節點複製到擴充管理節點。請參閱 xref:copying-audit-logs.adoc[複製稽核記錄]。
+.. 或者、您也可以設定系統存取、以便透過NFS或CIFS檔案共用進行稽核。請參閱 xref:../admin/index.adoc[管理StorageGRID]。
++
+
+NOTE: 透過CIFS/Samba進行的稽核匯出已過時、將在未來StorageGRID 的版本中移除。
+
+.. 或者、變更通知的偏好傳送者。您可以將擴充管理節點設為慣用的傳送者。否則、已設定為慣用寄件者的現有管理節點會繼續傳送通知、包括AutoSupport 不含資訊的訊息、SNMP通知、警示電子郵件和警示電子郵件（舊系統）。請參閱 xref:../admin/index.adoc[管理StorageGRID]。
+
+
+. 如果您新增了歸檔節點、請完成下列組態工作。
++
+.. 設定歸檔節點與目標外部歸檔儲存系統的連線。完成擴充之後、歸檔節點會處於警示狀態、直到您透過* ARC/>* Target *元件設定連線資訊為止。請參閱 xref:../admin/index.adoc[管理StorageGRID]。
+.. 更新ILM原則、透過新的歸檔節點歸檔物件資料。請參閱 xref:../ilm/index.adoc[使用ILM管理物件]。
+.. 針對用於監控從歸檔節點擷取物件資料的速度和效率的屬性、設定自訂警示。請參閱 xref:../admin/index.adoc[管理StorageGRID]。
+
+
+. 若要檢查擴充節點是否已新增不受信任的用戶端網路、或變更節點的用戶端網路是否不受信任或信任、請前往*組態*>*網路*>*不受信任的用戶端網路*。
++
+如果擴充節點上的用戶端網路不受信任、則必須使用負載平衡器端點連線至用戶端網路上的節點。請參閱 xref:../admin/index.adoc[管理StorageGRID]。
+
+. 設定網域名稱系統（DNS）。
++
+如果您已分別為每個網格節點指定DNS設定、則必須為新節點新增自訂的每節點DNS設定。請參閱 xref:../maintain/modifying-dns-configuration-for-single-grid-node.adoc[修改單一網格節點的DNS組態]。
+
++
+最佳實務做法是讓整個網格的DNS伺服器清單包含一些可從每個站台本機存取的DNS伺服器。如果您剛新增站台、請將站台的新DNS伺服器新增至整個網格的DNS組態。
+
++
+
+IMPORTANT: 為DNS伺服器提供二到六個IPv6位址。您應該選取DNS伺服器、以便每個站台在網路中斷時、都能在本機存取。這是為了確保isLanded站台繼續存取DNS服務。設定整個網格的DNS伺服器清單之後、您可以進一步自訂每個節點的DNS伺服器清單。如需詳細資訊、請參閱 xref:../maintain/modifying-dns-configuration-for-single-grid-node.adoc[修改單一網格節點的DNS組態]...
+
+. 如果您新增站台、請確認可從該站台存取網路時間傳輸協定（NTP）伺服器。請參閱 xref:../maintain/configuring-ntp-servers.adoc[設定NTP伺服器]。
++
+
+IMPORTANT: 請確定每個站台至少有兩個節點可以存取至少四個外部NTP來源。如果站台只有一個節點可以連線至NTP來源、則當該節點當機時、就會發生計時問題。此外、將每個站台的兩個節點指定為主要NTP來源、可確保站台與網格的其他部分隔離時、能確保準確的時間安排。
+
+

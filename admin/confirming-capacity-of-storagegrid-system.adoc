@@ -1,0 +1,18 @@
+---
+permalink: admin/confirming-capacity-of-storagegrid-system.html 
+sidebar: sidebar 
+keywords: data migration, data capacity for migration 
+summary: 在將大量資料移轉到StorageGRID 整個過程之前、請先確認StorageGRID 該系統具備處理預期磁碟區的磁碟容量。 
+---
+= 確認StorageGRID 該系統的容量
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在將大量資料移轉到StorageGRID 整個過程之前、請先確認StorageGRID 該系統具備處理預期磁碟區的磁碟容量。
+
+如果StorageGRID 支援的不一致系統包含歸檔節點、且已將移轉物件的複本儲存至近線儲存設備（例如磁帶）、請確保歸檔節點的儲存設備具有足夠的容量來容納預期的移轉資料量。
+
+在容量評估中、請查看您計畫移轉之物件的資料設定檔、並計算所需的磁碟容量。如需監控StorageGRID 您的作業系統磁碟容量的詳細資訊、請參閱 xref:managing-storage-nodes.adoc[管理儲存節點] 和 xref:../monitor/index.adoc[監控及疑難排解]。

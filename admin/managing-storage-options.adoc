@@ -1,0 +1,18 @@
+---
+permalink: admin/managing-storage-options.html 
+sidebar: sidebar 
+keywords: storage options 
+summary: 儲存選項包括物件分割設定、儲存Volume浮點的目前值、以及中繼資料保留空間設定。您也可以檢視閘道節點上已過時的CLB服務所使用的S3和Swift連接埠、以及儲存節點上的LDR服務所使用的連接埠。 
+---
+= 管理儲存選項
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+儲存選項包括物件分割設定、儲存Volume浮點的目前值、以及中繼資料保留空間設定。您也可以檢視閘道節點上已過時的CLB服務所使用的S3和Swift連接埠、以及儲存節點上的LDR服務所使用的連接埠。
+
+如需連接埠指派的相關資訊、請參閱 xref:summary-ip-addresses-and-ports-for-client-connections.adoc[摘要：用於用戶端連線的IP位址和連接埠]。
+
+image::../media/storage_options.png[儲存選項]

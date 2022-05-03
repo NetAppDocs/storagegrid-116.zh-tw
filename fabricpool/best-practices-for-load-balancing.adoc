@@ -1,0 +1,64 @@
+---
+permalink: fabricpool/best-practices-for-load-balancing.html 
+sidebar: sidebar 
+keywords: fabricPool, load balancer, endpoint, load balancing, Layer 7, cloud tier, best practices 
+summary: 在將StorageGRID 「支援功能」附加為FabricPool 「支援功能」雲端層之前、您必須先使用StorageGRID 「支援功能」來設定至少一個負載平衡器端點。 
+---
+= 負載平衡的最佳實務做法
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在將StorageGRID 「支援功能」附加為FabricPool 「支援功能」雲端層之前、您必須先使用StorageGRID 「支援功能」來設定至少一個負載平衡器端點。
+
+
+
+== 什麼是負載平衡？
+
+當資料從FabricPool 功能性分層到StorageGRID 功能性的系統時、StorageGRID 運算子會使用負載平衡器來管理擷取和擷取工作負載。負載平衡功能可在FabricPool 多個儲存節點之間分配功能豐富的功能、以最大化速度和連線容量。
+
+此功能可在所有管理節點和所有閘道節點上安裝支援程式、並提供第7層負載平衡功能。StorageGRID它會對用戶端要求執行傳輸層安全性（TLS）終止、檢查要求、並建立新的安全連線至儲存節點。
+
+將用戶端流量轉送至儲存節點時、每個節點上的負載平衡器服務都會獨立運作。透過加權程序、負載平衡器服務會將更多要求路由傳送至CPU可用度較高的儲存節點。
+
+雖然推薦使用「VMware負載平衡器」服務、但StorageGRID 您可能想要改為整合協力廠商負載平衡器。如需相關資訊、請聯絡您的NetApp客戶代表或參閱 https://www.netapp.com/pdf.html?item=/media/17068-tr4626pdf.pdf["TR-4626：StorageGRID 不包括第三方和全域負載平衡器"^]。
+
+
+NOTE: 閘道節點上的個別連線負載平衡器（CLB）服務已過時、不再建議搭配FabricPool 使用。
+
+
+
+== 最佳實務做法StorageGRID
+
+一般最佳實務做法StorageGRID 是、您的一套系統應該在負載平衡器服務中包含兩個或多個節點。例如、站台可能包含兩個閘道節點、或同時包含一個管理節點和一個閘道節點。無論您使用SG100或SG1000服務應用裝置、裸機節點或虛擬機器（VM）型節點、請確定每個負載平衡節點都有足夠的網路、硬體或虛擬化基礎架構。
+
+您必須設定StorageGRID 一個靜態負載平衡器端點、以定義閘道節點和管理節點將用於傳入FabricPool 和傳出的需求的連接埠。
+
+
+
+== 負載平衡器端點憑證的最佳實務做法
+
+建立負載平衡器端點以搭配FabricPool 使用時、您應該使用HTTPS做為傳輸協定。支援但不建議使用不含TLS加密的功能進行通訊StorageGRID
+
+然後您可以上傳由公開信任或私有憑證授權單位（CA）簽署的憑證、也可以產生自我簽署的憑證。憑證ONTAP 可讓驗證通過StorageGRID 驗證。
+
+最佳實務做法是使用CA伺服器憑證來保護連線安全。由CA簽署的憑證可在不中斷營運的情況下循環。
+
+當要求CA憑證搭配負載平衡器端點使用時、請確定憑證上的網域名稱與ONTAP 您在「針對該負載平衡器端點」的「系統名稱」中輸入的伺服器名稱相符。如果可能、請使用萬用字元（*）來允許虛擬主機樣式的URL。例如：
+
+[listing]
+----
+*.s3.storagegrid.company.com
+----
+當您新增StorageGRID 不完整FabricPool 的雲端層時、必須將相同的憑證安裝到ONTAP 不完整的叢集、以及根憑證和任何從屬憑證授權單位（CA）憑證。
+
+
+NOTE: 可將伺服器憑證用於多種用途。StorageGRID如果您要連線至負載平衡器服務、可以選擇性地使用S3和Swift API憑證。
+
+若要深入瞭解負載平衡端點的伺服器憑證：
+
+* xref:../admin/configuring-load-balancer-endpoints.adoc[設定負載平衡器端點]
+* xref:../harden/hardening-guideline-for-server-certificates.adoc[伺服器憑證的強化準則]
+

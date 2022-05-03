@@ -1,0 +1,64 @@
+---
+permalink: sg5600/configuring-autosupport.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, configure, configuring, set up, setup, autosupport, auto support 
+summary: 此功能可從應用裝置收集客戶支援套裝組合中的資料、並自動將資料傳送給技術支援部門。AutoSupport設定AutoSupport 支援功能可協助技術支援人員進行遠端疑難排解和問題分析。 
+---
+= 設定AutoSupport 功能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此功能可從應用裝置收集客戶支援套裝組合中的資料、並自動將資料傳送給技術支援部門。AutoSupport設定AutoSupport 支援功能可協助技術支援人員進行遠端疑難排解和問題分析。
+
+.您需要的是 #8217 ；需要的是什麼
+* 必須在產品上啟用和啟動此功能。AutoSupport
++
+此功能會在儲存管理站上全域啟動和停用。AutoSupport
+
+* Storage Manager事件監控器必須至少在一台可存取應用裝置的機器上執行、最好是在不超過一台機器上執行。
+
+
+所有資料都會壓縮成您指定位置的單一壓縮封存檔案格式（.7z）。
+
+提供下列類型的訊息：AutoSupport
+
+|===
+| 訊息類型 | 說明 
+
+
+ a| 
+事件訊息
+ a| 
+* 受管理應用裝置發生支援事件時傳送
+* 包括系統組態和診斷資訊
+
+
+
+
+ a| 
+每日訊息
+ a| 
+* 在使用者可設定的時間間隔內、於應用裝置的本機時間內每天傳送一次
+* 包括目前的系統事件記錄和效能資料
+
+
+
+
+ a| 
+每週訊息
+ a| 
+* 在使用者可設定的時間間隔內、每週在應用裝置的本機時間內傳送一次
+* 包括組態和系統狀態資訊
+
+
+|===
+.步驟
+. 從「Enterprise Management」（企業管理）視窗SANtricity 的「Sing Storage Manager」（資料保護管理程式）中、選取「*設備*」索引標籤、然後選取「*探索到的儲存陣列*」。
+. 選擇* Tools *>* AutoSupport S16*>* Configuration *。
+. 如有需要、請使用SANtricity 「支援中心」線上說明來完成工作。
+
+
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61197["NetApp文件：SANtricity NetApp Storage Manager"^]

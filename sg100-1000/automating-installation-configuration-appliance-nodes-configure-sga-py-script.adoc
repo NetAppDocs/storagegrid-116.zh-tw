@@ -1,0 +1,144 @@
+---
+permalink: sg100-1000/automating-installation-configuration-appliance-nodes-configure-sga-py-script.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, automate, automating, automation, automatic, install, installation, configuration, configure, configure-sga.py script, configure-sga.py 
+summary: 您可以使用configure-sga.py指令碼來自動化StorageGRID 許多有關應用程式節點的安裝和組態工作、包括安裝和設定主要管理節點。如果您有大量設備需要設定、此指令碼就很有用。您也可以使用指令碼來產生包含應用裝置組態資訊的Json檔案。 
+---
+= 使用configure-sga.py指令碼自動安裝及設定應用裝置節點
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「configure - SGA .py」指令碼來自動化StorageGRID 許多有關該應用裝置節點的安裝與組態工作、包括安裝及設定主要管理節點。如果您有大量設備需要設定、此指令碼就很有用。您也可以使用指令碼來產生包含應用裝置組態資訊的Json檔案。
+
+.您需要的是 #8217 ；需要的是什麼
+* 應用裝置已安裝在機架中、連接至您的網路、並已開啟電源。
+* 已使用StorageGRID 《整套應用程式安裝程式》為主要管理節點設定網路連結和IP位址。
+* 如果您要安裝主管理節點、就知道其IP位址。
+* 如果您要安裝及設定其他節點、則已部署主要管理節點、而且您知道其IP位址。
+* 對於主要管理節點以外的所有節點、StorageGRID 所有列在「Oracle應用裝置安裝程式IP組態」頁面上的Grid Network子網路、都已在主要管理節點的Grid Network Subnet List（網格網路子網路清單）中定義。
+* 您已下載「configure - SGA.py」檔案。檔案會包含在安裝歸檔中、您也可以按StorageGRID 一下「支援*」>「應用裝置安裝指令碼*」（英文）來存取。
+
+
+
+NOTE: 此程序適用於具有使用命令列介面經驗的進階使用者。或者、您也可以 xref:automating-appliance-configuration-using-storagegrid-appliance-installer.adoc[使用StorageGRID 「功能不全」安裝程式來自動化組態]。
+
+.步驟
+. 登入您用來執行Python指令碼的Linux機器。
+. 如需指令碼語法的一般說明及可用參數清單、請輸入下列命令：
++
+[listing]
+----
+configure-sga.py --help
+----
++
+「configure - SGA .py（設定- SGA）指令碼使用五個子命令：
+
++
+** 「進階」功能可用於進階StorageGRID 的功能性應用裝置互動、包括BMC組態、以及建立包含應用裝置目前組態的Json檔案
+** 設定RAID模式、節點名稱和網路參數的「組態」
+** 「install」開始StorageGRID 執行安裝
+** 監控StorageGRID 安裝的「監控者」
+** 「重新開機」以重新啟動應用裝置
++
+如果您輸入子命令（進階、設定、安裝、監控或重新開機）引數、接著輸入「-help"（說明）選項、您將會看到不同的說明文字、詳細說明該子命令中可用的選項：+「configure-sga.py _子 命令_-help'（_子 命令_-help'）」
+
+
+
+. 若要確認應用裝置節點的目前組態、請輸入下列命令、其中「_SGA-install-ip_」是應用裝置節點的任何IP位址：+「configure-sga.py configure _SGA-install-ip_」
++
+結果顯示設備的目前IP資訊、包括主要管理節點的IP位址、以及管理、網格和用戶端網路的相關資訊。
+
++
+[listing]
+----
+Connecting to +https://10.224.2.30:8443+ (Checking version and connectivity.)
+2021/02/25 16:25:11: Performing GET on /api/versions... Received 200
+2021/02/25 16:25:11: Performing GET on /api/v2/system-info... Received 200
+2021/02/25 16:25:11: Performing GET on /api/v2/admin-connection... Received 200
+2021/02/25 16:25:11: Performing GET on /api/v2/link-config... Received 200
+2021/02/25 16:25:11: Performing GET on /api/v2/networks... Received 200
+2021/02/25 16:25:11: Performing GET on /api/v2/system-config... Received 200
+
+  StorageGRID Appliance
+    Name:        LAB-SGA-2-30
+    Node type:   storage
+
+  StorageGRID primary Admin Node
+    IP:        172.16.1.170
+    State:     unknown
+    Message:   Initializing...
+    Version:   Unknown
+
+  Network Link Configuration
+    Link Status
+          Link      State      Speed (Gbps)
+          ----      -----      -----
+          1         Up         10
+          2         Up         10
+          3         Up         10
+          4         Up         10
+          5         Up         1
+          6         Down       N/A
+
+    Link Settings
+        Port bond mode:      FIXED
+        Link speed:          10GBE
+
+        Grid Network:        ENABLED
+            Bonding mode:    active-backup
+            VLAN:            novlan
+            MAC Addresses:   00:a0:98:59:8e:8a  00:a0:98:59:8e:82
+
+        Admin Network:       ENABLED
+            Bonding mode:    no-bond
+            MAC Addresses:   00:80:e5:29:70:f4
+
+        Client Network:      ENABLED
+            Bonding mode:    active-backup
+            VLAN:            novlan
+            MAC Addresses:   00:a0:98:59:8e:89  00:a0:98:59:8e:81
+
+  Grid Network
+    CIDR:      172.16.2.30/21 (Static)
+    MAC:       00:A0:98:59:8E:8A
+    Gateway:   172.16.0.1
+    Subnets:   172.17.0.0/21
+               172.18.0.0/21
+               192.168.0.0/21
+    MTU:       1500
+
+  Admin Network
+    CIDR:      10.224.2.30/21 (Static)
+    MAC:       00:80:E5:29:70:F4
+    Gateway:   10.224.0.1
+    Subnets:   10.0.0.0/8
+               172.19.0.0/16
+               172.21.0.0/16
+    MTU:       1500
+
+  Client Network
+    CIDR:      47.47.2.30/21 (Static)
+    MAC:       00:A0:98:59:8E:89
+    Gateway:   47.47.0.1
+    MTU:       2000
+
+##############################################################
+#####   If you are satisfied with this configuration,    #####
+##### execute the script with the "install" sub-command. #####
+##############################################################
+----
+. 如果您需要變更目前組態中的任何值、請使用「configure」子命令來更新這些值。例如、如果您想要將應用裝置用於連線至主要管理節點的IP位址變更為「172.16.2.99」、請輸入以下命令：+「configure-sga.py configure -admin-ip 172.16.2.99 _SGA-install-ip_」
+. 如果您要將應用裝置組態備份到Json檔案、請使用進階和「備份檔案」子命令。例如、如果您要將IP位址為「_SGA-install-IP_」的應用裝置組態備份到名為「appliance-SG1000.json」的檔案、請輸入以下命令：+「configure-sga.py進階-備份檔案應用裝置-SG1000.json _SGGA安裝-IP_」
++
+包含組態資訊的Json檔案會寫入執行指令碼的相同目錄。
+
++
+
+IMPORTANT: 檢查所產生Json檔案中的頂層節點名稱是否與應用裝置名稱相符。除非您是經驗豐富的使用者、而且完全瞭解StorageGRID 哪些API、否則請勿對此檔案進行任何變更。
+
+. 當您對設備組態感到滿意時、請使用「install」和「monitors」子命令來安裝應用裝置：+「configure-sga.py install -監控_sgA-install-ip_」
+. 如果您要重新啟動設備、請輸入以下命令：+「configure-sga.py reboot_SGA-install-ip_」
+

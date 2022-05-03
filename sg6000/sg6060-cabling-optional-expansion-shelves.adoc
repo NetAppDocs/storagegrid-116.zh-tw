@@ -1,0 +1,103 @@
+---
+permalink: sg6000/sg6060-cabling-optional-expansion-shelves.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, cabling, cable, wiring, wire, expansion shelf, sg6060 
+summary: 如果您使用擴充櫃、則必須將其連接至E2860控制器櫃。每個SG6060應用裝置最多可有兩個擴充櫃。 
+---
+= SG6060：選購的擴充櫃佈線
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您使用擴充櫃、則必須將其連接至E2860控制器櫃。每個SG6060應用裝置最多可有兩個擴充櫃。
+
+.您需要的是 #8217 ；需要的是什麼
+* 每個擴充櫃都隨附兩條SAS纜線。
+* 您已在機櫃或機架中安裝E2860控制器機櫃的擴充櫃。
++
+xref:sg6060-installing-60-drive-shelves-into-cabinet-or-rack.adoc[SG6060：將60個磁碟機櫃安裝到機櫃或機架中]
+
+
+
+如圖所示、將每個擴充櫃連接至E2860控制器機櫃。
+
+此圖顯示兩個擴充櫃。如果您只有一個、請將IOM A連接至控制器A、然後將IOM B連接至控制器B
+
+image::../media/expansion_shelves_connections_sg6060.png[SG6060擴充櫃連線]
+
+[cols="1a,2a"]
+|===
+| 標註 | 說明 
+
+
+ a| 
+1.
+ a| 
+SG6000-CN
+
+
+
+ a| 
+2.
+ a| 
+E2860控制器機櫃
+
+
+
+ a| 
+3.
+ a| 
+控制器A
+
+
+
+ a| 
+4.
+ a| 
+控制器B
+
+
+
+ a| 
+5.
+ a| 
+擴充櫃1.
+
+
+
+ a| 
+6.
+ a| 
+用於擴充櫃1的IOM A
+
+
+
+ a| 
+7.
+ a| 
+用於擴充櫃1的IOM B
+
+
+
+ a| 
+8.
+ a| 
+擴充櫃2.
+
+
+
+ a| 
+9.
+ a| 
+用於擴充櫃2的IOM A
+
+
+
+ a| 
+10.
+ a| 
+用於擴充櫃2的IOM B
+
+|===

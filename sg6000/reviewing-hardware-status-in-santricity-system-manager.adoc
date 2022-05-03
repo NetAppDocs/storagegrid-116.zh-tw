@@ -1,0 +1,59 @@
+---
+permalink: sg6000/reviewing-hardware-status-in-santricity-system-manager.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, SANtricity System Manager, SANtricity, System Manager, hardware, status, diagnostic, environment drives, drive, temperature 
+summary: 您可以使用SANtricity 「支援系統管理程式」來監控及管理儲存控制器機櫃中的個別硬體元件、並檢閱硬體診斷與環境資訊、例如元件溫度、以及與磁碟機相關的問題。 
+---
+= 在SANtricity 《Sytricity System Manager》中檢視硬體狀態
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用SANtricity 「支援系統管理程式」來監控及管理儲存控制器機櫃中的個別硬體元件、並檢閱硬體診斷與環境資訊、例如元件溫度、以及與磁碟機相關的問題。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您使用的是 xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+* 若要SANtricity 透過Grid Manager存取「更新系統管理程式」、您必須擁有Storage Appliance管理員權限或「根存取權限」。
+* 若要SANtricity 使用StorageGRID 《不能用的應用程式》安裝程式存取《不能用的功能》、您必須擁有SANtricity 《系統管理程式》管理員的使用者名稱和密碼。
+* 若要SANtricity 使用網頁瀏覽器直接存取「功能區」、您必須擁有SANtricity 「功能區管理員」的使用者名稱和密碼。
+
+
+
+NOTE: 您必須擁有SANtricity 更新版本的韌體8.70或更新版本、SANtricity 才能使用Grid Manager或StorageGRID NetApp設備安裝程式來存取《更新版》。
+
+
+IMPORTANT: 從SANtricity Grid Manager或應用裝置安裝程式存取「支援系統管理程式」、通常只能用來監控硬體及設定E系列AutoSupport 支援。許多功能和操作SANtricity 都不適用於監控StorageGRID 您的產品。為避免發生問題、請務必遵循設備的硬體安裝與維護指示。
+
+.步驟
+. xref:setting-up-and-accessing-santricity-system-manager.adoc[存取SANtricity 《系統管理程式》]。
+. 如有需要、請輸入管理員使用者名稱和密碼。
+. 按一下*「取消」*關閉「設定精靈」並顯示SANtricity 「系統管理程式」首頁。
++
+出現「系統管理程式」首頁。SANtricity在「系統管理程式」中SANtricity 、控制器機櫃稱為儲存陣列。
+
++
+image::../media/sam_home_page.gif[《系統管理程式》首頁的螢幕擷取畫面SANtricity]
+
+. 檢閱顯示的應用裝置硬體資訊、並確認所有硬體元件的狀態均為「最佳」。
++
+.. 按一下「*硬體*」索引標籤。
+.. 按一下*顯示機櫃背面*。
++
+image::../media/sam_hardware_controllers_a_and_b.gif[Hardware Status（硬體狀態）選項卡SANtricity]
+
++
+從機櫃背面、您可以檢視兩個儲存控制器、每個儲存控制器中的電池、兩個電源容器、兩個風扇容器和擴充櫃（如果有）。您也可以檢視元件溫度。
+
+.. 若要查看每個儲存控制器的設定、請選取控制器、然後從內容功能表中選取*檢視設定*。
+.. 若要查看機櫃背面其他元件的設定、請選取您要檢視的元件。
+.. 按一下*顯示機櫃正面*、然後選取您要檢視的元件。
++
+從機櫃正面、您可以檢視儲存控制器機櫃或擴充櫃（如果有）的磁碟機和磁碟機抽取器。
+
+
+
+
+
+如果需要注意任何元件的狀態、請依照Recovery Guru中的步驟解決問題、或聯絡技術支援部門。

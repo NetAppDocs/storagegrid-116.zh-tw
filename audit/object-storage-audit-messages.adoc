@@ -1,0 +1,135 @@
+---
+permalink: audit/object-storage-audit-messages.html 
+sidebar: sidebar 
+keywords: storagegrid, audit, object storage, object management, object retrieval, node transfer, verification, APCT, ARCB, ARCE, ARCT, AREM, ASCE, ASCT, ATCE, AVCC, CBSE, CBRE, SCMT, SREM 
+summary: 您應該熟悉屬於物件儲存稽核類別的稽核訊息。這些是StorageGRID 與儲存及管理等物件相關的事件、這些事件都在整個系統的範圍內。包括物件儲存與擷取、網格節點對網格節點傳輸及驗證。 
+---
+= 物件儲存稽核訊息
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您應該熟悉屬於物件儲存稽核類別的稽核訊息。這些是StorageGRID 與儲存及管理等物件相關的事件、這些事件都在整個系統的範圍內。包括物件儲存與擷取、網格節點對網格節點傳輸及驗證。
+
+|===
+| 程式碼 | 說明 | 請參閱 
+
+
+ a| 
+APCT
+ a| 
+歸檔從雲端清除：已歸檔的物件資料會從外部歸檔儲存系統中刪除、StorageGRID 此儲存系統透過S3 API連線至支援中心。
+ a| 
+xref:apct-archive-purge-from-cloud-tier.adoc[APCT：從雲端層進行歸檔清除]
+
+
+
+ a| 
+ARCB
+ a| 
+歸檔物件擷取開始：ARC服務會從外部歸檔儲存系統開始擷取物件資料。
+ a| 
+xref:arcb-archive-object-retrieve-begin.adoc[ARCB：歸檔物件擷取開始]
+
+
+
+ a| 
+Arce
+ a| 
+歸檔物件擷取結束：已從外部歸檔儲存系統擷取物件資料、且ARC服務會報告擷取作業的狀態。
+ a| 
+xref:arce-archive-object-retrieve-end.adoc[Arce：歸檔物件擷取結束]
+
+
+
+ a| 
+ARCT
+ a| 
+歸檔擷取自雲端層：歸檔的物件資料是從外部歸檔儲存系統擷取、此儲存系統StorageGRID 透過S3 API連線至支援中心。
+ a| 
+xref:arct-archive-retrieve-from-cloud-tier.adoc[ARCT：歸檔從雲端層擷取]
+
+
+
+ a| 
+AREM
+ a| 
+歸檔物件移除：內容區塊已從外部歸檔儲存系統成功或未成功刪除。
+ a| 
+xref:arem-archive-object-remove.adoc[AREM：歸檔物件移除]
+
+
+
+ a| 
+ASCE
+ a| 
+歸檔物件存放區端點：內容區塊已寫入外部歸檔儲存系統、且ARC服務會報告寫入作業的狀態。
+ a| 
+xref:asce-archive-object-store-end.adoc[ASCE：歸檔物件存放區結束]
+
+
+
+ a| 
+ASCT
+ a| 
+歸檔儲存雲端層：物件資料會儲存至外部歸檔儲存系統、StorageGRID 透過S3 API連線至該系統。
+ a| 
+xref:asct-archive-store-cloud-tier.adoc[ASCT：歸檔儲存雲端層]
+
+
+
+ a| 
+ATCE
+ a| 
+歸檔物件存放區開始：已開始將內容區塊寫入外部歸檔儲存區。
+ a| 
+xref:atce-archive-object-store-begin.adoc[ATCE：歸檔物件存放區開始]
+
+
+
+ a| 
+AVCC
+ a| 
+歸檔驗證雲端層組態：提供的帳戶和儲存庫設定已成功或未成功驗證。
+ a| 
+xref:avcc-archive-validate-cloud-tier-configuration.adoc[AVCC：歸檔驗證雲端層組態]
+
+
+
+ a| 
+CBSE
+ a| 
+物件傳送結束：來源實體已完成網格節點對網格節點的資料傳輸作業。
+ a| 
+xref:cbse-object-send-end.adoc[CBSE：物件傳送結束]
+
+
+
+ a| 
+CBRE
+ a| 
+物件接收結束：目的地實體完成了網格節點對網格節點的資料傳輸作業。
+ a| 
+xref:cbre-object-receive-end.adoc[CBRE：物件接收結束]
+
+
+
+ a| 
+SCMT
+ a| 
+物件存放區提交：內容區塊已完全儲存並驗證、現在可以申請。
+ a| 
+xref:scmt-object-store-commit.adoc[SCMT：物件存放區提交]
+
+
+
+ a| 
+Srem
+ a| 
+物件存放區移除：內容區塊已從網格節點刪除、無法再直接要求。
+ a| 
+xref:srem-object-store-remove.adoc[Srem：物件存放區移除]
+
+|===

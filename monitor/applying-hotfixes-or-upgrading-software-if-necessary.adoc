@@ -1,0 +1,57 @@
+---
+permalink: monitor/applying-hotfixes-or-upgrading-software-if-necessary.html 
+sidebar: sidebar 
+keywords: how to apply software upgrade, how to apply hotfix 
+summary: 如果有可用的修補程式或StorageGRID 更新版本的更新、您應該評估更新是否適合您的系統、並視需要安裝。 
+---
+= 如有必要、請套用即時修復或升級軟體
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果有可用的修補程式或StorageGRID 更新版本的更新、您應該評估更新是否適合您的系統、並視需要安裝。
+
+不含功能或修補程式版本、而可在其中進行軟體變更。StorageGRID未來版本也會包含相同的變更。
+
+.步驟
+. 請前往NetApp下載頁StorageGRID 面以瞭解決此問題。
++
+https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["NetApp下載StorageGRID"^]
+
+. 選取「*類型/選取版本*」欄位的向下箭頭、即可查看可供下載的更新清單：
++
+** *《*》軟體版本*：StorageGRID 11._x.y_
+** *《*》修補程式*：StorageGRID 11._x.y.z_
+
+
+. 檢閱更新中包含的變更：
++
+.. 從下拉式功能表中選取版本、然後按一下「*執行*」。
+.. 使用您NetApp帳戶的使用者名稱和密碼登入。
+.. 閱讀使用者授權合約、勾選核取方塊、然後選取*接受並繼續*。
++
+此時將顯示所選版本的下載頁面。
+
+
+
+. 瞭解軟體版本或熱修復程式中所含的變更。
++
+** 如需新的軟體版本、請參閱升級StorageGRID 說明中的「新增功能」主題。
+** 如需修補程式、請下載README檔案、以取得修補程式所含變更的摘要。
+
+
+. 如果您決定需要軟體更新、請先找出指示、再繼續進行。
++
+** 對於新的軟體版本、請仔細遵循升級StorageGRID 過程中的說明。
+** 如需修補程式、請在恢復與維護指示中找到修復程序程序程序
+
+
+
+
+*相關資訊*
+
+xref:../upgrade/index.adoc[升級軟體]
+
+xref:../maintain/index.adoc[恢復與維護]

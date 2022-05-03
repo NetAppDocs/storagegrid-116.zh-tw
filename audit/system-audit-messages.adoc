@@ -1,0 +1,208 @@
+---
+permalink: audit/system-audit-messages.html 
+sidebar: sidebar 
+keywords: storagegrid, audit, message, messages, system, ECOC, ETAF, GNRG, GNUR, GTED, GTST, GTSU, IDEL, LKCU, LLST, OLST, ORLM, SADD, SADE, SVRF, SVRU, SYSD, SYST, SYSU, VLST 
+summary: 您應該熟悉屬於系統稽核類別的稽核訊息。這些事件與稽核系統本身、網格節點狀態、全系統工作活動（網格工作）和服務備份作業有關、因此您可以解決潛在的問題。 
+---
+= 系統稽核訊息
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您應該熟悉屬於系統稽核類別的稽核訊息。這些事件與稽核系統本身、網格節點狀態、全系統工作活動（網格工作）和服務備份作業有關、因此您可以解決潛在的問題。
+
+|===
+| 程式碼 | 訊息標題與說明 | 請參閱 
+
+
+ a| 
+ECMC
+ a| 
+遺失銷毀編碼資料片段：表示偵測到遺失的銷毀編碼資料片段。
+ a| 
+xref:ecmc-missing-erasure-coded-data-fragment.adoc[ECMC：遺失銷毀編碼資料片段]
+
+
+
+ a| 
+ECOC
+ a| 
+毀損的銷毀編碼資料片段：表示偵測到毀損的銷毀編碼資料片段。
+ a| 
+xref:ecoc-corrupt-erasure-coded-data-fragment.adoc[ECOC：毀損的銷毀編碼資料片段]
+
+
+
+ a| 
+ETAF
+ a| 
+安全驗證失敗：使用傳輸層安全性（TLS）的連線嘗試失敗。
+ a| 
+xref:etaf-security-authentication-failed.adoc[ETAF：安全驗證失敗]
+
+
+
+ a| 
+GNRG
+ a| 
+GNDS登錄：一項服務、更新或註冊StorageGRID 了有關其本身在本系統中的資訊。
+ a| 
+xref:gnrg-gnds-registration.adoc[GNRG：GNDS登錄]
+
+
+
+ a| 
+GNur
+ a| 
+GNDS取消登錄：服務已從StorageGRID 這個系統中取消登錄。
+ a| 
+xref:gnur-gnds-unregistration.adoc[GNur：GNDS取消登錄]
+
+
+
+ a| 
+GTED
+ a| 
+網格工作已結束：CMN服務已完成網格工作的處理。
+ a| 
+xref:gted-grid-task-ended.adoc[GTED：網格工作已結束]
+
+
+
+ a| 
+GTSt
+ a| 
+網格工作已開始：CMN服務已開始處理網格工作。
+ a| 
+xref:gtst-grid-task-started.adoc[GTST：網格工作已開始]
+
+
+
+ a| 
+GTSU
+ a| 
+已提交網格工作：已將網格工作提交至CMN服務。
+ a| 
+xref:gtsu-grid-task-submitted.adoc[GTSU：已提交Grid工作]
+
+
+
+ a| 
+理想
+ a| 
+ILM初始化刪除：此稽核訊息是在ILM開始刪除物件的程序時產生。
+ a| 
+xref:idel-ilm-initiated-delete.adoc[表意：ILM啟動刪除]
+
+
+
+ a| 
+LKCU
+ a| 
+覆寫物件清除。此稽核訊息會在自動移除覆寫的物件以釋放儲存空間時產生。
+ a| 
+xref:lkcu-overwritten-object-cleanup.adoc[LKCU：覆寫物件清理]
+
+
+
+ a| 
+LLST
+ a| 
+位置遺失：此稽核訊息會在位置遺失時產生。
+ a| 
+xref:llst-location-lost.adoc[LLST：位置遺失]
+
+
+
+ a| 
+OLST
+ a| 
+物件遺失：要求的物件無法位於StorageGRID 整個系統內。
+ a| 
+xref:olst-system-detected-lost-object.adoc[OLST：系統偵測到遺失物件]
+
+
+
+ a| 
+ORLM
+ a| 
+符合物件規則：物件資料會依照ILM規則指定儲存。
+ a| 
+xref:orlm-object-rules-met.adoc[ORLM：符合物件規則]
+
+
+
+ a| 
+Sadd
+ a| 
+安全稽核停用：稽核訊息記錄已關閉。
+ a| 
+xref:sadd-security-audit-disable.adoc[Sadd：停用安全性稽核]
+
+
+
+ a| 
+SAade
+ a| 
+啟用安全性稽核：稽核訊息記錄已還原。
+ a| 
+xref:sade-security-audit-enable.adoc[SAade：啟用安全性稽核]
+
+
+
+ a| 
+SVRF
+ a| 
+物件存放區驗證失敗：內容區塊驗證檢查失敗。
+ a| 
+xref:svrf-object-store-verify-fail.adoc[SVRF：物件存放區驗證失敗]
+
+
+
+ a| 
+SVRU
+ a| 
+物件存放區驗證不明：在物件存放區中偵測到非預期的物件資料。
+ a| 
+xref:svru-object-store-verify-unknown.adoc[SVRU：物件存放區驗證不明]
+
+
+
+ a| 
+SYSD
+ a| 
+節點停止：要求關機。
+ a| 
+xref:sysd-node-stop.adoc[SYSD：節點停止]
+
+
+
+ a| 
+系統
+ a| 
+節點停止：服務啟動正常停止。
+ a| 
+xref:syst-node-stopping.adoc[Syst：節點停止]
+
+
+
+ a| 
+SYSU
+ a| 
+節點啟動：服務已啟動；先前關機的性質會在訊息中指出。
+ a| 
+xref:sysu-node-start.adoc[SYSU：節點啟動]
+
+
+
+ a| 
+VLST
+ a| 
+使用者起始的Volume Lost：已執行「/proc/CMSI/Volume_Lost」命令。
+ a| 
+xref:vlst-user-initiated-volume-lost.adoc[VLST：使用者起始的Volume Lost]
+
+|===
+xref:lkcu-overwritten-object-cleanup.adoc[LKCU：覆寫物件清理]

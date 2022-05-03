@@ -1,0 +1,14 @@
+---
+permalink: sg5600/troubleshooting-hardware-installation.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, troubleshoot, troubleshooting, hardware, install, installation 
+summary: 如果在安裝期間遇到問題、您可能會發現檢閱與硬體設定和連線問題相關的疑難排解資訊很有幫助。 
+---
+= 疑難排解硬體安裝（SG5600）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果在安裝期間遇到問題、您可能會發現檢閱與硬體設定和連線問題相關的疑難排解資訊很有幫助。

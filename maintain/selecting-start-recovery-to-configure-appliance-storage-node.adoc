@@ -1,0 +1,53 @@
+---
+permalink: maintain/selecting-start-recovery-to-configure-appliance-storage-node.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, appliance storage node 
+summary: 您必須在Grid Manager中選取「Start Recovery」（開始還原）、才能將應用裝置儲存節點設定為故障節點的替換節點。 
+---
+= 選取「Start Recovery（開始恢復）」以設定應用裝置儲存節點
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須在Grid Manager中選取「Start Recovery」（開始還原）、才能將應用裝置儲存節點設定為故障節點的替換節點。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您必須使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+* 您必須具有維護或根存取權限。
+* 您必須擁有資源配置通關密碼。
+* 您必須已部署恢復應用裝置儲存節點。
+* 您必須知道任何銷毀編碼資料修復工作的開始日期。
+* 您必須已確認儲存節點在過去15天內尚未重建。
+
+
+.步驟
+. 從Grid Manager中選擇* maintenance *>* Tasks *>* Recovery*。
+. 在「Pending Node」（擱置節點）清單中選取您要恢復的網格節點。
++
+節點在故障後會出現在清單中、但在重新安裝節點並準備好恢復之前、您無法選取節點。
+
+. 輸入*配置密碼*。
+. 單擊*開始恢復*。
++
+image::../media/4b_select_recovery_node.png[顯示「維護」>「恢復」頁面的快照]
+
+. 監控恢復網格節點表格中的恢復進度。
++
+當網格節點達到「Waiting for Manual Steps」（正在等待手動步驟）階段時、請前往下一個主題、執行手動步驟以重新掛載及重新格式化應用裝置儲存磁碟區。
+
++
+image::../media/recovery_reset_button.gif[顯示等待手動步驟階段的快照]
+
++
+
+NOTE: 在恢復期間的任何時間點、您都可以按一下*重設*來開始新的恢復。此時會出現「資訊」對話方塊、表示如果您重設程序、節點將會處於不確定狀態。
+
++
+image::../media/recovery_reset_warning.gif[顯示重設恢復警告對話方塊的快照]
+
++
+如果您想在重設程序後重試恢復、則必須在節點上執行「shareinstall」、將應用裝置節點還原為預先安裝的狀態。
+
+

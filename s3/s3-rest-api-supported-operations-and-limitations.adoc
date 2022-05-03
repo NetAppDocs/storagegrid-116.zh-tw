@@ -1,0 +1,69 @@
+---
+permalink: s3/s3-rest-api-supported-operations-and-limitations.html 
+sidebar: sidebar 
+keywords: s3 rest api supported operations, s3 rest api limitations 
+summary: 此系統實作簡單儲存服務API（API版本2002-03）、支援大部分作業、並有一些限制。StorageGRID整合S3 REST API用戶端應用程式時、您必須瞭解實作詳細資料。 
+---
+= S3 REST API支援的作業和限制
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此系統實作簡單儲存服務API（API版本2002-03）、支援大部分作業、並有一些限制。StorageGRID整合S3 REST API用戶端應用程式時、您必須瞭解實作詳細資料。
+
+支援虛擬託管型要求和路徑型要求的支援。StorageGRID
+
+
+
+== 日期處理
+
+S3 REST API的支援僅支援有效的HTTP日期格式。StorageGRID
+
+支援此功能的僅支援接受日期值的任何標頭的有效HTTP日期格式。StorageGRID日期的時間部分可以格林尼治標準時間（GMT）格式指定、或以通用協調時間（UTC）格式指定、且無時區偏移（必須指定+0000）。如果您在申請中加入「x-amz-date」標頭、它會覆寫在「日期」申請標頭中指定的任何值。使用AWS簽名版本4時、由於不支援日期標頭、因此簽署的要求中必須有「x-amz-date」標頭。
+
+
+
+== 一般要求標頭
+
+支援由定義的一般要求標頭StorageGRID http://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html["Amazon Web Services（AWS）文件：Amazon Simple Storage Service API Reference"^]、但有一項例外。
+
+|===
+| 要求標頭 | 實作 
+
+
+ a| 
+授權
+ a| 
+完整支援AWS簽名版本2
+
+支援AWS簽名版本4、但有下列例外：
+
+* SHA256值不會針對申請本文進行計算。使用者提交的值會在未經驗證的情況下接受、如同「X-amz-content-sha256」標頭所提供的值「unsign-payload」一樣。
+
+
+
+
+ a| 
+X-amz-security-token
+ a| 
+未實作。返回"XNotImplemated（XNotImplemed）"。
+
+|===
+
+
+== 通用回應標頭
+
+支援所有由_Simple Storage Service API Reference（簡易儲存服務API參考）定義的通用回應標頭、但有一項例外。StorageGRID
+
+|===
+| 回應標頭 | 實作 
+
+
+ a| 
+X-amz-id-2
+ a| 
+未使用
+
+|===

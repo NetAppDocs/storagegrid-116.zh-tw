@@ -1,0 +1,14 @@
+---
+permalink: sg100-1000/configuring-bmc-interface-sg1000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, BMC, baseboard management controller, configure, setup, set up 
+summary: 服務應用裝置上的基板管理控制器（BMC）使用者介面提供硬體的狀態資訊、可讓您設定服務應用裝置的SNMP設定和其他選項。 
+---
+= 設定BMC介面（SG100和SG1000）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+服務應用裝置上的基礎板管理控制器（BMC）使用者介面提供硬體的狀態資訊、可讓您設定服務應用裝置的SNMP設定和其他選項。

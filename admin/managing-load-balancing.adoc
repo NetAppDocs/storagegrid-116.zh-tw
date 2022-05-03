@@ -1,0 +1,27 @@
+---
+permalink: admin/managing-load-balancing.html 
+sidebar: sidebar 
+keywords: manage load balancing, balance workload, client ingest, client retrieval, distribute connection 
+summary: 您可以使用StorageGRID S動靈 負載平衡功能來處理S3和Swift用戶端的擷取和擷取工作負載。負載平衡功能可將工作負載和連線分散到多個儲存節點、以最大化速度和連線容量。 
+---
+= 管理負載平衡：總覽
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用StorageGRID S動靈 負載平衡功能來處理S3和Swift用戶端的擷取和擷取工作負載。負載平衡功能可將工作負載和連線分散到多個儲存節點、以最大化速度和連線容量。
+
+您可以使用下列方式來平衡用戶端工作負載：
+
+* 使用安裝在管理節點和閘道節點上的負載平衡器服務。負載平衡器服務提供第7層負載平衡、並對用戶端要求執行TLS終止、檢查要求、以及建立新的安全連線至儲存節點。這是建議的負載平衡機制。
++
+請參閱 xref:how-load-balancing-works-load-balancer-service.adoc[負載平衡的運作方式-負載平衡器服務]。
+
+* 使用過時的Connection Load Balancer（CLB）服務、該服務僅安裝在閘道節點上。CLB服務提供第4層負載平衡、並支援連結成本。
++
+請參閱 xref:how-load-balancing-works-clb-service.adoc[負載平衡的運作方式- CLB服務（已過時）]。
+
+* 整合協力廠商負載平衡器。如需詳細資料、請聯絡您的NetApp客戶代表。
+

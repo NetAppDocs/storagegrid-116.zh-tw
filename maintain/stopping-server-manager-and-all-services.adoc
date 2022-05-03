@@ -1,0 +1,35 @@
+---
+permalink: maintain/stopping-server-manager-and-all-services.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, stop server manager, stop all services, stop services 
+summary: 伺服器管理程式可隨時執行、但您可能需要停止伺服器管理程式及在網格節點上執行的所有服務。 
+---
+= 停止伺服器管理員和所有服務
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+伺服器管理程式可隨時執行、但您可能需要停止伺服器管理程式及在網格節點上執行的所有服務。
+
+您必須擁有「passwors.txt」檔案。
+
+.步驟
+. 登入網格節點：
++
+.. 輸入下列命令：「sh admin@_grid_node_ip_`」
+.. 輸入「passwords.txt」檔案中所列的密碼。
+.. 輸入下列命令以切換至root：「u -」
+.. 輸入「passwords.txt」檔案中所列的密碼。
+
+
++
+以root登入時、提示會從「$」變更為「#」。
+
+. 停止伺服器管理程式及在網格節點上執行的所有服務：「ervice servermanager stop」
++
+伺服器管理程式和在網格節點上執行的所有服務都會正常終止。關閉服務最多需要15分鐘。
+
+. 登出命令Shell：「exit」
+

@@ -1,0 +1,57 @@
+---
+permalink: maintain/starting-or-restarting-service.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, service, start service, restart service 
+summary: 您可能需要啟動已停止的服務、或是需要停止並重新啟動服務。 
+---
+= 啟動或重新啟動服務
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可能需要啟動已停止的服務、或是需要停止並重新啟動服務。
+
+您必須擁有「passwors.txt」檔案。
+
+.步驟
+. 登入網格節點：
++
+.. 輸入下列命令：「sh admin@_grid_node_ip_`」
+.. 輸入「passwords.txt」檔案中所列的密碼。
+.. 輸入下列命令以切換至root：「u -」
+.. 輸入「passwords.txt」檔案中所列的密碼。
+
+
++
+以root登入時、提示會從「$」變更為「#」。
+
+. 根據服務目前正在執行或停止、決定要發出哪一個命令。
++
+** 如果服務目前已停止、請使用「開始」命令手動啟動服務：「service_servicenamen_ start」
++
+例如：
+
++
+[listing]
+----
+service ldr start
+----
+** 如果服務目前正在執行中、請使用「restart」命令停止服務、然後重新啟動：「service _servicenamen_ restarts」
++
+例如：
+
++
+[listing]
+----
+service ldr restart
+----
++
+
+NOTE: 使用「REstart」命令與使用「shtop」命令後面接著「start」命令相同。即使服務目前已停止、您也可以發出「重新啟動」。
+
+
+
+. 登出命令Shell：「exit」
+

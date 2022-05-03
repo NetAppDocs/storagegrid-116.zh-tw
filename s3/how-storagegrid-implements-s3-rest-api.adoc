@@ -1,0 +1,14 @@
+---
+permalink: s3/how-storagegrid-implements-s3-rest-api.html 
+sidebar: sidebar 
+keywords: implement s3 rest api 
+summary: 用戶端應用程式可以使用S3 REST API呼叫來連線StorageGRID 至以建立、刪除和修改儲存區、以及儲存和擷取物件。 
+---
+= 如何實作S3 REST API StorageGRID
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+用戶端應用程式可以使用S3 REST API呼叫來連線StorageGRID 至以建立、刪除和修改儲存區、以及儲存和擷取物件。

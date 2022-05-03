@@ -1,0 +1,25 @@
+---
+permalink: admin/determining-ilm-policy-for-migrated-data.html 
+sidebar: sidebar 
+keywords: determing ilm policy, ilm for migrated data 
+summary: 這個系統的ILM原則決定了複本的製作量、複本的儲存位置、以及複本保留的時間長度。StorageGRIDILM原則包含一組ILM規則、說明如何篩選物件及管理物件資料。 
+---
+= 判斷移轉資料的ILM原則
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+這個系統的ILM原則決定了複本的製作量、複本的儲存位置、以及複本保留的時間長度。StorageGRIDILM原則包含一組ILM規則、說明如何篩選物件及管理物件資料。
+
+視移轉資料的使用方式和移轉資料的需求而定、您可能會想要針對移轉資料定義不同於日常作業所用ILM規則的獨特ILM規則。例如、如果日常資料管理的法規要求與移轉所含資料的法規要求不同、您可能需要不同等級的儲存設備上不同數量的移轉資料複本。
+
+您可以設定專屬套用至移轉資料的規則、以便在移轉資料與儲存自日常作業的物件資料之間進行唯一區分。
+
+如果您可以使用其中一個中繼資料準則來可靠地區分資料類型、您可以使用此準則來定義僅適用於移轉資料的ILM規則。
+
+在開始資料移轉之前、請先確認您已瞭解StorageGRID 完此系統的ILM原則、以及它將如何套用至移轉的資料、並已對ILM原則進行任何變更並進行測試。請參閱 xref:../ilm/index.adoc[使用ILM管理物件]。
+
+
+CAUTION: 未正確指定的ILM原則可能導致無法恢復的資料遺失。在啟動ILM原則之前、請仔細檢閱您對其所做的所有變更、以確保原則能如預期運作。

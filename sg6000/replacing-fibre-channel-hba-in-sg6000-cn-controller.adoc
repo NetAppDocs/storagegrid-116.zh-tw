@@ -1,0 +1,14 @@
+---
+permalink: sg6000/replacing-fibre-channel-hba-in-sg6000-cn-controller.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, Replacing, replace, sg6000-cn, hba, host bus adapter, fibre channel, fiber channel 
+summary: 如果SG6000-CN-控制器無法以最佳方式運作、或發生故障、您可能需要更換光纖通道主機匯流排介面卡（HBA\）。 
+---
+= 更換SG6000-CN-控制器中的Fibre Channel HBA
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果SG6000-CN-控制器無法正常運作或發生故障、您可能需要更換光纖通道主機匯流排介面卡（HBA）。

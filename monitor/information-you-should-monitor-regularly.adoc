@@ -1,0 +1,82 @@
+---
+permalink: monitor/information-you-should-monitor-regularly.html 
+sidebar: sidebar 
+keywords: monitor, monitoring, StorageGRID, 
+summary: 支援容錯的分散式儲存系統、可在發生錯誤、節點或站台無法使用時繼續運作。StorageGRID您必須主動監控系統健全狀況、工作負載及使用量統計資料、以便在潛在問題影響網格的效率或可用度之前、採取行動解決這些問題。 
+---
+= 您應該定期監控的資訊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+支援容錯的分散式儲存系統、可在發生錯誤、節點或站台無法使用時繼續運作。StorageGRID您必須主動監控系統健全狀況、工作負載及使用統計資料、以便在潛在問題影響網格的效率或可用度之前、採取行動來解決這些問題。
+
+忙碌的系統會產生大量資訊。本節提供持續監控最重要資訊的指引。
+
+[cols="2a,1a"]
+|===
+| 監控內容 | 頻率 
+
+
+ a| 
+。 xref:monitoring-system-health.adoc[系統健全狀況資料] 顯示於Grid Manager儀表板。請注意前一天是否有任何變更。
+ a| 
+每日
+
+
+
+ a| 
+比率 xref:monitoring-storage-capacity.adoc[儲存節點物件和中繼資料容量] 正在使用中
+ a| 
+每週
+
+
+
+ a| 
+xref:monitoring-information-lifecycle-management.adoc[資訊生命週期管理作業]
+ a| 
+每週
+
+
+
+ a| 
+xref:monitoring-performance-networking-and-system-resources.adoc[效能、網路及系統資源]：
+
+* 查詢延遲
+* 連線與網路
+* 節點層級資源
+
+ a| 
+每週
+
+
+
+ a| 
+xref:monitoring-tenant-activity.adoc[租戶活動]
+ a| 
+每週
+
+
+
+ a| 
+xref:monitoring-archival-capacity.adoc[外部歸檔儲存系統的容量]
+ a| 
+每週
+
+
+
+ a| 
+xref:monitoring-load-balancing-operations.adoc[負載平衡作業]
+ a| 
+在初始組態之後以及任何組態變更之後
+
+
+
+ a| 
+xref:applying-hotfixes-or-upgrading-software-if-necessary.adoc[提供軟體修補程式與軟體升級]
+ a| 
+每月
+
+|===

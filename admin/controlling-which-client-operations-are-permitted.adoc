@@ -1,0 +1,48 @@
+---
+permalink: admin/controlling-which-client-operations-are-permitted.html 
+sidebar: sidebar 
+keywords: prevent client modification, grid option, deny client operations 
+summary: 您可以選取「防止用戶端修改」網格選項、以拒絕特定的HTTP用戶端作業。 
+---
+= 控制允許哪些用戶端作業
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以選取「防止用戶端修改」網格選項、以拒絕特定的HTTP用戶端作業。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+* 您擁有特定的存取權限。
+
+
+「防止用戶端修改」是全系統設定。選取「阻止用戶端修改」選項時、下列要求將遭拒：
+
+* * S3 REST API*
++
+** 刪除時段要求
+** 任何修改現有物件資料、使用者定義中繼資料或S3物件標記的要求
++
+
+NOTE: 此設定不適用於已啟用版本管理的儲存區。版本管理功能已防止修改物件資料、使用者定義的中繼資料及物件標記。
+
+
+
+* * Swift REST API*
++
+** 刪除Container要求
+** 要求修改任何現有物件。例如、下列作業會遭拒：「放置覆寫」、「刪除」、「中繼資料更新」等。
+
+
+
+
+.步驟
+. 選擇*組態*>*系統*>*網格選項*。
+. 在「網路選項」區段中、選取「*防止用戶端修改*」核取方塊。
++
+image::../media/prevent_client_modification.png[防止用戶端修改]
+
+. 選擇*保存*。
+

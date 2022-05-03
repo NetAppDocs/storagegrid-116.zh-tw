@@ -1,0 +1,49 @@
+---
+permalink: tenant/deleting-s3-bucket.html 
+sidebar: sidebar 
+keywords: how to delete S3 bucket 
+summary: 您可以使用租戶管理程式刪除空的S3儲存區。 
+---
+= 刪除S3儲存區
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用租戶管理程式刪除一或多個空的S3儲存區。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您必須使用登入租戶管理程式 xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+* 您必須屬於具有「管理所有庫位」或「根存取」權限的使用者群組。這些權限會覆寫群組或儲存區原則中的權限設定。請參閱 xref:tenant-management-permissions.adoc[租戶管理權限]。
+* 您要刪除的儲存區是空的。
+
+
+這些指示說明如何使用租戶管理程式刪除S3儲存區。您也可以使用刪除S3儲存區 xref:understanding-tenant-management-api.adoc[租戶管理API] 或 xref:../s3/s3-rest-api-supported-operations-and-limitations.adoc[S3 REST API]。
+
+如果S3儲存區包含物件或非目前物件版本、則無法刪除。如需如何刪除S3版本控制物件的相關資訊、請參閱 xref:../ilm/index.adoc[使用資訊生命週期管理來管理物件的指示]。
+
+.步驟
+. 選擇*儲存設備（S3）*>*桶*。
++
+此時會顯示「庫位」頁面、並顯示所有現有的S3庫位。
+
++
+image::../media/buckets_table.png[鏟斗表]
+
+. 選取您要刪除之空白儲存格的核取方塊。您一次可以選取多個儲存桶。
++
+「動作」功能表已啟用。
+
+. 從「Actions（動作）」功能表中、選取*「Delete Bucket*（刪除桶）」（如果您選擇多個桶、請選取*「Delete Bucket*（刪除桶）」）。
++
+image::../media/delete_bucket_button.png[刪除鏟斗按鈕]
+
+. 當確認對話方塊出現時、請選取* Yes*刪除您選擇的所有儲存區。
++
+確認每個儲存區都是空的、然後刪除每個儲存區。StorageGRID此作業可能需要幾分鐘的時間。
+
++
+如果儲存區不是空的、就會出現錯誤訊息。您必須先刪除所有物件、才能刪除儲存區。
+
+

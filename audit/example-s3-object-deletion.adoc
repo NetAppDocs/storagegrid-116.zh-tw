@@ -1,0 +1,28 @@
+---
+permalink: audit/example-s3-object-deletion.html 
+sidebar: sidebar 
+keywords: storagegrid, audit, example, S3, object deletion 
+summary: 當S3用戶端從儲存節點（LDR服務）刪除物件時、會產生稽核訊息並儲存至稽核記錄。 
+---
+= 範例：S3物件刪除
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當S3用戶端從儲存節點（LMR服務）刪除物件時、會產生稽核訊息並儲存至稽核記錄。
+
+
+NOTE: 並非所有在刪除交易期間產生的稽核訊息都會列在下例中。僅列出與S3刪除交易（SDEL）相關的項目。
+
+
+
+== SDEL：S3刪除
+
+當用戶端將刪除物件要求傳送至LMR服務時、即會開始刪除物件。訊息包含用來刪除物件的儲存區、以及用來識別物件的S3金鑰。
+
+[listing, subs="specialcharacters,quotes"]
+----
+2017-07-17T21:17:58.959669[AUDT:[RSLT(FC32):SUCS][TIME(UI64):14316][SAIP(IPAD):"10.96.112.29"][S3AI(CSTR):"70899244468554783528"][SACC(CSTR):"test"][S3AK(CSTR):"SGKHyalRU_5cLflqajtaFmxJn946lAWRJfBF33gAOg=="][SUSR(CSTR):"urn:sgws:identity::70899244468554783528:root"][SBAI(CSTR):"70899244468554783528"][SBAC(CSTR):"test"]\[S3BK\(CSTR\):"example"\]\[S3KY\(CSTR\):"testobject-0-7"\][CBID\(UI64\):0x339F21C5A6964D89][CSIZ(UI64):30720][AVER(UI32):10][ATIM(UI64):150032627859669][ATYP\(FC32\):SDEL][ANID(UI32):12086324][AMID(FC32):S3RQ][ATID(UI64):4727861330952970593]]
+----

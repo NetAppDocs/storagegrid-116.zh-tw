@@ -1,0 +1,46 @@
+---
+permalink: ilm/index.html 
+sidebar: sidebar 
+keywords: information lifecycle management overview, about information lifecycle management, ilm overview, about ilm 
+summary: 您StorageGRID 可以設定資訊生命週期管理（ILM）規則和原則、來管理整個物件系統中的物件。ILM規則和原則指示StorageGRID 如何建立及發佈物件資料複本、以及如何長期管理這些複本。 
+---
+= 使用ILM管理物件：總覽
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您StorageGRID 可以設定資訊生命週期管理（ILM）規則和原則、來管理整個物件系統中的物件。ILM規則和原則指示StorageGRID 如何建立及發佈物件資料複本、以及如何長期管理這些複本。
+
+
+
+== 關於這些指示
+
+設計及實作ILM規則和ILM原則需要仔細規劃。您必須瞭StorageGRID 解作業需求、您的作業系統拓撲、物件保護需求、以及可用的儲存類型。然後、您必須決定要如何複製、分散及儲存不同類型的物件。
+
+請依照下列指示：
+
+* 深入瞭StorageGRID 解ILM、包括ILM如何在物件生命週期中運作、以及ILM原則和規則為何。
+* 瞭解如何設定儲存資源池、刪除編碼設定檔和ILM規則。
+* 瞭解如何建立及啟動ILM原則、以保護一或多個站台的物件資料。
+* 瞭解如何使用S3物件鎖定來管理物件、這有助於確保特定S3儲存區中的物件不會在指定的時間內刪除或覆寫。
+
+
+
+
+== 深入瞭解
+
+若要深入瞭解、請觀看以下影片：
+
+* https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=beffbe9b-e95e-4a90-9560-acc5013c93d8["影片：StorageGRID 《ILM規則：入門》"^]
++
+[link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=beffbe9b-e95e-4a90-9560-acc5013c93d8]
+image::../media/video-screenshot-ilm-rules.png[影片：StorageGRID 《ILM規則：入門》]
+
+* https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c929e94e-353a-4375-b112-acc5013c81c7["影片：StorageGRID 《ILM原則》"^]
++
+[link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c929e94e-353a-4375-b112-acc5013c81c7]
+image::../media/video-screenshot-ilm-policies.png[影片：StorageGRID 《ILM原則》]
+
+

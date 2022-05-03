@@ -1,0 +1,22 @@
+---
+permalink: ilm/what-storage-pool-is.html 
+sidebar: sidebar 
+keywords: what is a storage pool 
+summary: 儲存資源池是儲存節點或歸檔節點的邏輯群組。您可以設定儲存資源池、以決定StorageGRID 物件資料的儲存位置和所使用的儲存類型。 
+---
+= 什麼是儲存資源池
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+儲存資源池是儲存節點或歸檔節點的邏輯群組。您可以設定儲存資源池、以決定StorageGRID 物件資料的儲存位置和所使用的儲存類型。
+
+儲存資源池有兩個屬性：
+
+* *儲存等級*：儲存節點的相對效能、是備用儲存設備的相對效能。
+* *站台*：儲存物件的資料中心。
+
+
+ILM規則中使用儲存資源池來決定物件資料的儲存位置。當您設定ILM複寫規則時、請選取一個或多個儲存集區、其中包括儲存節點或歸檔節點。當您建立「刪除編碼」設定檔時、請選取內含儲存節點的儲存資源池。

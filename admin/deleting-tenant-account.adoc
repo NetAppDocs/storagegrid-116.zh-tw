@@ -1,0 +1,30 @@
+---
+permalink: admin/deleting-tenant-account.html 
+sidebar: sidebar 
+keywords: tenant, delete, remove tenant 
+summary: 若要永久移除租戶對系統的存取權、您可以刪除租戶帳戶。 
+---
+= 刪除租戶帳戶
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+若要永久移除租戶對系統的存取權、您可以刪除租戶帳戶。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您必須使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+* 您必須擁有特定的存取權限。
+* 您必須移除所有與租戶帳戶相關的貯體（S3）、容器（Swift）和物件。
+
+
+.步驟
+. 選取*租戶*。
+. 選取您要刪除的租戶帳戶。
++
+使用搜尋方塊、依名稱或租戶ID搜尋租戶帳戶。
+
+. 從「*動作*」下拉式清單中選取「*刪除*」。
+. 選擇*確定*。
+

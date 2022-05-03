@@ -1,0 +1,39 @@
+---
+permalink: s3/supported-versions.html 
+sidebar: sidebar 
+keywords: supported versions, version support 
+summary: 支援下列S3和HTTP的特定版本。StorageGRID 
+---
+= 支援的版本
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+支援下列S3和HTTP的特定版本。StorageGRID
+
+|===
+| 項目 | 版本 
+
+
+ a| 
+S3規格
+ a| 
+_Simple Storage Service API參考資料_ 2006年3月1日
+
+
+
+ a| 
+HTTP
+ a| 
+1.1
+
+如需HTTP的詳細資訊、請參閱HTTP / 1.1（RFC 7230-35）。
+
+*附註* StorageGRID ：不支援HTTP / 1.1鋪管。
+
+|===
+https://datatracker.ietf.org/doc/html/rfc2616["IETF RFC 2616：超文字傳輸傳輸協定（HTTP / 1.1）"]
+
+http://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html["Amazon Web Services（AWS）文件：Amazon Simple Storage Service API Reference"]

@@ -1,0 +1,37 @@
+---
+permalink: admin/configuring-stored-object-encryption.html 
+sidebar: sidebar 
+keywords: stored object encryption, grid options, encrypt 
+summary: 如果您想要確保在物件存放區遭到入侵時、無法以可讀取的格式擷取資料、可以加密儲存的物件。依預設、物件不會加密。 
+---
+= 設定儲存的物件加密
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您想要確保在物件存放區遭到入侵時、無法以可讀取的格式擷取資料、可以加密儲存的物件。依預設、物件不會加密。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+* 您擁有特定的存取權限。
+
+
+儲存的物件加密可在透過S3或Swift擷取時、加密所有物件資料。啟用此設定時、所有新擷取的物件都會加密、但不會對現有的儲存物件進行任何變更。如果停用加密、目前加密的物件會保持加密狀態、但新擷取的物件不會加密。
+
+
+NOTE: 如果您變更此設定、則需要約一分鐘的時間才能套用新設定。系統會快取設定的值、以利效能與擴充。
+
+儲存的物件可使用AES-128或AES-256加密演算法進行加密。
+
+「儲存的物件加密」設定僅適用於尚未透過儲存區層級或物件層級加密進行加密的S3物件。
+
+.步驟
+. 選擇*組態*>*系統*>*網格選項*。
+. 在「儲存的物件選項」區段中、將「儲存的物件加密」變更為*「無」*（預設）、* AES-128*或* AES-256*。
++
+image::../media/stored_object_encryption.png[儲存的物件加密]
+
+. 選擇*保存*。
+

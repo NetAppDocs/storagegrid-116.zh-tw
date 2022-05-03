@@ -1,0 +1,33 @@
+---
+permalink: sg100-1000/reviewing-appliance-network-connections-sg100-and-sg1000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, network connections, network connection, network, connection, grid, admin, client, bmc, management 
+summary: 安裝StorageGRID 此產品之前、您應該先瞭解哪些網路可以連線至應用裝置。 
+---
+= 檢視應用裝置網路連線（SG100和SG1000）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安裝StorageGRID 此產品之前、您應該先瞭解哪些網路可以連線至應用裝置。
+
+當您將StorageGRID 某個應用裝置部署為StorageGRID 某個節點的過程中、您可以將其連接至下列網路：
+
+* * Grid Network for StorageGRID Sfor Sfor Sfor *：Grid Network用於所有內部StorageGRID 的資訊流量。它可在網格中的所有節點之間、跨所有站台和子網路提供連線功能。網格網路為必填項目。
+* *《StorageGRID Administration Network for S供 參考*：管理網路》是一種封閉網路、用於系統管理與維護。管理網路通常是私有網路、不需要在站台之間進行路由傳送。管理網路為選用網路。
+* * StorageGRID Client Network for Sfor Sfor Sfor *用戶端網路是開放式網路、用於存取用戶端應用程式、包括S3和Swift。用戶端網路可提供用戶端傳輸協定存取網格、因此網格網路可以隔離及保護。您可以設定用戶端網路、以便只使用您選擇開啟的連接埠、透過此網路存取應用裝置。用戶端網路為選用項目。
+* *服務應用裝置的BMC管理網路*（選用）：此網路可存取SG100和SG1000中的基板管理控制器、讓您監控及管理應用裝置中的硬體元件。此管理網路可以與管理員網路StorageGRID 相同、也可以是獨立的管理網路。
++
+如果未連接選用的BMC管理網路、則部分支援與維護程序將更難執行。您可以讓BMC管理網路保持未連線、除非是為了支援目的而需要。
+
+
+
+xref:gathering-installation-information-sg100-and-sg1000.adoc[收集安裝資訊（SG100和SG1000）]
+
+xref:cabling-appliance-sg100-and-sg1000.adoc[纜線應用裝置SG100和SG1000]
+
+xref:../network/index.adoc[網路準則]
+
+xref:../primer/index.adoc[網格入門指南]

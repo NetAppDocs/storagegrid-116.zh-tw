@@ -1,0 +1,7 @@
+= 
+:allow-uri-read: 
+
+
+「torageGRID-Webscale」（網路規模）-_VERON_RPM-_uniqueID_.Zip
+
+「torageGRID-Webscale」（網路規模）-_VERON_RPM-_uniqueID_.tgz

@@ -1,0 +1,20 @@
+---
+permalink: monitor/viewing-grid-topology-tree.html 
+sidebar: sidebar 
+keywords: how to view the Grid Topology tree 
+summary: 網格拓撲樹狀結構可讓您存取StorageGRID 有關各種系統元素的詳細資訊、包括站台、網格節點、服務和元件。在大多數情況下、您只需要在文件中指示或與技術支援人員合作時、才能存取Grid拓撲樹狀結構。 
+---
+= 檢視Grid拓撲樹狀結構
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+網格拓撲樹狀結構可讓您存取StorageGRID 有關各種系統元素的詳細資訊、包括站台、網格節點、服務和元件。在大多數情況下、您只需要在文件中指示或與技術支援人員合作時、才能存取Grid拓撲樹狀結構。
+
+若要存取Grid拓撲樹狀結構、請選取*支援*>*工具*>* Grid拓撲*。
+
+image::../media/grid_topology_tree.gif[Grid拓撲樹狀結構的一部分]
+
+若要展開或收合Grid拓撲樹狀結構、請按一下 image:../media/nms_tree_expand.gif["加號圖示"] 或 image:../media/nms_tree_collapse.gif["減號圖示"] 在站台、節點或服務層級。若要展開或收合整個站台或每個節點中的所有項目、請按住*鍵*、然後按一下。

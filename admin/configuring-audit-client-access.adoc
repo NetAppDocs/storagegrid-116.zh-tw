@@ -1,0 +1,21 @@
+---
+permalink: admin/configuring-audit-client-access.html 
+sidebar: sidebar 
+keywords: audit client, ams, audit management service 
+summary: 管理節點透過稽核管理系統（AMS）服務、將所有已稽核的系統事件記錄到可透過稽核共用取得的記錄檔中、稽核共用區會在安裝時新增至每個管理節點。為了方便存取稽核記錄、您可以設定用戶端存取CIFS和NFS的稽核共用。 
+---
+= 設定稽核用戶端存取
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+管理節點透過稽核管理系統（AMS）服務、將所有稽核的系統事件記錄到可透過稽核共用區取得的記錄檔中、稽核共用區會在安裝時新增至每個管理節點。為了方便存取稽核記錄、您可以設定用戶端存取CIFS和NFS的稽核共用。
+
+此系統使用正面的認可、在稽核訊息寫入記錄檔之前、防止其遺失。StorageGRID在AMS服務或中繼稽核轉送服務已認可其控制權之前、訊息會一直排入服務佇列。
+
+如需詳細資訊、請參閱 xref:../audit/index.adoc[檢閱稽核記錄]。
+
+
+NOTE: 透過CIFS/Samba進行的稽核匯出已過時、將在未來StorageGRID 的版本中移除。如果您有使用CIFS或NFS的選項、請選擇NFS。

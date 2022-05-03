@@ -1,0 +1,83 @@
+---
+permalink: audit/object-ingest-transactions.html 
+sidebar: sidebar 
+keywords: storagegrid, audit, message, messages, transaction, transactions, Object ingest, S3 ingest, Swift ingest, S3, Swift, SPUT, ORLM, WPUT 
+summary: 您可以找出API專屬（S3或Swift）稽核訊息、在稽核記錄中識別用戶端擷取的交易。 
+---
+= 物件擷取交易
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以找出API專屬（S3或Swift）稽核訊息、在稽核記錄中識別用戶端擷取的交易。
+
+下表並未列出擷取交易期間產生的所有稽核訊息。僅包含追蹤擷取交易所需的訊息。
+
+
+
+== S3擷取最新稽核訊息
+
+|===
+| 程式碼 | 名稱 | 說明 | 追蹤 | 請參閱 
+
+
+ a| 
+SPUT
+ a| 
+S3投入交易
+ a| 
+S3「投入」交易已成功完成。
+ a| 
+CBID、S3BK、S3KY
+ a| 
+xref:sput-s3-put.adoc[SPUT：S3]
+
+
+
+ a| 
+ORLM
+ a| 
+符合物件規則
+ a| 
+此物件的ILM原則已獲滿足。
+ a| 
+CBID
+ a| 
+xref:orlm-object-rules-met.adoc[ORLM：符合物件規則]
+
+|===
+
+
+== 快速擷取稽核訊息
+
+|===
+| 程式碼 | 名稱 | 說明 | 追蹤 | 請參閱 
+
+
+ a| 
+WUT
+ a| 
+Swift PUT交易
+ a| 
+Swift投入的交易已成功完成。
+ a| 
+CBID、WCON、WOBJ
+ a| 
+xref:wput-swift-put.adoc[WUTT：Swift Put]
+
+
+
+ a| 
+ORLM
+ a| 
+符合物件規則
+ a| 
+此物件的ILM原則已獲滿足。
+ a| 
+CBID
+ a| 
+xref:orlm-object-rules-met.adoc[ORLM：符合物件規則]
+
+|===

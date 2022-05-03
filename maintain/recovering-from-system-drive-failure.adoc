@@ -1,0 +1,23 @@
+---
+permalink: maintain/recovering-from-system-drive-failure.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, system drive failure 
+summary: 如果軟體型儲存節點上的系統磁碟機故障、StorageGRID 則無法使用儲存節點。您必須完成一組特定的工作、才能從系統磁碟機故障中恢復。 
+---
+= 從系統磁碟機故障中恢復
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果軟體型儲存節點上的系統磁碟機故障、StorageGRID 則無法使用儲存節點。您必須完成一組特定的工作、才能從系統磁碟機故障中恢復。
+
+使用此程序可從軟體型儲存節點上的系統磁碟機故障中恢復。此程序包括當任何儲存磁碟區也發生故障或無法重新掛載時、應遵循的步驟。
+
+
+NOTE: 此程序僅適用於軟體型儲存節點。您必須依照不同的程序來恢復應用裝置儲存節點。
+
+xref:recovering-storagegrid-appliance-storage-node.adoc[恢復應用裝置儲存節點]
+
+image::../media/storage_node_recovery_system_drive.gif[軟體型儲存節點上故障系統磁碟機的恢復步驟]

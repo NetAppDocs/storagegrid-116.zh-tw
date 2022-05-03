@@ -1,0 +1,77 @@
+---
+permalink: sg5600/replacing-e5600sg-controller.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, hardware, Replacing, replace, E5600sg, controller, remove, removing, removal, install, installing, installation 
+summary: 您可能需要更換E5600SG控制器。 
+---
+= 更換E5600SG控制器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可能需要更換E5600SG控制器。
+
+您必須能夠存取下列資源：
+
+* NetApp支援網站上的E系列硬體更換資訊、網址為+http://mysupport.netapp.com/["mysupport.netapp.com"^]
+* 支援網站上的E5600文件
+* 本產品已經使用過 xref:placing-appliance-into-maintenance-mode.adoc[已設定維護模式]。
+
+
+如果兩個控制器都能正常運作以允許控制關機、您可以先關閉E5600SG控制器、以中斷與E2700控制器的連線。
+
+
+NOTE: 如果您在安裝StorageGRID 完此程序之前更換控制器、可能StorageGRID 無法在完成此程序後立即存取《產品安裝程式（到此程序）」。雖然StorageGRID 您可以從與應用裝置位於同一子網路的其他主機存取《ENetApp應用裝置安裝程式」、但您無法從其他子網路的主機存取。此情況應在15分鐘內自行解決（當原始控制器的任何ARP快取項目逾時時）、或者您可以從本機路由器或閘道手動清除任何舊的ARP快取項目、以立即清除此狀況。
+
+.步驟
+. 使用防靜電保護。
+. 標記連接至E5600SG控制器的每條纜線、以便正確重新連接纜線。
++
+
+IMPORTANT: 為避免效能降低、請勿扭轉、摺疊、夾緊或踏上纜線。請勿將纜線彎曲至5公分（2英吋）以下的距離。
+
+. 當設備處於維護模式時、請關閉E5600SG控制器。
++
+.. 登入網格節點：
++
+... 輸入下列命令：「sh admin@_grid_node_ip_`」
+... 輸入「passwords.txt」檔案中所列的密碼。
+... 輸入下列命令以切換至root：「u -」
+... 輸入「passwords.txt」檔案中所列的密碼。
++
+以root登入時、提示會從「$」變更為「#」。
+
+
+
+.. 關閉E5600SG控制器：+`* shutc -h now*
+
+
+. 關閉機箱的電源、並等待控制器背面的所有LED和七段顯示活動停止。
+. 拔下纜線。
+. 如E5600SG控制器說明文件所述、移除控制器。
+. 插入新的控制器、如E5600SG控制器說明文件所述。
+. 更換所有纜線。
+. 重新開啟機箱的電源。
+. 監控七段代碼。
++
+** E2700控制器：
++
+最後的LED狀態是「99」。
+
+** E5600SG控制器：
++
+最後的LED狀態是「HA」。
+
+
+
+. 在Grid Manager中監控應用裝置儲存節點的狀態。
++
+確認應用裝置的儲存節點已返回預期狀態。
+
+
+
+https://mysupport.netapp.com/info/web/ECMP11751516.html["NetApp E系列和EF系列硬體更換程序"^]
+
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61893["NetApp文件：E5600系列"^]

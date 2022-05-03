@@ -1,0 +1,120 @@
+---
+permalink: sg6000/setting-up-and-accessing-santricity-system-manager.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, SANtricity System Manager, SANtricity, System Manager, configure, configuring, setup, set up, setting up, access, accessing 
+summary: 您可能需要存取SANtricity 儲存控制器上的「靜態系統管理程式」、才能監控儲存控制器機櫃中的硬體、或是設定E系列AutoSupport 支援。 
+---
+= 設定及存取SANtricity 《整套系統管理程式》
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可能需要存取SANtricity 儲存控制器上的「靜態系統管理程式」、才能監控儲存控制器機櫃中的硬體、或是設定E系列AutoSupport 支援。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您使用的是 xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+* 若要SANtricity 透過Grid Manager存取「功能區管理員StorageGRID 」、您必須安裝了「功能區」、而且必須具有「儲存設備管理員」權限或「根存取」權限。
+* 若要SANtricity 使用StorageGRID 《不能用的應用程式》安裝程式存取《不能用的功能》、您必須擁有SANtricity 《系統管理程式》管理員的使用者名稱和密碼。
+* 若要SANtricity 使用網頁瀏覽器直接存取「功能區」、您必須擁有SANtricity 「功能區管理員」的使用者名稱和密碼。
+
+
+
+NOTE: 您必須擁有SANtricity 更新版本的韌體8.70或更新版本、SANtricity 才能使用Grid Manager或StorageGRID NetApp設備安裝程式來存取《更新版》。您可以使用StorageGRID 《支援》*《支援*》>*《關於*》來檢查韌體版本。
+
+
+IMPORTANT: 從SANtricity Grid Manager或應用裝置安裝程式存取「支援系統管理程式」、通常只能用來監控硬體及設定E系列AutoSupport 支援。許多功能和操作SANtricity 都不適用於監控StorageGRID 您的產品。為避免發生問題、請務必遵循設備的硬體安裝與維護指示。
+
+根據SANtricity 您所處的安裝與組態程序階段、有三種方法可以存取「支援系統管理程式」：
+
+* 如果應用裝置尚未在StorageGRID 您的系統中部署為節點、您應該使用StorageGRID 「還原應用裝置安裝程式」中的「進階」索引標籤。
++
+
+NOTE: 部署節點之後、StorageGRID 您就無法再使用「叢集設備安裝程式」來存取SANtricity 「叢集系統管理程式」。
+
+* 如果應用裝置已部署為StorageGRID 您的一套系統的節點、請使用SANtricity Grid Manager節點頁面上的「還原系統管理程式」索引標籤。
+* 如果您無法使用StorageGRID 「NetApp應用裝置安裝程式」或「Grid Manager」、您可以SANtricity 使用連線至管理連接埠的網頁瀏覽器、直接存取「系統管理程式」。
+
+
+此程序包括初始存取SANtricity 《不適用的系統管理程式》的步驟。如果您已經設定SANtricity 了「不全系統管理程式」、請前往 <<config_hardware_alerts_sg6000,設定硬體警示步驟>>。
+
+
+NOTE: 使用Grid Manager或StorageGRID NetApp應用裝置安裝程式、您無需SANtricity 設定或連接應用裝置的管理連接埠、即可存取《支援系統管理程式》。
+
+您可以使用SANtricity 「系統管理程式」來監控下列項目：
+
+* 效能資料、例如儲存陣列層級效能、I/O延遲、CPU使用率及處理量
+* 硬體元件狀態
+* 支援功能、包括檢視診斷資料
+
+
+您可以使用SANtricity 「靜態系統管理員」來設定下列設定：
+
+* 儲存控制器機櫃中元件的電子郵件警示、SNMP警示或系統記錄警示
+* 儲存AutoSupport 控制器機櫃中元件的E系列支援設定。
++
+如需E系列AutoSupport 的更多詳細資料、請參閱 http://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E系列系統文件網站"^]。
+
+* 磁碟機安全金鑰、用於解除鎖定安全磁碟機（如果啟用磁碟機安全功能、則需要此步驟）
+* 管理員密碼、用於存取SANtricity 《系統管理程式》
+
+
+.步驟
+. 執行下列其中一項：
++
+** 使用StorageGRID 《Suse安裝程式》、然後選取*進階*>* SANtricity 《系統管理員*》
+** 使用Grid Manager（網格管理器）並選擇* nodes *>"*應用裝置儲存節點_*>* SANtricity 《系統管理程式》*
+
+
++
+
+NOTE: 如果這些選項無法使用、或登入頁面未出現、您必須使用 xref:setting-ip-addresses-for-storage-controllers-using-storagegrid-appliance-installer.adoc[儲存控制器的IP位址]。瀏覽至儲存控制器IP以存取SANtricity 「系統管理程式」。
+
+. 設定或輸入管理員密碼。
++
+系統管理程式使用單一管理員密碼、所有使用者皆可共用。SANtricity
+
++
+image::../media/san_setup_wizard.gif[顯示設定精靈「取消」按鈕的螢幕擷取畫面]
+
+. 選擇*取消*以關閉精靈。
++
+
+IMPORTANT: 請勿完成StorageGRID 設定功能精靈的功能。
+
++
+image::../media/sam_home_page.gif[《系統管理程式》首頁的螢幕擷取畫面SANtricity]
+
+. [[config_hardware _alerts_sg6000、start=4]]設定硬體警示。
++
+.. 選擇*「說明」*即可存取SANtricity 《支援系統管理員》的線上說明。
+.. 使用線上說明的*設定*>*警示*區段、即可瞭解警示。
+.. 依照「How to」指示設定電子郵件警示、SNMP警示或系統記錄警示。
+
+
+. 管理AutoSupport 儲存控制器機櫃中的元件。
++
+.. 選擇*「說明」*即可存取SANtricity 《支援系統管理員》的線上說明。
+.. 請使用線上說明的*支援*>*支援中心*區段、瞭解AutoSupport 有關此功能的資訊。
+.. 請依照「操作方法」指示來管理AutoSupport 。
++
+如需設定StorageGRID 用來在AutoSupport 不使用管理連接埠的情況下傳送E系列支援訊息的支援服務、請前往 xref:../admin/configuring-storage-proxy-settings.adoc[設定儲存Proxy設定的說明]。
+
+
+
+. 如果裝置已啟用磁碟機安全功能、請建立並管理安全金鑰。
++
+.. 選擇*「說明」*即可存取SANtricity 《支援系統管理員》的線上說明。
+.. 使用線上說明的*設定*>*系統*>*安全金鑰管理*區段、即可瞭解磁碟機安全性。
+.. 依照「使用方法」指示建立及管理安全金鑰。
+
+
+. 您也可以選擇變更系統管理員密碼。
++
+.. 選擇*「說明」*即可存取SANtricity 《支援系統管理員》的線上說明。
+.. 請使用線上說明的「*首頁*>*儲存陣列管理*」區段、瞭解系統管理員密碼。
+.. 依照「使用方法」指示變更密碼。
+
+
+

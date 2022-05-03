@@ -1,0 +1,14 @@
+---
+permalink: maintain/host-level-and-middleware-procedures.html 
+sidebar: sidebar 
+keywords: host level procedures, host-level procedures, middleware procedures 
+summary: 有些維護程序是針對Linux或VMware部署StorageGRID 的VMware版、或是StorageGRID 針對其他解決方案元件而設計。 
+---
+= 主機層級與中介軟體程序
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+有些維護程序是針對Linux或VMware部署StorageGRID 的VMware版、或是StorageGRID 針對其他解決方案元件而設計。

@@ -1,0 +1,33 @@
+---
+permalink: admin/configuring-stored-object-hashing.html 
+sidebar: sidebar 
+keywords: stored object hashing, hashing algorithm, sha-1, sha-256 
+summary: 「儲存的物件雜湊」選項會指定用來驗證物件完整性的雜湊演算法。 
+---
+= 設定儲存的物件雜湊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「儲存的物件雜湊」選項會指定用來驗證物件完整性的雜湊演算法。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+* 您擁有特定的存取權限。
+
+
+根據預設、物件資料會使用SHA-1演算法進行雜湊處理。SHA-256演算法需要額外的CPU資源、一般不建議用於完整性驗證。
+
+
+NOTE: 如果您變更此設定、則需要約一分鐘的時間才能套用新設定。系統會快取設定的值、以利效能與擴充。
+
+.步驟
+. 選擇*組態*>*系統*>*網格選項*。
+. 在「儲存的物件選項」區段中、將「儲存的物件雜湊」變更為* SHA-1*（預設）或* SHA-256*。
++
+image::../media/stored_object_hashing.png[儲存的物件雜湊]
+
+. 選擇*保存*。
+

@@ -1,0 +1,184 @@
+---
+permalink: sg5600/configuring-network-links-sg5600.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, links, network links, configure, setup, set up, grid network connections, grid network connection, link speed, bond mode 
+summary: 您可以設定用於將應用裝置連線至Grid Network、用戶端網路和管理網路的連接埠網路連結。您可以設定連結速度、連接埠和網路連結模式。 
+---
+= 設定網路連結（SG5600）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以設定用於將應用裝置連線至Grid Network、用戶端網路和管理網路的連接埠網路連結。您可以設定連結速度、連接埠和網路連結模式。
+
+如果您打算使用Aggregate連接埠連結模式、LACP網路連結模式或VLAN標記：
+
+* 您已將應用裝置上的10-GbE連接埠連接至可支援VLAN和LACP的交換器。
+* 如果有多個交換器參與LACP連結、交換器就會支援多機箱連結集合群組（MLAG）或等效群組。
+* 您瞭解如何將交換器設定為使用VLAN、LACP及MLAG或同等功能。
+* 您知道每個網路使用的獨特VLAN標記。此VLAN標記將新增至每個網路封包、以確保網路流量路由傳送至正確的網路。
+
+
+此圖顯示四個10-GbE連接埠如何以固定連接埠繫結模式（預設組態）連結。
+
+image::../media/e5600sg_fixed_port.gif[影像顯示E5600SG控制器上的10-GbE連接埠如何以固定模式連結]
+
+|===
+| 標註 | 連結哪些連接埠 
+
+
+ a| 
+c
+ a| 
+如果使用此網路、用戶端網路的連接埠1和3會連結在一起。
+
+
+
+ a| 
+G
+ a| 
+連接埠2和4會連結至Grid Network。
+
+|===
+此圖顯示如何在Aggregate連接埠連結模式中連結四個10-GbE連接埠。
+
+image::../media/e5600sg_aggregate_port.gif[影像顯示E5600SG控制器上的10-GbE連接埠如何以Aggregate模式連結]
+
+|===
+| 標註 | 連結哪些連接埠 
+
+
+ a| 
+1.
+ a| 
+所有四個連接埠都集中在單一LACP連結中、因此所有連接埠都可用於Grid Network和Client Network流量。
+
+|===
+下表摘要說明設定四個10-GbE連接埠的選項。如果您要使用非預設設定、只需要在「連結組態」頁面上設定設定。
+
+* *固定（預設）連接埠連結模式*
++
+|===
+| 網路連結模式 | 用戶端網路已停用（預設） | 用戶端網路已啟用 
+
+
+ a| 
+雙主動備份（預設）
+ a| 
+** 連接埠2和4使用適用於Grid Network的主動備份連結。
+** 不使用連接埠1和3。
+** VLAN標記為選用項目。
+
+ a| 
+** 連接埠2和4使用適用於Grid Network的主動備份連結。
+** 連接埠1和3使用用戶端網路的主動備份連結。
+** 為方便網路管理員、可為兩個網路指定VLAN標記。
+
+
+
+
+ a| 
+LACP（802.3ad）
+ a| 
+** 連接埠2和4使用LACP連結來連接網格網路。
+** 不使用連接埠1和3。
+** VLAN標記為選用項目。
+
+ a| 
+** 連接埠2和4使用LACP連結來連接網格網路。
+** 連接埠1和3使用LACP連結連接至用戶端網路。
+** 為方便網路管理員、可為兩個網路指定VLAN標記。
+
+
+|===
+* * Aggregate連接埠連結模式*
++
+|===
+| 網路連結模式 | 用戶端網路已停用（預設） | 用戶端網路已啟用 
+
+
+ a| 
+僅適用於LACP（802.3ad）
+ a| 
+** 連接埠1-4使用單一LACP連結來連接網格網路。
+** 單一VLAN標記可識別Grid Network封包。
+
+ a| 
+** 連接埠1-4使用單一LACP連結來連接網格網路和用戶端網路。
+** 兩個VLAN標記可讓Grid Network封包與Client Network封包隔離。
+
+
+|===
+
+
+請參閱「E5600SG控制器的10-GbE連接埠」、以取得連接埠連結和網路連結模式的詳細資訊。
+
+本圖顯示E5600SG控制器上的兩個1-GbE管理連接埠如何以主動備份網路連結模式連結至管理網路。
+
+image::../media/e5600sg_aggregate_ports_bonded.gif[連接管理連接埠]
+
+.步驟
+. 從「SectionAppliance安裝程式」的功能表列StorageGRID 中、按一下「*組態網路*」>「*連結組態*」。
++
+「網路連結組態」頁面會顯示設備的圖表、其中的網路和管理連接埠編號為。
+
++
+image::../media/sg5612_configuring_network_ports.png[SG5612網路與管理連接埠]
+
++
+「連結狀態」表會列出已編號連接埠的連結狀態（上/下）和速度（1/10/25/40/100 Gbps）。
+
++
+image::../media/sg5612_configuring_network_linkstatus.png[5612連結狀態]
+
++
+第一次存取此頁面時：
+
++
+** *連結速度*設為* 10GbE *。這是E5600SG控制器唯一可用的連結速度。
+** *連接埠連結模式*設為*固定*。
+** *網格網路的網路連結模式*設為*主動備份*。
+** *管理網路*已啟用、網路連結模式設定為*獨立*。
+** *用戶端網路*已停用。
++
+image::../media/network_link_configuration_fixed.png[網路連結組態已修正]
+
+
+
+. 啟用或停用StorageGRID 您計畫使用的支援網。
++
+網格網路為必填項目。您無法停用此網路。
+
++
+.. 如果設備未連線至管理網路、請取消選取管理網路的*啟用網路*核取方塊。
++
+image::../media/admin_network_disabled.gif[顯示核取方塊的螢幕擷取畫面、用於啟用或停用管理網路]
+
+.. 如果設備已連線至用戶端網路、請選取「用戶端網路」的「*啟用網路*」核取方塊。
++
+此時會顯示10-GbE連接埠的用戶端網路設定。
+
+
+
+. 請參閱表、並設定連接埠連結模式和網路連結模式。
++
+範例顯示：
+
++
+** * Aggregate *和* lacp *已選取用於Grid和用戶端網路。您必須為每個網路指定唯一的VLAN標記。您可以選取0到4095之間的值。
+** *已為管理網路選取Active備份*。
++
+image::../media/network_link_configuration_aggregate.gif[顯示Aggregate模式連結組態設定的螢幕擷取畫面]
+
+
+
+. 當您對所選項目感到滿意時、請按一下「*儲存*」。
++
+
+NOTE: 如果您變更所連線的網路或連結、可能會失去連線。如果您在1分鐘內沒有重新連線、StorageGRID 請使用指派給應用裝置的其他IP位址之一、重新輸入該應用裝置的URL：+`* https://_E5600SG_Controller_IP_:8443*`
+
+
+
+xref:port-bond-modes-for-e5600sg-controller-ports.adoc[E5600SG控制器連接埠的連接埠連結模式]

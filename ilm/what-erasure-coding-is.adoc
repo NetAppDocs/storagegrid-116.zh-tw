@@ -1,0 +1,32 @@
+---
+permalink: ilm/what-erasure-coding-is.html 
+sidebar: sidebar 
+keywords: what is erasure coding, what is ec 
+summary: 銷毀編碼是StorageGRID 由程式碼庫用來儲存物件資料的第二種方法。當物件符合設定為建立銷毀編碼複本的ILM規則時、它會將物件資料分成資料片段、計算額外的同位元檢查片段、並將每個片段儲存在不同的儲存節點上。StorageGRID存取物件時、會使用儲存的片段重新組裝物件。如果資料或同位元檢查片段毀損或遺失、則銷毀編碼演算法可利用其餘資料和同位元檢查片段的子集來重新建立該片段。 
+---
+= 什麼是銷毀編碼
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+銷毀編碼是StorageGRID 由程式碼庫用來儲存物件資料的第二種方法。當物件符合設定為建立銷毀編碼複本的ILM規則時、它會將物件資料分成資料片段、計算額外的同位元檢查片段、並將每個片段儲存在不同的儲存節點上。StorageGRID存取物件時、會使用儲存的片段重新組裝物件。如果資料或同位元檢查片段毀損或遺失、則銷毀編碼演算法可利用其餘資料和同位元檢查片段的子集來重新建立該片段。
+
+以下範例說明在物件資料上使用銷毀編碼演算法。在此範例中、ILM規則使用4+2銷毀編碼方案。每個物件會分割成四個等量資料片段、並從物件資料計算兩個同位元檢查片段。這六個片段中的每個片段都儲存在三個資料中心站台的不同節點上、以針對節點故障或站台遺失提供資料保護。
+
+image::../media/ec_three_sites_4_plus_2.png[銷毀編碼三個站台4 Plus 2]
+
+4+2銷毀編碼方案至少需要九個儲存節點、三個不同站台各有三個儲存節點。只要六個片段（資料或同位元檢查）中的任四個仍然可用、就能擷取物件。最多可遺失兩個片段、而不會遺失物件資料。如果整個資料中心站台遺失、只要所有其他片段仍可存取、仍可擷取或修復該物件。
+
+image::../media/ec_recoverable_4_plus_2.png[可恢復的銷毀編碼4 Plus 2]
+
+如果遺失兩個以上的儲存節點、則無法擷取物件。
+
+image::../media/ec_unrecoverable_4_plus_2.png[無法恢復的銷毀編碼4 Plus 2]
+
+.相關資訊
+* xref:what-storage-pool-is.adoc[什麼是儲存資源池]
+* xref:what-erasure-coding-schemes-are.adoc[什麼是銷毀編碼方案]
+* xref:creating-erasure-coding-profile.adoc[建立銷毀編碼設定檔]
+

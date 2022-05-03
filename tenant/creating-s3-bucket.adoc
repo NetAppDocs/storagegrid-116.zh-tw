@@ -1,0 +1,92 @@
+---
+permalink: tenant/creating-s3-bucket.html 
+sidebar: sidebar 
+keywords: how to create S3 bucket 
+summary: 您可以使用租戶管理程式來建立S3儲存區以供物件資料使用。當您建立桶時、必須指定桶的名稱和區域。如果StorageGRID 已針對整個S3物件鎖定設定啟用for the Sing系統、您可以選擇性地為儲存區啟用S3物件鎖定。 
+---
+= 建立S3儲存區
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用租戶管理程式來建立S3儲存區以供物件資料使用。當您建立桶時、必須指定桶的名稱和區域。如果StorageGRID 已針對整個S3物件鎖定設定啟用for the Sing系統、您可以選擇性地為儲存區啟用S3物件鎖定。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您將使用登入租戶管理程式 xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+* 您屬於具有「管理所有庫位」或「根存取」權限的使用者群組。這些權限會覆寫群組或儲存區原則中的權限設定。
++
+
+NOTE: 可以授予設定或修改區段或物件之S3物件鎖定內容的權限 xref:../s3/bucket-and-group-access-policies.adoc[庫位原則或群組原則]。
+
+* 如果您計畫建立S3物件鎖定的儲存區、則表示您已啟用StorageGRID 適用於此系統的全域S3物件鎖定設定、並已檢閱S3物件鎖定儲存區和物件的需求。
++
+xref:using-s3-object-lock.adoc[使用S3物件鎖定]
+
+
+
+.步驟
+. 選擇*儲存設備（S3）*>*桶*。
+. 選取*建立桶*。
++
+image::../media/bucket_create_compliance_disabled.png[已停用儲存貯體建立法規遵循]
+
+. 輸入庫位的唯一名稱。
++
+
+IMPORTANT: 建立貯體後、您無法變更貯體名稱。
+
++
+庫位名稱必須符合下列規則：
+
++
+** 必須在各個StorageGRID 方面都是獨一無二的（不只是租戶帳戶內的獨特功能）。
+** 必須符合DNS規範。
+** 必須包含至少3個字元、且不得超過63個字元。
+** 每個標籤都必須以英文字母或數字開頭和結尾、而且只能使用英文字母、數字和連字號。
+** 不應在虛擬託管樣式要求中使用期間。期間會導致伺服器萬用字元憑證驗證發生問題。
+
+
++
+
+NOTE: 如需詳細資訊、請參閱 https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html["Amazon Web Services（AWS）儲存區命名規則文件"^]。
+
+. 選取此儲存區的區域。
++
+您的系統管理員負責管理可用的區域。StorageGRID儲存區的區域可能會影響套用至物件的資料保護原則。根據預設、所有的貯體都會建立在「us-east-1」區域。
+
++
+
+IMPORTANT: 建立儲存貯體後、您無法變更區域。
+
+. 選擇*繼續*。
+. 或者、為儲存區啟用物件版本管理。
++
+如果您要儲存此儲存區中每個物件的每個版本、請啟用物件版本管理。然後您可以視需要擷取物件的舊版。
+
+. 如果出現「S3物件鎖定」區段、請選擇性啟用儲存區的S3物件鎖定。
++
+
+IMPORTANT: 建立儲存區之後、您無法啟用或停用S3物件鎖定。
+
++
+「S3物件鎖定」區段只有在全域S3物件鎖定設定已啟用時才會出現。
+
++
+S3用戶端應用程式必須先為儲存區啟用S3物件鎖定、才能為新增至儲存區的物件指定保留直到日期和合法保留設定。
+
++
+如果您為儲存區啟用S3物件鎖定、則會自動啟用儲存區版本設定。您也可以 xref:../s3/operations-on-buckets.adoc#using-s3-object-lock-default-bucket-retention[指定儲存貯體的預設保留模式和預設保留期間] 套用至未指定其保留設定之貯體所擷取的每個物件。
+
+. 選取*建立桶*。
++
+此庫位會建立並新增至「庫位」頁面上的表格。
+
+
+
+xref:../ilm/index.adoc[使用ILM管理物件]
+
+xref:understanding-tenant-management-api.adoc[瞭解租戶管理API]
+
+xref:../s3/index.adoc[使用S3]

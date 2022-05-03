@@ -1,0 +1,14 @@
+---
+permalink: sg100-1000/deploying-services-appliance-node.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, deploy node, deploying node, node, deploy, deploying 
+summary: 您可以將服務應用裝置部署為主要管理節點、非主要管理節點或閘道節點。SG100和SG1000設備可同時做為閘道節點和管理節點（主要或非主要）運作。 
+---
+= 部署服務應用裝置節點
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將服務應用裝置部署為主要管理節點、非主要管理節點或閘道節點。SG100和SG1000設備可同時做為閘道節點和管理節點（主要或非主要）運作。

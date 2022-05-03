@@ -1,0 +1,87 @@
+---
+permalink: s3/post-object-restore.html 
+sidebar: sidebar 
+keywords: post, post object restore, object 
+summary: 您可以使用S3 POST物件還原要求來還原儲存在雲端儲存池中的物件。 
+---
+= POST物件還原
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用S3 POST物件還原要求來還原儲存在雲端儲存池中的物件。
+
+
+
+== 支援的要求類型
+
+僅支援POST物件還原要求以還原物件。StorageGRID它不支援「選擇」還原類型。選取「要求傳回XNotImplemed」。
+
+
+
+== 版本管理
+
+或者、指定「版本ID」來還原版本控制儲存區中物件的特定版本。如果您未指定「版本ID」、則會還原物件的最新版本
+
+
+
+== 在Cloud Storage Pool物件上進行物件後還原的行為
+
+如果物件儲存在Cloud Storage Pool中（請參閱使用資訊生命週期管理來管理物件的指示）、則根據物件的狀態、POST物件還原要求會出現下列行為。如需詳細資訊、請參閱「標頭物件」。
+
+
+NOTE: 如果物件儲存在雲端儲存資源池中、而且網格上也存在物件的一或多個複本、就不需要發出物件後還原要求來還原物件。相反地、您可以使用「取得物件」要求、直接擷取本機複本。
+
+|===
+| 物件狀態 | POST物件還原的行為 
+
+
+ a| 
+物件擷取至StorageGRID 不受ILM評估、或物件不在雲端儲存資源池中
+ a| 
+"403 Forbidbid"、"InvalidObjectState"
+
+
+
+ a| 
+Cloud Storage Pool中的物件、但尚未轉換為無法擷取的狀態
+ a| 
+200 OK（正常）沒有任何變更。
+
+*附註*：在物件移轉至無法擷取的狀態之前、您無法變更其「過期日」。
+
+
+
+ a| 
+物件移轉至無法擷取的狀態
+ a| 
+「可接受的時間為202-20...」會將物件的可擷取複本還原至Cloud Storage Pool、直到要求本文指定的天數。在此期間結束時、物件會返回無法擷取的狀態。
+
+您也可以選擇使用「Tier」（層級）要求元素來判斷還原工作完成所需的時間（「Expedited」（加速）、「tandard」（標準）或「Bulk」（大量））。如果您未指定「Tier」（層級）、則會使用「標準」層級。
+
+*注意*：如果某個物件已轉換為S3 Glacier Deep歸檔、或是雲端儲存資源池使用Azure Blob儲存設備、則無法使用「Expedited」層級還原。傳回下列錯誤訊息：「403 Forbidbidbided」、「InvalidTier」：「此儲存類別不支援擷取選項」。
+
+
+
+ a| 
+正在從無法擷取的狀態還原的物件
+ a| 
+《409衝突》、《恢復性進展》
+
+
+
+ a| 
+物件已完全還原至雲端儲存資源池
+ a| 
+「200 OK」
+
+*附註：*如果某個物件已還原至可擷取的狀態、您可以使用「日期」的新值重新發出POST物件還原要求、以變更其「過期日期」。還原日期會根據申請時間而更新。
+
+|===
+xref:../ilm/index.adoc[使用ILM管理物件]
+
+xref:head-object.adoc[標頭物件]
+
+xref:s3-operations-tracked-in-audit-logs.adoc[在稽核記錄中追蹤S3作業]

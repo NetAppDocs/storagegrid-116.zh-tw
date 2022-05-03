@@ -1,0 +1,183 @@
+---
+permalink: s3/operations-on-objects.html 
+sidebar: sidebar 
+keywords: bucket, buckets, operations on buckets 
+summary: 本節說明StorageGRID 此「物件」的「物件」功能如何執行S3 REST API作業。 
+---
+= 物件上的作業
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+本節說明StorageGRID 此「物件」的「物件」功能如何執行S3 REST API作業。
+
+下列條件適用於所有物件作業：
+
+* StorageGRID xref:consistency-controls.adoc[一致性控管] 受物件上的所有作業支援、但下列項目除外：
++
+** 取得物件ACL
+** 「選項/」
+** 將物件保留為合法
+** 保留物件
+** 選取「物件內容」
+
+
+* 衝突的用戶端要求（例如兩個寫入同一個金鑰的用戶端）會以「最新致勝」的方式解決。「最新致勝」評估的時間取決於StorageGRID VMware系統何時完成指定的要求、而非S3用戶端何時開始作業。
+* 所有物件均由庫位擁有者擁有、包括匿名使用者或其他帳戶所建立的物件。StorageGRID
+* 透過StorageGRID Swift擷取至整個系統的資料物件無法透過S3存取。
+
+
+下表說明StorageGRID 了Ss哪些 物件是由S3 REST API物件執行。
+
+[cols="1a,2a"]
+|===
+| 營運 | 實作 
+
+
+ a| 
+刪除物件
+ a| 
+不支援多因素驗證（MFA）和回應標頭「x-amz-MFA」。
+
+處理刪除物件要求時StorageGRID 、功能區會嘗試立即從所有儲存位置移除物件的所有複本。如果成功、StorageGRID 則會立即將回應傳回給用戶端。如果無法在30秒內移除所有複本（例如、因為某個位置暫時無法使用）、StorageGRID 則將複本排入佇列以供移除、然後向用戶端指出成功。
+
+*版本管理*
+
+若要移除特定版本、申請者必須是貯體擁有者、並使用「版本ID」子資源。使用此子資源會永久刪除版本。如果「版本ID」對應於刪除標記、回應標頭「x-amz-delete-marker」會傳回設定為「true」。
+
+* 如果在啟用版本的儲存區上刪除沒有「版本ID」子資源的物件、則會產生刪除標記。刪除標記的「版本ID」會使用「x-amz-version-id」回應標頭傳回、而「x-amz-delete-marker」回應標頭會傳回設定為「true」。
+* 如果刪除的物件在版本暫停的儲存區上沒有'VrionId' SubResource、則會永久刪除已存在的'null '版本或'null '刪除標記、並產生新的'null '刪除標記。將"x-amz-delete-marker"回應標頭設為"true"。
+
+
+*附註*：在某些情況下、物件可能會有多個刪除標記。
+
+
+
+ a| 
+刪除多個物件
+ a| 
+不支援多因素驗證（MFA）和回應標頭「x-amz-MFA」。
+
+您可以在同一個要求訊息中刪除多個物件。
+
+
+
+ a| 
+刪除物件標記
+ a| 
+使用「標記」子資源從物件移除所有標記。以所有Amazon S3 REST API行為來實作。
+
+*版本管理*
+
+如果要求中未指定「vrionId」查詢參數、則該作業會刪除版本控制儲存區中物件最新版本的所有標記。如果物件的目前版本是刪除標記、則會傳回「MethodNotSupported」狀態、並將「x-amz-delete-marker」回應標頭設為「true」。
+
+
+
+ a| 
+取得物件
+ a| 
+xref:get-object.adoc[取得物件]
+
+
+
+ a| 
+取得物件ACL
+ a| 
+如果提供帳戶所需的存取認證資料、則作業會傳回正面回應、並傳回物件擁有者的ID、顯示名稱和權限、表示擁有者擁有物件的完整存取權。
+
+
+
+ a| 
+取得物件合法持有
+ a| 
+xref:using-s3-object-lock.adoc[使用S3物件鎖定]
+
+
+
+ a| 
+取得物件保留
+ a| 
+xref:using-s3-object-lock.adoc[使用S3物件鎖定]
+
+
+
+ a| 
+取得物件標記
+ a| 
+使用「標記」子資源來傳回物件的所有標記。以所有Amazon S3 REST API行為來實作
+
+*版本管理*
+
+如果要求中未指定「vrionId」查詢參數、則該作業會傳回版本控制儲存區中物件最新版本的所有標記。如果物件的目前版本是刪除標記、則會傳回「MethodNotSupported」狀態、並將「x-amz-delete-marker」回應標頭設為「true」。
+
+
+
+ a| 
+標頭物件
+ a| 
+xref:head-object.adoc[標頭物件]
+
+
+
+ a| 
+POST物件還原
+ a| 
+xref:post-object-restore.adoc[POST物件還原]
+
+
+
+ a| 
+放置物件
+ a| 
+xref:put-object.adoc[放置物件]
+
+
+
+ a| 
+放置物件-複製
+ a| 
+xref:put-object-copy.adoc[放置物件-複製]
+
+
+
+ a| 
+將物件保留為合法
+ a| 
+xref:using-s3-object-lock.adoc[使用S3物件鎖定]
+
+
+
+ a| 
+保留物件
+ a| 
+xref:using-s3-object-lock.adoc[使用S3物件鎖定]
+
+
+
+ a| 
+放置物件標記
+ a| 
+使用「標記」子資源將一組標記新增至現有物件。以所有Amazon S3 REST API行為來實作
+
+*物件標籤限制*
+
+您可以在上傳新物件時新增標記、也可以將標記新增至現有物件。每個物件最多可支援10個標記的支援功能。StorageGRID與物件相關聯的標記必須具有唯一的標記金鑰。標籤金鑰長度最多可達128個UNICODE字元、標籤值長度最多可達256個UNICODE字元。金鑰和值區分大小寫。
+
+*標記更新和擷取行為*
+
+當您使用「放置物件」標記來更新物件的標記時、StorageGRID 無法重新擷取物件。這表示不會使用相符ILM規則中指定的擷取行為選項。當ILM由正常背景ILM程序重新評估時、會對更新所觸發的物件放置位置進行任何變更。
+
+這表示、如果ILM規則使用嚴格選項來擷取行為、則無法進行所需的物件放置（例如、因為新需要的位置無法使用）、則不會採取任何行動。更新後的物件會保留其目前的放置位置、直到能夠放置所需的位置為止。
+
+*解決衝突*
+
+衝突的用戶端要求（例如兩個寫入同一個金鑰的用戶端）會以「最新致勝」的方式解決。「最新致勝」評估的時間取決於StorageGRID VMware系統何時完成指定的要求、而非S3用戶端何時開始作業。
+
+*版本管理*
+
+如果要求中未指定「vrionId」查詢參數、則該作業會在版本控制的儲存區中、將標記新增至物件的最新版本。如果物件的目前版本是刪除標記、則會傳回「MethodNotSupported」狀態、並將「x-amz-delete-marker」回應標頭設為「true」。
+
+|===
+xref:s3-operations-tracked-in-audit-logs.adoc[在稽核記錄中追蹤S3作業]

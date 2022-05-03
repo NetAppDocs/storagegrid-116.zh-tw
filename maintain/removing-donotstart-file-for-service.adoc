@@ -1,0 +1,41 @@
+---
+permalink: maintain/removing-donotstart-file-for-service.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, donotstart file, do not start file, remove donotstart, removing donotstart, remove do not start, removing do not start 
+summary: 當您移除導致服務無法啟動的DoNotStart檔案時、必須啟動該服務。 
+---
+= 移除服務的DoNotStart檔案
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當您移除導致服務無法啟動的DoNotStart檔案時、必須啟動該服務。
+
+您必須擁有「passwors.txt」檔案。
+
+.步驟
+. 登入網格節點：
++
+.. 輸入下列命令：「sh admin@_grid_node_ip_`」
+.. 輸入「passwords.txt」檔案中所列的密碼。
+.. 輸入下列命令以切換至root：「u -」
+.. 輸入「passwords.txt」檔案中所列的密碼。
+
+
++
+以root登入時、提示會從「$」變更為「#」。
+
+. 從服務目錄中移除DoNotStart檔案：「rm /etc/sv/_service_/DoNotStart」
++
+其中「服務」是服務名稱。例如、
+
++
+[listing]
+----
+rm /etc/sv/ldr/DoNotStart
+----
+. 啟動服務：「servicervice _servicenamen_ start」
+. 登出命令Shell：「exit」
+

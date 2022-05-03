@@ -1,0 +1,35 @@
+---
+permalink: audit/metadata-update-messages.html 
+sidebar: sidebar 
+keywords: storagegrid, audit, message, Metadata update, S3 metadata update, SUPD 
+summary: 當S3用戶端更新物件的中繼資料時、就會產生稽核訊息。 
+---
+= 中繼資料更新訊息
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當S3用戶端更新物件的中繼資料時、就會產生稽核訊息。
+
+
+
+== S3中繼資料更新稽核訊息
+
+|===
+| 程式碼 | 名稱 | 說明 | 追蹤 | 請參閱 
+
+
+ a| 
+SUPD
+ a| 
+S3中繼資料已更新
+ a| 
+當S3用戶端更新擷取物件的中繼資料時產生。
+ a| 
+CBID、S3KY、HTRH
+ a| 
+xref:supd-s3-metadata-updated.adoc[SUBPD：S3中繼資料已更新]
+
+|===

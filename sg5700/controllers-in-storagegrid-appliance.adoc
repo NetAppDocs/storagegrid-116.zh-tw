@@ -1,0 +1,185 @@
+---
+permalink: sg5700/controllers-in-storagegrid-appliance.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5700, storage node, storage appliance, controllers, controller, e5700sg, e2800, ports, port, connectors, connector 
+summary: SG5712和SG5760 StorageGRID 機型的《》產品均包含E5700SG控制器和E2800控制器。您應該檢閱圖表、瞭解控制器之間的差異。 
+---
+= 控制器StorageGRID
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SG5712和SG5760 StorageGRID 機型的《》產品均包含E5700SG控制器和E2800控制器。您應該檢閱圖表、瞭解控制器之間的差異。
+
+
+
+== E5700SG控制器
+
+* 做為應用裝置的運算伺服器。
+* 包含StorageGRID 《不再使用的應用程式安裝程式」。
++
+
+NOTE: 應用裝置上未預先安裝此軟體。StorageGRID當您部署應用裝置時、可從管理節點存取此軟體。
+
+* 可連線至所有三StorageGRID 個資訊網路、包括Grid Network、管理網路和用戶端網路。
+* 連接至E2800控制器、並以啟動器的形式運作。
+
+
+此圖顯示E5700SG控制器背面的連接器。
+
+image::../media/e5700sg_controller_with_callouts.gif[E5700SG控制器上的連接器]
+
+|===
+|  | 連接埠 | 類型 | 使用 
+
+
+ a| 
+1.
+ a| 
+互連連接埠1和2
+ a| 
+16GB/s光纖通道（FC）、光纖SFPa
+| 將E5700SG控制器連接至E2800控制器。 
+
+
+ a| 
+2.
+ a| 
+診斷與支援連接埠
+ a| 
+* RJ-45序列連接埠
+* Micro USB序列連接埠
+* USB連接埠
+
+ a| 
+保留以供技術支援使用。
+
+
+
+ a| 
+3.
+ a| 
+磁碟機擴充連接埠
+ a| 
+12Gb/s SAS
+ a| 
+未使用。不支援擴充磁碟機櫃的產品。StorageGRID
+
+
+
+ a| 
+4.
+ a| 
+網路連接埠1-4
+ a| 
+10-GbE或25-GbE、取決於SFP收發器類型、交換器速度及設定的連結速度
+ a| 
+連線到Grid Network和Client Network for StorageGRID the
+
+
+
+ a| 
+5.
+ a| 
+管理連接埠1
+ a| 
+1-GB（RJ-45）乙太網路
+ a| 
+連線至管理網路StorageGRID 以供使用。
+
+
+
+ a| 
+6.
+ a| 
+管理連接埠2.
+ a| 
+1-GB（RJ-45）乙太網路
+ a| 
+選項：
+
+* 與管理連接埠1連結、以建立與管理網路StorageGRID 的備援連線、以利執行支援。
+* 保留無線連線、可用於暫時的本機存取（IP 169.254.0.1）。
+* 安裝期間、如果無法使用DHCP指派的IP位址、請使用連接埠2進行IP組態。
+
+
+|===
+
+
+== E2800控制器
+
+* 作為應用裝置的儲存控制器運作。
+* 管理磁碟機上的資料儲存。
+* 在單工模式下、可作為標準E系列控制器使用。
+* 包含SANtricity 作業系統軟體（控制器韌體）。
+* 包含SANtricity 可監控應用裝置硬體、以及管理警示、AutoSupport 功能及磁碟機安全功能的《系統管理程式》。
+* 連接至E5700SG控制器、並以目標方式運作。
+
+
+此圖顯示E2800控制器背面的連接器。
+
+image::../media/e2800_controller_with_callouts.gif[E2800控制器上的連接器]
+
+|===
+|  | 連接埠 | 類型 | 使用 
+
+
+ a| 
+1.
+ a| 
+互連連接埠1和2
+ a| 
+16GB/s FC光纖SFPa
+| 將E2800控制器連接至E5700SG控制器。 
+
+
+ a| 
+2.
+ a| 
+管理連接埠1和2
+ a| 
+1-GB（RJ-45）乙太網路
+ a| 
+* 連接埠1選項：
++
+** 連線至管理網路、即可直接從TCP/IP存取SANtricity 到「支援系統管理程式」
+** 保留無線以儲存交換器連接埠和IP位址。使用Grid Manager或Storage Grid Appliance Installer UI存取SANtricity 《系統管理程式》。
+
+
+
+
+*附註*：當SANtricity 您選擇不有線連接連接埠1時、某些選用功能（例如NTP同步以取得準確的記錄時間戳記）無法使用。
+
+*附註*：StorageGRID 若SANtricity 您離開連接埠1時、需要使用支援支援支援支援功能才能使用支援功能的支援功能。
+
+* 連接埠2保留供技術支援使用。
+
+
+
+
+ a| 
+3.
+ a| 
+診斷與支援連接埠
+ a| 
+* RJ-45序列連接埠
+* Micro USB序列連接埠
+* USB連接埠
+
+ a| 
+保留以供技術支援使用。
+
+
+
+ a| 
+4.
+ a| 
+磁碟機擴充連接埠。
+ a| 
+12Gb/s SAS
+ a| 
+未使用。不支援擴充磁碟機櫃的產品。StorageGRID
+
+|===

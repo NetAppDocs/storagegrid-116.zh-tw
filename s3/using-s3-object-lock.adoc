@@ -1,0 +1,112 @@
+---
+permalink: s3/using-s3-object-lock.html 
+sidebar: sidebar 
+keywords: using S3 object lock, object lock, S3 object 
+summary: 如果StorageGRID 您的還原系統已啟用全域S3物件鎖定設定、您可以在啟用S3物件鎖定的情況下建立儲存區、然後針對您新增至該儲存區的每個物件版本、指定保留直到日期和合法保留設定。 
+---
+= 使用S3物件鎖定
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果StorageGRID 您的還原系統已啟用全域S3物件鎖定設定、您可以在啟用S3物件鎖定的情況下建立儲存區、然後針對每個儲存區指定預設保留期間、或針對您新增至該儲存區的每個物件版本、指定特定的保留截止日期和合法保留設定。
+
+S3物件鎖定可讓您指定物件層級的設定、以防止物件在固定時間內或無限期刪除或覆寫。
+
+「S3物件鎖定」StorageGRID 功能提供單一保留模式、相當於Amazon S3法規遵循模式。依預設、受保護的物件版本無法由任何使用者覆寫或刪除。「S3物件鎖定」StorageGRID 功能不支援管理模式、也不允許具有特殊權限的使用者略過保留設定或刪除受保護的物件。
+
+
+
+== 啟用儲存區的S3物件鎖定
+
+如果StorageGRID 您的整個S3物件鎖定設定已啟用、則您可以在建立每個儲存區時、選擇性地啟用S3物件鎖定。您可以使用下列任一種方法：
+
+* 使用租戶管理程式建立桶。
++
+xref:../tenant/index.adoc[使用租戶帳戶]
+
+* 使用「X-amz-Bucket物件鎖定啟用」要求標頭的「置放貯體」要求來建立貯體。
++
+xref:operations-on-buckets.adoc[在貯體上作業]
+
+
+
+建立儲存區之後、您無法新增或停用S3物件鎖定。S3物件鎖定需要儲存區版本管理、這會在您建立儲存區時自動啟用。
+
+啟用S3物件鎖定的儲存區可包含具有和不具有S3物件鎖定設定的物件組合。支援S3物件鎖定儲存區中物件的預設保留期間、並支援「放置物件鎖定組態」儲存區作業。StorageGRID「3：物件鎖定剩餘保留天數」原則條件金鑰可設定物件的最短和最長允許保留期間。
+
+
+
+== 判斷是否已針對儲存區啟用S3物件鎖定
+
+若要判斷是否已啟用S3物件鎖定、請使用 xref:../s3/use-s3-object-lock-default-bucket-retention.adoc#get-object-lock-configuration[取得物件鎖定組態] 申請。
+
+
+
+== 使用S3物件鎖定設定建立物件
+
+若要在將物件版本新增至已啟用S3物件鎖定的儲存區時、指定S3物件鎖定設定、請發出「放置物件」、「放置物件-複製」或啟動「多重組件上傳」要求。請使用下列要求標頭。
+
+
+NOTE: 建立儲存區時、您必須啟用S3物件鎖定。建立儲存區之後、您無法新增或停用S3物件鎖定。
+
+* 「X-amz-object-lock-mode」、必須符合法規（區分大小寫）。
++
+
+NOTE: 如果指定"x-amz-object-lock-mod"，則還必須指定"x-amz-object-lock-capse-截至 日期"。
+
+* 《X-amz-object-lock-Retain直到日期》
++
+** 保留截止日期值必須採用「2020-08-10T21：46:00Z」格式。允許分數秒、但只保留3個小數位數（毫秒精度）。不允許使用其他ISO 8601格式。
+** 保留截止日期必須為未來日期。
+
+
+* 「X-amz-object-lock-legal hold」
++
+如果已開啟合法持有（區分大小寫）、則物件將置於合法持有之下。如果法律保留已關閉、則不會保留任何合法的保留。任何其他值都會導致400個錯誤要求（InvalidArgument）錯誤。
+
+
+
+如果您使用上述任一要求標頭、請注意下列限制：
+
+* 如果放置物件要求中有任何「x-amz-object-lock」*要求標頭、則需要「Content-md5」要求標頭。「內容-md5」不適用於「放置物件-複製」或「啟動多重成分上傳」。
+* 如果儲存區未啟用S3物件鎖定、且出現「x-amz-object-lock-*」要求標頭、則會傳回400個不良要求（InvalidRequest）錯誤。
+* 「放置物件」要求支援使用「x-amz-storage類別：dime_dure」來符合AWS行為。然而、當物件被擷取至啟用S3物件鎖定的儲存區時StorageGRID 、則會一律執行雙重認可擷取。
+* 後續的Get或head物件版本回應將包括標頭「x-amz-object-lock mode」、「x-amz-object-lock -h比 得上日期」、以及「x-amz-object-lock合法保留」（若已設定）、以及要求傳送者是否擁有正確的「3：Get*」權限。
+* 如果在保留截止日期之前或在合法持有之前、後續的刪除物件版本或刪除物件版本要求將會失敗。
+
+
+
+
+== 更新S3物件鎖定設定
+
+如果您需要更新現有物件版本的合法保留或保留設定、可以執行下列物件子資源作業：
+
+* 「將物件置於合法持有狀態」
++
+如果新的合法持有值已開啟、則物件將置於合法持有之下。如果合法持有值為「關」、則合法持有將被解除。
+
+* 「放置物件保留」
++
+** 模式值必須符合法規（區分大小寫）。
+** 保留截止日期值必須採用「2020-08-10T21：46:00Z」格式。允許分數秒、但只保留3個小數位數（毫秒精度）。不允許使用其他ISO 8601格式。
+** 如果物件版本有現有的截至日期保留、您只能增加。新的價值必須是未來的價值。
+
+
+
+
+xref:../ilm/index.adoc[使用ILM管理物件]
+
+xref:../tenant/index.adoc[使用租戶帳戶]
+
+xref:put-object.adoc[放置物件]
+
+xref:put-object-copy.adoc[放置物件-複製]
+
+xref:initiate-multipart-upload.adoc[啟動多部份上傳]
+
+xref:object-versioning.adoc[物件版本管理]
+
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html["Amazon簡易儲存服務使用者指南：使用S3物件鎖定"^]

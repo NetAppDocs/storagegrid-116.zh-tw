@@ -1,0 +1,42 @@
+---
+permalink: sg5700/optional-changing-raid-mode-sg5760-only.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5700, storage node, storage appliance, raid, raid mode, change, changing, modify, DDP, ddp16, raid6 
+summary: 如果您的SG5760配備60個磁碟機、您可以改用不同的RAID模式來因應儲存與還原需求。您只能在部署StorageGRID 完不含應用程式的應用程式儲存節點之前、變更模式。 
+---
+= 選用：變更RAID模式（僅限SG5760）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您的SG5760配備60個磁碟機、您可以改用不同的RAID模式來因應儲存與還原需求。您只能在部署StorageGRID 完不含應用程式的應用程式儲存節點之前、變更模式。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您擁有SG5760。如果您有SG5712、則必須使用DDP模式。
+* 您正在使用任何可連線StorageGRID 到該功能的用戶端。
+* 用戶端有 xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+
+
+在將SG5760應用裝置部署為儲存節點之前、您可以選擇下列其中一個Volume組態選項：
+
+* * DDP*：此模式每八個資料磁碟機使用兩個同位元檢查磁碟機。這是所有應用裝置的預設和建議模式。相較於RAID6、DDP可提供更佳的系統效能、減少磁碟機故障後的重建時間、並易於管理。DDP也在60個磁碟機設備中提供藥櫃遺失保護。
+* * DDP16*：此模式每16個資料磁碟機使用兩個同位元檢查磁碟機、相較於DDP、可提高儲存效率。相較於RAID6、DDP16可提供更佳的系統效能、減少磁碟機故障後的重建時間、易於管理、以及相當的儲存效率。若要使用DDP16模式、您的組態必須包含至少20個磁碟機。DDP16不提供藥櫃遺失保護。
+* * RAID6*：此模式每16個或更多資料磁碟機使用兩個同位元檢查磁碟機。若要使用RAID 6模式、您的組態必須包含至少20個磁碟機。雖然RAID6可比DDP提高應用裝置的儲存效率、但不建議用於StorageGRID 大多數的環境。
+
+
+
+IMPORTANT: 如果已設定任何磁碟區、或StorageGRID 先前安裝了支援功能、變更RAID模式會移除和更換磁碟區。這些磁碟區上的任何資料都會遺失。
+
+.步驟
+. 使用服務型筆記型電腦、開啟網頁瀏覽器並存取StorageGRID 《Efault Appliance Installer》：+ hy* https://_E5700SG_Controller_IP_:8443*`
++
+其中，「_E5700SG_Controller_IP_」是E5700SG控制器的任何IP位址。
+
+. 選擇*進階*>* RAID模式*。
+. 在「*組態RAID模式*」頁面上、從「模式」下拉式清單中選取所需的RAID模式。
+. 按一下「 * 儲存 * 」。
+
+
+http://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E系列系統文件網站"^]

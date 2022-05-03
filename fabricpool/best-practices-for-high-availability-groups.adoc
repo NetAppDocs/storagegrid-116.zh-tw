@@ -1,0 +1,49 @@
+---
+permalink: fabricpool/best-practices-for-high-availability-groups.html 
+sidebar: sidebar 
+keywords: fabricPool, high availability group, HA group, active-active, active-backup, cloud tier, best practices 
+summary: 在將StorageGRID 「靜態FabricPool 」附加為「靜態雲端層」之前、您應該使用StorageGRID 「靜態網格管理程式」來設定高可用度（HA）群組。 
+---
+= 高可用度群組的最佳實務做法
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在將StorageGRID 「靜態FabricPool 」附加為「靜態雲端層」之前、您應該使用StorageGRID 「靜態網格管理程式」來設定高可用度（HA）群組。
+
+
+
+== 什麼是高可用度（HA）群組？
+
+為了確保負載平衡器服務永遠可用於管理FabricPool 效益資料、您可以將多個管理和閘道節點的網路介面分組為單一實體、稱為高可用度（HA）群組。如果HA群組中的作用中節點故障、群組中的另一個節點可以繼續管理工作負載。
+
+每個HA群組都提供高可用度的存取權限、可存取相關節點上的共享服務。例如、僅由閘道節點或管理節點和閘道節點上的介面組成的HA群組、可提供對共享負載平衡器服務的高可用度存取。
+
+若要建立HA群組、請執行下列一般步驟：
+
+. 選取一個或多個管理節點或閘道節點的網路介面。您可以選取Grid Network介面（eth0）、Client Network介面（eth2）或VLAN介面。
++
+
+IMPORTANT: 如果您打算使用VLAN介面來隔離FabricPool 靜態流量、網路管理員必須先設定主幹介面和對應的VLAN。每個VLAN都會以數字ID或標記來識別。例如、您的網路可能會使用VLAN 100 FabricPool 來進行不順暢的流量傳輸。
+
+. 將一個或多個虛擬IP（VIP）位址指派給群組。用戶端應用程式（例如FabricPool 、）可以使用這些VIP位址來連接StorageGRID 到
+. 指定一個介面作為主要介面、並決定任何備份介面的優先順序。主介面是作用中介面、除非發生故障。
+
+
+如果HA群組包含多個介面、而主要介面故障、VIP位址會依照優先順序移至第一個備份介面。如果該介面故障、VIP位址會移至下一個備份介面、依此類推。此容錯移轉程序通常只需幾秒鐘、而且速度足夠快、用戶端應用程式只會遇到些微影響、而且可以仰賴正常的重試行為來繼續作業。
+
+當故障得以解決且優先順序較高的介面再次可用時、VIP位址會自動移至可用的最高優先順序介面。
+
+
+
+== 高可用度（HA）群組的最佳實務做法
+
+建立StorageGRID 一套適用於FabricPool 功能不實的功能不一的最佳實務做法取決於工作負載、如下所示：
+
+* 如果您計畫FabricPool 搭配主要工作負載資料使用方面、則必須建立至少包含兩個負載平衡節點的HA群組、以避免資料擷取中斷。
+* 如果您計畫使用FabricPool 僅供Snapshot使用的磁碟區分層原則或非主要的本機效能層（例如災難恢復位置或NetApp SnapMirror®目的地）、則只能設定一個節點的HA群組。
+
+
+這些指示說明如何設定主動備份HA的HA群組（一個節點為作用中、一個節點為備份）。不過、您可能偏好使用DNS循環配置資源或主動式HA。若要瞭解這些其他HA組態的優點、請參閱 xref:../admin/configuration-options-for-ha-groups.adoc[HA群組的組態選項]。

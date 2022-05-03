@@ -1,0 +1,57 @@
+---
+permalink: audit/object-delete-transactions.html 
+sidebar: sidebar 
+keywords: storagegrid, audit, message, messages, transaction, transactions, Object delete, S3 delete, Swift delete, S3, Swift, SDEL, WDEL 
+summary: 您可以在稽核記錄中找出API專屬（S3和Swift）稽核訊息、以識別物件刪除交易。 
+---
+= 物件刪除交易
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在稽核記錄中找出API專屬（S3和Swift）稽核訊息、以識別物件刪除交易。
+
+下表並未列出在刪除交易期間產生的所有稽核訊息。僅包含追蹤刪除交易所需的訊息。
+
+
+
+== S3刪除稽核訊息
+
+|===
+| 程式碼 | 名稱 | 說明 | 追蹤 | 請參閱 
+
+
+ a| 
+SDEL
+ a| 
+S3刪除
+ a| 
+要求從儲存區刪除物件。
+ a| 
+CBID、S3KY
+ a| 
+xref:sdel-s3-delete.adoc[SDEL：S3刪除]
+
+|===
+
+
+== Swift刪除稽核訊息
+
+|===
+| 程式碼 | 名稱 | 說明 | 追蹤 | 請參閱 
+
+
+ a| 
+WDEL
+ a| 
+Swift刪除
+ a| 
+要求從容器或容器中刪除物件。
+ a| 
+CBID、WOBJ
+ a| 
+xref:wdel-swift-delete.adoc[WDEL：Swift刪除]
+
+|===

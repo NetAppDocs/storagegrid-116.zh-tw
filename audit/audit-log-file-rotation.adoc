@@ -1,0 +1,30 @@
+---
+permalink: audit/audit-log-file-rotation.html 
+sidebar: sidebar 
+keywords: storagegrid, audit, log file, audit.log, audit.log file, rotation, save, autosave, auto save, auto-save 
+summary: 稽核記錄檔會儲存至管理節點的/var/local/exit/export目錄。作用中的稽核記錄檔名為稽核記錄檔。 
+---
+= 稽核記錄檔輪替
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+稽核記錄檔會儲存至管理節點的「/var/local/nvmd/匯出」目錄。作用中的稽核記錄檔名為「稽核記錄」。
+
+
+NOTE: 您也可以變更稽核記錄的目的地、並將稽核資訊傳送至外部syslog伺服器。設定外部syslog伺服器時、仍會繼續產生及儲存稽核記錄的本機記錄。請參閱 xref:../monitor/configure-audit-messages.adoc[設定稽核訊息和記錄目的地]。
+
+一天只要儲存一次作用中的「稽核記錄」檔案、就會啟動新的「稽核記錄」檔案。儲存檔案的名稱會以「_edy-mm-dd.txt_」格式指出儲存時間。如果在一天內建立多個稽核記錄、檔案名稱會使用儲存檔案的日期、加上數字、格式為「_yyyy-mm-dd.txt.n_」。例如、2018年4月15日建立並儲存的第一個和第二個記錄檔為「2018年4月15日」和「2018年4月15日」。
+
+一天後、儲存的檔案會壓縮並重新命名、格式為「_youty-mm-dd.txt.gz_」、保留原始日期。隨著時間推移、這會導致分配給管理節點上稽核記錄的儲存空間使用量。指令碼會監控稽核日誌空間使用量、並視需要刪除記錄檔、以釋放位於/var/local/nvmtal/export目錄中的空間。稽核日誌會根據建立日期刪除、而最舊的則會先刪除。您可以在下列檔案中監控指令碼的動作：「/var/local/log/管理 稽核記錄」。
+
+此範例顯示使用中的「稽核記錄」檔案、前一天的檔案（「2018年4月15日」）、以及前一天的壓縮檔案（「2018年4月14日.tx.gz」）。
+
+[listing]
+----
+audit.log
+2018-04-15.txt
+2018-04-14.txt.gz
+----

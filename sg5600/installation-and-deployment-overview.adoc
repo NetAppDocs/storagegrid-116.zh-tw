@@ -1,0 +1,82 @@
+---
+permalink: sg5600/installation-and-deployment-overview.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, Installation, deployment, Install, deploy, Installing, deploying 
+summary: 您可以在StorageGRID 第一次部署StorageGRID 時安裝一或多個不完整的應用程式、也可以稍後在擴充中新增應用裝置儲存節點。您也可能需要在恢復作業中安裝應用裝置儲存節點。 
+---
+= 安裝與部署總覽
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在StorageGRID 第一次部署StorageGRID 時安裝一或多個不完整的應用程式、也可以稍後在擴充中新增應用裝置儲存節點。您也可能需要在恢復作業中安裝應用裝置儲存節點。
+
+在StorageGRID 一個不完善的系統中新增一個不完善的儲存應用裝置StorageGRID 、主要包括四個步驟：
+
+. 準備安裝：
++
+** 準備安裝站台
+** 打開包裝箱並檢查內容物
+** 取得額外的設備和工具
+** 收集IP位址和網路資訊
+** 選用：如果您打算加密所有應用裝置資料、請設定外部金鑰管理伺服器（KMS）。如需外部金鑰管理的詳細資訊、請參閱《管理StorageGRID 》指南。
+
+
+. 安裝硬體：
++
+** 註冊硬體
+** 將產品安裝到機櫃或機架中
+** 安裝磁碟機（僅限SG5660）
+** 設備佈線
+** 連接電源線並接上電源
+** 檢視開機狀態代碼
+
+
+. 設定硬體：
++
+** 存取SANtricity 功能：E2700控制器上的管理連接埠1設定靜態IP位址、以及設定SANtricity 功能
+** 存取StorageGRID 《產品安裝程式（Cisco）與設定連結及網路IP設定以連線StorageGRID 至各種功能
+** 選用：如果您打算使用外部KMS來加密應用裝置資料、請啟用節點加密。
+** 選用：變更RAID模式。
+
+
+. 將應用裝置部署為儲存節點：
+
+
+|===
+| 工作 | 請參閱 
+
+
+ a| 
+在全新StorageGRID 的架裝系統中部署應用裝置儲存節點
+ a| 
+xref:deploying-appliance-storage-node.adoc[部署應用裝置儲存節點]
+
+
+
+ a| 
+將應用裝置儲存節點新增至現有StorageGRID 的作業系統
+ a| 
+擴充StorageGRID 功能的說明
+
+
+
+ a| 
+將應用裝置儲存節點部署為儲存節點還原作業的一部分
+ a| 
+恢復與維護說明
+
+|===
+xref:preparing-for-installation.adoc[準備安裝（SG5600）]
+
+xref:installing-hardware.adoc[安裝硬體（SG5600）]
+
+xref:configuring-hardware.adoc[設定硬體（SG5600）]
+
+xref:../expand/index.adoc[擴充網格]
+
+xref:../maintain/index.adoc[恢復與維護]
+
+xref:../admin/index.adoc[管理StorageGRID]

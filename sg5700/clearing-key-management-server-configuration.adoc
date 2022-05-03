@@ -1,0 +1,80 @@
+---
+permalink: sg5700/clearing-key-management-server-configuration.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5700, storage node, storage appliance, kms, key management server, configure, configuration, clear, erase, delete, clearing, erasing, deleting, disable, encryption 
+summary: 清除金鑰管理伺服器（KMS）組態會停用設備上的節點加密。清除KMS組態之後、您設備上的資料將永久刪除、無法再存取。此資料無法恢復。 
+---
+= 清除金鑰管理伺服器組態
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+清除金鑰管理伺服器（KMS）組態會停用設備上的節點加密。清除KMS組態之後、您設備上的資料將永久刪除、無法再存取。此資料無法恢復。
+
+如果您需要保留應用裝置上的資料、則必須先執行節點取消委任程序或複製節點、才能清除KMS組態。
+
+
+IMPORTANT: 清除KMS時、設備上的資料將永久刪除、無法再存取。此資料無法恢復。
+
+xref:../maintain/grid-node-decommissioning.adoc[取消委任節點] 將其中包含的任何資料移至StorageGRID 其他節點。
+
+清除應用裝置KMS組態會停用節點加密、移除應用裝置節點與StorageGRID 站台KMS組態之間的關聯。然後刪除應用裝置上的資料、並將應用裝置保留在預先安裝狀態。此程序無法回復。
+
+您必須清除KMS組態：
+
+* 在您將本產品安裝到其他StorageGRID 不使用KMS或使用不同KMS的作業系統之前。
++
+
+IMPORTANT: 如果您打算在StorageGRID 使用相同KMS金鑰的作業系統中重新安裝應用裝置節點、請勿清除KMS組態。
+
+* 在您恢復和重新安裝遺失KMS組態且無法恢復KMS金鑰的節點之前。
+* 在退回任何先前在您所在地點使用的應用裝置之前。
+* 停用已啟用節點加密的應用裝置之後。
+
+
+
+IMPORTANT: 在清除KMS之前、先取消委任應用裝置、將其資料移至StorageGRID 您的作業系統中的其他節點。在設備停用之前清除KMS、將會導致資料遺失、並可能使設備無法運作。
+
+.步驟
+. 開啟瀏覽器、然後輸入應用裝置運算控制器的其中一個IP位址。+`* https://_Controller_IP_:8443*`
++
+「_Controller _ip_」是運算控制器（而非儲存控制器）在StorageGRID 三個靜態網路中任一網路上的IP位址。
+
++
+畫面會出現「the不再安裝StorageGRID 程式」首頁。
+
+. 選擇*設定硬體*>*節點加密*。
++
+image::../media/clear_kms.png[KMS清除組態]
+
++
+
+IMPORTANT: 如果清除KMS組態、設備上的資料將永久刪除。此資料無法恢復。
+
+. 在視窗底部、選取*清除KMS金鑰及刪除資料*。
+. 如果確定要清除KMS組態、請輸入+「*清除*」+、然後選取*清除KMS金鑰和刪除資料*。
++
+image::../media/fde_disable_confirmation.png[kms清除確認]
+
++
+KMS加密金鑰和所有資料都會從節點刪除、然後設備重新開機。這可能需要20分鐘的時間。
+
+. 開啟瀏覽器、然後輸入應用裝置運算控制器的其中一個IP位址。+`* https://_Controller_IP_:8443*`
++
+「_Controller _ip_」是運算控制器（而非儲存控制器）在StorageGRID 三個靜態網路中任一網路上的IP位址。
+
++
+畫面會出現「the不再安裝StorageGRID 程式」首頁。
+
+. 選擇*設定硬體*>*節點加密*。
+. 確認節點加密已停用、且*金鑰管理伺服器詳細資料*中的金鑰與憑證資訊、以及*清除KMS金鑰與刪除資料*控制項已從視窗中移除。
++
+在將節點加密重新安裝到網格之前、無法在應用裝置上重新啟用節點加密。
+
+
+
+設備重新開機並確認KMS已清除、且設備處於預先安裝狀態之後、您可以從StorageGRID 您的故障排除系統中實際移除應用裝置。如需相關資訊、請參閱恢復與維護指示 xref:../maintain/preparing-appliance-for-reinstallation-platform-replacement-only.adoc[準備設備以重新安裝]。
+
+xref:../admin/index.adoc[管理StorageGRID]

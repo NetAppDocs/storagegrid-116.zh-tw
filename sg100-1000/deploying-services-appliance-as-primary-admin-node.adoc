@@ -1,0 +1,86 @@
+---
+permalink: sg100-1000/deploying-services-appliance-as-primary-admin-node.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, admin node, deploy node, deploying node, node, deploy, deploying, primary, primary admin node 
+summary: 當您將服務應用裝置部署為主要管理節點時、您可以使用StorageGRID 應用裝置隨附的《支援服務應用程式安裝程式」來安裝StorageGRID 此版的更新、或是上傳您要安裝的軟體版本。您必須先安裝並設定主要管理節點、才能安裝任何其他應用裝置節點類型。主管理節點可連線至網格網路、以及選用的管理網路和用戶端網路（如果已設定一個或兩個）。 
+---
+= 將服務應用裝置部署為主要管理節點
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當您將服務應用裝置部署為主要管理節點時、您可以使用StorageGRID 應用裝置隨附的《支援服務應用程式安裝程式」來安裝StorageGRID 此版的更新、或是上傳您要安裝的軟體版本。您必須先安裝並設定主要管理節點、才能安裝任何其他應用裝置節點類型。主管理節點可連線至網格網路、以及選用的管理網路和用戶端網路（如果已設定一個或兩個）。
+
+.您需要的是 #8217 ；需要的是什麼
+* 設備已安裝在機架或機櫃中、並已連接至您的網路、並已開啟電源。
+* 網路連結、IP位址和連接埠重新對應（如有必要）已使用StorageGRID 《應用程式安裝程式》為應用裝置設定。
++
+
+IMPORTANT: 如果您已重新對應任何連接埠、則無法使用相同的連接埠來設定負載平衡器端點。您可以使用重新對應的連接埠來建立端點、但這些端點會重新對應至原始CLB連接埠和服務、而非負載平衡器服務。請依照中的步驟進行 xref:../maintain/removing-port-remaps.adoc[移除連接埠重新對應]。
+
++
+請參閱 xref:../admin/how-load-balancing-works-clb-service.adoc[負載平衡的運作方式- CLB服務（已過時）] 以取得有關CLB服務的詳細資訊。
+
++
+
+NOTE: CLB服務已過時。
+
+* 您的服務型筆記型電腦配備 xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+* 您知道指派給應用裝置的其中一個IP位址。您可以將IP位址用於任何附加StorageGRID 的靜態網路。
+
+
+若要在StorageGRID 應用裝置主要管理節點上安裝功能：
+
+* 您可以使用StorageGRID 「功能介紹」安裝程式來安裝StorageGRID 此功能。如果您想安裝不同版本的軟體、請先使用StorageGRID 《》應用程式安裝程式上傳。
+* 安裝軟體時請稍候。
+* 安裝軟體後、裝置會自動重新開機。
+
+
+.步驟
+. 開啟瀏覽器、然後輸入應用裝置的IP位址。+`* https://_services_appliance_IP_:8443*`
++
+畫面會出現「the不再安裝StorageGRID 程式」首頁。
+
+. 在「*此節點*」區段中、選取「*主要管理員*」。
+. 在「*節點名稱*」欄位中、輸入您要用於此應用裝置節點的名稱、然後按一下「*儲存*」。
++
+節點名稱會指派給StorageGRID 此應用裝置節點的功能。網格管理程式的「網格節點」頁面上會顯示此資訊。
+
+. 或者、若要安裝StorageGRID 不同版本的更新版的更新版本、請依照下列步驟操作：
++
+.. 請從NetApp下載頁面下載安裝歸檔StorageGRID 文件、以供使用。
++
+https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["NetApp下載StorageGRID"^]
+
+.. 擷取歸檔。
+.. 從《Sile Appliance Installer》StorageGRID （英文）中、選取*進階*>*上傳StorageGRID 《Some Software*》（英文）。
+.. 按一下「*移除*」以移除目前的軟體套件。
++
+image::../media/appliance_installer_rmv_current_software.png[應用裝置安裝程式-移除目前的軟體]
+
+.. 按一下*瀏覽*以取得您下載並解壓縮的軟體套件、然後按一下*瀏覽*以取得Checksum檔案。
++
+image::../media/appliance_installer_upload_sg_software.png[應用裝置安裝程式-上傳SG軟體]
+
+.. 選擇*主頁*返回主頁。
+
+
+. 確認目前狀態為「Ready to start installation of primary Admin Node name with software version x.y」（已準備好開始安裝軟體版本x.y的主管理節點名稱）、且已啟用* Start Installation*（開始安裝）按鈕。
++
+
+NOTE: 如果您要將管理節點設備部署為節點複製目標、請在此停止部署程序、然後依照進行節點複製程序 xref:../maintain/index.adoc[恢復與維護] 說明。
+
+. 從「the Some Appliance Installer」首頁、按一下StorageGRID 「*開始安裝*」。
++
+image::../media/appliance_installer_home_start_installation_enabled_primary_an.png[裝置主要管理節點安裝]
+
++
+目前狀態會變更為「Installation is in progress、」、並顯示「Monitor Installation（監控安裝）」頁面。
+
++
+
+NOTE: 如果您需要手動存取「監視器安裝」頁面、請從功能表列按一下「*監視器安裝*」。
+
+

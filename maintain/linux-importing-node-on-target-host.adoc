@@ -1,0 +1,53 @@
+---
+permalink: maintain/linux-importing-node-on-target-host.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, linux, import node, importing node, target host 
+summary: 從來源主機匯出節點之後、您會匯入並驗證目標Linux主機上的節點。驗證可確認節點存取的區塊儲存設備和網路介面裝置與來源主機相同。 
+---
+= Linux：在目標主機上匯入節點
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+從來源主機匯出節點之後、您會匯入並驗證目標Linux主機上的節點。驗證可確認節點存取的區塊儲存設備和網路介面裝置與來源主機相同。
+
+在目標Linux主機上執行下列命令。
+
+. 匯入目標主機上的節點。
++
+[listing]
+----
+sudo storagegrid node import /dev/mapper/sgws-dc1-s3-var-local
+----
++
+「完成從/dev/mapper/sgws-dcs1-s3-var-local匯入節點DC1-S3。
+
++
+「您應該執行『StorageGRID 支援節點驗證DC1-S3』」
+
+. 驗證新主機上的節點組態。
++
+[listing]
+----
+sudo storagegrid node validate DC1-S3
+----
++
+「+確認節點DC1-S3是否存在... pass+
+
++
+Check configuration file /etc/storagegrid節點/DC1-S3.conf...（檢查節點DC1-S3的組態檔/etc/storagegrid /節點/DC1-S3.conf...） pass+
+
++
+請檢查是否有重複的唯一值... pass+
+
+. 如果發生任何驗證錯誤、請在啟動移轉的節點之前先解決這些錯誤。
++
+如需疑難排解資訊、請參閱StorageGRID Linux作業系統的《支援資訊》安裝說明。
+
+
+
+xref:../rhel/index.adoc[安裝Red Hat Enterprise Linux或CentOS]
+
+xref:../ubuntu/index.adoc[安裝Ubuntu或DEBIAN]

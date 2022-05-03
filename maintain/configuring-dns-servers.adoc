@@ -1,0 +1,36 @@
+---
+permalink: maintain/configuring-dns-servers.html 
+sidebar: sidebar 
+keywords: storagegrid, dns, configuring dns, configure dns, domain name system 
+summary: 您可以新增、移除及更新網域名稱系統（DNS）伺服器、以便使用完整網域名稱（FQDN）主機名稱、而非IP位址。 
+---
+= 設定DNS伺服器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以新增、移除及更新網域名稱系統（DNS）伺服器、以便使用完整網域名稱（FQDN）主機名稱、而非IP位址。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您必須使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+* 您必須具有維護或根存取權限。
+* 您必須擁有DNS伺服器的IP位址才能進行設定。
+
+
+指定DNS伺服器資訊可讓您使用完整網域名稱（FQDN）主機名稱、而非使用IP位址來接收電子郵件或SNMP通知及AutoSupport 進行支援。建議至少指定兩個DNS伺服器。
+
+
+IMPORTANT: 為DNS伺服器提供二到六個IP位址。一般而言、在網路斷線的情況下、選取每個站台可在本機存取的DNS伺服器。這是為了確保isLanded站台繼續存取DNS服務。設定整個網格的DNS伺服器清單之後、您可以 xref:modifying-dns-configuration-for-single-grid-node.adoc[進一步自訂每個節點的DNS伺服器清單]。
+
+如果DNS伺服器資訊被省略或設定不正確、則會在每個網格節點的SSM服務上觸發DNST警示。當DNS設定正確、且新的伺服器資訊已到達所有網格節點時、警示就會清除。
+
+.步驟
+. 選擇*維護*>*網路*>* DNS伺服器*。
+. 視需要在「伺服器」區段中新增更新或移除DNS伺服器項目。
++
+最佳做法是每個站台至少指定兩部DNS伺服器。您最多可以指定六個DNS伺服器。
+
+. 按一下「 * 儲存 * 」。
+

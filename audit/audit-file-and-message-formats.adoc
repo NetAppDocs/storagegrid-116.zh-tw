@@ -1,0 +1,14 @@
+---
+permalink: audit/audit-file-and-message-formats.html 
+sidebar: sidebar 
+keywords: storagegrid, audit, log file formats, log formats, message formats, log file format, log format ,message format 
+summary: 您可以使用稽核記錄來收集系統相關資訊、並疑難排解問題。您應該瞭解稽核記錄檔的格式、以及稽核訊息所使用的一般格式。 
+---
+= 稽核記錄檔和訊息格式
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用稽核記錄來收集系統相關資訊、並疑難排解問題。您應該瞭解稽核記錄檔的格式、以及稽核訊息所使用的一般格式。

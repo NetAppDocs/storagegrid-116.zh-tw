@@ -1,0 +1,42 @@
+---
+permalink: fabricpool/creating-tenant-account-for-fabricpool.html 
+sidebar: sidebar 
+keywords: fabricPool, tenant, SSO 
+summary: 您必須在Grid Manager中建立租戶帳戶FabricPool 、以供使用。 
+---
+= 建立一個客戶帳戶FabricPool 以供使用
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須在Grid Manager中建立租戶帳戶FabricPool 、以供使用。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+* 您擁有特定的存取權限。
+
+
+租戶帳戶可讓用戶端應用程式將物件儲存及擷取StorageGRID 到靜止不動的地方。每個租戶帳戶都有自己的帳戶ID、授權群組和使用者、庫位和物件。
+
+您可以使用同一個租戶帳戶來處理多ONTAP 個不一致的叢集。或者ONTAP 、您也可以視需要為每個叢集建立專屬的租戶帳戶。
+
+
+NOTE: 這些指示假設您已為Grid Manager設定單一登入（SSO）。如果未啟用SSO、請使用 xref:../admin/creating-tenant-account.adoc[這些指示可用來建立租戶帳戶] 而是。
+
+.步驟
+. 選取*租戶*。
+. 選擇* Create *（建立*）。
+. 輸入顯示名稱和說明。
+. 選擇* S三*。
+. 將*儲存配額*欄位保留空白。
+. 選擇*允許平台服務*以啟用平台服務的使用。
++
+如果已啟用平台服務、租戶可以使用諸如CloudMirror複寫等功能來存取外部服務。
+
+. 請勿選擇*使用自己的身分識別來源*。
+. 請勿選取*「允許S3選取*」。
+. 從Grid Manager中選取現有的聯盟群組、即可擁有租戶的初始「根存取」權限。
+. 選取*建立租戶*。
+

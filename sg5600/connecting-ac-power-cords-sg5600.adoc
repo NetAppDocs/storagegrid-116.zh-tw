@@ -1,0 +1,37 @@
+---
+permalink: sg5600/connecting-ac-power-cords-sg5600.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, wire, wiring, cabling, cable, Connecting, connect, power cords, power, ac, ac power 
+summary: 您必須將AC電源線連接至外部電源、以及每個控制器上的AC電源接頭。連接電源線後、即可開啟電源。 
+---
+= 連接AC電源線（SG5600）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須將AC電源線連接至外部電源、以及每個控制器上的AC電源接頭。連接電源線後、即可開啟電源。
+
+連接電源之前、必須先關閉兩個應用裝置的電源開關。
+
+
+CAUTION: *電擊風險*：在連接電源線之前、請先確定產品上的兩個電源開關已關閉。
+
+.關於這項工作
+* 您應該為每個電源供應器使用不同的電源供應器。
++
+連接獨立電源可維持電力備援。
+
+* 您可以使用控制器隨附的電源線、以及目的地國家/地區使用的典型插座、例如不中斷電源供應器（UPS）的牆上插座。
++
+不過、這些電源線並非設計用於大多數符合EIA的機櫃。
+
+
+
+.步驟
+. 關閉機箱或機箱中的電源開關。
+. 關閉控制器上的電源開關。
+. 將機櫃的主電源線連接至外部電源。
+. 將電源線連接至每個控制器上的AC電源接頭。
+

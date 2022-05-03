@@ -1,0 +1,48 @@
+---
+permalink: upgrade/removed-or-deprecated-features.html 
+sidebar: sidebar 
+keywords: features, removed, deprecated 
+summary: 此版本已移除或過時部分功能。請檢閱這些項目、瞭解升級前是否需要更新用戶端應用程式或修改組態。 
+---
+= 已移除或已過時的功能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此版本已移除或過時部分功能。請檢閱這些項目、瞭解升級前是否需要更新用戶端應用程式或修改組態。
+
+
+
+== 已過時的警示系統和警示型API
+
+從發行版本支援的版本起、舊版警示系統已過時。StorageGRID舊版警示系統的使用者介面和API將在未來版本中移除。
+
+
+IMPORTANT: 如果您仍在使用舊警報、請計畫在升級StorageGRID 至原地警報系統後、完全轉換至靜止警報系統。請參閱 xref:../monitor/managing-alerts-and-alarms.adoc[管理警示與警示：總覽] 以深入瞭解警示。
+
+11.6-版本取代了所有的警示型API。下列API受此變更影響：
+
+* 「Get /GRID /警示」：完全過時
+* 「Get /GRID / heat健/拓撲」：完全過時
+* 「Get /GRID / healmy」：回應的「alarm－清點」區段已過時
+
+
+
+
+== 未來版本將不支援放置物件的5個TiB最大物件大小
+
+在未來StorageGRID 的發行版中、單一放置物件作業的最大大小為5 GiB、而非5 TiB。對於大於5 GiB的物件、您可以使用多部份上傳、最多可達5 TiB（5、497,558,138,880位元組）。
+
+為了協助您將用戶端移轉至使用「放置物件」中較小的物件大小、StorageGRID 當S3用戶端嘗試上傳超過5 GiB的物件時、會在《支援物件》中觸發「* S3將物件大小調整為太大*」警示。
+
+
+
+== NAS Bridge功能已過時
+
+NAS Bridge功能先前已在StorageGRID 版本號為「更新版本」的「限制存取」中加入。NAS Bridge功能仍處於有限存取狀態、並於StorageGRID 執行版本11.6/時已過時。
+
+NAS Bridge 11.4仍為最終版本、將繼續與StorageGRID NetApp 11.6相 容。檢閱 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 以確保NAS Bridge 11.4與StorageGRID 更新版本之間的持續相容性。
+
+請參閱的NetApp支援網站 https://mysupport.netapp.com/site/info/version-support["NAS橋接器的支援排程"^]。

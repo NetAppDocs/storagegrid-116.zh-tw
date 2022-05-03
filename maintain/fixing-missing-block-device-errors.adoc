@@ -1,0 +1,41 @@
+---
+permalink: maintain/fixing-missing-block-device-errors.html 
+sidebar: sidebar 
+keywords: storagegrid, missing block device, block device error 
+summary: 系統會檢查每個還原的節點是否對應到有效的區塊裝置特殊檔案、或是區塊裝置特殊檔案的有效軟體連結。如果StorageGRID 在/etc/storagegRid/nodes/_noce-name_.conf檔案中找到無效的對應、就會顯示遺失的區塊裝置錯誤。 
+---
+= 修正遺失的區塊裝置錯誤
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+系統會檢查每個還原的節點是否對應到有效的區塊裝置特殊檔案、或是區塊裝置特殊檔案的有效軟體連結。如果StorageGRID 在/etc/storagegRid/nodes/_noce-name_.conf檔案中找到無效的對應、就會顯示遺失的區塊裝置錯誤。
+
+如果您發現與此模式相符的錯誤：
+
+Check configuration file /etc/storagegRid/nodes/_noce-name_.conf for node-node-name_...（正在檢查節點_node-name_...的組態檔/etc/storagegrid /節點/_normate-name_.conf） 「錯誤：_norme-name_：block_device_apse =_path-name_」、「_norme-name_：_path-name_不存在」
+
+這表示、/etc/storagegRid/nodes/_noce-name_.conf將_node-name_用於目的的區塊裝置對應至Linux檔案系統中的指定路徑名稱、但該位置沒有有效的區塊裝置特殊檔案或區塊裝置特殊檔案的軟連結。
+
+確認您已完成中的步驟 xref:deploying-new-linux-hosts.adoc[部署新的Linux主機]。對所有區塊裝置使用與原始主機相同的持續裝置名稱。
+
+如果您無法還原或重新建立遺失的區塊裝置特殊檔案、您可以配置適當大小和儲存類別的新區塊裝置、並編輯節點組態檔、以變更block_device_pur用意 的值、以指向新的區塊裝置特殊檔案。
+
+請從Linux作業系統安裝說明「儲存需求」一節的表格中、判斷適當的大小和儲存類別。請先檢閱「設定主機儲存設備」中的建議、再繼續更換區塊裝置。
+
+
+IMPORTANT: 如果您必須為任何以「block_device_」開頭的組態檔變數提供新的區塊儲存設備、因為原始區塊裝置與故障主機一起遺失、請先確定新的區塊裝置未格式化、再嘗試進一步的還原程序。如果您使用共享儲存設備並已建立新的Volume、則新的區塊裝置將不會格式化。如果您不確定、請針對任何新的區塊儲存設備特殊檔案執行下列命令。
+
+注意：
+
+僅針對新的區塊儲存裝置執行下列命令。如果您認為區塊儲存設備仍包含要還原之節點的有效資料、請勿執行此命令、因為裝置上的任何資料都會遺失。
+
+[listing]
+----
+sudo dd if=/dev/zero of=/dev/mapper/my-block-device-name bs=1G count=1
+----
+xref:../rhel/index.adoc[安裝Red Hat Enterprise Linux或CentOS]
+
+xref:../ubuntu/index.adoc[安裝Ubuntu或DEBIAN]

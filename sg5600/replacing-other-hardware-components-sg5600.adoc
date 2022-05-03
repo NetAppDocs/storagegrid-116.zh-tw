@@ -1,0 +1,90 @@
+---
+permalink: sg5600/replacing-other-hardware-components-sg5600.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, Replacing, replace, hardware, components, remove, removing, removal, install, installing, installation, drive, fan, power supply, battery 
+summary: 您可能需要更換StorageGRID 驅動器、風扇、電源供應器或電池。 
+---
+= 更換其他硬體元件
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可能需要更換StorageGRID 驅動器、風扇、電源供應器或電池。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您有E系列硬體更換程序。
+* 本產品已經使用過 xref:placing-appliance-into-maintenance-mode.adoc[處於維護模式] 如果元件更換程序需要關閉產品電源、
+
+
+若要更換磁碟機、電源風扇箱、風扇箱、電力箱、電池、 或磁碟機匣、請參閱E2700和E5600儲存陣列的標準程序。請專注於移除及更換硬體的逐步指示、SANtricity 許多《介紹儲存管理程式》程序並不適用於應用裝置。
+
+
+
+== SG5612元件更換說明
+
+|===
+| FRU | 請參閱 
+
+
+ a| 
+磁碟機
+ a| 
+請依照E系列指示中的步驟、更換E2600、E2700、E5400、E5500、E5600或12個磁碟機或24個磁碟機匣中的磁碟機。
+
+
+
+ a| 
+電力風扇容器
+ a| 
+請依照E系列說明中的步驟、更換E5612或E5624控制器磁碟機匣中故障的電源風扇容器
+
+
+
+ a| 
+E2700控制器中的電池（需要移除控制器）
+ a| 
+請依照中的步驟進行 xref:replacing-e2700-controller.adoc[更換E2700控制器]，但在現有控制器中安裝新電池。
+
+|===
+
+
+== SG5660元件更換說明
+
+|===
+| FRU | 請參閱 
+
+
+ a| 
+磁碟機
+ a| 
+請依照E系列指示中的步驟、更換E2660、E2760、E5460、E5560或E5660磁碟匣中的磁碟機。
+
+
+
+ a| 
+電力箱
+ a| 
+請依照E系列指示中的步驟、更換E5660控制器磁碟機匣中故障的電源箱
+
+
+
+ a| 
+風扇容器
+ a| 
+請依照E系列指示中的步驟、更換E5660控制器磁碟機匣中故障的風扇容器
+
+
+
+ a| 
+E2700控制器中的電池（需要移除控制器）
+ a| 
+請依照中的步驟進行 xref:replacing-e2700-controller.adoc[更換E2700控制器]，但在現有控制器中安裝新電池。
+
+|===
+https://mysupport.netapp.com/info/web/ECMP11751516.html["NetApp E系列和EF系列硬體更換程序"^]
+
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61765["NetApp文件：E2700系列"^]
+
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61893["NetApp文件：E5600系列"^]

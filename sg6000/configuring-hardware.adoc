@@ -1,0 +1,14 @@
+---
+permalink: sg6000/configuring-hardware.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, hardware, configure, configuration, set up, setup, network, networking 
+summary: 為應用裝置接上電源後、您必須設定StorageGRID 供使用的網路連線。您必須設定SANtricity 用來監控控制器櫃中儲存控制器和其他硬體的軟體-《系統管理程式》。您也必須確保能夠存取SG6000-CN-控制器的BMC介面。 
+---
+= 設定硬體（SG6000）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+為應用裝置接上電源後、您必須設定StorageGRID 供使用的網路連線。您必須設定SANtricity 用來監控控制器櫃中儲存控制器和其他硬體的軟體-《系統管理程式》。您也必須確保能夠存取SG6000-CN-控制器的BMC介面。

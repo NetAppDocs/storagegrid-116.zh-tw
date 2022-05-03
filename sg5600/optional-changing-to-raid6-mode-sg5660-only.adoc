@@ -1,0 +1,41 @@
+---
+permalink: sg5600/optional-changing-to-raid6-mode-sg5660-only.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, raid, raid mode, change, changing, modify, DDP, raid6 
+summary: 如果您的SG5660配備60個磁碟機、則可將磁碟區組態從其預設和建議設定「動態磁碟集區」（DDP）變更為RAID6。您只能在部署StorageGRID 完不含應用程式的應用程式儲存節點之前、變更模式。 
+---
+= 選用：變更為RAID6模式（僅限SG5660）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您的SG5660配備60個磁碟機、則可將磁碟區組態從其預設和建議設定「動態磁碟集區（DDP）」變更為RAID6。您只能在部署StorageGRID 完不含應用程式的應用程式儲存節點之前、變更模式。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您擁有SG5660。SG5612不支援RAID6。如果您使用SG5612、則必須使用DDP模式。
+
+
+
+IMPORTANT: 如果已設定任何磁碟區、或StorageGRID 先前安裝了支援功能、變更RAID模式會移除和更換磁碟區。這些磁碟區上的任何資料都會遺失。
+
+在部署StorageGRID 完一套功能豐富的應用程式儲存節點之前、您可以從兩個Volume組態選項中進行選擇：
+
+* *動態磁碟資源池（DDP）*-這是預設的建議設定。DDP是一種增強的硬體資料保護方案、可提供更好的系統效能、減少磁碟機故障後的重建時間、並易於管理。
+* * RAID6*-這是一種硬體保護方案、使用每個磁碟上的同位元檢查等量磁碟區、並允許在任何資料遺失之前、於RAID集中發生兩個磁碟故障。
++
+
+IMPORTANT: 不建議在大多數StorageGRID 的環境中使用RAID6。雖然RAID6可將儲存效率提高至88%（DDP則為80%）、但DDP模式可提供更有效率的磁碟機故障恢復功能。
+
+
+
+.步驟
+. 使用服務型筆記型電腦、開啟網頁瀏覽器並存取StorageGRID 《Efault Appliance Installer》：+ hy* https://_E5600SG_Controller_IP_:8443*`
++
+其中「_E5600SG_Controller_IP_」是E5600SG控制器的任何IP位址。
+
+. 從功能表列選取*進階*>* RAID模式*。
+. 在「*組態RAID模式*」頁面上、從「模式」下拉式清單中選取「* RAID6*」。
+. 按一下「 * 儲存 * 」。
+

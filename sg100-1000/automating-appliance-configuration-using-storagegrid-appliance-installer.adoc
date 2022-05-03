@@ -1,0 +1,102 @@
+---
+permalink: sg100-1000/automating-appliance-configuration-using-storagegrid-appliance-installer.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, automate, automating, automation, automatic, configuration, configure, appliance installer 
+summary: 您可以使用包含組態資訊的Json檔案、將應用裝置的組態自動化。您可以使用StorageGRID 《不一樣的設備安裝程式」上傳檔案。 
+---
+= 使用StorageGRID 應用程式安裝程式來自動化應用裝置組態
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用包含組態資訊的Json檔案、將應用裝置的組態自動化。您可以使用StorageGRID 《不一樣的設備安裝程式」上傳檔案。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您的應用裝置必須使用與StorageGRID 更新版本的更新韌體、才能相容於更新版本的版本。
+* 您必須連線StorageGRID 至您使用設定的應用裝置上的「NetApp應用裝置安裝程式」 xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+
+
+您可以自動化應用裝置組態工作、例如設定下列項目：
+
+* 網格網路、管理網路和用戶端網路IP位址
+* BMC介面
+* 網路連結
++
+** 連接埠連結模式
+** 網路連結模式
+** 連結速度
+
+
+
+
+使用上傳的Json檔案來設定應用裝置、通常比StorageGRID 使用支援功能安裝程式的多個頁面手動執行組態更有效率、尤其是必須設定多個節點時。您必須一次套用每個節點的組態檔。
+
+
+NOTE: 想要自動化設備的安裝與組態的資深使用者、都可以 xref:automating-installation-configuration-appliance-nodes-configure-sga-py-script.adoc[使用configure-sga.py指令碼]。
+
+.步驟
+. 使用下列其中一項來產生Json檔案：
++
+** 。 https://configbuilder.netapp.com/["ConfigBuilder應用程式"^]。
+** 。 xref:automating-installation-configuration-appliance-nodes-configure-sga-py-script.adoc[「configure：SGA.py」應用裝置組態指令碼]。您可以從StorageGRID 《Sing Appliance安裝程式》（*「說明*」>「設備組態指令碼」*）下載指令碼。
++
+Json檔案中的節點名稱必須符合下列需求：
+
++
+*** 必須是有效的主機名稱、包含至少1個且不超過32個字元
+*** 可以使用字母、數字和連字號
+*** 無法以連字號開頭或結尾
+*** 不能只包含數字
++
+
+IMPORTANT: 請確定Json檔案中的節點名稱（最上層名稱）是唯一的、否則您將無法使用Json檔案來設定多個節點。
+
+
+
+
+
+. 選擇*進階*>*更新設備組態*。
++
+此時會出現「更新設備組態」頁面。
+
++
+image::../media/update_appliance_configuration.png[更新應用裝置組態頁面]
+
+. 選取您要上傳之組態的Json檔案。
++
+.. 選擇*瀏覽*。
+.. 找出並選取檔案。
+.. 選取*「Open*（開啟*）」。
++
+檔案已上傳並驗證。驗證程序完成時、檔案名稱會顯示在綠色核取符號旁。
+
++
+
+IMPORTANT: 如果Json檔案的組態包含「LINK_config」、「networks」或兩者的區段、您可能會失去與應用裝置的連線。如果您在1分鐘內沒有重新連線、請使用指派給應用裝置的其他IP位址之一重新輸入應用裝置URL。
+
++
+image::../media/update_appliance_configuration_valid_json.png[已上傳更新應用裝置組態Json]
+
++
+「*節點名稱*」下拉式清單會填入Json檔案中定義的頂層節點名稱。
+
++
+
+NOTE: 如果檔案無效、檔案名稱會以紅色顯示、並以黃色橫幅顯示錯誤訊息。無效檔案未套用至應用裝置。您可以使用ConfigBuilder來確保擁有有效的Json檔案。
+
+
+
+. 從「*節點名稱*」下拉式清單中選取節點。
++
+「*套用Json組態*」按鈕已啟用。
+
++
+image::../media/update_appliance_configuration_apply_button_enabled.png[已啟用「更新應用裝置組態」按鈕]
+
+. 選取*套用Json組態*。
++
+此組態會套用至選取的節點。
+
+

@@ -1,0 +1,14 @@
+---
+permalink: sg6000/configuring-bmc-interface-sg6000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, sg6000-cn, storage node, storage appliance, BMC, baseboard management controller, configure, setup, set up 
+summary: SG6000-CN-控制器上的底板管理控制器（BMC）使用者介面提供硬體的狀態資訊、可讓您為SG6000-CN-控制器設定SNMP設定和其他選項。 
+---
+= 設定BMC介面（SG6000）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SG6000-CN-控制器上的底板管理控制器（BMC）使用者介面可提供硬體的狀態資訊、並可讓您設定SG6000-CN-控制器的SNMP設定和其他選項。

@@ -1,0 +1,99 @@
+---
+permalink: sg100-1000/replacing-services-appliance.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, Replacing, replace, remove, removing, removal, install, installing, installation 
+summary: 如果設備無法正常運作或故障、您可能需要更換設備。 
+---
+= 更換服務應用裝置
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果設備無法正常運作或故障、您可能需要更換設備。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您的替換產品的零件編號與您要更換的產品相同。
+* 您有標籤可識別連接至本產品的每條纜線。
+* 您有 xref:locating-controller-in-data-center.adoc[實際放置設備]。
+* 本產品已經使用過 xref:placing-appliance-into-maintenance-mode.adoc[已設定維護模式]。
+
+
+當您更換產品時、將無法存取此節點。StorageGRID如果設備運作正常、您可以在本程序開始時執行管制關機。
+
+
+NOTE: 如果您要在安裝StorageGRID 完更新功能之前更換產品、StorageGRID 完成此程序後、可能無法立即存取《產品安裝程式（到此安裝程式）」。雖然StorageGRID 您可以從與應用裝置位於同一子網路的其他主機存取《ENetApp應用裝置安裝程式」、但您無法從其他子網路的主機存取。此情況應在15分鐘內自行解決（當原始應用裝置的任何ARP快取項目逾時時）、或者您可以從本機路由器或閘道手動清除任何舊的ARP快取項目、以立即清除此狀況。
+
+.步驟
+. 當產品處於維護模式時、請關閉產品電源。
++
+.. 登入網格節點：
++
+... 輸入下列命令：「sh admin@_grid_node_ip_`」
+... 輸入「passwords.txt」檔案中所列的密碼。
+... 輸入下列命令以切換至root：「u -」
+... 輸入「passwords.txt」檔案中所列的密碼。
++
+以root登入時、提示會從「$」變更為「#」。
+
+
+
+.. 關閉設備：+`*關機-h now*
+
+
+. 請使用下列兩種方法之一來確認產品電源是否已關閉：
++
+** 產品正面的電源指示燈LED會熄滅。
+** BMC介面的「電源控制」頁面表示裝置已關閉。
+
+
+. 如果StorageGRID 連接到應用裝置的靜態網路使用DHCP伺服器、請更新DNS/網路和IP位址設定。
++
+.. 找出設備正面的MAC位址標籤、然後判斷管理網路連接埠的MAC位址。
++
+
+NOTE: MAC位址標籤會列出BMC管理連接埠的MAC位址。
+
++
+若要判斷管理網路連接埠的MAC位址、您必須將* 2 *新增至標籤上的十六進位數字。例如、如果標籤上的MAC位址以* 09 *結尾、則管理連接埠的MAC位址將以* 0B*結尾。如果標籤上的MAC位址以*（_y_）FF*結尾、則管理連接埠的MAC位址將以*（_y_+1*）結尾。您可以在Windows中開啟「計算機」、將其設定為「程式設計師」模式、選取「Hex」、輸入MAC位址、然後輸入*+ 2 =*、輕鬆完成此計算。
+
+.. 請網路管理員將您移除的應用裝置DNS /網路和IP位址與替換應用裝置的MAC位址建立關聯。
++
+
+IMPORTANT: 您必須先確認原始應用裝置的所有IP位址都已更新、才能為替換應用裝置供電。否則、當裝置開機時、就會取得新的DHCP IP位址、而且可能無法重新連線StorageGRID 到效益。此步驟適用於StorageGRID 所有連接至應用裝置的資訊網路。
+
++
+
+NOTE: 如果原始應用裝置使用靜態IP位址、則新應用裝置會自動採用您移除的應用裝置IP位址。
+
+
+
+. 拆下並更換產品：
++
+.. 標記纜線、然後拔下纜線和任何網路收發器。
++
+
+IMPORTANT: 為避免效能降低、請勿扭轉、摺疊、夾緊或踏上纜線。
+
+.. 從機櫃或機架中取出故障的應用裝置。
+.. 將兩個電源供應器、八個冷卻風扇和兩個SSD從故障設備移至更換設備。
++
+請依照提供的指示更換這些元件。
+
+.. 將替換產品安裝到機櫃或機架中。
+.. 更換纜線和任何光纖收發器。
+.. 開啟產品電源、並監控應用裝置LED和開機代碼。
++
+使用BMC介面來監控開機狀態。
+
+
+
+. 確認應用裝置節點出現在Grid Manager中、且未顯示任何警示。
+
+
+xref:installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.adoc[將應用裝置安裝到機櫃或機架（SG100和SG1000）]
+
+xref:viewing-status-indicators-on-sg100-and-sg1000-appliances.adoc[檢視SG100和SG1000應用裝置的狀態指標]
+
+xref:viewing-boot-up-codes-for-appliance-sg100-and-sg1000.adoc[檢視應用裝置的開機代碼]

@@ -1,0 +1,81 @@
+---
+permalink: ilm/creating-cloud-storage-pool.html 
+sidebar: sidebar 
+keywords: how to create cloud storage pool 
+summary: 當您建立雲端儲存資源池時、請指定StorageGRID 外部儲存區或容器的名稱和位置、將用於儲存物件的外部儲存區或容器、雲端供應商類型（Amazon S3或Azure Blob Storage）、StorageGRID 以及存取外部儲存區或容器所需的資訊。 
+---
+= 建立雲端儲存資源池
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當您建立Cloud Storage Pool時、請指定StorageGRID 外部儲存區或Container的名稱和位置、以供用來儲存物件、雲端供應商類型（Amazon S3或Azure Blob Storage）、StorageGRID 以及存取外部儲存區或容器所需的資訊。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+* 您擁有特定的存取權限。
+* 您已檢閱設定雲端儲存資源池的準則。
+* Cloud Storage Pool所參照的外部儲存區或容器已存在。
+* 您擁有存取儲存庫或容器所需的所有驗證資訊。
+
+
+Cloud Storage Pool會指定單一外部S3儲存區或Azure Blob儲存容器。一旦儲存雲端儲存資源池、即可驗證其運作、因此您必須確保Cloud Storage Pool中指定的儲存庫或容器存在且可存取。StorageGRID
+
+.步驟
+. 選擇* ILM *>* Storage Pools*。
++
+此時將出現「儲存資源池」頁面。本頁包含兩個區段：儲存資源池和雲端儲存資源池。
+
++
+image::../media/storage_pools_page_cloud_storage_pool.png[儲存資源池頁面雲端儲存資源池]
+
+. 在頁面的「Cloud Storage Pools（雲端儲存池）」區段中、選取*「Create*（建立*）」。
++
+隨即顯示Create Cloud Storage Pool（建立雲端儲存池）對話方塊。
+
++
+image::../media/cloud_storage_pool_create.png[建立雲端儲存資源池]
+
+. 輸入下列資訊：
++
+[cols="1a,2a"]
+|===
+| 欄位 | 說明 
+
+
+ a| 
+顯示名稱
+ a| 
+簡短說明雲端儲存資源池及其用途的名稱。設定ILM規則時、請使用容易識別的名稱。
+
+
+
+ a| 
+供應商類型
+ a| 
+您將使用哪家雲端供應商來管理此雲端儲存資源池：
+
+** * Amazon S3 *：針對S3、C2S S3或Google Cloud Platform（GCP）端點選取此選項。
+** * Azure Blob Storage *
+
+
+*附註：*當您選取供應商類型時、頁面底部會出現「服務端點」、「驗證」和「伺服器驗證」等區段。
+
+
+
+ a| 
+貯體或Container
+ a| 
+為雲端儲存池建立的外部S3儲存區或Azure容器名稱。您在此指定的名稱必須與儲存區或容器名稱完全相符、否則建立雲端儲存池將會失敗。儲存雲端儲存資源池後、您無法變更此值。
+
+|===
+. 根據所選的供應商類型、完成頁面的「服務端點」、「驗證」和「伺服器驗證」區段。
++
+** xref:s3-authentication-details-for-cloud-storage-pool.adoc[S3：指定雲端儲存資源池的驗證詳細資料]
+** xref:c2s-s3-authentication-details-for-cloud-storage-pool.adoc[C2S S3：指定雲端儲存資源池的驗證詳細資料]
+** xref:azure-authentication-details-for-cloud-storage-pool.adoc[Azure：指定雲端儲存資源池的驗證詳細資料]
+
+
+

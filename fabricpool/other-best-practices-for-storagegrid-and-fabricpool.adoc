@@ -1,0 +1,41 @@
+---
+permalink: fabricpool/other-best-practices-for-storagegrid-and-fabricpool.html 
+sidebar: sidebar 
+keywords: fabricPool, best practices, encryption, compressions, tiering, AFF, consistency 
+summary: 設定StorageGRID 搭配FabricPool 使用的功能時、您應該避免設定可能影響資料儲存方式的全域選項。 
+---
+= 其他關於功能與功能的最佳實務做法StorageGRID FabricPool
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+設定StorageGRID 搭配FabricPool 使用的功能時、您應該避免設定可能影響資料儲存方式的全域選項。
+
+
+
+== 物件加密
+
+設定StorageGRID 支援時、如果其他StorageGRID 的非支援用戶端需要資料加密（*組態*>*系統*>*網格選項*）、您可以選擇啟用全域*儲存的物件加密*設定。從FabricPool 「支援」層級到StorageGRID 「支援」層級的資料已經加密、因此StorageGRID 不需要啟用「支援」功能。用戶端加密金鑰歸ONTAP 靜止所有。
+
+
+
+== 物件壓縮
+
+設定StorageGRID 時、請勿啟用全域*壓縮儲存物件*設定（*組態*>*系統*>*網格選項*）。從FabricPool 功能到StorageGRID 功能的分層資料已經被壓縮。啟用*壓縮儲存的物件*不會進一步縮小物件的大小。
+
+
+
+== 一致性層級
+
+對於這個領域、建議的儲存貯體一致性層級為「全新寫入後的準則」FabricPool 。 不建議使用「可用」一致性層級。請參閱 xref:../tenant/changing-consistency-level.adoc[變更一致性層級]。
+
+
+
+== 分層FabricPool
+
+如果StorageGRID 此節點使用從NetApp AFF 支援系統指派的儲存設備、請確認該磁碟區FabricPool 並未啟用分層原則。例如、如果StorageGRID VMware主機上正在執行某個節點、請確保支援StorageGRID 該節點之資料存放區的磁碟區FabricPool 未啟用「分層原則」。停用FabricPool 與物件節點搭配使用的磁碟區的分層StorageGRID 功能、可簡化疑難排解和儲存作業。
+
+
+IMPORTANT: 切勿使用FabricPool 無法將StorageGRID 任何與還原StorageGRID 本身相關的資料分層。將StorageGRID 資料分層還原StorageGRID 至物件、可增加疑難排解和作業複雜度。

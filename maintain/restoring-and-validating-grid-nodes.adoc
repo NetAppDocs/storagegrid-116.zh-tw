@@ -1,0 +1,90 @@
+---
+permalink: maintain/restoring-and-validating-grid-nodes.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, restore grid node, restore node, validate grid node, validate node 
+summary: 您必須還原任何故障網格節點的網格組態檔、然後驗證網格組態檔並解決任何錯誤。 
+---
+= 還原及驗證網格節點
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須還原任何故障網格節點的網格組態檔、然後驗證網格組態檔並解決任何錯誤。
+
+只要主機的「/var/local」磁碟區不會因先前主機的故障而遺失、您就可以匯入主機上應有的任何網格節點。例如、如果您使用共享儲存設備來儲存StorageGRID 系統資料磁碟區、則可能仍存在「/var/local' Volume」（/var/local'磁碟區）、如StorageGRID Linux作業系統的《安裝說明》所述。匯入節點會將其節點組態檔還原至主機。
+
+如果無法匯入遺失的節點、則必須重新建立其網格組態檔。
+
+然後您必須驗證網格組態檔案、並解決任何可能發生的網路或儲存問題、才能繼續重新啟動StorageGRID 更新。當您重新建立節點的組態檔時、您必須使用與您要還原之節點相同的替換節點名稱。
+
+如需節點的/var/local'磁碟區位置詳細資訊、請參閱安裝說明。
+
+.步驟
+. 在恢復主機的命令列中、列出所有目前設定StorageGRID 的支援網格節點：「show StorageGRID 駐留節點清單」
++
+如果未設定任何網格節點、則不會有任何輸出。如果已設定某些網格節點、則預期輸出格式如下：
+
++
+[listing]
+----
+Name               Metadata-Volume
+================================================================
+dc1-adm1           /dev/mapper/sgws-adm1-var-local
+dc1-gw1            /dev/mapper/sgws-gw1-var-local
+dc1-sn1            /dev/mapper/sgws-sn1-var-local
+dc1-arc1           /dev/mapper/sgws-arc1-var-local
+----
++
+如果未列出應在主機上設定的部分或全部網格節點、則需要還原遺失的網格節點。
+
+. 若要匯入具有「/var/local" Volume的網格節點：
++
+.. 針對您要匯入的每個節點執行下列命令：「show StorageGRID fitNode import node-var-local-volume -path'
++
+僅當目標節點在上次執行時的主機上完全關閉時、「StorageGRID 支援節點匯入」命令才會成功。如果情況並非如此、您將會發現類似下列的錯誤：
+
++
+「此節點（_nnode-name_）似乎是由其他主機（UUID host-uuid）擁有。
+
++
+「如果您確定匯入安全、請使用--force旗標。
+
+.. 如果您看到另一部主機擁有的節點錯誤、請再次以「-force」旗標執行命令、以完成匯入作業：「show StorageGRID f0 f2 - force節點匯入node-var-local-volume -path'
++
+
+NOTE: 使用「-force」旗標匯入的任何節點、都需要執行其他恢復步驟、才能重新加入網格、如所述 xref:whats-next-performing-additional-recovery-steps-if-required.adoc[接下來：視需要執行其他恢復步驟]。
+
+
+
+. 對於沒有「/var/local" Volume的網格節點、請重新建立節點的組態檔、將其還原至主機。
++
+請遵循安裝說明中「Create node configuration files'（建立節點組態檔）」中的準則。
+
++
+
+IMPORTANT: 當您重新建立節點的組態檔時、您必須使用與您要還原之節點相同的替換節點名稱。對於Linux部署、請確定組態檔名稱包含節點名稱。您應該盡可能使用相同的網路介面、區塊裝置對應和IP位址。這種做法可將恢復期間需要複製到節點的資料量降至最低、這可能會使恢復速度大幅加快（在某些情況下、是幾分鐘而非數週）。
+
++
+
+IMPORTANT: 如果您在StorageGRID 重新建立節點的組態檔時、使用任何新的區塊裝置（先前未使用過的元件）作為任何以「block_device_」開頭的組態變數值、請務必遵循中的所有準則 xref:fixing-missing-block-device-errors.adoc[修正遺失的區塊裝置錯誤]。
+
+. 在恢復的主機上執行下列命令、列出所有StorageGRID 的支援節點。
++
+「Udo StorageGRID 現象節點清單」
+
+. 驗證StorageGRID 每個網格節點的節點組態檔、其名稱會顯示在「節點清單」輸出中：
++
+「Udo StorageGRID SURITY node-name_」驗證
+
++
+您必須先解決任何錯誤或警告、才能開始StorageGRID 執行「支援服務」。以下各節將詳細說明在恢復期間可能具有特殊意義的錯誤。
+
+
+
+xref:../rhel/index.adoc[安裝Red Hat Enterprise Linux或CentOS]
+
+xref:../ubuntu/index.adoc[安裝Ubuntu或DEBIAN]
+
+xref:fixing-mssing-network-interface-errors.adoc[修正遺失的網路介面錯誤]

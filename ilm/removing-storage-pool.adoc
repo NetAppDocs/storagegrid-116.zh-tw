@@ -1,0 +1,33 @@
+---
+permalink: ilm/removing-storage-pool.html 
+sidebar: sidebar 
+keywords: remove storage pool 
+summary: 您可以移除未使用的儲存資源池。 
+---
+= 移除儲存資源池
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以移除未使用的儲存資源池。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+* 您擁有特定的存取權限。
+
+
+.步驟
+. 選擇* ILM *>* Storage Pools*。
++
+此時將出現「儲存資源池」頁面。
+
+. 請查看表格中的「ILM使用率」欄、判斷您是否可以移除儲存資源池。
++
+如果儲存資源池用於ILM規則或「刪除編碼」設定檔、則無法將其移除。視需要選取*檢視詳細資料*>* ILM使用狀況*以判斷儲存資源池的使用位置。
+
+. 如果您要移除的儲存資源池未被使用、請選取選項按鈕。
+. 選擇*移除*。
+. 選擇*確定*。
+

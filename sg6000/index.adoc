@@ -1,0 +1,30 @@
+---
+permalink: sg6000/index.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, overview, models, features 
+summary: 該產品是整合式儲存與運算平台、可在整個系統中作為儲存節點運作。StorageGRID StorageGRID這些應用裝置可在混合式網格環境中使用、此環境結合了應用裝置儲存節點和虛擬（軟體型）儲存節點。 
+---
+= SG6000應用裝置：總覽
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+該產品是整合式儲存與運算平台、可在整個系統中作為儲存節點運作。StorageGRID StorageGRID這些應用裝置可在結合應用裝置儲存節點和虛擬（軟體型）儲存節點的混合式網格環境中使用。
+
+SG6000應用裝置提供下列功能：
+
+* 提供兩種機型：
++
+** SG6060、內含60個磁碟機、並支援擴充櫃。
+** SGF6024提供24個固態硬碟（SSD）。
+
+
+* 整合StorageGRID 適用於整個過程的儲存與運算元素。
+* 包含StorageGRID 用來簡化儲存節點部署和組態的《不再》應用裝置安裝程式。
+* 包含SANtricity 用來管理及監控儲存控制器和磁碟機的《系統管理程式》。
+* 包括用於監控及診斷運算控制器硬體的基礎板管理控制器（BMC）。
+* 支援最多四個10-GbE或25-GbE連線至StorageGRID 「支援網格網」和「用戶端網路」。
+* 支援聯邦資訊處理標準（FIPS）磁碟機。當這些磁碟機搭配SANtricity 使用時、無法在未經授權的情況下存取資料。
+

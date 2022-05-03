@@ -1,0 +1,108 @@
+---
+permalink: admin/configuring-audit-client-for-nfs.html 
+sidebar: sidebar 
+keywords: audit client for NFS 
+summary: 稽核共用會自動啟用為唯讀共用。 
+---
+= 設定NFS的稽核用戶端
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+稽核共用會自動啟用為唯讀共用。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您有「Passwords．txt」檔案、其中包含root / admin密碼（可在上述套件中找到）。
+* 您有「Configuration．TXT」檔案（可在上述套件中找到）。
+* 稽核用戶端使用NFS版本3（NFSv3）。
+
+
+針對StorageGRID 您要從中擷取稽核訊息的各個執行此程序、以利執行此程序。
+
+.步驟
+. 登入主要管理節點：
++
+.. 輸入下列命令：「sh admin@_primary管理節點IP」
+.. 輸入「passwords.txt」檔案中所列的密碼。
+.. 輸入下列命令以切換至root：「u -」
+.. 輸入「passwords.txt」檔案中所列的密碼。
++
+以root登入時、提示會從「$」變更為「#」。
+
+
+
+. 確認所有服務的狀態均為「執行中」或「已驗證」。輸入：「toragegrid狀態」
++
+如果未將任何服務列為「執行中」或「已驗證」、請先解決問題再繼續。
+
+. 返回命令列。按* Ctrl-*+* C*。
+. 啟動NFS組態公用程式。輸入：「config_nfs.rb」
++
+[listing]
+----
+
+-----------------------------------------------------------------
+| Shares               | Clients              | Config          |
+-----------------------------------------------------------------
+| add-audit-share      | add-ip-to-share      | validate-config |
+| enable-disable-share | remove-ip-from-share | refresh-config  |
+|                      |                      | help            |
+|                      |                      | exit            |
+-----------------------------------------------------------------
+----
+. 新增稽核用戶端：「add-稽 核共用區」
++
+.. 出現提示時、請輸入稽核共用區的稽核用戶端IP位址或IP位址範圍：「client_ip_address」
+.. 出現提示時、請按* Enter *。
+
+
+. 如果允許多個稽核用戶端存取稽核共用區、請新增額外使用者的IP位址：「add-ip-to共享區」
++
+.. 輸入稽核共用區的編號：「_nap_share_number_」
+.. 出現提示時、請輸入稽核共用區的稽核用戶端IP位址或IP位址範圍：「_client_ip_address_」
+.. 出現提示時、請按* Enter *。
++
+隨即顯示NFS組態公用程式。
+
+.. 針對每個具有稽核共用存取權的其他稽核用戶端重複這些子步驟。
+
+
+. 或者、請驗證您的組態。
++
+.. 輸入下列內容：「valide-config」
++
+系統會檢查並顯示這些服務。
+
+.. 出現提示時、請按* Enter *。
++
+隨即顯示NFS組態公用程式。
+
+.. 關閉NFS組態公用程式：「exit」
+
+
+. 判斷您是否必須在其他站台啟用稽核共用。
++
+** 如果StorageGRID 這個部署是單一站台、請前往下一步。
+** 如果StorageGRID 此功能包括其他站台的管理節點、請視需要啟用這些稽核共用：
++
+... 遠端登入站台的管理節點：
++
+.... 輸入下列命令：「sh admin@_grid_node_ip_`」
+.... 輸入「passwords.txt」檔案中所列的密碼。
+.... 輸入下列命令以切換至root：「u -」
+.... 輸入「passwords.txt」檔案中所列的密碼。
+
+
+... 重複這些步驟、為每個額外的管理節點設定稽核共用。
+... 關閉遠端安全Shell登入遠端管理節點。輸入：「EXIT」
+
+
+
+
+. 登出命令Shell：「exit」
++
+NFS稽核用戶端會根據其IP位址授予稽核共用的存取權。將稽核共用區的IP位址新增至共用區、將稽核共用區的存取權限授予新的NFS稽核用戶端、或移除現有的稽核用戶端IP位址、以移除該用戶端。
+
+

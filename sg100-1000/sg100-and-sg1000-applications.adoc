@@ -1,0 +1,46 @@
+---
+permalink: sg100-1000/sg100-and-sg1000-applications.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, applications, how to use, services 
+summary: 您可以StorageGRID 透過多種方式設定支援服務應用裝置、以提供閘道服務、以及某些網格管理服務的備援功能。 
+---
+= SG100與SG1000應用程式
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以StorageGRID 透過多種方式設定支援服務應用裝置、以提供閘道服務、以及某些網格管理服務的備援功能。
+
+應用裝置的部署方式如下：
+
+* 將新的或現有的網格新增為閘道節點
+* 將新網格新增為主要或非主要管理節點、或新增至現有網格作為非主要管理節點
+* 同時以閘道節點和管理節點（主要或非主要）的形式運作
+
+
+應用裝置可協助使用高可用度（HA）群組、並為S3或Swift資料路徑連線提供智慧型負載平衡。
+
+下列範例說明如何最大化應用裝置的功能：
+
+* 使用兩個SG100或兩個SG1000設備、將閘道服務設定為閘道節點、以提供閘道服務。
++
+
+IMPORTANT: 請勿在同一個站台部署SG100和SG1000服務應用裝置。可能會導致無法預測的效能。
+
+* 使用兩個SG100或兩個SG1000應用裝置來提供某些網格管理服務的備援功能。請將每個應用裝置設定為管理節點、以達成此目標。
+* 使用兩個SG100或兩個SG1000應用裝置、透過一個或多個虛擬IP位址來提供高可用度的負載平衡和流量調整服務。將設備設定為管理節點或閘道節點的任意組合、並將兩個節點新增至同一個HA群組、即可達成此目標。
++
+
+IMPORTANT: 如果您在同一個HA群組中使用管理節點和閘道節點、則CLB（連線負載平衡器）連接埠和僅管理節點連接埠將不會容錯移轉。如需設定HA群組的指示、請參閱《管理StorageGRID 》介紹。
+
++
+
+NOTE: CLB服務已過時。
+
+
+
+SG100與SG1000服務應用裝置搭配使用時StorageGRID 、可部署僅限應用裝置的網格、不需依賴外部Hypervisor或運算硬體。
+
+xref:../admin/index.adoc[管理StorageGRID]

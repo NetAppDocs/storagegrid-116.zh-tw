@@ -1,0 +1,23 @@
+---
+permalink: sg5700/configuring-storagegrid-connections.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5700, storage node, storage appliance, storagegrid connections, connections, configure, setup, set up 
+summary: 您必須先設定應用裝置與您計畫使用的網路之間的連線、才能將StorageGRID 該應用裝置部署為StorageGRID 位於整個資訊網中的儲存節點。您可以瀏覽StorageGRID 至E5700SG控制器（應用裝置中的運算控制器）上隨附的《SESEAppliance Installer》（英文）來設定網路功能。 
+---
+= 設定StorageGRID 鏈接（SG5700）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須先設定應用裝置與您計畫使用的網路之間的連線、才能將StorageGRID 該應用裝置部署為StorageGRID 位於整個資訊網中的儲存節點。您可以瀏覽StorageGRID 至E5700SG控制器（應用裝置中的運算控制器）上隨附的《SESSE應用裝置安裝程式》來設定網路功能。
+
+.步驟
+* xref:accessing-storagegrid-appliance-installer-sg5700.adoc[存取StorageGRID 產品安裝程式]
+* xref:verifying-and-upgrading-storagegrid-appliance-installer-version.adoc[驗StorageGRID 證並升級版本的應用程式]
+* xref:configuring-network-links-sg5700.adoc[設定網路連結（SG5700）]
+* xref:setting-ip-configuration-sg5700.adoc[設定IP組態]
+* xref:verifying-network-connections.adoc[驗證網路連線]
+* xref:verifying-port-level-network-connections.adoc[驗證連接埠層級的網路連線]
+

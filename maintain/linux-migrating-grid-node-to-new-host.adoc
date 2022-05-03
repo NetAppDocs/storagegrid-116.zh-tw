@@ -1,0 +1,38 @@
+---
+permalink: maintain/linux-migrating-grid-node-to-new-host.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, linux, migrate node, migrating node, new host for node 
+summary: 您可以將StorageGRID 支援節點從一部Linux主機移轉至另一部主機、以執行主機維護（例如作業系統修補和重新開機）、而不會影響網格的功能或可用度。 
+---
+= Linux：將網格節點移轉至新主機
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將StorageGRID 支援節點從一部Linux主機移轉至另一部主機、以執行主機維護（例如OS修補和重新開機）、而不會影響網格的功能或可用度。
+
+您可以將一個或多個節點從一個Linux主機（「來源主機」）移轉至另一個Linux主機（「目標主機」）。目標主機必須事先做好StorageGRID 準備以供使用。
+
+
+IMPORTANT: 只有當您計畫StorageGRID 進行包含移轉支援的非功能性部署時、才能使用此程序。
+
+若要將網格節點移轉至新主機、下列兩種情況都必須符合：
+
+* 共享儲存設備用於所有的每節點儲存磁碟區
+* 網路介面在各主機之間具有一致的名稱
+
+
+
+NOTE: 在正式作業部署中、請勿在單一主機上執行多個儲存節點。使用每個儲存節點的專屬主機、可提供隔離的故障網域。
+
+其他類型的節點（例如管理節點或閘道節點）可部署在同一部主機上。不過、如果您有多個相同類型的節點（例如兩個閘道節點）、請勿在同一部主機上安裝所有執行個體。
+
+如需詳細資訊、請參閱StorageGRID 適用於您Linux作業系統的《安裝說明》中的「節點移轉需求」。
+
+xref:deploying-new-linux-hosts.adoc[部署新的Linux主機]
+
+xref:../rhel/index.adoc[安裝Red Hat Enterprise Linux或CentOS]
+
+xref:../ubuntu/index.adoc[安裝Ubuntu或DEBIAN]

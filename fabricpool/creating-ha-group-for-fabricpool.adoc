@@ -1,0 +1,54 @@
+---
+permalink: fabricpool/creating-ha-group-for-fabricpool.html 
+sidebar: sidebar 
+keywords: fabricPool, high availability group, HA group, create, creating, virtual IP, VIP, preferred master, backup interface 
+summary: 設定StorageGRID 使用FabricPool 搭配使用的功能時、您可以選擇性地建立一個或多個高可用度（HA）群組。HA群組由管理節點、閘道節點或兩者上的一或多個網路介面組成。 
+---
+= 建立FabricPool 一套適用於不穩定環境的高可用度（HA）群組
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+設定StorageGRID 使用FabricPool 搭配使用的功能時、您可以選擇性地建立一或多個高可用度（HA）群組。HA群組由管理節點、閘道節點或兩者上的一或多個網路介面組成。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+* 您擁有「根存取」權限。
+* 如果您打算使用VLAN、則已建立VLAN介面。請參閱 xref:../admin/configure-vlan-interfaces.adoc[設定VLAN介面]。
+
+
+每個HA群組都會使用虛擬IP位址（VIP）來提供高可用度的存取權限、以存取相關節點上的共享服務。
+
+如需此工作的詳細資訊、請參閱 xref:../admin/managing-high-availability-groups.adoc[管理高可用度群組]。
+
+.步驟
+. 選擇*組態*>*網路*>*高可用度群組*。
+. 選擇* Create *（建立*）。
+. 輸入唯一名稱和說明（可選）。
+. 選取一或多個介面以新增至此HA群組。
++
+使用欄標題來排序列、或輸入搜尋詞彙以更快找到介面。
+
+. 確定此HA群組的主要介面和任何備份介面。
++
+拖放列以變更*優先順序*欄中的值。
+
++
+清單中的第一個介面是主要介面。主介面是作用中介面、除非發生故障。
+
++
+如果HA群組包含多個介面、且作用中介面故障、VIP位址會依照優先順序移至第一個備份介面。如果該介面故障、VIP位址會移至下一個備份介面、依此類推。解決故障時、VIP位址會移回可用的最高優先順序介面。
+
+. 以CIDR表示法和#8212指定VIP子網路；以斜槓和子網路長度（0-32）為開頭的IPV4位址。
++
+網路位址不得設定任何主機位元。例如、「192.16.0.0/22」。
+
+. 或者、如果ONTAP 用於存取StorageGRID 功能的S廳IP位址與StorageGRID 該功能的網址不相同、請輸入StorageGRID 該功能的本地網關IP位址。本機閘道IP位址必須位於VIP子網路內。
+. 輸入HA群組的一或多個虛擬IP位址。您最多可以新增10個IP位址。所有VIP都必須位於VIP子網路內。
++
+您必須至少提供一個IPV4位址。您也可以指定其他的IPv6位址。
+
+. 選擇* Create HA group（建立HA群組）*、然後選取* Finish（完成）*。
+

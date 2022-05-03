@@ -1,0 +1,72 @@
+---
+permalink: sg6000/obtaining-additional-equipment-and-tools-sg6000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, additional, equipment, tools 
+summary: 安裝StorageGRID 此產品之前、請先確認您擁有所需的所有額外設備和工具。 
+---
+= 取得額外設備與工具（SG6000）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安裝StorageGRID 此產品之前、請先確認您擁有所需的所有額外設備和工具。
+
+您需要下列額外設備來安裝及設定硬體：
+
+* *螺絲起子*
++
+image::../media/screwdrivers.gif[兩個螺絲起子]
+
++
+飛利浦編號2個螺絲起子
+
++
+中型平口螺絲刀
+
+* *電子化軟線帶*
++
+image::../media/appliance_wriststrap.gif[ESD腕帶]
+
+* *光纖纜線與SFP收發器*
++
+image::../media/fc_cable_and_sfp.gif[光纖纜線和SFP+收發器]
+
++
+您需要下列其中一個選項：
+
++
+** 一至四條雙軸纜線或光纖纜線、適用於您打算在SG6000-CN.控制器上使用的10/25-GbE連接埠
+** 一到四個SFP+收發器、適用於10/25-GbE連接埠、如果您要使用光纖纜線和10-GbE連結速度
+** 如果您使用光纖纜線和25-GbE連結速度、則可使用10/25-GbE連接埠的一到四個SFP28收發器
+
+
+* * RJ-45（Cat5/Cat5e/Cat6）乙太網路纜線*
++
+image::../media/ethernet_cables.png[乙太網路纜線]
+
+* *服務筆記型電腦*
++
+image::../media/sam_management_client.gif[服務筆記型電腦]
+
++
+xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]
+
++
+1-GbE（RJ-45）連接埠
+
+* *選用工具*
++
+image::../media/optional_tools.gif[電力鑽取與手電筒]
+
++
+使用十字頭的動力鑽孔機
+
++
+手電筒
+
++
+60個磁碟機櫃的機械式起重
+
+

@@ -1,0 +1,76 @@
+---
+permalink: fabricpool/index.html 
+sidebar: sidebar 
+keywords: how to configure storagegrid for fabricpool, using fabricpool with storagegrid, 
+summary: 如果您使用NetApp ONTAP 功能性軟體、可以使用NetApp FabricPool 功能將非使用中或冷的資料分層到NetApp StorageGRID 的物件式儲存系統。 
+---
+= 組態StorageGRID 供FabricPool 靜態使用：總覽
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您使用NetApp ONTAP 功能性軟體、可以使用NetApp FabricPool 功能將非使用中或冷的資料分層到NetApp StorageGRID 的物件式儲存系統。
+
+
+
+== 關於這些指示
+
+請依照下列指示：
+
+* 取得有關設定StorageGRID 搭配FabricPool 使用的物件儲存系統的總覽。
+* 瞭解ONTAP 如何在將StorageGRID 下列資訊附加到作FabricPool 爲一個名爲「不知如何」的地方時、獲得您提供給「不知如何」的資訊。
+* 瞭解最佳實務做法、以設定StorageGRID 適用於StorageGRID 整個流程的資訊生命週期管理（ILM）原則、一套適用於StorageGRID 整個流程的資訊流量分類原則、以及其他適用於FabricPool 整個流程的功能。
+
+
+
+
+== 組態工作流程
+
+image::../media/fabricpool_storagegrid_workflow.png[功能工作流程FabricPool StorageGRID]
+
+
+
+== 開始之前
+
+* 決定您FabricPool 要使用哪個「功能區」分層原則、將非作用中ONTAP 的功能區資料分層到StorageGRID 無法使用的地方。
+* 規劃並安裝StorageGRID 一套可滿足儲存容量和效能需求的功能完善的系統。
+* 熟悉StorageGRID 包括Grid Manager和Tenant Manager在內的整個系統軟體。
+* 請檢閱這些額外資源、其中提供使用FabricPool 和設定功能的詳細資訊：
++
+** https://www.netapp.com/pdf.html?item=/media/17239-tr4598pdf.pdf["TR-4598：FabricPool 《完美實務》ONTAP （《TR-4598：》）、《完美實務》（英文"^]
+** https://docs.netapp.com/us-en/ontap/index.html["供應說明文件ONTAP"^]
+
+
+
+
+
+
+== 什麼是FabricPool 功能？
+
+VMware是一套不間斷的混合式儲存解決方案、使用高效能Flash Aggregate做為效能層、而物件存放區則做為雲端層。FabricPool ONTAP資料會根據是否經常存取而儲存在主要儲存媒體或物件資料存放區中。使用支援FabricPool的Aggregate可協助您降低儲存成本、而不會影響效能、效率或保護。
+
+無需變更架構、您也可以從中央ONTAP 的資訊儲存系統繼續管理資料和應用程式環境。
+
+
+
+== 什麼是StorageGRID 功能？
+
+與其他儲存架構（例如檔案或區塊儲存）相比、支援將資料管理為物件的儲存架構。StorageGRID物件會保留在單一容器（例如儲存區）內、不會以檔案形式嵌套在其他目錄內的目錄內。雖然物件儲存設備的效能通常低於檔案或區塊儲存設備、但可大幅擴充。支援的資料儲存區可容納數PB的資料和數十億個物件。StorageGRID
+
+
+
+== 為什麼StorageGRID 要使用不一樣FabricPool 的功能來做為一個不一樣的雲端層？
+
+可將各種資料分層保存至許多物件儲存供應商、FabricPool ONTAP StorageGRID 包括公有雲可能會在庫位或容器層級設定每秒支援的輸入/輸出作業（IOPS）數量上限、但StorageGRID 不像公有雲、效能會隨系統中的節點數量而擴充。使用VMware做為VMware的雲端層、您可以將冷資料保留在私有雲端、以獲得最高效能、並完全掌控資料。StorageGRID FabricPool
+
+此外FabricPool 、當StorageGRID 您使用效益技術做為雲端層時、不需要使用不含功能的認證。
+
+
+
+== 我可以ONTAP 搭配StorageGRID 使用多個支援不支援的叢集嗎？
+
+這些指示說明如何將StorageGRID 資訊鏈接到ONTAP 單一的資訊叢集。不過、您可能想要將相同StorageGRID 的支援系統連接至多ONTAP 個支援叢集。
+
+從多ONTAP 個支援叢集將資料分層至單StorageGRID 一支援系統的唯一需求、是每個叢集都必須使用不同的S3儲存區。根據您的需求、您可以針對所有叢集使用相同的高可用度（HA）群組、負載平衡器端點和租戶帳戶、也可以針對每個叢集設定每個項目。

@@ -1,0 +1,22 @@
+---
+permalink: fabricpool/configuring-dns-for-storagegrid-ip-addresses.html 
+sidebar: sidebar 
+keywords: fabricPool, DNS, domain name system, FQDN, fully qualified domain name, IP address, VIP 
+summary: 在設定高可用度群組和負載平衡器端點之後、您必須確保ONTAP 適用於此作業系統的網域名稱系統（DNS）包含一筆記錄、可將StorageGRID 此更新關聯到FabricPool 將用於建立連線的IP位址（完整網域名稱）。 
+---
+= 將DNS伺服器設定為StorageGRID 使用靜態IP位址
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在設定高可用度群組和負載平衡器端點之後、您必須確保ONTAP 適用於此系統的網域名稱系統（DNS）包含一筆記錄、可將StorageGRID 此伺服器名稱（完整網域名稱）與FabricPool 此IP位址建立關聯、以利進行連線。
+
+您在DNS記錄中輸入的IP位址取決於您是否使用HA負載平衡節點群組：
+
+* 如果您已設定HA群組、FabricPool 則會將其連線至該HA群組的虛擬IP位址。
+* 如果您不使用HA群組、FabricPool 則可使用StorageGRID 任何閘道節點或管理節點的IP位址、將其連線至「靜態負載平衡器」服務。
+
+
+您也必須確保DNS記錄會參考所有必要的端點網域名稱、包括任何萬用字元名稱。

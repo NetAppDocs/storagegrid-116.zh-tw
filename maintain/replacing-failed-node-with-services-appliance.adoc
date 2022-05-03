@@ -1,0 +1,37 @@
+---
+permalink: maintain/replacing-failed-node-with-services-appliance.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, replace failed node, services appliance 
+summary: 您可以使用SG100或SG1000服務應用裝置來還原故障的閘道節點、故障的非主要管理節點、或是在VMware、Linux主機或服務應用裝置上代管的故障主要管理節點。此程序是網格節點還原程序的一個步驟。 
+---
+= 使用服務應用裝置來更換故障節點
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用SG100或SG1000服務應用裝置來還原故障的閘道節點、故障的非主要管理節點、或是在VMware、Linux主機或服務應用裝置上代管的故障主要管理節點。此程序是網格節點還原程序的一個步驟。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您必須判斷下列其中一種情況是否屬實：
++
+** 無法還原裝載節點的虛擬機器。
+** 網格節點的實體或虛擬Linux主機故障、必須更換。
+** 主控網格節點的服務應用裝置必須更換。
+
+
+* 您必須確保StorageGRID 服務應用裝置上的Sing Appliance Installer版本與StorageGRID 您的支援系統軟體版本相符、如硬體安裝與維護所述、以驗證及升級StorageGRID 《支援服務應用程式》的版本。
++
+xref:../sg100-1000/index.adoc[SG100與SG1000服務應用裝置]
+
+
+
+
+IMPORTANT: 請勿在同一個站台同時部署SG100和SG1000服務應用裝置。可能會導致無法預測的效能。
+
+在下列情況下、您可以使用SG100或SG1000服務應用裝置來恢復故障的網格節點：
+
+* 故障節點裝載於VMware或Linux（平台變更）
+* 故障節點裝載於服務應用裝置（平台更換）
+

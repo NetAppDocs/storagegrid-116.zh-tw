@@ -1,0 +1,41 @@
+---
+permalink: upgrade/checking-systems-condition-before-upgrading-software.html 
+sidebar: sidebar 
+keywords: upgrade, grid tasks, firewall, ports 
+summary: 在升級StorageGRID 支援系統之前、您必須確認系統已準備好進行升級。您必須確保系統正常運作、且所有網格節點均正常運作。 
+---
+= 檢查系統狀況
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在升級StorageGRID 支援系統之前、您必須確認系統已準備好進行升級。您必須確保系統正常運作、且所有網格節點均正常運作。
+
+.步驟
+. 使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+. 檢查並解決任何作用中警示。
++
+如需特定警示的相關資訊、請參閱 xref:../monitor/alerts-reference.adoc[警示參考資料]。
+
+. 確認沒有發生衝突的網格工作處於作用中或擱置中狀態。
++
+.. 選取*支援*>*工具*>*網格拓撲*。
+.. 選擇*站台_*>*主管理節點_*>* CMN*>*網格工作*>*組態*。
++
+資訊生命週期管理評估（ILME）工作是唯一能與軟體升級同時執行的網格工作。
+
+.. 如果有任何其他網格工作處於作用中或擱置中狀態、請等待它們完成或解除鎖定。
++
+
+NOTE: 如果工作尚未完成或解除鎖定、請聯絡技術支援。
+
+
+
+. 請參閱 xref:../network/internal-grid-node-communications.adoc[內部網格節點通訊] 和 xref:../network/external-communications.adoc[外部通訊] 確保StorageGRID 在升級之前、所有必要的連接埠均已開啟。
++
+
+IMPORTANT: 如果您已開啟任何自訂的防火牆連接埠、系統會在升級前檢查期間通知您。您必須先聯絡技術支援部門、才能繼續升級。
+
+

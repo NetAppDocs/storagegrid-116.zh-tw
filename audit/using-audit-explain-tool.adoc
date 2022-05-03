@@ -1,0 +1,101 @@
+---
+permalink: audit/using-audit-explain-tool.html 
+sidebar: sidebar 
+keywords: storagegrid, audit, tool, audit-explain, audit explain, translate audit messages, translate messages, translate audit message, translate message 
+summary: 您可以使用稽核說明工具、將稽核記錄中的稽核訊息轉譯為易於閱讀的格式。 
+---
+= 使用稽核說明工具
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用「稽核說明」工具、將稽核記錄中的稽核訊息轉譯為易於閱讀的格式。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您必須擁有特定的存取權限。
+* 您必須擁有「passwors.txt」檔案。
+* 您必須知道主管理節點的IP位址。
+
+
+主管理節點上的「稽核說明」工具、可在稽核記錄中提供稽核訊息的簡化摘要。
+
+
+IMPORTANT: 「稽核說明」工具主要是供疑難排解作業期間的技術支援人員使用。處理「稽核解釋」查詢可能會耗用大量的CPU電力、進而影響StorageGRID 到整個市場的運作。
+
+此範例顯示「稽核說明」工具的典型輸出。當帳戶ID為92484777680322627870的S3租戶提出建立名為「Bucket1」的儲存區要求、並將三個物件新增至該儲存區時、就會產生這四個SPUT稽核訊息。
+
+[listing]
+----
+SPUT S3 PUT bucket bucket1 account:92484777680322627870 usec:124673
+SPUT S3 PUT object bucket1/part1.txt tenant:92484777680322627870  cbid:9DCB157394F99FE5 usec:101485
+SPUT S3 PUT object bucket1/part2.txt tenant:92484777680322627870  cbid:3CFBB07AB3D32CA9 usec:102804
+SPUT S3 PUT object bucket1/part3.txt tenant:92484777680322627870  cbid:5373D73831ECC743 usec:93874
+----
+「稽核說明」工具可處理純文字或壓縮的稽核記錄。例如：
+
+[listing]
+----
+audit-explain audit.log
+----
+[listing]
+----
+audit-explain 2019-08-12.txt.gz
+----
+「稽核解釋」工具也能同時處理多個檔案。例如：
+
+[listing]
+----
+audit-explain audit.log 2019-08-12.txt.gz 2019-08-13.txt.gz
+----
+[listing]
+----
+audit-explain /var/local/audit/export/*
+----
+最後、「稽核解釋」工具可以接受管道的輸入、讓您使用「Grep」命令或其他方式來篩選及預先處理輸入。例如：
+
+[listing]
+----
+grep SPUT audit.log | audit-explain
+----
+[listing]
+----
+grep bucket-name audit.log | audit-explain
+----
+由於稽核日誌的剖析速度可能非常大且緩慢、因此您可以篩選要查看的部分、並在部分執行「稽核解釋」、而非整個檔案、藉此節省時間。
+
+
+NOTE: 「稽核解釋」工具不接受壓縮檔案做為管道輸入。若要處理壓縮檔案、請將檔案名稱提供為命令列引數、或使用「zcat」工具先解壓縮檔案。例如：
+
+[listing]
+----
+zcat audit.log.gz | audit-explain
+----
+使用「Help（-h）」（說明（-h））選項查看可用的選項。例如：
+
+[listing]
+----
+ $ audit-explain -h
+----
+.步驟
+. 登入主要管理節點：
++
+.. 輸入下列命令：「sh admin@_primary管理節點IP」
+.. 輸入「passwords.txt」檔案中所列的密碼。
+
+
+. 輸入下列命令、其中「/var/local/nital/EXTE/nited.log」代表您要分析的檔案名稱和位置：
++
+$'稽核-說明/var/local/exit/export/napenter.log'
+
++
+「稽核解釋」工具可列印指定檔案或檔案中所有訊息的人工讀取解析。
+
++
+
+NOTE: 為了縮短行長並提高讀取能力、預設不會顯示時間戳記。若要查看時間戳記、請使用時間戳記（`-t`）選項。
+
+
+
+xref:sput-s3-put.adoc[SPUT：S3]

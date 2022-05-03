@@ -1,0 +1,49 @@
+---
+permalink: admin/changing-browser-session-timeout.html 
+sidebar: sidebar 
+keywords: browser timeout, inactive session timeout 
+summary: 您可以控制Grid Manager和Tenant Manager使用者是否在超過一定時間內處於非作用中狀態時登出。 
+---
+= 變更瀏覽器工作階段逾時
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以控制Grid Manager和Tenant Manager使用者是否在超過一定時間內處於非作用中狀態時登出。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+* 您擁有特定的存取權限。
+
+
+GUI無活動逾時預設為900秒（15分鐘）。如果使用者的瀏覽器工作階段在這段時間內未處於作用中狀態、工作階段就會逾時。
+
+視需要、您可以設定GUI無活動逾時顯示選項來增加或減少逾時期間。
+
+如果啟用單一登入（SSO）、且使用者的瀏覽器工作階段逾時、系統的運作方式就如同使用者手動選取*登出*。使用者必須重新輸入SSO認證資料、StorageGRID 才能再次存取功能。請參閱 xref:configuring-sso.adoc[設定單一登入]。
+
+[NOTE]
+====
+使用者工作階段逾時也可由下列項目控制：
+
+* 另有一個不可設定StorageGRID 的獨立式計時功能、可用於系統安全性。根據預設、每個使用者的驗證權杖會在使用者登入後16小時過期。當使用者的驗證過期時、即使未達到GUI閒置逾時的值、該使用者仍會自動登出。若要續約權杖、使用者必須重新登入。
+* 身分識別供應商的逾時設定、假設啟用SSO StorageGRID 以供執行功能。
+
+
+====
+.步驟
+. 選擇*組態*>*系統*>*顯示選項*。
+. 若為* GUI無活動逾時*、請輸入60秒以上的逾時期間。
++
+如果您不想使用此功能、請將此欄位設為0。使用者登入後16小時內即會登出、驗證權杖即過期。
+
++
+image::../media/configuration_display_options.gif[顯示選項頁面]
+
+. 選取*套用變更*。
++
+新設定不會影響目前登入的使用者。使用者必須重新登入或重新整理瀏覽器、新的逾時設定才會生效。
+
+

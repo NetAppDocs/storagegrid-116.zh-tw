@@ -1,0 +1,94 @@
+---
+permalink: s3/get-bucket-consistency-request.html 
+sidebar: sidebar 
+keywords: S3 REST API, S3 operations, GET bucket consistency request 
+summary: 「Get Bucket一致性」要求可讓您決定套用至特定Bucket的一致性層級。 
+---
+= 取得時段一致性要求
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+「Get Bucket一致性」要求可讓您決定套用至特定Bucket的一致性層級。
+
+預設的一致性控制項設定為保證新建立物件的寫入後讀取。
+
+您有S3：GetBucketConsistency權限、或是帳戶root權限、才能完成此作業。
+
+
+
+== 申請範例
+
+[source, subs="specialcharacters,quotes"]
+----
+GET /bucket?x-ntap-sg-consistency HTTP/1.1
+Date: _date_
+Authorization: _authorization string_
+Host: _host_
+----
+
+
+== 回應
+
+在回應XML中、「<一致性>」會傳回下列其中一個值：
+
+|===
+| 一致性控制 | 說明 
+
+
+ a| 
+全部
+ a| 
+所有節點都會立即接收資料、否則要求將會失敗。
+
+
+
+ a| 
+強大的全球化技術
+ a| 
+保證所有站台所有用戶端要求的寫入後讀取一致性。
+
+
+
+ a| 
+強式網站
+ a| 
+保證站台內所有用戶端要求的寫入後讀取一致性。
+
+
+
+ a| 
+全新寫入後讀取
+ a| 
+（預設）為新物件提供寫入後讀取一致性、並最終確保物件更新一致。提供高可用度與資料保護保證。最符合Amazon S3一致性保證。
+
+*附註：*如果您的應用程式在不存在的物件上使用標頭要求、如果一個或多個儲存節點無法使用、您可能會收到大量500個內部伺服器錯誤。若要避免這些錯誤、請將一致性控制設為「可用」、除非您需要類似Amazon S3的一致性保證。
+
+
+
+ a| 
+可用的（最終的頭端作業一致性）
+ a| 
+其行為與「全新寫入後的讀取」一致性層級相同、但最終只能提供一致的執行方式。如果儲存節點無法使用、則頭端作業的可用度比「全新寫入後的準備」高。不同於Amazon S3一致性保證、僅適用於頭端作業。
+
+|===
+
+
+== 回應範例
+
+[listing]
+----
+HTTP/1.1 200 OK
+Date: Fri, 18 Sep 2020 01:02:18 GMT
+Connection: CLOSE
+Server: StorageGRID/11.5.0
+x-amz-request-id: 12345
+Content-Length: 127
+Content-Type: application/xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Consistency xmlns="http://s3.storagegrid.com/doc/2015-02-01/">read-after-new-write</Consistency>
+----
+xref:consistency-controls.adoc[一致性控管]

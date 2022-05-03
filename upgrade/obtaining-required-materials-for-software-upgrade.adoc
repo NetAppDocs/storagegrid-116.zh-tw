@@ -1,0 +1,165 @@
+---
+permalink: upgrade/obtaining-required-materials-for-software-upgrade.html 
+sidebar: sidebar 
+keywords: upgrade, requirements, rhel, red hat, linux, centOS, ubuntu, debian 
+summary: 開始軟體升級之前、您必須先取得所有必要資料、才能順利完成升級。 
+---
+= 取得軟體升級所需的資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+開始軟體升級之前、您必須先取得所有必要資料、才能順利完成升級。
+
+[cols="1a,3a"]
+|===
+| 項目 | 附註 
+
+
+ a| 
+還原升級檔案StorageGRID
+ a| 
+<<Download the StorageGRID upgrade files>> 服務用筆記型電腦。
+
+
+
+ a| 
+服務筆記型電腦
+ a| 
+服務型筆記型電腦必須具備：
+
+* 網路連接埠
+* SSH用戶端（例如Putty）
+
+
+
+
+ a| 
+xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]
+ a| 
+瀏覽器支援通常會針對每StorageGRID 個版本進行變更。請確定您的瀏覽器與新StorageGRID 版的更新版本相容。
+
+
+
+ a| 
+恢復套件（`.Zip）檔案
+ a| 
+<<Download the Recovery Package>> 在升級之前、請將檔案儲存在安全的位置。恢復套件檔案可讓您在發生故障時還原系統。
+
+
+
+ a| 
+密碼
+ a| 
+此檔案包含在上述套件中、這是「恢復套件」的「.Zip」檔案的一部分。您必須取得最新版的恢復套件。
+
+
+
+ a| 
+資源配置通關密碼
+ a| 
+當StorageGRID 首次安裝此功能時、系統會建立並記錄密碼。資源配置通關密碼未列在「pes密碼」檔案中。
+
+
+
+ a| 
+相關文件
+ a| 
+* xref:../release-notes/index.adoc[版本資訊] 適用於StorageGRID開始升級之前、請務必仔細閱讀這些資訊。
+* 的說明 xref:../admin/index.adoc[管理StorageGRID]。
+* 如果您要升級Linux部署、StorageGRID Linux平台的完整安裝說明如下：
++
+** xref:../rhel/index.adoc[安裝Red Hat Enterprise Linux或CentOS]
+** xref:../ubuntu/index.adoc[安裝Ubuntu或DEBIAN]
+
+
+* 如StorageGRID 有需要、請參閱其他相關文件。
+
+
+|===
+
+
+== 下載StorageGRID 更新檔
+
+您必須下載一或多個檔案、視節點安裝位置而定。
+
+* *所有平台*：「.Upgrade」檔案
+
+
+如果有任何節點部署在Linux主機上、您也必須下載RPM或Deb歸檔、然後再開始升級：
+
+* * Red Hat Enterprise Linux或CentOS*：額外的RPM檔案（如「.Zip」或「.tgz」）
+* * Ubuntu或DEBIAN*：額外的Deb檔案（如「.Zip」或「.tgz」）
+
+
+.步驟
+. 前往 https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["NetApp下載StorageGRID"^]。
+. 選取下載最新版本的按鈕、或從下拉式功能表中選取其他版本、然後選取*執行*。
++
+下列格式的軟件版本：11._x.y_。StorageGRID下列格式的更新程式為：11._x.y.z_。StorageGRID
+
+. 以您NetApp帳戶的使用者名稱和密碼登入。
+. 如果出現Caution/MustRead說明、請閱讀並勾選核取方塊。
++
+如果發行版有必要的修補程式、就會出現此聲明。
+
+. 閱讀使用者授權合約、勾選核取方塊、然後選取*接受並繼續*。
++
+此時將顯示所選版本的下載頁面。頁面包含三欄：
+
++
+** 安裝StorageGRID
+** 升級StorageGRID
+** 支援檔案StorageGRID ：適用於不支援的應用程式
+
+
+. 在* Upgrade StorageGRID S編*欄中、選取並下載「.升級」歸檔。
++
+每個平台都需要「.Upgrade」歸檔。
+
+. 如果Linux主機上部署了任何節點、也可以下載「.tgz」或「.zip」格式的RPM或Deb歸檔。如果您是在服務筆記型電腦上執行Windows、請選取「.Zip」檔案。
++
+** Red Hat Enterprise Linux或CentOS +「torageGRID-Webscale」（版本編號）-RPRPM（單一ID）_.Zip +「TorageGRID-Webscale」（版本編號）-RPM-UniqueID_.tgz（單一系統編號）
+** Ubuntu或DEBIAN+「torageGRID-Webscale」（版本編號）-DEb-_uniqueID_.Zip +「torageGRID-Webscale」（版本編號）-DEb-_uniqueID_.tgz
++
+
+NOTE: SG100或SG1000不需要其他檔案。
+
+
+
+
+
+
+
+== 下載恢復套件
+
+恢復套件檔案可讓您在StorageGRID 發生故障時還原整個系統。在變更StorageGRID 網格拓撲以變更作業系統或升級軟體之前、請先下載目前的「恢復套件」檔案。然後、在變更網格拓撲或升級軟體之後、下載新的恢復套件複本。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您必須使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+* 您必須擁有資源配置通關密碼。
+* 您必須擁有特定的存取權限。
+
+
+.步驟
+. 選擇*維護*>*系統*>*恢復套件*。
+. 輸入資源配置通關密碼、然後選取*開始下載*。
++
+下載隨即開始。
+
+. 下載完成時：
++
+.. 開啟「.Zip」檔案。
+.. 確認其中包含「GPT備份」目錄和內部的「.Zip」檔案。
+.. 擷取內部的「.Zip」檔案。
+.. 確認您可以開啟「pers密碼」檔案。
+
+
+. 將下載的恢復套件檔案（`.Zip）複製到兩個安全、安全且獨立的位置。
++
+
+IMPORTANT: 必須保護恢復套件檔案、因為其中包含可用於從StorageGRID 該系統取得資料的加密金鑰和密碼。
+
+

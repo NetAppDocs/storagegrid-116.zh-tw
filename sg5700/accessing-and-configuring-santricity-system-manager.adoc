@@ -1,0 +1,14 @@
+---
+permalink: sg5700/accessing-and-configuring-santricity-system-manager.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5700, storage node, storage appliance, SANtricity System Manager, SANtricity, System Manager, configure, configuring, setup, set up, setting up, access, accessing, E-Series AutoSupport, autosupport 
+summary: 您可以使用SANtricity NetApp系統管理程式來監控儲存控制器櫃中的儲存控制器、儲存磁碟及其他硬體元件狀態。您也可以設定E系列AutoSupport 支援的Proxy、讓您不AutoSupport 需使用管理連接埠、就能從應用裝置傳送靜態訊息。 
+---
+= 存取及設定SANtricity 功能不全系統管理程式（SG5700）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用SANtricity NetApp系統管理程式來監控儲存控制器櫃中的儲存控制器、儲存磁碟及其他硬體元件狀態。您也可以設定E系列AutoSupport 支援的Proxy、讓您不AutoSupport 需使用管理連接埠、就能從應用裝置傳送靜態訊息。

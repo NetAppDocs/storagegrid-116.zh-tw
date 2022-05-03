@@ -1,0 +1,84 @@
+---
+permalink: ubuntu/where-to-go-next.html 
+sidebar: sidebar 
+keywords: after installation 
+summary: 完成安裝之後、您必須執行一系列的整合與組態步驟。有些步驟是必要的、有些則是選用的。 
+---
+= 下一步
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+完成安裝之後、您必須執行一系列的整合與組態步驟。有些步驟是必要的、有些則是選用的。
+
+
+
+== 必要的工作
+
+* 為每個用戶端傳輸協定（Swift或S3）建立租戶帳戶、以便將物件儲存在StorageGRID 您的作業系統上。
+* 透過設定群組和使用者帳戶來控制系統存取。您也可以設定同盟識別來源（例如Active Directory或OpenLDAP）、以便匯入管理群組和使用者。或者、您也可以建立本機群組和使用者。
+* 整合並測試S3或Swift API用戶端應用程式、您可以使用這些應用程式將物件上傳至StorageGRID 您的支援系統。
+* 準備好之後、請設定您要用來保護物件資料的資訊生命週期管理（ILM）規則和ILM原則。
++
+
+NOTE: 安裝StorageGRID 時、預設的ILM原則（基準2複本原則）會啟用。此原則包括庫存ILM規則（複製2份）、若未啟動其他原則、則適用此原則。
+
+* 如果您的安裝包含應用裝置儲存節點、請使用SANtricity 整套軟體來完成下列工作：
++
+** 連接每StorageGRID 個產品。
+** 驗證AutoSupport 是否收到不實資料。
+
+
+* 如果StorageGRID 您的系統包含任何歸檔節點、請設定歸檔節點與目標外部歸檔儲存系統的連線。
+
+
+
+NOTE: 如果任何歸檔節點將使用Tivoli Storage Manager作為外部歸檔儲存系統、您也必須設定Tivoli Storage Manager。
+
+* 檢閱StorageGRID 並遵循《鞏固不穩定系統》的準則、以消除安全風險。
+* 設定系統警示的電子郵件通知。
+
+
+
+
+== 選用工作
+
+* 如果您想要接收來自（舊版）警示系統的通知、請設定警示的郵寄清單和電子郵件通知。
+* 如果網格節點IP位址在您規劃部署並產生恢復套件後有所變更、請加以更新。請參閱恢復與維護說明中的變更IP位址相關資訊。
+* 如有必要、請設定儲存加密。
+* 如有必要、請設定儲存壓縮以減少儲存物件的大小。
+* 設定稽核用戶端存取。您可以透過NFS或CIFS檔案共用設定系統存取、以供稽核之用。請參閱「管理StorageGRID 功能」的說明。
+
+
+
+NOTE: 透過CIFS/Samba進行的稽核匯出已過時、將在未來StorageGRID 的版本中移除。
+
+xref:../admin/index.adoc[管理StorageGRID]
+
+xref:../s3/index.adoc[使用S3]
+
+xref:../swift/index.adoc[使用Swift]
+
+xref:../ilm/index.adoc[使用ILM管理物件]
+
+xref:../monitor/index.adoc[監控及疑難排解]
+
+xref:../maintain/index.adoc[恢復與維護]
+
+xref:../sg100-1000/index.adoc[SG100與SG1000服務應用裝置]
+
+xref:../sg5600/index.adoc[SG5600儲存設備]
+
+xref:../sg5700/index.adoc[SG5700儲存設備]
+
+xref:../sg6000/index.adoc[SG6000儲存設備]
+
+xref:../release-notes/index.adoc[版本資訊]
+
+xref:../harden/index.adoc[系統強化]
+
+xref:../audit/index.adoc[檢閱稽核記錄]
+
+xref:../upgrade/index.adoc[升級軟體]

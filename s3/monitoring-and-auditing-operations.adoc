@@ -1,0 +1,14 @@
+---
+permalink: s3/monitoring-and-auditing-operations.html 
+sidebar: sidebar 
+keywords: monitor operations, audit operations 
+summary: 您可以檢視整個網格或特定節點的交易趨勢、來監控用戶端作業的工作負載和效率。您可以使用稽核訊息來監控用戶端作業和交易。 
+---
+= 監控與稽核作業
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以檢視整個網格或特定節點的交易趨勢、來監控用戶端作業的工作負載和效率。您可以使用稽核訊息來監控用戶端作業和交易。

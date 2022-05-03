@@ -1,0 +1,24 @@
+---
+permalink: monitor/index.html 
+sidebar: sidebar 
+keywords: monitor StorageGRID 
+summary: 請使用這些指示來監控StorageGRID 整個系統、並評估及解決可能發生的問題。 
+---
+= 監控與疑難排解：總覽
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+請使用這些指示來監控StorageGRID 整個系統、並評估及解決可能發生的問題。
+
+
+
+== 關於這些指示
+
+以下說明說明如何使用Grid Manager來監控StorageGRID 整個系統。您將瞭StorageGRID 解應定期監控哪些資訊、如何管理警示和舊警報、如何使用SNMP進行監控、以及如何取得額外的資訊（包括指標和診斷）。
+
+這些說明也說明如何疑難排解StorageGRID 整個系統、並說明所有系統警示、舊警報和記錄檔。
+
+如果您要在StorageGRID 安裝完畢後監控並支援某個系統、請使用這些指示。

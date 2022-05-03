@@ -1,0 +1,33 @@
+---
+permalink: upgrade/troubleshooting-user-interface-issues.html 
+sidebar: sidebar 
+keywords: grid manager, tenant manager, error, browser 
+summary: 升級StorageGRID 至新版的更新版的更新版的更新版的Grid Manager或Tenant Manager可能會出現問題。 
+---
+= 疑難排解使用者介面問題
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+升級StorageGRID 至新版的更新版的更新版的更新版的Grid Manager或Tenant Manager可能會出現問題。
+
+
+
+== Web介面未如預期回應
+
+Grid Manager或Tenant Manager在StorageGRID 升級完更新版的更新軟體後、可能無法如預期般回應。
+
+如果您在使用網路介面時遇到問題：
+
+* 請確定您使用的是 xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
++
+
+NOTE: 瀏覽器支援通常會針對每StorageGRID 個版本進行變更。
+
+* 清除網頁瀏覽器快取。
++
+清除快取會移除舊版StorageGRID 的更新資源、並允許使用者介面再次正確運作。如需相關指示、請參閱網頁瀏覽器的說明文件。
+
+

@@ -1,0 +1,69 @@
+---
+permalink: sg5700/unpacking-boxes-sg5700.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5700, storage node, storage appliance, install, installation, unpack, unbox, prepare, inventory, components, contents 
+summary: 安裝StorageGRID 此產品之前、請先打開所有包裝箱的包裝、然後比較包裝單上的物品。 
+---
+= 打開包裝箱（SG5700）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安裝StorageGRID 此產品之前、請先打開所有包裝箱的包裝、然後比較包裝單上的物品。
+
+* * SG5712應用裝置、安裝12個磁碟機*
++
+image::../media/de212c_table_size.gif[SG5712 2U應用裝置]
+
+* * SG5760應用裝置、未安裝磁碟機*
++
+image::../media/de460c_table_size.gif[SG5760 4U應用裝置]
+
+* *設備的前擋板*
++
+image::../media/sg5700_front_bezels.gif[SG5712與SG5760的擋板]
+
+* *含說明的軌道套件*
++
+image::../media/rail_kit.gif[軌道套件]
+
+* * SG5760：60個磁碟機*
++
+image::../media/sg5760_drive.gif[磁碟機]
+
+* * SG5760：處理數量*
++
+image::../media/handles.gif[SG5760處理]
+
+* * SG5760：用於安裝方孔機架的背支架和鎖緊螺帽*
++
+image::../media/back_brackets_table_size.gif[SG5760的背板和鎖緊螺帽]
+
+
+
+
+
+== 纜線與連接器
+
+產品隨附StorageGRID 下列纜線和接頭：
+
+* *您所在國家/地區的兩條電源線*
++
+image::../media/power_cords.gif[電源線]
+
++
+您的機櫃可能有特殊的電源線、您可以使用這些電源線、而非產品隨附的電源線。
+
+* *光纖纜線與SFP收發器*
++
+image::../media/fc_cable_and_sfp.gif[光纖纜線與SFP]
+
++
+兩條光纖纜線用於FC互連連接埠
+
++
+八個SFP+收發器、可與四個16Gb/s FC互連連接埠和四個10-GbE網路連接埠相容
+
+

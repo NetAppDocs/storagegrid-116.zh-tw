@@ -1,0 +1,48 @@
+---
+permalink: monitor/managing-alerts.html 
+sidebar: sidebar 
+keywords: alert rules, managing alerts, alerts, alert notifications. edit alert rules 
+summary: 警示功能可讓您監控StorageGRID 您的系統內部的各種事件和狀況。您可以建立自訂警示、編輯或停用預設警示、設定警示的電子郵件通知、以及將警示通知靜音、藉此管理警示。 
+---
+= 管理警示：總覽
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+警示功能可讓您監控StorageGRID 您的系統內部的各種事件和狀況。您可以建立自訂警示、編輯或停用預設警示、設定警示的電子郵件通知、以及將警示通知靜音、藉此管理警示。
+
+
+
+== 關於StorageGRID 此警示
+
+警示系統提供易於使用的介面、可偵測、評估及解決StorageGRID 在執行過程中可能發生的問題。
+
+* 警示系統著重於系統中可採取行動的問題。系統會針對需要您立即注意的事件觸發警示、而不會針對可安全忽略的事件觸發警示。
+* 「目前警示」頁面提供使用者友好的介面、可用來檢視目前的問題。您可以依個別警示和警示群組來排序清單。例如、您可能想要依節點/站台排序所有警示、以查看哪些警示會影響特定節點。或者、您可能想要依觸發時間排序群組中的警示、以尋找特定警示的最新執行個體。
+* 「已解決警示」頁面提供的資訊與「目前警示」頁面類似、但它可讓您搜尋並檢視已解決警示的歷史記錄、包括警示觸發時間和解決時間。
+* 相同類型的多個警示會分成一封電子郵件、以減少通知數量。此外、同類型的多個警示會在「警示」頁面上顯示為群組。您可以展開及收合警示群組、以顯示或隱藏個別警示。例如、如果數個節點同時回報*無法與節點*通訊警示、則只會傳送一封電子郵件、而且警示會在警示頁面上顯示為群組。
+* 警示使用直覺式名稱和說明、協助您快速瞭解問題所在。警示通知包括受影響節點和站台的詳細資料、警示嚴重性、觸發警示規則的時間、以及警示相關度量的目前值。
+* 警示電子郵件通知和「目前警示」和「已解決警示」頁面上的警示清單、提供解決警示的建議行動。這些建議的行動通常包括StorageGRID 直接連結至「佐證」文件中心、以便更容易找到及存取更詳細的疑難排解程序。
+* 如果您需要暫時隱藏一或多個嚴重性層級的警示通知、您可以輕鬆地將特定警示規則靜音一段指定時間、以及整個網格、單一站台或單一節點。您也可以將所有警示規則設為靜音、例如在軟體升級等計畫性維護程序期間。
+* 您可以視需要編輯預設警示規則。您可以完全停用警示規則、或變更其觸發條件和持續時間。
+* 您可以建立自訂警示規則、以鎖定與您的情況相關的特定條件、並提供您自己建議的行動。若要定義自訂警示的條件、您可以使用Grid Management API的Metrics區段提供的Prometheus度量來建立運算式。
+
+
+
+
+== 深入瞭解
+
+若要深入瞭解、請觀看以下影片：
+
+* https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2680a74f-070c-41c2-bcd3-acc5013c9cdd["影片：警示總覽"^]
++
+[link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2680a74f-070c-41c2-bcd3-acc5013c9cdd]
+image::../media/video-screenshot-alert-overview.png[影片：警示總覽]
+
+* https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b35ac3f2-957b-4e79-b82b-acc5013c98d0["影片：使用指標建立自訂警示"^]
++
+image::../media/video-screenshot-alert-create-custom.png[連結-"https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b35ac3f2-957b-4e79-b82b-acc5013c98d0"[] Alt="Video：使用指標建立自訂警示"]
+
+

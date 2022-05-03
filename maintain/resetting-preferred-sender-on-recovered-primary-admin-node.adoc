@@ -1,0 +1,28 @@
+---
+permalink: maintain/resetting-preferred-sender-on-recovered-primary-admin-node.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, primary admin node, reset preferred sender, resetting preferred sender 
+summary: 如果您正在恢復的主要管理節點目前設為警示通知、警示通知和AutoSupport Dynamic訊息的偏好傳送者、您必須重新設定此設定。 
+---
+= 在恢復的主管理節點上重設偏好的傳送者
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您正在恢復的主要管理節點目前設為警示通知、警示通知和AutoSupport Dynamic訊息的偏好傳送者、您必須重新設定此設定。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您必須使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+* 您必須擁有特定的存取權限。
+* 恢復的管理節點必須安裝並執行。
+
+
+.步驟
+. 選擇*組態*>*系統*>*顯示選項*。
+. 從「*偏好的寄件者*」下拉式清單中選取「恢復的管理節點」。
+. 按一下*套用變更*。
+
+
+xref:../admin/index.adoc[管理StorageGRID]

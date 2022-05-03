@@ -1,0 +1,115 @@
+---
+permalink: admin/adding-user-or-group-to-cifs-audit-share.html 
+sidebar: sidebar 
+keywords: CIFS, add user to audit share, add group to audit share, ad authentication 
+summary: 您可以將使用者或群組新增至與AD驗證整合的CIFS稽核共用區。 
+---
+= 將使用者或群組新增至CIFS稽核共用區
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將使用者或群組新增至與AD驗證整合的CIFS稽核共用區。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您有「Passwords．txt」檔案、其中包含root / admin帳戶密碼（可在上述套件中找到）。
+* 您有「Configuration．TXT」檔案（可在上述套件中找到）。
+
+
+下列程序適用於與AD驗證整合的稽核共用。
+
+
+NOTE: 透過CIFS/Samba進行的稽核匯出已過時、將在未來StorageGRID 的版本中移除。
+
+.步驟
+. 登入主要管理節點：
++
+.. 輸入下列命令：「sh admin@_primary管理節點IP」
+.. 輸入「passwords.txt」檔案中所列的密碼。
+.. 輸入下列命令以切換至root：「u -」
+.. 輸入「passwords.txt」檔案中所列的密碼。
++
+以root登入時、提示會從「$」變更為「#」。
+
+
+
+. 確認所有服務的狀態均為「執行中」或「已驗證」。輸入：「toragegrid狀態」
++
+如果所有服務均未執行或「已驗證」、請先解決問題再繼續。
+
+. 返回命令列、按* Ctrl-+* C*。
+. 啟動CIFS組態公用程式：「config_CIFs.rb」
++
+[listing]
+----
+
+---------------------------------------------------------------------
+| Shares                 | Authentication         | Config          |
+---------------------------------------------------------------------
+| add-audit-share        | set-authentication     | validate-config |
+| enable-disable-share   | set-netbios-name       | help            |
+| add-user-to-share      | join-domain            | exit            |
+| remove-user-from-share | add-password-server    |                 |
+| modify-group           | remove-password-server |                 |
+|                        | add-wins-server        |                 |
+|                        | remove-wins-server     |                 |
+---------------------------------------------------------------------
+----
+. 開始新增使用者或群組：「add-user-to共享」
++
+隨即顯示已設定之稽核共用的編號清單。
+
+. 出現提示時、請輸入稽核共用（稽核匯出）的編號：「_nap_share_number_」
++
+系統會詢問您是否要授予使用者或群組存取此稽核共用區的權限。
+
+. 出現提示時、請新增使用者或群組：「使用者」或「群組」
+. 當系統提示您輸入此AD稽核共用的使用者或群組名稱時、請輸入名稱。
++
+使用者或群組會新增為唯讀、以供稽核共用在伺服器作業系統和CIFS服務中使用。系統會重新載入Samba組態、讓使用者或群組能夠存取稽核用戶端共用區。
+
+. 出現提示時、請按* Enter *。
++
+此時會顯示CIFS組態公用程式。
+
+. 針對每個擁有稽核共用存取權的使用者或群組、重複這些步驟。
+. 或者、請驗證您的組態：「valide-config」
++
+系統會檢查並顯示這些服務。您可以安全地忽略下列訊息：
+
++
+** 找不到包含檔案/etc/samba/includes/cifs-interfaces.inc
+** 找不到包含檔案/etc/samba/includes/cifs-filesystem.inc
+** 找不到包含檔案/etc/samba/includes/cifs-custom-config.inc
+** 找不到包含檔案/etc/samba/includes/cifs-shares.inc
++
+... 出現提示時、請按* Enter *以顯示稽核用戶端組態。
+... 出現提示時、請按* Enter *。
+
+
+
+
+. 關閉CIFS組態公用程式：「Exit（結束）」
+. 判斷您是否需要啟用額外的稽核共用、如下所示：
++
+** 如果StorageGRID 這個部署是單一站台、請前往下一步。
+** 如果StorageGRID 此功能包括其他站台的管理節點、請視需要啟用這些稽核共用：
++
+... 遠端登入站台的管理節點：
++
+.... 輸入下列命令：「sh admin@_grid_node_ip_`」
+.... 輸入「passwords.txt」檔案中所列的密碼。
+.... 輸入下列命令以切換至root：「u -」
+.... 輸入「passwords.txt」檔案中所列的密碼。
+
+
+... 重複這些步驟、為每個管理節點設定稽核共用。
+... 關閉遠端管理節點的遠端安全Shell登入：「Exit（結束）」
+
+
+
+
+. 登出命令Shell：「exit」
+

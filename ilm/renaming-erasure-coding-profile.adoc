@@ -1,0 +1,52 @@
+---
+permalink: ilm/renaming-erasure-coding-profile.html 
+sidebar: sidebar 
+keywords: rename erasure coding profile, ec profile 
+summary: 您可能想要重新命名「刪除編碼」設定檔、以便更清楚地瞭解設定檔的功能。 
+---
+= 重新命名銷毀編碼設定檔
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可能想要重新命名「刪除編碼」設定檔、以便更清楚地瞭解設定檔的功能。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+* 您擁有特定的存取權限。
+
+
+.步驟
+. 選擇* ILM *>*銷毀編碼*。
++
+「刪除編碼設定檔」頁面隨即出現。「*重新命名*」和「*停用*」按鈕都會停用。
+
++
+image::../media/ec_profiles_rename_deactivate_disabled.png[銷毀編碼設定檔重新命名停用]
+
+. 選取您要重新命名的設定檔。
++
+「*重新命名*」和「*停用*」按鈕會啟用。
+
+. 選取*重新命名*。
++
+「重新命名EC設定檔」對話方塊隨即出現。
+
++
+image::../media/ec_profile_rename.png[銷毀編碼設定檔重新命名]
+
+. 輸入「刪除編碼」設定檔的唯一名稱。
++
+「刪除編碼」設定檔名稱會附加至ILM規則放置指示中的儲存資源池名稱。
+
++
+image::../media/storage_pool_and_erasure_coding_profile.png[儲存資源池和EC設定檔名稱]
+
++
+
+NOTE: 銷毀編碼設定檔名稱必須是唯一的。如果您使用現有設定檔的名稱、即使該設定檔已停用、也會發生驗證錯誤。
+
+. 選擇*保存*。
+

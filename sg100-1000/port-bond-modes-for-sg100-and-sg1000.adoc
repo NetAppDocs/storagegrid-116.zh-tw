@@ -1,0 +1,14 @@
+---
+permalink: sg100-1000/port-bond-modes-for-sg100-and-sg1000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, port bond, port bonding, port bond mode, port-bond mode 
+summary: 在設定SG100和SG1000應用裝置的網路連結時、您可以使用連接埠連結連接至Grid Network和選用的用戶端網路、以及連接至選用管理網路的1-GbE管理連接埠。連接埠連結功能可在StorageGRID 各個解決方案之間提供備援路徑、協助您保護資料。 
+---
+= SG100和SG1000應用裝置的連接埠連結模式
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在設定SG100和SG1000應用裝置的網路連結時、您可以使用連接埠連結連接至Grid Network和選用的用戶端網路、以及連接至選用管理網路的1-GbE管理連接埠。連接埠連結功能可在StorageGRID 各個解決方案之間提供備援路徑、協助您保護資料。

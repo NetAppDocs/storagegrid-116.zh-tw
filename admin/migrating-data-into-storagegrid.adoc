@@ -1,0 +1,16 @@
+---
+permalink: admin/migrating-data-into-storagegrid.html 
+sidebar: sidebar 
+keywords: data migration, move data into storagegrid 
+summary: 您可以將大量資料移轉至StorageGRID 整個過程、同時使用StorageGRID 本系統進行日常作業。 
+---
+= 將資料移轉StorageGRID 至功能不整合
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以將大量資料移轉至StorageGRID 整個過程、同時使用StorageGRID 本系統進行日常作業。
+
+下一節是瞭解並規劃將大量資料移轉至StorageGRID 該系統的指南。這不是資料移轉的一般指南、也不包含執行移轉的詳細步驟。請遵循本節中的準則和指示、確保資料能有效率地移轉到StorageGRID 運轉不中斷日常作業的情況下、StorageGRID 且已移轉的資料會由效能提升系統妥善處理。

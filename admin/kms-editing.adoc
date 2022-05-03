@@ -1,0 +1,120 @@
+---
+permalink: admin/kms-editing.html 
+sidebar: sidebar 
+keywords: edit kms, edit key management server, change kms configuration, expired certificate 
+summary: 您可能需要編輯金鑰管理伺服器的組態、例如、如果憑證即將過期。 
+---
+= 編輯金鑰管理伺服器（KMS）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可能需要編輯金鑰管理伺服器的組態、例如、如果憑證即將過期。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您已檢閱 xref:kms-considerations-and-requirements.adoc[使用金鑰管理伺服器的考量與要求]。
+* 如果您打算更新選取的KMS網站、則表示您已檢閱 xref:kms-considerations-for-changing-for-site.adoc[變更網站KMS的考量事項]。
+* 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+* 您擁有root存取權限。
+
+
+.步驟
+. 選擇*組態*>*安全性*>*金鑰管理伺服器*。
++
+「金鑰管理伺服器」頁面隨即出現、並顯示所有已設定的金鑰管理伺服器。
+
++
+image::../media/kms_configuration_details_table.png[KMS組態詳細資料KMS表格]
+
+. 選取您要編輯的KMS、然後選取*編輯*。
+. 您也可以更新編輯金鑰管理伺服器精靈*步驟1（輸入KMS詳細資料）*中的詳細資料。
++
+[cols="1a,3a"]
+|===
+| 欄位 | 說明 
+
+
+ a| 
+公里顯示名稱
+ a| 
+可協助您識別此KMS的描述性名稱。必須介於1到64個字元之間。
+
+
+
+ a| 
+金鑰名稱
+ a| 
+KMS中適用於該客戶端的確切金鑰別名StorageGRID 。必須介於1到255個字元之間。
+
+在極少數情況下、您只需要編輯金鑰名稱即可。例如、如果在KMS中重新命名別名、或是先前金鑰的所有版本都已複製到新別名的版本歷程記錄、則必須編輯金鑰名稱。
+
+[CAUTION]
+====
+切勿嘗試變更KMS的金鑰名稱（別名）來旋轉金鑰。而是更新KMS軟體中的金鑰版本來旋轉金鑰。若要從KMS存取先前使用過的所有金鑰版本（以及未來的任何金鑰版本）、必須使用相同的金鑰別名。StorageGRID如果您變更設定KMS的金鑰別名、StorageGRID 則可能無法解密您的資料。
+
+xref:kms-considerations-and-requirements.adoc[使用金鑰管理伺服器的考量與要求]
+
+====
+
+
+ a| 
+管理的金鑰
+ a| 
+如果您正在編輯網站專屬的KMS、但尚未擁有預設的KMS、請選擇*不受其他KMS管理的網站（預設KMS）*。此選項會將站台專屬的KMS轉換成預設KMS、適用於所有沒有專屬KMS的站台、以及任何新增至擴充中的站台。
+
+*注意：*如果您正在編輯站台專屬的KMS、則無法選取其他站台。如果您正在編輯預設KMS、則無法選取特定網站。
+
+
+
+ a| 
+連接埠
+ a| 
+KMS伺服器用於金鑰管理互通性傳輸協定（KMIP）通訊的連接埠。預設為5696、即KMIP標準連接埠。
+
+
+
+ a| 
+主機名稱
+ a| 
+KMS的完整網域名稱或IP位址。
+
+*附註：*伺服器憑證的SAN欄位必須包含您在此輸入的FQDN或IP位址。否則StorageGRID 、無法將無法連接至KMS或KMS叢集中的所有伺服器。
+
+|===
+. 如果您要設定KMS叢集、請選取加號 image:../media/icon_plus_sign_black_on_white_old.png["圖示加號"] 為叢集中的每個伺服器新增主機名稱。
+. 選擇*下一步*。
++
+此時會出現「Edit a Key Management Server（編輯金鑰管理伺服器）」精靈的步驟2（上傳伺服器憑證）。
+
+. 如果您需要更換伺服器憑證、請選取*瀏覽*並上傳新檔案。
+. 選擇*下一步*。
++
+此時會出現「Edit a Key Management Server（編輯金鑰管理伺服器）」精靈的步驟3（上傳用戶端憑證）。
+
+. 如果您需要更換用戶端憑證和用戶端憑證私密金鑰、請選取*瀏覽*並上傳新檔案。
+. 選擇*保存*。
++
+測試金鑰管理伺服器與受影響站台上所有節點加密應用裝置節點之間的連線。如果所有節點連線均有效、且KMS上找到正確的金鑰、則金鑰管理伺服器會新增至金鑰管理伺服器頁面的表格。
+
+. 如果出現錯誤訊息、請檢閱訊息詳細資料、然後選取*確定*。
++
+例如、如果您為此KMS選取的站台已由其他KMS管理、或連線測試失敗、您可能會收到「無法處理的實體」錯誤。
+
+. 如果您需要在解決連線錯誤之前儲存目前的組態、請選取*強制儲存*。
++
+
+IMPORTANT: 選取*強制儲存*會儲存KMS組態、但不會測試每個應用裝置與該KMS之間的外部連線。如果組態發生問題、您可能無法重新啟動受影響站台已啟用節點加密的應用裝置節點。在問題解決之前、您可能無法存取資料。
+
++
+系統會儲存KMS組態。
+
+. 檢閱確認警告、如果您確定要強制儲存組態、請選取* OK *。
++
+image::../media/kms_force_save_warning.png[KMS強制儲存警告]
+
++
+系統會儲存KMS組態、但不會測試與KMS的連線。
+
+

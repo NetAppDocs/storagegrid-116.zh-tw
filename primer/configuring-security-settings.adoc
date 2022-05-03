@@ -1,0 +1,56 @@
+---
+permalink: primer/configuring-security-settings.html 
+sidebar: sidebar 
+keywords: how to configure security settings 
+summary: 您可以從Grid Manager設定各種安全性設定、以協助保護StorageGRID 您的作業系統。 
+---
+= 設定安全性設定
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以從Grid Manager設定各種安全性設定、以協助保護StorageGRID 您的作業系統。
+
+
+
+== 憑證
+
+使用兩種類型的安全性憑證：StorageGRID
+
+* 使用HTTPS連線時需要伺服器憑證。伺服器憑證用於在用戶端和伺服器之間建立安全連線、驗證伺服器的用戶端身分、並提供安全的資料通訊路徑。伺服器和用戶端各有一份憑證複本。
+* 用戶端憑證會驗證伺服器的用戶端或使用者身分、提供比僅密碼更安全的驗證。用戶端憑證不會加密資料。
+
+
+您可以在StorageGRID *組態*>*安全性*>*憑證*頁面上檢視所有的相關認證。
+
+
+
+== 關鍵管理伺服器
+
+您可以設定一或多個外部金鑰管理伺服器（KMS）、為StorageGRID 各種服務和儲存設備提供加密金鑰。每個KMS或KMS叢集都會使用金鑰管理互通性傳輸協定（KMIP）、為相關StorageGRID 聯的站台上的應用裝置節點提供加密金鑰。即使StorageGRID 從資料中心移除應用裝置、使用關鍵管理伺服器也能保護不實資料。設備磁碟區加密之後、除非節點可以與KMS通訊、否則您無法存取應用裝置上的任何資料。
+
+
+NOTE: 若要使用加密金鑰管理、您必須在安裝期間、在將應用裝置新增至網格之前、為每個應用裝置啟用*節點加密*設定。
+
+
+
+== Proxy設定
+
+如果您使用的是S3平台服務或雲端儲存資源池、可以在儲存節點和外部S3端點之間設定不透明的Proxy伺服器。如果使用AutoSupport HTTPS或HTTP傳送靜態訊息、您可以在管理節點和技術支援之間設定不透明的Proxy伺服器。
+
+image::../media/proxy_settings_menu_storage.png[Proxy設定功能表-儲存設備]
+
+
+
+== 不受信任的用戶端網路
+
+如果您使用的是用戶端網路、StorageGRID 您可以指定每個節點上的用戶端網路不受信任、以協助防止惡意攻擊。如果節點的用戶端網路不受信任、則節點只接受明確設定為負載平衡器端點之連接埠上的傳入連線。
+
+例如、您可能希望閘道節點拒絕用戶端網路上的所有傳入流量、但HTTPS S3要求除外。或者、您可能想要啟用來自儲存節點的外傳S3平台服務流量、同時防止任何連入用戶端網路上該儲存節點的連線。
+
+.相關資訊
+* xref:../admin/index.adoc[管理StorageGRID]
+* xref:managing-tenants-and-client-connections.adoc[管理租戶和用戶端連線]
+

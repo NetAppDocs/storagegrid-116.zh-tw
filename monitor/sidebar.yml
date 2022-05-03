@@ -1,0 +1,194 @@
+---
+section: monitor
+title: 監控及疑難排解
+entries:
+- title: 總覽
+  pdf-filename: 監控StorageGRID 及疑難排解功能
+  url: "/monitor/index.html"
+- title: 檢視儀表板
+  url: "/monitor/viewing-dashboard.html"
+- title: 檢視「節點」頁面
+  url: "/monitor/viewing-nodes-page.html"
+  entries:
+  - title: 檢視「總覽」索引標籤
+    url: "/monitor/viewing-overview-tab.html"
+  - title: 檢視硬體索引標籤
+    url: "/monitor/viewing-hardware-tab.html"
+  - title: 檢視「網路」索引標籤
+    url: "/monitor/viewing-network-tab.html"
+  - title: 檢視「儲存設備」索引標籤
+    url: "/monitor/viewing-storage-tab.html"
+  - title: 使用「工作」索引標籤重新開機網格節點
+    url: "/monitor/using-task-tab-to-reboot-grid-node.html"
+  - title: 檢視「物件」索引標籤
+    url: "/monitor/viewing-objects-tab.html"
+  - title: 檢視ILM索引標籤
+    url: "/monitor/viewing-ilm-tab.html"
+  - title: 檢視負載平衡器索引標籤
+    url: "/monitor/viewing-load-balancer-tab.html"
+  - title: 檢視平台服務索引標籤
+    url: "/monitor/viewing-platform-services-tab.html"
+  - title: 檢視SANtricity 「系統管理程式」索引標籤
+    url: "/monitor/viewing-santricity-system-manager-tab.html"
+- title: 您應該定期監控的資訊
+  url: "/monitor/information-you-should-monitor-regularly.html"
+  entries:
+  - title: 監控系統健全狀況
+    url: "/monitor/monitoring-system-health.html"
+    entries:
+    - title: 監控節點連線狀態
+      url: "/monitor/monitoring-node-connection-states.html"
+    - title: 檢視目前的警示
+      url: "/monitor/viewing-current-alerts.html"
+    - title: 檢視已解決的警示
+      url: "/monitor/viewing-resolved-alerts.html"
+    - title: 檢視特定警示
+      url: "/monitor/viewing-specific-alert.html"
+    - title: 檢視舊警報
+      url: "/monitor/viewing-legacy-alarms.html"
+  - title: 監控儲存容量
+    url: "/monitor/monitoring-storage-capacity.html"
+  - title: 監控資訊生命週期管理
+    url: "/monitor/monitoring-information-lifecycle-management.html"
+  - title: 監控網路連線與效能
+    url: "/monitor/monitoring-network-connections-and-performance.html"
+  - title: 監控節點層級資源
+    url: "/monitor/monitoring-node-level-resources.html"
+  - title: 監控租戶活動
+    url: "/monitor/monitoring-tenant-activity.html"
+  - title: 監控歸檔容量
+    url: "/monitor/monitoring-archival-capacity.html"
+  - title: 監控負載平衡作業
+    url: "/monitor/monitoring-load-balancing-operations.html"
+  - title: 如有必要、請套用即時修復或升級軟體
+    url: "/monitor/applying-hotfixes-or-upgrading-software-if-necessary.html"
+- title: 管理警示與警示
+  entries:
+  - title: 總覽
+    url: "/monitor/managing-alerts-and-alarms.html"
+  - title: 比較警示與警示
+    url: "/monitor/comparing-alerts-and-alarms.html"
+  - title: 管理警示
+    entries:
+    - title: 總覽
+      url: "/monitor/managing-alerts.html"
+    - title: 檢視警示規則
+      url: "/monitor/view-alert-rules.html"
+    - title: 建立自訂警示規則
+      url: "/monitor/creating-custom-alert-rules.html"
+    - title: 編輯警示規則
+      url: "/monitor/editing-alert-rules.html"
+    - title: 停用警示規則
+      url: "/monitor/disabling-alert-rules.html"
+    - title: 移除自訂警示規則
+      url: "/monitor/removing-custom-alert-rules.html"
+    - title: 管理警示通知
+      entries:
+      - title: 設定SNMP通知
+        url: "/monitor/set-up-snmp-alert-notifications.html"
+      - title: 設定電子郵件通知
+        url: "/monitor/email-alert-notifications.html"
+      - title: 靜音警示通知
+        url: "/monitor/silencing-alert-notifications.html"
+  - title: 管理警示（舊系統）
+    url: "/monitor/managing-alarms.html"
+- title: 設定稽核訊息和記錄目的地
+  url: "/monitor/configure-audit-messages.html"
+- title: 使用外部syslog伺服器
+  entries:
+  - title: 外部syslog伺服器的考量
+    url: "/monitor/considerations-for-external-syslog-server.html"
+  - title: 設定外部syslog伺服器
+    url: "/monitor/configuring-syslog-server.html"
+- title: 使用SNMP監控
+  url: "/monitor/using-snmp-monitoring.html"
+  entries:
+  - title: 設定SNMP代理程式
+    url: "/monitor/configuring-snmp-agent.html"
+  - title: 更新SNMP代理程式
+    url: "/monitor/updating-snmp-agent.html"
+- title: 收集其他StorageGRID 的資料
+  entries:
+  - title: 使用圖表
+    url: "/monitor/using-charts-and-reports.html"
+  - title: 使用文字報告
+    url: "/monitor/types-of-text-reports.html"
+  - title: 監控成效、獲得效能
+    url: "/monitor/monitoring-put-and-get-performance.html"
+  - title: 監控物件驗證作業
+    url: "/monitor/monitoring-object-verification-operations.html"
+  - title: 監控事件
+    url: "/monitor/monitoring-events.html"
+  - title: 檢閱稽核訊息
+    url: "/monitor/reviewing-audit-messages.html"
+  - title: 收集記錄檔和系統資料
+    url: "/monitor/collecting-log-files-and-system-data.html"
+  - title: 手動觸發AutoSupport 一個消息
+    url: "/monitor/manually-triggering-autosupport-message.html"
+  - title: 檢視Grid拓撲樹狀結構
+    url: "/monitor/viewing-grid-topology-tree.html"
+  - title: 檢視支援指標
+    url: "/monitor/reviewing-support-metrics.html"
+  - title: 執行診斷
+    url: "/monitor/running-diagnostics.html"
+  - title: 建立自訂監控應用程式
+    url: "/monitor/creating-custom-monitoring-applications.html"
+- title: 疑難排解StorageGRID 作業系統
+  entries:
+  - title: 疑難排解總覽
+    url: "/monitor/troubleshooting-storagegrid-system.html"
+  - title: 疑難排解物件和儲存問題
+    entries:
+    - title: 確認物件資料位置
+      url: "/monitor/confirming-object-data-locations.html"
+    - title: 物件存放區故障
+      url: "/monitor/object-store-storage-volume-failures.html"
+    - title: 驗證物件完整性
+      url: "/monitor/verifying-object-integrity.html"
+    - title: 疑難排解遺失和遺失的物件資料
+      url: "/monitor/troubleshooting-lost-and-missing-object-data.html"
+      entries:
+      - title: 調查遺失的物件
+        url: "/monitor/investigating-lost-objects.html"
+      - title: 搜尋並還原可能遺失的物件
+        url: "/monitor/searching-for-and-restoring-potentially-lost-objects.html"
+      - title: 重設遺失和遺失的物件數
+        url: "/monitor/resetting-lost-and-missing-object-counts.html"
+    - title: 疑難排解低物件資料儲存警示
+      url: "/monitor/troubleshooting-low-object-data-storage-alert.html"
+    - title: 疑難排解低唯讀浮水印會覆寫警示
+      url: "/monitor/troubleshoot-low-watermark-alert.html"
+    - title: 疑難排解儲存狀態（SSTS）警示
+      url: "/monitor/troubleshooting-storage-status-alarm.html"
+    - title: 疑難排解平台服務訊息（SMtT警示）的交付
+      url: "/monitor/troubleshooting-delivery-platform-services-messages.html"
+  - title: 疑難排解中繼資料問題
+    url: "/monitor/troubleshooting-metadata-issues.html"
+  - title: 疑難排解憑證錯誤
+    url: "/monitor/troubleshooting-certificate-errors.html"
+  - title: 疑難排解管理節點和使用者介面問題
+    url: "/monitor/troubleshooting-admin-node-and-user-interface-issues.html"
+  - title: 疑難排解網路、硬體及平台問題
+    url: "/monitor/troubleshooting-network-hardware-and-platform-issues.html"
+  - title: 疑難排解外部syslog伺服器
+    url: "/monitor/troubleshooting-syslog-server.html"
+- title: 警示參考資料
+  url: "/monitor/alerts-reference.html"
+- title: 常用的Prometheus指標
+  url: "/monitor/commonly-used-prometheus-metrics.html"
+- title: 警示參考（舊系統）
+  url: "/monitor/alarms-reference.html"
+  entries:
+  - title: 產生SNMP通知的警示（舊系統）
+    url: "/monitor/alarms-that-generate-snmp-notifications.html"
+- title: 記錄檔參考
+  url: "/monitor/logs-files-reference.html"
+  entries:
+  - title: 軟體記錄StorageGRID
+    url: "/monitor/storagegrid-software-logs.html"
+  - title: 部署與維護記錄
+    url: "/monitor/deployment-and-maintenance-logs.html"
+  - title: 協力廠商軟體的記錄
+    url: "/monitor/logs-for-third-party-software.html"
+  - title: 關於bycast.log
+    url: "/monitor/about-bycast-log.html"

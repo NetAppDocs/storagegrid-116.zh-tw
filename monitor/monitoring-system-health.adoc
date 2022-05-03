@@ -1,0 +1,71 @@
+---
+permalink: monitor/monitoring-system-health.html 
+sidebar: sidebar 
+keywords: how to monitor system health, how to view system health 
+summary: 您應該StorageGRID 每天監控整個系統的健全狀況。 
+---
+= 監控系統健全狀況
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您應該StorageGRID 每天監控整個系統的健全狀況。
+
+此系統具備容錯能力、即使網格部分無法使用、仍可繼續運作。StorageGRID您的不二系統可能出現問題的第一個徵象StorageGRID 可能是警示或警示（舊系統）、不一定是系統作業的問題。注意系統健全狀況有助於在小型問題影響營運或網格效率之前先行偵測。
+
+Grid Manager儀表板上的「健全狀況」面板提供可能影響您系統的問題摘要。您應該調查儀表板上顯示的任何問題。
+
+
+NOTE: 若要在警示觸發後立即收到通知、您可以設定警示的電子郵件通知或設定SNMP設陷。
+
+.步驟
+. 登入Grid Manager以檢視儀表板。
+. 檢閱「健全狀況」面板中的資訊。
++
+image::../media/dashboard_health_panel.png[儀表板健全狀況面板]
+
++
+當問題存在時、會出現連結、讓您檢視其他詳細資料：
+
++
+[cols="1a,2a"]
+|===
+| 連結 | 表示 
+
+
+ a| 
+網格詳細資料
+ a| 
+如果有任何節點中斷連線（連線狀態為未知或管理性關閉）、就會出現。按一下連結、或按一下藍色或灰色圖示、以判斷哪些節點受到影響。
+
+
+
+ a| 
+目前警示
+ a| 
+如果目前有任何警示處於作用中狀態、則會顯示。按一下連結、或按一下* Critical *、* Major*或* Minor*、即可在* alerts*>* curr流*頁面上查看詳細資料。
+
+
+
+ a| 
+最近解決的警示
+ a| 
+如果過去一週觸發的任何警示現在已解決、就會出現此訊息。按一下連結、即可在* alerts*>* Resolved *頁面上查看詳細資料。
+
+
+
+ a| 
+授權
+ a| 
+如果StorageGRID 此款作業系統的軟體授權發生問題、就會出現此問題。按一下連結、即可在*維護*>*系統*>*授權*頁面上查看詳細資料。
+
+|===
+
+
+.相關資訊
+* xref:../admin/index.adoc[管理StorageGRID]
+* xref:set-up-email-alert-notifications.adoc[設定警示的電子郵件通知]
+* xref:using-snmp-monitoring.adoc[使用SNMP監控]
+

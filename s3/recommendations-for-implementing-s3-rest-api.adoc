@@ -1,0 +1,66 @@
+---
+permalink: s3/recommendations-for-implementing-s3-rest-api.html 
+sidebar: sidebar 
+keywords: implement s3 rest api 
+summary: 實作S3 REST API以搭配StorageGRID 使用時、請遵循以下建議。 
+---
+= 實作S3 REST API的建議
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+實作S3 REST API以搭配StorageGRID 使用時、請遵循以下建議。
+
+
+
+== 針對不存在物件的使用者提出建議
+
+如果您的應用程式經常檢查某個物件是否存在於您預期該物件實際上不存在的路徑中、您應該使用「可用」一致性控制。例如、如果您的應用程式在放入之前就先前往某個位置、則應該使用「可用」一致性控制。
+
+否則、如果執行頭作業找不到物件、當一個或多個儲存節點無法使用時、您可能會收到大量500個內部伺服器錯誤。
+
+您可以使用「放置時段一致性」要求、為每個時段設定「可用」一致性控制、也可以在個別API作業的要求標頭中指定一致性控制。
+
+
+
+== 物件金鑰建議
+
+對於StorageGRID 在VMware 11.4或更新版本中建立的儲存區、不再需要限制物件金鑰名稱以符合效能最佳實務做法。例如、您現在可以將隨機值用於物件金鑰名稱的前四個字元。
+
+對於StorageGRID 在更新版本早於《物件金鑰名稱》的版本中所建立的儲存區、請繼續遵循下列建議：
+
+* 您不應使用隨機值做為物件金鑰的前四個字元。這與前AWS關於金鑰前置碼的建議不同。您應該改用非隨機、非獨特的前置詞、例如「image」。
+* 如果您遵循前一項AWS建議、在金鑰前置字元中使用隨機和獨特的字元、則應該在物件金鑰前置一個目錄名稱。也就是使用此格式：
++
+[listing]
+----
+mybucket/mydir/f8e3-image3132.jpg
+----
++
+而非此格式：
+
++
+[listing]
+----
+mybucket/f8e3-image3132.jpg
+----
+
+
+
+
+== 「範圍讀取」建議
+
+如果選擇*壓縮儲存物件*選項（*組態*>*系統*>*網格選項*）、S3用戶端應用程式應避免執行指定位元組範圍的「Get物件」作業。這些「範圍讀取」作業效率不彰、因為StorageGRID 必須有效解壓縮物件才能存取所要求的位元組。從非常大的物件要求少量位元組的「Get Object」（取得物件）作業效率特別低；例如、從50 GB壓縮物件讀取10 MB範圍的效率非常低。
+
+如果從壓縮物件讀取範圍、用戶端要求可能會逾時。
+
+
+NOTE: 如果您需要壓縮物件、而用戶端應用程式必須使用範圍讀取、請增加應用程式的讀取逾時。
+
+.相關資訊
+* xref:consistency-controls.adoc[一致性控管]
+* xref:put-bucket-consistency-request.adoc[置入時段一致性要求]
+* xref:../admin/index.adoc[管理StorageGRID]
+

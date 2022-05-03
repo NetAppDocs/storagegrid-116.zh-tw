@@ -1,0 +1,140 @@
+---
+section: sg5700
+title: SG5700儲存設備
+entries:
+- title: 總覽
+  pdf-filename: SSG5700儲存設備StorageGRID
+  url: "/sg5700/index.html"
+  entries:
+  - title: 控制器StorageGRID
+    url: "/sg5700/controllers-in-storagegrid-appliance.html"
+- title: 安裝與部署總覽
+  url: "/sg5700/installation-and-deployment-overview.html"
+- title: 準備安裝（SG5700）
+  url: "/sg5700/preparing-for-installation.html"
+  entries:
+  - title: 準備站台（SG5700）
+    url: "/sg5700/preparing-site-sg5700.html"
+  - title: 打開包裝箱（SG5700）
+    url: "/sg5700/unpacking-boxes-sg5700.html"
+  - title: 取得額外的設備與工具（SG5700）
+    url: "/sg5700/obtaining-additional-equipment-and-tools-sg5700.html"
+  - title: 檢視應用裝置網路連線（SG5700）
+    url: "/sg5700/reviewing-appliance-network-connections-sg5700.html"
+    entries:
+    - title: E5700SG控制器連接埠的連接埠連結模式
+      url: "/sg5700/port-bond-modes-for-e5700sg-controller-ports.html"
+      entries:
+      - title: 10/25-GbE連接埠的網路連結模式
+        url: "/sg5700/network-bond-modes-for-10-25-gbe-ports.html"
+      - title: 1 GbE管理連接埠的網路連結模式
+        url: "/sg5700/network-bond-modes-for-1-gbe-ports.html"
+  - title: 收集安裝資訊（SG5700）
+    url: "/sg5700/gathering-installation-information-sg5700.html"
+- title: 安裝硬體（SG5700）
+  url: "/sg5700/installing-hardware.html"
+  entries:
+  - title: 註冊硬體
+    url: "/sg5700/registering-hardware.html"
+  - title: 在機櫃或機架中安裝應用裝置（SG5700）
+    url: "/sg5700/installing-appliance-in-cabinet-or-rack-sg5700.html"
+  - title: 纜線應用裝置（SG5700）
+    url: "/sg5700/cabling-appliance-sg5700.html"
+  - title: 連接電源線並接上電源（SG5700）
+    url: "/sg5700/connecting-power-cords-and-applying-power-sg5700.html"
+  - title: 查看SG5700開機狀態代碼
+    url: "/sg5700/viewing-sg5700-boot-up-status-codes.html"
+    entries:
+    - title: E5700SG控制器上的狀態指示燈
+      url: "/sg5700/status-indicators-on-e5700sg-controller.html"
+- title: 設定硬體（SG5700）
+  url: "/sg5700/configuring-hardware-sg5712-60.html"
+  entries:
+  - title: 設定StorageGRID 鏈接（SG5700）
+    url: "/sg5700/configuring-storagegrid-connections.html"
+    entries:
+    - title: 存取StorageGRID 產品安裝程式
+      url: "/sg5700/accessing-storagegrid-appliance-installer-sg5700.html"
+    - title: 驗StorageGRID 證並升級版本的應用程式
+      url: "/sg5700/verifying-and-upgrading-storagegrid-appliance-installer-version.html"
+    - title: 設定網路連結（SG5700）
+      url: "/sg5700/configuring-network-links-sg5700.html"
+    - title: 設定IP組態
+      url: "/sg5700/setting-ip-configuration-sg5700.html"
+    - title: 驗證網路連線
+      url: "/sg5700/verifying-network-connections.html"
+    - title: 驗證連接埠層級的網路連線
+      url: "/sg5700/verifying-port-level-network-connections.html"
+  - title: 存取及設定SANtricity 功能不全系統管理程式（SG5700）
+    url: "/sg5700/accessing-and-configuring-santricity-system-manager.html"
+    entries:
+    - title: 設定及存取SANtricity 《整套系統管理程式》
+      url: "/sg5700/setting-up-and-accessing-santricity-system-manager.html"
+    - title: 在SANtricity 《Sytricity System Manager》中檢視硬體狀態
+      url: "/sg5700/reviewing-hardware-status-in-santricity-system-manager.html"
+    - title: 使用StorageGRID 一套解決方法安裝程式來設定儲存控制器的IP位址
+      url: "/sg5700/setting-ip-addresses-for-storage-controllers-using-storagegrid-appliance-installer.html"
+  - title: 選用：啟用節點加密
+    url: "/sg5700/optional-enabling-node-encryption.html"
+  - title: 選用：變更RAID模式（僅限SG5760）
+    url: "/sg5700/optional-changing-raid-mode-sg5760-only.html"
+  - title: 選用：重新對應應用裝置的網路連接埠
+    url: "/sg5700/optional-remapping-network-ports-for-appliance-sg5600-and-sg5700.html"
+- title: 部署應用裝置儲存節點
+  url: "/sg5700/deploying-appliance-storage-node.html"
+- title: 監控儲存應用裝置的安裝
+  url: "/sg5700/monitoring-storage-appliance-installation.html"
+- title: 自動化設備安裝與組態（SG5700）
+  url: "/sg5700/automating-appliance-installation-and-configuration.html"
+  entries:
+  - title: 使用StorageGRID 應用程式安裝程式來自動化應用裝置組態
+    url: "/sg5700/automating-appliance-configuration-using-storagegrid-appliance-installer.html"
+  - title: 使用configure-sga.py指令碼自動安裝及設定應用裝置節點
+    url: "/sg5700/automating-installation-configuration-appliance-nodes-configure-sga-py-script.html"
+  - title: 自動化StorageGRID 設定功能
+    url: "/sg5700/automating-configuration-of-storagegrid.html"
+- title: 安裝REST API總覽
+  url: "/sg5700/overview-of-installation-rest-apis.html"
+- title: 疑難排解硬體安裝（SG5700）
+  url: "/sg5700/troubleshooting-hardware-installation.html"
+  entries:
+  - title: 硬體設定似乎當機（SG5700）
+    url: "/sg5700/hardware-setup-appears-to-hang.html"
+    entries:
+    - title: 他錯誤：同步SANtricity 至作業系統軟體時發生錯誤
+      url: "/sg5700/he-error-error-synchronizing-with-santricity-os-software.html"
+  - title: 疑難排解連線問題（SG5700）
+    url: "/sg5700/troubleshooting-connection-issues.html"
+  - title: 在執行應用程式的情況下重新啟動控制器StorageGRID
+    url: "/sg5700/rebooting-controller-while-storagegrid-appliance-installer-is-running.html"
+- title: 維護SG5700應用裝置
+  url: "/sg5700/maintaining-sg5700-appliance.html"
+  entries:
+  - title: 將應用裝置置於維護模式
+    url: "/sg5700/placing-appliance-into-maintenance-mode.html"
+  - title: 升級SANtricity 儲存控制器上的作業系統
+    url: "/sg5700/upgrading-santricity-os-on-storage-controller.html"
+    entries:
+    - title: 使用SANtricity Grid Manager升級儲存控制器上的作業系統
+      url: "/sg5700/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5700.html"
+    - title: 使用SANtricity 維護模式升級E2800控制器上的作業系統
+      url: "/sg5700/upgrading-santricity-os-on-e2800-controller-using-maintenance-mode.html"
+  - title: 使用SANtricity 《支援系統管理程式》升級磁碟機韌體
+    url: "/sg5700/upgrading-drive-firmware-using-santricity-system-manager.html"
+  - title: 更換E2800控制器
+    url: "/sg5700/replacing-e2800-controller.html"
+  - title: 更換E5700SG控制器
+    url: "/sg5700/replacing-e5700sg-controller.html"
+  - title: 更換其他硬體元件
+    url: "/sg5700/replacing-other-hardware-components-sg5700.html"
+  - title: 變更E5700SG控制器的連結組態
+    url: "/sg5700/changing-link-configuration-of-e5700sg-controller.html"
+  - title: 變更MTU設定
+    url: "/sg5700/changing-mtu-setting.html"
+  - title: 檢查DNS伺服器組態
+    url: "/sg5700/checking-dns-server-configuration.html"
+  - title: 在維護模式下監控節點加密（SG5700）
+    url: "/sg5700/monitoring-node-encryption-in-maintenance-mode.html"
+    entries:
+    - title: 清除金鑰管理伺服器組態
+      url: "/sg5700/clearing-key-management-server-configuration.html"

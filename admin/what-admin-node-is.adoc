@@ -1,0 +1,53 @@
+---
+permalink: admin/what-admin-node-is.html 
+sidebar: sidebar 
+keywords: admin nodes 
+summary: 管理節點提供系統組態、監控及記錄等管理服務。每個網格都必須有一個主要管理節點、而且可能有任意數量的非主要管理節點來提供備援。 
+---
+= 什麼是管理節點
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+管理節點提供系統組態、監控及記錄等管理服務。每個網格都必須有一個主要管理節點、而且可能有任意數量的非主要管理節點來提供備援。
+
+當您登入Grid Manager或租戶管理程式時、即連線至管理節點。您可以連線至任何管理節點、每個管理節點都會顯示StorageGRID 類似的畫面、顯示有關該系統的資訊。不過、維護程序必須使用主要管理節點來執行。
+
+管理節點也可用於負載平衡S3和Swift用戶端流量。
+
+管理節點裝載下列服務：
+
+* AMS服務
+* CMN服務
+* NMS服務
+* Prometheus服務
+* 負載平衡器和高可用度服務（支援S3和Swift用戶端流量）
+
+
+管理節點也支援管理應用程式程式介面（mgmt-API）、以處理來自Grid Management API和租戶管理API的要求。請參閱 xref:using-grid-management-api.adoc[使用Grid Management API]。
+
+
+
+== AMS服務是什麼
+
+稽核管理系統（AMS）服務會追蹤系統活動和事件。
+
+
+
+== CMN服務是什麼
+
+組態管理節點（CMN）服務可管理全系統的連線組態、以及所有服務所需的傳輸協定功能。此外、CMN服務也可用來執行及監控網格工作。每StorageGRID 個版本部署只有一個CMN服務。主控CMN服務的管理節點稱為主要管理節點。
+
+
+
+== NMS服務是什麼
+
+網路管理系統（NMS）服務可透過Grid Manager（StorageGRID 即整個系統的瀏覽器型介面）、提供監控、報告及組態選項的功能。
+
+
+
+== 什麼是Prometheus服務
+
+Prometheus服務會從所有節點上的服務收集時間序列數據。

@@ -1,0 +1,22 @@
+---
+permalink: sg5600/configuring-email-and-snmp-trap-alert-notifications.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, email, notifications, alerts, alert, set up, setup, configure, configuration, snmp, traps 
+summary: 當應用裝置或其中一個元件的狀態變更時、即可通知您。SANtricity這稱為警示通知。您可以使用兩種不同的方法來接收警示通知：電子郵件和SNMP設陷。您必須設定要接收的警示通知。 
+---
+= 設定電子郵件和SNMP設陷警示通知
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+當應用裝置或其中一個元件的狀態變更時、即可通知您。SANtricity這稱為警示通知。您可以使用兩種不同的方法來接收警示通知：電子郵件和SNMP設陷。您必須設定要接收的警示通知。
+
+.步驟
+. 從「Enterprise Management」（企業管理）視窗SANtricity 的「Sesing Storage Manager」（資料保護管理程式）中、選取「*設備*」索引標籤、然後選取節點。
+. 選擇*編輯*>*設定警示*。
+. 選取*電子郵件*索引標籤以設定電子郵件警示通知。
+. 選取「* SNMP *」索引標籤以設定SNMP設陷警示通知。
+. 如有需要、請使用SANtricity 「支援中心」線上說明來完成工作。
+

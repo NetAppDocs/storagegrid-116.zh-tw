@@ -1,0 +1,61 @@
+---
+permalink: maintain/restoring-audit-log-on-recovered-primary-admin-node.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, restore audit log, primary admin node 
+summary: 如果您能夠從故障的主要管理節點保留稽核記錄、則可以將其複製到您要恢復的主要管理節點。 
+---
+= 在恢復的主要管理節點上還原稽核記錄
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您能夠從故障的主要管理節點保留稽核記錄、則可以將其複製到您要恢復的主要管理節點。
+
+* 恢復的管理節點必須安裝並執行。
+* 在原始管理節點失敗之後、您必須將稽核記錄複製到其他位置。
+
+
+如果管理節點失敗、儲存至該管理節點的稽核記錄可能會遺失。您可以從故障的管理節點複製稽核記錄、然後將這些稽核記錄還原至恢復的管理節點、以避免資料遺失。視故障而定、可能無法從故障的管理節點複製稽核記錄。在這種情況下、如果部署有多個管理節點、您可以從另一個管理節點恢復稽核記錄、因為稽核記錄會複寫到所有管理節點。
+
+如果只有一個管理節點、而且無法從故障節點複製稽核記錄、則恢復的管理節點會開始將事件記錄到稽核記錄、就像是新安裝一樣。
+
+您必須盡快恢復管理節點、才能還原記錄功能。
+
+[NOTE]
+====
+根據預設、稽核資訊會傳送至管理節點上的稽核記錄。如果下列任一項適用、您都可以跳過這些步驟：
+
+* 您已設定外部syslog伺服器、稽核記錄現在會傳送至syslog伺服器、而非管理節點。
+* 您明確指定稽核訊息只能儲存在產生這些訊息的本機節點上。
+
+
+請參閱 xref:../monitor/configure-audit-messages.adoc[設定稽核訊息和記錄目的地] 以取得詳細資料。
+
+====
+.步驟
+. 登入恢復的管理節點：
++
+.. 輸入下列命令：「sh admin@recovery _admin_Node_IP」
+.. 輸入「passwords.txt」檔案中所列的密碼。
+.. 輸入下列命令以切換至root：「u -」
+.. 輸入「passwords.txt」檔案中所列的密碼。
+
+
++
+以root登入之後、提示會從「$」變更為「#」。
+
+. 檢查哪些稽核檔案已保留：「CD /var/local/exit/export/export」
+. 將保留的稽核記錄檔複製到已恢復的管理節點：「CP admin@_grid_nnode_ip_：/var/local/tmp/Save-nap審查 記錄/YYYY*」
++
+出現提示時、輸入admin的密碼。
+
+. 為了安全起見、請在確認已成功複製稽核記錄到恢復的管理節點之後、從故障的網格節點刪除這些記錄。
+. 更新已恢復管理節點上稽核記錄檔的使用者和群組設定：「chown AMS-使用者：bytcast *」
+. 以root登出：「exit」
+
+
+您也必須還原稽核共用的任何既有用戶端存取權。如需詳細資訊、請參閱《關於管理StorageGRID 功能的說明》。
+
+xref:../admin/index.adoc[管理StorageGRID]

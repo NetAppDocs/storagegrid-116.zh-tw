@@ -1,0 +1,38 @@
+---
+permalink: monitor/monitoring-node-level-resources.html 
+sidebar: sidebar 
+keywords: monitoring, monitoring node-level resources, grid nodes 
+summary: 您應該監控個別的網格節點、以檢查其資源使用率層級。 
+---
+= 監控節點層級資源
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您應該監控個別的網格節點、以檢查其資源使用率層級。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您必須使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+
+
+如果節點持續過載、則可能需要更多節點才能有效運作。
+
+.步驟
+. 若要檢視網格節點硬體使用率的相關資訊：
++
+.. 從「*節點*」頁面選取節點。
+.. 選取「*硬體*」索引標籤以顯示CPU使用率和記憶體使用率的圖表。
++
+image::../media/nodes_page_hardware_tab_graphs.png[節點頁面硬體索引標籤]
+
+.. 若要顯示不同的時間間隔、請選取圖表或圖表上方的其中一個控制項。您可以顯示1小時、1天、1週或1個月的可用時間間隔資訊。您也可以設定自訂時間間隔、以便指定日期和時間範圍。
+.. 如果節點裝載在儲存設備或服務應用裝置上、請向下捲動以檢視元件表。所有元件的狀態應為「名義」。 調查具有任何其他狀態的元件。
+
+
+
+
+xref:viewing-hardware-tab.adoc#view-information-about-appliance-storage-nodes[檢視應用裝置儲存節點的相關資訊]
+
+xref:viewing-hardware-tab.adoc#view-information-about-appliance-admin-nodes-and-gateway-nodes[檢視應用裝置管理節點和閘道節點的相關資訊]

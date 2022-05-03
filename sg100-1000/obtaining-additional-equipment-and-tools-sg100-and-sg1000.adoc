@@ -1,0 +1,132 @@
+---
+permalink: sg100-1000/obtaining-additional-equipment-and-tools-sg100-and-sg1000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, additional, equipment, tools 
+summary: 安裝StorageGRID 此產品之前、請先確認您擁有所需的所有額外設備和工具。 
+---
+= 取得額外的設備與工具（SG100和SG1000）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安裝StorageGRID 此產品之前、請先確認您擁有所需的所有額外設備和工具。
+
+您需要下列額外設備來安裝及設定硬體：
+
+* *螺絲起子*
++
+image::../media/screwdrivers.gif[兩個螺絲起子]
+
++
+飛利浦編號2個螺絲起子
+
++
+中型平口螺絲刀
+
+* *電子化軟線帶*
++
+image::../media/appliance_wriststrap.gif[ESD腕帶]
+
+* *光纖纜線與收發器*
++
+image::../media/fc_cable_and_sfp.gif[光纖纜線和QSFP+收發器]
+
++
+** 纜線
++
+*** 雙軸纜線/銅線（1至4）
++
+或
+
+*** 光纖/光纖（1至4）
+
+
+** 每個收發器/介面卡中有1到4個是以連結速度為基礎（不支援混合速度）
++
+*** SG100：
++
+|===
+| 連結速度（GbE） | 必要設備 
+
+
+ a| 
+10.
+ a| 
+SFP+收發器
+
+
+
+ a| 
+25
+ a| 
+SFP28收發器
+
+|===
+*** SG1000：
++
+|===
+| 連結速度（GbE） | 必要設備 
+
+
+ a| 
+10.
+ a| 
+QSFP-to SFP介面卡（QSA）和SFP+收發器
+
+
+
+ a| 
+25
+ a| 
+QSFP-to SFP介面卡（QSA）和SFP28收發器
+
+
+
+ a| 
+40
+ a| 
+QSFP+收發器
+
+
+
+ a| 
+100
+ a| 
+QFSP28收發器
+
+|===
+
+
+
+
+* * RJ-45（Cat5/Cat5e/Cat6/Cat6a）乙太網路纜線*
++
+image::../media/ethernet_cables.png[乙太網路纜線]
+
+* *服務筆記型電腦*
++
+image::../media/sam_management_client.gif[服務筆記型電腦]
+
++
+xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]
+
++
+1-GbE（RJ-45）連接埠
+
++
+
+NOTE: 某些連接埠可能不支援10/100乙太網路速度。
+
+* *選用工具*
++
+image::../media/optional_tools.gif[電力鑽取與手電筒]
+
++
+使用十字頭的動力鑽孔機
+
++
+手電筒
+
+

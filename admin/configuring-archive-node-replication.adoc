@@ -1,0 +1,43 @@
+---
+permalink: admin/configuring-archive-node-replication.html 
+sidebar: sidebar 
+keywords: archive node replication 
+summary: 您可以設定歸檔節點的複寫設定、停用傳入和傳出複寫、或是重設追蹤相關警示的失敗計數。 
+---
+= 設定歸檔節點複寫
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以設定歸檔節點的複寫設定、停用傳入和傳出複寫、或是重設追蹤相關警示的失敗計數。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
+* 您擁有特定的存取權限。
+
+
+.步驟
+. 選取*支援*>*工具*>*網格拓撲*。
+. 選擇「*歸檔節點_*>* ARC*>* Replication *（*複寫*）」。
+. 選擇*組態*>*主要*。
++
+image::../media/archive_node_replication.gif[歸檔節點的組態頁面>複寫設定]
+
+. 視需要修改下列設定：
++
+** *重設傳入複寫失敗計數*：選取此選項可重設傳入複寫失敗的計數器。這可用來清除RIRF（傳入複製-失敗）警示。
+** *重設傳出複寫失敗計數*：選取此選項可重設傳出複寫失敗的計數器。這可用來清除RORF（傳出複製-失敗）警示。
+** *停用傳入複寫*：選取以停用傳入複寫、作為維護或測試程序的一部分。正常操作期間保持清除狀態。
++
+當停用傳入複寫時、可以從ARC服務擷取物件資料、以便複寫到StorageGRID 其他系統位置的其他位置、但無法從其他系統位置將物件複寫到此ARC服務。ARC服務為唯讀。
+
+** *停用傳出複寫*：勾選此核取方塊、即可停用傳出複寫（包括HTTP擷取內容要求）、作為維護或測試程序的一部分。在正常操作期間保持未核取狀態。
++
+當停用輸出複寫時、物件資料可複製到此ARC服務以滿足ILM規則、但無法從ARC服務擷取物件資料、以便複製到StorageGRID 其他地點。ARC服務是純寫入的。
+
+
+
+. 選取*套用變更*。
+

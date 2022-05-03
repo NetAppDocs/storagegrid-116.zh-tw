@@ -1,0 +1,14 @@
+---
+permalink: sg5600/configuring-storagegrid-connections.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, storagegrid connections, connections, configure, setup, set up 
+summary: 您必須先設定應用裝置與您計畫使用的網路之間的連線、才能將StorageGRID 該應用裝置部署為StorageGRID 位於整個資訊網中的儲存節點。您可以瀏覽StorageGRID 至E5600SG控制器（應用裝置中的運算控制器）上隨附的《E56Appliance Installer》（英文）來設定網路功能。 
+---
+= 設定StorageGRID 鏈接（SG5600）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須先設定應用裝置與您計畫使用的網路之間的連線、才能將StorageGRID 該應用裝置部署為StorageGRID 位於整個資訊網中的儲存節點。您可以瀏覽StorageGRID 至E5600SG控制器（應用裝置中的運算控制器）上隨附的《SESSE應用裝置安裝程式》、以設定網路功能。

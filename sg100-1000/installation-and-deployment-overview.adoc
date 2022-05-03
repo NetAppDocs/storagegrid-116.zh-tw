@@ -1,0 +1,107 @@
+---
+permalink: sg100-1000/installation-and-deployment-overview.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, Installation, deployment, Install, deploy, Installing, deploying 
+summary: 您可以在StorageGRID 第一次部署StorageGRID 時安裝一或多個支援服務應用裝置、也可以稍後再新增服務應用裝置節點做為擴充的一部分。 
+---
+= 安裝與部署總覽
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在StorageGRID 第一次部署StorageGRID 時安裝一或多個支援服務應用裝置、也可以稍後再新增服務應用裝置節點做為擴充的一部分。
+
+您的系統使用所需的版本的功能。StorageGRID StorageGRID
+
+|===
+| 應用裝置 | 必要StorageGRID 的版本 
+
+
+ a| 
+SG100
+ a| 
+11.4或更新版本（建議使用最新的修補程式）
+
+
+
+ a| 
+SG1000
+ a| 
+11.3或更新版本（建議使用最新的修補程式）
+
+|===
+
+
+== 安裝與部署工作
+
+準備StorageGRID 並新增一個應用不全面的應用裝置至網格、主要步驟有四個：
+
+. 準備安裝：
++
+** 準備安裝站台
+** 打開包裝箱並檢查內容物
+** 取得額外的設備和工具
+** 正在驗證網路組態
+** 選用：如果您打算加密所有應用裝置資料、請設定外部金鑰管理伺服器（KMS）。如需外部金鑰管理的詳細資訊、請參閱《管理StorageGRID 》指南。
+
+
+. 安裝硬體：
++
+** 註冊硬體
+** 將產品安裝到機櫃或機架中
+** 設備佈線
+** 連接電源線並接上電源
+** 檢視開機狀態代碼
+
+
+. 設定硬體：
++
+** 存取StorageGRID 《產品安裝程式（Cisco）與設定連結及網路IP設定以連線StorageGRID 至各種功能
+** 存取應用裝置上的基板管理控制器（BMC）介面。
+** 選用：如果您打算使用外部KMS來加密應用裝置資料、請啟用節點加密。
+
+
+. 部署應用裝置閘道或管理節點
++
+安裝並設定應用裝置硬體之後、您可以將應用裝置部署為StorageGRID 「閘道節點」、並在一個「虛擬化」系統中部署管理節點。SG100和SG1000設備可同時做為閘道節點和管理節點（主要和非主要）運作。
+
++
+|===
+| 工作 | 說明 
+
+
+ a| 
+在新StorageGRID 的功能完善的系統中部署應用裝置閘道或管理節點
+ a| 
+xref:deploying-services-appliance-node.adoc[部署服務應用裝置節點]
+
+
+
+ a| 
+將應用裝置閘道或管理節點新增至現有StorageGRID 的作業系統
+ a| 
+擴充StorageGRID 功能的說明
+
+
+
+ a| 
+將應用裝置閘道或管理節點部署為節點還原作業的一部分
+ a| 
+恢復與維護說明
+
+|===
+
+
+xref:preparing-for-installation-sg100-and-sg1000.adoc[準備安裝（SG100和SG1000）]
+
+xref:installing-hardware-sg100-and-sg1000.adoc[安裝硬體（SG100和SG1000）]
+
+xref:configuring-storagegrid-connections-sg100-and-sg1000.adoc[設定StorageGRID 鏈接（SG100和SG1000）]
+
+xref:../expand/index.adoc[擴充網格]
+
+xref:../maintain/index.adoc[恢復與維護]
+
+xref:../admin/index.adoc[管理StorageGRID]

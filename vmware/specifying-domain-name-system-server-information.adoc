@@ -1,0 +1,35 @@
+---
+permalink: vmware/specifying-domain-name-system-server-information.html 
+sidebar: sidebar 
+keywords: how to specify Domain Name System server information 
+summary: 您必須為StorageGRID 您的系統指定網域名稱系統（DNS）資訊、以便使用主機名稱（而非IP位址）來存取外部伺服器。 
+---
+= 指定網域名稱系統伺服器資訊
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須為StorageGRID 您的系統指定網域名稱系統（DNS）資訊、以便使用主機名稱而非IP位址來存取外部伺服器。
+
+指定DNS伺服器資訊可讓您使用完整網域名稱（FQDN）主機名稱、而非使用IP位址來傳送電子郵件通知和AutoSupport 進行支援。建議至少指定兩個DNS伺服器。
+
+
+IMPORTANT: 為DNS伺服器提供二到六個IPv6位址。您應該選取DNS伺服器、以便每個站台在網路中斷時、都能在本機存取。這是為了確保isLanded站台繼續存取DNS服務。設定整個網格的DNS伺服器清單之後、您可以進一步自訂每個節點的DNS伺服器清單。如需詳細資訊、請參閱還原與維護指示中有關修改DNS組態的資訊。
+
+如果DNS伺服器資訊被省略或設定不正確、則會在每個網格節點的SSM服務上觸發DNST警示。當DNS設定正確、且新的伺服器資訊已到達所有網格節點時、警示就會清除。
+
+.步驟
+. 在「*伺服器1*」文字方塊中、指定至少一個DNS伺服器的IPV4位址。
+. 如有必要、請選取最後一個項目旁的加號、以新增其他伺服器項目。
++
+image::../media/9_gmi_installer_dns_page.gif[此影像由周邊文字說明。]
+
++
+最佳實務做法是指定至少兩部DNS伺服器。您最多可以指定六個DNS伺服器。
+
+. 選擇*下一步*。
+
+
+xref:../maintain/index.adoc[恢復與維護]

@@ -1,0 +1,40 @@
+---
+permalink: sg100-1000/configuring-snmp-settings-for-sg1000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, SNMP, configure, setup, set up 
+summary: 如果您熟悉設定硬體的SNMP、可以使用BMC介面來設定服務應用裝置的SNMP設定。您可以提供安全的社群字串、啟用SNMP設陷、以及指定最多五個SNMP目的地。 
+---
+= 設定服務應用裝置的SNMP設定
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您熟悉設定硬體的SNMP、可以使用BMC介面來設定服務應用裝置的SNMP設定。您可以提供安全的社群字串、啟用SNMP設陷、以及指定最多五個SNMP目的地。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您知道如何存取BMC儀表板。
+* 您有設定SNMP v1-v2c設備的SNMP設定經驗。
+
+
+
+NOTE: 如果設備故障且必須更換、則此程序所做的BMC設定可能無法保留。請務必記錄您套用的所有設定、以便在必要時更換硬體後、輕鬆重新套用。
+
+.步驟
+. 從BMC儀表板中、選取*設定*>* SNMP設定*。
+. 在「SNMP設定」頁面上、選取*啟用SNMP V1/V2*、然後提供唯讀社群字串和讀寫社群字串。
++
+唯讀社群字串就像使用者ID或密碼。您應該變更此值、以防止入侵者取得網路設定的相關資訊。「讀寫社群字串」可保護裝置免於未經授權的變更。
+
+. （可選）選擇* Enable Trap（啟用陷阱）*、然後輸入所需資訊。
++
+
+IMPORTANT: 使用IP位址輸入每個SNMP設陷的目的地IP。不支援完整網域名稱。
+
++
+如果您希望服務應用裝置在SNMP主控台處於不正常狀態時、立即傳送通知給它、請啟用陷阱。陷阱可能表示連結的上/下條件、溫度超過特定臨界值、或是流量高。
+
+. （可選）單擊*發送測試陷阱*以測試您的設置。
+. 如果設定正確、請按一下「*儲存*」。
+

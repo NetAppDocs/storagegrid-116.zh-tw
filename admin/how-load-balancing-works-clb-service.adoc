@@ -1,0 +1,26 @@
+---
+permalink: admin/how-load-balancing-works-clb-service.html 
+sidebar: sidebar 
+keywords: clb service, connection load balancer 
+summary: 閘道節點上的連線負載平衡器（CLB\）服務已過時。負載平衡器服務現在是建議的負載平衡機制。 
+---
+= 負載平衡的運作方式- CLB服務（已過時）
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+閘道節點上的連線負載平衡器（CLB）服務已過時。負載平衡器服務現在是建議的負載平衡機制。
+
+CLB服務使用第4層負載平衡、根據可用度、系統負載及系統管理員設定的連結成本、將傳入的TCP網路連線從用戶端應用程式分散到最佳儲存節點。選擇最佳化儲存節點時、CLB服務會建立雙向網路連線、並將流量轉送至所選節點、或從所選節點轉送流量。當引導傳入網路連線時、CLB並不考慮Grid Network組態。
+
+若要檢視CLB服務的相關資訊、請選取*支援*>*工具*>*網格拓撲*、然後展開閘道節點、直到您選取* CLB*及其下方的選項為止。
+
+image::../media/gateway_node.gif[Grid拓撲樹狀結構中的API閘道節點]
+
+如果您選擇使用CLB服務、則應考慮設定StorageGRID 您的故障系統連結成本。
+
+* xref:what-link-costs-are.adoc[什麼是連結成本]
+* xref:updating-link-costs.adoc[更新連結成本]
+
