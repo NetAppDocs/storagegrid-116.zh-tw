@@ -5277,6 +5277,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -8710,9 +8712,9 @@
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/storagegrid-116/sg6000/registering-hardware.html">
         註冊硬體
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/storagegrid-116/sg6000/sg6060-installing-60-drive-shelves-into-cabinet-or-rack.html">
-        SG6060：將60個磁碟機櫃安裝到機櫃或機架中
+        SG6060和SG6060X：將60個磁碟機櫃安裝到機櫃或機架中
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/storagegrid-116/sg6000/sg6060-installing-drives.html">
-        SG6060：安裝磁碟機
+        SG6060和SG6060X：安裝磁碟機
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/storagegrid-116/sg6000/sgf6024-installing-24-drive-shelves-into-cabinet-or-rack.html">
         SGF6024：將24個磁碟機櫃安裝到機櫃或機架中
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/storagegrid-116/sg6000/sg6000-cn-installing-into-cabinet-or-rack.html">
@@ -8720,13 +8722,13 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/storagegrid-116/sg6000/cabling-appliance-sg6000.html">
         纜線應用裝置（SG6000）
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/storagegrid-116/sg6000/sg6060-cabling-optional-expansion-shelves.html">
-        SG6060：可選購纜線擴充櫃
+        SG6060與SG6060X：可選購纜線擴充櫃
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/storagegrid-116/sg6000/connecting-power-cords-and-applying-power-sg6000.html">
         連接電源線並接上電源（SG6000）
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/storagegrid-116/sg6000/viewing-status-indicators-and-buttons-on-sg6000-cn-controller.html">
         檢視SG6000-CN-控制器上的狀態指示燈和按鈕
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/storagegrid-116/sg6000/viewing-boot-up-status-codes-for-sg6000-storage-controllers.html">
-        檢視SG6000儲存控制器的開機狀態代碼
+        檢視SG6000和SG6060X儲存控制器的開機狀態代碼
       </a></li></ul></li><li class="subfolders "><a href="/zh-tw/storagegrid-116/sg6000/configuring-hardware.html">
         <div class="na-navbar-padding"> 設定硬體（SG6000）</div>
       </a>
@@ -10067,13 +10069,15 @@
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/storagegrid-116/tenant/using-identity-federation.html">
         使用身分識別聯盟
-      </a></li><li class="subfolders "><a href="/zh-tw/storagegrid-116/tenant/managing-groups.html">
+      </a></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> 管理群組</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-tw/storagegrid-116/tenant/creating-groups-for-s3-tenant.html">
         為S3租戶建立群組
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/storagegrid-116/tenant/creating-groups-for-swift-tenant.html">
         為Swift租戶建立群組
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/storagegrid-116/tenant/tenant-management-permissions.html">
+        租戶管理權限
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/storagegrid-116/tenant/viewing-and-editing-group-details.html">
         檢視及編輯群組詳細資料
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-tw/storagegrid-116/tenant/adding-users-to-local-group.html">
@@ -11191,7 +11195,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 06:51:53 +0000">05/03/2022</time>
+    <time datetime="2022-05-17 18:40:23 +0000">05/17/2022</time>
     
   
 
@@ -11199,7 +11203,7 @@
 </p>
 
 <div class="paragraph lead">
-<p>若要增加儲存容量、您可以將一或兩個擴充櫃新增至已部署StorageGRID 於整個系統的SG6060。</p>
+<p>若要增加儲存容量、您可以將一個或兩個擴充櫃新增至已部署StorageGRID 於某個系統的SG6060或SG6060X。</p>
 </div>
 <div class="ulist">
 <div class="title">您需要的是 #8217 ；需要的是什麼</div>
@@ -11230,7 +11234,7 @@
 <p>在機櫃或機架中安裝硬體。</p>
 </li>
 <li>
-<p>將SG6060置於維護模式。</p>
+<p>將SG6060或SG6060X置於維護模式。</p>
 </li>
 <li>
 <p>將擴充櫃連接至E2860控制器機櫃或其他擴充櫃。</p>
@@ -11244,7 +11248,7 @@
 </ul>
 </div>
 <div class="paragraph">
-<p>完成一或兩個擴充磁碟櫃的程序、每個應用裝置節點所需的時間應少於一小時。為將停機時間減至最低、下列步驟會指示您在將SG6060置於維護模式之前、先安裝新的擴充櫃和磁碟機。每個應用裝置節點的其餘步驟約需20至30分鐘。</p>
+<p>完成一或兩個擴充磁碟櫃的程序、每個應用裝置節點所需的時間應少於一小時。為將停機時間減至最低、下列步驟會指示您在將SG6060或SG6060X置於維護模式之前、先安裝新的擴充櫃和磁碟機。每個應用裝置節點的其餘步驟約需20至30分鐘。</p>
 </div>
 <div class="olist arabic">
 <div class="title">步驟</div>
@@ -11252,13 +11256,13 @@
 <li>
 <p>請依照指示將60個磁碟機櫃安裝到機櫃或機架中。</p>
 <div class="paragraph">
-<p><a href="sg6060-installing-60-drive-shelves-into-cabinet-or-rack.html">SG6060：將60個磁碟機櫃安裝到機櫃或機架中</a></p>
+<p><a href="sg6060-installing-60-drive-shelves-into-cabinet-or-rack.html">SG6060和SG6060X：將60個磁碟機櫃安裝到機櫃或機架中</a></p>
 </div>
 </li>
 <li>
 <p>請依照指示安裝磁碟機。</p>
 <div class="paragraph">
-<p><a href="sg6060-installing-drives.html">SG6060：安裝磁碟機</a></p>
+<p><a href="sg6060-installing-drives.html">SG6060和SG6060X：安裝磁碟機</a></p>
 </div>
 </li>
 <li>
@@ -11268,6 +11272,18 @@
 <p>如圖所示、將每個擴充櫃連接至E2860控制器機櫃。</p>
 <div class="paragraph">
 <p>此圖顯示兩個擴充櫃。如果您只有一個、請將IOM A連接至控制器A、然後將IOM B連接至控制器B</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/storagegrid-116/images/note.svg" alt="附註">
+</td>
+<td class="content">
+顯示SG6060。SG6060X的擴充纜線完全相同。
+</td>
+</tr>
+</table>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -11531,13 +11547,13 @@
 </ol>
 </div>
 <div class="paragraph">
-<p><a href="unpacking-boxes-sg6000.html">打開包裝箱（SG6000）</a></p>
+<p><a href="unpacking-boxes-sg6000.html">打開包裝箱（SG6000和SG6060X）</a></p>
 </div>
 <div class="paragraph">
-<p><a href="sg6060-installing-60-drive-shelves-into-cabinet-or-rack.html">SG6060：將60個磁碟機櫃安裝到機櫃或機架中</a></p>
+<p><a href="sg6060-installing-60-drive-shelves-into-cabinet-or-rack.html">SG6060和SG6060X：將60個磁碟機櫃安裝到機櫃或機架中</a></p>
 </div>
 <div class="paragraph">
-<p><a href="sg6060-installing-drives.html">SG6060：安裝磁碟機</a></p>
+<p><a href="sg6060-installing-drives.html">SG6060和SG6060X：安裝磁碟機</a></p>
 </div>
 <div class="paragraph">
 <p><a href="../monitor/index.html">監控及疑難排解</a></p>
@@ -11561,16 +11577,16 @@
               <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/terms-of-use/">legal-terms</a>
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">條款與條件</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/privacy-policy/">legal-privacy</a>
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Privacy Policy</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a href="https://www.netapp.com/company/legal/cookie-policy/">legal-cookies</a>
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie Policy</a>
             </li>
             <li class="n-footer__copyright-link">
-              <a class="ot-sdk-show-settings">cookie-settings</a>
+              <a class="ot-sdk-show-settings">Cookie 設定</a>
             </li>
           </ul>
         </div>
