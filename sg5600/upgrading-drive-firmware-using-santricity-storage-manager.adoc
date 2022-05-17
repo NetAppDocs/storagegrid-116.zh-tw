@@ -34,6 +34,7 @@ NOTE: 維護模式會中斷與儲存控制器的連線、停止所有I/O活動�
 IMPORTANT: 請勿一StorageGRID 次在多個不只一個的支援設備上升級磁碟機韌體。視部署模式和ILM原則而定、否則可能導致資料無法使用。
 
 .步驟
+. 確認產品已裝入 xref:placing-appliance-into-maintenance-mode.adoc[維護模式]。
 . 開啟網頁瀏覽器、輸入IP位址作為SANtricity URL for the URL for the NetApp Storage Manager：+`* https://_E2700_Controller_IP_*`
 . 如SANtricity 有需要、請輸入《不實儲存管理程式》管理員使用者名稱和密碼。
 . 從「企業管理」中選取「*裝置*」索引標籤。SANtricity

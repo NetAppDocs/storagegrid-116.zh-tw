@@ -29,6 +29,7 @@ IMPORTANT: 請勿一StorageGRID 次在多個不只一個的支援設備上升級
 
 
 .步驟
+. 確認產品已裝入 xref:placing-appliance-into-maintenance-mode.adoc[維護模式]。
 . 使用SANtricity 下列其中一種方法來存取《系統管理程式》：
 +
 ** 使用StorageGRID 《Suse安裝程式》、然後選取*進階*>* SANtricity 《系統管理員*》

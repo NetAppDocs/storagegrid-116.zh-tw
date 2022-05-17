@@ -39,7 +39,7 @@ IMPORTANT: 為避免效能降低、請勿扭轉、摺疊、夾緊或踏上纜線
 
 . 鬆開控制器前面板上的兩顆緊固螺絲。
 +
-image::../media/sg6060_rack_retaining_screws.png[SG6060機架固定螺絲]
+image::../media/sg6060_rack_retaining_screws.png[SG6060和SG6060X機架固定螺絲]
 
 . 將SG6000-CN-控制器向前滑出機架、直到安裝軌道完全展開、您會聽到兩側的栓鎖發出「喀」一聲。
 +

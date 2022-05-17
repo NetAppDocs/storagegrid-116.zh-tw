@@ -90,10 +90,7 @@ eth2
 若要新增主幹或存取介面、請參閱下列內容：
 
 * * VMware（安裝節點之後）*： xref:../maintain/vmware-adding-trunk-or-access-interfaces-to-node.adoc[VMware：新增主幹或存取介面至節點]
-+
-** * RHEL或CentOS（安裝節點之前）*： xref:../rhel/creating-node-configuration-files.adoc[建立節點組態檔]
-** * Ubuntu或DEBIAN*（安裝節點之前）*： xref:../ubuntu/creating-node-configuration-files.adoc[建立節點組態檔]
-** * RHEL、CentOS、Ubuntu或DEBIAN*（安裝節點之後）*： xref:../maintain/linux-adding-trunk-or-access-interfaces-to-node.adoc[Linux：新增主幹或存取介面至節點]
-
-
+* * RHEL或CentOS（安裝節點之前）*： xref:../rhel/creating-node-configuration-files.adoc[建立節點組態檔]
+* * Ubuntu或DEBIAN*（安裝節點之前）*： xref:../ubuntu/creating-node-configuration-files.adoc[建立節點組態檔]
+* * RHEL、CentOS、Ubuntu或DEBIAN*（安裝節點之後）*： xref:../maintain/linux-adding-trunk-or-access-interfaces-to-node.adoc[Linux：新增主幹或存取介面至節點]
 

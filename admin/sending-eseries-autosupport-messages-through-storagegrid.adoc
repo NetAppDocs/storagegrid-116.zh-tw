@@ -19,7 +19,7 @@ summary: 您可以SANtricity 透過「e系統管理節點」（AutoSupport 而�
 
 
 
-NOTE: 您必須擁有SANtricity 更新版本的韌體8.70才能SANtricity 使用Grid Manager存取《系統管理程式》。
+NOTE: 您必須擁有SANtricity 更新版本的韌體8.70（11.7）或更新版本、SANtricity 才能使用Grid Manager存取《系統管理程式》。
 
 E系列AutoSupport 的資訊包含儲存硬體的詳細資料、比AutoSupport 其他由該系統傳送的資訊更具體StorageGRID 。
 

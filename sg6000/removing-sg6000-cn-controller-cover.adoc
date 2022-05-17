@@ -21,7 +21,7 @@ xref:removing-sg6000-cn-controller-from-cabinet-or-rack.adoc[從機櫃或機架�
 . 請確定SG6000-CN-控制器護蓋栓鎖未鎖定。如有必要、請將藍色的塑膠栓鎖鎖朝解除鎖定方向轉動四分之一圈、如鎖銷鎖上所示。
 . 將栓鎖朝SG6000-CN-控制器機箱的背面向上和向後旋轉、直到卡住為止、然後小心地從機箱中提起機箱蓋、並將其放在一邊。
 +
-image::../media/sg6060_cover_latch_open.jpg[SG6060護蓋栓鎖開啟]
+image::../media/sg6060_cover_latch_open.jpg[SG6060和SG6060X護蓋栓已開啟]
 
 +
 

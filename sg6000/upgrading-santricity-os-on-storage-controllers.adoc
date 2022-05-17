@@ -30,6 +30,6 @@ IMPORTANT: 升級SANtricity 儲存應用裝置的支援功能時、您必須遵�
 
 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]
 
-https://mysupport.netapp.com/site/products/all/details/eseries-santricityos/downloads-tab["NetApp下載：SANtricity 支援"^]
+https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下載：StorageGRID NetApp產品"^]
 
 xref:../monitor/index.adoc[監控及疑難排解]

@@ -21,7 +21,7 @@ summary: 您可能需要存取SANtricity 儲存控制器上的「靜態系統管
 
 
 
-NOTE: 您必須擁有SANtricity 更新版本的韌體8.70或更新版本、SANtricity 才能使用Grid Manager或StorageGRID NetApp設備安裝程式來存取《更新版》。您可以使用StorageGRID 《支援》*《支援*》>*《關於*》來檢查韌體版本。
+NOTE: 您必須擁有SANtricity 更新版本的韌體8.70（11.70）才能SANtricity 使用Grid Manager或StorageGRID 更新版本的應用程式來存取「系統管理程式」。您可以使用StorageGRID 《支援》*《支援*》>*《關於*》來檢查韌體版本。
 
 
 IMPORTANT: 從SANtricity Grid Manager或應用裝置安裝程式存取「支援系統管理程式」、通常只能用來監控硬體及設定E系列AutoSupport 支援。許多功能和操作SANtricity 都不適用於監控StorageGRID 您的產品。為避免發生問題、請務必遵循設備的硬體安裝與維護指示。
@@ -64,18 +64,13 @@ http://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E系列系統文�
 
 
 .步驟
-. 執行下列其中一項：
-+
-** 使用StorageGRID 《Suse安裝程式》、然後選取*進階*>* SANtricity 《系統管理員*》
-** 使用Grid Manager（網格管理器）並選擇* nodes *>"*應用裝置儲存節點_*>* SANtricity 《系統管理程式》*
+. 使用StorageGRID 《Suse安裝程式》、然後選取*進階*>* SANtricity 《系統管理員*》
 +
 
-NOTE: 如果這些選項無法使用、或登入頁面未出現、您必須使用儲存控制器的IP位址。瀏覽至儲存控制器IP：SANtricity +`* https://_Storage_Controller_IP_*`、即可存取「靜態系統管理程式」
+NOTE: 如果StorageGRID 無法使用此功能、或登入頁面未出現、您必須使用儲存控制器的IP位址。瀏覽至儲存控制器IP：SANtricity +`* https://_Storage_Controller_IP_*`、即可存取「靜態系統管理程式」
 
 +
 畫面會出現「系統管理程式」的登入頁面SANtricity 。
-
-
 
 . 設定或輸入管理員密碼。
 +

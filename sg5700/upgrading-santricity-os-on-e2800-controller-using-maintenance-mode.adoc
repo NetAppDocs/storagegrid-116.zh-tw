@@ -15,10 +15,7 @@ summary: 若儲存控制器目前使用SANtricity 的是08.42.20.00之前的版�
 
 .您需要的是 #8217 ；需要的是什麼
 * 您已諮詢NetApp互通性對照表工具IMT （NetApp Interoperability Matrix Tool、簡稱「參考資訊」）、確認SANtricity 您用於升級的作業系統版本與您的應用裝置相容。
-* 您必須將E5700SG控制器置於維護模式、以中斷與E2800控制器的連線。
-+
-xref:placing-appliance-into-maintenance-mode.adoc[將應用裝置置於維護模式]
-
+* 您必須將E5700SG控制器放入 xref:placing-appliance-into-maintenance-mode.adoc[維護模式]中斷與E2800控制器的連線。
 +
 
 NOTE: 在極少數情況StorageGRID 下、將某個應用程式置於維護模式可能會使應用裝置無法遠端存取。
@@ -31,6 +28,7 @@ NOTE: 在極少數情況StorageGRID 下、將某個應用程式置於維護模�
 IMPORTANT: 視StorageGRID 部署模式和ILM原則而定、一次升級多個不適用的應用裝置可能會導致資料無法使用。
 
 .步驟
+. 確認產品已裝入 xref:placing-appliance-into-maintenance-mode.adoc[維護模式]。
 . 從服務型筆記型電腦存取SANtricity 「NetApp系統管理程式」並登入。
 . 將全新SANtricity 的SKETOS軟體檔案和NVSRAM/檔案下載到管理用戶端。
 +

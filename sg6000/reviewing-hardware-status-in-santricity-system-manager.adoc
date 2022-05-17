@@ -21,7 +21,7 @@ summary: 您可以使用SANtricity 「支援系統管理程式」來監控及管
 
 
 
-NOTE: 您必須擁有SANtricity 更新版本的韌體8.70或更新版本、SANtricity 才能使用Grid Manager或StorageGRID NetApp設備安裝程式來存取《更新版》。
+NOTE: 您必須擁有SANtricity 更新版本的韌體8.70（11.70）才能SANtricity 使用Grid Manager或StorageGRID 更新版本的應用程式來存取「系統管理程式」。
 
 
 IMPORTANT: 從SANtricity Grid Manager或應用裝置安裝程式存取「支援系統管理程式」、通常只能用來監控硬體及設定E系列AutoSupport 支援。許多功能和操作SANtricity 都不適用於監控StorageGRID 您的產品。為避免發生問題、請務必遵循設備的硬體安裝與維護指示。

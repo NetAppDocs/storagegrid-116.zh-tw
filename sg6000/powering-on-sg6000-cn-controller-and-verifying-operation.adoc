@@ -29,7 +29,7 @@ xref:locating-controller-in-data-center.adoc[在資料中心找到控制器]
 +
 ** 按下控制器正面的電源開關。
 +
-image::../media/sg6060_front_panel_power_led_off.jpg[SG6060前面板電源LED -關閉]
+image::../media/sg6060_front_panel_power_led_off.jpg[SG6060和SG6060X前面板電源LED -關閉]
 
 ** 使用控制器BMC介面：
 +

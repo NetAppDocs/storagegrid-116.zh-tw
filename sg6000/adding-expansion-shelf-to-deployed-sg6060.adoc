@@ -11,7 +11,7 @@ summary: 若要增加儲存容量、您可以將一或兩個擴充櫃新增至�
 
 
 [role="lead"]
-若要增加儲存容量、您可以將一或兩個擴充櫃新增至已部署StorageGRID 於整個系統的SG6060。
+若要增加儲存容量、您可以將一個或兩個擴充櫃新增至已部署StorageGRID 於某個系統的SG6060或SG6060X。
 
 .您需要的是 #8217 ；需要的是什麼
 * 您必須擁有資源配置通關密碼。
@@ -26,27 +26,31 @@ xref:locating-controller-in-data-center.adoc[在資料中心找到控制器]
 若要新增擴充櫃、請執行下列高階步驟：
 
 * 在機櫃或機架中安裝硬體。
-* 將SG6060置於維護模式。
+* 將SG6060或SG6060X置於維護模式。
 * 將擴充櫃連接至E2860控制器機櫃或其他擴充櫃。
 * 使用StorageGRID 《不再使用的應用程式安裝程式」開始擴充
 * 請等待新的磁碟區完成設定。
 
 
-完成一或兩個擴充磁碟櫃的程序、每個應用裝置節點所需的時間應少於一小時。為將停機時間減至最低、下列步驟會指示您在將SG6060置於維護模式之前、先安裝新的擴充櫃和磁碟機。每個應用裝置節點的其餘步驟約需20至30分鐘。
+完成一或兩個擴充磁碟櫃的程序、每個應用裝置節點所需的時間應少於一小時。為將停機時間減至最低、下列步驟會指示您在將SG6060或SG6060X置於維護模式之前、先安裝新的擴充櫃和磁碟機。每個應用裝置節點的其餘步驟約需20至30分鐘。
 
 .步驟
 . 請依照指示將60個磁碟機櫃安裝到機櫃或機架中。
 +
-xref:sg6060-installing-60-drive-shelves-into-cabinet-or-rack.adoc[SG6060：將60個磁碟機櫃安裝到機櫃或機架中]
+xref:sg6060-installing-60-drive-shelves-into-cabinet-or-rack.adoc[SG6060和SG6060X：將60個磁碟機櫃安裝到機櫃或機架中]
 
 . 請依照指示安裝磁碟機。
 +
-xref:sg6060-installing-drives.adoc[SG6060：安裝磁碟機]
+xref:sg6060-installing-drives.adoc[SG6060和SG6060X：安裝磁碟機]
 
 . 從Grid Manager、 xref:placing-appliance-into-maintenance-mode.adoc[將SG6000-CN-控制器置於維護模式]。
 . 如圖所示、將每個擴充櫃連接至E2860控制器機櫃。
 +
 此圖顯示兩個擴充櫃。如果您只有一個、請將IOM A連接至控制器A、然後將IOM B連接至控制器B
+
++
+
+NOTE: 顯示SG6060。SG6060X的擴充纜線完全相同。
 
 +
 image::../media/expansion_shelves_connections_sg6060.png[SG6060擴充櫃連線]
@@ -208,10 +212,10 @@ image::../media/appliance_installer_reboot_complete.png[重新開機完成]
 
 
 
-xref:unpacking-boxes-sg6000.adoc[打開包裝箱（SG6000）]
+xref:unpacking-boxes-sg6000.adoc[打開包裝箱（SG6000和SG6060X）]
 
-xref:sg6060-installing-60-drive-shelves-into-cabinet-or-rack.adoc[SG6060：將60個磁碟機櫃安裝到機櫃或機架中]
+xref:sg6060-installing-60-drive-shelves-into-cabinet-or-rack.adoc[SG6060和SG6060X：將60個磁碟機櫃安裝到機櫃或機架中]
 
-xref:sg6060-installing-drives.adoc[SG6060：安裝磁碟機]
+xref:sg6060-installing-drives.adoc[SG6060和SG6060X：安裝磁碟機]
 
 xref:../monitor/index.adoc[監控及疑難排解]

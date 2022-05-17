@@ -1,10 +1,10 @@
 ---
-permalink: sg5700/index.html 
+permalink: sg5700/storagegrid-appliance-overview.html 
 sidebar: sidebar 
 keywords: storagegrid, sg5700, storage node, storage appliance, overview, models, features 
 summary: SG5700 StorageGRID 產品是整合式儲存與運算平台、可在StorageGRID 整個網格中作為儲存節點運作。此應用裝置可用於結合應用裝置儲存節點和虛擬（軟體型）儲存節點的混合式網格環境。 
 ---
-= SG5700應用裝置：總覽
+= SSG5700應用裝置總覽StorageGRID
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -13,23 +13,30 @@ summary: SG5700 StorageGRID 產品是整合式儲存與運算平台、可在Stor
 [role="lead"]
 SG5700 StorageGRID 產品是整合式儲存與運算平台、可在StorageGRID 整個網格中作為儲存節點運作。此應用裝置可在混合式網格環境中使用、此環境結合了應用裝置儲存節點和虛擬（軟體型）儲存節點。
 
-《SSG5700應用裝置：StorageGRID
+SSG5700系列應用裝置提供下列功能：StorageGRID
 
-* 整合StorageGRID 了適用於整個過程的儲存與運算元素。
-* 包含StorageGRID 旨在簡化儲存節點部署與組態的《不再》應用裝置安裝程式。
+* 整合StorageGRID 適用於整個過程的儲存與運算元素。
+* 包含StorageGRID 用來簡化儲存節點部署和組態的《不再》應用裝置安裝程式。
 * 包含E系列SANtricity 的《支援硬體管理與監控的系統管理程式》。
 * 支援最多四個10-GbE或25-GbE連線至StorageGRID 「支援網格網」和「用戶端網路」。
 * 支援完整磁碟加密（FDE）磁碟機或聯邦資訊處理標準（FIPS）磁碟機。當這些磁碟機搭配SANtricity 使用時、無法在未經授權的情況下存取資料。
 
 
-SG5700應用裝置提供兩種機型：SG5712和SG5760。這兩種機型均包含下列元件：
+SG5700應用裝置共有四種機型：SG5712和SG5712X、以及SG5760和SG5760X。除了儲存控制器上互連連接埠的位置、SG5712與SG5712X之間沒有任何規格或功能差異。同樣地、除了儲存控制器上互連連接埠的位置、SG5712與SG5712X之間也沒有規格或功能差異。
 
+這些機型包括下列元件：
+
+[cols="1a,2a,3a,4a,5a"]
 |===
-| 元件 | SG5712 | SG5760 
+| 元件 | SG5712 | SG5712X | SG5760 | SG5760X 
 
 
  a| 
 運算控制器
+ a| 
+E5700SG控制器
+ a| 
+E5700SG控制器
  a| 
 E5700SG控制器
  a| 
@@ -40,9 +47,13 @@ E5700SG控制器
  a| 
 儲存控制器
  a| 
-E系列E2800控制器
+E2800A控制器
  a| 
-E系列E2800控制器
+E2800B控制器
+ a| 
+E2800A控制器
+ a| 
+E2800B控制器
 
 
 
@@ -50,6 +61,10 @@ E系列E2800控制器
 機箱
  a| 
 E系列DE212C機箱、雙機架單元（2U）機箱
+ a| 
+E系列DE212C機箱、雙機架單元（2U）機箱
+ a| 
+E系列DE460C機箱、四個機架單元（4U）機箱
  a| 
 E系列DE460C機箱、四個機架單元（4U）機箱
 
@@ -60,6 +75,10 @@ E系列DE460C機箱、四個機架單元（4U）機箱
  a| 
 12個NL-SAS磁碟機（3.5吋）
  a| 
+12個NL-SAS磁碟機（3.5吋）
+ a| 
+60個NL-SAS磁碟機（3.5吋）
+ a| 
 60個NL-SAS磁碟機（3.5吋）
 
 
@@ -69,6 +88,10 @@ E系列DE460C機箱、四個機架單元（4U）機箱
  a| 
 兩個電源風扇迴廊
  a| 
+兩個電源風扇迴廊
+ a| 
+兩個電源容器和兩個風扇容器
+ a| 
 兩個電源容器和兩個風扇容器
 
 |===
@@ -76,16 +99,21 @@ E系列DE460C機箱、四個機架單元（4U）機箱
 
 
 
-== 型號SG5712
+== 型號SG5712與5712X
 
-本圖顯示SG5712機型的正面和背面、這是2U機箱、可容納12個磁碟機。
+圖中顯示SG5712和SG5712X機型的正面和背面、這是2U機箱、可容納12個磁碟機。
+
+* SG5712前後視圖*
 
 image::../media/sg5712_front_and_back_views.gif[SG5712應用裝置的正面和背面]
 
 SG5712包含兩個控制器和兩個電源風扇迴管。
 
+* SG5712元件*
+
 image::../media/sg5712_with_callouts.gif[SG5712應用裝置中的控制器和電源風扇容器]
 
+[cols="1a,2a"]
 |===
 | 標註 | 說明 
 
@@ -93,7 +121,42 @@ image::../media/sg5712_with_callouts.gif[SG5712應用裝置中的控制器和電
  a| 
 1.
  a| 
-E2800控制器（儲存控制器）
+E2800A控制器（儲存控制器）
+
+
+
+ a| 
+2.
+ a| 
+E5700SG控制器（運算控制器）
+
+
+
+ a| 
+3.
+ a| 
+電源風扇迴道
+
+|===
+* SG5712X前後視圖*
+
+image::../media/sg5712x_front_and_back_views.gif[SG5712X應用裝置的正面和背面]
+
+SG5712X包含兩個控制器和兩個電源風扇迴管。
+
+* SG5712X元件*
+
+image::../media/sg5712x_with_callouts.gif[SG5712X應用裝置中的控制器和電源風扇容器]
+
+[cols="1a,2a"]
+|===
+| 標註 | 說明 
+
+
+ a| 
+1.
+ a| 
+E2800B控制器（儲存控制器）
 
 
 
@@ -112,16 +175,21 @@ E5700SG控制器（運算控制器）
 |===
 
 
-== 型號SG5760
+== 型號SG5760和SG5760X
 
-此圖顯示SG5760機型的正面和背面、4U機箱可容納5個磁碟機抽取盒中的60個磁碟機。
+圖中顯示SG5760和SG5760X機型的正面和背面、4U機箱可容納5個磁碟機抽取器中的60個磁碟機。
+
+* SG5760前後視圖*
 
 image::../media/sg5760_front_and_back_views.gif[SG5760應用裝置的正面和背面]
 
 SG5760包含兩個控制器、兩個風扇迴管和兩個電源迴管。
 
+* SG5760元件*
+
 image::../media/sg5760_with_callouts.gif[控制器,fan canisters,and power canisters in SG5760 appliance]
 
+[cols="1a,2a"]
 |===
 | 標註 | 說明 
 
@@ -129,7 +197,49 @@ image::../media/sg5760_with_callouts.gif[控制器,fan canisters,and power canis
  a| 
 1.
  a| 
-E2800控制器（儲存控制器）
+E2800A控制器（儲存控制器）
+
+
+
+ a| 
+2.
+ a| 
+E5700SG控制器（運算控制器）
+
+
+
+ a| 
+3.
+ a| 
+風扇容器（第1個、共2個）
+
+
+
+ a| 
+4.
+ a| 
+電力箱（第1頁、共2頁）
+
+|===
+* SG5760X前後視圖*
+
+image::../media/sg5760x_front_and_back_views.gif[SG5760X應用裝置的正面和背面]
+
+SG5760S包含兩個控制器、兩個風扇迴管和兩個電源迴管。
+
+* SG5760X元件*
+
+image::../media/sg5760x_with_callouts.gif[控制器,fan canisters,and power canisters in SG5760X appliance]
+
+[cols="1a,2a"]
+|===
+| 標註 | 說明 
+
+
+ a| 
+1.
+ a| 
+E2800B控制器（儲存控制器）
 
 
 

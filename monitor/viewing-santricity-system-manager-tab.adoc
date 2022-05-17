@@ -30,7 +30,7 @@ xref:../admin/index.adoc[管理StorageGRID]
 若要SANtricity 透過Grid Manager存取「更新系統管理程式」、您必須擁有Storage Appliance管理員權限或「根存取權限」。
 
 
-NOTE: 您必須擁有SANtricity 更新版本的韌體8.70才能SANtricity 使用Grid Manager存取《系統管理程式》。
+NOTE: 您必須擁有SANtricity 更新版本的韌體8.70（11.70）或更新版本、SANtricity 才能使用Grid Manager存取《系統管理程式》。
 
 
 IMPORTANT: 從SANtricity Grid Manager存取「支援系統管理程式」通常只是為了監控應用裝置硬體、以及設定E系列AutoSupport 的功能。許多功能和操作SANtricity 都不適用於監控StorageGRID 您的產品。為避免發生問題、請務必遵循設備的硬體安裝與維護指示。

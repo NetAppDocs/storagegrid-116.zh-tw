@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg6000, storage node, storage appliance, drives, drive, disk, disks, install, installing, installation 
 summary: 將60個磁碟機櫃安裝到機櫃或機架之後、您必須將所有60個磁碟機安裝到機櫃中。E2860控制器機櫃的出貨內含兩個SSD磁碟機、您應該將其安裝在控制器機櫃的頂端抽屜中。每個選購的擴充櫃均包含60個HDD磁碟機、不含SSD磁碟機。 
 ---
-= SG6060：安裝磁碟機
+= SG6060和SG6060X：安裝磁碟機
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

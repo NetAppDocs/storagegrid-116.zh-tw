@@ -29,7 +29,7 @@ NOTE: 此程序會自動將NVSRAM升級 至SANtricity 與更新版有關的最�
 請務必為SANtricity 儲存控制器選擇適用的作業系統版本。
 
 +
-https://mysupport.netapp.com/site/products/all/details/eseries-santricityos/downloads-tab["NetApp下載：SANtricity 支援"^]
+https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下載：StorageGRID NetApp產品"^]
 
 . 選擇*維護*>*系統*>*軟體更新*。
 +

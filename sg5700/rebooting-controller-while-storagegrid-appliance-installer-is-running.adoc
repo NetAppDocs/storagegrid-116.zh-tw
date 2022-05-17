@@ -24,7 +24,7 @@ summary: 您可能需要在StorageGRID 執行《不知為何應用程式安裝�
 image::../media/reboot_controller_from_maintenance_mode.png[以維護模式重新啟動控制器]
 
 +
-SG6000-CN-控制器重新開機。
+控制器重新開機。
 
 
 

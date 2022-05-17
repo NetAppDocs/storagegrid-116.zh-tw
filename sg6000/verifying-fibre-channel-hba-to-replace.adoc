@@ -34,7 +34,7 @@ image::../media/nodes_page_hardware_tab_for_appliance_verify_HBA.png[適用於Fi
 
 +
 ** 如果StorageGRID 「無法」顯示「畫面不顯示」區段、則所選的節點不是StorageGRID 「畫面不顯示」應用程式。從樹狀檢視中選取不同的節點。
-** 如果設備機型不是SG6060、請從樹狀檢視中選取不同的節點。
+** 如果設備機型不是SG6060或SG6060X、請從樹狀檢視中選取不同的節點。
 ** 如果序號不相符、請從樹狀檢視中選取不同的節點。
 
 

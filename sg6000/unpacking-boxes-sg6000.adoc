@@ -15,7 +15,7 @@ summary: 安裝StorageGRID 此產品之前、請先打開所有包裝箱的包�
 
 
 
-== SG6060
+== SG6060與SG6060X
 
 * * SG6000-CN*控制器
 +
@@ -49,7 +49,7 @@ image::../media/back_brackets_table_size.gif[SG5760的背板和鎖緊螺帽]
 
 
 
-== SG6060擴充櫃
+== SG6060與SG6060X擴充櫃
 
 * *未安裝磁碟機的擴充櫃*
 +
@@ -126,7 +126,7 @@ image::../media/fc_cable_and_sfp.gif[光纖纜線與SFP]
 +
 四個SFP+收發器、支援16Gb/s FC
 
-* *選購：兩條SAS纜線、用於連接每個SG6060擴充櫃*
+* *選購：兩條SAS纜線、用於連接每個SG6060或SG6060X擴充櫃*
 +
 image::../media/sas_cable.gif[SAS纜線]
 

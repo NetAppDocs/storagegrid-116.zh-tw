@@ -11,7 +11,15 @@ summary: SG5712和SG5760 StorageGRID 機型的《》產品均包含E5700SG控制
 
 
 [role="lead"]
-SG5712和SG5760 StorageGRID 機型的《》產品均包含E5700SG控制器和E2800控制器。您應該檢閱圖表、瞭解控制器之間的差異。
+12個磁碟機的SG5712和SG5712X、以及60個磁碟機的SG5760和SG5760X機型StorageGRID 、均包含E5700SG運算控制器和E系列E2800儲存控制器。
+
+* SG5712和SG5760使用E2800A控制器。
+* SG5712X和SG5760X使用E2800B控制器。
++
+ The E2800A and E2800B controllers are identical in specification and function except for the location of the interconnect ports.
+
+
+您應該檢閱圖表、瞭解控制器之間的差異。
 
 
 
@@ -108,7 +116,11 @@ image::../media/e5700sg_controller_with_callouts.gif[E5700SG控制器上的連�
 |===
 
 
-== E2800控制器
+== E2800系列儲存控制器
+
+SG5700設備使用兩種版本的E2800儲存控制器：E2800A和E2800B。E2800A沒有HIC、E2800B則有四埠HIC。除了互連連接埠的位置之外、兩個控制器版本的規格和功能完全相同。
+
+E2800系列儲存控制器規格如下：
 
 * 作為應用裝置的儲存控制器運作。
 * 管理磁碟機上的資料儲存。
@@ -118,9 +130,15 @@ image::../media/e5700sg_controller_with_callouts.gif[E5700SG控制器上的連�
 * 連接至E5700SG控制器、並以目標方式運作。
 
 
-此圖顯示E2800控制器背面的連接器。
+下圖顯示E2800A和E2800B控制器背面的連接器。
 
-image::../media/e2800_controller_with_callouts.gif[E2800控制器上的連接器]
+* E2800A*背面的連接器
+
+image::../media/e2800_controller_with_callouts.gif[E2800A控制器上的連接器]
+
+* E2800B*背面的連接器
+
+image::../media/e2800B_controller_with_callouts.gif[E2800B控制器上的連接器]
 
 |===
 |  | 連接埠 | 類型 | 使用 
@@ -180,6 +198,6 @@ image::../media/e2800_controller_with_callouts.gif[E2800控制器上的連接器
  a| 
 12Gb/s SAS
  a| 
-未使用。不支援擴充磁碟機櫃的產品。StorageGRID
+未使用。
 
 |===

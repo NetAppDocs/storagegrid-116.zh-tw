@@ -15,13 +15,10 @@ summary: 若儲存控制器目前使用SANtricity 的是08.42.20.00之前的版�
 
 .您需要的是 #8217 ；需要的是什麼
 * 您已諮詢NetApp互通性對照表工具IMT （NetApp Interoperability Matrix Tool、簡稱「參考資訊」）、確認SANtricity 您用於升級的作業系統版本與您的應用裝置相容。
-* 如果StorageGRID 該產品是在StorageGRID 一個不支援的系統中執行、則SG6000-CN-控制器已進入維護模式。
+* 如果StorageGRID 該產品是在StorageGRID 一個不完善的系統中執行、則SG6000-CN.控制器已經存在 xref:placing-appliance-into-maintenance-mode.adoc[進入維護模式]。
 +
 
 NOTE: 維護模式會中斷與儲存控制器的連線。
-
-+
-xref:placing-appliance-into-maintenance-mode.adoc[將應用裝置置於維護模式]
 
 
 
@@ -31,6 +28,7 @@ xref:placing-appliance-into-maintenance-mode.adoc[將應用裝置置於維護模
 IMPORTANT: 視StorageGRID 部署模式和ILM原則而定、一次升級多個不適用的應用裝置可能會導致資料無法使用。
 
 .步驟
+. 確認產品已裝入 xref:placing-appliance-into-maintenance-mode.adoc[維護模式]。
 . 從服務型筆記型電腦存取SANtricity 「NetApp系統管理程式」並登入。
 . 將全新SANtricity 的SKETOS軟體檔案和NVSRAM/檔案下載到管理用戶端。
 +

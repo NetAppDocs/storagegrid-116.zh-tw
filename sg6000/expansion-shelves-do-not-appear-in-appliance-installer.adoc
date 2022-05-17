@@ -2,7 +2,7 @@
 permalink: sg6000/expansion-shelves-do-not-appear-in-appliance-installer.html 
 sidebar: sidebar 
 keywords: storagegrid, sg6000, storage node, storage appliance troubleshooting, Expansion, shelves, do not appear, Appliance Installer, missing, not shown 
-summary: 如果您已安裝SG6060的擴充櫃、但StorageGRID 未出現在《Some應用程式安裝程式」中、您應該確認磁碟櫃已完全安裝並開啟電源。 
+summary: 如果您已安裝SG6060或SG6060X的擴充櫃、但StorageGRID 它們並未出現在《支援中心安裝程式（NetApp Appliance Installer）」中、您應該確認磁碟櫃已完全安裝並開啟電源。 
 ---
 = 應用裝置安裝程式不會顯示擴充櫃
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 如果您已安裝SG6060的擴充櫃、但StorageGRID 未出現在《So
 
 
 [role="lead"]
-如果您已安裝SG6060的擴充櫃、但StorageGRID 未出現在《Some應用程式安裝程式」中、您應該確認磁碟櫃已完全安裝並開啟電源。
+如果您已安裝SG6060或SG6060X的擴充櫃、但StorageGRID 它們並未出現在《支援中心安裝程式（NetApp Appliance Installer）」中、您應該確認磁碟櫃已完全安裝並開啟電源。
 
 您可以在StorageGRID 《NetApp應用裝置安裝程式：
 

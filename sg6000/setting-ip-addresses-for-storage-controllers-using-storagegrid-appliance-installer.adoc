@@ -2,7 +2,7 @@
 permalink: sg6000/setting-ip-addresses-for-storage-controllers-using-storagegrid-appliance-installer.html 
 sidebar: sidebar 
 keywords: storagegrid, sg6000, storage node, storage appliance, storage controller, controller, configure, setup, set up, IP, IP address, management port, Appliance Installer 
-summary: 每個儲存控制器上的管理連接埠1會將應用裝置連線至管理網路、以利SANtricity 執行《系統管理程式》。如果SANtricity 您無法從StorageGRID 《E靜止 應用裝置安裝程式》存取《更新系統管理程式》、則必須為每個儲存控制器設定靜態IP位址、以確保您不會失去與控制器機櫃中硬體和控制器韌體的管理連線。 
+summary: 每個儲存控制器上的管理連接埠1會將應用裝置連線至管理網路、以利SANtricity 執行《系統管理程式》。如果SANtricity 您無法從StorageGRID 《不穩定設備安裝程式》存取《不穩定系統管理程式》、您必須為每個儲存控制器設定靜態IP位址、以確保您不會失去與控制器機櫃中硬體和控制器韌體的管理連線。 
 ---
 = 使用StorageGRID 一套解決方法安裝程式來設定儲存控制器的IP位址
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 每個儲存控制器上的管理連接埠1會將應用裝置連線至�
 
 
 [role="lead"]
-每個儲存控制器上的管理連接埠1會將應用裝置連線至管理網路、以利SANtricity 執行《系統管理程式》。如果SANtricity 您無法從StorageGRID 《E靜止 應用裝置安裝程式》存取《更新系統管理程式》、則必須為每個儲存控制器設定靜態IP位址、以確保您不會失去與控制器機櫃中硬體和控制器韌體的管理連線。
+每個儲存控制器上的管理連接埠1會將應用裝置連線至管理網路、以利SANtricity 執行《系統管理程式》。如果SANtricity 您無法從StorageGRID 《不穩定設備安裝程式》存取《不穩定系統管理程式》、您必須為每個儲存控制器設定靜態IP位址、以確保您不會失去與控制器機櫃中硬體和控制器韌體的管理連線。
 
 .您需要的是 #8217 ；需要的是什麼
 * 您正在使用任何可連線StorageGRID 至「管理員網路」的管理用戶端、或是您有一台服務用筆記型電腦。
