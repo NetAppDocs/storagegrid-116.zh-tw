@@ -1,5 +1,5 @@
 ---
-permalink: sg5700/storagegrid-appliance-overview.html 
+permalink: sg5700/index.html 
 sidebar: sidebar 
 keywords: storagegrid, sg5700, storage node, storage appliance, overview, models, features 
 summary: SG5700 StorageGRID 產品是整合式儲存與運算平台、可在StorageGRID 整個網格中作為儲存節點運作。此應用裝置可用於結合應用裝置儲存節點和虛擬（軟體型）儲存節點的混合式網格環境。 

@@ -6,7 +6,7 @@ entries:
   pdf-filename: SSG6000儲存設備StorageGRID
   url: "/sg6000/index.html"
   entries:
-  - title: SG6060總覽
+  - title: SG6060與SG6060X總覽
     url: "/sg6000/sg6060-overview.html"
   - title: SGF6024總覽
     url: "/sg6000/sgf6024-overview.html"
