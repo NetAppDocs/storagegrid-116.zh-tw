@@ -23,9 +23,9 @@ summary: 您必須瞭解StorageGRID 虛擬機器所託管之VMware節點的儲�
 
 
 
-== 使用NetApp AFF 功能儲存設備的虛擬機器需求
+== 使用NetApp ONTAP 功能儲存設備的虛擬機器需求
 
-如果您將StorageGRID 一個節點部署為儲存設備已從NetApp AFF 支援系統指派的虛擬機器、您已確認該磁碟區FabricPool 並未啟用「分層原則」。例如、如果StorageGRID 某個節點是以虛擬機器的形式在VMware主機上執行、請確保用於該節點之資料存放區的磁碟區FabricPool 未啟用「還原」原則。停用FabricPool 與物件節點搭配使用的磁碟區的分層StorageGRID 功能、可簡化疑難排解和儲存作業。
+如果您將StorageGRID 一個節點部署為儲存設備已從NetApp ONTAP 支援系統指派的虛擬機器、您已確認該磁碟區FabricPool 並未啟用「分層原則」。例如、如果StorageGRID 某個節點是以虛擬機器的形式在VMware主機上執行、請確保用於該節點之資料存放區的磁碟區FabricPool 未啟用「還原」原則。停用FabricPool 與物件節點搭配使用的磁碟區的分層StorageGRID 功能、可簡化疑難排解和儲存作業。
 
 
 IMPORTANT: 切勿使用FabricPool 無法將StorageGRID 任何與還原StorageGRID 本身相關的資料分層。將StorageGRID 資料分層還原StorageGRID 至物件、可增加疑難排解和作業複雜度。

@@ -32,7 +32,7 @@ IMPORTANT: 完成StorageGRID 安裝說明中的「Install the支援服務」工�
 
 * 請務必使用與原始主機相同的主機介面名稱。
 * 如果您使用共享儲存設備來支援StorageGRID 您的支援節點、或是將故障的部分或全部磁碟機或SSD移至替換節點、則必須重新建立原始主機上的相同儲存對應。例如、如果您依照安裝說明的建議、在「/etc/multipath.conf」中使用WWID和別名、請務必在替換主機上的「/etc/multipath.conf」中使用相同的別名/ WWID配對。
-* 如果StorageGRID 此節點使用從NetApp AFF 支援系統指派的儲存設備、請確認該磁碟區FabricPool 並未啟用分層原則。停用FabricPool 與物件節點搭配使用的磁碟區的分層StorageGRID 功能、可簡化疑難排解和儲存作業。
+* 如果StorageGRID 此節點使用從NetApp ONTAP 支援系統指派的儲存設備、請確認該磁碟區FabricPool 並未啟用分層原則。停用FabricPool 與物件節點搭配使用的磁碟區的分層StorageGRID 功能、可簡化疑難排解和儲存作業。
 +
 
 IMPORTANT: 切勿使用FabricPool 無法將StorageGRID 任何與還原StorageGRID 本身相關的資料分層。將StorageGRID 資料分層還原StorageGRID 至物件、可增加疑難排解和作業複雜度。

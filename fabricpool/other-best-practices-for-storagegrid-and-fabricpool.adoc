@@ -35,7 +35,7 @@ summary: 設定StorageGRID 搭配FabricPool 使用的功能時、您應該避免
 
 == 分層FabricPool
 
-如果StorageGRID 此節點使用從NetApp AFF 支援系統指派的儲存設備、請確認該磁碟區FabricPool 並未啟用分層原則。例如、如果StorageGRID VMware主機上正在執行某個節點、請確保支援StorageGRID 該節點之資料存放區的磁碟區FabricPool 未啟用「分層原則」。停用FabricPool 與物件節點搭配使用的磁碟區的分層StorageGRID 功能、可簡化疑難排解和儲存作業。
+如果StorageGRID 此節點使用從NetApp ONTAP 支援系統指派的儲存設備、請確認該磁碟區FabricPool 並未啟用分層原則。例如、如果StorageGRID VMware主機上正在執行某個節點、請確保支援StorageGRID 該節點之資料存放區的磁碟區FabricPool 未啟用「分層原則」。停用FabricPool 與物件節點搭配使用的磁碟區的分層StorageGRID 功能、可簡化疑難排解和儲存作業。
 
 
 IMPORTANT: 切勿使用FabricPool 無法將StorageGRID 任何與還原StorageGRID 本身相關的資料分層。將StorageGRID 資料分層還原StorageGRID 至物件、可增加疑難排解和作業複雜度。

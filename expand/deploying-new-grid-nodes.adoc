@@ -48,7 +48,7 @@ summary: 在擴充中部署新網格節點的步驟、與第一次安裝網格�
 
 IMPORTANT: 在正式作業部署中、請勿在單一實體或虛擬主機上執行多個儲存節點。使用每個儲存節點的專屬主機、可提供隔離的故障網域。
 
-* 如果StorageGRID 此節點使用從NetApp AFF 支援系統指派的儲存設備、請確認該磁碟區FabricPool 並未啟用分層原則。停用FabricPool 與物件節點搭配使用的磁碟區的分層StorageGRID 功能、可簡化疑難排解和儲存作業。
+* 如果StorageGRID 此節點使用從NetApp ONTAP 支援系統指派的儲存設備、請確認該磁碟區FabricPool 並未啟用分層原則。停用FabricPool 與物件節點搭配使用的磁碟區的分層StorageGRID 功能、可簡化疑難排解和儲存作業。
 
 
 .步驟

@@ -178,11 +178,17 @@ image::../media/storage_used_object_metadata_actual_reserved.png[使用的儲存
 
 image::../media/metadata_allowed_space_volume_0.png[中繼資料允許空間Volume 0]
 
-下表摘要StorageGRID 說明如何判斷儲存節點允許的中繼資料空間值。
+下表顯示StorageGRID 根據節點的記憶體容量和中繼資料的實際保留空間、如何針對不同的儲存節點計算*允許的中繼資料空間*。
 
 [cols="1a,1a,2a,2a"]
 |===
-|  |  2+| 儲存節點上的記憶體大小 
+
+
+ a| 
+ a| 
+ a| 
+*儲存節點*上的記憶體容量
+
 
 
  a| 
@@ -195,14 +201,7 @@ image::../media/metadata_allowed_space_volume_0.png[中繼資料允許空間Volu
 
 
  a| 
- a| 
- a| 
-允許的中繼資料空間
-
-
-
- a| 
-中繼資料的實際保留空間
+*中繼資料的實際保留空間*
  a| 
 &lt；= 4 TB
  a| 
