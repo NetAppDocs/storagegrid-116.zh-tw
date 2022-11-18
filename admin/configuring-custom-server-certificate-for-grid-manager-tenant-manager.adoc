@@ -27,7 +27,7 @@ NOTE: 為了確保作業不會因為失敗的伺服器憑證而中斷、當此�
 如果您使用網域名稱而非IP位址來存取Grid Manager或Tenant Manager、則瀏覽器會顯示憑證錯誤、且在發生下列任一情況時、不會出現跳過的選項：
 
 * 您的自訂管理介面憑證將過期。
-* 您 <<Restore the default management interface certificate,從自訂管理介面憑證還原為預設伺服器憑證>>。
+* 您  the default management interface certificate,從自訂管理介面憑證還原為預設伺服器憑證。
 
 
 ====

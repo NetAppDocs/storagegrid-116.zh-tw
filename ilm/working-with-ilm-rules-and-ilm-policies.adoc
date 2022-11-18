@@ -78,7 +78,7 @@ image::../media/ilm_rules_page_with_edit_and_clone_enabled.png[ILM規則頁面]
 +
 image::../media/edit_ilm_rule_step_1.png[編輯ILM規則頁面]
 
-. 依照的步驟完成「編輯ILM規則」精靈的頁面 xref:creating-ilm-rule.adoc[建立ILM規則] 和 xref:using-advanced-filters-in-ilm-rules.adoc[使用進階篩選器]（視需要而定）。
+. 依照的步驟完成「編輯ILM規則」精靈的頁面 xref:access-create-ilm-rule-wizard.adoc[建立ILM規則] 和 xref:using-advanced-filters-in-ilm-rules.adoc[使用進階篩選器]（視需要而定）。
 +
 編輯ILM規則時、您無法變更其名稱。
 

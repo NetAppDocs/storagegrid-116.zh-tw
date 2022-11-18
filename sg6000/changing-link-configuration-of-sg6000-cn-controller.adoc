@@ -38,15 +38,15 @@ image::../media/link_configuration_option.gif[連結組態]
 NOTE: 如果您變更所連線的網路或連結、可能會失去連線。如果您在1分鐘內沒有重新連線、StorageGRID 請使用指派給應用裝置的其他IP位址之一、重新輸入該應用裝置的URL：+`* https://_Appliance_Controller_IP_:8443*`
 
 +
-如果您變更了VLAN設定、裝置的子網路可能已經變更。如果您需要變更應用裝置的IP位址、請遵循 xref:configuring-ip-addresses.adoc[設定IP位址] 說明。
+如果您變更了VLAN設定、裝置的子網路可能已經變更。如果您需要變更應用裝置的IP位址、請遵循 xref:../maintain/configuring-ip-addresses.adoc[設定IP位址] 說明。
 
 +
 xref:configuring-storagegrid-ip-addresses-sg6000.adoc[設定StorageGRID 靜態IP位址]
 
 . 從功能表中選取「*組態網路*>* Ping Test*」。
-. 使用Ping測試工具來檢查任何網路上的IP位址連線能力、這些網路可能會受到您在中所做的連結組態變更的影響 <<link_config_changes,連結組態變更>> 步驟。
+. 使用Ping測試工具來檢查任何網路上的IP位址連線能力、這些網路可能會受到您在中所做的連結組態變更的影響 ,連結組態變更 步驟。
 +
-除了您選擇執行的任何其他測試之外、請確認您可以ping通主要管理節點的Grid Network IP位址、以及至少一個其他儲存節點的Grid Network IP位址。如有必要、請返回 <<link_config_changes,連結組態變更>> 步驟並修正任何連結組態問題。
+除了您選擇執行的任何其他測試之外、請確認您可以ping通主要管理節點的Grid Network IP位址、以及至少一個其他儲存節點的Grid Network IP位址。如有必要、請返回 ,連結組態變更 步驟並修正任何連結組態問題。
 
 . 當您確信連結組態變更正常運作、而且節點處於維護模式時、您還有其他程序要執行時、請立即執行。完成後、或是遇到任何故障並想要重新啟動時、請選取*進階*>*重新啟動控制器*、然後選取下列其中一個選項：
 +

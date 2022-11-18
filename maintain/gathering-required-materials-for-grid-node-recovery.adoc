@@ -21,7 +21,7 @@ summary: 在執行維護程序之前、您必須確保擁有必要的資料來�
  a| 
 安裝歸檔StorageGRID
  a| 
-如果您需要恢復網格節點、則需要 <<download-and-extract-install-files-recover,下載StorageGRID 安裝文件>> 適用於您的平台。
+如果您需要恢復網格節點、則需要 ,下載StorageGRID 安裝文件 適用於您的平台。
 
 *附註：*如果您要在儲存節點上恢復故障的儲存磁碟區、則不需要下載檔案。
 

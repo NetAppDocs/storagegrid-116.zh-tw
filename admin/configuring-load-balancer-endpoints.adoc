@@ -153,7 +153,7 @@ image::../media/load_balancer_endpoint_node_interfaces_binding_mode.png[端點�
 +
 image::../media/load_balancer_endpoint_ha_group_vips_binding_mode.png[端點HA群組VIP繫結模式]
 
-. 如果您要建立* HTTP *端點、則不需要附加憑證。選取*「Create」（建立）*以新增負載平衡器端點。然後前往 <<After-you-finish,完成後>>。否則、請選取*繼續*以附加憑證。
+. 如果您要建立* HTTP *端點、則不需要附加憑證。選取*「Create」（建立）*以新增負載平衡器端點。然後前往 ,完成後。否則、請選取*繼續*以附加憑證。
 
 
 

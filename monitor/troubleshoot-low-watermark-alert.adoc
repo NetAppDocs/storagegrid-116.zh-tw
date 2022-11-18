@@ -88,12 +88,12 @@ Volume 3
 +
 image::../media/nodes_page_object_data_used_with_alert.png[節點頁面、顯示3個SnS使用的物件資料]
 
-. 如果所有的儲存節點都未接近完整（例如、所有*使用的物件資料*值都低於80%）、您可以開始使用置換設定。前往 <<Use optimized watermarks>>。
+. 如果所有的儲存節點都未接近完整（例如、所有*使用的物件資料*值都低於80%）、您可以開始使用置換設定。前往  optimized watermarks。
 +
 
-NOTE: 這項一般規則有一些例外情況。例如、如果ILM規則使用嚴格的擷取行為、或是特定的儲存資源池即將滿、您應該先執行中的步驟 <<View optimized storage watermarks>> 和 <<Determine if you can use optimized watermarks>>。
+NOTE: 這項一般規則有一些例外情況。例如、如果ILM規則使用嚴格的擷取行為、或是特定的儲存資源池即將滿、您應該先執行中的步驟  optimized storage watermarks 和  if you can use optimized watermarks。
 
-. 如果再有一個儲存節點接近完整、請執行中的步驟 <<View optimized storage watermarks>> 和 <<Determine if you can use optimized watermarks>>。
+. 如果再有一個儲存節點接近完整、請執行中的步驟  optimized storage watermarks 和  if you can use optimized watermarks。
 
 
 
@@ -133,9 +133,9 @@ NOTE: 這項一般規則有一些例外情況。例如、如果ILM規則使用�
 .. 比較每個物件存放區（Volume）的*可用*值、以及您針對該儲存節點所記錄的最佳化浮水印上限。
 
 
-. 如果每個線上儲存節點上至少有一個磁碟區的可用空間大於該節點的最佳化浮水印上限、請前往 <<Use optimized watermarks>> 開始使用最佳化的浮水印。
+. 如果每個線上儲存節點上至少有一個磁碟區的可用空間大於該節點的最佳化浮水印上限、請前往  optimized watermarks 開始使用最佳化的浮水印。
 +
-否則、 xref:../expand/index.adoc[擴充網格] 越快越好。將儲存磁碟區新增至現有節點、或新增儲存節點。然後前往 <<Use optimized watermarks>> 以更新浮水印設定。
+否則、 xref:../expand/index.adoc[擴充網格] 越快越好。將儲存磁碟區新增至現有節點、或新增儲存節點。然後前往  optimized watermarks 以更新浮水印設定。
 
 . 如果您需要繼續使用儲存Volume浮水印的自訂值、 xref:../monitor/silencing-alert-notifications.adoc[靜音] 或 xref:../monitor/disabling-alert-rules.adoc[停用] *低唯讀浮水印置換*警示。
 +

@@ -135,7 +135,7 @@ NOTE: 當AutoSupport 您在全系統抑制電子郵件通知時、也會抑制�
 
 啟用AutoSupport 此功能時、便會將健全狀況和狀態訊息傳送給NetApp支援部門。您可以為所有AutoSupport 的資訊提供額外的目的地。
 
-若要驗證或變更用來傳送AutoSupport 資訊提示訊息的傳輸協定、請參閱的指示 <<Specify the protocol for AutoSupport messages>>。
+若要驗證或變更用來傳送AutoSupport 資訊提示訊息的傳輸協定、請參閱的指示  the protocol for AutoSupport messages。
 
 
 NOTE: 您無法使用SMTP傳輸協定將AutoSupport 無法傳送的資訊傳送到其他目的地。

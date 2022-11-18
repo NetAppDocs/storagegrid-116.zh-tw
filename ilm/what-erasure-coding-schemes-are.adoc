@@ -23,8 +23,8 @@ summary: 當您為ILM規則設定「刪除編碼」設定檔時、會根據您�
 NOTE: 如果儲存資源池包含兩個站台、則無法設定「刪除編碼」設定檔。
 
 +
-** <<Erasure-coding schemes for storage pools containing three or more sites,包含三個以上站台之儲存資源池的銷毀編碼配置>>
-** <<Erasure-coding schemes for one-site storage pools,單一站台儲存資源池的銷毀編碼配置>>
+**  schemes for storage pools containing three or more sites,包含三個以上站台之儲存資源池的銷毀編碼配置
+**  schemes for one-site storage pools,單一站台儲存資源池的銷毀編碼配置
 
 
 * 請勿使用預設的儲存資源池、所有儲存節點或包含預設站台All站台的儲存資源池。

@@ -93,7 +93,7 @@ Bash Shell指令碼用於自動化虛擬網格節點的部署。
 . 開啟「deploy-vsphere-ovftool.ini`」。
 . 輸入部署VMware虛擬網格節點所需的所有資訊。
 +
-請參閱 xref:configuration-file-settings.adoc[組態檔設定] 以取得資訊。
+請參閱 ,組態檔設定 以取得資訊。
 
 . 輸入並驗證所有必要資訊後、請儲存並關閉檔案。
 

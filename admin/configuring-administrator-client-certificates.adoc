@@ -48,9 +48,9 @@ NOTE: 如果您使用金鑰管理伺服器（KMS）來保護特殊設定應用�
 
 依照案例中的程序新增用戶端憑證：
 
-* <<Management interface certificate already configured>>
-* <<CA issued client certificate>>
-* <<Generated certificate from Grid Manager>>
+*  interface certificate already configured
+*  issued client certificate
+*  certificate from Grid Manager
 
 
 
@@ -220,7 +220,7 @@ IMPORTANT: 關閉對話方塊後、您將無法檢視憑證私密金鑰。將金
 . 在Grid Manager中、選取*組態*>*安全性*>*憑證*、然後選取*全域*索引標籤。
 . 選擇*管理介面認證*。
 . 選擇*使用自訂憑證*。
-. 從上傳認證.pem和Private金鑰.pem檔案 <<client_cert_details,用戶端憑證詳細資料>> 步驟。不需要上傳CA套裝組合。
+. 從上傳認證.pem和Private金鑰.pem檔案 ,用戶端憑證詳細資料 步驟。不需要上傳CA套裝組合。
 +
 .. 選擇*上傳認證*、然後選擇*繼續*。
 .. 上傳每個憑證檔案（`.pem'）。

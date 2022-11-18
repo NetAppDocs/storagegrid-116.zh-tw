@@ -15,7 +15,7 @@ summary: 在開始升級之前、您必須先確認StorageGRID 先前版本的�
 
 在升級StorageGRID 至版本的更新版本之前、您的網格StorageGRID 必須安裝有版本的如果您目前使用StorageGRID 的是舊版的還原、則必須安裝所有先前的升級檔案及其最新的即時修復（強烈建議）、直到網格的目前版本StorageGRID 為還原11.5._x.y_。
 
-中會顯示一個可能的升級路徑 <<Example: Upgrade to StorageGRID 11.5 from version 11.3.0.8,範例>>。
+中會顯示一個可能的升級路徑  Upgrade to StorageGRID 11.5 from version 11.3.0.8,範例。
 
 
 IMPORTANT: NetApp強烈建議您在StorageGRID 升級至下一個版本之前、先為每個版本套用最新的修補程式、並針對您安裝的每個新版本套用最新的修補程式。在某些情況下、您必須套用修補程式、以避免資料遺失的風險。請參閱 https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["NetApp下載StorageGRID"^] 以及每個修補程式的版本資訊、以深入瞭解。

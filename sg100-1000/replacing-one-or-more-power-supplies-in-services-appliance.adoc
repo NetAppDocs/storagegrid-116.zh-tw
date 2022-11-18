@@ -36,7 +36,7 @@ image::../media/sg1000_power_supplies.png[SG100後端配備兩個電源供應器
 NOTE: SG1000的電源供應器完全相同。
 
 .步驟
-. 如果您只要更換一個電源供應器、就不需要關閉產品電源。前往 <<Unplug_the_power_cord,拔下電源線>> 步驟。如果您同時更換兩個電源供應器、請在拔下電源線之前執行下列步驟：
+. 如果您只要更換一個電源供應器、就不需要關閉產品電源。前往 ,拔下電源線 步驟。如果您同時更換兩個電源供應器、請在拔下電源線之前執行下列步驟：
 +
 .. xref:placing-appliance-into-maintenance-mode.adoc[將設備置於維護模式]。
 .. xref:shut-down-sg100-and-sg1000.adoc[關閉產品電源]。

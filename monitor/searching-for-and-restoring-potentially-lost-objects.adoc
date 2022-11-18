@@ -115,7 +115,7 @@ ls '/var/local/rangedb/1/p/17/11/00rH0%DkRs&LgA%#3tN6'
 *附註*：永遠在命令中以單引號括住物件檔案路徑、以轉義任何特殊字元。
 
 * 如果找不到物件路徑、則物件會遺失、無法使用此程序還原。聯絡技術支援。
-* 如果找到物件路徑、請繼續執行步驟 <<restore_the_object_to_StorageGRID,將物件還原StorageGRID 至物件>>。您可以嘗試將找到的物件還原StorageGRID 回原地。
+* 如果找到物件路徑、請繼續執行步驟 ,將物件還原StorageGRID 至物件。您可以嘗試將找到的物件還原StorageGRID 回原地。
 +
 .. [[還原 物件路徑至StorageGRID、start=3]]如果找到物件路徑、請嘗試將物件還原StorageGRID 至下列物件：
 +
@@ -154,7 +154,7 @@ First packet of file was valid. Extracted key: 38186FE53E3C49A5
 Renamed '/var/local/rangedb/1/p/17/11/00rH0%DkRs&LgA%#3tN6' to '/var/local/rangedb/1/p/17/11/00rH0%DkRt78Ila#3udu'
 ----
 +
-繼續執行步驟 <<verify_that_new_locations_were_created,確認已建立新位置>>
+繼續執行步驟 ,確認已建立新位置
 
 +
 ... [[VERIFY_AT_new_locations_wid_已 建立、start=4]]如果物件已成功還原StorageGRID 至物件、請確認已建立新位置。

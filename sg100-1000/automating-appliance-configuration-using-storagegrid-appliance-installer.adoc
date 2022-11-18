@@ -40,7 +40,7 @@ NOTE: 想要自動化設備的安裝與組態的資深使用者、都可以 xref
 . 使用下列其中一項來產生Json檔案：
 +
 ** 。 https://configbuilder.netapp.com/["ConfigBuilder應用程式"^]。
-** 。 xref:automating-installation-configuration-appliance-nodes-configure-sga-py-script.adoc[「configure：SGA.py」應用裝置組態指令碼]。您可以從StorageGRID 《Sing Appliance安裝程式》（*「說明*」>「設備組態指令碼」*）下載指令碼。
+** 。 xref:automating-installation-configuration-appliance-nodes-configure-sga-py-script.adoc[configure-sga.py應用裝置組態指令碼]。您可以從StorageGRID 《支援**設備組態指令碼*》下載指令碼。
 +
 Json檔案中的節點名稱必須符合下列需求：
 

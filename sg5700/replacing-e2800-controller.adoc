@@ -76,7 +76,7 @@ image::../media/e2800B_labels_on_controller.gif[E2800A控制器上的Mac和FRU�
  a| 
 MAC位址
  a| 
-管理連接埠1（「P1」）的MAC位址。如果您使用DHCP取得原始控制器的IP位址、則需要此位址才能連線至新的控制器。
+管理連接埠1的MAC位址（E2800A上的「P1」和E2800B上的0A）。如果您使用DHCP取得原始控制器的IP位址、則需要此位址才能連線至新的控制器。
 
 
 
@@ -266,7 +266,7 @@ E2800B控制器僅使用獨立的HIC。HIC安裝在主控制器板上、包含�
 
 NOTE: 本程序的圖例顯示雙埠HIC。控制器中的HIC可能有不同數量的連接埠。
 
-. 如果控制器沒有HIC（E2800A）、請裝回控制器護蓋。如果控制器有HIC（E2800B）、請繼續執行 <<move_the_HIC_to_the_replacement_controller,將HIC從故障控制器移至更換控制器>>。
+. 如果控制器沒有HIC（E2800A）、請裝回控制器護蓋。如果控制器有HIC（E2800B）、請繼續執行 ,將HIC從故障控制器移至更換控制器。
 +
 .. [[move_the_HIC_to _the_replace_控制 器]]如果配備HIC、請將HIC從故障控制器移至更換控制器。
 .. 從HIC移除任何SFP。

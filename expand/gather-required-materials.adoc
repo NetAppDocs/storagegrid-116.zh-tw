@@ -23,7 +23,7 @@ summary: 在執行擴充作業之前、請先收集相關資料、然後安裝�
  a| 
 如果您要新增網格節點或新網站、則必須下載StorageGRID 並擷取此安裝檔案。您必須使用目前在網格上執行的相同版本。
 
-如需詳細資訊、請參閱的說明 <<download-and-extract-install-files,下載及解壓縮StorageGRID 安裝文件>>。
+如需詳細資訊、請參閱的說明 ,下載及解壓縮StorageGRID 安裝文件。
 
 *附註：*如果您要新增儲存磁碟區至現有的儲存節點、或是安裝新StorageGRID 的功能不需要下載檔案。
 

@@ -27,4 +27,4 @@ NOTE: 您可以使用相同的檔案來設定多個應用裝置。
 
 
 
-NOTE: 您可以StorageGRID 直接使用自動化Python指令碼、也可以將其作為範例、說明如何在StorageGRID 網格部署和自行開發的組態工具中使用「靜態安裝REST API」。請參閱相關資訊 xref:downloading-and-extracting-storagegrid-installation-files.adoc[下載及解壓縮StorageGRID 安裝文件] 在「恢復與維護」說明中。
+NOTE: 您可以StorageGRID 直接使用自動化Python指令碼、也可以將其作為範例、說明如何在StorageGRID 網格部署和自行開發的組態工具中使用「靜態安裝REST API」。請參閱相關資訊 xref:../maintain/gathering-required-materials-for-grid-node-recovery.adoc#download-and-extract-install-files-recover[下載及解壓縮StorageGRID 安裝文件]。

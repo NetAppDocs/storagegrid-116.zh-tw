@@ -42,7 +42,7 @@ CAUTION: 如果有多個儲存節點離線、或是此網格中的儲存節點�
 * 執行「sh-recovery -postinstall.sh」指令碼。執行此指令碼時、會執行下列動作。
 +
 
-IMPORTANT: 在執行「sh-recovery -postinstall.sh」之前、請勿在還原期間重新開機儲存節點（請參閱的步驟） <<post_install_script_step,安裝後指令碼>>）重新格式化故障的儲存磁碟區並還原物件中繼資料。在「sh-recovery -postinstall.sh」完成之前重新啟動儲存節點、會導致嘗試啟動的服務發生錯誤、StorageGRID 並使該應用裝置節點離開維護模式。
+IMPORTANT: 執行前、請勿在恢復期間重新開機儲存節點 `sn-recovery-postinstall.sh` 重新格式化故障儲存磁碟區並還原物件中繼資料。重新啟動儲存節點 `sn-recovery-postinstall.sh` 完成會導致嘗試啟動服務時發生錯誤、並導致StorageGRID 不支援的應用裝置節點離開維護模式。請參閱的步驟 ,安裝後指令碼。
 
 +
 ** 重新格式化無法掛載或被發現格式不正確的任何「n重新掛載磁碟區」指令碼的儲存磁碟區。
@@ -227,7 +227,7 @@ NOTE: 其中包含了ADC服務的儲存節點上有此RSM服務。
 
 NOTE: 部分StorageGRID 還原程序會使用Reaper來處理Cassandra的修復作業。一旦相關或必要的服務開始、系統就會自動進行修復。您可能會注意到指令碼輸出中提到「Shaper」或「Cassandra repair」。 如果您看到指出修復失敗的錯誤訊息、請執行錯誤訊息中指示的命令。
 
-. 當「sh-recovery -postinstall.sh」指令碼執行時、請在Grid Manager中監控「恢復」頁面。
+. [[安裝後指令碼步驟]。做為 `sn-recovery-postinstall.sh` 指令碼會執行、並在Grid Manager中監控「恢復」頁面。
 +
 「恢復」頁面上的進度列和「階段」欄提供「sh-recovery -postinstall.sh」指令碼的高層級狀態。
 

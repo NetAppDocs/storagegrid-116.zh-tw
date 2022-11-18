@@ -141,7 +141,7 @@ NOTE: 僅當*用戶端讀取*或*用戶端寫入*的稽核層級不是*關閉*�
 如果您想要遠端儲存稽核資訊、可以設定外部syslog伺服器。
 
 * 若要將稽核資訊儲存至外部syslog伺服器、請前往 xref:../monitor/configuring-syslog-server.adoc[設定外部syslog伺服器]。
-* 如果您不使用外部syslog伺服器、請前往 <<Select-audit-information-destinations,選取稽核資訊目的地>>。
+* 如果您不使用外部syslog伺服器、請前往 ,選取稽核資訊目的地。
 
 
 

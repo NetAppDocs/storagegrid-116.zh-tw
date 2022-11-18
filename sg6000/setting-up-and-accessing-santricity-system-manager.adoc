@@ -37,7 +37,7 @@ NOTE: 部署節點之後、StorageGRID 您就無法再使用「叢集設備安�
 * 如果您無法使用StorageGRID 「NetApp應用裝置安裝程式」或「Grid Manager」、您可以SANtricity 使用連線至管理連接埠的網頁瀏覽器、直接存取「系統管理程式」。
 
 
-此程序包括初始存取SANtricity 《不適用的系統管理程式》的步驟。如果您已經設定SANtricity 了「不全系統管理程式」、請前往 <<config_hardware_alerts_sg6000,設定硬體警示步驟>>。
+此程序包括初始存取SANtricity 《不適用的系統管理程式》的步驟。如果您已經設定SANtricity 了「不全系統管理程式」、請前往 ,設定硬體警示步驟。
 
 
 NOTE: 使用Grid Manager或StorageGRID NetApp應用裝置安裝程式、您無需SANtricity 設定或連接應用裝置的管理連接埠、即可存取《支援系統管理程式》。

@@ -66,7 +66,7 @@ image::../media/decommission_nodes_page_all_connected.png[取消委任節點頁�
 ** image:../media/icon_alarm_blue_unknown.png["藍色問號圖示"] （藍色）：未知
 
  a| 
-前往 <<decommission_procedure_choices,列出取消委任程序選項的步驟>>。
+前往 ,列出取消委任程序選項的步驟。
 
 
 

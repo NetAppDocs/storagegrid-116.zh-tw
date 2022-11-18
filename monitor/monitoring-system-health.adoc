@@ -66,6 +66,6 @@ image::../media/dashboard_health_panel.png[儀表板健全狀況面板]
 
 .相關資訊
 * xref:../admin/index.adoc[管理StorageGRID]
-* xref:set-up-email-alert-notifications.adoc[設定警示的電子郵件通知]
+* xref:email-alert-notifications.adoc[設定警示的電子郵件通知]
 * xref:using-snmp-monitoring.adoc[使用SNMP監控]
 

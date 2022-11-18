@@ -36,7 +36,7 @@ xref:locating-controller-in-data-center.adoc[將控制器定位在資料中心]
 image::../media/sg6000_cn_power_supplies.gif[SG6000-CN-後端配備兩個電源供應器]
 
 .步驟
-. 如果您只要更換一個電源供應器、就不需要關閉產品電源。前往 <<Unplug_the_power_cord,拔下電源線>> 步驟。如果您同時更換兩個電源供應器、請在拔下電源線之前執行下列步驟：
+. 如果您只要更換一個電源供應器、就不需要關閉產品電源。前往 ,拔下電源線 步驟。如果您同時更換兩個電源供應器、請在拔下電源線之前執行下列步驟：
 +
 .. xref:placing-appliance-into-maintenance-mode.adoc[將設備置於維護模式]。
 .. xref:shutting-down-sg6000-cn-controller.adoc[關閉產品電源]。

@@ -115,7 +115,7 @@ xref:../admin/index.adoc[管理StorageGRID]
 
 *附註：*由於警示和警示是獨立的系統、因此用於警示和AutoSupport 回報通知的電子郵件設定不會用於警示通知。不過、您可以使用相同的郵件伺服器來處理所有通知。
 
-xref:set-up-email-alert-notifications.adoc[設定警示的電子郵件通知]
+xref:email-alert-notifications.adoc[設定警示的電子郵件通知]
  a| 
 選擇* support*>*警示（舊版）*>*舊版電子郵件設定*。
 
@@ -147,7 +147,7 @@ xref:alarms-that-generate-snmp-notifications.adoc[產生SNMP通知的警示（�
 . 在「*收件者*」區段中、輸入每個電子郵件清單或在發生警示時應收到電子郵件的人員的電子郵件地址。
 
 
-xref:set-up-email-alert-notifications.adoc[設定警示的電子郵件通知]
+xref:email-alert-notifications.adoc[設定警示的電子郵件通知]
  a| 
 . 選擇* support*>*警示（舊版）*>*舊版電子郵件設定*。
 . 建立郵寄清單。

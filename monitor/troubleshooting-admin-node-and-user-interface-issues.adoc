@@ -165,7 +165,7 @@ sg snmp agent                  11.4.0         Running
 +
 請確定idnt, acct, Ngin像 和cassandra服務都在執行中。
 
-. 重複步驟 <<use_Lumberjack_to_collect_logs,使用Lumberjack收集記錄>> 和 <<review_logs,檢閱記錄>> 以檢閱儲存節點上的記錄。
+. 重複步驟 ,使用Lumberjack收集記錄 和 ,檢閱記錄 以檢閱儲存節點上的記錄。
 . 如果您無法解決問題、請聯絡技術支援部門。
 +
 將收集到的記錄提供給技術支援人員。另請參閱 xref:logs-files-reference.adoc[記錄檔參考]。

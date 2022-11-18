@@ -15,6 +15,7 @@ summary: 您可以在StorageGRID 第一次部署StorageGRID 時安裝一或多�
 
 您的系統使用所需的版本的功能。StorageGRID StorageGRID
 
+[cols="1a,2a"]
 |===
 | 應用裝置 | 必要StorageGRID 的版本 
 
@@ -38,7 +39,7 @@ SG1000
 
 準備StorageGRID 並新增一個應用不全面的應用裝置至網格、主要步驟有四個：
 
-. 準備安裝：
+. xref:preparing-for-installation-sg100-and-sg1000.adoc[準備安裝]：
 +
 ** 準備安裝站台
 ** 打開包裝箱並檢查內容物
@@ -47,7 +48,7 @@ SG1000
 ** 選用：如果您打算加密所有應用裝置資料、請設定外部金鑰管理伺服器（KMS）。如需外部金鑰管理的詳細資訊、請參閱《管理StorageGRID 》指南。
 
 
-. 安裝硬體：
+. xref:registering-hardware-sg100-and-sg1000.adoc[安裝硬體]：
 +
 ** 註冊硬體
 ** 將產品安裝到機櫃或機架中
@@ -56,7 +57,7 @@ SG1000
 ** 檢視開機狀態代碼
 
 
-. 設定硬體：
+. xref:configuring-storagegrid-connections-sg100-and-sg1000.adoc[設定硬體]：
 +
 ** 存取StorageGRID 《產品安裝程式（Cisco）與設定連結及網路IP設定以連線StorageGRID 至各種功能
 ** 存取應用裝置上的基板管理控制器（BMC）介面。
@@ -68,6 +69,7 @@ SG1000
 安裝並設定應用裝置硬體之後、您可以將應用裝置部署為StorageGRID 「閘道節點」、並在一個「虛擬化」系統中部署管理節點。SG100和SG1000設備可同時做為閘道節點和管理節點（主要和非主要）運作。
 
 +
+[cols="2a,2a"]
 |===
 | 工作 | 說明 
 
@@ -82,26 +84,20 @@ xref:deploying-services-appliance-node.adoc[部署服務應用裝置節點]
  a| 
 將應用裝置閘道或管理節點新增至現有StorageGRID 的作業系統
  a| 
-擴充StorageGRID 功能的說明
+xref:../expand/index.adoc[擴充StorageGRID 一套系統]
 
 
 
  a| 
 將應用裝置閘道或管理節點部署為節點還原作業的一部分
  a| 
-恢復與維護說明
+xref:../maintain/index.adoc[恢復並維護StorageGRID 一套不穩定的系統]
 
 |===
 
 
-xref:preparing-for-installation-sg100-and-sg1000.adoc[準備安裝（SG100和SG1000）]
-
-xref:installing-hardware-sg100-and-sg1000.adoc[安裝硬體（SG100和SG1000）]
-
-xref:configuring-storagegrid-connections-sg100-and-sg1000.adoc[設定StorageGRID 鏈接（SG100和SG1000）]
-
 xref:../expand/index.adoc[擴充網格]
 
-xref:../maintain/index.adoc[恢復與維護]
+xref:../maintain/index.adoc[恢復並維護您的網格]
 
 xref:../admin/index.adoc[管理StorageGRID]

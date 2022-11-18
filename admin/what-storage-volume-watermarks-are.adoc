@@ -77,7 +77,7 @@ image::../media/storage-volume-watermark-overrides.png[儲存Volume浮點會覆�
 +
 ** 如果浮水印覆寫為* 0*、則會根據儲存節點的大小和磁碟區的相對容量、針對每個儲存節點上的每個儲存磁碟區最佳化這三個浮點。
 +
-這是預設和建議的設定。您不應該更新這些值。視需要、您可以選擇 <<View optimized storage watermarks>>。
+這是預設和建議的設定。您不應該更新這些值。視需要、您可以選擇  optimized storage watermarks。
 
 ** 如果浮水印覆寫為非0值、則會使用自訂（非最佳化）浮水印。不建議使用自訂浮水印設定。請使用的說明 xref:../monitor/troubleshoot-low-watermark-alert.adoc[疑難排解低唯讀浮水印會覆寫警示] 以判斷您是否可以調整或應該調整設定。
 

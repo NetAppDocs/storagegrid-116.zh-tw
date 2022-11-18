@@ -2,9 +2,6 @@
 :allow-uri-read: 
 
 
-[role="lead"]
-對於目前使用SANtricity 不支援更新版本的儲存控制器、您必須使用Grid Manager進行升級。
-
 .您需要的是 #8217 ；需要的是什麼
 * 您已諮詢NetApp互通性對照表工具IMT （NetApp Interoperability Matrix Tool、簡稱「參考資訊」）、確認SANtricity 您用於升級的作業系統版本與您的應用裝置相容。
 * 您具有「維護」或「根」存取權限。
@@ -159,7 +156,7 @@ IMPORTANT: 除非您核准所有列出的儲存節點上的作業系統升級、
 系統會顯示一則警告、詢問您是否確定要在不升級所有節點的情況下完成升級程序。
 
 .. 選擇*確定*以返回* SANtricity 不支援作業系統*頁面。
-.. 當您準備好繼續核准節點時、請前往 <<download_santricity_os,下載SANtricity 此作業系統>> 以重新啟動升級程序。
+.. 當您準備好繼續核准節點時、請前往 ,下載SANtricity 此作業系統 以重新啟動升級程序。
 
 
 +

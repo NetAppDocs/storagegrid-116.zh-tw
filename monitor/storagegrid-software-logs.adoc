@@ -287,7 +287,7 @@ CLB服務的錯誤資訊。
  a| 
 管理和閘道節點
 
-只有特定的管理節點和閘道節點包含此記錄。請參閱 xref:manage-s3-select-for-tenant-accounts.adoc[S3選取管理和閘道節點的需求和限制]。
+只有特定的管理節點和閘道節點包含此記錄。請參閱 xref:../admin/manage-s3-select-for-tenant-accounts.adoc[S3選取管理和閘道節點的需求和限制]。
 
 
 

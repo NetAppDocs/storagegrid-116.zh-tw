@@ -372,7 +372,7 @@ storagegRid_storage_STATUS
 
 
  a| 
-storagegRid_storage_utilation_madda_bytes
+storagegRid_storage_utilation_bytes
  a| 
 預估儲存節點上複寫與銷毀編碼物件資料的總大小。
 

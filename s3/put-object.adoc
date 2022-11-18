@@ -129,7 +129,7 @@ xref:using-s3-object-lock.adoc[使用S3物件鎖定]
 ** 「X-amz-server端加密客戶金鑰」
 ** 「X-amz-server端加密- customer-演算 法」
 +
-請參閱 <<Request headers for server-side encryption>>
+請參閱  headers for server-side encryption
 
 
 

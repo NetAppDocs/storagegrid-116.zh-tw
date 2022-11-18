@@ -22,7 +22,7 @@ image::../media/e2800B_labels_on_controller.gif[E2800A控制器上的Mac和FRU�
  a| 
 MAC位址
  a| 
-管理連接埠1（「P1」）的MAC位址。如果您使用DHCP取得原始控制器的IP位址、則需要此位址才能連線至新的控制器。
+管理連接埠1的MAC位址（E2800A上的「P1」和E2800B上的0A）。如果您使用DHCP取得原始控制器的IP位址、則需要此位址才能連線至新的控制器。
 
 
 

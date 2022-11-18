@@ -234,7 +234,7 @@ NOTE: 您可能會注意到、在電子雜訊較高的環境中、錯誤率很�
 
 
 
-<<troubleshoot_MTU_alert,疑難排解Grid Network MTU不相符警示>>
+,疑難排解Grid Network MTU不相符警示
 
 xref:alarms-reference.adoc[警示參考（舊系統）]
 

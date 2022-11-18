@@ -36,7 +36,7 @@ summary: 在一個不完善的系統中、網格節點StorageGRID 會處理網�
  a| 
 用於系統管理與維護的流量。
  a| 
-管理網路（選用）、 <<Optional VLAN networks,VLAN網路（選用）>>
+管理網路（選用）、  VLAN networks,VLAN網路（選用）
 
 
 
@@ -45,7 +45,7 @@ summary: 在一個不完善的系統中、網格節點StorageGRID 會處理網�
  a| 
 在外部用戶端應用程式和網格之間傳輸的流量、包括S3和Swift用戶端的所有物件儲存要求。
  a| 
-用戶端網路（選用）、 <<Optional VLAN networks,VLAN網路（選用）>>
+用戶端網路（選用）、  VLAN networks,VLAN網路（選用）
 
 |===
 您可以使用下列方式設定網路：

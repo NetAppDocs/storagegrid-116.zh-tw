@@ -27,7 +27,7 @@ summary: 使用身分識別聯盟可更快設定租戶群組和使用者、並�
 
 NOTE: 如果您想使用未列出的LDAP v3服務、請聯絡技術支援部門。
 
-* 如果您打算使用OpenLDAP、則必須設定OpenLDAP伺服器。請參閱 <<Guidelines for configuring OpenLDAP server>>。
+* 如果您打算使用OpenLDAP、則必須設定OpenLDAP伺服器。請參閱  for configuring OpenLDAP server。
 * 如果您打算使用傳輸層安全性（TLS）與LDAP伺服器進行通訊、則身分識別供應商必須使用TLS 1.2或1.3。請參閱 xref:../admin/supported-ciphers-for-outgoing-tls-connections.adoc[用於傳出TLS連線的支援密碼]。
 
 

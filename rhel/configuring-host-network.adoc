@@ -16,7 +16,7 @@ summary: 在主機上完成Linux安裝之後、您可能需要執行一些額外
 .您需要的是 #8217 ；需要的是什麼
 * 您已檢閱 xref:../network/index.adoc[網路連線準則StorageGRID]。
 * 您已檢閱相關資訊 xref:node-container-migration-requirements.adoc[節點容器移轉需求]。
-* 如果您使用的是虛擬主機、則已閱讀 <<mac_address_cloning_rhel,MAC位址複製的考量與建議>> 設定主機網路之前。
+* 如果您使用的是虛擬主機、則已閱讀 ,MAC位址複製的考量與建議 設定主機網路之前。
 
 
 
