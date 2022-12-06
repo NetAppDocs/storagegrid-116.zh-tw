@@ -13,6 +13,7 @@ summary: 清除金鑰管理伺服器（KMS）組態會停用設備上的節點�
 [role="lead"]
 清除金鑰管理伺服器（KMS）組態會停用設備上的節點加密。清除KMS組態之後、您設備上的資料將永久刪除、無法再存取。此資料無法恢復。
 
+.您需要的產品
 如果您需要保留應用裝置上的資料、則必須先執行節點取消委任程序或複製節點、才能清除KMS組態。
 
 
@@ -20,6 +21,7 @@ IMPORTANT: 清除KMS時、設備上的資料將永久刪除、無法再存取。
 
 xref:../maintain/grid-node-decommissioning.adoc[取消委任節點] 可將其中包含的任何資料移至網格中的其他節點。
 
+.關於這項工作
 清除應用裝置KMS組態會停用節點加密、移除應用裝置節點與StorageGRID 站台KMS組態之間的關聯。然後刪除應用裝置上的資料、並將應用裝置保留在預先安裝狀態。此程序無法回復。
 
 您必須清除KMS組態：
@@ -78,6 +80,8 @@ KMS加密金鑰和所有資料都會從節點刪除、然後設備重新開機�
 
 
 
+.完成後
 設備重新開機並確認KMS已清除、且設備處於預先安裝狀態之後、您可以從StorageGRID 您的故障排除系統中實際移除應用裝置。請參閱 xref:../maintain/preparing-appliance-for-reinstallation-platform-replacement-only.adoc[準備設備以重新安裝的說明]。
 
+.相關資訊
 xref:../admin/index.adoc[管理StorageGRID]

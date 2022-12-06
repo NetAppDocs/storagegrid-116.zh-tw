@@ -40,4 +40,5 @@ IMPORTANT: 您使用API文件網頁執行的任何API作業都是即時作業。
 * *站台*-站台層級的組態作業。您可以建立、檢視、刪除及修改網站。
 
 
+.相關資訊
 xref:automating-installation.adoc[自動化安裝]

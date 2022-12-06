@@ -45,4 +45,5 @@ summary: 如果升級未成功完成、您可以自行解決問題。如果您�
 
 如果資料庫升級失敗並出現錯誤、請重試升級。如果再次失敗、請聯絡技術支援部門。
 
+.相關資訊
 xref:checking-systems-condition-before-upgrading-software.adoc[在升級軟體之前、請先檢查系統狀況]

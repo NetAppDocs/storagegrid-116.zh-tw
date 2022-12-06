@@ -13,7 +13,7 @@ summary: 您可以使用Azure AD為系統中的每個管理節點建立企業應
 [role="lead"]
 您可以使用Azure AD為系統中的每個管理節點建立企業應用程式。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您已開始設定StorageGRID 單一登入功能以供使用、並選擇* Azure *作為SSO類型。
 * *在Grid Manager的「單一登入」頁面上選取「沙箱模式*」。請參閱 xref:../admin/using-sandbox-mode.adoc[使用沙箱模式]。
 * 您的系統中每個管理節點都有*企業應用程式名稱*。您可以從StorageGRID 「管理員節點」詳細資料表中複製這些值、該表位於「報價單一登入」頁面。

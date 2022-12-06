@@ -95,6 +95,7 @@ TLS
 
 
 |===
+.相關資訊
 xref:../admin/index.adoc[管理StorageGRID]
 
 
@@ -180,4 +181,5 @@ TLS_RSA_AT_AES-122_GCM_SHA256
 TLS_RSA_AT_AES-256_GCM_SHA384
 
 |===
+.相關資訊
 xref:configuring-tenant-accounts-and-connections.adoc[如何設定用戶端連線]

@@ -13,6 +13,7 @@ summary: 您應該確認技術支援人員是否收到AutoSupport 您的不實�
 [role="lead"]
 您應該確認技術支援人員是否收到AutoSupport 您的不實訊息。您可以AutoSupport 在Active IQ 這個入口網站上找到系統的資訊。如果您需要協助、請確認收到這些訊息、以確保技術支援人員能提供您所需的資訊。
 
+.關於這項工作
 下列狀態之一可顯示：AutoSupport
 
 * *開啟*

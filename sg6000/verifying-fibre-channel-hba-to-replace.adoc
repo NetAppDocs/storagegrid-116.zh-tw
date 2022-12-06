@@ -13,7 +13,7 @@ summary: 如果您不確定要更換哪個Fibre Channel主機匯流排介面卡�
 [role="lead"]
 如果您不確定要更換哪個Fibre Channel主機匯流排介面卡（HBA）、請完成此程序以識別它。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您有需要更換光纖通道HBA的儲存設備或SG6000-CN.控制器序號。
 +
 
@@ -47,4 +47,5 @@ xref:turning-controller-identify-led-on-and-off.adoc[開啟和關閉控制器識
 
 
 
+.相關資訊
 xref:removing-fibre-channel-hba.adoc[移除Fibre Channel HBA]

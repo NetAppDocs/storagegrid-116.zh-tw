@@ -71,4 +71,5 @@ Content-Type: application/xml
 
 每個儲存的物件版本都會在回應中產生「ObjectCount」和「Data Bytes」值。刪除標記不會新增至「ObjectCount」總計。
 
+.相關資訊
 xref:consistency-controls.adoc[一致性控管]

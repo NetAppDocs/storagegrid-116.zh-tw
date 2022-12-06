@@ -13,13 +13,14 @@ summary: 如果E2700控制器無法正常運作或故障、您可能需要更換
 [role="lead"]
 如果E2700控制器無法正常運作或故障、您可能需要更換它。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您的更換控制器的零件編號與您要更換的控制器相同。
 * 您可以使用標籤來識別連接至控制器的每條纜線。
 * 您有防靜電保護。
 * 您必須具有維護或根存取權限。如需詳細資訊、請參閱《關於管理StorageGRID 功能的說明》。
 
 
+.關於這項工作
 您可以檢查控制器上的「Service Action Required」（所需的服務動作）LED（如圖所示為1）、以判斷控制器是否故障。如果此LED亮起、則應更換控制器。
 
 image::../media/e2700_controller_sar_led.gif[E2700控制器上的「需要維修行動」LED]
@@ -96,6 +97,7 @@ image::../media/node_rejoin_grid_confirmation.png[應用裝置節點重新加入
 . 從NetApp Storage Manager確認新的控制器是最佳的、並收集支援資料。SANtricity
 
 
+.相關資訊
 https://mysupport.netapp.com/info/web/ECMP11751516.html["NetApp E系列和EF系列硬體更換程序"^]
 
 http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61765["NetApp文件：E2700系列"^]

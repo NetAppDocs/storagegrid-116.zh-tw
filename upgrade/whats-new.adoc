@@ -46,7 +46,7 @@ NOTE: 除非有功能變更、StorageGRID 否則不會更新《畫面說明文�
 * 全新的*建立VLAN介面*精靈會引導您輸入VLAN ID、並在一個或多個節點上選擇父介面。父介面可以是Grid Network、用戶端網路、或VM或裸機主機的其他主幹介面。請參閱 xref:../admin/configure-vlan-interfaces.html[設定VLAN介面]。
 * 您現在可以將額外的主幹或存取介面新增至節點。如果您新增主幹介面、則必須設定VLAN介面。如果新增存取介面、您可以直接將介面新增至HA群組、而不需要設定VLAN介面。請參閱下列內容：
 +
-** * Linux（安裝節點之前）*：  enhancements
+** * Linux（安裝節點之前）*： <<安裝增強功能>>
 ** * Linux（安裝節點之後）*： xref:../maintain/linux-adding-trunk-or-access-interfaces-to-node.adoc[Linux：新增主幹或存取介面至節點]
 ** * VMware（安裝節點之後）*： xref:../vmware/collecting-information-about-your-deployment-environment.adoc[收集部署環境的相關資訊]
 

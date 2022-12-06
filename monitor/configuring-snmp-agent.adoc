@@ -13,11 +13,12 @@ summary: 如果您想要使用協力廠商SNMP管理系統進行唯讀的MIB存�
 [role="lead"]
 如果您想要使用協力廠商SNMP管理系統進行唯讀的MIB存取和通知、可以設定StorageGRID 靜態SNMP代理程式。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您擁有「根存取」權限。
 
 
+.關於這項工作
 支援所有三種版本的SNMP傳輸協定的Sof SNMP代理程式。StorageGRID您可以為代理程式設定一或多個版本。
 
 .步驟
@@ -55,7 +56,7 @@ System Location（系統位置）可以是任何有助於辨識StorageGRID 出�
 +
 .. 在*預設設陷社群*欄位中、輸入您要用於設陷目的地的預設社群字串（選用）。
 +
-視需要、您可以在使用時提供不同的（「custom」）社群字串 ,定義特定的陷阱目的地。
+視需要、您可以在使用時提供不同的（「custom」）社群字串 <<select_trap_destination,定義特定的陷阱目的地>>。
 
 +
 *預設設陷社群*最多可包含32個字元、且不可包含空白字元。
@@ -268,4 +269,5 @@ image::../media/snmp_other_config_trap_dest_table.png[SNMP其他組態設陷目�
 
 
 
+.相關資訊
 xref:silencing-alert-notifications.adoc[靜音警示通知]

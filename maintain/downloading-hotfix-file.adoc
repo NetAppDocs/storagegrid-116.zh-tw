@@ -50,4 +50,5 @@ NOTE: 如果您使用的是MacOS裝置、則熱修復檔案可能會自動儲存
 . 選取下載位置、然後選取*儲存*。
 
 
+.相關資訊
 xref:configuring-replacement-primary-admin-node.adoc[設定替換的主要管理節點]

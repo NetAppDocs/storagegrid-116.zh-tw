@@ -13,10 +13,11 @@ summary: 您應該監控個別的網格節點、以檢查其資源使用率層�
 [role="lead"]
 您應該監控個別的網格節點、以檢查其資源使用率層級。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您必須使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 
 
+.關於這項工作
 如果節點持續過載、則可能需要更多節點才能有效運作。
 
 .步驟
@@ -33,6 +34,7 @@ image::../media/nodes_page_hardware_tab_graphs.png[節點頁面硬體索引標�
 
 
 
+.相關資訊
 xref:viewing-hardware-tab.adoc#view-information-about-appliance-storage-nodes[檢視應用裝置儲存節點的相關資訊]
 
 xref:viewing-hardware-tab.adoc#view-information-about-appliance-admin-nodes-and-gateway-nodes[檢視應用裝置管理節點和閘道節點的相關資訊]

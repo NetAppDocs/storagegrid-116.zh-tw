@@ -36,6 +36,7 @@ NOTE: 硬體專屬的安裝與整合說明並未包含在StorageGRID 安裝程�
 * 決定您要使用哪些可用的部署和組態工具。
 
 
+.相關資訊
 xref:../network/index.adoc[網路準則]
 
 xref:../sg100-1000/index.adoc[SG100與SG1000服務應用裝置]

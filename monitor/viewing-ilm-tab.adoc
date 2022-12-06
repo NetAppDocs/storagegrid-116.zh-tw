@@ -19,6 +19,7 @@ ILM索引標籤提供資訊生命週期管理（ILM）作業的相關資訊。
 
 image::../media/nodes_page_ilm_tab.png[節點頁面ILM索引標籤]
 
+.相關資訊
 xref:monitoring-information-lifecycle-management.adoc[監控資訊生命週期管理]
 
 xref:../admin/index.adoc[管理StorageGRID]

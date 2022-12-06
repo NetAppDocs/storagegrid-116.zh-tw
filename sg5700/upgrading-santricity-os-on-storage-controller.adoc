@@ -23,6 +23,7 @@ xref:upgrading-santricity-os-on-e2800-controller-using-maintenance-mode.adoc[使
 
 
 
+.相關資訊
 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]
 
 https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下載：StorageGRID NetApp產品"^]

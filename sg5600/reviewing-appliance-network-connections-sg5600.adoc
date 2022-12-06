@@ -113,6 +113,7 @@ E5600SG控制器上有四個網路連接埠
 連線到Grid Network和Client Network for StorageGRID the請參閱「E5600SG控制器的10-GbE連接埠連線」。
 
 |===
+.相關資訊
 xref:port-bond-modes-for-e5600sg-controller-ports.adoc[E5600SG控制器連接埠的連接埠連結模式]
 
 xref:gathering-installation-information-sg5600.adoc[收集安裝資訊（SG5600）]

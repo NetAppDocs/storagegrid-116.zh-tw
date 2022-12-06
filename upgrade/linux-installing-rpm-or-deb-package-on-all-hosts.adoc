@@ -13,6 +13,7 @@ summary: 如果StorageGRID 在Linux主機上部署任何的任何節點、則在
 [role="lead"]
 如果StorageGRID 在Linux主機上部署任何的任何節點、則在開始升級之前、您必須在每個主機上安裝額外的RPM或Deb套件。
 
+.您需要的產品
 您必須從NetApp Downloads（NetApp下載）頁面下載下列其中一個「.tgz」或「.zip」檔案StorageGRID 、才能使用此功能。
 
 

@@ -39,6 +39,7 @@ image::../media/ping_test_passed.png[以畫面擷取畫面顯示StorageGRID 的P
 
 
 
+.相關資訊
 xref:configuring-network-links-sg100-and-sg1000.adoc[設定網路連結（SG100和SG1000）]
 
 xref:changing-mtu-setting.adoc[變更MTU設定]

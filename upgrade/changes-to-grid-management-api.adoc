@@ -65,7 +65,7 @@ IMPORTANT: 啟用此功能時、任何具有變更租戶根密碼權限的Grid M
 
 
 
-== 新增至網格/記錄/收集端點
+== 新增至 `grid/logs/collect` 端點
 
 「GRID /記錄/收集」端點新增四個布林值：
 
@@ -77,7 +77,7 @@ IMPORTANT: 啟用此功能時、任何具有變更租戶根密碼權限的Grid M
 
 
 
-== 全新的節點詳細資料/網格更新/服務ID端點
+== 新功能 `​node-details /grid​/service-ids` 端點
 
 全新的「Sides/grides/service-ids」端點提供節點UUID對應至相關節點名稱、服務ID和服務類型的功能。
 

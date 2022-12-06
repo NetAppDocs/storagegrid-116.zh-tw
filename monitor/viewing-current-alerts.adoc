@@ -13,7 +13,7 @@ summary: 觸發警示時、儀表板上會顯示警示圖示。節點的「節�
 [role="lead"]
 觸發警示時、儀表板上會顯示警示圖示。節點的「節點」頁面上也會顯示警示圖示。除非警示已靜音、否則也可能會傳送電子郵件通知。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您必須使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您也可以選擇觀看影片： https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2680a74f-070c-41c2-bcd3-acc5013c9cdd["影片：警示總覽"^]。
 +

@@ -13,10 +13,11 @@ summary: 在將StorageGRID 支援FabricPool 功能與功能性工作負載一起
 [role="lead"]
 在將StorageGRID 支援FabricPool 功能與功能性工作負載一起使用之前、您必須先建立S3儲存庫來儲存FabricPool 您的功能性資料。您也需要取得將用於FabricPool 執行此功能的租戶帳戶的存取金鑰和秘密存取金鑰。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您已建立一個可供FabricPool 使用的租戶帳戶。
 
 
+.關於這項工作
 這些說明說明如何使用StorageGRID 「NetApp客戶管理程式」來建立儲存庫並取得存取金鑰。您也可以使用租戶管理API或StorageGRID S3 REST API來執行這些工作。或者、如果您使用ONTAP 的是「資訊區9.10」、您可以改用FabricPool 「資訊區設定精靈」來建立儲存區。
 
 若要深入瞭解：

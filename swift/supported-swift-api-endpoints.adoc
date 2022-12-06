@@ -97,6 +97,7 @@ https://FQDN |_IP：Swift連接埠_/v1/_Tenant_Account_ID_
 * 「X-Container-Object-Count」
 
 
+.相關資訊
 xref:configuring-tenant-accounts-and-connections.adoc[設定租戶帳戶和連線]
 
 xref:account-operations.adoc[帳戶營運]

@@ -13,7 +13,7 @@ summary: 當您建立Azure Blob儲存設備的Cloud Storage Pool時、必須為S
 [role="lead"]
 當您建立Azure Blob儲存設備的Cloud Storage Pool時、必須為StorageGRID 外部Container指定帳戶名稱和帳戶金鑰、以便用來儲存物件。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您已輸入Cloud Storage Pool的基本資訊、並將* Azure Blob Storage*指定為供應商類型。*共享密鑰*顯示在*驗證類型*字段中。
 +
 image::../media/cloud_storage_pool_create_azure.png[雲端儲存資源池建立Azure]

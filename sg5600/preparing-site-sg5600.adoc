@@ -69,6 +69,7 @@ SG5660
 . 安裝所有必要的網路交換器。如需相容性資訊、請參閱NetApp互通性對照表工具。
 
 
+.相關資訊
 https://hwu.netapp.com["NetApp Hardware Universe"^]
 
 https://mysupport.netapp.com/NOW/products/interoperability["NetApp互通性"^]

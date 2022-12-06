@@ -30,4 +30,5 @@ IMPORTANT: 除非確定節點已準備好停止並重新開機、否則請勿核
 . 升級完成後、請確認軟體版本並套用任何即時修復程式。
 
 
+.相關資訊
 xref:estimating-time-to-complete-upgrade.adoc[預估完成升級所需的時間]

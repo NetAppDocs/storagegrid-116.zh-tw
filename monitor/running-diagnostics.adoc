@@ -17,11 +17,12 @@ summary: 疑難排解問題時、您可以與技術支援部門合作、在Stora
 * xref:commonly-used-prometheus-metrics.adoc[常用的Prometheus指標]
 
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您擁有特定的存取權限。
 
 
+.關於這項工作
 「診斷」頁面會針對網格的目前狀態執行一組診斷檢查。每項診斷檢查都有三種狀態之一：
 
 * image:../media/icon_alert_green_checkmark.png["圖示警示綠色勾選標記"] *正常*：所有值都在正常範圍內。

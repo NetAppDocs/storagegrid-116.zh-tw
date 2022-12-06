@@ -18,4 +18,5 @@ summary: 當您使用包含單一儲存資源池的物件放置方式建立ILM�
 
 NOTE: 如果您選取嚴格擷取行為（建立ILM規則精靈的步驟3）、則會忽略暫存位置。
 
+.相關資訊
 xref:data-protection-options-for-ingest.adoc[用於擷取的資料保護選項]

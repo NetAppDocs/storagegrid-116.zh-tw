@@ -13,12 +13,13 @@ summary: 您可以變更Cloud Tiering Service的狀態、藉此控制歸檔節�
 [role="lead"]
 您可以變更Cloud Tiering Service的狀態、藉此控制歸檔節點讀取和寫入至透過S3 API連線的目標外部歸檔儲存系統的能力。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您必須使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您必須擁有特定的存取權限。
 * 必須設定歸檔節點。
 
 
+.關於這項工作
 您可以將雲端分層服務狀態變更為*已停用讀寫*、有效地使歸檔節點離線。
 
 .步驟

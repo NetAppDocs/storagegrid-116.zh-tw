@@ -22,6 +22,7 @@ summary: 如果硬體故障或纜線錯誤導致儲存控制器或SG6000-CN-控�
 . 如果您需要解決問題的協助、請聯絡技術支援部門。
 
 
+.相關資訊
 xref:viewing-boot-up-status-codes-for-sg6000-storage-controllers.adoc[檢視SG6000儲存控制器的開機狀態代碼]
 
 https://library.netapp.com/ecmdocs/ECMLP2588751/html/frameset.html["E5700與E2800系統監控指南"^]

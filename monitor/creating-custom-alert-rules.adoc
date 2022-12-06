@@ -13,7 +13,7 @@ summary: 您可以建立自訂警示規則、以定義自己觸發警示的條�
 [role="lead"]
 您可以建立自訂警示規則、以定義自己觸發警示的條件。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]
 * 您擁有「管理警示」或「根存取」權限
 * 您已經熟悉 xref:commonly-used-prometheus-metrics.adoc[常用的Prometheus指標]
@@ -24,6 +24,7 @@ image::../media/video-screenshot-alert-create-custom.png[連結-"https://netapp.
 
 
 
+.關於這項工作
 無法驗證自訂警示。StorageGRID如果您決定建立自訂警示規則、請遵循下列一般準則：
 
 * 查看預設警示規則的條件、並將其做為自訂警示規則的範例。

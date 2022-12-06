@@ -13,7 +13,7 @@ summary: 您可以編輯流量分類原則來變更其名稱或說明、或建�
 [role="lead"]
 您可以編輯流量分類原則來變更其名稱或說明、或建立、編輯或刪除原則的任何規則或限制。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您擁有root存取權限。
 

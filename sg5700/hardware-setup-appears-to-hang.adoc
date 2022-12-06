@@ -52,6 +52,7 @@ _E5700與E2800系統監控指南_
 . 如果這無法解決問題、請聯絡技術支援部門。
 
 
+.相關資訊
 xref:status-indicators-on-e5700sg-controller.adoc[E5700SG控制器上的狀態指示燈]
 
 xref:he-error-error-synchronizing-with-santricity-os-software.adoc[他錯誤：同步SANtricity 至作業系統軟體時發生錯誤]

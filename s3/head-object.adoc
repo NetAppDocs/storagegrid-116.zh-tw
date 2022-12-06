@@ -145,6 +145,7 @@ Cloud Storage Pool中的物件、但尚未轉換為無法擷取的狀態
 
 如果未指定「版本ID」子資源、則作業會擷取版本控制儲存區中的物件最新版本。如果物件的目前版本是刪除標記、則會傳回「找不到」狀態、並將「x-amz-delete-marker'回應標頭設為「true」。
 
+.相關資訊
 xref:using-server-side-encryption.adoc[使用伺服器端加密]
 
 xref:../ilm/index.adoc[使用ILM管理物件]

@@ -43,6 +43,7 @@ summary: 安裝本產品之前、您必須確定您打算使用的場地和機�
 . 決定裝置的安裝位置。
 
 
+.相關資訊
 https://hwu.netapp.com["NetApp Hardware Universe"^]
 
 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]

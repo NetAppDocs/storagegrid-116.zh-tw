@@ -15,11 +15,12 @@ summary: 所有StorageGRID 的節點都會產生稽核訊息來追蹤系統活�
 
 如需稽核訊息的詳細資訊、請參閱 xref:../audit/index.adoc[檢閱稽核記錄]。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您具有「維護」或「根」存取權限。
 
 
+.關於這項工作
 所有StorageGRID 的節點都會產生稽核訊息和記錄、以追蹤系統活動和事件。根據預設、稽核資訊會傳送至管理節點上的稽核記錄。您可以調整稽核層級、以增加或減少稽核日誌中記錄的稽核訊息類型和數量。您也可以設定稽核資訊、將其傳送至遠端syslog伺服器、或暫時儲存在來源節點上、以供手動收集。
 
 
@@ -141,7 +142,7 @@ NOTE: 僅當*用戶端讀取*或*用戶端寫入*的稽核層級不是*關閉*�
 如果您想要遠端儲存稽核資訊、可以設定外部syslog伺服器。
 
 * 若要將稽核資訊儲存至外部syslog伺服器、請前往 xref:../monitor/configuring-syslog-server.adoc[設定外部syslog伺服器]。
-* 如果您不使用外部syslog伺服器、請前往 ,選取稽核資訊目的地。
+* 如果您不使用外部syslog伺服器、請前往 <<Select-audit-information-destinations,選取稽核資訊目的地>>。
 
 
 
@@ -214,6 +215,7 @@ CAUTION: 變更記錄目的地？
 
 
 
+.相關資訊
 xref:../monitor/considerations-for-external-syslog-server.adoc[外部syslog伺服器的考量]
 
 xref:../admin/index.adoc[管理StorageGRID]

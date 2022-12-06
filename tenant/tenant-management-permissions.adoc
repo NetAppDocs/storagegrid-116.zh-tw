@@ -78,6 +78,7 @@ root存取權
 沒有此權限的使用者不會看到*平台服務端點*功能表選項。
 
 |===
+.相關資訊
 xref:../s3/index.adoc[使用S3]
 
 xref:../swift/index.adoc[使用Swift]

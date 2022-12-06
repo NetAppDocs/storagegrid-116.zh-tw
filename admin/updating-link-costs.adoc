@@ -13,7 +13,7 @@ summary: 您可以更新資料中心站台之間的連結成本、以反映站�
 [role="lead"]
 您可以更新資料中心站台之間的連結成本、以反映站台之間的延遲。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您擁有Grid拓撲頁面組態權限。
 

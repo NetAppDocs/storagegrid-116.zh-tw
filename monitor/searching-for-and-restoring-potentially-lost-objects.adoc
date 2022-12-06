@@ -14,11 +14,12 @@ summary: 您可能會找到並還原觸發「遺失物件」（遺失）警示�
 [role="lead"]
 您可能會找到並還原觸發「遺失物件」（遺失）警示和*「物件遺失」警示的物件、而且您已識別為「可能遺失」的物件。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您必須擁有「Investigating Lost objects」（正在調查遺失的物件）中所述之任何遺失物件的UUID。
 * 您必須擁有「passwors.txt」檔案。
 
 
+.關於這項工作
 您可以遵循此程序、在網格的其他位置尋找遺失物件的複寫複本。在大多數情況下、找不到遺失的物件。不過、在某些情況下、如果您採取了提示行動、可能會找到並還原遺失的複寫物件。
 
 
@@ -115,7 +116,7 @@ ls '/var/local/rangedb/1/p/17/11/00rH0%DkRs&LgA%#3tN6'
 *附註*：永遠在命令中以單引號括住物件檔案路徑、以轉義任何特殊字元。
 
 * 如果找不到物件路徑、則物件會遺失、無法使用此程序還原。聯絡技術支援。
-* 如果找到物件路徑、請繼續執行步驟 ,將物件還原StorageGRID 至物件。您可以嘗試將找到的物件還原StorageGRID 回原地。
+* 如果找到物件路徑、請繼續執行步驟 <<restore_the_object_to_StorageGRID,將物件還原StorageGRID 至物件>>。您可以嘗試將找到的物件還原StorageGRID 回原地。
 +
 .. [[還原 物件路徑至StorageGRID、start=3]]如果找到物件路徑、請嘗試將物件還原StorageGRID 至下列物件：
 +
@@ -154,7 +155,7 @@ First packet of file was valid. Extracted key: 38186FE53E3C49A5
 Renamed '/var/local/rangedb/1/p/17/11/00rH0%DkRs&LgA%#3tN6' to '/var/local/rangedb/1/p/17/11/00rH0%DkRt78Ila#3udu'
 ----
 +
-繼續執行步驟 ,確認已建立新位置
+繼續執行步驟 <<verify_that_new_locations_were_created,確認已建立新位置>>
 
 +
 ... [[VERIFY_AT_new_locations_wid_已 建立、start=4]]如果物件已成功還原StorageGRID 至物件、請確認已建立新位置。
@@ -272,6 +273,7 @@ ORLM稽核訊息看起來像這個範例訊息。
 
 
 
+.相關資訊
 xref:investigating-lost-objects.adoc[調查遺失的物件]
 
 xref:resetting-lost-and-missing-object-counts.adoc[重設遺失和遺失的物件數]

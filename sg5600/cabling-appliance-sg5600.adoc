@@ -13,7 +13,7 @@ summary: 您必須使用SAS互連纜線將兩個控制器彼此連接、將管�
 [role="lead"]
 您必須使用SAS互連纜線將兩個控制器彼此連接、將管理連接埠連接至適當的管理網路、並將E5600SG控制器上的10 GbE連接埠連接至Grid Network和選用的StorageGRID Client Network for Sfor。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您可以使用乙太網路纜線來連接管理連接埠。
 * 您可以使用光纖纜線來連接四個10-GbE連接埠（裝置未隨附這些連接埠）。
 
@@ -21,6 +21,7 @@ summary: 您必須使用SAS互連纜線將兩個控制器彼此連接、將管�
 
 CAUTION: *暴露於雷射輻射的風險*-請勿拆解或移除SFP收發器的任何部分。您可能會暴露在雷射輻射下。
 
+.關於這項工作
 連接纜線時、請參閱下圖、其中顯示E2700控制器位於頂端、而E5600SG控制器位於底部。此圖顯示SG5660機型；SG5612機型中的控制器是並排的、而非堆疊的。
 
 image::../media/cabling_diagram.gif[纜線圖表]
@@ -204,6 +205,7 @@ E5600SG控制器上的連接埠2
 
 
 
+.相關資訊
 xref:port-bond-modes-for-e5600sg-controller-ports.adoc[E5600SG控制器連接埠的連接埠連結模式]
 
 xref:accessing-storagegrid-appliance-installer-sg5600.adoc[存取StorageGRID 產品安裝程式]

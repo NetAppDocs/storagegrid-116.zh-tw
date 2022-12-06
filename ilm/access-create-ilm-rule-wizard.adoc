@@ -16,7 +16,7 @@ ILM規則可讓您管理物件資料隨時間的放置。若要建立ILM規則�
 
 NOTE: 如果您要建立原則的預設ILM規則、請改用下列程序： xref:creating-default-ilm-rule.adoc[建立預設ILM規則]。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您擁有特定的存取權限。
 * 如果您想要指定此規則適用的租戶帳戶、您必須擁有租戶帳戶權限、或知道每個帳戶的帳戶ID。
@@ -32,6 +32,7 @@ image::../media/video-screenshot-ilm-rules.png[影片：StorageGRID 《ILM規則
 
 
 
+.關於這項工作
 建立ILM規則時：
 
 * 請考慮StorageGRID 使用此系統的拓撲和儲存組態。

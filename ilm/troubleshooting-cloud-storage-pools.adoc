@@ -128,4 +128,5 @@ NOTE: 切勿手動刪除ILM可能放置在雲端儲存資源池中的物件。�
 * 檢查儲存Proxy伺服器的網路組態。
 
 
+.相關資訊
 xref:lifecycle-of-cloud-storage-pool-object.adoc[Cloud Storage Pool物件的生命週期]

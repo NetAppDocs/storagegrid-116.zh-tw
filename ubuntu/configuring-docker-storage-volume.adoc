@@ -13,6 +13,7 @@ summary: 在安裝Docker之前、您可能需要格式化Docker儲存磁碟區�
 [role="lead"]
 在安裝Docker之前、您可能需要先格式化Docker儲存磁碟區、然後將其掛載到「/var/lib/Docker」。
 
+.關於這項工作
 如果您打算將本機儲存設備用於Docker儲存磁碟區、並在包含「/var/lib'的主機分割區上有足夠的可用空間、則可以跳過這些步驟。
 
 .步驟

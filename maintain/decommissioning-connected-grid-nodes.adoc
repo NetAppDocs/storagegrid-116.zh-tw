@@ -135,4 +135,5 @@ xref:../sg6000/index.adoc[SG6000儲存設備]
 
 
 
+.相關資訊
 xref:../rhel/index.adoc[安裝Red Hat Enterprise Linux或CentOS]

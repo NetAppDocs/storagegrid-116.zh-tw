@@ -13,7 +13,7 @@ summary: 如果您使用的是S3租戶、而且您擁有適當的權限、則可
 [role="lead"]
 如果您使用的是S3租戶、而且您擁有適當的權限、則可以檢視S3存取金鑰的清單。您可以依到期時間排序清單、以便判斷哪些金鑰即將到期。您可以視需要建立新的金鑰或刪除不再使用的金鑰。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您必須使用登入租戶管理程式 xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您必須擁有「管理自己的S3認證」權限。
 
@@ -39,6 +39,7 @@ image::../media/access_keys_view_list.png[存取金鑰清單]
 
 
 
+.相關資訊
 xref:creating-your-own-s3-access-keys.adoc[建立自己的S3存取金鑰]
 
 xref:deleting-your-own-s3-access-keys.adoc[刪除您自己的S3存取金鑰]

@@ -13,11 +13,12 @@ summary: 您必須在Grid Manager中建立租戶帳戶FabricPool 、以供使用
 [role="lead"]
 您必須在Grid Manager中建立租戶帳戶FabricPool 、以供使用。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您擁有特定的存取權限。
 
 
+.關於這項工作
 租戶帳戶可讓用戶端應用程式將物件儲存及擷取StorageGRID 到靜止不動的地方。每個租戶帳戶都有自己的帳戶ID、授權群組和使用者、庫位和物件。
 
 您可以使用同一個租戶帳戶來處理多ONTAP 個不一致的叢集。或者ONTAP 、您也可以視需要為每個叢集建立專屬的租戶帳戶。

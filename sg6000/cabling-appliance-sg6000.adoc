@@ -13,7 +13,7 @@ summary: 您必須將儲存控制器連接至SG6000-CN控制器、連接所有�
 [role="lead"]
 您必須將儲存控制器連接至SG6000-CN控制器、連接所有三個控制器上的管理連接埠、並將SG6000-CN-控制器上的網路連接埠連接至Grid Network和選用的StorageGRID Client Network for S目 視。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 設備隨附四條光纖纜線、可將兩個儲存控制器連接至SG6000-CN.控制器。
 * 您有RJ-45乙太網路纜線（至少四條）可用來連接管理連接埠。
 * 您有下列其中一個網路連接埠選項。本產品未隨附這些項目。
@@ -28,6 +28,7 @@ CAUTION: *暴露於雷射輻射的風險*-請勿拆解或移除SFP收發器的�
 
 
 
+.關於這項工作
 本節提供下列設備的佈線指示：
 
 * SG6060與SG6060X
@@ -207,6 +208,7 @@ NOTE: 四個網路連接埠必須使用相同的連結速度。如果您打算�
 
 
 
+.相關資訊
 xref:port-bond-modes-for-sg6000-cn-controller.adoc[SG6000-CN-控制器的連接埠連結模式]
 
 xref:reinstalling-sg6000-cn-controller-into-cabinet-or-rack.adoc[將SG6000-CN-控制器重新安裝到機櫃或機架中]

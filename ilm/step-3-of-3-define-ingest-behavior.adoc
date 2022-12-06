@@ -13,6 +13,7 @@ summary: 建立ILM規則精靈的步驟3（定義擷取行為）可讓您選擇�
 [role="lead"]
 建立ILM規則精靈的步驟3（定義擷取行為）可讓您選擇此規則篩選的物件在擷取時如何受到保護。
 
+.關於這項工作
 可以製作過渡複本、並將物件排入佇列、以便稍後進行ILM評估、也可以製作複本、以立即符合規則的放置指示。StorageGRID
 
 image::../media/define_ingest_behavior_for_ilm_rule.png[建立ILM規則步驟3（共3步）]

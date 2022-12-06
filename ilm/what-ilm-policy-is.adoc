@@ -56,4 +56,5 @@ image::../media/ilm_policy_and_rules.png[ILM原則與規則]
 
 image::../media/ilm_policies_proposed_active_historical.png[ILM原則的概念映像]
 
+.相關資訊
 xref:creating-ilm-policy.adoc[建立ILM原則]

@@ -13,12 +13,13 @@ summary: 您可以使用租戶管理程式刪除空的S3儲存區。
 [role="lead"]
 您可以使用租戶管理程式刪除一或多個空的S3儲存區。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您必須使用登入租戶管理程式 xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您必須屬於具有「管理所有庫位」或「根存取」權限的使用者群組。這些權限會覆寫群組或儲存區原則中的權限設定。請參閱 xref:tenant-management-permissions.adoc[租戶管理權限]。
 * 您要刪除的儲存區是空的。
 
 
+.關於這項工作
 這些指示說明如何使用租戶管理程式刪除S3儲存區。您也可以使用刪除S3儲存區 xref:understanding-tenant-management-api.adoc[租戶管理API] 或 xref:../s3/s3-rest-api-supported-operations-and-limitations.adoc[S3 REST API]。
 
 如果S3儲存區包含物件或非目前物件版本、則無法刪除。如需如何刪除S3版本控制物件的相關資訊、請參閱 xref:../ilm/index.adoc[使用資訊生命週期管理來管理物件的指示]。

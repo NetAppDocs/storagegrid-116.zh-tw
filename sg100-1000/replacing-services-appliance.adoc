@@ -13,13 +13,14 @@ summary: 如果設備無法正常運作或故障、您可能需要更換設備�
 [role="lead"]
 如果設備無法正常運作或故障、您可能需要更換設備。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您的替換產品的零件編號與您要更換的產品相同。
 * 您有標籤可識別連接至本產品的每條纜線。
 * 您有 xref:locating-controller-in-data-center.adoc[實際放置設備]。
 * 本產品已經使用過 xref:placing-appliance-into-maintenance-mode.adoc[已設定維護模式]。
 
 
+.關於這項工作
 當您更換產品時、將無法存取此節點。StorageGRID如果設備運作正常、您可以在本程序開始時執行管制關機。
 
 
@@ -92,6 +93,7 @@ IMPORTANT: 為避免效能降低、請勿扭轉、摺疊、夾緊或踏上纜線
 . 確認應用裝置節點出現在Grid Manager中、且未顯示任何警示。
 
 
+.相關資訊
 xref:installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.adoc[將應用裝置安裝到機櫃或機架（SG100和SG1000）]
 
 xref:viewing-status-indicators-on-sg100-and-sg1000-appliances.adoc[檢視SG100和SG1000應用裝置的狀態指標]

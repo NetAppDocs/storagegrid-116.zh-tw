@@ -13,11 +13,12 @@ summary: 在歸檔節點可以與Tivoli Storage Manager（TSM\）中介軟體通
 [role="lead"]
 在歸檔節點能夠與Tivoli Storage Manager（TSM）中介軟體通訊之前、您必須先設定許多設定。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您擁有特定的存取權限。
 
 
+.關於這項工作
 在設定這些設定之前、由於無法與Tivoli Storage Manager通訊、因此ARC服務會維持在主要警示狀態。
 
 .步驟

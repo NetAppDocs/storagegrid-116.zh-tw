@@ -46,6 +46,7 @@ summary: 在這個系統內交換的稽核訊息StorageGRID 包括所有訊息�
 * 「Value」是屬性的內容、通常是數值或文字值。值總是跟在一個分號（「：」）之後。資料類型CStr的值會被雙引號"""括住。
 
 
+.相關資訊
 xref:using-audit-explain-tool.adoc[使用稽核說明工具]
 
 xref:using-audit-sum-tool.adoc[使用稽核加總工具]

@@ -13,7 +13,7 @@ summary: 完成維護後、開啟控制器電源。
 [role="lead"]
 完成維護後、開啟控制器電源。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您已將控制器安裝在機櫃或機架中、並已連接資料和電源線。
 +
 xref:reinstalling-sg6000-cn-controller-into-cabinet-or-rack.adoc[將SG6000-CN-控制器重新安裝到機櫃或機架中]
@@ -106,6 +106,7 @@ CAUTION: 除非此應用裝置有綠色圖示、否則請勿讓其他應用裝�
 . 選用：安裝前擋板（如果已卸下前擋板）。
 
 
+.相關資訊
 xref:viewing-status-indicators-and-buttons-on-sg6000-cn-controller.adoc[檢視SG6000-CN-控制器上的狀態指示燈和按鈕]
 
 xref:viewing-boot-up-status-codes-for-sg6000-storage-controllers.adoc[檢視SG6000儲存控制器的開機狀態代碼]

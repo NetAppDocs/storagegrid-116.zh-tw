@@ -13,12 +13,13 @@ summary: 在某些情況下、您可能會想要移除金鑰管理伺服器。�
 [role="lead"]
 在某些情況下、您可能會想要移除金鑰管理伺服器。例如、如果您已停用站台、可能會想要移除站台專屬的KMS。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您已檢閱 xref:kms-considerations-and-requirements.adoc[使用金鑰管理伺服器的考量與要求]。
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您擁有root存取權限。
 
 
+.關於這項工作
 在下列情況下、您可以移除KMS：
 
 * 如果站台已停用、或站台中沒有啟用節點加密的應用裝置節點、您可以移除站台專屬的KMS。

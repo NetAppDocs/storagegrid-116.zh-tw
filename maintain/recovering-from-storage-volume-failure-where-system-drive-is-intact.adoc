@@ -13,8 +13,10 @@ summary: 您必須完成一系列的工作、才能還原軟體型儲存節點�
 [role="lead"]
 您必須完成一系列的工作、才能還原軟體型儲存節點、其中儲存節點上的一個或多個儲存磁碟區發生故障、但系統磁碟機仍未受損。如果只有儲存磁碟區故障、StorageGRID 則儲存節點仍可用於作業系統。
 
+.關於這項工作
 此恢復程序僅適用於軟體型儲存節點。如果應用裝置儲存節點上的儲存磁碟區發生故障、請使用「recoverure appliance Storage Node」程序。
 
 image::../media/storage_node_recovery_storage_vol_only.gif[儲存磁碟區恢復流程圖總覽]
 
+.相關資訊
 xref:recovering-storagegrid-appliance-storage-node.adoc[恢復應用裝置儲存節點]

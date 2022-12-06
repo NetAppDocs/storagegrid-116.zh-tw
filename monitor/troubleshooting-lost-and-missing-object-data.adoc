@@ -26,6 +26,7 @@ summary: 物件可擷取的原因有多種、包括從用戶端應用程式讀�
 
 如果沒有複本的物件資料遺失、則沒有恢復解決方案。不過、您必須重設「遺失物件」計數器、以防止已知的遺失物件遮罩任何新的遺失物件。
 
+.相關資訊
 xref:investigating-lost-objects.adoc[調查遺失的物件]
 
 xref:resetting-lost-and-missing-object-counts.adoc[重設遺失和遺失的物件數]

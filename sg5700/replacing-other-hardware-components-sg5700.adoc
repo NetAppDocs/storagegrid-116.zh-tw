@@ -13,11 +13,12 @@ summary: 您可能需要更換StorageGRID 處理器內的控制器電池、磁�
 [role="lead"]
 您可能需要更換StorageGRID 處理器內的控制器電池、磁碟機、風扇或電源供應器。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您有E系列硬體更換程序。
 * 本產品已經使用過 xref:placing-appliance-into-maintenance-mode.adoc[已設定維護模式] 如果元件更換程序需要關閉產品電源、
 
 
+.關於這項工作
 若要更換E2800控制器中的電池、請參閱這些指示中的更換E2800控制器說明。這些指示說明如何從產品中取出控制器、從控制器中取出電池、安裝電池、以及更換控制器。
 
 若要更換產品中的磁碟機、電源風扇容器、風扇容器、動力箱或磁碟機抽屜、請存取E系列維護E2800硬體的程序。
@@ -78,6 +79,7 @@ summary: 您可能需要更換StorageGRID 處理器內的控制器電池、磁�
 更換E2860磁碟櫃中的磁碟機匣
 
 |===
+.相關資訊
 xref:replacing-e2800-controller.adoc[更換E2800控制器]
 
 http://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E系列系統文件網站"^]

@@ -93,6 +93,7 @@ LegalHold
 
 如果儲存區的建立不符合法規要求、回應的HTTP狀態代碼為「找不到404」、S3錯誤代碼為「XNoSuchBucketCompliance」（XNoSuchBucketCompliance）。
 
+.相關資訊
 xref:../ilm/index.adoc[使用ILM管理物件]
 
 xref:../tenant/index.adoc[使用租戶帳戶]

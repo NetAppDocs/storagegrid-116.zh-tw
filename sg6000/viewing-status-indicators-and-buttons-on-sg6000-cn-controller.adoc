@@ -82,6 +82,7 @@ _無指標_
 
 
 
+.相關資訊
 xref:troubleshooting-hardware-installation.adoc[疑難排解硬體安裝（SG6000）]
 
 xref:configuring-bmc-interface-sg6000.adoc[設定BMC介面（SG6000）]

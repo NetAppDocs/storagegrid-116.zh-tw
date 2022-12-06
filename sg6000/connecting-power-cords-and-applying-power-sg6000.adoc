@@ -49,6 +49,7 @@ CAUTION: *電擊風險*：在連接電源線之前、請確定每個擴充櫃的
 . 將前擋板連接至SG6000-CN-控制器（如果已卸下）。
 
 
+.相關資訊
 xref:viewing-boot-up-status-codes-for-sg6000-storage-controllers.adoc[檢視SG6000儲存控制器的開機狀態代碼]
 
 xref:viewing-status-indicators-and-buttons-on-sg6000-cn-controller.adoc[檢視SG6000-CN-控制器上的狀態指示燈和按鈕]

@@ -40,6 +40,7 @@ NOTE: 支援使用新的設定檔時、將每個「刪除編碼」設定檔視�
 * 將現有物件的複本移至完全不同的位置、例如、將大量物件移入或移出Cloud Storage Pool、或移至或移出遠端站台。
 
 
+.相關資訊
 xref:creating-ilm-policy.adoc[建立ILM原則]
 
 

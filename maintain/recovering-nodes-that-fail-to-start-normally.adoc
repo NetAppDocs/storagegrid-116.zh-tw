@@ -23,4 +23,5 @@ TIP: 在發出此命令之前、請確認節點的網路組態正確無誤、因
 
 IMPORTANT: 在發出「StorageGRID flex不要 節點強制恢復_norme-name_」命令之後、您必須為_norme-name_執行其他恢復步驟。
 
+.相關資訊
 xref:whats-next-performing-additional-recovery-steps-if-required.adoc[接下來：視需要執行其他恢復步驟]

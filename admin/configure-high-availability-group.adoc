@@ -13,7 +13,7 @@ summary: 您可以設定高可用度（HA）群組、以提供對管理節點或
 [role="lead"]
 您可以設定高可用度（HA）群組、以提供對管理節點或閘道節點上服務的高可用度存取。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您擁有root存取權限。
 * 如果您打算在HA群組中使用VLAN介面、則表示您已建立VLAN介面。請參閱 xref:../admin/configure-vlan-interfaces.adoc[設定VLAN介面]。

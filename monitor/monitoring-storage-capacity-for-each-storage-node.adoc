@@ -13,10 +13,11 @@ summary: 您必須監控每個儲存節點的總可用空間、以確保節點�
 [role="lead"]
 您必須監控每個儲存節點的總可用空間、以確保節點有足夠空間容納新的物件資料。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您必須使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 
 
+.關於這項工作
 可用空間是儲存物件可用的儲存空間量。儲存節點的總可用空間是透過將節點內所有物件存放區的可用空間一起新增來計算。
 
 image::../media/calculating_watermarks.gif[總可用空間的概念性繪圖]
@@ -66,6 +67,7 @@ NOTE: 如果您的ILM原則使用銷毀編碼、當現有的儲存節點已滿�
 
 
 
+.相關資訊
 xref:../admin/index.adoc[管理StorageGRID]
 
 xref:troubleshooting-storagegrid-system.adoc[疑難排解低物件資料儲存警示]

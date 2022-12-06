@@ -51,6 +51,7 @@ summary: 除了遵循StorageGRID 有關「不二網」和「節點」的強化�
 
 不受信任的用戶端流量建議使用協力廠商負載平衡器。第三方負載平衡可提供更多控制能力、並提供額外的層級保護、防止攻擊。
 
+.相關資訊
 xref:../monitor/index.adoc[監控及疑難排解]
 
 xref:../audit/index.adoc[檢閱稽核記錄]

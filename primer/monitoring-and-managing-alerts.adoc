@@ -50,4 +50,5 @@ node_memory_MemTotal < 24000000000
 ----
 
 
+.相關資訊
 xref:../monitor/index.adoc[監控及疑難排解]

@@ -48,4 +48,5 @@ Date: _date_
 Authorization: _authorization string_
 Host: _host_
 ----
+.相關資訊
 xref:../tenant/index.adoc[使用租戶帳戶]

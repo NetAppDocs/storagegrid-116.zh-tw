@@ -75,14 +75,16 @@ TLS handshake failed
 檢查外部系統提供的密碼。系統必須使用StorageGRID 由支援的其中一個加密器進行傳出TLS連線、如管理StorageGRID 資訊所示。
 
 |===
+.相關資訊
 xref:../admin/index.adoc[管理StorageGRID]
 
 
 
-== 疑難排解Grid Network MTU不相符警示
+== [[trofe_MTU警示]疑難排解Grid Network MTU不相符警示
 
 當Grid Network介面（eth0）的最大傳輸單位（MTU）設定在網格中的各個節點之間大幅不同時、就會觸發* Grid Network MTU mismis*警示。
 
+.關於這項工作
 MTU設定的差異可能代表部分（但並非全部）eth0網路已設定為使用巨型框架。MTU大小不相符的值大於1000、可能會導致網路效能問題。
 
 .步驟
@@ -152,6 +154,7 @@ n節點、--node-node-'
 
 
 
+.相關資訊
 xref:../sg100-1000/index.adoc[SG100與SG1000服務應用裝置]
 
 xref:../sg6000/index.adoc[SG6000儲存設備]
@@ -166,6 +169,7 @@ xref:../sg5600/index.adoc[SG5600儲存設備]
 
 網路接收錯誤（NERRE）警示可能是StorageGRID 由於故障導致的、例如在連接到您的網路硬體時發生問題。在某些情況下、NERRER錯誤可以在不需手動介入的情況下清除。如果錯誤不清楚、請採取建議的行動。
 
+.關於這項工作
 NERRER警示可能是因為下列連線StorageGRID 到該產品的網路硬體問題所導致：
 
 * 需要轉送錯誤修正（FEC）、且不使用
@@ -234,7 +238,8 @@ NOTE: 您可能會注意到、在電子雜訊較高的環境中、錯誤率很�
 
 
 
-,疑難排解Grid Network MTU不相符警示
+.相關資訊
+<<troubleshoot_MTU_alert,疑難排解Grid Network MTU不相符警示>>
 
 xref:alarms-reference.adoc[警示參考（舊系統）]
 
@@ -257,6 +262,7 @@ xref:../sg100-1000/index.adoc[SG100與SG1000服務應用裝置]
 
 NOTE: 指定外部NTP來源進行正式作業層級StorageGRID 的安裝時、請勿在Windows Server 2016之前的Windows版本上使用Windows Time（W32Time）服務。舊版Windows上的時間服務不夠準確、Microsoft不支援在StorageGRID 高準確度環境中使用、例如：
 
+.相關資訊
 xref:../maintain/index.adoc[恢復與維護]
 
 
@@ -282,6 +288,7 @@ IMPORTANT: 建立獨立的虛擬網路介面、供Linux主機作業系統使用�
 
 如果您不想使用MAC位址複製、而想要允許所有介面接收和傳輸非Hypervisor指派的MAC位址資料、 請確定虛擬交換器和連接埠群組層級的安全性內容已設定為*接受*、適用於混雜模式、MAC位址變更和假傳輸。虛擬交換器上設定的值可由連接埠群組層級的值覆寫、因此請確保兩個位置的設定都相同。
 
+.相關資訊
 xref:../rhel/index.adoc[安裝Red Hat Enterprise Linux或CentOS]
 
 xref:../ubuntu/index.adoc[安裝Ubuntu或DEBIAN]
@@ -292,6 +299,7 @@ xref:../ubuntu/index.adoc[安裝Ubuntu或DEBIAN]
 
 處於孤立狀態的Linux節點通常表示StorageGRID 、控制StorageGRID 節點容器的孤立服務或是由節點監控的節點監控程式、會在非預期情況下死亡。
 
+.關於這項工作
 如果Linux節點回報其處於孤立狀態、您應該：
 
 * 檢查記錄中是否有錯誤和訊息。
@@ -337,6 +345,7 @@ storagegrid node start DC1-S1-172-16-1-172
 
 如果您在StorageGRID Linux主機上安裝了支援IPv6的節點、而且您注意到IPv6位址尚未如預期指派給節點容器、則可能需要在核心中啟用IPv6支援。
 
+.關於這項工作
 您可以在Grid Manager的下列位置查看已指派給網格節點的IPv6位址：
 
 * 選取*節點*、然後選取節點。然後在「總覽」標籤上、選取「* IP位址*」旁的*「顯示更多」*。

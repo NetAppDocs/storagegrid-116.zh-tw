@@ -13,7 +13,7 @@ summary: 您可能需要存取SANtricity 儲存控制器上的「靜態系統管
 [role="lead"]
 您可能需要存取SANtricity 儲存控制器上的「靜態系統管理程式」、才能監控儲存控制器機櫃中的硬體、或是設定E系列AutoSupport 支援。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您使用的是 xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 若要SANtricity 透過Grid Manager存取「功能區管理員StorageGRID 」、您必須安裝了「功能區」、而且必須具有「儲存設備管理員」權限或「根存取」權限。
 * 若要SANtricity 使用StorageGRID 《不能用的應用程式》安裝程式存取《不能用的功能》、您必須擁有SANtricity 《系統管理程式》管理員的使用者名稱和密碼。
@@ -26,6 +26,7 @@ NOTE: 您必須擁有SANtricity 更新版本的韌體8.70（11.70）才能SANtri
 
 IMPORTANT: 從SANtricity Grid Manager或應用裝置安裝程式存取「支援系統管理程式」、通常只能用來監控硬體及設定E系列AutoSupport 支援。許多功能和操作SANtricity 都不適用於監控StorageGRID 您的產品。為避免發生問題、請務必遵循設備的硬體安裝與維護指示。
 
+.關於這項工作
 根據SANtricity 您所處的安裝與組態程序階段、有三種方法可以存取「支援系統管理程式」：
 
 * 如果應用裝置尚未在StorageGRID 您的系統中部署為節點、您應該使用StorageGRID 「還原應用裝置安裝程式」中的「進階」索引標籤。
@@ -37,7 +38,7 @@ NOTE: 部署節點之後、StorageGRID 您就無法再使用「叢集設備安�
 * 如果您無法使用StorageGRID 「NetApp應用裝置安裝程式」或「Grid Manager」、您可以SANtricity 使用連線至管理連接埠的網頁瀏覽器、直接存取「系統管理程式」。
 
 
-此程序包括初始存取SANtricity 《不適用的系統管理程式》的步驟。如果您已經設定SANtricity 了「不全系統管理程式」、請前往 ,設定硬體警示 步驟。
+此程序包括初始存取SANtricity 《不適用的系統管理程式》的步驟。如果您已經設定SANtricity 了「不全系統管理程式」、請前往 <<config_hardware_alerts_sg5700,設定硬體警示>> 步驟。
 
 
 NOTE: 使用Grid Manager或StorageGRID NetApp應用裝置安裝程式、您無需SANtricity 設定或連接應用裝置的管理連接埠、即可存取《支援系統管理程式》。

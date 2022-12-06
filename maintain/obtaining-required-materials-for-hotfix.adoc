@@ -59,4 +59,5 @@ summary: 在套用修補程式之前、您必須先取得所有必要資料。
 修復程式的「Readme.txt」檔案。此檔案包含在修補程式下載頁面上。在應用此修復程序之前，請務必仔細檢查"REadme（重複）"文件。
 
 |===
+.相關資訊
 xref:downloading-hotfix-file.adoc[下載修補程式檔案]

@@ -13,6 +13,7 @@ summary: 您必須還原任何故障網格節點的網格組態檔、然後驗�
 [role="lead"]
 您必須還原任何故障網格節點的網格組態檔、然後驗證網格組態檔並解決任何錯誤。
 
+.關於這項工作
 只要主機的「/var/local」磁碟區不會因先前主機的故障而遺失、您就可以匯入主機上應有的任何網格節點。例如、如果您使用共享儲存設備來儲存StorageGRID 系統資料磁碟區、則可能仍存在「/var/local' Volume」（/var/local'磁碟區）、如StorageGRID Linux作業系統的《安裝說明》所述。匯入節點會將其節點組態檔還原至主機。
 
 如果無法匯入遺失的節點、則必須重新建立其網格組態檔。
@@ -83,6 +84,7 @@ IMPORTANT: 如果您在StorageGRID 重新建立節點的組態檔時、使用任
 
 
 
+.相關資訊
 xref:../rhel/index.adoc[安裝Red Hat Enterprise Linux或CentOS]
 
 xref:../ubuntu/index.adoc[安裝Ubuntu或DEBIAN]

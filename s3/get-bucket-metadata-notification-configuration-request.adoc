@@ -177,4 +177,5 @@ Content-Type: application/xml
     </Rule>
 </MetadataNotificationConfiguration>
 ----
+.相關資訊
 xref:../tenant/index.adoc[使用租戶帳戶]

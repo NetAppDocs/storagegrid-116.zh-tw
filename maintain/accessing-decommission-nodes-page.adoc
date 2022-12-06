@@ -13,7 +13,7 @@ summary: 當您存取Grid Manager中的「取消委任節點」頁面時、您�
 [role="lead"]
 當您存取Grid Manager中的「取消委任節點」頁面時、您可以一覽哪些節點可以停用。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您必須使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您必須具有維護或根存取權限。
 
@@ -66,7 +66,7 @@ image::../media/decommission_nodes_page_all_connected.png[取消委任節點頁�
 ** image:../media/icon_alarm_blue_unknown.png["藍色問號圖示"] （藍色）：未知
 
  a| 
-前往 ,列出取消委任程序選項的步驟。
+前往 <<decommission_procedure_choices,列出取消委任程序選項的步驟>>。
 
 
 
@@ -146,6 +146,7 @@ xref:decommissioning-disconnected-grid-nodes.adoc[取消委任中斷連線的網
 xref:decommissioning-connected-grid-nodes.adoc[取消委任連線的網格節點]
 
 |===
+.相關資訊
 xref:checking-data-repair-jobs.adoc[檢查資料修復工作]
 
 xref:understanding-adc-service-quorum.adoc[瞭解ADC仲裁]

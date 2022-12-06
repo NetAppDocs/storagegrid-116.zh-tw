@@ -13,7 +13,7 @@ summary: 主管理節點裝載CMN服務。部分維護程序只能使用主要�
 [role="lead"]
 主管理節點裝載CMN服務。部分維護程序只能使用主要管理節點執行。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您擁有特定的存取權限。
 

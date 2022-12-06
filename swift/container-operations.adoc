@@ -133,4 +133,5 @@ summary: 每個Swift帳戶最多可支援1、000個容器。StorageGRID下列Swi
 
 Container名稱必須在StorageGRID Isname命名空間中是唯一的。如果該容器存在於其他帳戶下、則會傳回下列標頭：「HTTP / 1.1 409衝突」。
 
+.相關資訊
 xref:monitoring-and-auditing-operations.adoc[監控與稽核作業]

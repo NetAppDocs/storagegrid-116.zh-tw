@@ -13,6 +13,7 @@ summary: 內部硬體維護完成後、請重新安裝控制器護蓋。
 [role="lead"]
 內部硬體維護完成後、請重新安裝控制器護蓋。
 
+.您需要的產品
 您已完成控制器內部的所有維護程序。
 
 .步驟
@@ -27,6 +28,7 @@ image::../media/sg6060_cover_latch_alignment_pin.jpg[SG6060護蓋栓鎖對齊插
 . 選用：將藍色的塑膠鎖栓鎖朝鎖定方向轉動四分之一圈、如鎖銷鎖上所示、即可將其鎖定。
 
 
+.完成後
 將控制器重新安裝到機櫃或機架中。
 
 xref:reinstalling-sg6000-cn-controller-into-cabinet-or-rack.adoc[將SG6000-CN-控制器重新安裝到機櫃或機架中]

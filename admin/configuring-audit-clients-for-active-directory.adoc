@@ -13,7 +13,7 @@ summary: 針對StorageGRID 您要從中擷取稽核訊息的各個執行此程�
 [role="lead"]
 針對StorageGRID 您要從中擷取稽核訊息的各個執行此程序、以利執行此程序。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您有「Passwords．txt」檔案、其中包含root / admin帳戶密碼（可在上述套件中找到）。
 * 您有CIFS Active Directory使用者名稱和密碼。
 * 您有「Configuration．TXT」檔案（可在上述套件中找到）。

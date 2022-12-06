@@ -41,4 +41,5 @@ summary: 選項要求會檢查個別Swift服務的可用度。選項要求由URL
 * 「X-trans-ID」
 
 
+.相關資訊
 xref:supported-swift-api-endpoints.adoc[支援的Swift API端點]

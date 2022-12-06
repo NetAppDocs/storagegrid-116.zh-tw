@@ -29,6 +29,7 @@ summary: 稽核訊息可協助您更深入瞭解StorageGRID 您的作業系統�
 
 如需稽核記錄檔的詳細資料、稽核訊息的格式、稽核訊息的類型、以及可用來分析稽核訊息的工具、請參閱稽核訊息的指示。若要瞭解如何設定稽核用戶端存取、請參閱《管理StorageGRID 》的指示。
 
+.相關資訊
 xref:../audit/index.adoc[檢閱稽核記錄]
 
 xref:../admin/index.adoc[管理StorageGRID]

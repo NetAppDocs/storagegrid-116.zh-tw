@@ -33,4 +33,5 @@ S3用戶端會要求（SUPD）更新S3物件（S3KY）的指定中繼資料（�
 [ATIM(UI64):1499810043157462][ATYP(FC32):SUPD][ANID(UI32):12258396][AMID(FC32):S3RQ]
 [ATID(UI64):8987436599021955788]]
 ----
+.相關資訊
 xref:../monitor/configure-audit-messages.adoc[設定稽核訊息和記錄目的地]

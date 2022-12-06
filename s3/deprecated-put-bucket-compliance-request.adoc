@@ -106,6 +106,7 @@ Consistency-Control: strong-site
 * 如果申請中的「RetentionPeriodMinutes」低於庫位目前的保留期間、則HTTP狀態代碼為「400 Bad Request」（400錯誤要求）。
 
 
+.相關資訊
 xref:deprecated-put-bucket-request-modifications-for-compliance.adoc[已過時：將資源桶要求修改以符合法規要求]
 
 xref:../tenant/index.adoc[使用租戶帳戶]

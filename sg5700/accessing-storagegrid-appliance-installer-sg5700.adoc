@@ -13,13 +13,14 @@ summary: 您必須存取StorageGRID 《Es不要 裝置安裝程式》、才能�
 [role="lead"]
 您必須存取StorageGRID 《不景設備安裝程式》、才能設定應用裝置與StorageGRID 三個靜態網路之間的連線：Grid Network（網格網路）、管理網路（選用）和用戶端網路（選用）。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您使用的是 xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 本產品已連線StorageGRID 至您計畫使用的所有環節。
 * 您知道設備在這些網路上的IP位址、閘道和子網路。
 * 您已設定要使用的網路交換器。
 
 
+.關於這項工作
 當您第一次存取StorageGRID 《NetApp應用裝置安裝程式》時、可以使用DHCP指派給管理網路的IP位址（假設應用裝置已連線至管理網路）、或使用DHCP指派給Grid Network的IP位址。建議使用管理網路的IP位址。否則、如果StorageGRID 您使用Grid Network的DHCP位址來存取《NetApp產品安裝程式」、StorageGRID 則當您變更連結設定和輸入靜態IP時、可能會失去與《NetApp產品安裝程式」的連線。
 
 .步驟
@@ -88,4 +89,5 @@ NOTE: 如果無法透過連結本機連線存取首頁、請將服務筆記型�
 . 檢閱首頁上顯示的任何訊息、並視需要設定連結組態和IP組態。
 
 
+.相關資訊
 xref:../admin/web-browser-requirements.adoc[網頁瀏覽器需求]

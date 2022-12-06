@@ -25,6 +25,7 @@ NOTE: 由於搜尋整合服務會將物件中繼資料傳送至目的地、因�
 * 放置時段中繼資料通知組態要求
 
 
+.相關資訊
 xref:configuration-xml-for-search-configuration.adoc[搜尋整合的組態XML]
 
 xref:object-metadata-included-in-metadata-notifications.adoc[中繼資料通知中包含的物件中繼資料]

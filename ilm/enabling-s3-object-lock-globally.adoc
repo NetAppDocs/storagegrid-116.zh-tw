@@ -13,7 +13,7 @@ summary: 如果S3租戶帳戶在儲存物件資料時需要遵守法規要求、
 [role="lead"]
 如果S3租戶帳戶在儲存物件資料時需要遵守法規要求、您必須為整個StorageGRID 整個整個系統啟用S3物件鎖定。啟用全域S3物件鎖定設定、可讓任何S3租戶使用者使用S3物件鎖定來建立及管理儲存區和物件。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您擁有root存取權限。
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您已檢閱S3物件鎖定工作流程、而且必須瞭解考量事項。
@@ -25,6 +25,7 @@ summary: 如果S3租戶帳戶在儲存物件資料時需要遵守法規要求、
 
 
 
+.關於這項工作
 網格管理員必須啟用全域S3物件鎖定設定、才能讓租戶使用者建立啟用S3物件鎖定的新儲存區。啟用此設定之後、就無法停用。
 
 
@@ -66,6 +67,7 @@ image::../media/s3_object_lock_global_setting_error.gif[S3物件鎖定全域設�
 
 
 
+.完成後
 啟用全域S3物件鎖定設定之後、您可能需要 xref:../ilm/creating-default-ilm-rule.adoc[建立預設規則] 這是符合法規的且 xref:creating-ilm-policy-after-s3-object-lock-is-enabled.adoc[建立ILM原則] 這是符合法規的。啟用此設定之後、ILM原則可以選擇性地同時包含相容的預設規則和不相容的預設規則。例如、您可能想要使用不符合規定的規則、該規則不具備未啟用S3物件鎖定之儲存區中物件的篩選條件。
 
 .相關資訊

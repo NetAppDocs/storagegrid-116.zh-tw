@@ -13,7 +13,7 @@ summary: 如果您的歸檔節點透過S3 API連線至歸檔儲存系統、您�
 [role="lead"]
 如果您的歸檔節點透過S3 API連線至歸檔儲存系統、您可以重設儲存失敗計數、以清除ARVf（儲存故障）警示。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您擁有特定的存取權限。
 

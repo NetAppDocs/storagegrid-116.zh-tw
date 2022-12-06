@@ -13,13 +13,14 @@ summary: CloudMirror複寫服務是StorageGRID 三項功能完善的平台服務
 [role="lead"]
 。 xref:understanding-cloudmirror-replication-service.adoc[CloudMirror複寫服務] 是StorageGRID 三種支援的平台服務之一。您可以使用CloudMirror複寫、將物件自動複寫到外部S3儲存區。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 平台服務必須由StorageGRID 管理員為您的租戶帳戶啟用。
 * 您必須已經建立一個儲存區、做為複寫來源。
 * 您打算做為CloudMirror複寫目的地的端點必須已經存在、而且您必須擁有它的URN。
 * 您必須屬於具有「管理所有庫位」或「根存取」權限的使用者群組、才能管理租戶帳戶中所有S3庫位的設定。這些權限會在使用租戶管理程式設定儲存區時、覆寫群組或儲存區原則中的權限設定。
 
 
+.關於這項工作
 CloudMirror複寫會將物件從來源儲存區複製到端點中指定的目的地儲存區。若要為儲存區啟用CloudMirror複寫、您必須建立並套用有效的儲存區複寫組態XML。複寫組態XML必須針對每個目的地使用S3儲存區端點的URN。
 
 
@@ -93,6 +94,7 @@ NOTE: 每個租戶帳戶都必須由StorageGRID 使用Grid Manager或Grid Manage
 
 
 
+.相關資訊
 xref:../s3/index.adoc[使用S3]
 
 xref:creating-platform-services-endpoint.adoc[建立平台服務端點]

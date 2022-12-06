@@ -24,4 +24,5 @@ summary: 連接網路纜線之後、您就可以開始為應用裝置供電了�
 . 如果已拆下、請將前擋板裝到產品上。
 
 
+.相關資訊
 xref:viewing-status-indicators-on-sg100-and-sg1000-appliances.adoc[檢視SG100和SG1000應用裝置的狀態指標]

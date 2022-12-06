@@ -13,7 +13,7 @@ summary: 您可以SANtricity 透過「e系統管理節點」（AutoSupport 而�
 [role="lead"]
 您可以SANtricity 透過「e系統管理節點」（AutoSupport 而非儲存應用裝置管理連接埠）、將E系列的《系統管理程式》（E-系列）功能資訊傳送給技術支援部門StorageGRID 。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您擁有Storage Appliance管理員權限或根存取權限。
 
@@ -21,6 +21,7 @@ summary: 您可以SANtricity 透過「e系統管理節點」（AutoSupport 而�
 
 NOTE: 您必須擁有SANtricity 更新版本的韌體8.70（11.7）或更新版本、SANtricity 才能使用Grid Manager存取《系統管理程式》。
 
+.關於這項工作
 E系列AutoSupport 的資訊包含儲存硬體的詳細資料、比AutoSupport 其他由該系統傳送的資訊更具體StorageGRID 。
 
 在SANtricity 不AutoSupport 使用應用裝置管理連接埠的情況StorageGRID 下、在「Ses供 系統管理程式」中設定一個特殊的Proxy伺服器位址、使其能透過「管理員節點」傳輸有關消息。以這種方式傳輸的資訊、會與Grid Manager中所設定的偏好的寄件者和管理Proxy設定相符。AutoSupport

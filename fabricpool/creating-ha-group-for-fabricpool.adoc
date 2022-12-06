@@ -13,12 +13,13 @@ summary: 設定StorageGRID 使用FabricPool 搭配使用的功能時、您可以
 [role="lead"]
 設定StorageGRID 使用FabricPool 搭配使用的功能時、您可以選擇性地建立一或多個高可用度（HA）群組。HA群組由管理節點、閘道節點或兩者上的一或多個網路介面組成。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您擁有「根存取」權限。
 * 如果您打算使用VLAN、則已建立VLAN介面。請參閱 xref:../admin/configure-vlan-interfaces.adoc[設定VLAN介面]。
 
 
+.關於這項工作
 每個HA群組都會使用虛擬IP位址（VIP）來提供高可用度的存取權限、以存取相關節點上的共享服務。
 
 如需此工作的詳細資訊、請參閱 xref:../admin/managing-high-availability-groups.adoc[管理高可用度群組]。

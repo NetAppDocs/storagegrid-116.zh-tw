@@ -13,7 +13,7 @@ summary: 找到控制器、以便執行硬體維護或升級。
 [role="lead"]
 找到控制器、以便執行硬體維護或升級。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您已確定需要維護的控制器。
 +
 （選用）若要協助找出資料中心中的控制器、請開啟藍色識別LED。
@@ -48,6 +48,7 @@ xref:turning-controller-identify-led-on-and-off.adoc[開啟和關閉控制器識
 
 
 
+.相關資訊
 xref:removing-fibre-channel-hba.adoc[移除Fibre Channel HBA]
 
 xref:removing-sg6000-cn-controller-from-cabinet-or-rack.adoc[從機櫃或機架上卸下SG6000-CN.控制器]

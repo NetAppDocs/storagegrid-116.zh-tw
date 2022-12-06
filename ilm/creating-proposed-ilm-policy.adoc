@@ -16,7 +16,7 @@ summary: 您可以從頭開始建立建議的ILM原則、或是想要從相同�
 
 NOTE: 如果已啟用全域S3物件鎖定設定、請改用下列程序： xref:creating-ilm-policy-after-s3-object-lock-is-enabled.adoc[在啟用S3物件鎖定之後建立ILM原則]。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您擁有特定的存取權限。
 * 您已建立要新增至建議原則的ILM規則。視需要、您可以儲存建議的原則、建立其他規則、然後編輯建議的原則以新增規則。
@@ -28,6 +28,7 @@ image::../media/video-screenshot-ilm-policies.png[影片：StorageGRID 《ILM原
 
 
 
+.關於這項工作
 建立建議ILM原則的典型理由包括：
 
 * 您新增了一個新站台、需要使用新的ILM規則將物件放置在該站台。

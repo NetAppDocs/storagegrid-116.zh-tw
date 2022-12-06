@@ -15,6 +15,7 @@ summary: 您必須準確完成一系列工作、才能從歸檔節點故障中�
 
 image::../media/overview_archive_node_recovery.gif[歸檔節點還原的流程圖總覽]
 
+.關於這項工作
 歸檔節點還原受下列問題影響：
 
 * 如果ILM原則設定為複寫單一複本。

@@ -97,6 +97,7 @@ IMPORTANT: VMware Live VMotion會使虛擬機器時鐘時間跳過、而且不�
 * 網域名稱系統（DNS）伺服器IP位址
 
 
+.相關資訊
 xref:how-grid-nodes-discover-primary-admin-node.adoc[網格節點如何探索主要管理節點]
 
 xref:storage-and-performance-requirements.adoc[儲存與效能需求]

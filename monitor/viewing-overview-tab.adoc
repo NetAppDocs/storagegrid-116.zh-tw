@@ -58,6 +58,7 @@ NOTE: 在託管關機作業期間、節點可能會顯示為「未知」。在�
 
 image::../media/nodes_page_alerts_table.png[節點頁面警示表]
 
+.相關資訊
 xref:monitoring-node-connection-states.adoc[監控節點連線狀態]
 
 xref:viewing-current-alerts.adoc[檢視目前的警示]

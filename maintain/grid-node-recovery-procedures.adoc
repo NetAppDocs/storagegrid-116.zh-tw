@@ -22,4 +22,5 @@ summary: 如果網格節點發生故障、您可以更換故障的實體或虛�
 
 IMPORTANT: 如果整個StorageGRID 網站故障、請聯絡技術支援部門。技術支援部門將與您合作開發及執行站台恢復計畫、以最大化所恢復的資料量、並達成您的業務目標。
 
+.相關資訊
 xref:how-site-recovery-is-performed-by-technical-support.adoc[技術支援如何執行站台恢復]

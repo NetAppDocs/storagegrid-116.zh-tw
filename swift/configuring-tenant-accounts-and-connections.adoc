@@ -38,6 +38,7 @@ Swift租戶帳戶是StorageGRID 由使用Grid Manager或Grid Management API的�
 
 IMPORTANT: Swift使用者必須擁有root存取權限、才能存取租戶管理程式。不過、「根存取」權限不允許使用者驗證Swift REST API、以建立容器和擷取物件。使用者必須具有Swift Administrator權限、才能驗證到Swift REST API。
 
+.相關資訊
 xref:../admin/index.adoc[管理StorageGRID]
 
 xref:../tenant/index.adoc[使用租戶帳戶]
@@ -213,6 +214,7 @@ NOTE: CLB服務已過時。
 
 如果選取*「啟用HTTP連線*」選項、則用戶端的HTTP連接埠必須與HTTPS使用的連接埠不同。請參閱「管理StorageGRID 功能」的說明。
 
+.相關資訊
 xref:../admin/index.adoc[管理StorageGRID]
 
 
@@ -221,7 +223,7 @@ xref:../admin/index.adoc[管理StorageGRID]
 
 您可以使用Swift CLI來測試與StorageGRID 該系統的連線、並驗證您是否可以讀取物件並將物件寫入系統。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您必須下載並安裝python swiftClient、Swift命令列用戶端。
 +
 https://platform.swiftstack.com/docs/integration/python-swiftclient.html["SwiftStack：Python-swiftClient"^]
@@ -229,6 +231,7 @@ https://platform.swiftstack.com/docs/integration/python-swiftclient.html["SwiftS
 * 您必須在StorageGRID 整個作業系統中擁有Swift租戶帳戶。
 
 
+.關於這項工作
 如果您尚未設定安全性、則必須將「不安全」旗標新增至這些命令。
 
 .步驟
@@ -289,6 +292,7 @@ delete test_container
 ----
 
 
+.相關資訊
 xref:configuring-tenant-accounts-and-connections.adoc[建立及設定Swift租戶帳戶]
 
 xref:configuring-security-for-rest-api.adoc[設定REST API的安全性]

@@ -13,7 +13,7 @@ summary: 更換儲存節點之後、您必須在Grid Manager中選取「Start Re
 [role="lead"]
 更換儲存節點之後、您必須在Grid Manager中選取「Start Recovery」（開始還原）、將新節點設定為故障節點的替換節點。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您必須使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您必須具有維護或根存取權限。
 * 您必須擁有資源配置通關密碼。
@@ -22,6 +22,7 @@ summary: 更換儲存節點之後、您必須在Grid Manager中選取「Start Re
 * 您必須已確認儲存節點在過去15天內尚未重建。
 
 
+.關於這項工作
 如果儲存節點是以容器形式安裝在Linux主機上、則只有在下列其中一項為真時、才必須執行此步驟：
 
 * 您必須使用「-force」旗標來匯入節點、或是發出「StorageGRID 節點強制恢復節點名稱」
@@ -61,4 +62,5 @@ image::../media/recovery_reset_button.gif[顯示「等待手動步驟」階段�
 
 
 
+.相關資訊
 xref:preparing-appliance-for-reinstallation-platform-replacement-only.adoc[準備設備以重新安裝（僅限平台更換）]

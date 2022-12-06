@@ -293,6 +293,7 @@ EP
 「ManageSGA」代碼表示與E2700控制器的預先網格通訊失敗。
 
 |===
+.相關資訊
 xref:troubleshooting-hardware-installation.adoc[疑難排解硬體安裝（SG5600）]
 
 https://mysupport.netapp.com/site/global/dashboard["NetApp支援"^]

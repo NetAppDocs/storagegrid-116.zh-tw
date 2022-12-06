@@ -40,6 +40,7 @@ S3租戶帳戶是StorageGRID 由使用Grid Manager或Grid Management API的資�
 
 IMPORTANT: S3租戶使用者可以使用租戶管理程式來建立和管理S3儲存區、但必須擁有S3存取金鑰、並使用S3 REST API來擷取和管理物件。
 
+.相關資訊
 xref:../admin/index.adoc[管理StorageGRID]
 
 xref:../tenant/index.adoc[使用租戶帳戶]
@@ -79,6 +80,7 @@ NOTE: CLB服務已過時。在發佈版推出之前設定的用戶端StorageGRID
 
 如需每個選項的詳細資訊、請參閱《關於管理StorageGRID 功能的說明》。
 
+.相關資訊
 xref:../admin/index.adoc[管理StorageGRID]
 
 
@@ -199,6 +201,7 @@ LdR
 
 您可以為用戶端用來連線StorageGRID 到靜態的IP位址設定DNS名稱。請聯絡您的本機網路管理員。
 
+.相關資訊
 xref:../admin/index.adoc[管理StorageGRID]
 
 
@@ -217,6 +220,7 @@ NOTE: CLB服務已過時。
 
 如果選取*「啟用HTTP連線*」選項、則用戶端的HTTP連接埠必須與HTTPS使用的連接埠不同。請參閱「管理StorageGRID 功能」的說明。
 
+.相關資訊
 xref:../admin/index.adoc[管理StorageGRID]
 
 xref:benefits-of-active-idle-and-concurrent-http-connections.adoc[作用中、閒置及並行HTTP連線的優點]
@@ -227,6 +231,7 @@ xref:benefits-of-active-idle-and-concurrent-http-connections.adoc[作用中、�
 
 在用戶端要求使用S3網域名稱之前、StorageGRID 管理員必須先將系統設定為接受在S3路徑樣式和S3虛擬託管樣式要求中使用S3網域名稱的連線。
 
+.關於這項工作
 若要使用S3虛擬託管樣式要求、網格管理員必須執行下列工作：
 
 * 使用Grid Manager將S3端點網域名稱新增StorageGRID 至整個系統。
@@ -251,6 +256,7 @@ NOTE: CLB服務已過時。
 
 完成這些步驟之後、您就可以使用虛擬託管樣式的要求（例如「bucket.s3.company.com`」）。
 
+.相關資訊
 xref:../admin/index.adoc[管理StorageGRID]
 
 xref:configuring-security-for-rest-api.adoc[設定REST API的安全性]
@@ -261,7 +267,7 @@ xref:configuring-security-for-rest-api.adoc[設定REST API的安全性]
 
 您可以使用Amazon Web Services命令列介面（AWS CLI）來測試您與系統的連線、並確認您可以讀取物件並將物件寫入系統。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您已從下載並安裝AWS CLI https://aws.amazon.com/cli["aws.amazon.com/cli"^]。
 * 您已在StorageGRID 整個系統上建立S3租戶帳戶。
 

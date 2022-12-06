@@ -366,6 +366,7 @@ Get Bucket（列出物件）、版本1和版本2
 請參閱 xref:../s3/use-s3-object-lock-default-bucket-retention.adoc#put-object-lock-configuration[放置物件鎖定組態] 以取得詳細資訊。
 
 |===
+.相關資訊
 xref:consistency-controls.adoc[一致性控管]
 
 xref:get-bucket-last-access-time-request.adoc[取得時段上次存取時間要求]

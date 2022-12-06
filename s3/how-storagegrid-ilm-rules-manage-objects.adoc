@@ -56,6 +56,7 @@ NOTE: 根據預設、所有S3儲存區的上次存取時間更新都會停用。
 
 如需ILM的詳細資訊、請參閱資訊生命週期管理的物件管理說明。
 
+.相關資訊
 xref:../tenant/index.adoc[使用租戶帳戶]
 
 xref:../ilm/index.adoc[使用ILM管理物件]

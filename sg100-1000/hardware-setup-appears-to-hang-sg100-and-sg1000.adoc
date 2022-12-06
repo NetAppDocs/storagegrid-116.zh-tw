@@ -18,6 +18,7 @@ summary: 如果硬體故障或纜線錯誤導致應用裝置無法完成開機�
 . 如果您需要解決問題的協助、請聯絡技術支援部門。
 
 
+.相關資訊
 xref:viewing-boot-up-codes-for-appliance-sg100-and-sg1000.adoc[檢視應用裝置的開機代碼]
 
 xref:viewing-error-codes-for-sg1000-controller-sg100-and-sg1000.adoc[檢視應用裝置的錯誤代碼]

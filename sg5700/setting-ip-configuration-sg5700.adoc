@@ -13,6 +13,7 @@ summary: 您可以使用StorageGRID 「解決方法安裝程式」來設定Stora
 [role="lead"]
 您可以使用StorageGRID 「解決方法安裝程式」來設定StorageGRID 應用裝置儲存節點在「網格」、「管理」和「用戶端網路」上的IP位址和路由資訊。
 
+.關於這項工作
 您必須為每個連線網路上的應用裝置指派靜態IP、或為DHCP伺服器上的位址指派永久租期。
 
 如果您要變更連結組態、請參閱變更E5700SG控制器連結組態的指示。
@@ -223,4 +224,5 @@ IMPORTANT: 網路的MTU值必須符合節點所連接之交換器連接埠上所
 
 
 
+.相關資訊
 xref:changing-link-configuration-of-e5700sg-controller.adoc[變更E5700SG控制器的連結組態]

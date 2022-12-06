@@ -31,4 +31,5 @@ summary: 系統強化是消除StorageGRID 儘可能多的安全風險的程序�
 * 貴組織遵循哪些安全要求和慣例。您可能需要遵守特定的法規或企業要求。
 
 
+.相關資訊
 https://security.netapp.com/policy/["弱點處理原則"^]

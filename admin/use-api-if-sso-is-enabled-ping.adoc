@@ -19,11 +19,12 @@ summary: 如果您已設定並啟用單一登入（SSO）、而且使用PingFeda
 
 如果您使用PingFedate做為SSO身分識別供應商、則適用這些指示
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您知道屬於StorageGRID 某個位向使用者群組的聯盟使用者的SSO使用者名稱和密碼。
 * 如果您想要存取租戶管理API、就知道租戶帳戶ID。
 
 
+.關於這項工作
 若要取得驗證權杖、您可以使用下列其中一個範例：
 
 * "storagegride-ssoauth.py" Python指令碼、位於StorageGRID 下列目錄中：安裝檔案目錄（如Red Hat Enterprise Linux或CentOS、Ubuntu或DEBIANS的"./rpms"、VMware的"./vSphere."）。
@@ -207,6 +208,7 @@ export MYTOKEN="56eb07bf-21f6-40b7-af0b-5c6cacfb25e7"
 
 如果已啟用單一登入（SSO）、您必須發出一系列API要求、以登出Grid Management API或租戶管理API。如果您使用PingFedate做為SSO身分識別供應商、則適用這些指示
 
+.關於這項工作
 如有需要、StorageGRID 只要從貴組織的單一登出頁面登出、即可登出此功能。或者、您也可以觸發StorageGRID 來自下列項目的單一登出（SLO）：需要有效StorageGRID 的SESO承載權杖。
 
 .步驟

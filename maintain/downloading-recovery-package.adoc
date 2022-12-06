@@ -13,7 +13,7 @@ summary: 恢復套件檔案可讓您在StorageGRID 發生故障時還原整個�
 [role="lead"]
 恢復套件檔案可讓您在StorageGRID 發生故障時還原整個系統。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您必須使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您必須擁有資源配置通關密碼。
 * 您必須擁有特定的存取權限。
@@ -42,4 +42,5 @@ IMPORTANT: 必須保護恢復套件檔案、因為其中包含可用於從Storag
 
 
 
+.相關資訊
 xref:../admin/index.adoc[管理StorageGRID]

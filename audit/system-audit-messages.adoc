@@ -205,4 +205,5 @@ VLST
 xref:vlst-user-initiated-volume-lost.adoc[VLST：使用者起始的Volume Lost]
 
 |===
+.相關資訊
 xref:lkcu-overwritten-object-cleanup.adoc[LKCU：覆寫物件清理]

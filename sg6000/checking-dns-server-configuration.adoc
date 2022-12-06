@@ -13,8 +13,10 @@ summary: 您可以檢查並暫時變更此應用裝置節點目前使用的網�
 [role="lead"]
 您可以檢查並暫時變更此應用裝置節點目前使用的網域名稱系統（DNS）伺服器。
 
+.您需要的產品
 本產品已經使用過 xref:placing-appliance-into-maintenance-mode.adoc[已設定維護模式]。
 
+.關於這項工作
 如果加密設備無法連線至金鑰管理伺服器（KMS）或KMS叢集、您可能需要變更DNS伺服器設定、因為KMS的主機名稱是指定為網域名稱、而非IP位址。您對應用裝置DNS設定所做的任何變更都是暫時性的、當您結束維護模式時就會遺失。若要永久變更這些變更、請在Grid Manager中指定DNS伺服器（* maintenance *>* Network *>* DNS servers *）。
 
 * 只有節點加密設備使用完整網域名稱（而非IP位址）來定義KMS伺服器的主機名稱時、才需要暫時變更DNS組態。

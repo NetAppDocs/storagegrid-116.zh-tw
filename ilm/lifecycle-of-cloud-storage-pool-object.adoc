@@ -13,8 +13,8 @@ summary: 在實作雲端儲存資源池之前、請先檢閱儲存在每種類�
 [role="lead"]
 在實作雲端儲存資源池之前、請先檢閱儲存在每種類型雲端儲存資源池中的物件生命週期。
 
-*  Lifecycle of a Cloud Storage Pool object
-*  Lifecycle of a Cloud Storage Pool object
+* <<S3：Cloud Storage Pool物件的生命週期>>
+* <<Azure：Cloud Storage Pool物件的生命週期>>
 
 
 
@@ -110,4 +110,5 @@ NOTE: 如果StorageGRID 物件的一個或多個複本也存在於位於整個�
 
 
 
+.相關資訊
 xref:../s3/index.adoc[使用S3]

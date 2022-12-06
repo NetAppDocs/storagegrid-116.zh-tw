@@ -13,11 +13,12 @@ summary: 您可以選擇性地設計StorageGRID 一套「動態流量分類」�
 [role="lead"]
 您可以選擇性地設計StorageGRID 一套「動態流量分類」原則、以最佳化FabricPool 針對該工作負載的服務品質。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您擁有「根存取」權限。
 
 
+.關於這項工作
 建立FabricPool 適用於功能的流量分類原則的最佳實務做法取決於工作負載、如下所示：
 
 * 如果您計畫將FabricPool 主要的工作負載資料分層StorageGRID 至元數據、則應確保FabricPool 該工作負載擁有大部分頻寬。您可以建立流量分類原則、以限制所有其他工作負載。

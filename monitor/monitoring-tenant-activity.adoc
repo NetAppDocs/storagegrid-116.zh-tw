@@ -13,7 +13,7 @@ summary: 所有用戶端活動都與租戶帳戶相關聯。您可以使用Grid 
 [role="lead"]
 所有用戶端活動都與租戶帳戶相關聯。您可以使用Grid Manager來監控租戶的儲存使用量或網路流量、也可以使用稽核記錄或Grafana儀表板來收集租戶使用StorageGRID 率的詳細資訊。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您擁有root存取權或系統管理員權限。
 
@@ -145,6 +145,7 @@ IMPORTANT: 「指標」頁面上提供的工具主要供技術支援使用。這
 
 
 
+.相關資訊
 xref:alerts-reference.adoc[警示參考資料]
 
 xref:../audit/index.adoc[檢閱稽核記錄]

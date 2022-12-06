@@ -174,6 +174,7 @@ S3儲存區或Swift容器的一致性層級決定StorageGRID 了在告知用戶�
 
 由於這項暫時性置換、請注意、如果其他站台有多個節點無法使用、站台取消委任期間發生的任何用戶端寫入、更新及刪除作業都可能失敗。
 
+.相關資訊
 xref:how-site-recovery-is-performed-by-technical-support.adoc[技術支援如何執行站台恢復]
 
 xref:../ilm/index.adoc[使用ILM管理物件]

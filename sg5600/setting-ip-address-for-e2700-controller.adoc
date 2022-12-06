@@ -13,8 +13,10 @@ summary: E2700控制器上的管理連接埠1可將應用裝置連接至SANtrici
 [role="lead"]
 E2700控制器上的管理連接埠1可將應用裝置連接至SANtricity 管理網路、以利執行《E2700儲存管理程式》。您必須為E2700控制器設定靜態IP位址、以確保不會中斷與StorageGRID 硬體和控制器韌體的管理連線。
 
+.您需要的產品
 您使用的是 xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 
+.關於這項工作
 DHCP指派的位址可能隨時變更。為控制器指派靜態IP位址、以確保存取一致。
 
 .步驟
@@ -64,4 +66,5 @@ image::../media/storage_controller_ipv4_and_def_gateway.gif[儲存控制器網�
 
 
 
+.相關資訊
 http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61197["NetApp文件：SANtricity NetApp Storage Manager"^]

@@ -13,7 +13,7 @@ summary: 您必須使用Active Directory Federation Services（AD FS）為系統
 [role="lead"]
 您必須使用Active Directory Federation Services（AD FS）為系統中的每個管理節點建立信賴關係人信任。您可以使用PowerShell命令、從StorageGRID 支援中心匯入SAML中繼資料、或手動輸入資料、來建立依賴方信任。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您已設定StorageGRID 單一登入以供使用、並選擇* AD FS*作為SSO類型。
 * *在Grid Manager的「單一登入」頁面上選取「沙箱模式*」。請參閱 xref:../admin/using-sandbox-mode.adoc[使用沙箱模式]。
 * 您知道系統中每個管理節點的完整網域名稱（或IP位址）和依賴方識別碼。您可以在StorageGRID 「管理員節點詳細資料」表的「單個登入」頁面上找到這些值。
@@ -26,6 +26,7 @@ NOTE: 您必須為StorageGRID 您的系統中的每個管理節點建立信賴�
 * 如果您是手動建立信賴關係人信任關係、則您擁有上傳至StorageGRID 該管理介面的自訂憑證、或者您知道如何從命令Shell登入管理節點。
 
 
+.關於這項工作
 這些指示適用於Windows Server 2016 AD FS。如果您使用的是不同版本的AD FS、您會注意到程序上的細微差異。如有任何問題、請參閱Microsoft AD FS文件。
 
 

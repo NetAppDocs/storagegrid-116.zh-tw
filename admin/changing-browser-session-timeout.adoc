@@ -13,11 +13,12 @@ summary: 您可以控制Grid Manager和Tenant Manager使用者是否在超過一
 [role="lead"]
 您可以控制Grid Manager和Tenant Manager使用者是否在超過一定時間內處於非作用中狀態時登出。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您擁有特定的存取權限。
 
 
+.關於這項工作
 GUI無活動逾時預設為900秒（15分鐘）。如果使用者的瀏覽器工作階段在這段時間內未處於作用中狀態、工作階段就會逾時。
 
 視需要、您可以設定GUI無活動逾時顯示選項來增加或減少逾時期間。

@@ -75,6 +75,7 @@ image::../media/endpoint_error_on_connection_tab.png[連線索引標籤上的端
 
 xref:../admin/index.adoc[管理StorageGRID]
 
+.相關資訊
 xref:creating-platform-services-endpoint.adoc[建立平台服務端點]
 
 xref:testing-connection-for-platform-services-endpoint.adoc[測試平台服務端點的連線]

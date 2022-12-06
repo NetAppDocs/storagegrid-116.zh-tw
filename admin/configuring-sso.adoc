@@ -45,7 +45,7 @@ image::../media/sign_in_sso.gif[啟用SSO時顯示「登入」頁面StorageGRID]
 
 +
 
-NOTE: 當您輸入租戶帳戶的完整URL（即完整網域名稱或IP位址、後面接著「//?AccountID=_20-digit Account-id_」）時、不會顯示「協助登入」頁面。StorageGRID而是會立即重新導向至組織的SSO登入頁面、您可以在其中登入 ,使用SSO認證登入。
+NOTE: 當您輸入租戶帳戶的完整URL（即完整網域名稱或IP位址、後面接著「//?AccountID=_20-digit Account-id_」）時、不會顯示「協助登入」頁面。StorageGRID而是會立即重新導向至組織的SSO登入頁面、您可以在其中登入 <<signin_sso,使用SSO認證登入>>。
 
 . 指出您要存取Grid Manager或租戶管理程式：
 +

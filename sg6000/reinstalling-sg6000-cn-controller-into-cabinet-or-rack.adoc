@@ -13,6 +13,7 @@ summary: 硬體維護完成後、將控制器重新安裝到機櫃或機架中�
 [role="lead"]
 硬體維護完成後、將控制器重新安裝到機櫃或機架中。
 
+.您需要的產品
 您已重新安裝控制器護蓋。
 
 xref:reinstalling-sg6000-cn-controller-cover.adoc[重新安裝SG6000-CN-控制器護蓋]
@@ -48,6 +49,7 @@ xref:connecting-power-cords-and-applying-power-sg6000.adoc[連接電源線並接
 
 
 
+.完成後
 控制器可以重新啟動。
 
 xref:powering-on-sg6000-cn-controller-and-verifying-operation.adoc[開啟SG6000-CN-控制器電源、並確認運作正常]

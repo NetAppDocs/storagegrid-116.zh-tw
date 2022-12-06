@@ -68,8 +68,8 @@ image::security_certificates.png[「憑證」頁面]
 --
 全域認證可從StorageGRID 網頁瀏覽器、外部S3和Swift API用戶端安全地進行不受限的存取。安裝期間、由版本資訊驗證機構產生兩個全域憑證StorageGRID 。正式作業環境的最佳實務做法是使用外部憑證授權單位簽署的自訂憑證。
 
-*  interface certificate：保護用戶端網路瀏覽器與StorageGRID 功能完善的管理介面的連線。
-*  and Swift API certificate：保護用戶端API連線至儲存節點、管理節點和閘道節點的安全、S3和Swift用戶端應用程式可用來上傳和下載物件資料。
+* <<管理介面認證>>：保護用戶端網路瀏覽器與StorageGRID 功能完善的管理介面的連線。
+* <<S3和Swift API認證>>：保護用戶端API連線至儲存節點、管理節點和閘道節點的安全、S3和Swift用戶端應用程式可用來上傳和下載物件資料。
 
 
 安裝的全域憑證相關資訊包括：
@@ -97,7 +97,7 @@ image::security_certificates.png[「憑證」頁面]
 --
 .網格CA
 --
-。 ,Grid CA憑證由安裝過程中的驗證機關所產生、StorageGRID 可保護所有內部的資訊流量。StorageGRID StorageGRID
+。 <<gridca_details,Grid CA憑證>>由安裝過程中的驗證機關所產生、StorageGRID 可保護所有內部的資訊流量。StorageGRID StorageGRID
 
 憑證資訊包括憑證到期日和憑證內容。
 
@@ -106,7 +106,7 @@ image::security_certificates.png[「憑證」頁面]
 --
 .用戶端
 --
-,用戶端憑證由外部憑證授權單位所產生、可確保外部監控工具與StorageGRID VMware資料庫之間的連線安全無虞。
+<<adminclientcert_details,用戶端憑證>>由外部憑證授權單位所產生、可確保外部監控工具與StorageGRID VMware資料庫之間的連線安全無虞。
 
 憑證表格中有一列用於每個已設定的用戶端憑證、並指出該憑證是否可用於Prometheus資料庫存取、以及憑證到期日。
 
@@ -128,7 +128,7 @@ image::security_certificates.png[「憑證」頁面]
 --
 .負載平衡器端點
 --
- balancer endpoint certificate,負載平衡器端點憑證上傳或產生時、請確保S3和Swift用戶端之間的連線安全、並確保StorageGRID 閘道節點和管理節點上的「穩定負載平衡器」服務安全無虞。
+<<負載平衡器端點憑證,負載平衡器端點憑證>>上傳或產生時、請確保S3和Swift用戶端之間的連線安全、並確保StorageGRID 閘道節點和管理節點上的「穩定負載平衡器」服務安全無虞。
 
 負載平衡器端點表針對每個已設定的負載平衡器端點都有一列、可指出端點是使用全域S3和Swift API憑證、還是使用自訂負載平衡器端點憑證。也會顯示每個憑證的到期日。
 
@@ -145,7 +145,7 @@ NOTE: 對端點憑證所做的變更、可能需要15分鐘才能套用至所有
 --
 .租戶
 --
-租戶可以使用  federation certificate,身分識別聯盟伺服器憑證 或  services endpoint certificate,平台服務端點憑證 使用StorageGRID NetApp保護連線安全。
+租戶可以使用 <<身分識別聯盟憑證,身分識別聯盟伺服器憑證>> 或 <<平台服務端點憑證,平台服務端點憑證>> 使用StorageGRID NetApp保護連線安全。
 
 租戶表格會針對每個租戶顯示一列、並指出每個租戶是否有權使用自己的身分識別來源或平台服務。
 
@@ -162,12 +162,12 @@ NOTE: 對端點憑證所做的變更、可能需要15分鐘才能套用至所有
 --
 針對特定用途使用其他安全性憑證。StorageGRID這些憑證會依其功能名稱列出。其他安全性憑證包括：
 
-*  federation certificate,身分識別聯盟憑證
-*  Storage Pool endpoint certificate,雲端儲存資源池認證
-*  management server (KMS) certificate,金鑰管理伺服器（KMS）憑證
-*  sign-on (SSO) certificate,單一登入憑證
-*  alert notification certificate,電子郵件警示通知憑證
-*  syslog server certificate,外部syslog伺服器憑證
+* <<身分識別聯盟憑證,身分識別聯盟憑證>>
+* <<雲端儲存資源池端點憑證,雲端儲存資源池認證>>
+* <<金鑰管理伺服器（KMS）憑證,金鑰管理伺服器（KMS）憑證>>
+* <<單一登入（SSO）憑證,單一登入憑證>>
+* <<電子郵件警示通知憑證,電子郵件警示通知憑證>>
+* <<外部syslog伺服器憑證,外部syslog伺服器憑證>>
 
 
 資訊指出功能使用的憑證類型、以及適用的伺服器和用戶端憑證到期日。選取功能名稱會開啟瀏覽器索引標籤、您可以在其中檢視及編輯憑證詳細資料。
@@ -239,7 +239,7 @@ xref:configuring-custom-server-certificate-for-storage-node-or-clb.adoc[設定S3
 
 === Grid CA憑證
 
-請參閱 ,預設Grid CA憑證說明。
+請參閱 <<gridca_details,預設Grid CA憑證說明>>。
 
 
 
@@ -278,7 +278,7 @@ xref:configuring-administrator-client-certificates.adoc[設定用戶端憑證]
  a| 
 驗證S3或Swift用戶端之間的連線、StorageGRID 以及閘道節點和管理節點上的「RealsLoad Balancer」服務。您可以在設定負載平衡器端點時上傳或產生負載平衡器憑證。用戶端應用程式在連線StorageGRID 至物件資料時、會使用負載平衡器憑證來儲存及擷取物件資料。
 
-您也可以使用全域的自訂版本  and Swift API certificate 用於驗證負載平衡器服務連線的憑證。如果使用全域憑證來驗證負載平衡器連線、則不需要上傳或為每個負載平衡器端點產生個別的憑證。
+您也可以使用全域的自訂版本 <<S3和Swift API認證>> 用於驗證負載平衡器服務連線的憑證。如果使用全域憑證來驗證負載平衡器連線、則不需要上傳或為每個負載平衡器端點產生個別的憑證。
 
 *附註：*用於負載平衡器驗證的憑證、是正常StorageGRID 執行過程中最常使用的憑證。
  a| 

@@ -13,6 +13,7 @@ summary: 在您關閉StorageGRID 某個VMware系統之前、您必須先停止�
 [role="lead"]
 在您關閉StorageGRID 某個VMware系統之前、您必須先停止每個網格節點上執行的所有服務、然後關閉所有VMware虛擬機器、Container引擎和StorageGRID VMware應用程式。
 
+.關於這項工作
 先停止管理節點和API閘道節點上的服務、然後停止儲存節點上的服務。
 
 此方法可讓您使用主要管理節點、盡可能長時間監控其他網格節點的狀態。
@@ -50,7 +51,7 @@ NOTE: 如有需要、您可以 xref:linux-migrating-grid-node-to-new-host.adoc[�
 
 NOTE: 如果您發出「服務伺服器管理程式停止」命令來停止應用裝置儲存節點上的服務、則必須重新啟動應用裝置、才能重新啟動節點。
 
-. 針對主要管理節點、重複執行的步驟 ,登入節點 和 ,停止節點上的所有服務。
+. 針對主要管理節點、重複執行的步驟 <<log_in_to_gn,登入節點>> 和 <<stop_all_services,停止節點上的所有服務>>。
 . 對於在Linux主機上執行的節點：
 +
 .. 登入主機作業系統。
@@ -99,6 +100,7 @@ NOTE: 如果您發出「服務伺服器管理程式停止」命令來停止應�
 
 
 
+.相關資訊
 xref:../sg100-1000/index.adoc[SG100與SG1000服務應用裝置]
 
 xref:../sg6000/index.adoc[SG6000儲存設備]

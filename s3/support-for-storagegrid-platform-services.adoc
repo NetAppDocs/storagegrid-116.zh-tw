@@ -61,6 +61,7 @@ CloudMirror複寫
 * 如果目的地儲存區已啟用舊版法規遵循、CloudMirror複寫將會失敗並顯示「AccessDenied」錯誤。
 
 
+.相關資訊
 xref:../tenant/index.adoc[使用租戶帳戶]
 
 xref:../admin/index.adoc[管理StorageGRID]

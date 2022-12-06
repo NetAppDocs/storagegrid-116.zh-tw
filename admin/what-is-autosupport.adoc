@@ -78,4 +78,5 @@ https://docs.netapp.com/us-en/active-iq/index.html["《 VMware 數位顧問文�
 * *使用者觸發*：AutoSupport 隨時手動傳送不全訊息。
 
 
+.相關資訊
 https://mysupport.netapp.com/site/global/dashboard["NetApp支援"^]

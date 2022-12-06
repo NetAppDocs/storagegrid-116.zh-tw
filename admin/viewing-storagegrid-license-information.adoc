@@ -13,14 +13,16 @@ summary: 您可以視StorageGRID 需要檢視您的支援資訊、例如網格�
 [role="lead"]
 您可以視StorageGRID 需要檢視您的支援資訊、例如網格的最大儲存容量。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 
 
+.關於這項工作
 如果StorageGRID 此款作業系統的軟體授權發生問題、儀表板上的「健全狀況」面板會顯示「授權狀態」圖示和*授權*連結。此數字表示有多少與授權相關的問題。
 
 image::../media/dashboard_health_panel_license_status.png[儀表板健全狀況面板授權狀態]
 
+.步驟
 若要檢視授權、請執行下列其中一項：
 
 * 從儀表板的「健全狀況」面板中、選取「授權狀態」圖示或「*授權*」連結。僅當授權發生問題時、才會顯示此連結。

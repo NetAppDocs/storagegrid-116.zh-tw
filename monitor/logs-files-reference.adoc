@@ -173,4 +173,5 @@ CPU、網路和磁碟I/O的效能資訊
 輸出示例容器命令。StorageGRID包含系統資訊、例如網路和磁碟使用量。
 
 |===
+.相關資訊
 xref:collecting-log-files-and-system-data.adoc[收集記錄檔和系統資料]

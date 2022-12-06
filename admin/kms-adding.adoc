@@ -13,13 +13,14 @@ summary: 您可以使用StorageGRID 「驗鑰管理伺服器」精靈來新增�
 [role="lead"]
 您可以使用StorageGRID 「驗鑰管理伺服器」精靈來新增每個KMS或KMS叢集。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您已檢閱 xref:kms-considerations-and-requirements.adoc[使用金鑰管理伺服器的考量與要求]。
 * 您有 xref:kms-configuring-storagegrid-as-client.adoc[設定StorageGRID 成KMS中的用戶端]，而且您擁有每個KMS或KMS叢集所需的資訊。
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您擁有root存取權限。
 
 
+.關於這項工作
 如有可能、請先設定任何站台專屬的金鑰管理伺服器、再設定適用於其他KMS未管理之所有站台的預設KMS。如果您先建立預設KMS、則網格中的所有節點加密應用裝置都會以預設KMS加密。如果您想要稍後建立站台專屬的KMS、必須先將目前版本的加密金鑰從預設的KMS複製到新的KMS。請參閱 xref:kms-considerations-for-changing-for-site.adoc[變更網站KMS的考量事項] 以取得詳細資料。
 
 

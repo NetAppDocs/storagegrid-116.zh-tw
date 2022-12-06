@@ -13,7 +13,7 @@ summary: 如果您需要變更網格中所有節點的網格網路IP位址、則
 [role="lead"]
 如果您需要變更網格中所有節點的網格網路IP位址、則必須遵循此特殊程序。您無法使用變更個別節點的程序來變更整個網格網路IP。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您必須擁有「passwors.txt」檔案。
 
 
@@ -140,6 +140,7 @@ IMPORTANT: 整個網格必須一次關機、以便所有節點同時關機。
 
 
 
+.相關資訊
 xref:../admin/index.adoc[管理StorageGRID]
 
 xref:adding-to-or-changing-subnet-lists-on-grid-network.adoc[新增或變更Grid Network上的子網路清單]

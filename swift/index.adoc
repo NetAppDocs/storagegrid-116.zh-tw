@@ -34,4 +34,5 @@ HTTP
 *附註* StorageGRID ：不支援HTTP / 1.1鋪管。
 
 |===
+.相關資訊
 http://docs.openstack.org/developer/swift/api/object_api_v1_overview.html["OpenStack：物件儲存API"^]

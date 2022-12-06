@@ -29,6 +29,7 @@ https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/Sto
 The Compliance feature is deprecated.
 Contact your StorageGRID administrator if you need to create new Compliant buckets.
 ----
+.相關資訊
 xref:../ilm/index.adoc[使用ILM管理物件]
 
 xref:../tenant/index.adoc[使用租戶帳戶]

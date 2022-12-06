@@ -55,6 +55,7 @@ NOTE: 如果任何歸檔節點將使用Tivoli Storage Manager作為外部歸檔�
 
 NOTE: 透過CIFS/Samba進行的稽核匯出已過時、將在未來StorageGRID 的版本中移除。
 
+.相關資訊
 xref:../admin/index.adoc[管理StorageGRID]
 
 xref:../s3/index.adoc[使用S3]

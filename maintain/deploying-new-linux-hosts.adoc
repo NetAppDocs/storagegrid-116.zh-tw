@@ -39,6 +39,7 @@ IMPORTANT: 切勿使用FabricPool 無法將StorageGRID 任何與還原StorageGRI
 
 
 
+.相關資訊
 xref:../rhel/index.adoc[安裝Red Hat Enterprise Linux或CentOS]
 
 xref:../ubuntu/index.adoc[安裝Ubuntu或DEBIAN]

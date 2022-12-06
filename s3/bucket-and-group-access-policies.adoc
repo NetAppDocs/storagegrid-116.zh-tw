@@ -127,6 +127,7 @@ s3:*Object
 ----
 儲存區原則的大小上限為20、480個位元組、而且群組原則的大小上限為5、120個位元組。
 
+.相關資訊
 xref:../tenant/index.adoc[使用租戶帳戶]
 
 
@@ -201,7 +202,8 @@ PPUT Bucket原則作業的HTTP要求本文必須以charset=utf-8進行編碼。
 * 資源值可以指定在建立群組原則時尚未存在的儲存區。
 
 
- variables in a policy
+.相關資訊
+<<在原則中指定變數>>
 
 
 
@@ -824,7 +826,8 @@ S3：PuttOverwriteObject權限是套StorageGRID 用至建立或更新物件之�
 
 IMPORTANT: 如果目前的S3原則允許覆寫、而且PuttOverwriteObject權限設定為「拒絕」、則用戶端無法覆寫物件的資料、使用者定義的中繼資料或物件標記。此外、如果選中*防止用戶端修改*核取方塊（*組態*>*系統*>*網格選項*）、該設定會覆寫「PuttoverriteObject」權限的設定。
 
- group policy examples
+.相關資訊
+<<S3群組原則範例>>
 
 
 
@@ -1297,13 +1300,14 @@ PUT#2 -------> OK
 /mybucket/important.doc
 PUT#1 -------> PUT#2 ---X (denied)
 ----
+.相關資訊
 xref:../ilm/index.adoc[使用ILM管理物件]
 
- policies requiring special handling
+<<建立需要特殊處理的原則>>
 
 xref:how-storagegrid-ilm-rules-manage-objects.adoc[如何利用ILM規則來管理物件StorageGRID]
 
- group policy examples
+<<S3群組原則範例>>
 
 
 
@@ -1528,6 +1532,7 @@ NOTE: 在功能區中StorageGRID 、非擁有者帳戶所建立的物件（包�
   ]
 }
 ----
+.相關資訊
 xref:operations-on-buckets.adoc[在貯體上作業]
 
 
@@ -1601,7 +1606,7 @@ image::../media/tenant_add_group_custom.png[新增自訂群組原則至租戶群
 ----
 
 
-==== 範例：允許群組成員只能完整存取儲存庫中的「資料夾」
+==== 範例：允許群組成員只能完整存取儲存庫中的「'folder"」
 
 在此範例中、群組成員只能在指定的儲存區中列出及存取其特定資料夾（金鑰首碼）。請注意、在決定這些資料夾的隱私權時、應考慮其他群組原則和儲存區原則的存取權限。
 
@@ -1629,4 +1634,5 @@ image::../media/tenant_add_group_custom.png[新增自訂群組原則至租戶群
   ]
 }
 ----
+.相關資訊
 xref:../tenant/index.adoc[使用租戶帳戶]

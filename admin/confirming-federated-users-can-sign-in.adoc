@@ -13,7 +13,7 @@ summary: 啟用單一登入（SSO）之前、您必須確認至少有一位同�
 [role="lead"]
 啟用單一登入（SSO）之前、您必須確認至少有一位同盟使用者可以登入Grid Manager、並登入任何現有租戶帳戶的租戶管理程式。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您擁有特定的存取權限。
 * 您已設定身分識別聯盟。

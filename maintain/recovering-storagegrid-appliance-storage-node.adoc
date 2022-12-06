@@ -13,6 +13,7 @@ summary: 無論StorageGRID 是從系統磁碟機遺失或僅從儲存磁碟區�
 [role="lead"]
 無論StorageGRID 是從系統磁碟機遺失或僅從儲存磁碟區遺失中恢復、恢復故障的故障的功能相同。
 
+.關於這項工作
 您必須準備好應用裝置並重新安裝軟體、設定節點重新加入網格、重新格式化儲存設備、以及還原物件資料。
 
 image::../media/overview_sga_recovery.gif[概述流程圖StorageGRID 、瞭解有關恢復應用程式的資訊]
@@ -37,6 +38,7 @@ NOTE: 如果您在恢復期間遇到服務：狀態- Cassandra（SVST）警示�
 
 NOTE: 如需硬體維護程序、例如更換控制器或重新安裝SANtricity 作業系統的指示、請參閱儲存設備的安裝與維護說明。
 
+.相關資訊
 xref:../monitor/index.adoc[監控及疑難排解]
 
 xref:../sg6000/index.adoc[SG6000儲存設備]

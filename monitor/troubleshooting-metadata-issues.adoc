@@ -20,10 +20,11 @@ summary: 您可以執行數項工作、以協助判斷中繼資料問題的來�
 
 如果觸發*低中繼資料儲存*警示、您必須新增儲存節點。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您必須使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 
 
+.關於這項工作
 針對物件中繼資料、在每個儲存節點的Volume 0上保留一定的空間量。StorageGRID此空間稱為實際保留空間、可細分為允許用於物件中繼資料（允許的中繼資料空間）的空間、以及必要資料庫作業所需的空間、例如壓縮和修復。允許的中繼資料空間可控制整體物件容量。
 
 image::../media/metadata_allowed_space_volume_0.png[中繼資料允許空間Volume 0]
@@ -76,12 +77,13 @@ NOTE: 由於整個網格的中繼資料容量受限於最小網站的中繼資�
 
 服務：狀態- Cassandra（SVST）警示表示您可能需要重建儲存節點的Cassandra資料庫。Cassandra是StorageGRID 做為中繼資料儲存區的用途。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您必須使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您必須擁有特定的存取權限。
 * 您必須擁有「passwors.txt」檔案。
 
 
+.關於這項工作
 如果Cassandra停止超過15天（例如、儲存節點已關閉）、則當節點重新連線時、Cassandra將不會啟動。您必須為受影響的DDS服務重新建置Cassandra資料庫。
 
 您可以 xref:running-diagnostics.adoc[執行診斷] 以取得網格目前狀態的其他資訊。
@@ -165,7 +167,7 @@ image::../media/cassandra_not_running_chart.png[總覽：SSM)：服務頁面]
 started because it has been offline for longer than
 its 15 day grace period - rebuild cassandra
 ----
-.. 請確認此訊息的時間戳記是您依照步驟指示嘗試重新啟動Cassandra的時間 ,從儲存節點重新啟動Cassandra。
+.. 請確認此訊息的時間戳記是您依照步驟指示嘗試重新啟動Cassandra的時間 <<restart_Cassandra_from_the_Storage_Node,從儲存節點重新啟動Cassandra>>。
 +
 Cassandra可以有多個項目；您必須找出最近的項目。
 
@@ -184,6 +186,7 @@ Cassandra可以有多個項目；您必須找出最近的項目。
 
 當Cassandra資料庫發生記憶體不足錯誤時、會觸發「事件總數」（SMT）警示。如果發生此錯誤、請聯絡技術支援部門以解決此問題。
 
+.關於這項工作
 如果Cassandra資料庫發生記憶體不足錯誤、就會建立堆傾印、觸發「事件總數（SMT）」警示、而Cassandra堆積記憶體不足錯誤數則遞增1。
 
 .步驟

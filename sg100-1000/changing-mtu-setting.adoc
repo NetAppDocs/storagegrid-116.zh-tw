@@ -20,18 +20,19 @@ IMPORTANT: 網路的MTU值必須符合節點所連接之交換器連接埠上所
 
 IMPORTANT: 為獲得最佳網路效能、所有節點都應在其Grid Network介面上設定類似的MTU值。如果個別節點上Grid Network的MTU設定有顯著差異、則會觸發* Grid Network MTU mismis*警示。所有網路類型的MTU值都不一定相同。
 
-若要變更MTU設定而不重新啟動應用裝置節點、  the MTU setting using the Change IP tool,使用變更IP工具。
+若要變更MTU設定而不重新啟動應用裝置節點、 <<使用變更IP工具變更MTU設定,使用變更IP工具>>。
 
-如果StorageGRID 在初始安裝期間、客戶端或管理網路並未在市場上設定、  the MTU setting using maintenance mode,使用維護模式變更MTU設定。
+如果StorageGRID 在初始安裝期間、客戶端或管理網路並未在市場上設定、 <<使用維護模式變更MTU設定,使用維護模式變更MTU設定>>。
 
 
 
 == 使用變更IP工具變更MTU設定
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您可以使用「密碼」檔案來使用「變更IP」工具。
 
 
+.步驟
 存取變更IP工具、並依照所述更新MTU設定 xref:../maintain/changing-nodes-network-configuration.adoc[變更節點網路組態]。
 
 
@@ -40,7 +41,7 @@ IMPORTANT: 為獲得最佳網路效能、所有節點都應在其Grid Network介
 
 如果無法使用變更IP工具存取這些設定、請使用維護模式變更MTU設定。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您有 xref:placing-appliance-into-maintenance-mode.adoc[將設備置於維護模式]。
 
 
@@ -68,4 +69,5 @@ image::../media/nodes_menu.png[應用裝置節點重新加入網格]
 
 
 
+.相關資訊
 xref:../admin/index.adoc[管理StorageGRID]

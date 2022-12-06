@@ -13,6 +13,7 @@ summary: 如果StorageGRID 無法將顯示器與SANtricity 作業系統軟體同
 [role="lead"]
 如果StorageGRID 無法將顯示器與SANtricity 作業系統軟體同步、運算控制器上的七段顯示器會顯示錯誤代碼。
 
+.關於這項工作
 如果顯示HE錯誤代碼、請執行此修正動作。
 
 .步驟

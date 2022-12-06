@@ -13,7 +13,7 @@ summary: 在存取BMC介面之前、您必須先在SG6000-CN-控制器上設定B
 [role="lead"]
 在存取BMC介面之前、您必須先在SG6000-CN-控制器上設定BMC管理連接埠的IP位址。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 管理用戶端使用 xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您正在使用任何可連線StorageGRID 至該網路的管理用戶端。
 * BMC管理連接埠會連線至您打算使用的管理網路。
@@ -22,6 +22,7 @@ image::../media/sg6000_cn_bmc_management_port.gif[SG6000-CN-控制器上的BMC�
 
 
 
+.關於這項工作
 為了支援、BMC管理連接埠允許低層級的硬體存取。
 
 

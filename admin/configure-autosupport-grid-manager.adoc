@@ -13,7 +13,7 @@ summary: 您可以在AutoSupport 第一次安裝時啟用「支援」功能和�
 [role="lead"]
 您可以在AutoSupport 第一次安裝時啟用「支援」功能和個別AutoSupport 的「支援」選項StorageGRID 、也可以稍後啟用。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您具有根存取權限或其他網格組態權限。
 * 如果您將使用HTTPS或HTTP傳輸協定來傳送AutoSupport 不實訊息、則表示您已直接或使用Proxy伺服器（不需要傳入連線）、提供對主要管理節點的傳出網際網路存取。
@@ -135,7 +135,7 @@ NOTE: 當AutoSupport 您在全系統抑制電子郵件通知時、也會抑制�
 
 啟用AutoSupport 此功能時、便會將健全狀況和狀態訊息傳送給NetApp支援部門。您可以為所有AutoSupport 的資訊提供額外的目的地。
 
-若要驗證或變更用來傳送AutoSupport 資訊提示訊息的傳輸協定、請參閱的指示  the protocol for AutoSupport messages。
+若要驗證或變更用來傳送AutoSupport 資訊提示訊息的傳輸協定、請參閱的指示 <<指定AutoSupport 訊息的傳輸協定>>。
 
 
 NOTE: 您無法使用SMTP傳輸協定將AutoSupport 無法傳送的資訊傳送到其他目的地。

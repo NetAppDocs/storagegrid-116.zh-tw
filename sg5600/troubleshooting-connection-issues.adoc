@@ -43,4 +43,5 @@ summary: 如果StorageGRID 在安裝過程中遇到連線問題、您應該執�
 
 
 
+.相關資訊
 xref:e5600sg-controller-seven-segment-display-codes.adoc[E5600SG控制器七段顯示代碼]

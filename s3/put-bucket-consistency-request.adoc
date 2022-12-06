@@ -76,4 +76,5 @@ Date: _date_
 Authorization: _authorization string_
 Host: _host_
 ----
+.相關資訊
 xref:consistency-controls.adoc[一致性控管]

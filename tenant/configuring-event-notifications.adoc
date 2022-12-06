@@ -13,13 +13,14 @@ summary: 通知服務是StorageGRID 三種支援的平台服務之一。您可�
 [role="lead"]
 通知服務是StorageGRID 三種支援的平台服務之一。您可以啟用儲存區通知、將指定事件的相關資訊傳送至支援AWS Simple Notification Service™（SNS）的目的地服務。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 平台服務必須由StorageGRID 管理員為您的租戶帳戶啟用。
 * 您必須已經建立一個儲存區、才能做為通知來源。
 * 您要用作事件通知目的地的端點必須已經存在、而且您必須擁有它的URN。
 * 您必須屬於具有「管理所有庫位」或「根存取」權限的使用者群組、才能管理租戶帳戶中所有S3庫位的設定。這些權限會在使用租戶管理程式設定儲存區時、覆寫群組或儲存區原則中的權限設定。
 
 
+.關於這項工作
 設定事件通知之後、每當來源儲存區中的物件發生指定事件時、就會產生通知、並傳送至作為目的地端點的Simple Notification Service（SNS）主題。若要啟用儲存區通知、您必須建立並套用有效的通知組態XML。通知組態XML必須針對每個目的地使用事件通知端點的URN。
 
 如需事件通知及其設定方式的一般資訊、請參閱Amazon文件。如需StorageGRID 瞭解有關如何實作S3儲存區通知組態API的資訊、請參閱實作S3用戶端應用程式的指示。
@@ -124,6 +125,7 @@ NOTE: 每個租戶帳戶都必須由StorageGRID 使用Grid Manager或Grid Manage
 
 
 
+.相關資訊
 xref:understanding-notifications-for-buckets.adoc[瞭解庫存箱通知]
 
 xref:../s3/index.adoc[使用S3]

@@ -100,6 +100,7 @@ CloudMirror複寫
 |===
 請參閱實作S3用戶端應用程式的指示、以取得StorageGRID 有關如何實作這些API的詳細資訊。
 
+.相關資訊
 xref:considerations-for-using-platform-services.adoc[使用平台服務的考量]
 
 xref:../s3/index.adoc[使用S3]

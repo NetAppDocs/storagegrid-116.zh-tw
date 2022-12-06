@@ -13,6 +13,7 @@ summary: 您可以使用StorageGRID 這個功能包來安裝StorageGRID 支援�
 [role="lead"]
 您可以使用StorageGRID 這個功能包來安裝StorageGRID 支援的主機服務。
 
+.關於這項工作
 這些指示說明如何從Deb套件安裝主機服務。此外、您也可以使用安裝歸檔中隨附的APT儲存庫中繼資料、從遠端安裝Deb套件。請參閱適用於您Linux作業系統的APT儲存庫說明。
 
 .步驟

@@ -37,13 +37,14 @@ summary: 您可以在管理節點和閘道節點上建立虛擬LAN（VLAN）介�
 
 == 建立VLAN介面
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您擁有root存取權限。
 * 已在網路中設定主幹介面、並附加至VM或Linux節點。您知道主幹介面的名稱。
 * 您知道正在設定的VLAN ID。
 
 
+.關於這項工作
 您的網路管理員可能已設定一或多個主幹介面和一或多個VLAN、以隔離屬於不同應用程式或租戶的用戶端或管理流量。每個VLAN都會以數字ID或標記來識別。例如、您的網路可能會使用VLAN 100作為FabricPool 不二次流量傳輸、而使用VLAN 200作為歸檔應用程式。
 
 您可以使用Grid Manager建立VLAN介面、讓用戶端能夠在StorageGRID 特定VLAN上存取功能。當您建立VLAN介面時、請指定VLAN ID並選取一或多個節點上的父（主幹）介面。

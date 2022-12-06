@@ -23,7 +23,7 @@ NOTE: 為了確保作業不會因為失敗的伺服器憑證而中斷、當此�
 
 NOTE: 如果您使用金鑰管理伺服器（KMS）來保護特殊設定應用裝置節點上的資料、請參閱相關的特定資訊 xref:kms-adding.adoc[上傳KMS用戶端憑證]。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您擁有root存取權限。
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 若要設定用戶端憑證：
@@ -48,9 +48,9 @@ NOTE: 如果您使用金鑰管理伺服器（KMS）來保護特殊設定應用�
 
 依照案例中的程序新增用戶端憑證：
 
-*  interface certificate already configured
-*  issued client certificate
-*  certificate from Grid Manager
+* <<管理介面憑證已設定>>
+* <<CA發行的用戶端憑證>>
+* <<從Grid Manager產生憑證>>
 
 
 
@@ -220,7 +220,7 @@ IMPORTANT: 關閉對話方塊後、您將無法檢視憑證私密金鑰。將金
 . 在Grid Manager中、選取*組態*>*安全性*>*憑證*、然後選取*全域*索引標籤。
 . 選擇*管理介面認證*。
 . 選擇*使用自訂憑證*。
-. 從上傳認證.pem和Private金鑰.pem檔案 ,用戶端憑證詳細資料 步驟。不需要上傳CA套裝組合。
+. 從上傳認證.pem和Private金鑰.pem檔案 <<client_cert_details,用戶端憑證詳細資料>> 步驟。不需要上傳CA套裝組合。
 +
 .. 選擇*上傳認證*、然後選擇*繼續*。
 .. 上傳每個憑證檔案（`.pem'）。

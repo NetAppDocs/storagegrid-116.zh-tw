@@ -66,4 +66,5 @@ NOTE: 當整個站台故障時、需要使用特殊命令才能成功還原物�
 
 
 
+.相關資訊
 xref:site-decommissioning.adoc[站台取消委任]

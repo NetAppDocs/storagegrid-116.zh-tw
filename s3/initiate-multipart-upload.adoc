@@ -92,7 +92,7 @@ xref:using-s3-object-lock.adoc[使用S3物件鎖定]
 ** 「X-amz-server端加密客戶金鑰」
 ** 「X-amz-server端加密- customer-演算 法」
 +
- headers for server-side encryption
+<<要求伺服器端加密的標頭>>
 
 
 
@@ -139,6 +139,7 @@ NOTE: 如需StorageGRID 瞭解如何處理UTF-8字元的資訊、請參閱「放
 
 多部分上傳包含不同的作業、可用於初始化上傳、列出上傳內容、上傳零件、組裝上傳的零件、以及完成上傳。執行完整的「多重組件上傳」作業時、會建立物件（並在適用情況下建立版本）。
 
+.相關資訊
 xref:../ilm/index.adoc[使用ILM管理物件]
 
 xref:using-server-side-encryption.adoc[使用伺服器端加密]

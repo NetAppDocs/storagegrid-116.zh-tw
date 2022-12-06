@@ -284,6 +284,7 @@ EP
 與E2800控制器的安裝或通訊失敗。
 
 |===
+.相關資訊
 xref:troubleshooting-hardware-installation.adoc[疑難排解硬體安裝（SG5700）]
 
 https://mysupport.netapp.com/site/global/dashboard["NetApp支援"^]

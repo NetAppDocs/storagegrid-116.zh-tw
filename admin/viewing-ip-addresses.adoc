@@ -13,8 +13,10 @@ summary: 您可以檢視StorageGRID 您的系統的各個網格節點的IP位址
 [role="lead"]
 您可以檢視StorageGRID 您的系統的各個網格節點的IP位址。然後、您可以使用此IP位址登入命令列的網格節點、並執行各種維護程序。
 
+.您需要的產品
 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 
+.關於這項工作
 如需變更IP位址的資訊、請參閱 xref:../maintain/index.adoc[恢復與維護]。
 
 .步驟

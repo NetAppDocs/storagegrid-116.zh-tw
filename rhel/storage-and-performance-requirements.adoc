@@ -96,7 +96,7 @@ Container Pool
 
 *附註：*軟體型儲存節點可擁有1至16個儲存磁碟區、建議使用至少3個儲存磁碟區。
  a| 
-12 TB（4 TB/LUN）請參閱 ,儲存節點的儲存需求 以取得更多資訊。
+12 TB（4 TB/LUN）請參閱 <<storage_req_SN,儲存節點的儲存需求>> 以取得更多資訊。
 
 
 
@@ -298,6 +298,7 @@ NOTE: 如果您在儲存節點上只使用一個儲存磁碟區、並將4 TB或�
 
 如需詳細資料、請前往 xref:../admin/managing-object-metadata-storage.adoc[管理物件中繼資料儲存]。
 
+.相關資訊
 xref:node-container-migration-requirements.adoc[節點容器移轉需求]
 
 xref:../maintain/index.adoc[恢復與維護]

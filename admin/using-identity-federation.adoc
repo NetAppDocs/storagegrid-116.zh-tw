@@ -19,7 +19,7 @@ summary: 使用身分識別聯盟可更快設定群組和使用者、並讓使�
 
 如果您想要在其他系統（例如Active Directory、Azure Active Directory（Azure AD）、OpenLDAP或Oracle Directory Server）中管理系統管理群組和使用者、可以在Grid Manager中設定身分識別聯盟。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您擁有特定的存取權限。
 * 您使用Active Directory、Azure AD、OpenLDAP或Oracle Directory Server做為身分識別供應商。
@@ -27,11 +27,12 @@ summary: 使用身分識別聯盟可更快設定群組和使用者、並讓使�
 
 NOTE: 如果您想使用未列出的LDAP v3服務、請聯絡技術支援部門。
 
-* 如果您打算使用OpenLDAP、則必須設定OpenLDAP伺服器。請參閱  for configuring an OpenLDAP server。
+* 如果您打算使用OpenLDAP、則必須設定OpenLDAP伺服器。請參閱 <<設定OpenLDAP伺服器的準則>>。
 * 如果您打算啟用單一登入（SSO）、則已檢閱 xref:requirements-for-sso.adoc[使用單一登入的需求]。
 * 如果您打算使用傳輸層安全性（TLS）與LDAP伺服器進行通訊、則身分識別供應商使用的是TLS 1.2或1.3。請參閱 xref:supported-ciphers-for-outgoing-tls-connections.adoc[用於傳出TLS連線的支援密碼]。
 
 
+.關於這項工作
 如果您想從其他系統（例如Active Directory、Azure AD、OpenLDAP或Oracle Directory Server）匯入群組、可以設定Grid Manager的身分識別來源。您可以匯入下列群組類型：
 
 * 管理群組：管理群組中的使用者可以登入Grid Manager、並根據指派給群組的管理權限來執行工作。
@@ -185,6 +186,7 @@ NOTE: 如果同步處理來自身分識別來源的聯盟群組和使用者時�
 
 您可以暫時或永久停用群組和使用者的身分識別聯盟。停用身分識別聯盟時StorageGRID 、不會在驗證和身分識別來源之間進行通訊。不過、您已設定的任何設定都會保留下來、讓您日後可以輕鬆重新啟用身分識別聯盟。
 
+.關於這項工作
 在停用身分識別聯盟之前、您應注意下列事項：
 
 * 聯盟使用者將無法登入。

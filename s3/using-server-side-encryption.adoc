@@ -108,6 +108,7 @@ IMPORTANT: 您提供的加密金鑰永遠不會儲存。如果您遺失加密金
 * 如果已針對儲存區設定CloudMirror複寫、您就無法擷取SSE-C物件。擷取作業將會失敗。
 
 
+.相關資訊
 xref:get-object.adoc[取得物件]
 
 xref:head-object.adoc[標頭物件]

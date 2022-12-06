@@ -13,7 +13,7 @@ summary: 此功能可從應用裝置收集客戶支援套裝組合中的資料�
 [role="lead"]
 此功能可從應用裝置收集客戶支援套裝組合中的資料、並自動將資料傳送給技術支援部門。AutoSupport設定AutoSupport 支援功能可協助技術支援人員進行遠端疑難排解和問題分析。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 必須在產品上啟用和啟動此功能。AutoSupport
 +
 此功能會在儲存管理站上全域啟動和停用。AutoSupport
@@ -21,6 +21,7 @@ summary: 此功能可從應用裝置收集客戶支援套裝組合中的資料�
 * Storage Manager事件監控器必須至少在一台可存取應用裝置的機器上執行、最好是在不超過一台機器上執行。
 
 
+.關於這項工作
 所有資料都會壓縮成您指定位置的單一壓縮封存檔案格式（.7z）。
 
 提供下列類型的訊息：AutoSupport
@@ -61,4 +62,5 @@ summary: 此功能可從應用裝置收集客戶支援套裝組合中的資料�
 . 如有需要、請使用SANtricity 「支援中心」線上說明來完成工作。
 
 
+.相關資訊
 http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61197["NetApp文件：SANtricity NetApp Storage Manager"^]

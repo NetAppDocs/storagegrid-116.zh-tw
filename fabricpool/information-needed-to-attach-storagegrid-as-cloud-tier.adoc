@@ -13,6 +13,7 @@ summary: 在您可以附加StorageGRID 作FabricPool 為雲端層的功能來執
 [role="lead"]
 在您可以附加StorageGRID 作FabricPool 為雲端層的功能來執行某些StorageGRID 組態步驟以利執行某些設定步驟、並取得特定的價值。
 
+.關於這項工作
 下表列出ONTAP 當您將StorageGRID 下列資訊附加為FabricPool 供使用的雲端層時、必須提供給才能使用的資訊。本節主題將說明如何使用StorageGRID 「功能區塊管理程式」和「租戶管理程式」來取得您所需的資訊。
 
 
@@ -111,4 +112,5 @@ SSL
 xref:creating-load-balancer-endpoint-for-fabricpool.adoc[建立FabricPool 負載平衡器端點以供使用]
 
 |===
+.完成後
 取得所需StorageGRID 的各項資訊後、您可以前往ONTAP 下列網址加入StorageGRID 「以供參考」作為雲端層、將雲端層新增為集合體、以及設定Volume分層原則。

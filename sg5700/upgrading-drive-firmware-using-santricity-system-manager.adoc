@@ -13,7 +13,7 @@ summary: 您可以升級磁碟機韌體、以確保擁有所有最新的功能�
 [role="lead"]
 您可以升級磁碟機韌體、以確保擁有所有最新的功能和錯誤修復。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 儲存應用裝置的狀態為「最佳」。
 * 所有磁碟機均處於最佳狀態。
 * 您安裝的是與您的版本相同的最新SANtricity 版的更新版《系統管理程式StorageGRID 》。
@@ -220,4 +220,5 @@ image::../media/node_rejoin_grid_confirmation.png[應用裝置節點重新加入
 
 
 
+.相關資訊
 xref:upgrading-santricity-os-on-storage-controller.adoc[升級SANtricity 儲存控制器上的作業系統]

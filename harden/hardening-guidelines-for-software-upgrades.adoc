@@ -41,12 +41,13 @@ summary: 您必須保持StorageGRID 更新的不中斷系統和相關服務、�
 
 
 
-== 升級至Linux節點
+== *升級至Linux節點*
 
 如果StorageGRID 您的支援節點使用Linux主機平台、則必須確保安全性更新和核心更新已套用至主機作業系統。此外、您必須在有更新可用時、將韌體更新套用至易受影響的硬體。
 
 使用NetApp互通性對照表工具取得支援版本的清單。
 
+.相關資訊
 https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["NetApp下載StorageGRID"^]
 
 xref:../upgrade/index.adoc[升級軟體]

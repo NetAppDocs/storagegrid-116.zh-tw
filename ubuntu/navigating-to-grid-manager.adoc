@@ -13,6 +13,7 @@ summary: 您可以使用Grid Manager來定義設定StorageGRID 您的一套系�
 [role="lead"]
 您可以使用Grid Manager來定義設定StorageGRID 您的一套系統所需的所有資訊。
 
+.您需要的產品
 必須部署主管理節點、並完成初始啟動順序。
 
 .步驟

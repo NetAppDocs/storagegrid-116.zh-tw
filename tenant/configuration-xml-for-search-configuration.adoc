@@ -183,6 +183,7 @@ urn
     </Rule>
 </MetadataNotificationConfiguration>
 ----
+.相關資訊
 xref:../s3/index.adoc[使用S3]
 
 xref:object-metadata-included-in-metadata-notifications.adoc[中繼資料通知中包含的物件中繼資料]

@@ -13,6 +13,7 @@ summary: 您可以在StorageGRID 第一次部署StorageGRID 時安裝一或多�
 [role="lead"]
 您可以在StorageGRID 第一次部署StorageGRID 時安裝一或多個功能豐富的資訊儲存設備、或是稍後在擴充時新增應用裝置儲存節點。您也可能需要在恢復作業中安裝應用裝置儲存節點。
 
+.您需要的產品
 您的系統使用所需的版本的功能。StorageGRID StorageGRID
 
 |===
@@ -104,6 +105,7 @@ xref:deploying-appliance-storage-node.adoc[部署應用裝置儲存節點]
 |===
 
 
+.相關資訊
 xref:preparing-for-installation.adoc[準備安裝（SG6000）]
 
 xref:installing-hardware.adoc[安裝硬體（SG6000）]

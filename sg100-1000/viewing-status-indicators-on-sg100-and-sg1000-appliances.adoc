@@ -114,6 +114,7 @@ image::../media/ssd_indicators.png[SSD指示燈]
 藍色（正在閃爍）：正在存取磁碟機
 
 |===
+.相關資訊
 xref:troubleshooting-hardware-installation-sg100-and-sg1000.adoc[疑難排解硬體安裝（SG100和SG1000）]
 
 xref:configuring-bmc-interface-sg1000.adoc[設定BMC介面（SG100和SG1000）]

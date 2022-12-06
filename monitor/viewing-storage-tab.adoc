@@ -34,4 +34,5 @@ image::../media/nodes_storage_node_storage_tab.png[節點>儲存節點>儲存索
 
 image::../media/nodes_page_storage_tables.png[節點頁面儲存表格]
 
+.相關資訊
 xref:monitoring-storage-capacity.adoc[監控儲存容量]

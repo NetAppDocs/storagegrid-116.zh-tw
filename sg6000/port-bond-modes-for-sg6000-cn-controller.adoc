@@ -13,4 +13,5 @@ summary: 在設定SG6000-CN*的網路連結時、您可以使用連接埠連結�
 [role="lead"]
 在設定SG6000-CN*的網路連結時、您可以使用連接埠連結連接至Grid Network和選用用戶端網路的10/25-GbE連接埠、以及連接至選用管理網路的1-GbE管理連接埠。連接埠連結功能可在StorageGRID 各個解決方案之間提供備援路徑、協助您保護資料。
 
+.相關資訊
 xref:configuring-network-links-sg6000.adoc[設定網路連結（SG6000）]

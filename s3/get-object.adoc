@@ -125,6 +125,7 @@ Cloud Storage Pool中的物件、但尚未轉換為無法擷取的狀態
 * 隨後的Get Object要求可能會傳回「403 Forbidbid禁 用」。
 
 
+.相關資訊
 xref:using-server-side-encryption.adoc[使用伺服器端加密]
 
 xref:../ilm/index.adoc[使用ILM管理物件]

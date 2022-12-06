@@ -13,7 +13,7 @@ summary: 您可以使用租戶管理程式來建立S3儲存區以供物件資料
 [role="lead"]
 您可以使用租戶管理程式來建立S3儲存區以供物件資料使用。當您建立桶時、必須指定桶的名稱和區域。如果StorageGRID 已針對整個S3物件鎖定設定啟用for the Sing系統、您可以選擇性地為儲存區啟用S3物件鎖定。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您將使用登入租戶管理程式 xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您屬於具有「管理所有庫位」或「根存取」權限的使用者群組。這些權限會覆寫群組或儲存區原則中的權限設定。
 +
@@ -85,6 +85,7 @@ S3用戶端應用程式必須先為儲存區啟用S3物件鎖定、才能為新�
 
 
 
+.相關資訊
 xref:../ilm/index.adoc[使用ILM管理物件]
 
 xref:understanding-tenant-management-api.adoc[瞭解租戶管理API]

@@ -35,6 +35,7 @@ NOTE: 如果節點或站台停用程序暫停、您可以安全地套用修補�
 
 
 
+.相關資訊
 xref:../monitor/index.adoc[監控及疑難排解]
 
 xref:pausing-and-resuming-decommission-process-for-storage-nodes.adoc[暫停並恢復儲存節點的取消委任程序]

@@ -13,7 +13,7 @@ summary: 您必須手動執行兩個指令碼、以重新掛載保留的儲存�
 [role="lead"]
 您必須手動執行兩個指令碼、以重新掛載保留的儲存磁碟區、並重新格式化任何故障的儲存磁碟區。第一個指令碼會重新掛載已正確格式化為StorageGRID 「循環儲存磁碟區」的磁碟區。第二個指令碼會重新格式化任何未掛載的磁碟區、視需要重新建置Cassandra、然後啟動服務。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您已更換硬體、以更換已知需要更換的任何故障儲存磁碟區。
 +
 執行「shn-remount-volume」指令碼、可能有助於識別其他故障儲存磁碟區。
@@ -27,6 +27,7 @@ CAUTION: 如果有多個儲存節點離線、或是此網格中的儲存節點�
 
 
 
+.關於這項工作
 若要完成此程序、請執行下列高階工作：
 
 * 登入恢復的儲存節點。
@@ -42,7 +43,7 @@ CAUTION: 如果有多個儲存節點離線、或是此網格中的儲存節點�
 * 執行「sh-recovery -postinstall.sh」指令碼。執行此指令碼時、會執行下列動作。
 +
 
-IMPORTANT: 執行前、請勿在恢復期間重新開機儲存節點 `sn-recovery-postinstall.sh` 重新格式化故障儲存磁碟區並還原物件中繼資料。重新啟動儲存節點 `sn-recovery-postinstall.sh` 完成會導致嘗試啟動服務時發生錯誤、並導致StorageGRID 不支援的應用裝置節點離開維護模式。請參閱的步驟 ,安裝後指令碼。
+IMPORTANT: 執行前、請勿在恢復期間重新開機儲存節點 `sn-recovery-postinstall.sh` 重新格式化故障儲存磁碟區並還原物件中繼資料。重新啟動儲存節點 `sn-recovery-postinstall.sh` 完成會導致嘗試啟動服務時發生錯誤、並導致StorageGRID 不支援的應用裝置節點離開維護模式。請參閱的步驟 <<post-install-script-step,安裝後指令碼>>。
 
 +
 ** 重新格式化無法掛載或被發現格式不正確的任何「n重新掛載磁碟區」指令碼的儲存磁碟區。
@@ -238,6 +239,7 @@ image::../media/recovering_cassandra.png[顯示Grid Management Interface恢復�
 
 在節點上啟動「shn-recovery -postinstall.sh」指令碼之後、您可以將物件資料還原至任何由指令碼格式化的儲存磁碟區、如該程序所述。
 
+.相關資訊
 xref:reviewing-warnings-for-system-drive-recovery.adoc[檢閱儲存節點系統磁碟機恢復的警告]
 
 xref:restoring-object-data-to-storage-volume-if-required.adoc[如有需要、可將物件資料還原至儲存Volume]

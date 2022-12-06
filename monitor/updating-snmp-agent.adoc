@@ -13,11 +13,12 @@ summary: 您可能想要停用SNMP通知、更新社群字串、或是新增或�
 [role="lead"]
 您可能想要停用SNMP通知、更新社群字串、或是新增或移除代理程式位址、USM使用者和陷阱目的地。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您必須使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您必須具有「根存取」權限。
 
 
+.關於這項工作
 每當您更新時 xref:configuring-snmp-agent.adoc[SNMP代理程式組態]請注意、您必須按一下「SNMP代理程式」頁面底部的*「儲存*」、以提交您在每個索引標籤上所做的任何變更。
 
 .步驟
@@ -72,12 +73,12 @@ image::../media/snmp_other_config_usm_users_table.png[SNMP其他組態USM使用�
 
 +
 
-NOTE: 如果您新增或移除使用者的授權引擎ID、且目前已選取目的地的使用者、則必須依照步驟中所述、編輯或移除目的地 ,SNMP設陷目的地。否則、當您儲存SNMP代理程式組態時、就會發生驗證錯誤。
+NOTE: 如果您新增或移除使用者的授權引擎ID、且目前已選取目的地的使用者、則必須依照步驟中所述、編輯或移除目的地 <<SNMP_TRAP_DESTINATION,SNMP設陷目的地>>。否則、當您儲存SNMP代理程式組態時、就會發生驗證錯誤。
 
 .. 若要移除USM使用者、請選取該使用者的選項按鈕、然後按一下*移除*。然後按一下*確定*以確認您要移除此使用者。
 +
 
-NOTE: 如果您移除的使用者目前已選取作為設陷目的地、您必須編輯或移除目的地、如步驟所述 ,SNMP設陷目的地。否則、當您儲存SNMP代理程式組態時、就會發生驗證錯誤。
+NOTE: 如果您移除的使用者目前已選取作為設陷目的地、您必須編輯或移除目的地、如步驟所述 <<SNMP_TRAP_DESTINATION,SNMP設陷目的地>>。否則、當您儲存SNMP代理程式組態時、就會發生驗證錯誤。
 
 +
 image::../media/snmp_usm_user_remove_error.png[SNMP USM使用者移除錯誤]

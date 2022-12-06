@@ -33,4 +33,5 @@ summary: 如果您打算取消委任儲存節點、則必須瞭StorageGRID 解�
 
 
 
+.相關資訊
 xref:restoring-object-data-to-storage-volume-if-required.adoc[如有需要、可將物件資料還原至儲存Volume]

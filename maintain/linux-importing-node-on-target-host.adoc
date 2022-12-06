@@ -48,6 +48,7 @@ Check configuration file /etc/storagegrid節點/DC1-S3.conf...（檢查節點DC1
 
 
 
+.相關資訊
 xref:../rhel/index.adoc[安裝Red Hat Enterprise Linux或CentOS]
 
 xref:../ubuntu/index.adoc[安裝Ubuntu或DEBIAN]

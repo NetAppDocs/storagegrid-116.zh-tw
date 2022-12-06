@@ -13,6 +13,7 @@ summary: 安裝及設定StorageGRID 此產品時、您必須做出決策、並�
 [role="lead"]
 安裝及設定StorageGRID 此產品時、您必須做出決策、並收集有關乙太網路交換器連接埠、IP位址、連接埠和網路連結模式的資訊。
 
+.關於這項工作
 您可以使用下列表格記錄連線至應用裝置的每個網路資訊。這些值是安裝和設定硬體所需的值。
 
 
@@ -353,6 +354,7 @@ VLAN標記（如果已啟用VLAN標記）
 
 
 |===
+.相關資訊
 xref:reviewing-appliance-network-connections-sg5600.adoc[審查應用裝置網路連線（SG5600）]
 
 xref:configuring-hardware.adoc[設定硬體（SG5600）]

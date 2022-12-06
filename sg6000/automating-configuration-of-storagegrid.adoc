@@ -13,7 +13,7 @@ summary: 部署完網格節點之後、您可以自動化StorageGRID 設定該�
 [role="lead"]
 部署完網格節點之後、您可以自動化StorageGRID 設定該系統。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您可以從安裝歸檔中得知下列檔案的位置。
 +
 |===
@@ -43,6 +43,7 @@ Python指令碼用於自動化組態
 * 您已建立「configure - storagegrid。json」組態檔。若要建立此檔案、您可以修改範例組態檔（「configure - storagegrid、same.json」）或空白組態檔（「configure - storagegrid、blank.json」）。
 
 
+.關於這項工作
 您可以使用「configure -storagegrid．py」Python指令碼和「configure -storagegrid．json」組態檔案、將StorageGRID 您的系統的組態自動化。
 
 
@@ -68,6 +69,7 @@ NOTE: 您也可以使用Grid Manager或安裝API來設定系統。
 ----
 
 
+.完成後
 在配置過程中會產生一個恢復套件「.Zip」檔案、並將其下載到您執行安裝與組態程序的目錄中。您必須備份「恢復套件」檔案、以便StorageGRID 在一個或多個網格節點故障時、恢復該系統。例如、將其複製到安全的備份網路位置、以及安全的雲端儲存位置。
 
 

@@ -13,11 +13,12 @@ summary: 如果您AutoSupport 使用HTTP或HTTPS傳送靜態訊息、則可在�
 [role="lead"]
 如果您使用AutoSupport HTTP或HTTPS傳送不實訊息（請參閱 xref:configure-autosupport-grid-manager.adoc[設定AutoSupport 功能]）、您可以在管理節點和技術支援AutoSupport （例如、）之間設定不透明的Proxy伺服器。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您擁有特定的存取權限。
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 
 
+.關於這項工作
 您可以設定單一管理Proxy的設定。
 
 .步驟

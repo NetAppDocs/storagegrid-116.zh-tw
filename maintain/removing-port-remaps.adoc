@@ -48,4 +48,5 @@ IMPORTANT: 此程序不適用於StorageGRID 以容器形式部署在裸機主機
 . 在每個重新對應連接埠發生衝突的管理節點和閘道節點上重複這些步驟。
 
 
+.相關資訊
 xref:../admin/index.adoc[管理StorageGRID]

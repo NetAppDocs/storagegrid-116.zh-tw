@@ -43,4 +43,5 @@ NOTE: CLB服務已過時。
 
 SG100與SG1000服務應用裝置搭配使用時StorageGRID 、可部署僅限應用裝置的網格、不需依賴外部Hypervisor或運算硬體。
 
+.相關資訊
 xref:../admin/index.adoc[管理StorageGRID]

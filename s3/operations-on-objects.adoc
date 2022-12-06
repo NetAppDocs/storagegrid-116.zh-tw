@@ -180,4 +180,5 @@ xref:using-s3-object-lock.adoc[使用S3物件鎖定]
 如果要求中未指定「vrionId」查詢參數、則該作業會在版本控制的儲存區中、將標記新增至物件的最新版本。如果物件的目前版本是刪除標記、則會傳回「MethodNotSupported」狀態、並將「x-amz-delete-marker」回應標頭設為「true」。
 
 |===
+.相關資訊
 xref:s3-operations-tracked-in-audit-logs.adoc[在稽核記錄中追蹤S3作業]

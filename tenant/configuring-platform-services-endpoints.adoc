@@ -47,4 +47,5 @@ summary: 您必須先將至少一個端點設定為平台服務的目的地、�
 
 搜尋整合端點是指特定的彈性搜尋索引和類型。您必須先在Elasticsearch中建立索引、才能在StorageGRID 其中建立端點、否則端點建立將會失敗。您不需要在建立端點之前建立類型。如果需要、當將物件中繼資料傳送至端點時、將會建立類型。StorageGRID
 
+.相關資訊
 xref:../admin/index.adoc[管理StorageGRID]

@@ -46,6 +46,7 @@ NOTE: 此值會在每個要求完成時更新。因此、此值可能與低要�
 
 此圖表提供每秒傳回用戶端的錯誤回應數移動平均3分鐘、並依錯誤回應代碼細分。
 
+.相關資訊
 xref:monitoring-load-balancing-operations.adoc[監控負載平衡作業]
 
 xref:../admin/index.adoc[管理StorageGRID]

@@ -44,4 +44,5 @@ NOTE: 根據網格版本的需求、您可以在部署節點時使用次要版�
 . 然後將修補程式11._A.B.y_套用至主要管理節點。
 
 
+.相關資訊
 xref:configuring-replacement-primary-admin-node.adoc[設定替換的主要管理節點]

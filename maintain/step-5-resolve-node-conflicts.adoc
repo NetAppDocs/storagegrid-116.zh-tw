@@ -100,6 +100,7 @@ NOTE: 在取消委任完成之前、*上一個*按鈕會保持停用狀態。
 
 
 
+.相關資訊
 xref:../monitor/index.adoc[監控及疑難排解]
 
 xref:grid-node-procedures.adoc[網格節點程序]

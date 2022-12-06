@@ -13,7 +13,7 @@ summary: 如果您在安裝期間為應用裝置啟用節點加密、則可以�
 [role="lead"]
 如果您在安裝期間為應用裝置啟用節點加密、則可以監控每個應用裝置節點的節點加密狀態、包括節點加密狀態和金鑰管理伺服器（KMS）詳細資料。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 裝置必須在安裝期間啟用節點加密。安裝應用裝置後、您無法啟用節點加密。
 * 您有 xref:placing-appliance-into-maintenance-mode.adoc[將設備置於維護模式]。
 
@@ -62,4 +62,5 @@ image::../media/nodes_menu.png[應用裝置節點重新加入網格]
 
 
 
+.相關資訊
 xref:../admin/index.adoc[管理StorageGRID]

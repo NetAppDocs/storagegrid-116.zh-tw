@@ -138,7 +138,7 @@ image::../media/problem_determination_methodology.gif[流程圖顯示問題判�
  a| 
 變更您的系統、其組態或環境可能會導致新的行為。StorageGRID
  a| 
-* ,建立最近變更的時間表
+* <<create_timeline,建立最近變更的時間表>>
 
 
 
@@ -186,7 +186,7 @@ image::../media/problem_determination_methodology.gif[流程圖顯示問題判�
  a| 
 收集各種作業值的正常層級資訊。這些基準值和偏離這些基準值、可提供寶貴的線索。
  a| 
-* ,建立基準
+* <<establish_baselines,建立基準>>
 
 
 
@@ -236,7 +236,7 @@ image::../media/problem_determination_methodology.gif[流程圖顯示問題判�
 |===
 
 
-==== 建立最近變更的時間表
+==== [[create_timals]]建立最近變更的時間表
 
 發生問題時、您應該考慮最近發生的變更、以及變更發生的時間。
 
@@ -305,7 +305,7 @@ image::../media/problem_determination_methodology.gif[流程圖顯示問題判�
 
 
 
-==== 建立基準
+==== [[INESD_Baselines（建立基準）]建立基準
 
 您可以記錄各種作業值的正常層級、為系統建立基準。未來您可以比較目前值與這些基準、以協助偵測並解決異常值。
 
@@ -478,14 +478,14 @@ xref:collecting-log-files-and-system-data.adoc[收集記錄檔和系統資料]
 |  | 基礎資訊  a| 
 收集有關擷取作業、擷取作業和儲存使用量的基礎資訊。
 
-,建立基準
+<<establish_baselines,建立基準>>
 
 
 
 |  | 最近變更的時間表  a| 
 建立時間軸、摘要說明系統或其環境最近的任何變更。
 
-,建立最近變更的時間表
+<<create_timeline,建立最近變更的時間表>>
 
 
 

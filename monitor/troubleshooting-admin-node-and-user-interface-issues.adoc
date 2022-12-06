@@ -20,11 +20,12 @@ summary: 您可以執行多項工作、以協助判斷與管理節點和StorageG
 
 如果您在登入StorageGRID 某個「管理員節點」時遇到錯誤、表示您的系統可能發生身分識別聯盟組態問題、網路或硬體問題、管理節點服務問題、或是連線儲存節點上的Cassandra資料庫問題。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您必須擁有「passwors.txt」檔案。
 * 您必須擁有特定的存取權限。
 
 
+.關於這項工作
 如果您在嘗試登入管理節點時看到下列任一錯誤訊息、請使用這些疑難排解準則：
 
 * 「您的帳戶認證資料無效。請再試一次
@@ -165,7 +166,7 @@ sg snmp agent                  11.4.0         Running
 +
 請確定idnt, acct, Ngin像 和cassandra服務都在執行中。
 
-. 重複步驟 ,使用Lumberjack收集記錄 和 ,檢閱記錄 以檢閱儲存節點上的記錄。
+. 重複步驟 <<use_Lumberjack_to_collect_logs,使用Lumberjack收集記錄>> 和 <<review_logs,檢閱記錄>> 以檢閱儲存節點上的記錄。
 . 如果您無法解決問題、請聯絡技術支援部門。
 +
 將收集到的記錄提供給技術支援人員。另請參閱 xref:logs-files-reference.adoc[記錄檔參考]。
@@ -203,6 +204,7 @@ NOTE: 瀏覽器支援StorageGRID 功能已變更為支援功能、適用於支�
 
 如果這個系統包含多個管理節點、您可以使用另一個管理節點來檢查不可用管理節點的狀態。StorageGRID
 
+.您需要的產品
 您必須擁有特定的存取權限。
 
 .步驟
@@ -217,4 +219,5 @@ image::../media/unavailable_admin_node_troubleshooting.gif[周邊文字所述的
 . 請採取適當行動來解決問題。
 
 
+.相關資訊
 xref:../admin/index.adoc[管理StorageGRID]

@@ -97,6 +97,7 @@ NOTE: 如果指定"x-amz-object-lock-mod"，則還必須指定"x-amz-object-lock
 
 
 
+.相關資訊
 xref:../ilm/index.adoc[使用ILM管理物件]
 
 xref:../tenant/index.adoc[使用租戶帳戶]

@@ -13,7 +13,7 @@ summary: 如果SG6000-CN-控制器無法以最佳方式運作、或是發生故�
 [role="lead"]
 如果SG6000-CN-控制器無法以最佳方式運作、或是發生故障、您可能需要更換該控制器。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您的更換控制器的零件編號與您要更換的控制器相同。
 * 您可以使用標籤來識別連接至控制器的每條纜線。
 * 您已實際找到要在資料中心更換的控制器。
@@ -22,6 +22,7 @@ xref:locating-controller-in-data-center.adoc[在資料中心找到控制器]
 
 
 
+.關於這項工作
 當您更換SG6000-CN-控制器時、將無法存取應用裝置儲存節點。如果SG6000-CN-控制器運作正常、您可以在本程序開始時執行管制關機。
 
 
@@ -83,6 +84,7 @@ xref:../maintain/index.adoc[恢復與維護]
 
 
 
+.相關資訊
 xref:sg6000-cn-installing-into-cabinet-or-rack.adoc[SG6000-CN:安裝在機櫃或機架中]
 
 xref:viewing-status-indicators-and-buttons-on-sg6000-cn-controller.adoc[檢視SG6000-CN-控制器上的狀態指示燈和按鈕]

@@ -13,11 +13,12 @@ summary: 使用內部憑證授權單位（CA）來保護內部流量。StorageGR
 [role="lead"]
 使用內部憑證授權單位（CA）來保護內部流量。StorageGRID如果您上傳自己的憑證、此憑證不會變更。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您擁有特定的存取權限。
 
 
+.關於這項工作
 如果已設定自訂伺服器憑證、用戶端應用程式應使用自訂伺服器憑證來驗證伺服器。他們不應該從StorageGRID 這個系統複製CA憑證。
 
 .步驟

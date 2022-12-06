@@ -79,6 +79,7 @@ NOTE: 在應用裝置節點上發出「shutdown -h NOW」命令之後、您必�
 . 登出命令Shell：「exit」
 
 
+.相關資訊
 xref:../sg100-1000/index.adoc[SG100與SG1000服務應用裝置]
 
 xref:../sg6000/index.adoc[SG6000儲存設備]

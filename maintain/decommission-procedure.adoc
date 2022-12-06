@@ -29,6 +29,7 @@ IMPORTANT: 在執行中斷連線的站台取消委任之前、您必須聯絡Net
 
 NOTE: 如果您需要執行第二個維護程序、可以執行 xref:pausing-and-resuming-decommission-process-for-storage-nodes.adoc[移除儲存節點時、請暫停取消委任程序]。只有在達到ILM評估或銷毀編碼資料解除委任階段時、才會啟用*暫停*按鈕；不過、ILM評估（資料移轉）仍會在背景中繼續執行。完成第二個維護程序之後、您就可以繼續解除委任。
 
+.相關資訊
 xref:grid-node-decommissioning.adoc[網格節點取消委任]
 
 xref:site-decommissioning.adoc[站台取消委任]

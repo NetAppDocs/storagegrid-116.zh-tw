@@ -35,6 +35,7 @@ summary: 用戶端應用程式可以使用Swift REST API呼叫來連線至儲存
 
 利用此功能、您也可以控制每個容器的一致性。StorageGRID您可以根據應用程式的需求、變更一致性控制、以便在物件的可用度與不同儲存節點和站台之間的物件一致性之間取得平衡。
 
+.相關資訊
 xref:../ilm/index.adoc[使用ILM管理物件]
 
 xref:get-container-consistency-request.adoc[取得Container一致性要求]

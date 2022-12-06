@@ -13,6 +13,7 @@ summary: 安裝Container引擎（Docker或Podman）之前、您可能需要先�
 [role="lead"]
 安裝Container引擎（Docker或Podman）之前、您可能需要先格式化儲存磁碟區並加以掛載。
 
+.關於這項工作
 如果您計畫將本機儲存設備用於Docker或Podman儲存Volume、並在主機分割區上有足夠的可用空間、其中包含適用於Docker的「/var/lib/dDocker」和適用於Podman的「/var/lib/containers'」、則可以跳過這些步驟。
 
 
@@ -53,7 +54,7 @@ sudo mount container-storage-volume-device /var/lib/containers
 
 == 安裝Docker
 
-該系統可在Red Hat Enterprise Linux或CentOS上執行、作為容器的集合。StorageGRID如果您選擇使用Docker Container引擎、請依照下列步驟安裝Docker。否則、  Podman,安裝Podman。
+該系統可在Red Hat Enterprise Linux或CentOS上執行、作為容器的集合。StorageGRID如果您選擇使用Docker Container引擎、請依照下列步驟安裝Docker。否則、 <<安裝Podman,安裝Podman>>。
 
 .步驟
 . 請依照Linux套裝作業系統的指示來安裝Docker。
@@ -87,7 +88,7 @@ sudo docker version
 
 == 安裝Podman
 
-此系統可在Red Hat Enterprise Linux上執行、作為容器的集合。StorageGRID如果您選擇使用Podman容器引擎、請依照下列步驟安裝Podman。否則、  Docker,安裝Docker。
+此系統可在Red Hat Enterprise Linux上執行、作為容器的集合。StorageGRID如果您選擇使用Podman容器引擎、請依照下列步驟安裝Podman。否則、 <<安裝Docker,安裝Docker>>。
 
 
 NOTE: 只有Red Hat Enterprise Linux（RHEL）才支援Podman。

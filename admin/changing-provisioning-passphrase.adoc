@@ -13,12 +13,13 @@ summary: 請使用此程序來變更StorageGRID 供應密碼。恢復、擴充�
 [role="lead"]
 請使用此程序來變更StorageGRID 供應密碼。恢復、擴充和維護程序需要通關密碼。下載「恢復套件」備份時、也需要密碼、其中包括網格拓撲資訊、網格節點主控台密碼、StorageGRID 以及適用於該系統的加密金鑰。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您具有「維護」或「根」存取權限。
 * 您有目前的資源配置通關密碼。
 
 
+.關於這項工作
 許多安裝和維護程序以及的都需要資源配置通關密碼 xref:../maintain/downloading-recovery-package.adoc[正在下載恢復套件]。資源配置通關密碼未列在「pes密碼」檔案中。請務必記錄資源配置通關密碼、並將密碼保存在安全的位置。
 
 .步驟

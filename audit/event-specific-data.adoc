@@ -15,12 +15,14 @@ summary: 稽核日誌中的每個稽核訊息都會記錄特定於系統事件�
 
 在開啟用來識別訊息本身的「[AUDT：」容器之後、下一組屬性會提供稽核訊息所述事件或動作的相關資訊。這些屬性會在下列範例中反白顯示：
 
+[]
 ====
 2018-12-05T08：24：45.921845 [AUDT：*\[RSALT\（FC32\）：SUCS\**\[Time（UI64\）：11454\[SAIP\（ipad\）："10.224.0.100"\[S3AI（CStr\）："4196920499* Stls6400c64T64"S=Cs=S64T64T1T64"S=Cs=Cs=S64T64T1T1T64T64T64"1T64T1T1"S=S="S64T64"S=Cs=Cs=S64"S64T1=Cs=Cs=C64T64T64T64T1T1T1T1T1T1="S64T1=Cs=C64T64T64T1=C64"S=Cs="S64T1=C64T1="S64T64T1=C64T64T64T1"S="S
 
 ====
 「ATYP」元素（範例中有底線）可識別產生訊息的事件。此範例訊息包含Shea訊息代碼（[ATYP（FC32）：Shea]）、表示該訊息是由成功的S3標頭要求所產生。
 
+.相關資訊
 xref:common-elements-in-audit-messages.adoc[稽核訊息中的一般元素]
 
 xref:audit-messages-main.adoc[稽核訊息]

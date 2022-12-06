@@ -17,7 +17,7 @@ summary: 您必須建立至少一個租戶帳戶、以控制StorageGRID 對您�
 
 Grid Manager提供精靈、可引導您完成建立租戶帳戶的步驟。這些步驟會因是否有所不同而有所差異 xref:using-identity-federation.adoc[身分識別聯盟] 和 xref:configuring-sso.adoc[單一登入] 已設定、以及您用來建立租戶帳戶的Grid Manager帳戶是否屬於具有root存取權限的管理群組。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您擁有特定的存取權限。
 * 如果租戶帳戶將使用為Grid Manager設定的身分識別來源、而您想要將租戶帳戶的根存取權限授予聯盟群組、則表示您已將該聯盟群組匯入Grid Manager。您不需要將任何Grid Manager權限指派給此管理群組。請參閱 xref:managing-admin-groups.adoc[管理管理群組的指示]。

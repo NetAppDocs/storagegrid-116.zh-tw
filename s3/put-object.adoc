@@ -129,7 +129,7 @@ xref:using-s3-object-lock.adoc[使用S3物件鎖定]
 ** 「X-amz-server端加密客戶金鑰」
 ** 「X-amz-server端加密- customer-演算 法」
 +
-請參閱  headers for server-side encryption
+請參閱 <<要求伺服器端加密的標頭>>
 
 
 
@@ -213,6 +213,7 @@ xref:using-s3-object-lock.adoc[使用S3物件鎖定]
 
 如果版本控制暫停、則物件版本會以null「VrionId」儲存、如果null版本已經存在、則會覆寫該版本。
 
+.相關資訊
 xref:../ilm/index.adoc[使用ILM管理物件]
 
 xref:operations-on-buckets.adoc[在貯體上作業]

@@ -85,7 +85,7 @@ xref:using-s3-object-lock.adoc[使用S3物件鎖定]
 ** 「X-amz-server端加密客戶金鑰」
 ** 「X-amz-server端加密- customer-演算 法」
 +
-請參閱  headers for server-side encryption
+請參閱 <<要求伺服器端加密的標頭>>
 
 
 
@@ -179,6 +179,7 @@ NOTE: 如果在啟用S3物件鎖定的情況下、將物件放入儲存區、則
 
 如果來源儲存區已有版本、您可以使用「x-amz-copy-source-」標頭來複製物件的最新版本。若要複製物件的特定版本、您必須使用「版本ID」子資源明確指定要複製的版本。如果目標儲存區版本已有版本、則產生的版本會傳回「x-amz-verse-id」回應標頭中。如果暫停目標儲存區的版本設定、則「x-amz-version-id」會傳回「null」值。
 
+.相關資訊
 xref:../ilm/index.adoc[使用ILM管理物件]
 
 xref:using-server-side-encryption.adoc[使用伺服器端加密]

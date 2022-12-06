@@ -108,4 +108,5 @@ xref:deprecated-get-bucket-compliance-request.adoc[已過時：Get Bucket Compli
 xref:deprecated-put-bucket-compliance-request.adoc[已過時：提出資源桶法規遵循要求]
 
 |===
+.相關資訊
 xref:s3-operations-tracked-in-audit-logs.adoc[稽核記錄中追蹤的S3作業]

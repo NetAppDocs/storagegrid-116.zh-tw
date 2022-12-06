@@ -92,4 +92,5 @@ IMPORTANT: S3租戶使用者可以使用租戶管理程式來建立及管理S3�
 
 IMPORTANT: Swift使用者必須擁有root存取權限、才能存取租戶管理程式。不過、「根」存取權限不允許使用者驗證Swift REST API、以建立容器和擷取物件。使用者必須具有Swift Administrator權限、才能驗證到Swift REST API。
 
+.相關資訊
 xref:../tenant/index.adoc[使用租戶帳戶]

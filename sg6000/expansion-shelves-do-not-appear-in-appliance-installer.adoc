@@ -13,6 +13,7 @@ summary: 如果您已安裝SG6060或SG6060X的擴充櫃、但StorageGRID 它們�
 [role="lead"]
 如果您已安裝SG6060或SG6060X的擴充櫃、但StorageGRID 它們並未出現在《支援中心安裝程式（NetApp Appliance Installer）」中、您應該確認磁碟櫃已完全安裝並開啟電源。
 
+.關於這項工作
 您可以在StorageGRID 《NetApp應用裝置安裝程式：
 
 * 「*首頁*」頁面包含擴充櫃的相關訊息。

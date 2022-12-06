@@ -13,6 +13,7 @@ summary: 您必須為StorageGRID 您的系統指定網域名稱系統（DNS）�
 [role="lead"]
 您必須為StorageGRID 您的系統指定網域名稱系統（DNS）資訊、以便使用主機名稱而非IP位址來存取外部伺服器。
 
+.關於這項工作
 指定DNS伺服器資訊可讓您使用完整網域名稱（FQDN）主機名稱、而非使用IP位址來傳送電子郵件通知和AutoSupport 進行支援。建議至少指定兩個DNS伺服器。
 
 
@@ -32,4 +33,5 @@ image::../media/9_gmi_installer_dns_page.gif[此影像由周邊文字說明。]
 . 選擇*下一步*。
 
 
+.相關資訊
 xref:../maintain/index.adoc[恢復與維護]

@@ -31,6 +31,7 @@ summary: 安裝StorageGRID 此產品之前、您應該先瞭解哪些網路可�
 
 NOTE: 如需StorageGRID 有關鏈路的詳細資訊、請參閱_網格入門_。
 
+.相關資訊
 xref:gathering-installation-information-sg6000.adoc[收集安裝資訊（SG6000）]
 
 xref:cabling-appliance-sg6000.adoc[纜線應用裝置（SG6000）]

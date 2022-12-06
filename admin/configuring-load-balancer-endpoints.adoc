@@ -13,7 +13,7 @@ summary: 負載平衡器端點決定連接StorageGRID 至閘道和管理節點�
 [role="lead"]
 負載平衡器端點決定連接StorageGRID 至閘道和管理節點上的S3和Swift用戶端可使用的連接埠和網路傳輸協定。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您擁有root存取權限。
 * 如果您先前已重新對應要用於負載平衡器端點的連接埠、您就擁有了 xref:../maintain/removing-port-remaps.adoc[已移除連接埠重新對應]。
@@ -153,7 +153,7 @@ image::../media/load_balancer_endpoint_node_interfaces_binding_mode.png[端點�
 +
 image::../media/load_balancer_endpoint_ha_group_vips_binding_mode.png[端點HA群組VIP繫結模式]
 
-. 如果您要建立* HTTP *端點、則不需要附加憑證。選取*「Create」（建立）*以新增負載平衡器端點。然後前往 ,完成後。否則、請選取*繼續*以附加憑證。
+. 如果您要建立* HTTP *端點、則不需要附加憑證。選取*「Create」（建立）*以新增負載平衡器端點。然後前往 <<After-you-finish,完成後>>。否則、請選取*繼續*以附加憑證。
 
 
 
@@ -243,7 +243,7 @@ NOTE: EC私密金鑰必須大於或等於224位元。RSA私密金鑰必須大於
 
 
 
-=== 完成後
+=== [[完成後]完成
 
 . 如果您使用網域名稱系統（DNS）、請確定DNS包含一筆記錄、將StorageGRID 完整網域名稱與用戶端用來建立連線的每個IP位址建立關聯。
 +

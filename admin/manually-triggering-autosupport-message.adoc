@@ -13,7 +13,7 @@ summary: 為了協助技術支援人員疑難排解StorageGRID 您的故障排�
 [role="lead"]
 為了協助技術支援人員疑難排解StorageGRID 您的故障排除、您可以手動觸發AutoSupport 要傳送的故障訊息。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您具有根存取權限或其他網格組態權限。
 

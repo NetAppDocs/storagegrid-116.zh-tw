@@ -13,7 +13,7 @@ summary: 如果您目前使用Cloud Tiering - Simple Storage Service（S3）功�
 [role="lead"]
 如果您目前使用*雲端分層-簡易儲存服務（S3）*功能、將物件資料分層至S3儲存區、請考慮改為將物件移轉至雲端儲存資源池。Cloud Storage Pool提供可擴充的方法、可充分利用StorageGRID 您的整個系統中的所有儲存節點。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您擁有特定的存取權限。
 * 您已將物件儲存在S3儲存區中、並已設定用於雲端分層。
@@ -22,6 +22,7 @@ summary: 如果您目前使用Cloud Tiering - Simple Storage Service（S3）功�
 
 NOTE: 在移轉物件資料之前、請聯絡您的NetApp客戶代表、以瞭解及管理任何相關成本。
 
+.關於這項工作
 從ILM觀點來看、雲端儲存資源池類似於儲存資源池。然而、雖然儲存資源池由StorageGRID 儲存節點或位於VMware系統內的歸檔節點組成、但雲端儲存資源池則是由外部S3儲存區所組成。
 
 在將物件從Cloud Tiering（S3）移轉至Cloud Storage Pool之前、您必須先建立S3儲存區、然後再StorageGRID 在其中建立Cloud Storage Pool。然後、您可以建立新的ILM原則、並以複製的ILM規則取代用來將物件儲存在雲端分層儲存區的ILM規則、該規則會將相同的物件儲存在雲端儲存資源池中。
@@ -45,4 +46,5 @@ NOTE: 當物件儲存在Cloud Storage Pool中時、這些物件的複本也無�
 
 
 
+.相關資訊
 xref:../ilm/index.adoc[使用ILM管理物件]

@@ -62,6 +62,7 @@ image::../media/state_graph.gif[狀態圖表]
 
 
 
+.相關資訊
 xref:viewing-nodes-page.adoc[檢視「節點」頁面]
 
 xref:viewing-grid-topology-tree.adoc[檢視Grid拓撲樹狀結構]
@@ -126,6 +127,7 @@ image:../media/gray_blue_chart_shading.gif["顯示混合不確定值和未知值
 
 節點頁面包含您應定期存取的圖表和圖表、以監控儲存容量和處理量等屬性。在某些情況下、尤其是與技術支援合作時、您可以使用*支援*>*工具*>*網格拓撲*頁面來存取其他圖表。
 
+.您需要的產品
 您必須使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 
 .步驟
@@ -181,7 +183,7 @@ image::../media/nms_chart.gif[周邊文字所述的螢幕擷取畫面]
 
 圖表會以圖形方式顯示屬性資料值。您可以報告資料中心站台、網格節點、元件或服務。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您必須使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您必須擁有特定的存取權限。
 

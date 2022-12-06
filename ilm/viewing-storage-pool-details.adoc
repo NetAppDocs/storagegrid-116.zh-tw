@@ -13,7 +13,7 @@ summary: 您可以檢視儲存資源池的詳細資料、以判斷儲存資源�
 [role="lead"]
 您可以檢視儲存資源池的詳細資料、以判斷儲存資源池的使用位置、並查看其中包含哪些節點和儲存等級。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您擁有特定的存取權限。
 
@@ -90,4 +90,5 @@ NOTE: 如果儲存資源池用於「刪除編碼」設定檔、您就無法移�
 . 檢視完儲存資源池詳細資料後、請選取*關閉*。
 
 
+.相關資訊
 xref:working-with-ilm-rules-and-ilm-policies.adoc[使用ILM規則和ILM原則]

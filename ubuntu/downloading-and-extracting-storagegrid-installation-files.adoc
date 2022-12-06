@@ -111,4 +111,5 @@ API架構StorageGRID 。
 *附註*：在執行升級之前、您可以使用這些架構、確認如果StorageGRID 您沒有非正式作業的更新相容性測試用的更新版、您所撰寫的任何程式碼都能與新StorageGRID 版的更新版相容StorageGRID 。
 
 |===
+.相關資訊
 xref:../maintain/index.adoc[恢復與維護]

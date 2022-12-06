@@ -13,7 +13,7 @@ summary: 若要支援S3虛擬託管樣式要求、您必須使用Grid Manager來
 [role="lead"]
 若要支援S3虛擬託管樣式要求、您必須使用Grid Manager來設定S3用戶端所連線的端點網域名稱清單。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您擁有特定的存取權限。
 * 您已確認網格升級尚未進行。
@@ -23,6 +23,7 @@ CAUTION: 進行網格升級時、請勿對網域名稱組態進行任何變更�
 
 
 
+.關於這項工作
 若要讓用戶端使用S3端點網域名稱、您必須執行下列所有動作：
 
 * 使用Grid Manager將S3端點網域名稱新增StorageGRID 至整個系統。
@@ -65,6 +66,7 @@ image::../media/configure_endpoint_domain_names.png[端點網域名稱對話方�
 . 新增必要的DNS記錄、以確保端點網域名稱要求能夠解析。
 
 
+.結果
 現在、當用戶端使用端點「bucket.s3.company.com`」時、DNS伺服器會解析為正確的端點、而且憑證會依預期驗證端點。
 
 .相關資訊

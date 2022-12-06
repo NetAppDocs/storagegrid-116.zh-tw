@@ -34,6 +34,7 @@ HTTP
 *附註* StorageGRID ：不支援HTTP / 1.1鋪管。
 
 |===
+.相關資訊
 https://datatracker.ietf.org/doc/html/rfc2616["IETF RFC 2616：超文字傳輸傳輸協定（HTTP / 1.1）"]
 
 http://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html["Amazon Web Services（AWS）文件：Amazon Simple Storage Service API Reference"]

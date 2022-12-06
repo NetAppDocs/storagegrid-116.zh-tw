@@ -13,11 +13,12 @@ summary: 如果您使用負載平衡器來管理用戶端與StorageGRID VMware�
 [role="lead"]
 如果您使用負載平衡器來管理用戶端與StorageGRID VMware的連線、則應先設定系統、然後在進行任何組態變更或執行擴充之後、監控負載平衡作業。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您必須使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您必須擁有特定的存取權限。
 
 
+.關於這項工作
 您可以使用管理節點或閘道節點上的負載平衡器服務、外部協力廠商負載平衡器或閘道節點上的CLB服務、將用戶端要求分散到多個儲存節點。
 
 
@@ -73,6 +74,7 @@ NOTE: CLB服務已過時。
 
 
 
+.相關資訊
 xref:../admin/index.adoc[管理StorageGRID]
 
 xref:viewing-load-balancer-tab.adoc[檢視負載平衡器索引標籤]

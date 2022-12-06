@@ -13,6 +13,7 @@ summary: 您可以使用StorageGRID 支援支援的RPM套件來安裝StorageGRID
 [role="lead"]
 您可以使用StorageGRID 支援支援的RPM套件來安裝StorageGRID 支援的主機服務。
 
+.關於這項工作
 這些指示說明如何從RPM套件安裝主機服務。此外、您也可以使用安裝歸檔中隨附的Yum儲存庫中繼資料、從遠端安裝RPM套件。請參閱Linux作業系統的Yum儲存庫說明。
 
 .步驟

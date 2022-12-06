@@ -69,6 +69,7 @@ xref:deploying-appliance-storage-node.adoc[部署應用裝置儲存節點]
 恢復與維護說明
 
 |===
+.相關資訊
 xref:preparing-for-installation.adoc[準備安裝（SG5700）]
 
 xref:installing-hardware.adoc[安裝硬體]

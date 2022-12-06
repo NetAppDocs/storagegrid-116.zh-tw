@@ -46,6 +46,7 @@ summary: 在取消委任站台之前、您必須先取得下列資料。
 如有、請取得任何說明系統目前拓撲的文件。
 
 |===
+.相關資訊
 xref:../admin/web-browser-requirements.adoc[網頁瀏覽器需求]
 
 xref:downloading-recovery-package.adoc[下載恢復套件]

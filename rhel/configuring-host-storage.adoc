@@ -13,12 +13,14 @@ summary: 您必須將區塊儲存磁碟區分配給每個主機。
 [role="lead"]
 您必須將區塊儲存磁碟區分配給每個主機。
 
+.您需要的產品
 您已檢閱下列主題、其中提供完成此工作所需的資訊：
 
 xref:storage-and-performance-requirements.adoc[儲存與效能需求]
 
 xref:node-container-migration-requirements.adoc[節點容器移轉需求]
 
+.關於這項工作
 將區塊儲存磁碟區（LUN）分配給主機時、請使用「儲存需求」中的表格來判斷下列項目：
 
 * 每個主機所需的磁碟區數量（根據將部署在該主機上的節點數量和類型而定）
@@ -92,4 +94,5 @@ multipaths {
 
 NOTE: 如果您要設定共享儲存設備來支援StorageGRID 以節點進行移轉、並使用裝置對應器的多重路徑功能、您可以在所有主機上建立並安裝通用的「/etc/multipath.conf」。只要確定在每個主機上使用不同的Container Engine儲存磁碟區即可。使用別名並將目標主機名稱納入每個容器引擎儲存Volume LUN的別名、將會讓您輕鬆記住、建議您這麼做。
 
+.相關資訊
 xref:configuring-docker-storage-volume.adoc[設定Container Engine儲存Volume]

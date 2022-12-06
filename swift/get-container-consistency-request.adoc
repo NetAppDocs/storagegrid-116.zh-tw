@@ -117,4 +117,5 @@ X-Trans-Id: 1936575373
 Content-Length: 0
 x-ntap-sg-consistency: strong-site
 ----
+.相關資訊
 xref:../tenant/index.adoc[使用租戶帳戶]

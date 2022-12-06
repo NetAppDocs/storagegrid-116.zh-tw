@@ -13,4 +13,5 @@ summary: 設定E5600SG控制器連接埠的網路連結時、您可以使用連�
 [role="lead"]
 設定E5600SG控制器連接埠的網路連結時、您可以使用連接埠連結連接至Grid Network和選用的Client Network的10-GbE連接埠、以及連接至選用管理網路的1-GbE管理連接埠。連接埠連結功能可在StorageGRID 各個解決方案之間提供備援路徑、協助您保護資料。
 
+.相關資訊
 xref:configuring-network-links-sg5600.adoc[設定網路連結（SG5600）]

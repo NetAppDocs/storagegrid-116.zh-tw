@@ -13,7 +13,7 @@ summary: 當您檢視群組的詳細資料時，可以變更群組的顯示名�
 [role="lead"]
 當您檢視群組的詳細資料時、可以變更群組的顯示名稱、權限、原則及屬於群組的使用者。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您必須使用登入租戶管理程式 xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
 * 您必須屬於具有「根存取」權限的使用者群組。
 
@@ -59,6 +59,7 @@ IMPORTANT: 若要確保儲存變更、請在每個區段進行變更後、選取
 
 
 
+.相關資訊
 xref:creating-groups-for-s3-tenant.adoc[為S3租戶建立群組]
 
 xref:creating-groups-for-swift-tenant.adoc[為Swift租戶建立群組]

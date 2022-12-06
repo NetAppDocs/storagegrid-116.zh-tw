@@ -71,6 +71,7 @@ UT][ANID(UI32):12872812][AMID(FC32):S3RQ][ATID(UI64):15792241
 ----
 ATIM會記錄UNIX時代開始以來的時間（以微秒為單位）。在範例中、「1405631878959669」的值代表2014年7月17日星期四21：17：59 UTC。
 
+.相關資訊
 xref:sput-s3-put.adoc[SPUT：S3]
 
 xref:common-elements-in-audit-messages.adoc[稽核訊息中的一般元素]

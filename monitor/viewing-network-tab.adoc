@@ -21,4 +21,5 @@ summary: 「網路」索引標籤會顯示圖表、顯示在節點、站台或�
 
 image::../media/nodes_page_network_tab.png[「節點」頁面「網路」標籤]
 
+.相關資訊
 xref:monitoring-network-connections-and-performance.adoc[監控網路連線與效能]

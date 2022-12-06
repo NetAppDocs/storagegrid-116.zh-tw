@@ -13,6 +13,7 @@ summary: 為了確保StorageGRID 不受防火牆阻礙、請確認StorageGRID �
 [role="lead"]
 為了確保StorageGRID 不受防火牆阻礙、請確認StorageGRID 《不適用》裝置安裝程式可連線至特定IP位址或位址範圍內的特定TCP連接埠或連接埠集。
 
+.關於這項工作
 您可以使用StorageGRID 《解決方案安裝程式》中提供的連接埠清單、測試應用裝置與Grid Network中其他節點之間的連線能力。
 
 此外、您也可以在管理網路和用戶端網路上、以及在諸如外部NFS或DNS伺服器所使用的udp連接埠上測試連線能力。如需這些連接埠的清單、請參閱StorageGRID 《關於連接埠的資訊》指南中的連接埠參考資料。
@@ -71,4 +72,5 @@ image::../media/nmap_test_red_banner.png[nmap測試紅色橫幅]
 
 
 
+.相關資訊
 xref:../network/index.adoc[網路準則]
