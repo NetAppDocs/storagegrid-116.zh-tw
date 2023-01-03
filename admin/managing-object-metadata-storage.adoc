@@ -244,7 +244,7 @@ image::../media/storage_used_object_metadata_allowed.png[使用的儲存設備-�
 
 * 全系統*中繼資料保留空間*設定為8 TB。（StorageGRID 當每個儲存節點的RAM超過128 GB時、此為預設值。）
 * SN1的中繼資料實際保留空間為6 TB。（由於Volume 0小於*中繼資料保留空間*設定、因此保留整個Volume。）
-* 根據中所示的計算結果、SN1上中繼資料的允許空間為3 TB <<actual-reserved-space-for-metadata,中繼資料的實際保留空間表格>>：（中繼資料的實際保留空間：1 TB）x 60%、最高3.96 TB。
+* 根據中所示的計算結果、SN1上中繼資料的允許空間為3 TB <<table-allowed-space-for-metadata,允許用於中繼資料空間的表格>>：（中繼資料的實際保留空間：1 TB）x 60%、最高3.96 TB。
 
 
 
