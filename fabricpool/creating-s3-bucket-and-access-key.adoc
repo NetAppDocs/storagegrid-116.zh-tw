@@ -72,7 +72,7 @@ image::../media/create_bucket_for_fabricpool.png[創造FabricPool 適用於此�
 
 +
 
-NOTE: 對於這個領域、建議的儲存貯體一致性層級為「全新寫入後的準則」FabricPool 。 不建議使用「可用」一致性層級。請參閱 xref:../tenant/changing-consistency-level.adoc[變更一致性層級]。
+NOTE: 對於 FabricPool 貯體、建議的貯體一致性等級為 * 讀取後新寫入 * 、這是新貯體的預設設定。請勿編輯 FabricPool 儲存庫以使用 * 可用 * 或任何其他一致性層級。
 
 . 建立存取金鑰和秘密存取金鑰。
 +

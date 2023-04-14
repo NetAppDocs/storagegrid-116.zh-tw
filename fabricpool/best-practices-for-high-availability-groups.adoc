@@ -42,7 +42,7 @@ IMPORTANT: 如果您打算使用VLAN介面來隔離FabricPool 靜態流量、網
 
 建立StorageGRID 一套適用於FabricPool 功能不實的功能不一的最佳實務做法取決於工作負載、如下所示：
 
-* 如果您計畫FabricPool 搭配主要工作負載資料使用方面、則必須建立至少包含兩個負載平衡節點的HA群組、以避免資料擷取中斷。
+* 如果您計畫將 FabricPool 與主要工作負載資料搭配使用、則必須建立至少包含兩個負載平衡節點的 HA 群組、以避免資料擷取中斷。
 * 如果您計畫使用FabricPool 僅供Snapshot使用的磁碟區分層原則或非主要的本機效能層（例如災難恢復位置或NetApp SnapMirror®目的地）、則只能設定一個節點的HA群組。
 
 

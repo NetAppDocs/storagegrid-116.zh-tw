@@ -7,19 +7,6 @@ settings:
     pdf_enabled: true
     harmony_enabled: false
     lipi_enabled: false
-  versions:
-  - name: StorageGRID
-    url: "/storagegrid-116"
-    version-number: '11.6'
-  - name: StorageGRID
-    url: "/storagegrid-115"
-    version-number: '11.5'
-  - name: StorageGRID
-    url: https://mysupport.netapp.com/documentation/docweb/index.html?productID=63374&language=en-US
-    version-number: '11.4'
-  - name: StorageGRID
-    url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61023&archive=true
-    version-number: '11.3'
   langs: zh-tw,us-en,ja-jp,ko-kr,zh-cn,de-de,es-es,fr-fr
 sidebar:
   entries:

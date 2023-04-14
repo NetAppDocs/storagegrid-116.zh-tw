@@ -2,7 +2,7 @@
 permalink: swift/get-container-consistency-request.html 
 sidebar: sidebar 
 keywords: get container consistency request 
-summary: 一致性層級可在物件的可用度與不同儲存節點和站台之間的物件一致性之間進行權衡。「Get Container一致性」要求可讓您判斷要套用至特定容器的一致性層級。 
+summary: 一致性控制可在物件的可用度與這些物件在不同儲存節點和站台之間的一致性之間取得平衡。「Get Container一致性」要求可讓您判斷要套用至特定容器的一致性層級。 
 ---
 = 取得Container一致性要求
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 一致性層級可在物件的可用度與不同儲存節點和站台�
 
 
 [role="lead"]
-一致性層級可在物件的可用度與不同儲存節點和站台之間的物件一致性之間進行權衡。「Get Container一致性」要求可讓您判斷要套用至特定容器的一致性層級。
+一致性控制可在物件的可用度與這些物件在不同儲存節點和站台之間的一致性之間取得平衡。「Get Container一致性」要求可讓您判斷要套用至特定容器的一致性層級。
 
 
 
