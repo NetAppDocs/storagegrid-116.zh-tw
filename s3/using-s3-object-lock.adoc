@@ -110,4 +110,4 @@ xref:initiate-multipart-upload.adoc[啟動多部份上傳]
 
 xref:object-versioning.adoc[物件版本管理]
 
-https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html["Amazon簡易儲存服務使用者指南：使用S3物件鎖定"^]
+https://["Amazon簡易儲存服務使用者指南：使用S3物件鎖定"^]

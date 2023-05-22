@@ -17,10 +17,10 @@ summary: 您可以建立自訂警示規則、以定義自己觸發警示的條�
 * 您將使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]
 * 您擁有「管理警示」或「根存取」權限
 * 您已經熟悉 xref:commonly-used-prometheus-metrics.adoc[常用的Prometheus指標]
-* 您瞭解 https://prometheus.io/docs/querying/basics/["Prometheus查詢的語法"^]
-* 您也可以選擇觀看影片： https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b35ac3f2-957b-4e79-b82b-acc5013c98d0["影片：使用指標建立自訂警示"^]
+* 您瞭解 https://["Prometheus查詢的語法"^]
+* 您也可以選擇觀看影片： https://["影片：使用指標建立自訂警示"^]
 +
-image::../media/video-screenshot-alert-create-custom.png[連結-"https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b35ac3f2-957b-4e79-b82b-acc5013c98d0"[] Alt="Video：使用指標建立自訂警示"]
+image::../media/video-screenshot-alert-create-custom.png[連結-"https://[] Alt="Video：使用指標建立自訂警示"]
 
 
 

@@ -228,7 +228,7 @@ NOTE: 其中包含了ADC服務的儲存節點上有此RSM服務。
 
 NOTE: 部分StorageGRID 還原程序會使用Reaper來處理Cassandra的修復作業。一旦相關或必要的服務開始、系統就會自動進行修復。您可能會注意到指令碼輸出中提到「Shaper」或「Cassandra repair」。 如果您看到指出修復失敗的錯誤訊息、請執行錯誤訊息中指示的命令。
 
-. [[安裝後指令碼步驟]。做為 `sn-recovery-postinstall.sh` 指令碼會執行、並在Grid Manager中監控「恢復」頁面。
+. [[post-install-script-step ] 做為 `sn-recovery-postinstall.sh` 指令碼會執行、並在Grid Manager中監控「恢復」頁面。
 +
 「恢復」頁面上的進度列和「階段」欄提供「sh-recovery -postinstall.sh」指令碼的高層級狀態。
 

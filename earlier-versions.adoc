@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: earlier-versions.html 
 keywords: storagegrid, earlier version, documentation, doc site, 11.5, 11.4, 11.3, 11.2 
-summary: 您可以StorageGRID 在這裡找到先前版本NetApp解決方案軟體的文件。 
+summary: 您可以在此處找到 NetApp StorageGRID 軟體其他版本的文件。 
 ---
-= 早期版本的NetApp StorageGRID 解決方案文件
+= 其他版本的 NetApp StorageGRID 文件
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,10 +14,11 @@ summary: 您可以StorageGRID 在這裡找到先前版本NetApp解決方案軟�
 
 
 [role="lead"]
-您可以在StorageGRID 這裡找到先前版本NetApp解決方案軟體的文件：
+您可以在此處找到 NetApp StorageGRID 軟體其他版本的文件：
 
-* https://docs.netapp.com/sgws-115/index.jsp["供應資料中心StorageGRID"^]
-* https://docs.netapp.com/sgws-114/index.jsp["VMware文件中心StorageGRID"^]
-* https://docs.netapp.com/sgws-113/index.jsp["Software 11.3文件中心StorageGRID"^]
-* https://docs.netapp.com/sgws-112/index.jsp["供應資料中心StorageGRID"^]
+* https://["StorageGRID 11.7 文件"^]
+* https://["本文檔的內容StorageGRID"^]
+* https://["部分11.4文件StorageGRID"^]
+* https://["部分11.3文件StorageGRID"^]
+* https://["部分11.2文件StorageGRID"^]
 

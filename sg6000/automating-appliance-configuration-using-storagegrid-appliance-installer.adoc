@@ -42,7 +42,7 @@ NOTE: 想要自動化設備安裝與組態的資深使用者、可以使用「co
 +
 ** ConfigBuilder應用程式
 +
-https://configbuilder.netapp.com/["ConfigBuilder.netapp.com"^]
+https://["ConfigBuilder.netapp.com"^]
 
 ** 「configure - Sga.py」應用裝置組態指令碼。您可以從StorageGRID 《Sing Appliance Installer》（*《Help*》>《*設備組態指令碼*》）下載指令碼。請參閱使用configure-sga.py指令碼自動化組態的指示。
 +

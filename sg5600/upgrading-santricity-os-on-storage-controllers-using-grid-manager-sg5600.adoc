@@ -38,7 +38,7 @@ NOTE: 此程序會自動將NVSRAM升級 至SANtricity 與更新版有關的最�
 請務必為SANtricity 儲存控制器選擇適用的作業系統版本。
 
 +
-https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下載：StorageGRID NetApp產品"^]
+https://["NetApp下載：StorageGRID NetApp產品"^]
 
 . 選擇*維護*>*系統*>*軟體更新*。
 +
@@ -189,6 +189,6 @@ NOTE: 重複升級程序時、您必須核准先前升級的節點。
 
 
 .相關資訊
-https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]
+https://["NetApp 互通性對照表工具"^]
 
 xref:upgrading-santricity-os-on-e2700-controller-using-maintenance-mode.adoc[使用SANtricity 維護模式升級E2700控制器上的作業系統]

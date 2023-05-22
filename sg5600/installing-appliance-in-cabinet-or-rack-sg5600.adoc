@@ -77,6 +77,6 @@ image::../media/appliance_drive_insertion.gif[磁碟機插入]
 
 
 .相關資訊
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2344477["E2700控制器磁碟機匣及相關磁碟機匣安裝指南"^]
+https://["E2700控制器磁碟機匣及相關磁碟機匣安裝指南"^]
 
-https://library.netapp.com/ecm/ecm_download_file/ECMP1532527["E5600控制器磁碟機匣及相關磁碟機匣安裝指南"^]
+https://["E5600控制器磁碟機匣及相關磁碟機匣安裝指南"^]

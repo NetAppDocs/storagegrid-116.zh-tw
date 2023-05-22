@@ -20,7 +20,7 @@ xref:using-s3-object-lock.adoc[使用S3物件鎖定]
 
 xref:../ilm/index.adoc[使用ILM管理物件]
 
-https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/StorageGRID/How_to_manage_legacy_Compliant_buckets_in_StorageGRID_11.5["NetApp知識庫：如何管理StorageGRID 支援老舊的知識庫、請參閱《知識庫文章"^]
+https://["NetApp知識庫：如何管理StorageGRID 支援老舊的知識庫、請參閱《知識庫文章"^]
 
 您無法再建立啟用「法規遵循」的新庫位。如果您嘗試使用「置放桶」要求修改以符合法規要求、以建立新的「符合法規」桶、則會傳回下列錯誤訊息：
 

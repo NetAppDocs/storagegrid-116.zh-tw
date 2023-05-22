@@ -85,8 +85,8 @@ E2700控制器中的電池（需要移除控制器）
 
 |===
 .相關資訊
-https://mysupport.netapp.com/info/web/ECMP11751516.html["NetApp E系列和EF系列硬體更換程序"^]
+https://["NetApp E系列和EF系列硬體更換程序"^]
 
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61765["NetApp文件：E2700系列"^]
+http://["NetApp文件：E2700系列"^]
 
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61893["NetApp文件：E5600系列"^]
+http://["NetApp文件：E5600系列"^]

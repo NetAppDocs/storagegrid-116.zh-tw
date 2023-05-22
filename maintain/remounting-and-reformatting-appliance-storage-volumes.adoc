@@ -217,10 +217,6 @@ NOTE: 部分StorageGRID 還原程序會使用Reaper來處理Cassandra的修復�
 +
 image::../media/recovering_cassandra.png[顯示Grid Management Interface恢復進度的快照]
 
-. 使用運算控制器的IP位址、輸入「https://Controller_IP:8443`」、返回StorageGRID 到「VMware應用程式安裝工具」的「監控安裝」頁面。
-+
-「監控安裝」頁面會顯示指令碼執行時的安裝進度。
-
 
 
 在節點上啟動「shn-recovery -postinstall.sh」指令碼之後、您可以將物件資料還原至任何由指令碼格式化的儲存磁碟區、如下一步驟所述。

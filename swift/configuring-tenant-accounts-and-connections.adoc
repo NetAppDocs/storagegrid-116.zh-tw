@@ -226,7 +226,7 @@ xref:../admin/index.adoc[管理StorageGRID]
 .您需要的產品
 * 您必須下載並安裝python swiftClient、Swift命令列用戶端。
 +
-https://platform.swiftstack.com/docs/integration/python-swiftclient.html["SwiftStack：Python-swiftClient"^]
+https://["SwiftStack：Python-swiftClient"^]
 
 * 您必須在StorageGRID 整個作業系統中擁有Swift租戶帳戶。
 

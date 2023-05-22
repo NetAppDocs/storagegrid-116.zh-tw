@@ -21,7 +21,7 @@ NOTE: 如果已啟用全域S3物件鎖定設定、請改用下列程序： xref:
 * 您擁有特定的存取權限。
 * 您已建立要新增至建議原則的ILM規則。視需要、您可以儲存建議的原則、建立其他規則、然後編輯建議的原則以新增規則。
 * 您有 xref:creating-default-ilm-rule.adoc[已建立預設ILM規則] 不含任何篩選器的原則。
-* 您也可以選擇觀看影片： https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c929e94e-353a-4375-b112-acc5013c81c7["影片：StorageGRID 《ILM原則》"^]
+* 您也可以選擇觀看影片： https://["影片：StorageGRID 《ILM原則》"^]
 +
 [link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c929e94e-353a-4375-b112-acc5013c81c7]
 image::../media/video-screenshot-ilm-policies.png[影片：StorageGRID 《ILM原則》]

@@ -98,6 +98,6 @@ image::../media/node_rejoin_grid_confirmation.png[應用裝置節點重新加入
 
 
 .相關資訊
-https://mysupport.netapp.com/info/web/ECMP11751516.html["NetApp E系列和EF系列硬體更換程序"^]
+https://["NetApp E系列和EF系列硬體更換程序"^]
 
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61765["NetApp文件：E2700系列"^]
+http://["NetApp文件：E2700系列"^]

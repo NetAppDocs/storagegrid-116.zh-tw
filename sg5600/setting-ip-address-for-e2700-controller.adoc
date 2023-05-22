@@ -67,4 +67,4 @@ image::../media/storage_controller_ipv4_and_def_gateway.gif[儲存控制器網�
 
 
 .相關資訊
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61197["NetApp文件：SANtricity NetApp Storage Manager"^]
+http://["NetApp文件：SANtricity NetApp Storage Manager"^]

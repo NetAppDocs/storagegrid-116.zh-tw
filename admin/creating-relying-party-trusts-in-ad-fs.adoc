@@ -39,7 +39,7 @@ NOTE: 您必須為StorageGRID 您的系統中的每個管理節點建立信賴�
 . 從Windows開始功能表中、以滑鼠右鍵選取PowerShell圖示、然後選取*以系統管理員身分執行*。
 . 在PowerShell命令提示字元中輸入下列命令：
 +
-「Add-AdfsRelyingPartyTrust -Name「_admin_Node_Identer_」-Metadata URL "https://_Admin_Node_FQDN_/api/saml-metadata"`[]
+「Add-AdfsRelyingPartyTrust -Name「_admin_Node_Identer_」-Metadata URL "https://[]
 
 +
 ** 對於「_admin_Node_Identifier_」、請輸入管理節點的信賴方識別碼、如同「單一登入」頁面所示。例如「G-DC1-ADM1」。

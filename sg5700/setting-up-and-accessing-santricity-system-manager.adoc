@@ -58,7 +58,7 @@ NOTE: 使用Grid Manager或StorageGRID NetApp應用裝置安裝程式、您無�
 如需E系列AutoSupport 的更多資訊、請參閱E系列文件中心。
 
 +
-http://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E系列系統文件網站"^]
+http://["NetApp E系列系統文件網站"^]
 
 * 磁碟機安全金鑰、用於解除鎖定安全磁碟機（如果啟用磁碟機安全功能、則需要此步驟）
 * 管理員密碼、用於存取SANtricity 《系統管理程式》

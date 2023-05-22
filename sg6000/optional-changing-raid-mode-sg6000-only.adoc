@@ -50,4 +50,4 @@ https://_Controller_IP_:8443*`
 
 
 .相關資訊
-http://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E系列系統文件網站"^]
+http://["NetApp E系列系統文件網站"^]

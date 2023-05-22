@@ -70,7 +70,7 @@ image::../media/sg_storagemanager_upgrade_drive_firmware.png[升級磁碟機韌�
 +
 .. 開啟您的網頁瀏覽器、瀏覽至NetApp支援網站、然後使用您的ID和密碼登入。
 +
-https://mysupport.netapp.com/site/["NetApp支援"^]
+https://["NetApp支援"^]
 
 .. 在NetApp支援網站上、選取* Downloads *（下載*）索引標籤、然後選取* E系列磁碟機韌體*。
 +

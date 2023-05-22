@@ -24,7 +24,7 @@ summary: 您必須為StorageGRID 該系統指定網路時間傳輸協定（NTP�
 ====
 指定外部NTP來源進行正式作業層級StorageGRID 的安裝時、請勿在Windows Server 2016之前的Windows版本上使用Windows Time（W32Time）服務。舊版Windows上的時間服務不夠準確、Microsoft不支援在StorageGRID 高準確度環境中使用、例如：
 
-https://support.microsoft.com/en-us/help/939322/support-boundary-to-configure-the-windows-time-service-for-high-accura["支援邊界、可針對高準確度環境設定Windows時間服務"^]
+https://["支援邊界、可針對高準確度環境設定Windows時間服務"^]
 
 ====
 外部NTP伺服器是由您先前指派主要NTP角色的節點所使用。

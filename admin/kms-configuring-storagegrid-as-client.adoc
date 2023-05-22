@@ -16,7 +16,7 @@ summary: 您必須先為StorageGRID 每個外部金鑰管理伺服器或KMS叢�
 .關於這項工作
 這些指示適用於Thales CSpherTrust Manager k170v、2.0、2.1及2.2版。如果您對使用不同的關鍵管理伺服器StorageGRID 搭配使用方面有任何疑問、請聯絡技術支援部門。
 
-https://thalesdocs.com/ctp/cm/latest/["Thales CiperTrust經理"^]
+https://["Thales CiperTrust經理"^]
 
 .步驟
 . 在KMS軟體中、為StorageGRID 您打算使用的每個KMS或KMS叢集建立一個完善的用戶端。

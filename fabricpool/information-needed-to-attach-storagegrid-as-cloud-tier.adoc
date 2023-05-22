@@ -21,8 +21,8 @@ NOTE: 所列的確切欄位名稱和輸入ONTAP 所需值的程序、取決於�
 
 如需詳細資訊、請參閱下列內容：
 
-* https://www.netapp.com/pdf.html?item=/media/17239-tr4598pdf.pdf["TR-4598：FabricPool 《完美實務》ONTAP （《TR-4598：》）、《完美實務》（英文"^]
-* https://docs.netapp.com/us-en/ontap/index.html["供應說明文件ONTAP"^]
+* https://["TR-4598：FabricPool 《完美實務》ONTAP （《TR-4598：》）、《完美實務》（英文"^]
+* https://["供應說明文件ONTAP"^]
 
 
 [cols="1a,2a"]

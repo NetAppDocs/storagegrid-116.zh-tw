@@ -21,7 +21,7 @@ summary: 註冊應用裝置硬體可提供支援效益。
 +
 image::../media/appliance_label.gif[標籤、包括序號]
 
-. 請前往NetApp支援網站： http://mysupport.netapp.com/["mysupport.netapp.com"^]。
+. 請前往NetApp支援網站： http://["mysupport.netapp.com"^]。
 . 判斷您是否需要註冊硬體：
 +
 |===

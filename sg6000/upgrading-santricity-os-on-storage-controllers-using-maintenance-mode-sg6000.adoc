@@ -59,6 +59,6 @@ image::../media/node_rejoin_grid_confirmation.png[應用裝置節點重新加入
 
 
 .相關資訊
-https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]
+https://["NetApp 互通性對照表工具"^]
 
 xref:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6000.adoc[使用SANtricity Grid Manager升級儲存控制器上的作業系統]

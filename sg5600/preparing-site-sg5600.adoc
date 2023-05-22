@@ -70,6 +70,6 @@ SG5660
 
 
 .相關資訊
-https://hwu.netapp.com["NetApp Hardware Universe"^]
+https://["NetApp Hardware Universe"^]
 
-https://mysupport.netapp.com/NOW/products/interoperability["NetApp互通性"^]
+https://["NetApp互通性"^]

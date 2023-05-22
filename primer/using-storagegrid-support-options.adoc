@@ -57,7 +57,7 @@ NetApp是雲端型數位顧問、運用NetApp安裝基礎上的預測分析和�
 
 如果您想要使用NetApp支援網站上的「支援資訊」儀表板和功能、則必須啟用AutoSupport 「支援」Active IQ 。
 
-https://docs.netapp.com/us-en/active-iq/index.html["《 VMware 數位顧問文件》 Active IQ"^]
+https://["《 VMware 數位顧問文件》 Active IQ"^]
 
 
 
