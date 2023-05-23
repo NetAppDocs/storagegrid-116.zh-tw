@@ -51,7 +51,7 @@ NOTE: CLB服務已過時。
 
 . 或者、若要安裝StorageGRID 不同版本的更新版的更新版本、請依照下列步驟操作：
 +
-.. 下載安裝歸檔：https://["NetApp下載：StorageGRID NetApp產品"^]。
+.. 下載安裝歸檔：https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下載：StorageGRID NetApp產品"^]。
 .. 擷取歸檔。
 .. 從《Sile Appliance Installer》StorageGRID （英文）中、選取*進階*>*上傳StorageGRID 《Some Software*》（英文）。
 .. 按一下「*移除*」以移除目前的軟體套件。

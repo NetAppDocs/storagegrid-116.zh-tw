@@ -43,6 +43,6 @@ IMPORTANT: 如果您仍在使用舊警報、請計畫在升級StorageGRID 至原
 
 NAS Bridge功能先前已在StorageGRID 版本號為「更新版本」的「限制存取」中加入。NAS Bridge功能仍處於有限存取狀態、並於StorageGRID 執行版本11.6/時已過時。
 
-NAS Bridge 11.4仍為最終版本、將繼續與StorageGRID NetApp 11.6相 容。檢閱 https://["NetApp 互通性對照表工具"^] 以確保NAS Bridge 11.4與StorageGRID 更新版本之間的持續相容性。
+NAS Bridge 11.4仍為最終版本、將繼續與StorageGRID NetApp 11.6相 容。檢閱 https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^] 以確保NAS Bridge 11.4與StorageGRID 更新版本之間的持續相容性。
 
-請參閱的NetApp支援網站 https://["NAS橋接器的支援排程"^]。
+請參閱的NetApp支援網站 https://mysupport.netapp.com/site/info/version-support["NAS橋接器的支援排程"^]。

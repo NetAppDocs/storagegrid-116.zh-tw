@@ -19,7 +19,7 @@ summary: 如果有可用的修補程式或StorageGRID 更新版本的更新、�
 .步驟
 . 請前往NetApp下載頁StorageGRID 面以瞭解決此問題。
 +
-https://["NetApp下載StorageGRID"^]
+https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["NetApp下載StorageGRID"^]
 
 . 選取「*類型/選取版本*」欄位的向下箭頭、即可查看可供下載的更新清單：
 +

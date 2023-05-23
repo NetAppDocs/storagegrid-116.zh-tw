@@ -33,7 +33,7 @@ summary: 您應該確認技術支援人員是否收到AutoSupport 您的不實�
 技術支援從系統收到每週記錄後AutoSupport 、此功能的狀態會變更為「On（開）」。
 
 .步驟
-. 請前往NetApp支援網站： http://["mysupport.netapp.com"^]、然後登入Active IQ 這個資訊網站。
+. 請前往NetApp支援網站： http://mysupport.netapp.com/["mysupport.netapp.com"^]、然後登入Active IQ 這個資訊網站。
 . 如果AutoSupport 不正確、但您認為不正確、請完成下列步驟：
 +
 .. 請檢查系統組態、確定您已開啟AutoSupport 了「功能驗證」。

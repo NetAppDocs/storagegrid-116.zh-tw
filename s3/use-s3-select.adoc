@@ -16,7 +16,7 @@ summary: 支援下列AWS S3 Select子句、資料類型、運算子及保留的�
 
 NOTE: 不支援任何未列出的項目。
 
-如需語法、請參閱 xref:select-object-content.adoc[選取物件內容]。如需S3 Select的詳細資訊、請參閱 https://["S3 Select的AWS文件"^]。
+如需語法、請參閱 xref:select-object-content.adoc[選取物件內容]。如需S3 Select的詳細資訊、請參閱 https://docs.aws.amazon.com/AmazonS3/latest/userguide/selecting-content-from-objects.html["S3 Select的AWS文件"^]。
 
 只有啟用S3 Select的租戶帳戶才能發出SelectObjectContent查詢。請參閱 xref:../admin/manage-s3-select-for-tenant-accounts.adoc[使用S3 Select的考量與要求]。
 

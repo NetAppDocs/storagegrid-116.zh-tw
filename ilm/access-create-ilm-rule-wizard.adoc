@@ -25,7 +25,7 @@ NOTE: 如果您要建立原則的預設ILM規則、請改用下列程序： xref
 * 如果您要建立銷毀編碼複本、則已設定「刪除編碼」設定檔。請參閱 xref:creating-erasure-coding-profile.adoc[建立銷毀編碼設定檔]。
 * 您已經熟悉 xref:data-protection-options-for-ingest.adoc[用於擷取的資料保護選項]。
 * 如果您需要建立與S3物件鎖定搭配使用的相容規則、您就熟悉了 xref:requirements-for-s3-object-lock.adoc[S3物件鎖定需求]。
-* 您也可以選擇觀看影片： https://["影片：StorageGRID 《ILM規則：入門》"^]。
+* 您也可以選擇觀看影片： https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=beffbe9b-e95e-4a90-9560-acc5013c93d8["影片：StorageGRID 《ILM規則：入門》"^]。
 +
 [link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=beffbe9b-e95e-4a90-9560-acc5013c93d8]
 image::../media/video-screenshot-ilm-rules.png[影片：StorageGRID 《ILM規則：入門》]

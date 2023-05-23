@@ -287,4 +287,4 @@ EP
 .相關資訊
 xref:troubleshooting-hardware-installation.adoc[疑難排解硬體安裝（SG5700）]
 
-https://["NetApp支援"^]
+https://mysupport.netapp.com/site/global/dashboard["NetApp支援"^]

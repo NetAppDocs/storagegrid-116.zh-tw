@@ -46,7 +46,7 @@ summary: 如果您想要讓其他網域中的Web應用程式能夠存取S3儲存
 </CORSConfiguration>
 ----
 +
-如需CORS組態XML的詳細資訊、請參閱 http://["Amazon Web Services（AWS）文件：Amazon Simple Storage Service開發人員指南"^]。
+如需CORS組態XML的詳細資訊、請參閱 http://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html["Amazon Web Services（AWS）文件：Amazon Simple Storage Service開發人員指南"^]。
 
 . 在租戶管理程式中、選取*儲存設備（S3）*>*桶*。
 . 從清單中選取儲存貯體名稱。

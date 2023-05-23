@@ -23,7 +23,7 @@ summary: 在將StorageGRID 「支援功能」附加為FabricPool 「支援功能
 
 將用戶端流量轉送至儲存節點時、每個節點上的負載平衡器服務都會獨立運作。透過加權程序、負載平衡器服務會將更多要求路由傳送至CPU可用度較高的儲存節點。
 
-雖然推薦使用「VMware負載平衡器」服務、但StorageGRID 您可能想要改為整合協力廠商負載平衡器。如需相關資訊、請聯絡您的NetApp客戶代表或參閱 https://["TR-4626：StorageGRID 不包括第三方和全域負載平衡器"^]。
+雖然推薦使用「VMware負載平衡器」服務、但StorageGRID 您可能想要改為整合協力廠商負載平衡器。如需相關資訊、請聯絡您的NetApp客戶代表或參閱 https://www.netapp.com/pdf.html?item=/media/17068-tr4626pdf.pdf["TR-4626：StorageGRID 不包括第三方和全域負載平衡器"^]。
 
 
 NOTE: 閘道節點上的個別連線負載平衡器（CLB）服務已過時、不再建議搭配FabricPool 使用。

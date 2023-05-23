@@ -46,4 +46,4 @@ NOTE: 只有應用裝置的其中一個控制器連接SANtricity 至《不知如
 
 
 .相關資訊
-http://["NetApp文件：SANtricity NetApp Storage Manager"^]
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61197["NetApp文件：SANtricity NetApp Storage Manager"^]

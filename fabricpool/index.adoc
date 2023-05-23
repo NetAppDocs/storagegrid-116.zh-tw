@@ -39,8 +39,8 @@ image::../media/fabricpool_storagegrid_workflow.png[功能工作流程FabricPool
 * 熟悉StorageGRID 包括Grid Manager和Tenant Manager在內的整個系統軟體。
 * 請檢閱這些額外資源、其中提供使用FabricPool 和設定功能的詳細資訊：
 +
-** https://["TR-4598：FabricPool 《完美實務》ONTAP （《TR-4598：》）、《完美實務》（英文"^]
-** https://["供應說明文件ONTAP"^]
+** https://www.netapp.com/pdf.html?item=/media/17239-tr4598pdf.pdf["TR-4598：FabricPool 《完美實務》ONTAP （《TR-4598：》）、《完美實務》（英文"^]
+** https://docs.netapp.com/us-en/ontap/index.html["供應說明文件ONTAP"^]
 
 
 

@@ -35,7 +35,7 @@ IMPORTANT: 請確定每個站台至少有兩個節點可以存取至少四個外
 
 NOTE: 指定外部NTP來源進行正式作業層級StorageGRID 的安裝時、請勿在Windows Server 2016之前的Windows版本上使用Windows Time（W32Time）服務。舊版Windows上的時間服務不夠準確、Microsoft不支援在StorageGRID 高準確度環境中使用、例如：
 
-https://["支援邊界、可針對高準確度環境設定Windows時間服務"^]
+https://support.microsoft.com/en-us/help/939322/support-boundary-to-configure-the-windows-time-service-for-high-accura["支援邊界、可針對高準確度環境設定Windows時間服務"^]
 
 如果您在安裝期間遇到最初指定NTP伺服器的穩定性或可用度問題、您可以StorageGRID 新增其他伺服器、或更新或移除現有伺服器、以更新該系統使用的外部NTP來源清單。
 

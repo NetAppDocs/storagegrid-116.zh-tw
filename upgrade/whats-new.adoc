@@ -125,7 +125,7 @@ IMPORTANT: 實驗性S3主控台尚未經過完整測試、不適用於大量管�
 * 更新*檢查軟體更新*核取方塊AutoSupport （*支援*>*工具*>* AutoSupport 還原*）可讓您控制此功能。如果您的系統無法存取WAN、您可以停用檢查可用的軟體更新。請參閱 xref:../admin/configure-autosupport-grid-manager.adoc#disable-checks-for-software-updates[設定AutoSupport 更新檢查；停用軟體更新檢查]。
 +
 
-NOTE: 若要升級StorageGRID 至Suse 11.6,您可以選擇使用指令碼來同時升級及套用修補程式。請參閱 https://["NetApp知識庫：如何執行StorageGRID 針對效益的重大升級與修補程式指令碼組合"^]。
+NOTE: 若要升級StorageGRID 至Suse 11.6,您可以選擇使用指令碼來同時升級及套用修補程式。請參閱 https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/StorageGRID/How_to_run_combined_major_upgrade_and_hotfix_script_for_StorageGRID["NetApp知識庫：如何執行StorageGRID 針對效益的重大升級與修補程式指令碼組合"^]。
 
 * 如果SANtricity 您需要稍後再完成升級、現在可以暫停更新作業系統、並跳過升級部分節點。請參閱儲存應用裝置的說明：
 +

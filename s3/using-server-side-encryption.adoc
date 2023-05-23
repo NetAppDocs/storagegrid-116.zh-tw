@@ -123,4 +123,4 @@ xref:upload-part.adoc[上傳零件]
 
 xref:upload-part-copy.adoc[上傳零件-複製]
 
-https://["Amazon S3開發人員指南：使用客戶提供的加密金鑰（SSE-C）、使用伺服器端加密來保護資料"^]
+https://docs.aws.amazon.com/AmazonS3/latest/dev/ServerSideEncryptionCustomerKeys.html["Amazon S3開發人員指南：使用客戶提供的加密金鑰（SSE-C）、使用伺服器端加密來保護資料"^]

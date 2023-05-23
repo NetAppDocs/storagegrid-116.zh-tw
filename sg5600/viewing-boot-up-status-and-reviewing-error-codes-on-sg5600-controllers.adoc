@@ -25,4 +25,4 @@ E5600SG控制器的狀態和錯誤代碼與E2700控制器的狀態和錯誤代�
 .相關資訊
 xref:e5600sg-controller-seven-segment-display-codes.adoc[E5600SG控制器七段顯示代碼]
 
-http://["NetApp文件：E2700系列"^]
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61765["NetApp文件：E2700系列"^]

@@ -50,7 +50,7 @@ S3物件鎖定取代舊StorageGRID 版的Compliance功能。由於S3物件鎖定
 * 解除合法持有。
 
 
-請參閱 https://["NetApp知識庫：如何管理StorageGRID 支援老舊的知識庫、請參閱《知識庫文章"^] 以取得相關指示。
+請參閱 https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/StorageGRID/How_to_manage_legacy_Compliant_buckets_in_StorageGRID_11.5["NetApp知識庫：如何管理StorageGRID 支援老舊的知識庫、請參閱《知識庫文章"^] 以取得相關指示。
 
 如果您使用StorageGRID 舊版的更新版本的支援功能、請參閱下表、瞭解其與StorageGRID 更新版本中S3物件鎖定功能的比較。
 

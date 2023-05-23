@@ -63,4 +63,4 @@ summary: 此功能可從應用裝置收集客戶支援套裝組合中的資料�
 
 
 .相關資訊
-http://["NetApp文件：SANtricity NetApp Storage Manager"^]
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61197["NetApp文件：SANtricity NetApp Storage Manager"^]

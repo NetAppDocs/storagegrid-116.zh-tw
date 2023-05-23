@@ -35,7 +35,7 @@ IMPORTANT: 定期監控CPU和記憶體使用量、確保這些資源能持續因
 另請參閱儲存需求相關資訊。
 
 .相關資訊
-https://["NetApp 互通性對照表工具"^]
+https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]
 
 xref:storage-and-performance-requirements.adoc[儲存與效能需求]
 

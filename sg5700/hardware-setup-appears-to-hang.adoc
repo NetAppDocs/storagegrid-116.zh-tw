@@ -57,4 +57,4 @@ xref:status-indicators-on-e5700sg-controller.adoc[E5700SG控制器上的狀態�
 
 xref:he-error-error-synchronizing-with-santricity-os-software.adoc[他錯誤：同步SANtricity 至作業系統軟體時發生錯誤]
 
-http://["NetApp E系列系統文件網站"^]
+http://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E系列系統文件網站"^]

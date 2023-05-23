@@ -33,12 +33,12 @@ summary: 您StorageGRID 可以設定資訊生命週期管理（ILM）規則和�
 
 若要深入瞭解、請觀看以下影片：
 
-* https://["影片：StorageGRID 《ILM規則：入門》"^]
+* https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=beffbe9b-e95e-4a90-9560-acc5013c93d8["影片：StorageGRID 《ILM規則：入門》"^]
 +
 [link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=beffbe9b-e95e-4a90-9560-acc5013c93d8]
 image::../media/video-screenshot-ilm-rules.png[影片：StorageGRID 《ILM規則：入門》]
 
-* https://["影片：StorageGRID 《ILM原則》"^]
+* https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c929e94e-353a-4375-b112-acc5013c81c7["影片：StorageGRID 《ILM原則》"^]
 +
 [link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c929e94e-353a-4375-b112-acc5013c81c7]
 image::../media/video-screenshot-ilm-policies.png[影片：StorageGRID 《ILM原則》]

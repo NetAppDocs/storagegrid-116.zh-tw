@@ -25,7 +25,7 @@ image::../media/appliance_label.gif[標籤、包括序號]
 
 NOTE: 儲存應用裝置上有數個序號。儲存控制器機櫃上的序號是必須註冊的序號、如果您需要產品的服務或支援、就必須使用該序號。
 
-. 請前往NetApp支援網站： http://["mysupport.netapp.com"^]。
+. 請前往NetApp支援網站： http://mysupport.netapp.com/["mysupport.netapp.com"^]。
 . 判斷您是否需要註冊硬體：
 +
 |===

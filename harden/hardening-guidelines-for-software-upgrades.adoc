@@ -48,10 +48,10 @@ summary: 您必須保持StorageGRID 更新的不中斷系統和相關服務、�
 使用NetApp互通性對照表工具取得支援版本的清單。
 
 .相關資訊
-https://["NetApp下載StorageGRID"^]
+https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["NetApp下載StorageGRID"^]
 
 xref:../upgrade/index.adoc[升級軟體]
 
 xref:../maintain/index.adoc[恢復與維護]
 
-https://["NetApp 互通性對照表工具"^]
+https://mysupport.netapp.com/matrix["NetApp 互通性對照表工具"^]

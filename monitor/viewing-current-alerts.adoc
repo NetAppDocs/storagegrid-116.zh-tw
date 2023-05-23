@@ -15,7 +15,7 @@ summary: 觸發警示時、儀表板上會顯示警示圖示。節點的「節�
 
 .您需要的產品
 * 您必須使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
-* 您也可以選擇觀看影片： https://["影片：警示總覽"^]。
+* 您也可以選擇觀看影片： https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2680a74f-070c-41c2-bcd3-acc5013c9cdd["影片：警示總覽"^]。
 +
 [link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2680a74f-070c-41c2-bcd3-acc5013c9cdd]
 image::../media/video-screenshot-alert-overview.png[影片：警示總覽]

@@ -29,7 +29,7 @@ E系列AutoSupport 的資訊包含儲存硬體的詳細資料、比AutoSupport �
 若要在Grid Manager中設定管理Proxy伺服器、請參閱 xref:configuring-admin-proxy-settings.adoc[設定管理Proxy設定]。
 
 
-NOTE: 此程序僅適用於設定StorageGRID 適用於E系列AutoSupport 的支援服務器。如需E系列AutoSupport 的進一步資訊、請參閱 https://["NetApp E系列與SANtricity VMware文檔"^]。
+NOTE: 此程序僅適用於設定StorageGRID 適用於E系列AutoSupport 的支援服務器。如需E系列AutoSupport 的進一步資訊、請參閱 https://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E系列與SANtricity VMware文檔"^]。
 
 .步驟
 . 在Grid Manager中、選取* nodes *。

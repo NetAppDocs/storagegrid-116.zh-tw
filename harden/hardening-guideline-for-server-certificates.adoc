@@ -26,7 +26,7 @@ NOTE: 可分別管理負載平衡器端點所使用的憑證。StorageGRID若要
 
 使用自訂伺服器憑證時、請遵循下列準則：
 
-* 憑證應該有一個與DNS項目相符StorageGRID 的「_bectAltName_」、以供觀賞。如需詳細資料、請參閱第4.2.1.6節「Subject Alternative Name」（主題替代名稱）、請參閱 https://["RFC 5280：PKIX憑證與CRL設定檔"^]。
+* 憑證應該有一個與DNS項目相符StorageGRID 的「_bectAltName_」、以供觀賞。如需詳細資料、請參閱第4.2.1.6節「Subject Alternative Name」（主題替代名稱）、請參閱 https://tools.ietf.org/html/rfc5280#section-4.2.1.6["RFC 5280：PKIX憑證與CRL設定檔"^]。
 * 如有可能、請避免使用萬用字元憑證。此準則的例外情況是S3虛擬託管樣式端點的憑證、如果儲存區名稱事先不知道、則需要使用萬用字元。
 * 當您必須在憑證中使用萬用字元時、應採取其他步驟來降低風險。請使用萬用字元模式、例如「*.s3.example.com」、不要將「3.example.com」字尾用於其他應用程式。此模式也適用於路徑樣式S3存取、例如「dc1-s1.s3.example.com/mybucket`」。
 * 將憑證到期時間設為短（例如2個月）、然後使用Grid Management API自動執行憑證輪替。這對萬用字元憑證特別重要。

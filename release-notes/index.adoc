@@ -13,4 +13,4 @@ summary: 取得新功能、移除或過時功能、修正問題及已知問題�
 [role="lead"]
 取得新功能、移除或過時功能、修正問題及已知問題的發行特定資訊。
 
-登入NetApp支援網站 https://["檢視或下載PDF檔案"^] 包含StorageGRID 《發行說明：
+登入NetApp支援網站 https://library.netapp.com/ecm/ecm_download_file/ECMLP2880884["檢視或下載PDF檔案"^] 包含StorageGRID 《發行說明：

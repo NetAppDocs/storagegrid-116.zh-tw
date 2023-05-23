@@ -25,4 +25,4 @@ summary: 安裝StorageGRID 完此款產品硬體之前、您應該先檢查維�
 .相關資訊
 xref:../admin/web-browser-requirements.adoc[網頁瀏覽器需求]
 
-http://["NetApp文件：SANtricity NetApp Storage Manager"^]
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61197["NetApp文件：SANtricity NetApp Storage Manager"^]
