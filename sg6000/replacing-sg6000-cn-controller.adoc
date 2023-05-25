@@ -29,6 +29,22 @@ xref:locating-controller-in-data-center.adoc[在資料中心找到控制器]
 NOTE: 如果您在安裝StorageGRID 完此程序之前更換控制器、可能StorageGRID 無法在完成此程序後立即存取《產品安裝程式（到此程序）」。雖然StorageGRID 您可以從與應用裝置位於同一子網路的其他主機存取《ENetApp應用裝置安裝程式」、但您無法從其他子網路的主機存取。此情況應在15分鐘內自行解決（當原始控制器的任何ARP快取項目逾時時）、或者您可以從本機路由器或閘道手動清除任何舊的ARP快取項目、以立即清除此狀況。
 
 .步驟
+. 顯示應用裝置的目前組態並加以記錄。
++
+.. 登入要更換的應用裝置：
++
+... 輸入下列命令：「sh admin@_grid_node_ip_`」
+... 輸入「passwords.txt」檔案中所列的密碼。
+... 輸入下列命令以切換至root：「u -」
+... 輸入「passwords.txt」檔案中所列的密碼。
++
+以root登入時、提示會從「$」變更為「#」。
+
+
+
+.. 輸入： `*run-host-command ipmitool lan print*` 顯示應用裝置目前的 BMC 組態。
+
+
 . 如果SG6000-CN-控制器的運作能力足以允許控制關機、請關閉SG6000-CN-控制器。
 +
 xref:shutting-down-sg6000-cn-controller.adoc[關閉SG6000-CN.控制器]
@@ -39,13 +55,17 @@ xref:shutting-down-sg6000-cn-controller.adoc[關閉SG6000-CN.控制器]
 ** BMC介面的「Power Control（電源控制）」頁面表示控制器已關閉。
 
 
-. 如果StorageGRID 連接至控制器的靜態網路使用DHCP伺服器、請更新DNS/網路和IP位址設定。
+. 如果此 StorageGRID 應用裝置上的任何網路介面都設定為使用 DHCP 、您可能需要更新 DHCP 伺服器上的永久 DHCP 租用指派、以參照替換應用裝置的 MAC 位址。此更新可確保設備已指派預期的 IP 位址。
 +
 .. 找到SG6000-CN-控制器正面的MAC位址標籤、然後判斷管理網路連接埠的MAC位址。
 +
+[NOTE]
+====
+MAC位址標籤會列出BMC管理連接埠的MAC位址。
 
-NOTE: MAC位址標籤會列出BMC管理連接埠的MAC位址。+若要判斷管理網路連接埠的MAC位址、您必須將* 2 *新增至標籤上的十六進位數字。例如、如果標籤上的MAC位址以* 09 *結尾、則管理連接埠的MAC位址將以* 0B*結尾。如果標籤上的MAC位址以*（_y_）FF*結尾、則管理連接埠的MAC位址將以*（_y_+1*）結尾。您可以在Windows中開啟「計算機」、將其設定為「程式設計師」模式、選取「Hex」、輸入MAC位址、然後輸入*+ 2 =*、輕鬆完成此計算。
+若要判斷管理網路連接埠的MAC位址、您必須將* 2 *新增至標籤上的十六進位數字。例如、如果標籤上的MAC位址以* 09 *結尾、則管理連接埠的MAC位址將以* 0B*結尾。如果標籤上的MAC位址以*（_y_）FF*結尾、則管理連接埠的MAC位址將以*（_y_+1*）結尾。您可以在Windows中開啟「計算機」、將其設定為「程式設計師」模式、選取「Hex」、輸入MAC位址、然後輸入*+ 2 =*、輕鬆完成此計算。
 
+====
 .. 請網路管理員將您移除的控制器的DNS/網路和IP位址與更換控制器的MAC位址建立關聯。
 +
 
@@ -70,18 +90,45 @@ IMPORTANT: 為避免效能降低、請勿扭轉、摺疊、夾緊或踏上纜線
 .. 開啟控制器電源、並監控控制器LED和開機代碼。
 
 
-. 確認應用裝置儲存節點出現在Grid Manager中、且未顯示任何警示。
-. 從Grid Manager中選取* nodes *、然後驗證節點控制器的BMC IP位址是否正確。
+. 如果您更換控制器的應用裝置使用金鑰管理伺服器（ KMS ）來加密資料、則可能需要額外的組態、節點才能加入網格。如果節點未自動加入網格、請確定這些組態設定已傳輸至新控制器、並手動設定任何沒有預期組態的設定：
 +
-如果節點控制器IP位址無效或不在預期範圍內、請依照恢復與維護說明中的說明重新設定IP位址。
+** link:../sg6000/configuring-storagegrid-connections.html["設定 StorageGRID 連線"]
+** link:../admin/kms-overview-of-kms-and-appliance-configuration.html#set-up-the-appliance["設定應用裝置的節點加密"]
+
+
+. 使用更換的控制器登入應用裝置：
++
+.. 輸入下列命令：「sh admin@_grid_node_ip_`」
+.. 輸入「passwords.txt」檔案中所列的密碼。
+.. 輸入下列命令以切換至root：「u -」
+.. 輸入「passwords.txt」檔案中所列的密碼。
+
+
+. 還原應用裝置的 BMC 網路連線能力。有兩種選擇：
++
+** 使用靜態 IP 、網路遮罩和閘道
+** 使用 DHCP 取得 IP 、網路遮罩和閘道
++
+... 若要還原 BMC 組態以使用靜態 IP 、網路遮罩和閘道、請輸入下列命令：
++
+`*run-host-command ipmitool lan set 1 ipaddr _Appliance_IP_*`
 
 +
-
-NOTE: 如果您在原始安裝期間套用其他自訂功能、例如設定SNMP設陷目的地或電子郵件通知、您應該記錄並驗證組態、並視需要重新套用。
+`*run-host-command ipmitool lan set 1 netmask _Netmask_IP_*`
 
 +
-xref:../maintain/index.adoc[恢復與維護]
+`*run-host-command ipmitool lan set 1 defgw ipaddr _Default_gateway_*`
 
+... 若要還原 BMC 組態以使用 DHCP 取得 IP 、網路遮罩和閘道、請輸入下列命令：
++
+`*run-host-command ipmitool lan set 1 ipsrc dhcp*`
+
+
+
+
+
+. 還原 BMC 網路連線之後、請連線至 BMC 介面以稽核及還原您可能已套用的任何其他自訂 BMC 組態。例如、您應該確認 SNMP 設陷目的地和電子郵件通知的設定。請參閱 link:configuring-bmc-interface-sg6000.html["設定 BMC 介面"]。
+. 確認應用裝置節點出現在Grid Manager中、且未顯示任何警示。
 
 
 .相關資訊

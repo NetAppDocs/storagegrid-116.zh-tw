@@ -76,10 +76,10 @@ entries:
       url: "/sg6000/verifying-network-connections.html"
     - title: 驗證連接埠層級的網路連線
       url: "/sg6000/verifying-port-level-network-connections.html"
-  - title: 存取及設定SANtricity 功能不全系統管理程式（SG6000）
+  - title: 存取及設定 SANtricity 系統管理員（ SG6000 ）
     url: "/sg6000/accessing-and-configuring-santricity-system-manager.html"
     entries:
-    - title: 設定及存取SANtricity 《系統管理程式》
+    - title: 設定及存取SANtricity 《整套系統管理程式》
       url: "/sg6000/setting-up-and-accessing-santricity-system-manager.html"
     - title: 在SANtricity 《Sytricity System Manager》中檢視硬體狀態
       url: "/sg6000/reviewing-hardware-status-in-santricity-system-manager.html"
