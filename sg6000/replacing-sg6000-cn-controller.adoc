@@ -49,12 +49,6 @@ NOTE: 如果您在安裝StorageGRID 完此程序之前更換控制器、可能St
 +
 xref:shutting-down-sg6000-cn-controller.adoc[關閉SG6000-CN.控制器]
 
-. 使用兩種方法之一來驗證SG6000-CN-控制器的電源是否已關閉：
-+
-** 控制器正面的電源指示燈LED熄滅。
-** BMC介面的「Power Control（電源控制）」頁面表示控制器已關閉。
-
-
 . 如果此 StorageGRID 應用裝置上的任何網路介面都設定為使用 DHCP 、您可能需要更新 DHCP 伺服器上的永久 DHCP 租用指派、以參照替換應用裝置的 MAC 位址。此更新可確保設備已指派預期的 IP 位址。
 +
 .. 找到SG6000-CN-控制器正面的MAC位址標籤、然後判斷管理網路連接埠的MAC位址。
