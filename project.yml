@@ -12,7 +12,8 @@ sidebar:
   entries:
   - title: 功能與功能StorageGRID
     url: "/index.html"
-  - section: release-notes
+  - title: 版本資訊
+    url: "/release-notes/index.html"
   - title: 開始使用
     entries:
     - section: primer
