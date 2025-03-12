@@ -1,7 +1,7 @@
 ---
 permalink: primer/using-storagegrid-support-options.html 
 sidebar: sidebar 
-keywords: autosupport, active IQ, logs, audit.log, metrics, diagnostics 
+keywords: autosupport, Digital Advisor, logs, audit.log, metrics, diagnostics 
 summary: Grid Manager提供多種選項、可協助您在StorageGRID 遇到問題時、與技術支援人員合作。 
 ---
 = 使用StorageGRID 支援選項
@@ -51,13 +51,13 @@ image::../media/autosupport_disabled_message.png[無法使用的訊息AutoSuppor
 
 
 
-=== 使用Active IQ
+=== 使用Digital Advisor
 
-NetApp是雲端型數位顧問、運用NetApp安裝基礎上的預測分析和社群智慧。Active IQ其持續風險評估、預測性警示、說明性指引及自動化行動、可協助您在問題發生之前預防問題發生、進而改善系統健全狀況並提高系統可用度。
+Active IQ 數位顧問採用雲端技術，運用 NetApp 安裝基礎的預測分析和社群智慧。其持續風險評估、預測性警示、說明性指引及自動化行動、可協助您在問題發生之前預防問題發生、進而改善系統健全狀況並提高系統可用度。
 
-如果您想要使用NetApp支援網站上的「支援資訊」儀表板和功能、則必須啟用AutoSupport 「支援」Active IQ 。
+如果您想要使用 NetApp 支援網站上的數位顧問儀表板和功能，則必須啟用 AutoSupport 。
 
-https://docs.netapp.com/us-en/active-iq/index.html["《 VMware 數位顧問文件》 Active IQ"^]
+https://docs.netapp.com/us-en/active-iq/index.html["數位顧問文件"^]
 
 
 
