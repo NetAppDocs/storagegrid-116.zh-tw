@@ -15,6 +15,7 @@ summary: 當您想要透過防火牆控制存取時、可以在外部防火牆�
 
 
 
+[[control-access-at-the-external-firewall]]
 == 控制外部防火牆的存取
 
 您可以StorageGRID 在外部防火牆開啟或關閉特定連接埠、以控制對使用者介面和API的存取。例如、除了使用其他方法來控制系統存取之外、您可能還想要防止租戶連線到防火牆的Grid Manager。

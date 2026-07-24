@@ -119,6 +119,7 @@ summary: 在規劃升級StorageGRID 至更新版時、您必須根據升級所�
 
 
 
+[[example-estimated-time-to-upgrade-to-storagegrid-11-6]]
 == 範例：預估升級StorageGRID 至示例11.6%的時間
 
 假設您的系統有14個網格節點、其中8個是Linux節點。

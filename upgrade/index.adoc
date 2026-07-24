@@ -15,12 +15,14 @@ summary: 請依照下列指示將StorageGRID 更新版的更新版更新至更�
 
 
 
+[[about-these-instructions]]
 == 關於這些指示
 
 這些說明說明StorageGRID 介紹了更新功能、並提供逐步指示、將StorageGRID 您的整個系統中的所有節點升級至新版本。
 
 
 
+[[before-you-begin]]
 == 開始之前
 
 請檢閱這些主題、瞭解StorageGRID 有關更新功能與增強功能的資訊、判斷是否有任何功能已過時或已移除、並瞭解StorageGRID 有關變更的資訊。

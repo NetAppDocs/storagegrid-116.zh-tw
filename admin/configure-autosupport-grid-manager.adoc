@@ -23,6 +23,7 @@ summary: 您可以在AutoSupport 第一次安裝時啟用「支援」功能和�
 
 
 
+[[specify-the-protocol-for-autosupport-messages]]
 == 指定AutoSupport 訊息的傳輸協定
 
 您可以使用下列任一種通訊協定來傳送AutoSupport 不包含任何資訊的訊息：
@@ -61,6 +62,7 @@ image::../media/autosupport_settings_tab.png[包含「設定」索引標籤的�
 
 
 
+[[disable-weekly-autosupport-messages]]
 == 停用每週AutoSupport 更新訊息
 
 根據預設StorageGRID 、將支援系統設定為每AutoSupport 週傳送一次消息給NetApp Support。
@@ -79,6 +81,7 @@ image::../media/autosupport_weekly_next_scheduled_time.png[每週AutoSupport 更
 
 
 
+[[disable-event-triggered-autosupport-messages]]
 == 停用事件觸發AutoSupport 的功能性訊息
 
 根據預設、StorageGRID 當AutoSupport 發生重要警示或其他重大系統事件時、將會將此功能設定為傳送不必要訊息給NetApp支援部門。
@@ -96,6 +99,7 @@ NOTE: 當AutoSupport 您在全系統抑制電子郵件通知時、也會抑制�
 
 
 
+[[enable-autosupport-on-demand]]
 == 啟用AutoSupport 隨需功能
 
 根據需求提供支援、協助您解決技術支援部門正在積極處理的問題。AutoSupport
@@ -117,6 +121,7 @@ NOTE: 當AutoSupport 您在全系統抑制電子郵件通知時、也會抑制�
 
 
 
+[[disable-checks-for-software-updates]]
 == 停用軟體更新檢查
 
 根據預設、StorageGRID 此功能會聯絡NetApp以判斷您的系統是否有可用的軟體更新。如果StorageGRID 有可用的更新版本或更新版本、則StorageGRID 更新版本會顯示在「更新版」頁面上。
@@ -131,6 +136,7 @@ NOTE: 當AutoSupport 您在全系統抑制電子郵件通知時、也會抑制�
 
 
 
+[[add-an-additional-autosupport-destination]]
 == 新增AutoSupport 其他的目的地
 
 啟用AutoSupport 此功能時、便會將健全狀況和狀態訊息傳送給NetApp支援部門。您可以為所有AutoSupport 的資訊提供額外的目的地。

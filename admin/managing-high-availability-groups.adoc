@@ -15,6 +15,7 @@ summary: 您可以將多個管理節點和閘道節點的網路介面分組為�
 
 
 
+[[what-is-an-ha-group]]
 == 什麼是HA群組？
 
 您可以使用高可用度（HA）群組、為S3和Swift用戶端提供高可用度的資料連線、或提供高可用度的Grid Manager和Tenant Manager連線。
@@ -28,6 +29,7 @@ summary: 您可以將多個管理節點和閘道節點的網路介面分組為�
 
 
 
+[[how-do-you-create-an-ha-group]]
 == 如何建立HA群組？
 
 . 您可以為一個或多個管理節點或閘道節點選取網路介面。您可以使用Grid Network（eth0）介面、用戶端網路（eth2）介面、VLAN介面、或是新增至節點的存取介面。
@@ -44,6 +46,7 @@ NOTE: 如果HA群組具有DHCP指派的IP位址、則無法將介面新增至該
 
 
 
+[[what-is-the-active-interface]]
 == 什麼是作用中介面？
 
 正常運作期間、HA群組的所有VIP位址都會新增至主要介面、這是優先順序中的第一個介面。只要主介面仍可用、當用戶端連線至群組的任何VIP位址時、就會使用該介面。也就是在正常操作期間、主要介面是群組的「主動」介面。
@@ -52,6 +55,7 @@ NOTE: 如果HA群組具有DHCP指派的IP位址、則無法將介面新增至該
 
 
 
+[[view-the-current-ha-group-status-of-a-node]]
 == 檢視節點的目前HA群組狀態
 
 若要查看節點是否指派給HA群組並判斷其目前狀態、請選取* nodes *>*節點_*。
@@ -76,6 +80,7 @@ image::../media/ha_group_primary_interface.png[HA群組主要介面]
 
 
 
+[[what-happens-when-the-active-interface-fails]]
 == 當作用中介面故障時會發生什麼事？
 
 目前裝載VIP位址的介面是作用中介面。如果HA群組包含多個介面、且作用中介面故障、VIP位址會依照優先順序移至第一個可用的備份介面。如果該介面故障、VIP位址會移至下一個可用的備份介面、依此類推。

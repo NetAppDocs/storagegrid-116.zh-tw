@@ -15,6 +15,7 @@ summary: 本版StorageGRID 的《產品介紹》介紹下列功能。
 
 
 
+[[usability-enhancements]]
 == 使用性增強功能
 
 Grid Manager使用者介面經過大幅重新設計、可改善使用者體驗。
@@ -39,6 +40,7 @@ NOTE: 除非有功能變更、StorageGRID 否則不會更新《畫面說明文�
 
 
 
+[[multiple-vlan-interfaces]]
 == 多個VLAN介面
 
 您現在可以為管理節點和閘道節點建立虛擬LAN（VLAN）介面。您可以使用HA群組和負載平衡器端點中的VLAN介面來隔離和分割用戶端流量、以確保安全性、靈活度和效能。
@@ -55,18 +57,21 @@ NOTE: 除非有功能變更、StorageGRID 否則不會更新《畫面說明文�
 
 
 
+[[can-use-azure-ad-for-identity-federation]]
 == 可將Azure AD用於身分識別聯盟
 
 您現在可以在設定Grid Manager或租戶管理程式的身分識別聯盟時、選取Azure Active Directory（Azure AD）做為身分識別來源。請參閱 xref:../admin/using-identity-federation.adoc[使用身分識別聯盟]。
 
 
 
+[[can-use-azure-ad-and-pingfederate-for-sso]]
 == 可將Azure AD和PingFedate用於SSO
 
 您現在可以在為網格設定單一登入（SSO）時、選取Azure AD或PingFedate作為SSO類型。然後、您可以使用沙箱模式來設定及測試Azure AD企業應用程式、或是PingFedate服務供應商（SP）連線至StorageGRID 每個「管理員節點」。請參閱 xref:../admin/configuring-sso.adoc[設定單一登入]。
 
 
 
+[[centralized-certificate-management]]
 == 集中式憑證管理
 
 * 新的「憑證」頁面（*組態*>*安全性*>*憑證*）會將所有StorageGRID 的資訊整合到單一位置。您可以StorageGRID 從新頁面管理整個域、網格CA和用戶端憑證、或檢視其他憑證的相關資訊、例如用於負載平衡器端點、租戶和身分識別聯盟的憑證。請參閱 xref:../admin/using-storagegrid-security-certificates.adoc[關於安全性憑證]。
@@ -81,6 +86,7 @@ NOTE: 除非有功能變更、StorageGRID 否則不會更新《畫面說明文�
 
 
 
+[[other-grid-manager-enhancements]]
 == 其他Grid Manager增強功能
 
 * *高可用度（HA）群組的更新*。精靈現在會引導您完成建立HA群組的程序。請參閱 xref:../admin/configure-high-availability-group.html[設定高可用度群組]。
@@ -104,6 +110,7 @@ NOTE: 此全域憑證先前用於連線至過時的CLB服務和儲存節點。�
 
 
 
+[[new-tenant-manager-features]]
 == 全新租戶管理程式功能
 
 * *新的實驗性S3主控台*。全新的實驗性S3主控台可從租戶管理程式的「資源庫」頁面連結取得、讓S3租戶使用者檢視及管理其資源庫中的物件。請參閱 xref:../tenant/use-s3-console.adoc[使用實驗性S3主控台]。
@@ -118,6 +125,7 @@ IMPORTANT: 實驗性S3主控台尚未經過完整測試、不適用於大量管�
 
 
 
+[[new-upgrade-and-hotfix-process]]
 == 全新升級與修補程式程序
 
 * *《*版升級*》頁面重新設計（*維護*>*系統*>*軟體更新*>*版升級*）StorageGRID StorageGRID 。
@@ -138,6 +146,7 @@ NOTE: 若要升級StorageGRID 至Suse 11.6,您可以選擇使用指令碼來同�
 
 
 
+[[external-syslog-server-support]]
 == 外部syslog伺服器支援
 
 * 如果您想StorageGRID 要遠端儲存及管理稽核訊息及部分的靜態記錄（*組態*>*監控*>*稽核與系統記錄伺服器*）、現在您可以設定外部系統記錄伺服器。設定外部syslog伺服器之後、您可以將稽核訊息和特定記錄檔儲存在本機、遠端或兩者。藉由設定稽核資訊的目的地、您可以減少管理節點上的網路流量。請參閱 xref:../monitor/configure-audit-messages.adoc[設定稽核訊息和記錄目的地]。
@@ -146,6 +155,7 @@ NOTE: 若要升級StorageGRID 至Suse 11.6,您可以選擇使用指令碼來同�
 
 
 
+[[s3-select]]
 == S3 Select
 
 您現在可以選擇性地允許S3租戶向個別物件發出SelectObjectContent要求。S3 Select提供一種有效率的方法來搜尋大量資料、而不需要部署資料庫和相關資源來啟用搜尋。它也能降低擷取資料的成本與延遲。請參閱 xref:../admin/manage-s3-select-for-tenant-accounts.adoc[管理用戶帳戶的S3 Select] 和 xref:../s3/use-s3-select.adoc[使用S3 Select]。
@@ -154,24 +164,28 @@ NOTE: 若要升級StorageGRID 至Suse 11.6,您可以選擇使用指令碼來同�
 
 
 
+[[s3-object-lock-default-bucket-retention-period]]
 == S3物件鎖定預設儲存區保留期間
 
 使用S3物件鎖定時、您現在可以指定儲存區的預設保留期間。預設保留期間會套用至新增至儲存貯體但沒有其本身保留設定的任何物件。請參閱 xref:../s3/using-s3-object-lock.adoc[使用S3物件鎖定]。
 
 
 
+[[google-cloud-platform-support]]
 == Google Cloud Platform支援
 
 您現在可以使用Google Cloud Platform（GCP）作為Cloud Storage Pool和CloudMirror平台服務的端點。請參閱 xref:../tenant/specifying-urn-for-platform-services-endpoint.adoc[指定平台服務端點的URN] 和 xref:../ilm/creating-cloud-storage-pool.adoc[建立雲端儲存資源池]。
 
 
 
+[[aws-c2s-support]]
 == AWS C2S支援
 
 您現在可以使用AWS商業雲端服務（C2S）端點進行CloudMirror複寫。請參閱 xref:../tenant/creating-platform-services-endpoint.adoc[建立平台服務端點]。
 
 
 
+[[other-s3-changes]]
 == 其他S3變更
 
 * *取得多部份物件的物件和物件支援*。先前StorageGRID 、在「Get Object（取得物件）」或「head Object（物件要求）」中、不支援「partNumber（零件編號）」要求參數。您現在可以發出Get和head要求、以擷取多個部分物件的特定部分。Get and head Object也支援「x-amz-mp-s成分 數」回應元素、以指出物件有多少個部分。
@@ -183,6 +197,7 @@ xref:../s3/index.adoc[使用S3]
 
 
 
+[[performance-enhancements]]
 == 效能增強
 
 * *儲存節點可支援20億個物件*。儲存節點的基礎目錄結構經過最佳化、可提供更好的擴充性與效能。儲存節點現在使用額外的子目錄來儲存多達20億個複寫物件、並將效能最大化。節點子目錄會在您升級StorageGRID 至Eshot 11.6s時修改、但現有物件不會重新分配至新目錄。
@@ -216,6 +231,7 @@ NOTE: 如果您尚未這麼做、而且儲存節點有足夠的RAM和磁碟區0�
 
 
 
+[[enhancements-to-maintenance-procedures-and-support-tools]]
 == 維護程序與支援工具的增強功能
 
 * *可以變更節點主控台密碼*。您現在可以使用Grid Manager來變更節點主控台密碼（*組態*>*存取控制*>*網格密碼*）。這些密碼用於使用SSH以「admin」身分登入節點、或是以VM/實體主控台連線的root使用者身分登入。請參閱 xref:../admin/change-node-console-password.adoc[變更節點主控台密碼]。
@@ -241,6 +257,7 @@ IMPORTANT: 「如何複製修復狀態」選項可在StorageGRID 畫面上進行
 
 
 
+[[installation-enhancements]]
 == 安裝增強功能
 
 * 現在您可以在安裝Red Hat Enterprise Linux時、選擇使用Podman作為容器。先前StorageGRID 、僅支援Docker Container。
@@ -259,6 +276,7 @@ IMPORTANT: 「如何複製修復狀態」選項可在StorageGRID 畫面上進行
 
 
 
+[[new-alerts]]
 == 新警示
 
 針對下列功能新增警示StorageGRID ：
@@ -287,6 +305,7 @@ IMPORTANT: 「如何複製修復狀態」選項可在StorageGRID 畫面上進行
 
 
 
+[[changes-to-audit-messages]]
 == 稽核訊息的變更
 
 * ORLM：符合物件規則稽核訊息中新增了一個* BUID*欄位。「* BUID*」欄位會顯示用於內部作業的庫位ID。只有訊息狀態為PRGD時、才會顯示新欄位。
@@ -304,6 +323,7 @@ IMPORTANT: 「如何複製修復狀態」選項可在StorageGRID 畫面上進行
 
 
 
+[[storagegrid-documentation-changes]]
 == 文件變更StorageGRID
 
 更新版的《外觀與風格StorageGRID 》（外觀與風格）文件網站已經修改、現在使用GitHub做為基礎平台。

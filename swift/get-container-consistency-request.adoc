@@ -15,6 +15,7 @@ summary: 一致性控制可在物件的可用度與這些物件在不同儲存�
 
 
 
+[[request]]
 == 申請
 
 |===
@@ -43,6 +44,7 @@ summary: 一致性控制可在物件的可用度與這些物件在不同儲存�
 |===
 
 
+[[request-example]]
 == 申請範例
 
 [listing]
@@ -54,6 +56,7 @@ Host: test.com
 ----
 
 
+[[response]]
 == 回應
 
 |===
@@ -106,6 +109,7 @@ Host: test.com
 |===
 
 
+[[response-example]]
 == 回應範例
 
 [listing]

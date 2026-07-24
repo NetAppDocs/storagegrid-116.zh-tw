@@ -19,6 +19,7 @@ S3物件鎖定可讓您指定物件層級的設定、以防止物件在固定時
 
 
 
+[[enable-s3-object-lock-for-bucket]]
 == 啟用儲存區的S3物件鎖定
 
 如果StorageGRID 您的整個S3物件鎖定設定已啟用、則您可以在建立每個儲存區時、選擇性地啟用S3物件鎖定。您可以使用下列任一種方法：
@@ -39,12 +40,14 @@ xref:operations-on-buckets.adoc[在貯體上作業]
 
 
 
+[[determining-if-s3-object-lock-is-enabled-for-bucket]]
 == 判斷是否已針對儲存區啟用S3物件鎖定
 
 若要判斷是否已啟用S3物件鎖定、請使用 xref:../s3/use-s3-object-lock-default-bucket-retention.adoc#get-object-lock-configuration[取得物件鎖定組態] 申請。
 
 
 
+[[create-object-with-s3-object-lock-settings]]
 == 使用S3物件鎖定設定建立物件
 
 若要在將物件版本新增至已啟用S3物件鎖定的儲存區時、指定S3物件鎖定設定、請發出「放置物件」、「放置物件-複製」或啟動「多重組件上傳」要求。請使用下列要求標頭。
@@ -80,6 +83,7 @@ NOTE: 如果指定"x-amz-object-lock-mod"，則還必須指定"x-amz-object-lock
 
 
 
+[[update-s3-object-lock-settings]]
 == 更新S3物件鎖定設定
 
 如果您需要更新現有物件版本的合法保留或保留設定、可以執行下列物件子資源作業：

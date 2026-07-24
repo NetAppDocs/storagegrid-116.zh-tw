@@ -79,6 +79,7 @@ S3或Swift用戶端存取- CLB服務
 |===
 
 
+[[limitations-of-using-ha-groups-with-grid-manager-or-tenant-manager]]
 == 搭配Grid Manager或Tenant Manager使用HA群組的限制
 
 如果Grid Manager或Tenant Manager服務失敗、HA群組容錯移轉就不會觸發。
@@ -89,6 +90,7 @@ S3或Swift用戶端存取- CLB服務
 
 
 
+[[limitations-of-using-ha-groups-with-the-clb-service]]
 == HA群組搭配CLB服務的使用限制
 
 CLB服務故障不會觸發HA群組內的容錯移轉。

@@ -15,6 +15,7 @@ summary: 如果您在建立、編輯或刪除雲端儲存池時遇到錯誤、�
 
 
 
+[[determine-if-an-error-has-occurred]]
 == 確定是否發生錯誤
 
 每分鐘執行一次簡易的Cloud Storage Pool健全狀況檢查、以確保雲端儲存池能夠存取、而且運作正常。StorageGRID如果健全狀況檢查偵測到問題、「儲存資源池」頁面的「雲端儲存資源池」表格的「最後一個錯誤」欄會顯示一則訊息。
@@ -27,6 +28,7 @@ image::../media/cloud_storage_pools_error.png[雲端儲存資源池錯誤]
 
 
 
+[[check-if-an-error-has-been-resolved]]
 == 檢查錯誤是否已解決
 
 解決任何潛在問題之後、您可以判斷錯誤是否已解決。從「Cloud Storage Pool」（雲端儲存資源池）頁面中、選取端點的選項按鈕、然後選取「*清除錯誤*」。確認訊息指出StorageGRID 、由於此錯誤已清除Cloud Storage Pool的錯誤。
@@ -37,6 +39,7 @@ image::../media/cloud_storage_pool_clear_error_message.png[Cloud Storage Pool清
 
 
 
+[[error-this-cloud-storage-pool-contains-unexpected-content]]
 == 錯誤：此Cloud Storage Pool包含非預期的內容
 
 當您嘗試建立、編輯或刪除雲端儲存池時、可能會遇到此錯誤。如果儲存區或容器包含「x-ntap-sgws-Cloud Pool - uuid」標記檔案、但該檔案沒有預期的UUID、就會發生此錯誤。
@@ -51,6 +54,7 @@ image::../media/cloud_storage_pool_clear_error_message.png[Cloud Storage Pool清
 
 
 
+[[error-could-not-create-or-update-cloud-storage-pool-error-from-endpoint]]
 == 錯誤：無法建立或更新雲端儲存池。端點發生錯誤
 
 當您嘗試建立或編輯雲端儲存資源池時、可能會遇到此錯誤。此錯誤表示某種連線或組態問題阻礙StorageGRID 了將資訊寫入Cloud Storage Pool。
@@ -69,6 +73,7 @@ image::../media/cloud_storage_pool_clear_error_message.png[Cloud Storage Pool清
 
 
 
+[[error-failed-to-parse-ca-certificate]]
 == 錯誤：無法剖析CA憑證
 
 當您嘗試建立或編輯雲端儲存資源池時、可能會遇到此錯誤。如果在設定Cloud Storage Pool時、無法剖析您輸入的憑證、就會發生錯誤StorageGRID 。
@@ -77,6 +82,7 @@ image::../media/cloud_storage_pool_clear_error_message.png[Cloud Storage Pool清
 
 
 
+[[error-a-cloud-storage-pool-with-this-id-was-not-found]]
 == 錯誤：找不到具有此ID的雲端儲存資源池
 
 當您嘗試編輯或刪除雲端儲存資源池時、可能會遇到此錯誤。如果端點傳回404回應、就會發生此錯誤、這可能代表下列其中一項：
@@ -94,6 +100,7 @@ image::../media/cloud_storage_pool_clear_error_message.png[Cloud Storage Pool清
 
 
 
+[[error-could-not-check-the-content-of-the-cloud-storage-pool-error-from-endpoint]]
 == 錯誤：無法檢查Cloud Storage Pool的內容。端點發生錯誤
 
 當您嘗試刪除雲端儲存資源池時、可能會遇到此錯誤。此錯誤表示某種連線或組態問題使StorageGRID 無法讀取Cloud Storage Pool儲存區儲存區內容。
@@ -102,6 +109,7 @@ image::../media/cloud_storage_pool_clear_error_message.png[Cloud Storage Pool清
 
 
 
+[[error-objects-have-already-been-placed-in-this-bucket]]
 == 錯誤：物件已放置在此儲存區中
 
 當您嘗試刪除雲端儲存資源池時、可能會遇到此錯誤。如果Cloud Storage Pool包含由ILM移到該處的資料、在設定Cloud Storage Pool之前儲存在儲存庫中的資料、或是在建立Cloud Storage Pool之後儲存在儲存庫中的其他來源資料、則無法刪除該儲存池。
@@ -118,6 +126,7 @@ NOTE: 切勿手動刪除ILM可能放置在雲端儲存資源池中的物件。�
 
 
 
+[[error-proxy-encountered-an-external-error-while-trying-to-reach-the-cloud-storage-pool]]
 == 錯誤：Proxy嘗試連至雲端儲存資源池時發生外部錯誤
 
 如果您已在儲存節點與用於雲端儲存集區的外部S3端點之間設定不透明的儲存Proxy、則可能會遇到此錯誤。如果外部Proxy伺服器無法連至Cloud Storage Pool端點、就會發生此錯誤。例如、DNS伺服器可能無法解析主機名稱、或是發生外部網路問題。

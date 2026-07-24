@@ -19,6 +19,7 @@ summary: 「Get Bucket一致性」要求可讓您決定套用至特定Bucket的�
 
 
 
+[[request-example]]
 == 申請範例
 
 [source, subs="specialcharacters,quotes"]
@@ -30,6 +31,7 @@ Host: _host_
 ----
 
 
+[[response]]
 == 回應
 
 在回應XML中、「<一致性>」會傳回下列其中一個值：
@@ -76,6 +78,7 @@ Host: _host_
 |===
 
 
+[[response-example]]
 == 回應範例
 
 [listing]

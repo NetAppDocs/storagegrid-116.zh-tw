@@ -19,6 +19,7 @@ summary: 如果您的ILM原則包含製作銷毀編碼複本的規則、您必�
 
 
 
+[[general-recommendation-for-adding-storage-capacity-for-erasure-coded-objects]]
 == 新增銷毀編碼物件儲存容量的一般建議
 
 如果您想要避免詳細計算、當現有儲存節點的容量達到70%時、您可以在每個站台新增兩個儲存節點。
@@ -29,6 +30,7 @@ summary: 如果您的ILM原則包含製作銷毀編碼複本的規則、您必�
 
 
 
+[[calculate-number-of-expansion-storage-nodes-to-add-for-erasure-coded-objects]]
 == 計算要新增用於銷毀編碼物件的擴充儲存節點數量
 
 若要最佳化擴充儲存銷毀編碼物件的部署方式、您必須考量許多因素：
@@ -48,6 +50,7 @@ IMPORTANT: 本節的範例代表將儲存容量新增至StorageGRID 某個系統
 
 
 
+[[example-1-expand-one-site-grid-that-uses-21-erasure-coding]]
 == 範例1：展開使用2+1銷毀編碼的單一站台網格
 
 本範例說明如何擴充僅包含三個儲存節點的簡單網格。
@@ -103,6 +106,7 @@ image::../media/node_expansion_example_33_percent.png[節點擴充範例1 33%]
 
 
 
+[[example-2-expand-three-site-grid-that-uses-63-erasure-coding]]
 == 範例2：展開使用6+3銷毀編碼的三站台網格
 
 此範例說明如何針對多站台網格、針對具有大量片段的銷毀編碼方案、開發擴充計畫。儘管這些範例之間存在差異、但建議的擴充計畫仍非常相似。

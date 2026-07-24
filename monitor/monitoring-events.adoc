@@ -44,6 +44,7 @@ image::../media/events_report.gif[「事件」頁面]
 
 
 
+[[create-custom-syslog-events]]
 == 建立自訂的syslog事件
 
 自訂事件可讓您追蹤記錄到syslog伺服器的所有核心、精靈、錯誤和重要層級使用者事件。自訂事件可用於監控系統記錄訊息的發生（從而監控網路安全事件和硬體故障）。
@@ -83,6 +84,7 @@ image::../media/custom_events_count.png[「超棒」>「活動」>「總覽」�
 
 
 
+[[reset-the-count-of-custom-events-to-zero]]
 == 將自訂事件數重設為零
 
 如果您只想針對自訂事件重設計數器、則必須使用Support（支援）功能表中的Grid拓撲頁面。

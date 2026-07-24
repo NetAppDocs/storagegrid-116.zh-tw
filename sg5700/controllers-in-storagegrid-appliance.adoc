@@ -23,6 +23,7 @@ summary: SG5712和SG5760 StorageGRID 機型的《》產品均包含E5700SG控制
 
 
 
+[[e5700sg-controller]]
 == E5700SG控制器
 
 * 做為應用裝置的運算伺服器。
@@ -116,6 +117,7 @@ image::../media/e5700sg_controller_with_callouts.gif[E5700SG控制器上的連�
 |===
 
 
+[[e2800-series-storage-controller]]
 == E2800系列儲存控制器
 
 SG5700設備使用兩種版本的E2800儲存控制器：E2800A和E2800B。E2800A沒有HIC、E2800B則有四埠HIC。除了互連連接埠的位置之外、兩個控制器版本的規格和功能完全相同。

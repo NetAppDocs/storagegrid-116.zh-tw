@@ -38,6 +38,7 @@ NOTE: 由於從雲端儲存資源池目標擷取物件的延遲增加、因此�
 
 
 
+[[example-ilm-policy-for-fabricpool-data]]
 == ILM原則範例FabricPool ：資料不整
 
 使用這個簡單的原則範例做為您自己ILM規則和原則的起點。

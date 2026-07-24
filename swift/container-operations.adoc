@@ -15,6 +15,7 @@ summary: 每個Swift帳戶最多可支援1、000個容器。StorageGRID下列Swi
 
 
 
+[[delete-container]]
 == 刪除容器
 
 此作業會從StorageGRID Swift帳戶的一個空容器中移除一個位在整個系統中的容器。
@@ -40,6 +41,7 @@ summary: 每個Swift帳戶最多可支援1、000個容器。StorageGRID下列Swi
 
 
 
+[[get-container]]
 == 取得Container
 
 此作業會擷取與容器相關聯的物件清單、以及StorageGRID 物件統計資料和元資料在一個作業系統中。
@@ -80,6 +82,7 @@ summary: 每個Swift帳戶最多可支援1、000個容器。StorageGRID下列Swi
 
 
 
+[[head-container]]
 == 頭端容器
 
 此作業會從StorageGRID 作業系統擷取Container統計資料和中繼資料。
@@ -108,6 +111,7 @@ summary: 每個Swift帳戶最多可支援1、000個容器。StorageGRID下列Swi
 
 
 
+[[put-container]]
 == 放入容器
 
 此作業會在StorageGRID 一個不穩定系統中建立帳戶的容器。

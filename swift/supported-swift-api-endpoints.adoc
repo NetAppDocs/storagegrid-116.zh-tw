@@ -15,6 +15,7 @@ summary: 支援下列Swift API端點：資訊URL、驗證URL及儲存URL。Stora
 
 
 
+[[info-url]]
 == 資訊URL
 
 您可以StorageGRID 使用/info路徑、向Swift基礎URL發出Get要求、藉此判斷執行過程的功能和限制。
@@ -38,6 +39,7 @@ Swift的支援功能可未經驗證存取資訊URL。StorageGRID
 
 
 
+[[auth-url]]
 == 驗證URL
 
 用戶端可以使用Swift驗證URL來驗證租戶帳戶使用者身分。
@@ -77,6 +79,7 @@ Swift的支援功能可未經驗證存取資訊URL。StorageGRID
 
 
 
+[[storage-url]]
 == 儲存URL
 
 用戶端應用程式可以發出Swift REST API呼叫、以便針對閘道節點或儲存節點執行支援的帳戶、容器和物件作業。儲存要求會被定址至驗證回應中傳回的儲存URL。要求也必須包含從驗證要求傳回的X-auth-Token標頭和值。

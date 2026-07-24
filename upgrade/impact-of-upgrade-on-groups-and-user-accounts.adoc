@@ -15,6 +15,7 @@ summary: 您必須瞭解StorageGRID 升級過程的影響、才能在升級完�
 
 
 
+[[changes-to-group-permissions-and-options]]
 == 群組權限和選項的變更
 
 升級StorageGRID 到S1611.6之後、可選擇下列更新或新的權限和選項（*組態*>*存取控制*>*管理群組*）。

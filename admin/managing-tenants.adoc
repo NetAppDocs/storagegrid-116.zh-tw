@@ -15,6 +15,7 @@ summary: 身為網格管理員、您可以建立及管理S3和Swift用戶端用�
 
 
 
+[[what-are-tenant-accounts]]
 == 什麼是租戶帳戶？
 
 租戶帳戶可讓使用簡易儲存服務（S3）REST API或Swift REST API的用戶端應用程式、將物件儲存及擷取StorageGRID 到無法使用的物件上。
@@ -33,6 +34,7 @@ NOTE: 如果您使用S3用戶端傳輸協定、只要使用S3儲存區和儲存�
 
 
 
+[[create-and-configure-tenant-accounts]]
 == 建立及設定租戶帳戶
 
 建立租戶帳戶時、請指定下列資訊：
@@ -65,6 +67,7 @@ NOTE: 如果節點與網格中的其他節點隔離、則租戶的儲存使用�
 
 
 
+[[configure-s3-tenants]]
 == 設定S3租戶
 
 建立S3租戶帳戶之後、租戶使用者就能存取租戶管理程式來執行下列工作：
@@ -81,6 +84,7 @@ IMPORTANT: S3租戶使用者可以使用租戶管理程式來建立及管理S3�
 
 
 
+[[configure-swift-tenants]]
 == 設定Swift租戶
 
 建立Swift租戶帳戶之後、租戶的root使用者就能存取租戶管理程式來執行下列工作：

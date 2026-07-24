@@ -27,6 +27,7 @@ summary: 節點移轉功能可讓您手動將節點從一部主機移至另一�
 
 
 
+[[vmware-live-migration-not-supported]]
 == 不支援VMware即時移轉
 
 OpenStack Live Migration和VMware Live VMotion會使虛擬機器的時鐘時間跳過、而且不支援任何類型的網格節點。雖然不多見、但時鐘時間不正確可能導致資料遺失或組態更新。
@@ -35,6 +36,7 @@ OpenStack Live Migration和VMware Live VMotion會使虛擬機器的時鐘時間�
 
 
 
+[[consistent-network-interface-names]]
 == 一致的網路介面名稱
 
 為了將節點從一部主機移至另一部主機、StorageGRID 該支援服務必須確保節點目前所在位置的外部網路連線能力可在新位置複製。在主機中使用一致的網路介面名稱、就能獲得這種信心。
@@ -51,6 +53,7 @@ image::../media/eth0_bond.gif[此影像由周邊文字說明。]
 
 
 
+[[shared-storage]]
 == 共享儲存設備
 
 為了實現快速、低成本的節點移轉、StorageGRID 不需要實際移動節點資料。相反地、節點移轉是以一對匯出與匯入作業的形式執行、如下所示：

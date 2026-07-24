@@ -15,12 +15,14 @@ summary: 用戶端需要與網格節點通訊、才能擷取和擷取內容。�
 
 
 
+[[restricted-access-to-ports]]
 == 限制存取連接埠
 
 如果企業網路原則限制存取任何連接埠、您可以使用 xref:../admin/configuring-load-balancer-endpoints.adoc[負載平衡器端點] 允許存取使用者定義的連接埠。您可以使用 xref:../admin/managing-untrusted-client-networks.adoc[不受信任的用戶端網路] 僅允許在負載平衡器端點連接埠上存取。
 
 
 
+[[port-remapping]]
 == 連接埠重新對應
 
 若要使用系統和傳輸協定、例如：SMTP、DNS、SSH或DHCP、您必須在部署節點時重新對應連接埠。不過、您不應該重新對應負載平衡器端點。如需連接埠重新對應的相關資訊、請參閱您平台的安裝說明：
@@ -40,6 +42,7 @@ summary: 用戶端需要與網格節點通訊、才能擷取和擷取內容。�
 
 
 
+[[ports-used-for-external-communications]]
 == 用於外部通訊的連接埠
 
 下表顯示用於流量進入節點的連接埠。

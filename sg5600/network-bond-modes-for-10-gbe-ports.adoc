@@ -15,6 +15,7 @@ E5600SG控制器上的10-GbE網路連接埠支援固定連接埠連結模式、�
 
 
 
+[[fixed-port-bond-mode]]
 == 固定連接埠連結模式
 
 固定模式是10-GbE網路連接埠的預設組態。
@@ -49,6 +50,7 @@ NOTE: 如果您不需要備援連線、則每個網路只能使用一個連接�
 
 
 
+[[aggregate-port-bond-mode]]
 == Aggregate連接埠連結模式
 
 Aggregate連接埠連結模式可大幅增加每StorageGRID 個支援網的整體效能、並提供額外的容錯移轉路徑。

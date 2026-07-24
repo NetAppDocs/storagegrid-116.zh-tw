@@ -15,6 +15,7 @@ SG5612和SG5660機型StorageGRID 的《不二》應用裝置包括E2700控制器
 
 
 
+[[model-sg5612-2u-rear-view-of-e2700-controller-and-e5600sg-controller]]
 == SG5612 2U機型：E2700控制器和E5600SG控制器的後視圖
 
 image::../media/sg5612_2u_rear_view.gif[SG5612（含兩個控制器）的後視圖]
@@ -38,6 +39,7 @@ E5600SG控制器
 |===
 
 
+[[model-sg5660-4u-rear-view-of-e2700-controller-and-e5600sg-controller]]
 == SG5660 4U機型：E2700控制器和E5600SG控制器的後視圖
 
 E2700控制器位於E5600SG控制器之上。
@@ -63,6 +65,7 @@ E5600SG控制器
 |===
 
 
+[[rear-view-of-e2700-controller]]
 == E2700控制器的後視圖
 
 image::../media/sga_controller_2700_diagram_callouts.gif[E2700圖表]
@@ -117,6 +120,7 @@ NOTE: 未使用E2700控制器背面標示為「Drive Expansion（green）（磁�
 
 
 
+[[rear-view-of-e5600sg-controller]]
 == E5600SG控制器後視圖
 
 image::../media/sga_controller_5600_diagram_callouts.gif[E5600圖表]

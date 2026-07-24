@@ -17,6 +17,7 @@ summary: 租戶管理程式是以瀏覽器為基礎的圖形介面、租戶使�
 
 
 
+[[tenant-manager-dashboard]]
 == 租戶管理程式儀表板
 
 網格管理員使用Grid Manager或Grid Management API建立租戶帳戶之後、租戶使用者就可以登入租戶管理程式。
@@ -29,6 +30,7 @@ image::../media/tenant_dashboard_with_buckets.png[租戶管理程式儀表板]
 
 
 
+[[storage-menu-s3-tenants-only]]
 == 儲存功能表（僅限S3租戶）
 
 儲存功能表僅提供給S3租戶帳戶。此功能表可讓S3使用者管理存取金鑰、建立及刪除儲存區、以及管理平台服務端點。
@@ -37,6 +39,7 @@ image::../media/s3_menu.png[S3功能表]
 
 
 
+[[my-access-keys]]
 === 我的存取金鑰
 
 S3租戶使用者可以管理存取金鑰、如下所示：
@@ -51,6 +54,7 @@ NOTE: 管理其他使用者的存取金鑰是從「存取管理」功能表進�
 
 
 
+[[buckets]]
 === 桶
 
 具有適當權限的S3租戶使用者可以執行下列與貯體相關的工作：
@@ -74,12 +78,14 @@ NOTE: 管理其他使用者的存取金鑰是從「存取管理」功能表進�
 
 
 
+[[platform-services-endpoints]]
 === 平台服務端點
 
 如果網格管理員已針對租戶帳戶啟用平台服務、具有「管理端點」權限的S3租戶使用者就能為每個平台服務設定目的地端點。
 
 
 
+[[access-management-menu]]
 == 存取管理功能表
 
 「存取管理」功能表可讓StorageGRID 無權從聯盟身分識別來源匯入使用者群組、並指派管理權限。租戶也可以管理本機租戶群組和使用者、除非整個StorageGRID 作業系統都有單一登入（SSO）功能。

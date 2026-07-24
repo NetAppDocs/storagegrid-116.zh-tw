@@ -19,6 +19,7 @@ summary: 如果您要執行擴充以新增儲存節點、且ILM原則包含一�
 
 
 
+[[what-is-ec-rebalancing]]
 == 什麼是EC重新平衡？
 
 EC重新平衡StorageGRID 是擴充儲存節點之後可能需要的一個過程。此程序會以命令列指令碼形式從主要管理節點執行。當您執行EC重新平衡程序時、StorageGRID 即可在站台現有和新擴充的儲存節點之間重新分配銷毀編碼的片段。
@@ -42,6 +43,7 @@ EC重新平衡程序：
 
 
 
+[[when-not-to-perform-ec-rebalance]]
 == 不執行EC重新平衡時
 
 例如、當您不需要執行EC重新平衡時、請考慮下列事項：
@@ -62,6 +64,7 @@ image::../media/used_space_after_3_node_expansion.png[3節點擴充之後的已�
 
 
 
+[[when-to-perform-ec-rebalance]]
 == 何時執行EC重新平衡
 
 例如、您應該執行EC重新平衡程序時、請考慮相同的範例、但假設您只能新增兩個儲存節點。由於2+1銷毀編碼至少需要三個儲存節點、因此新節點無法用於銷毀編碼資料。
@@ -74,6 +77,7 @@ image::../media/used_space_after_ec_rebalance.png[EC重新平衡後的已用空�
 
 
 
+[[requirements-for-ec-rebalancing]]
 == EC重新平衡的需求
 
 一般而言、您只能在有限的情況下執行EC重新平衡程序。具體而言、只有在下列所有陳述均為真時、才應執行EC重新平衡：
@@ -86,6 +90,7 @@ image::../media/used_space_after_ec_rebalance.png[EC重新平衡後的已用空�
 
 
 
+[[how-ec-rebalance-procedure-interacts-with-other-maintenance-tasks]]
 == EC重新平衡程序如何與其他維護工作互動
 
 您無法在執行EC重新平衡程序的同時執行特定的維護程序。
@@ -163,6 +168,7 @@ EC資料修復工作
 |===
 
 
+[[how-ec-rebalance-procedure-interacts-with-ilm]]
 == EC重新平衡程序如何與ILM互動
 
 當EC重新平衡程序正在執行時、請避免變更ILM、以免變更現有銷毀編碼物件的位置。例如、請勿開始使用具有不同「刪除編碼」設定檔的ILM規則。如果您需要進行此類ILM變更、則應中止EC重新平衡程序。

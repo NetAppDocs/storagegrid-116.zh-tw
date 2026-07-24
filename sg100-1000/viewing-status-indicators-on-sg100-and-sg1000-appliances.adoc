@@ -15,6 +15,7 @@ summary: 本產品內含指示燈、可協助您判斷應用裝置控制器和�
 
 
 
+[[appliance-indicators-and-buttons]]
 == 產品指示燈和按鈕
 
 image::../media/sg6000_cn_front_indicators.gif[正面指示燈- SG1000]
@@ -72,6 +73,7 @@ image::../media/sg6000_cn_front_indicators.gif[正面指示燈- SG1000]
 |===
 
 
+[[general-boot-up-codes]]
 == 一般開機代碼
 
 在開機期間或硬重設裝置後、會發生下列情況：
@@ -86,6 +88,7 @@ image::../media/sg6000_cn_front_indicators.gif[正面指示燈- SG1000]
 
 
 
+[[ssd-indicators]]
 == SSD指示燈
 
 image::../media/ssd_indicators.png[SSD指示燈]

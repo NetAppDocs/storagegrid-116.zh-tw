@@ -15,6 +15,7 @@ summary: 除了遵循StorageGRID 有關「不二網」和「節點」的強化�
 
 
 
+[[logs-and-audit-messages]]
 == 記錄與稽核訊息
 
 請務必StorageGRID 以安全的方式保護不間斷記錄和稽核訊息輸出。從支援和系統可用度的觀點來看、支援記錄和稽核訊息可提供寶貴的資訊。StorageGRID此外StorageGRID 、包含在「資訊記錄」和「稽核訊息」輸出中的資訊和詳細資料、通常屬於敏感性質。
@@ -25,6 +26,7 @@ summary: 除了遵循StorageGRID 有關「不二網」和「節點」的強化�
 
 
 
+[[netapp-autosupport]]
 == NetApp AutoSupport
 
 利用支援功能、您可以主動監控系統的健全狀況、並自動將訊息和詳細資料傳送給NetApp技術支援、貴組織的內部支援團隊或支援合作夥伴。AutoSupport StorageGRID根據預設、AutoSupport 第一次設定使用者支援時、會啟用向NetApp技術支援發出的功能性訊息StorageGRID 。
@@ -37,6 +39,7 @@ summary: 除了遵循StorageGRID 有關「不二網」和「節點」的強化�
 
 
 
+[[cross-origin-resource-sharing-cors]]
 == 跨來源資源共享（CORS）
 
 如果您想要讓其他網域中的Web應用程式能夠存取S3儲存區中的儲存區和物件、可以設定S3儲存區的跨來源資源共享（CORS）。一般而言、除非需要、否則請勿啟用CORS。如果需要CORS、請將其限制在信任的來源。
@@ -45,6 +48,7 @@ summary: 除了遵循StorageGRID 有關「不二網」和「節點」的強化�
 
 
 
+[[external-security-devices]]
 == 外部安全裝置
 
 完整的強化解決方案必須能解決StorageGRID 不屬於其他功能的安全機制問題。使用額外的基礎架構裝置來篩選及限制StorageGRID 存取功能、是建立及維持嚴苛安全態勢的有效方法。這些外部安全裝置包括防火牆、入侵防禦系統（IPS）和其他安全裝置。

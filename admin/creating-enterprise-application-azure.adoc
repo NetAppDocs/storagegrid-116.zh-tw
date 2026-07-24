@@ -28,6 +28,7 @@ NOTE: 您必須為StorageGRID 您的系統中的每個管理節點建立企業�
 
 
 
+[[access-azure-ad]]
 == 存取Azure AD
 
 . 登入 https://portal.azure.com["Azure Portal"^]。
@@ -37,6 +38,7 @@ NOTE: 您必須為StorageGRID 您的系統中的每個管理節點建立企業�
 
 
 
+[[create-enterprise-applications-and-save-storagegrid-sso-configuration]]
 == 建立企業應用程式並儲存StorageGRID 不可靠的SSO組態
 
 為了將Azure的SSO組態儲存在StorageGRID 功能性的環境中、您必須使用Azure為每個管理節點建立企業應用程式。您將從Azure複製聯盟中繼資料URL、然後貼到StorageGRID 「支援單一登入」頁面上對應的*聯盟中繼資料URL*欄位。
@@ -59,6 +61,7 @@ NOTE: 您必須為StorageGRID 您的系統中的每個管理節點建立企業�
 
 
 
+[[download-saml-metadata-for-every-admin-node]]
 == 下載每個管理節點的SAML中繼資料
 
 儲存SSO組態之後、您可以為StorageGRID 您的系統中的每個管理節點下載SAML中繼資料檔案。
@@ -73,6 +76,7 @@ NOTE: 您必須為StorageGRID 您的系統中的每個管理節點建立企業�
 
 
 
+[[upload-saml-metadata-to-each-enterprise-application]]
 == 將SAML中繼資料上傳至每個企業應用程式
 
 下載每StorageGRID 個「支援對象管理節點」的SAML中繼資料檔案之後、請在Azure AD中執行下列步驟：

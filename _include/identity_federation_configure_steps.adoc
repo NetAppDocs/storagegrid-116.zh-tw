@@ -95,6 +95,7 @@ NOTE: 如果Active Directory伺服器強制執行LDAP簽署、則不支援使用
 
 
 
+[[test-the-connection-and-save-the-configuration]]
 === 測試連線並儲存組態
 
 輸入所有值之後、您必須先測試連線、才能儲存組態。如果您提供LDAP伺服器的連線設定和連結使用者名稱格式、則可透過此驗證。StorageGRID

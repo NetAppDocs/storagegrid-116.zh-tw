@@ -15,6 +15,7 @@ summary: 若要設定StorageGRID 從用戶端應用程式接受連線、需要�
 
 
 
+[[create-and-configure-swift-tenant-accounts]]
 == 建立及設定Swift租戶帳戶
 
 Swift API用戶端必須先有Swift租戶帳戶、才能將物件儲存及擷取StorageGRID 到靜止不動的地方。每個租戶帳戶都有自己的帳戶ID、群組和使用者、以及容器和物件。
@@ -47,6 +48,7 @@ xref:supported-swift-api-endpoints.adoc[支援的Swift API端點]
 
 
 
+[[how-client-connections-can-be-configured]]
 == 如何設定用戶端連線
 
 網格管理員會做出組態選擇、影響Swift用戶端連線StorageGRID 至以儲存及擷取資料的方式。建立連線所需的特定資訊取決於所選的組態。
@@ -82,6 +84,7 @@ NOTE: CLB服務已過時。在發佈版推出之前設定的用戶端StorageGRID
 
 
 
+[[summary-ip-addresses-and-ports-for-client-connections]]
 === 摘要：用於用戶端連線的IP位址和連接埠
 
 用戶端應用程式StorageGRID 會使用網格節點的IP位址和該節點上服務的連接埠號碼來連線至功能區。如果已設定高可用度（HA）群組、用戶端應用程式就可以使用HA群組的虛擬IP位址進行連線。
@@ -200,6 +203,7 @@ LdR
 
 
 
+[[decide-to-use-https-or-http-connections]]
 === 決定使用HTTPS或HTTP連線
 
 使用負載平衡器端點進行用戶端連線時、必須使用為該端點指定的傳輸協定（HTTP或HTTPS）來建立連線。若要在用戶端連線至儲存節點或閘道節點上的CLB服務時使用HTTP、您必須啟用它的使用。
@@ -219,6 +223,7 @@ xref:../admin/index.adoc[管理StorageGRID]
 
 
 
+[[test-your-connection-in-swift-api-configuration]]
 == 在Swift API組態中測試連線
 
 您可以使用Swift CLI來測試與StorageGRID 該系統的連線、並驗證您是否可以讀取物件並將物件寫入系統。
@@ -226,7 +231,7 @@ xref:../admin/index.adoc[管理StorageGRID]
 .您需要的產品
 * 您必須下載並安裝python swiftClient、Swift命令列用戶端。
 +
-https://platform.swiftstack.com/docs/integration/python-swiftclient.html["SwiftStack：Python-swiftClient"^]
+https://docs.openstack.org/python-swiftclient/latest/["SwiftStack：Python-swiftClient"^]
 
 * 您必須在StorageGRID 整個作業系統中擁有Swift租戶帳戶。
 

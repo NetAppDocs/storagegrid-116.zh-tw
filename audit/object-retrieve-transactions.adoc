@@ -17,6 +17,7 @@ summary: 您可以找出API特定（S3和Swift）稽核訊息、以識別稽核�
 
 
 
+[[s3-retrieval-audit-messages]]
 == S3擷取稽核訊息
 
 [cols="1a,1a,2a,1a,1a"]
@@ -38,6 +39,7 @@ xref:sget-s3-get.adoc[SGET：S3取得]
 |===
 
 
+[[swift-retrieval-audit-messages]]
 == 快速擷取稽核訊息
 
 [cols="1a,1a,2a,1a,1a"]

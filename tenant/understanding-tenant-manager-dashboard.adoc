@@ -22,6 +22,7 @@ image::../media/tenant_dashboard_with_buckets.png[儀表板-目標清單]
 
 
 
+[[tenant-account-summary]]
 == 租戶帳戶摘要
 
 儀表板頂端包含下列資訊：
@@ -43,6 +44,7 @@ image::../media/tenant_dashboard_with_buckets.png[儀表板-目標清單]
 
 
 
+[[storage-and-quota-usage]]
 == 儲存設備與配額使用量
 
 「儲存設備」使用面板包含下列資訊：
@@ -75,6 +77,7 @@ image::../media/tenant_dashboard_buckets.png[租戶儀表板鏟斗]
 
 
 
+[[quota-usage-alerts]]
 == 配額使用量警示
 
 如果已在Grid Manager中啟用配額使用量警示、則當配額不足或超出時、這些警示會出現在Tenant Manager中、如下所示：
@@ -92,6 +95,7 @@ NOTE: 若要檢視其他詳細資料、並管理警示的規則和通知、請�
 
 
 
+[[endpoint-errors]]
 == 端點錯誤
 
 如果您已使用Grid Manager設定一或多個端點以搭配平台服務使用、則租戶管理程式儀表板會在過去七天內發生任何端點錯誤時顯示警示。

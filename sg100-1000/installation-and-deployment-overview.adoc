@@ -36,6 +36,7 @@ SG1000
 |===
 
 
+[[installation-and-deployment-tasks]]
 == 安裝與部署工作
 
 準備StorageGRID 並新增一個應用不全面的應用裝置至網格、主要步驟有四個：

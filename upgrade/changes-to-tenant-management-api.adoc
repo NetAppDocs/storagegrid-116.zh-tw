@@ -20,6 +20,7 @@ IMPORTANT: 您可以繼續使用StorageGRID 版本1和版本2的管理API搭配�
 
 
 
+[[patch-method-deprecated]]
 == 已過時的修補方法
 
 修補方法現已過時、將在未來的版本中移除。視需要執行PUT作業來取代資源、而非使用修補程式作業來修改資源。

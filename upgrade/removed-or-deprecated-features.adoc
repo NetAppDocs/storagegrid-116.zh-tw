@@ -15,6 +15,7 @@ summary: 此版本已移除或過時部分功能。請檢閱這些項目、瞭�
 
 
 
+[[alarm-system-and-alarm-based-apis-deprecated]]
 == 已過時的警示系統和警示型API
 
 從發行版本支援的版本起、舊版警示系統已過時。StorageGRID舊版警示系統的使用者介面和API將在未來版本中移除。
@@ -31,6 +32,7 @@ IMPORTANT: 如果您仍在使用舊警報、請計畫在升級StorageGRID 至原
 
 
 
+[[future-releases-will-not-support-5-tib-maximum-object-size-for-put-object]]
 == 未來版本將不支援放置物件的5個TiB最大物件大小
 
 在未來StorageGRID 的發行版中、單一放置物件作業的最大大小為5 GiB、而非5 TiB。對於大於5 GiB的物件、您可以使用多部份上傳、最多可達5 TiB（5、497,558,138,880位元組）。
@@ -39,6 +41,7 @@ IMPORTANT: 如果您仍在使用舊警報、請計畫在升級StorageGRID 至原
 
 
 
+[[nas-bridge-feature-deprecated]]
 == NAS Bridge功能已過時
 
 NAS Bridge功能先前已在StorageGRID 版本號為「更新版本」的「限制存取」中加入。NAS Bridge功能仍處於有限存取狀態、並於StorageGRID 執行版本11.6/時已過時。

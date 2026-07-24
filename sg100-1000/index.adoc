@@ -15,6 +15,7 @@ summary: 功能完善的SG100服務應用裝置和SG1000服務應用裝置可做
 
 
 
+[[appliance-features]]
 == 應用裝置功能
 
 服務應用裝置的兩種機型都提供下列功能：
@@ -33,6 +34,7 @@ summary: 功能完善的SG100服務應用裝置和SG1000服務應用裝置可做
 
 
 
+[[sg100-and-sg1000-diagrams]]
 == SG100和SG1000圖表
 
 此圖顯示SG100和SG1000的正面、並已卸下擋板。
@@ -48,6 +50,7 @@ image::../media/sg1000_front_with_ssds.png[正面搭載SSD SG100和SG1000]
 
 
 
+[[connectors-on-the-rear-of-the-sg100]]
 == SG100背面的連接器
 
 此圖顯示SG100背面的連接器。
@@ -122,6 +125,7 @@ BMC管理連接埠
 |===
 
 
+[[connectors-on-the-rear-of-the-sg1000]]
 == SG1000背面的連接器
 
 此圖顯示SG1000背面的連接器。

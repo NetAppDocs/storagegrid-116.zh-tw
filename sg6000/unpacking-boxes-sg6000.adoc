@@ -15,6 +15,7 @@ summary: 安裝StorageGRID 此產品之前、請先打開所有包裝箱的包�
 
 
 
+[[sg6060-and-sg6060x]]
 == SG6060與SG6060X
 
 * * SG6000-CN*控制器
@@ -49,6 +50,7 @@ image::../media/back_brackets_table_size.gif[SG5760的背板和鎖緊螺帽]
 
 
 
+[[sg6060-and-sg6060x-expansion-shelf]]
 == SG6060與SG6060X擴充櫃
 
 * *未安裝磁碟機的擴充櫃*
@@ -79,6 +81,7 @@ image::../media/back_brackets_table_size.gif[SG5760的背板和鎖緊螺帽]
 
 
 
+[[sgf6024]]
 == SGF6024
 
 * * SG6000-CN*控制器
@@ -105,6 +108,7 @@ image::../media/endcaps.png[端點]
 
 
 
+[[cables-and-connectors]]
 == 纜線與連接器
 
 產品隨附StorageGRID 下列纜線和接頭：

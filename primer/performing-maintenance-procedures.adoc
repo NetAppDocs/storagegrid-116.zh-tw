@@ -15,6 +15,7 @@ summary: 您可以執行各種維護程序、讓StorageGRID 您的整個系統�
 
 
 
+[[software-updates]]
 == 軟體更新
 
 您可以從Grid Manager的「軟體更新」頁面執行三種類型的軟體更新：
@@ -26,6 +27,7 @@ summary: 您可以執行各種維護程序、讓StorageGRID 您的整個系統�
 
 
 
+[[storagegrid-software-upgrades]]
 == 軟體升級StorageGRID
 
 推出新StorageGRID 版的功能時、「軟體升級」頁面會引導您完成上傳所需檔案及升級StorageGRID 您的功能。您必須從主要管理節點升級所有資料中心站台的所有網格節點。
@@ -34,6 +36,7 @@ summary: 您可以執行各種維護程序、讓StorageGRID 您的整個系統�
 
 
 
+[[hotfixes]]
 == 即時修復程式
 
 如果在功能版本之間偵測到並解決軟體問題、您可能需要將修補程式套用StorageGRID 至您的作業系統。
@@ -51,6 +54,7 @@ NOTE: 雖然所有網格節點都會以新的修補程式版本更新、但是�
 
 
 
+[[santricity-os-upgrades]]
 == 作業系統升級SANtricity
 
 如果控制器無法以最佳方式運作、您可能需要在SANtricity 儲存設備的儲存控制器上升級該作業系統軟體。您可以將SANtricity 支援的作業系統檔案上傳至StorageGRID 您的系統支援區的主要管理節點、然後從Grid Manager套用升級。
@@ -63,6 +67,7 @@ image::../media/santricity_os_upgrade_first.png[支援第一版的作業系統�
 
 
 
+[[expansion-procedures]]
 == 擴充程序
 
 您可以StorageGRID 將儲存磁碟區新增至儲存節點、新增新的網格節點至現有站台、或新增資料中心站台、藉此擴充功能。如果您有使用SG6060或SG6060X儲存設備的儲存節點、您可以新增一或兩個擴充櫃、使節點的儲存容量加倍或三倍。
@@ -73,6 +78,7 @@ image::../media/grid_expansion_progress.png[此影像由周邊文字說明。]
 
 
 
+[[node-recovery-procedures]]
 == 節點還原程序
 
 如果硬體、虛擬化、作業系統或軟體故障導致節點無法運作或不可靠、網格節點可能會失敗。
@@ -85,6 +91,7 @@ image::../media/overview_admin_node_recovery.png[總覽：管理節點還原]
 
 
 
+[[decommission-procedures]]
 == 取消委任程序
 
 您可能想要從StorageGRID 您的系統上永久移除網格節點或整個資料中心站台。
@@ -112,6 +119,7 @@ image::../media/decommission_site_step_select_site.png[取消委任站台步驟1
 
 
 
+[[network-maintenance-procedures]]
 == 網路維護程序
 
 您可能需要執行的部分網路維護程序包括：
@@ -125,18 +133,21 @@ image::../media/decommission_site_step_select_site.png[取消委任站台步驟1
 
 
 
+[[host-level-and-middleware-procedures]]
 == 主機層級與中介軟體程序
 
 部分維護程序是針對StorageGRID 部署在Linux或VMware上的支援節點、或StorageGRID 是針對其他解決方案元件而設計。例如、您可能想要將網格節點移轉至不同的Linux主機、或是在連接至Tivoli Storage Manager（TSM）的歸檔節點上執行維護。
 
 
 
+[[appliance-node-cloning]]
 == 應用裝置節點複製
 
 應用裝置節點複製功能可讓您輕鬆地將網格中現有的應用裝置節點更換為新設計的應用裝置、或是同StorageGRID 一個邏輯版本的應用程式站台中的增強功能。此程序會將所有資料傳輸至新應用裝置、並將其置於服務狀態、以更換舊應用裝置節點、並使舊應用裝置保持預先安裝狀態。複製提供易於執行的硬體升級程序、並提供替代方法來更換應用裝置。
 
 
 
+[[grid-node-procedures]]
 == 網格節點程序
 
 您可能需要在特定的網格節點上執行某些程序。例如、您可能需要重新開機網格節點、或手動停止並重新啟動特定的網格節點服務。有些網格節點程序可從Grid Manager執行、有些則需要您登入網格節點並使用節點的命令列。

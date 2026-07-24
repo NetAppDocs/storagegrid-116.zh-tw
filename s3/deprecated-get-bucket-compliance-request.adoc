@@ -26,6 +26,7 @@ https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/Sto
 
 
 
+[[request-example]]
 == 申請範例
 
 此範例要求可讓您決定名為「mybucket」的儲存貯體的法規遵循設定。
@@ -39,6 +40,7 @@ Host: _host_
 ----
 
 
+[[response-example]]
 == 回應範例
 
 在回應XML中、「<SGCompliance >」會列出此儲存區的有效法規遵循設定。此回應範例顯示儲存區的法規遵循設定、其中每個物件將保留一年（525600分鐘）、從物件擷取到網格開始算起。此庫位目前沒有合法持有。每個物件將在一年後自動刪除。
@@ -89,6 +91,7 @@ LegalHold
 |===
 
 
+[[error-responses]]
 == 錯誤回應
 
 如果儲存區的建立不符合法規要求、回應的HTTP狀態代碼為「找不到404」、S3錯誤代碼為「XNoSuchBucketCompliance」（XNoSuchBucketCompliance）。

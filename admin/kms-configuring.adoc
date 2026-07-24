@@ -15,6 +15,7 @@ summary: 您可以設定一或多個外部金鑰管理伺服器（KMS）、以�
 
 
 
+[[what-is-a-key-management-server-kms]]
 == 什麼是金鑰管理伺服器（KMS）？
 
 金鑰管理伺服器（KMS）是一種外部的第三方系統StorageGRID 、可透過StorageGRID 金鑰管理互通性傳輸協定（KMIP）、為相關聯的站台上的應用裝置節點提供加密金鑰。

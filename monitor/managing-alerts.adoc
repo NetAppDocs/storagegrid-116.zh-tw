@@ -15,6 +15,7 @@ summary: 警示功能可讓您監控StorageGRID 您的系統內部的各種事�
 
 
 
+[[about-storagegrid-alerts]]
 == 關於StorageGRID 此警示
 
 警示系統提供易於使用的介面、可偵測、評估及解決StorageGRID 在執行過程中可能發生的問題。
@@ -32,6 +33,7 @@ summary: 警示功能可讓您監控StorageGRID 您的系統內部的各種事�
 
 
 
+[[learn-more]]
 == 深入瞭解
 
 若要深入瞭解、請觀看以下影片：

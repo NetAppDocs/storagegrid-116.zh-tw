@@ -23,6 +23,7 @@ summary: 如果您使用儲存Volume浮點的自訂值、則可能需要解決�
 
 
 
+[[understand-the-alert]]
 == 瞭解警示
 
 如果您將自訂值用於儲存Volume浮點、則可能會針對一個或多個儲存節點觸發*低唯讀浮點置換*警示。
@@ -66,6 +67,7 @@ Volume 3
 
 
 
+[[resolve-the-alert]]
 == 解決警示
 
 如果觸發了一或多個*低唯讀浮水印置換*警示、請遵循下列步驟。如果您目前使用自訂浮水印設定、而且想要開始使用最佳化設定、即使沒有觸發警示、也可以使用這些指示。
@@ -81,6 +83,7 @@ Volume 3
 
 
 
+[[assess-object-data-usage-for-entire-grid]]
 === 評估整個網格的物件資料使用量
 
 . 選擇*節點*。
@@ -99,6 +102,7 @@ NOTE: 這項一般規則有一些例外情況。例如、如果ILM規則使用�
 
 
 
+[[view-optimized-storage-watermarks]]
 === 檢視最佳化的儲存浮水印
 
 使用兩個Prometheus指標來顯示其針對*儲存Volume軟式唯讀浮點*所計算的最佳化值。StorageGRID您可以檢視網格中每個儲存節點的最小和最大最佳化值。
@@ -124,6 +128,7 @@ NOTE: 這項一般規則有一些例外情況。例如、如果ILM規則使用�
 
 
 
+[[determine-if-you-can-use-optimized-watermarks]]
 === 判斷您是否可以使用最佳化的浮水印
 
 . 選擇*節點*。
@@ -147,6 +152,7 @@ NOTE: 每個儲存節點上的每個儲存磁碟區都會套用相同的自訂�
 
 
 
+[[use-optimized-watermarks]]
 === 使用最佳化的浮水印
 
 . 轉至*組態*>*系統*>*儲存選項*。

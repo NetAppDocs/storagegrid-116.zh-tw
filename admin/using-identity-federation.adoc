@@ -15,6 +15,7 @@ summary: 使用身分識別聯盟可更快設定群組和使用者、並讓使�
 
 
 
+[[configure-identity-federation-for-grid-manager]]
 == 設定Grid Manager的身分識別聯盟
 
 如果您想要在其他系統（例如Active Directory、Azure Active Directory（Azure AD）、OpenLDAP或Oracle Directory Server）中管理系統管理群組和使用者、可以在Grid Manager中設定身分識別聯盟。
@@ -41,6 +42,7 @@ NOTE: 如果您想使用未列出的LDAP v3服務、請聯絡技術支援部門�
 
 
 
+[[enter-the-configuration]]
 === 輸入組態
 
 . 選擇*組態*>*存取控制*>*身分識別聯盟*。
@@ -137,6 +139,7 @@ NOTE: 如果Active Directory伺服器強制執行LDAP簽署、則不支援使用
 
 
 
+[[test-the-connection-and-save-the-configuration]]
 === 測試連線並儲存組態
 
 輸入所有值之後、您必須先測試連線、才能儲存組態。如果您提供LDAP伺服器的連線設定和連結使用者名稱格式、則可透過此驗證。StorageGRID
@@ -164,6 +167,7 @@ image::../media/identity_federation_test_connection.png[驗證繫結使用者名
 
 
 
+[[force-synchronization-with-the-identity-source]]
 == 強制與身分識別來源同步
 
 此系統會定期同步來自身分識別來源的聯盟群組和使用者。StorageGRID如果您想要盡快啟用或限制使用者權限、可以強制啟動同步。
@@ -182,6 +186,7 @@ NOTE: 如果同步處理來自身分識別來源的聯盟群組和使用者時�
 
 
 
+[[disable-identity-federation]]
 == 停用身分識別聯盟
 
 您可以暫時或永久停用群組和使用者的身分識別聯盟。停用身分識別聯盟時StorageGRID 、不會在驗證和身分識別來源之間進行通訊。不過、您已設定的任何設定都會保留下來、讓您日後可以輕鬆重新啟用身分識別聯盟。
@@ -202,6 +207,7 @@ NOTE: 如果同步處理來自身分識別來源的聯盟群組和使用者時�
 
 
 
+[[guidelines-for-configuring-an-openldap-server]]
 == 設定OpenLDAP伺服器的準則
 
 如果您要使用OpenLDAP伺服器進行身分識別聯盟、則必須在OpenLDAP伺服器上設定特定設定。
@@ -211,12 +217,14 @@ IMPORTANT: 對於非ActiveDirectory或Azure的身分識別來源、StorageGRID �
 
 
 
+[[memberof-and-refint-overlays]]
 === memberOf和refert覆疊
 
 應啟用memberof和refert覆疊。如需詳細資訊、請參閱中的反轉群組成員資格維護指示http://www.openldap.org/doc/admin24/index.html["OpenLDAP文件：2.4版管理員指南"^]。
 
 
 
+[[indexing]]
 === 索引
 
 您必須使用指定的索引關鍵字來設定下列OpenLDAP屬性：

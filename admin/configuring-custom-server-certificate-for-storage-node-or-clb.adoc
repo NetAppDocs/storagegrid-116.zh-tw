@@ -27,6 +27,7 @@ NOTE: 為了確保作業不會因為失敗的伺服器憑證而中斷、當根�
 
 
 
+[[add-a-custom-s3-and-swift-api-certificate]]
 == 新增自訂S3和Swift API認證
 
 .步驟
@@ -117,6 +118,7 @@ NOTE: 上傳或產生新的憑證後、請允許清除任何相關的憑證過�
 
 
 
+[[restore-the-default-s3-and-swift-api-certificate]]
 == 還原預設的S3和Swift API憑證
 
 您可以針對S3和Swift用戶端連線至儲存節點、以及閘道節點上已過時的CLB服務、恢復使用預設的S3和Swift API認證。不過、您無法將預設的S3和Swift API憑證用於負載平衡器端點。
@@ -137,6 +139,7 @@ NOTE: 上傳或產生新的憑證後、請允許清除任何相關的憑證過�
 
 
 
+[[download-or-copy-the-s3-and-swift-api-certificate]]
 == 下載或複製S3和Swift API認證
 
 您可以儲存或複製S3和Swift API憑證內容、以便在其他地方使用。

@@ -104,6 +104,7 @@ NOTE: 如需StorageGRID 瞭解如何處理UTF-8字元的資訊、請參閱「放
 
 
 
+[[request-headers-for-server-side-encryption]]
 == 要求伺服器端加密的標頭
 
 您可以使用下列要求標頭、以伺服器端加密來加密多部份物件。「SSE」和「SSE-C」選項互不相關。
@@ -126,6 +127,7 @@ NOTE: 如需StorageGRID 瞭解如何處理UTF-8字元的資訊、請參閱「放
 
 
 
+[[unsupported-request-headers]]
 == 不支援的要求標頭
 
 不支援下列要求標頭、並傳回「XNotImplemed」
@@ -135,6 +137,7 @@ NOTE: 如需StorageGRID 瞭解如何處理UTF-8字元的資訊、請參閱「放
 
 
 
+[[versioning]]
 == 版本管理
 
 多部分上傳包含不同的作業、可用於初始化上傳、列出上傳內容、上傳零件、組裝上傳的零件、以及完成上傳。執行完整的「多重組件上傳」作業時、會建立物件（並在適用情況下建立版本）。

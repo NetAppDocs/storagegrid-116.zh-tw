@@ -15,6 +15,7 @@ summary: 下列Swift API作業會在帳戶上執行。
 
 
 
+[[get-account]]
 == 取得帳戶
 
 此作業會擷取與帳戶和帳戶使用量統計資料相關的容器清單。
@@ -54,6 +55,7 @@ summary: 下列Swift API作業會在帳戶上執行。
 
 
 
+[[head-account]]
 == 總公司帳戶
 
 此作業會從Swift帳戶擷取帳戶資訊和統計資料。

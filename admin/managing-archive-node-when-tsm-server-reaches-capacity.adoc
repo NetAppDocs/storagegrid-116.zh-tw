@@ -23,6 +23,7 @@ TSM伺服器無法在TSM資料庫或TSM伺服器管理的歸檔媒體儲存設�
 
 
 
+[[prevent-arc-service-from-sending-content-to-tsm-server]]
 == 防止ARC服務傳送內容至TSM伺服器
 
 若要防止ARC服務傳送更多內容到TSM伺服器、您可以將歸檔節點離線、方法是將其* ARC/>* Store*元件離線。當TSM伺服器無法進行維護時、此程序也有助於防止警示。
@@ -41,6 +42,7 @@ image::../media/tsm_offline.gif[歸檔節點的組態頁面]
 
 
 
+[[set-archive-node-to-read-only-if-tsm-middleware-reaches-capacity]]
 == 如果TSM中介軟體達到容量、請將歸檔節點設為唯讀
 
 如果目標TSM中介軟體伺服器達到容量、則歸檔節點可最佳化、僅執行擷取。

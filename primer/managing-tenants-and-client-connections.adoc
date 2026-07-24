@@ -15,6 +15,7 @@ summary: 身為網格管理員、您可以建立及管理S3和Swift用戶端用�
 
 
 
+[[tenant-accounts]]
 == 租戶帳戶
 
 租戶帳戶可讓您指定哪些人可以使用StorageGRID 您的一套系統來儲存和擷取物件、以及哪些功能可供他們使用。租戶帳戶可讓支援S3 REST API或Swift REST API的用戶端應用程式、將物件儲存及擷取到StorageGRID 靜態上。每個租戶帳戶都使用S3用戶端傳輸協定或Swift用戶端傳輸協定。
@@ -37,6 +38,7 @@ summary: 身為網格管理員、您可以建立及管理S3和Swift用戶端用�
 
 
 
+[[client-connections-to-storagegrid-nodes]]
 == 用戶端連線StorageGRID 至節點
 
 在租戶使用者使用S3或Swift用戶端將資料儲存及擷取到StorageGRID 效益分析系統之前、您必須先決定這些用戶端將如何連線StorageGRID 到效益分析節點。

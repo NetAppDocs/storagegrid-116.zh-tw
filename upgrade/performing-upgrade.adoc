@@ -18,6 +18,7 @@ summary: 當您準備好執行升級時、請選取.升級 歸檔、然後輸入
 
 
 
+[[upload-the-upgrade-file]]
 == 上傳升級檔案
 
 . 使用登入Grid Manager xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]。
@@ -47,6 +48,7 @@ image::../media/storagegrid_upgrade_buttons_enabled.png[支援的更新按鈕Sto
 
 
 
+[[run-prechecks]]
 == 執行預先檢查
 
 您也可以選擇在開始實際升級之前驗證系統的狀況。選取*執行預先檢查*可讓您在開始升級之前偵測並解決問題。當您開始升級時、也會執行相同的預先檢查。預先檢查失敗將會停止升級程序、有些可能需要技術支援人員介入才能解決問題。
@@ -62,6 +64,7 @@ IMPORTANT: 如果您已開啟任何自訂防火牆連接埠、系統會在預先
 
 
 
+[[start-upgrade-and-update-primary-admin-node]]
 == 開始升級及更新主要管理節點
 
 當升級開始時、系統會執行升級前置檢查、並升級主要管理節點、包括停止服務、升級軟體及重新啟動服務。當主要管理節點正在升級時、您無法存取Grid Manager。稽核記錄也無法使用。此升級可能需要30分鐘。
@@ -96,6 +99,7 @@ image::../media/software_upgrade_400_error.png[軟體升級400錯誤]
 
 
 
+[[clear-browser-cache-and-sign-back-in]]
 == 清除瀏覽器快取並重新登入
 
 . 升級主要管理節點之後、請清除網頁瀏覽器的快取並重新登入。
@@ -126,6 +130,7 @@ image::../media/grid_manager_dashboard.png[Grid Manager儀表板]
 
 
 
+[[download-recovery-package-and-upgrade-all-grid-nodes]]
 == 下載恢復套件並升級所有網格節點
 
 . 網格節點出現在「Grid Node Status（網格節點狀態）」表格中、但在核准任何網格節點之前、 xref:obtaining-required-materials-for-software-upgrade.adoc#download-the-recovery-package[下載新的恢復套件複本]。
@@ -178,6 +183,7 @@ NOTE: 當應用裝置節點達到「升級基礎作業系統套件」階段時�
 
 
 
+[[complete-upgrade]]
 == 完整升級
 
 當所有網格節點都完成升級階段後、*升級網格節點*工作會顯示為已完成。其餘的升級工作會在背景中自動執行。
@@ -196,6 +202,7 @@ NOTE: 從還原11.5升級StorageGRID 至11.6%不需要Cassandra資料庫升級�
 
 
 
+[[confirm-upgrade]]
 == 確認升級
 
 . 確認升級成功完成。

@@ -15,6 +15,7 @@ summary: 放置容器一致性要求可讓您指定要套用至容器上執行�
 
 
 
+[[request]]
 == 申請
 
 |===
@@ -53,6 +54,7 @@ summary: 放置容器一致性要求可讓您指定要套用至容器上執行�
 |===
 
 
+[[how-consistency-controls-and-ilm-rules-interact-to-affect-data-protection]]
 == 一致性控制與ILM規則如何互動、以影響資料保護
 
 您選擇的一致性控制和ILM規則都會影響物件的保護方式。這些設定可以互動。
@@ -71,6 +73,7 @@ NOTE: 在選擇ILM規則的擷取行為之前、請先閱讀資訊生命週期�
 
 
 
+[[example-of-how-consistency-control-and-ilm-rule-can-interact]]
 == 一致性控制和ILM規則如何互動的範例
 
 假設您有一個雙站台網格、其中包含下列ILM規則和下列一致性層級設定：
@@ -89,6 +92,7 @@ NOTE: 在選擇ILM規則的擷取行為之前、請先閱讀資訊生命週期�
 
 
 
+[[request-example]]
 == 申請範例
 
 [listing]
@@ -100,6 +104,7 @@ Host: test.com
 ----
 
 
+[[response]]
 == 回應
 
 |===
@@ -135,6 +140,7 @@ Host: test.com
 |===
 
 
+[[response-example]]
 == 回應範例
 
 [listing]

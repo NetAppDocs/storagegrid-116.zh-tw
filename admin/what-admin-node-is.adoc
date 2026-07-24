@@ -30,24 +30,28 @@ summary: 管理節點提供系統組態、監控及記錄等管理服務。每�
 
 
 
+[[what-the-ams-service-is]]
 == AMS服務是什麼
 
 稽核管理系統（AMS）服務會追蹤系統活動和事件。
 
 
 
+[[what-the-cmn-service-is]]
 == CMN服務是什麼
 
 組態管理節點（CMN）服務可管理全系統的連線組態、以及所有服務所需的傳輸協定功能。此外、CMN服務也可用來執行及監控網格工作。每StorageGRID 個版本部署只有一個CMN服務。主控CMN服務的管理節點稱為主要管理節點。
 
 
 
+[[what-the-nms-service-is]]
 == NMS服務是什麼
 
 網路管理系統（NMS）服務可透過Grid Manager（StorageGRID 即整個系統的瀏覽器型介面）、提供監控、報告及組態選項的功能。
 
 
 
+[[what-the-prometheus-service-is]]
 == 什麼是Prometheus服務
 
 Prometheus服務會從所有節點上的服務收集時間序列數據。

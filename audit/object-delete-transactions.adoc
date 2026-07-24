@@ -17,6 +17,7 @@ summary: 您可以在稽核記錄中找出API專屬（S3和Swift）稽核訊息�
 
 
 
+[[s3-delete-audit-messages]]
 == S3刪除稽核訊息
 
 |===
@@ -37,6 +38,7 @@ xref:sdel-s3-delete.adoc[SDEL：S3刪除]
 |===
 
 
+[[swift-delete-audit-messages]]
 == Swift刪除稽核訊息
 
 |===

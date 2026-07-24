@@ -15,6 +15,7 @@ summary: 安裝及設定StorageGRID 此產品時、您必須做出決策、並�
 
 
 
+[[administration-and-maintenance-ports]]
 == 系統管理與維護連接埠
 
 管理員網路for支援功能是選用的網路、可用於系統管理和維護。StorageGRID應用裝置會使用應用裝置上的下列1-GbE管理連接埠來連線至管理網路。
@@ -104,6 +105,7 @@ DHCP指派給管理網路連接埠的IP位址（如果在開機後可用）
 |===
 
 
+[[networking-ports]]
 == 網路連接埠
 
 應用裝置上的四個網路連接埠可連接StorageGRID 至「知識網」和選用的「用戶端網路」。
@@ -173,6 +175,7 @@ DHCP指派給管理網路連接埠的IP位址（如果在開機後可用）
 |===
 
 
+[[grid-network-ports]]
 == 網格網路連接埠
 
 Grid Network for StorageGRID 效能不只是一項必要的網路、可用於所有內部StorageGRID 的資訊流量。應用裝置使用四個網路連接埠連線至Grid Network。
@@ -245,6 +248,7 @@ VLAN標記（如果已啟用VLAN標記）
 |===
 
 
+[[client-network-ports]]
 == 用戶端網路連接埠
 
 Client Network for StorageGRID 推銷是選用的網路、通常用於提供用戶端傳輸協定存取網格。應用裝置使用四個網路連接埠連線至用戶端網路。
@@ -316,6 +320,7 @@ VLAN標記（如果啟用VLAN標記）
 |===
 
 
+[[bmc-management-network-ports]]
 == BMC管理網路連接埠
 
 您可以使用圖中圈出的1-GbE管理連接埠、存取服務應用裝置上的BMC介面。此連接埠支援使用智慧型平台管理介面（IPMI）標準、透過乙太網路遠端管理控制器硬體。

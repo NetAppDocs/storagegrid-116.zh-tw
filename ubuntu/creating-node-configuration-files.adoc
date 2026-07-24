@@ -15,12 +15,14 @@ summary: 節點組態檔案是小型的文字檔、可提供StorageGRID 支援�
 
 
 
+[[where-do-i-put-the-node-configuration-files]]
 == 我該將節點組態檔案放在何處？
 
 您必須將每StorageGRID 個支援節點的組態檔放在執行節點的主機上的「/etc/storagegrid / nodes」目錄中。例如、如果您打算在主機A上執行一個管理節點、一個閘道節點和一個儲存節點、則必須在主機A的「/etc/storagegrid /節點」中放置三個節點組態檔案。您可以使用文字編輯器（例如vim或nANO）直接在每個主機上建立組態檔、也可以在其他位置建立組態檔、然後將其移至每個主機。
 
 
 
+[[what-do-i-name-the-node-configuration-files]]
 == 我該如何命名節點組態檔？
 
 組態檔的名稱很重要。格式為「node-name.conf」、其中「node-name」是您指派給節點的名稱。此名稱會顯示在StorageGRID 《Iserfor Installer（英文）：用於節點維護作業（例如節點移轉）。
@@ -47,6 +49,7 @@ site-nodetype-nodenumber.conf
 
 
 
+[[what-is-in-a-node-configuration-file]]
 == 節點組態檔案中有什麼內容？
 
 組態檔包含金鑰/值配對、每行一個金鑰和一個值。對於每個金鑰/值配對、您必須遵循下列規則：

@@ -15,6 +15,7 @@ summary: 下列Swift API作業會在物件上執行。
 
 
 
+[[delete-object]]
 == 刪除物件
 
 此作業會從StorageGRID 作業系統刪除物件的內容和中繼資料。
@@ -45,6 +46,7 @@ summary: 下列Swift API作業會在物件上執行。
 
 
 
+[[get-object]]
 == Get物件
 
 此作業會擷取物件內容、並從StorageGRID 一套系統取得物件中繼資料。
@@ -87,6 +89,7 @@ summary: 下列Swift API作業會在物件上執行。
 
 
 
+[[head-object]]
 == 標頭物件
 
 此作業會從StorageGRID 作業系統擷取擷取物件的中繼資料和屬性。
@@ -119,6 +122,7 @@ summary: 下列Swift API作業會在物件上執行。
 
 
 
+[[put-object]]
 == 放置物件
 
 此作業會以資料和中繼資料建立新物件、或以StorageGRID 資料和中繼資料取代現有物件。

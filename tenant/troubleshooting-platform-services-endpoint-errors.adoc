@@ -15,6 +15,7 @@ summary: 如果在嘗試與平台服務端點通訊時發生錯誤StorageGRID �
 
 
 
+[[determine-if-error-has-occurred]]
 == 判斷是否發生錯誤
 
 如果過去7天內發生任何平台服務端點錯誤、則租戶管理程式儀表板會顯示警示訊息。您可以移至「平台服務端點」頁面、查看錯誤的詳細資料。
@@ -32,6 +33,7 @@ image::../media/endpoint_error_on_connection_tab.png[連線索引標籤上的端
 
 
 
+[[check-if-error-is-still-current]]
 == 檢查錯誤是否仍為最新狀態
 
 有些錯誤可能會繼續顯示在「*最後一個錯誤*」欄中、即使這些錯誤已解決。若要查看錯誤是否為目前錯誤、或強制從表格中移除已解決的錯誤：
@@ -48,6 +50,7 @@ image::../media/endpoint_error_on_connection_tab.png[連線索引標籤上的端
 
 
 
+[[resolve-endpoint-errors]]
 == 解決端點錯誤
 
 您可以使用端點詳細資料頁面上的*上次錯誤*訊息來協助判斷造成錯誤的原因。有些錯誤可能需要您編輯端點才能解決問題。例如StorageGRID 、如果由於沒有正確的存取權限或存取金鑰已過期、所以無法存取目的地S3儲存區、就會發生CloudMirroring錯誤。訊息為「端點認證或目的地存取需要更新」、詳細資料為「'AccessDenied」或「'InvalidAccessKeyId'」。
@@ -63,12 +66,14 @@ image::../media/endpoint_error_on_connection_tab.png[連線索引標籤上的端
 
 
 
+[[endpoint-credentials-with-insufficient-permissions]]
 == 權限不足的端點認證
 
 當驗證平台服務端點時、會確認端點的認證資料可用於聯絡目的地資源、並執行基本權限檢查。StorageGRID不過StorageGRID 、不驗證特定平台服務作業所需的所有權限。因此、如果您在嘗試使用平台服務時收到錯誤訊息（例如「"4003 Forbidbididbididbide"）、請檢查與端點認證相關的權限。
 
 
 
+[[additional-platform-services-troubleshooting]]
 == 其他平台服務疑難排解
 
 如需疑難排解平台服務的其他資訊、請參閱《關於管理StorageGRID 功能的說明》。

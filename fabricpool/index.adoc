@@ -15,6 +15,7 @@ summary: 如果您使用NetApp ONTAP 功能性軟體、可以使用NetApp Fabric
 
 
 
+[[about-these-instructions]]
 == 關於這些指示
 
 請依照下列指示：
@@ -26,12 +27,14 @@ summary: 如果您使用NetApp ONTAP 功能性軟體、可以使用NetApp Fabric
 
 
 
+[[configuration-workflow]]
 == 組態工作流程
 
 image::../media/fabricpool_storagegrid_workflow.png[功能工作流程FabricPool StorageGRID]
 
 
 
+[[before-you-start]]
 == 開始之前
 
 * 決定您FabricPool 要使用哪個「功能區」分層原則、將非作用中ONTAP 的功能區資料分層到StorageGRID 無法使用的地方。
@@ -47,6 +50,7 @@ image::../media/fabricpool_storagegrid_workflow.png[功能工作流程FabricPool
 
 
 
+[[what-is-fabricpool]]
 == 什麼是FabricPool 功能？
 
 VMware是一套不間斷的混合式儲存解決方案、使用高效能Flash Aggregate做為效能層、而物件存放區則做為雲端層。FabricPool ONTAP資料會根據是否經常存取而儲存在主要儲存媒體或物件資料存放區中。使用支援FabricPool的Aggregate可協助您降低儲存成本、而不會影響效能、效率或保護。
@@ -55,12 +59,14 @@ VMware是一套不間斷的混合式儲存解決方案、使用高效能Flash Ag
 
 
 
+[[what-is-storagegrid]]
 == 什麼是StorageGRID 功能？
 
 與其他儲存架構（例如檔案或區塊儲存）相比、支援將資料管理為物件的儲存架構。StorageGRID物件會保留在單一容器（例如儲存區）內、不會以檔案形式嵌套在其他目錄內的目錄內。雖然物件儲存設備的效能通常低於檔案或區塊儲存設備、但可大幅擴充。支援的資料儲存區可容納數PB的資料和數十億個物件。StorageGRID
 
 
 
+[[why-use-storagegrid-as-a-fabricpool-cloud-tier]]
 == 為什麼StorageGRID 要使用不一樣FabricPool 的功能來做為一個不一樣的雲端層？
 
 可將各種資料分層保存至許多物件儲存供應商、FabricPool ONTAP StorageGRID 包括公有雲可能會在庫位或容器層級設定每秒支援的輸入/輸出作業（IOPS）數量上限、但StorageGRID 不像公有雲、效能會隨系統中的節點數量而擴充。使用VMware做為VMware的雲端層、您可以將冷資料保留在私有雲端、以獲得最高效能、並完全掌控資料。StorageGRID FabricPool
@@ -69,6 +75,7 @@ VMware是一套不間斷的混合式儲存解決方案、使用高效能Flash Ag
 
 
 
+[[can-i-use-multiple-ontap-clusters-with-storagegrid]]
 == 我可以ONTAP 搭配StorageGRID 使用多個支援不支援的叢集嗎？
 
 這些指示說明如何將StorageGRID 資訊鏈接到ONTAP 單一的資訊叢集。不過、您可能想要將相同StorageGRID 的支援系統連接至多ONTAP 個支援叢集。

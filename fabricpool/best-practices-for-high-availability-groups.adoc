@@ -15,6 +15,7 @@ summary: 在將StorageGRID 「靜態FabricPool 」附加為「靜態雲端層」
 
 
 
+[[what-is-a-high-availability-ha-group]]
 == 什麼是高可用度（HA）群組？
 
 為了確保負載平衡器服務永遠可用於管理FabricPool 效益資料、您可以將多個管理和閘道節點的網路介面分組為單一實體、稱為高可用度（HA）群組。如果HA群組中的作用中節點故障、群組中的另一個節點可以繼續管理工作負載。
@@ -38,6 +39,7 @@ IMPORTANT: 如果您打算使用VLAN介面來隔離FabricPool 靜態流量、網
 
 
 
+[[best-practices-for-high-availability-ha-groups]]
 == 高可用度（HA）群組的最佳實務做法
 
 建立StorageGRID 一套適用於FabricPool 功能不實的功能不一的最佳實務做法取決於工作負載、如下所示：

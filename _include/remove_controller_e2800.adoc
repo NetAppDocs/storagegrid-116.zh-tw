@@ -4,6 +4,7 @@
 
 
 
+[[remove-the-controller]]
 == 移除控制器
 
 .步驟

@@ -15,6 +15,7 @@ summary: 如果您打算使用雲端儲存資源池將物件移出StorageGRID �
 
 
 
+[[general-considerations]]
 == 一般考量
 
 * 一般而言、Amazon S3 Glacier或Azure Blob儲存設備等雲端歸檔儲存設備、是儲存物件資料的廉價場所。然而、從雲端歸檔儲存設備擷取資料的成本相對較高。若要達到最低的整體成本、您必須考慮何時及多久存取雲端儲存池中的物件。建議僅針對您預期不常存取的內容使用雲端儲存池。
@@ -24,6 +25,7 @@ summary: 如果您打算使用雲端儲存資源池將物件移出StorageGRID �
 
 
 
+[[information-required-to-create-a-cloud-storage-pool]]
 == 建立雲端儲存資源池所需的資訊
 
 在建立雲端儲存池之前、您必須先建立外部S3儲存區或外部Azure Blob儲存容器、以便用於雲端儲存池。然後、當您在StorageGRID 不景區中建立雲端儲存池時、必須指定下列資訊：
@@ -44,6 +46,7 @@ summary: 如果您打算使用雲端儲存資源池將物件移出StorageGRID �
 
 
 
+[[considerations-for-the-ports-used-for-cloud-storage-pools]]
 == 雲端儲存資源池所用連接埠的考量事項
 
 若要確保ILM規則可將物件移入或移出指定的Cloud Storage Pool、您必須設定包含系統儲存節點的網路。您必須確保下列連接埠可與Cloud Storage Pool通訊。
@@ -60,6 +63,7 @@ summary: 如果您打算使用雲端儲存資源池將物件移出StorageGRID �
 
 
 
+[[considerations-for-costs]]
 == 成本考量
 
 若要使用雲端儲存資源池存取雲端儲存設備、需要透過網路連線才能連線至雲端。您必須考量存取雲端所需的網路基礎架構成本、並根據使用StorageGRID Cloud Storage Pool在介於流通於流通的資料量、適當地配置雲端。
@@ -77,6 +81,7 @@ IMPORTANT: 當物件從StorageGRID 雲端儲存資源池移回支援區時Storag
 
 
 
+[[s3-permissions-required-for-the-cloud-storage-pool-bucket]]
 == S3：Cloud Storage Pool儲存區所需的權限
 
 用於雲端儲存資源池的外部S3儲存區貯體政策必須授予StorageGRID 支援、以便將物件移至貯體、取得物件狀態、必要時從Glacier儲存設備還原物件等。理想情況StorageGRID 下、支援完整控制的目標區（「3：*」）；不過、如果不可能、目標區原則必須授予下列S3權限StorageGRID 才能使用S庫：
@@ -93,6 +98,7 @@ IMPORTANT: 當物件從StorageGRID 雲端儲存資源池移回支援區時Storag
 
 
 
+[[s3-considerations-for-the-external-buckets-lifecycle]]
 == S3：外部儲存庫生命週期的考量事項
 
 物件在StorageGRID Cloud Storage Pool中指定的物件之間移動、是由ILM規則和StorageGRID 動態ILM原則所控制。相反地、從雲端儲存資源池中指定的外部S3儲存區、移轉至Amazon S3 Glacier或S3 Glacier Deep歸檔（或移轉至實作Glacier儲存類別的儲存解決方案）的物件、則是由該儲存區的生命週期組態所控制。
@@ -126,12 +132,14 @@ IMPORTANT: 設定外部儲存庫的生命週期時、切勿使用* Expiration*�
 
 
 
+[[azure-considerations-for-access-tier]]
 == Azure：存取層的考量
 
 當您設定Azure儲存帳戶時、可以將預設的存取層設定為「Hot」（熱）或「Cool」（冷）。建立用於雲端儲存資源池的儲存帳戶時、您應該使用熱層做為預設層。即使將物件移至雲端儲存資源池時、將層級立即設定為「歸檔」、但使用預設的Hot（熱）設定、可確保您不會在30天內收取從冷卻層移除物件的早期刪除費用。StorageGRID
 
 
 
+[[azure-lifecycle-management-not-supported]]
 == Azure：不支援生命週期管理
 
 請勿將Azure Blob儲存設備生命週期管理用於與雲端儲存資源池搭配使用的容器。生命週期作業可能會干擾Cloud Storage Pool作業。

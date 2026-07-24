@@ -17,6 +17,7 @@ summary: 您可以將歸檔節點設定為目標Tivoli Storage Manager（TSM\）
 
 
 
+[[tsm-management-classes]]
 == TSM管理類別
 
 由TSM中介軟體定義的管理類別、概述了TSMS廳 的備份與歸檔作業如何運作、並可用來指定TSM伺服器所套用內容的規則。此類規則獨立於StorageGRID 此等系統的ILM原則運作、且必須符合StorageGRID 此等系統的要求、即物件必須永久儲存、且永遠可供歸檔節點擷取。在歸檔節點將物件資料傳送至TSM伺服器之後、會套用TSM生命週期和保留規則、同時將物件資料儲存至由TSM伺服器管理的磁帶。

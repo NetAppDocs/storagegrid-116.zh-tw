@@ -16,6 +16,7 @@ summary: 您可以執行多項工作、以協助判斷與管理節點和StorageG
 
 
 
+[[troubleshoot-sign-on-errors]]
 == 疑難排解登入錯誤
 
 如果您在登入StorageGRID 某個「管理員節點」時遇到錯誤、表示您的系統可能發生身分識別聯盟組態問題、網路或硬體問題、管理節點服務問題、或是連線儲存節點上的Cassandra資料庫問題。
@@ -175,12 +176,14 @@ sg snmp agent                  11.4.0         Running
 
 
 
+[[troubleshoot-user-interface-issues]]
 == 疑難排解使用者介面問題
 
 升級StorageGRID 至新版的更新版的更新版的更新版的Grid Manager或Tenant Manager可能會出現問題。
 
 
 
+[[web-interface-does-not-respond-as-expected]]
 === Web介面未如預期回應
 
 Grid Manager或Tenant Manager在StorageGRID 升級完更新版的更新軟體後、可能無法如預期般回應。
@@ -200,6 +203,7 @@ NOTE: 瀏覽器支援StorageGRID 功能已變更為支援功能、適用於支�
 
 
 
+[[check-the-status-of-an-unavailable-admin-node]]
 == 檢查不可用管理節點的狀態
 
 如果這個系統包含多個管理節點、您可以使用另一個管理節點來檢查不可用管理節點的狀態。StorageGRID

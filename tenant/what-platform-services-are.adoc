@@ -50,6 +50,7 @@ IMPORTANT: 每個租戶帳戶必須由StorageGRID 使用Grid Manager或Grid Mana
 
 
 
+[[how-platform-services-are-configured]]
 == 平台服務的設定方式
 
 平台服務會與您使用租戶管理程式或租戶管理API設定的外部端點通訊。每個端點都代表一個外部目的地、例如StorageGRID 一個不支援的S3儲存區、一個Amazon Web Services儲存區、一個簡單通知服務（SNS）主題、或是在本機、AWS或其他地方代管的Elasticsearch叢集。

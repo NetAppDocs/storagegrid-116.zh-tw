@@ -15,6 +15,7 @@ summary: 您可以使用圖表和報告來監控StorageGRID 整個系統的狀�
 
 
 
+[[types-of-charts]]
 == 圖表類型
 
 圖表摘要說明特定StorageGRID 的功能性指標和屬性的價值。
@@ -71,6 +72,7 @@ xref:reviewing-support-metrics.adoc[檢視支援指標]
 
 
 
+[[chart-legend]]
 == 圖表圖例
 
 用來繪製圖表的線條和色彩具有特定意義。
@@ -123,6 +125,7 @@ image:../media/gray_blue_chart_shading.gif["顯示混合不確定值和未知值
 |===
 
 
+[[display-charts-and-graphs]]
 == 顯示圖表
 
 節點頁面包含您應定期存取的圖表和圖表、以監控儲存容量和處理量等屬性。在某些情況下、尤其是與技術支援合作時、您可以使用*支援*>*工具*>*網格拓撲*頁面來存取其他圖表。
@@ -179,6 +182,7 @@ image::../media/nms_chart.gif[周邊文字所述的螢幕擷取畫面]
 
 
 
+[[generate-charts]]
 == 產生圖表
 
 圖表會以圖形方式顯示屬性資料值。您可以報告資料中心站台、網格節點、元件或服務。

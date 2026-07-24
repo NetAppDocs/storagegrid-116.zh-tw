@@ -28,6 +28,7 @@ ILM規則定義：
 
 
 
+[[example-ilm-rule]]
 == ILM規則範例
 
 本範例ILM規則適用於屬於租戶A的物件它會為這些物件建立兩個複寫複本、並將每個複本儲存在不同的站台。這兩個複本都保留「Forever」、這表示StorageGRID 不會自動刪除。相反地StorageGRID 、在用戶端刪除要求刪除這些物件之前、或是在庫位生命週期到期之前、將會保留這些物件。
@@ -38,6 +39,7 @@ image::../media/ilm_example_rule_2_copies_tenant_a.png[ILM規則2範例複製租
 
 
 
+[[how-an-ilm-policy-evaluates-objects]]
 == ILM原則如何評估物件
 
 適用於您的整個系統的有效ILM原則StorageGRID 可控制所有物件的放置、持續時間和資料保護。
@@ -51,6 +53,7 @@ image::../media/ilm_example_rule_2_copies_tenant_a.png[ILM規則2範例複製租
 
 
 
+[[example-ilm-policy]]
 == ILM原則範例
 
 本範例ILM原則使用三個ILM規則。

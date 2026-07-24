@@ -15,6 +15,7 @@ summary: 可在VMware虛擬機器、Linux主機上的容器引擎內或專屬硬
 
 
 
+[[firewall-configuration]]
 == 防火牆組態
 
 在系統強化程序中、您必須檢閱外部防火牆組態並加以修改、以便只接受來自IP位址和嚴格需要的連接埠的流量。
@@ -25,24 +26,28 @@ summary: 可在VMware虛擬機器、Linux主機上的容器引擎內或專屬硬
 
 
 
+[[virtualization-containers-and-shared-hardware]]
 == 虛擬化、容器和共享硬體
 
 對於所有StorageGRID 的物件節點、請避免在StorageGRID 不受信任的軟體所在的實體硬體上執行不可靠的功能。如果StorageGRID 實體硬體上同時存在著不受保護的物件和惡意軟體、請勿假設Hypervisor保護功能可防止惡意軟體存取受StorageGRID保護的資料。例如、Meltdown和Spetter攻擊會利用現代處理器的重大弱點、讓程式在同一部電腦的記憶體中竊取資料。
 
 
 
+[[disable-unused-services]]
 == 停用未使用的服務
 
 對於所有StorageGRID 的支援節點、您應該停用或封鎖未使用服務的存取。例如、如果您不打算設定用戶端存取CIFS或NFS的稽核共用、請封鎖或停用這些服務的存取。
 
 
 
+[[protect-nodes-during-installation]]
 == 在安裝期間保護節點
 
 安裝節點時、請勿允許不受信任的使用者透過StorageGRID 網路存取節點。節點必須先加入網格、才會完全安全無虞。
 
 
 
+[[guidelines-for-admin-nodes]]
 == 管理節點準則
 
 管理節點提供系統組態、監控及記錄等管理服務。當您登入Grid Manager或租戶管理程式時、即連線至管理節點。
@@ -62,6 +67,7 @@ summary: 可在VMware虛擬機器、Linux主機上的容器引擎內或專屬硬
 
 
 
+[[guidelines-for-storage-nodes]]
 == 儲存節點準則
 
 儲存節點可管理及儲存物件資料和中繼資料。請遵循以下準則、將儲存節點固定在StorageGRID 您的一套系統上。
@@ -75,6 +81,7 @@ summary: 可在VMware虛擬機器、Linux主機上的容器引擎內或專屬硬
 
 
 
+[[guidelines-for-gateway-nodes]]
 == 閘道節點準則
 
 閘道節點提供選用的負載平衡介面、用戶端應用程式可用來連接StorageGRID 到VMware。請遵循下列準則、保護StorageGRID 您的整個作業系統中的任何閘道節點：
@@ -90,6 +97,7 @@ NOTE: CLB服務已過時。
 
 
 
+[[guidelines-for-hardware-appliance-nodes]]
 == 硬體應用裝置節點準則
 
 用作作業系統的各種硬體應用。StorageGRID StorageGRID有些應用裝置可做為儲存節點。其他應用裝置可做為管理節點或閘道節點。您可以將應用裝置節點與軟體型節點結合使用、或是部署設計完善的全應用裝置網格。

@@ -15,6 +15,7 @@ summary:
 
 
 
+[[access-policy-overview]]
 == 存取原則總覽
 
 支援的存取原則有兩種。StorageGRID
@@ -132,6 +133,7 @@ xref:../tenant/index.adoc[使用租戶帳戶]
 
 
 
+[[consistency-control-settings-for-policies]]
 == 原則的一致性控制設定
 
 根據預設、您對群組原則所做的任何更新最終都是一致的。一旦群組原則一致、因為原則快取、變更可能需要額外15分鐘才能生效。根據預設、您對庫位原則所做的任何更新、最終也會保持一致。
@@ -145,6 +147,7 @@ NOTE: 如果您將一致性層級設為*全部*、以強制新的儲存庫原則
 
 
 
+[[use-arn-in-policy-statements]]
 == 在原則聲明中使用ARN
 
 在原則聲明中、ARN用於主要和資源元素。
@@ -182,6 +185,7 @@ PPUT Bucket原則作業的HTTP要求本文必須以charset=utf-8進行編碼。
 
 
 
+[[specify-resources-in-a-policy]]
 == 在原則中指定資源
 
 在原則聲明中、您可以使用資源元素來指定允許或拒絕權限的儲存區或物件。
@@ -207,6 +211,7 @@ PPUT Bucket原則作業的HTTP要求本文必須以charset=utf-8進行編碼。
 
 
 
+[[specify-principals-in-a-policy]]
 == 在原則中指定主體
 
 使用主體元素來識別原則聲明允許/拒絕存取資源的使用者、群組或租戶帳戶。
@@ -264,6 +269,7 @@ arn:aws:iam::27233906934684427525:user-uuid/de305d54-75b4-431b-adb2-eb6b9e546013
 
 
 
+[[specify-permissions-in-a-policy]]
 == 在原則中指定權限
 
 在原則中、會使用Action元素來允許/拒絕資源的權限。您可以在原則中指定一組權限、以元素「Action」表示、或是以「NotAction」表示排除權限。每個元素都對應到特定的S3 REST API作業。
@@ -278,6 +284,7 @@ NOTE: 使用PUT覆寫現有值時、會執行刪除。
 
 
 
+[[permissions-that-apply-to-buckets]]
 === 套用至貯體的權限
 
 [cols="35,35,30"]
@@ -611,6 +618,7 @@ S3：PuttReplicationConfiguration
 |===
 
 
+[[permissions-that-apply-to-objects]]
 === 套用至物件的權限
 
 [cols="35,35,30"]
@@ -801,6 +809,7 @@ POST物件還原
 |===
 
 
+[[use-putoverwriteobject-permission]]
 == 使用PuttOverwriteObject權限
 
 S3：PuttOverwriteObject權限是套StorageGRID 用至建立或更新物件之作業的自訂功能。此權限的設定決定用戶端是否可以覆寫物件的資料、使用者定義的中繼資料或S3物件標記。
@@ -831,6 +840,7 @@ IMPORTANT: 如果目前的S3原則允許覆寫、而且PuttOverwriteObject權限
 
 
 
+[[specify-conditions-in-a-policy]]
 == 在原則中指定條件
 
 條件會定義原則的生效時間。條件包括運算子和金鑰值配對。
@@ -856,6 +866,7 @@ Condition: {
 ----
 
 
+[[supported-condition-operators]]
 === 支援的條件運算子
 
 條件運算子的分類如下：
@@ -984,6 +995,7 @@ null
 |===
 
 
+[[supported-condition-keys]]
 === 支援的條件金鑰
 
 |===
@@ -1069,6 +1081,7 @@ S3：物件鎖定剩餘保留天數
 |===
 
 
+[[specify-variables-in-a-policy]]
 == 在原則中指定變數
 
 您可以在原則中使用變數、在原則可用時填入原則資訊。您可以在「資源」元素中使用原則變數、也可以在「條件」元素中使用字串比較。
@@ -1144,6 +1157,7 @@ ${$}
 |===
 
 
+[[create-policies-requiring-special-handling]]
 == 建立需要特殊處理的原則
 
 有時候原則可能會授與安全性危險或危險的權限、以便繼續執行作業、例如封鎖帳戶的root使用者。在原則驗證期間、不像Amazon、StorageGRID 執行「支援S3 REST API」的限制較少、但在原則評估期間同樣嚴格。
@@ -1263,6 +1277,7 @@ ${$}
 |===
 
 
+[[write-once-read-many-worm-protection]]
 == 一次寫入多讀（WORM）保護
 
 您可以建立一次寫入多次讀取（WORM）儲存區、以保護資料、使用者定義的物件中繼資料、以及S3物件標記。您可以設定WORM儲存區、以允許建立新物件、並防止覆寫或刪除現有內容。請使用本文所述的其中一種方法。
@@ -1311,12 +1326,14 @@ xref:how-storagegrid-ilm-rules-manage-objects.adoc[如何利用ILM規則來管�
 
 
 
+[[s3-policy-examples]]
 == S3原則範例
 
 請利用本節的範例、針對StorageGRID 庫位和群組建構不需執行的存取原則。
 
 
 
+[[s3-bucket-policy-examples]]
 === S3儲存區政策範例
 
 儲存區原則會指定原則附加的儲存區存取權限。儲存區原則是使用S3 PuttBucketPolicy API進行設定。
@@ -1537,6 +1554,7 @@ xref:operations-on-buckets.adoc[在貯體上作業]
 
 
 
+[[s3-group-policy-examples]]
 === S3群組原則範例
 
 群組原則會指定原則所附加之群組的存取權限。政策中沒有「主要」元素、因為它是內含的。群組原則是使用租戶管理程式或API來設定。

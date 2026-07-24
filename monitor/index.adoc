@@ -15,6 +15,7 @@ summary: 請使用這些指示來監控StorageGRID 整個系統、並評估及�
 
 
 
+[[about-these-instructions]]
 == 關於這些指示
 
 以下說明說明如何使用Grid Manager來監控StorageGRID 整個系統。您將瞭StorageGRID 解應定期監控哪些資訊、如何管理警示和舊警報、如何使用SNMP進行監控、以及如何取得額外的資訊（包括指標和診斷）。

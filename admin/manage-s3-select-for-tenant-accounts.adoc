@@ -17,12 +17,14 @@ S3 Select提供一種有效率的方法來搜尋大量資料、而不需要部�
 
 
 
+[[what-is-s3-select]]
 == 什麼是S3 Select？
 
 S3 Select可讓S3用戶端使用SelectObjectContent要求來篩選及擷取物件所需的資料。S3 Select的支援功能包括S3 Select命令與功能的子集。StorageGRID
 
 
 
+[[considerations-and-requirements-for-using-s3-select]]
 == 使用S3 Select的考量與要求
 
 S3 Select查詢需要下列項目：StorageGRID

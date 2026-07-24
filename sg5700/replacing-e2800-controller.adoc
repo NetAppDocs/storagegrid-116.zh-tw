@@ -55,6 +55,7 @@ NOTE: 大多數應用裝置機型的儲存控制器不含主機介面卡（HIC�
 
 
 
+[[prepare]]
 == 準備
 
 這些圖顯示E2800A控制器和E2800B控制器。更換E2800系列控制器和EF570控制器的程序相同。
@@ -128,6 +129,7 @@ NOTE: 在更換元件之前和之後收集支援資料、可確保您可以傳�
 
 
 
+[[take-the-controller-offline]]
 == 使控制器離線
 
 .步驟
@@ -142,6 +144,7 @@ NOTE: 在更換元件之前和之後收集支援資料、可確保您可以傳�
 
 
 
+[[remove-the-controller]]
 == 移除控制器
 
 .步驟
@@ -167,6 +170,7 @@ IMPORTANT: 請務必用兩隻手支撐控制器的重量。
 
 
 
+[[move-battery-to-the-new-controller]]
 == 將電池移至新的控制器
 
 .步驟
@@ -256,6 +260,7 @@ image::../media/e2800_battery_flange_not_ok.gif[電池法蘭不正確]
 
 
 
+[[move-hic-to-new-controller-if-needed]]
 == 視需要將HIC移至新的控制器
 
 .步驟
@@ -355,6 +360,7 @@ image::../media/28_dwg_e2800_hic_faceplace_screws_maint-e2800.png[E2800A面板�
 
 
 
+[[replace-controller]]
 == 更換控制器
 
 .步驟

@@ -15,6 +15,7 @@ summary: 安裝StorageGRID 此產品之前、請先打開所有包裝箱的包�
 
 
 
+[[appliance-hardware]]
 == 應用裝置硬體
 
 * * SG100或SG1000*
@@ -29,6 +30,7 @@ image::../media/rail_kit.gif[軌道套件]
 
 
 
+[[power-cords]]
 == 電源線
 
 供應的產品包括下列電源線：StorageGRID

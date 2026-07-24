@@ -15,6 +15,7 @@ summary: 完成安裝之後、您必須執行一系列的整合與組態步驟�
 
 
 
+[[required-tasks]]
 == 必要的工作
 
 * 設定VMware vSphere Hypervisor以自動重新啟動。
@@ -47,6 +48,7 @@ NOTE: 如果任何歸檔節點將使用Tivoli Storage Manager作為外部歸檔�
 
 
 
+[[optional-tasks]]
 == 選用工作
 
 * 如果您想要接收來自（舊版）警示系統的通知、請設定警示的郵寄清單和電子郵件通知。

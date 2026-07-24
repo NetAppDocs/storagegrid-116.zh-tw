@@ -45,6 +45,7 @@ image::../media/back_brackets_table_size.gif[SG5760的背板和鎖緊螺帽]
 
 
 
+[[cables-and-connectors]]
 == 纜線與連接器
 
 產品隨附StorageGRID 下列纜線和接頭：

@@ -15,6 +15,7 @@ summary: 當S3用戶端更新物件的中繼資料時、就會產生稽核訊息
 
 
 
+[[s3-metadata-update-audit-messages]]
 == S3中繼資料更新稽核訊息
 
 |===

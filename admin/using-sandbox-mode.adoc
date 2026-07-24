@@ -55,6 +55,7 @@ Azure
 
 
 
+[[access-sandbox-mode]]
 == 存取沙箱模式
 
 . 選擇*組態*>*存取控制*>*單一登入*。
@@ -76,6 +77,7 @@ NOTE: 如果未顯示SSO狀態選項、請確認您已將身分識別供應商�
 
 
 
+[[enter-identity-provider-details]]
 == 輸入身分識別供應商詳細資料
 
 . 從下拉式清單中選取* SSO類型*。
@@ -208,6 +210,7 @@ image::../media/save_button_green_checkmark.gif[帶有綠色勾號的「儲存�
 ====
 
 
+[[configure-relying-party-trusts-enterprise-applications-or-sp-connections]]
 == 設定依賴方信任、企業應用程式或SP連線
 
 儲存組態時、會出現沙箱模式確認通知。本通知確認沙箱模式已啟用、並提供概觀指示。
@@ -267,6 +270,7 @@ image::../media/save_button_green_checkmark.gif[帶有綠色勾號的「儲存�
 ====
 
 
+[[test-sso-connections]]
 == 測試SSO連線
 
 在您為整個StorageGRID 作業系統強制使用單一登入之前、您應確認已為每個管理節點正確設定單一登入和單一登出。
@@ -345,6 +349,7 @@ image::../media/sso_sandbox_mode_sign_in_success.gif[SSO驗證和登出測試成
 ====
 
 
+[[enable-single-sign-on]]
 == 啟用單一登入
 
 當您確認可以使用SSO登入每個管理節點時、您可以為整個StorageGRID 支援系統啟用SSO。

@@ -15,6 +15,7 @@ summary: 如果您已設定並啟用單一登入（SSO）、且使用Azure做為
 
 
 
+[[sign-in-to-the-api-if-azure-single-sign-on-is-enabled]]
 == 如果啟用Azure單一登入、請登入API
 
 如果您使用Azure做為SSO身分識別供應商、則適用這些指示

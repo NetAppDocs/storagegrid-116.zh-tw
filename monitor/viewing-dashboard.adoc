@@ -17,12 +17,14 @@ image::../media/grid_manager_dashboard.png[Grid Manager儀表板]
 
 
 
+[[search-field]]
 == 搜尋欄位
 
 標頭列中的*搜尋*欄位可讓您快速瀏覽至Grid Manager中的特定頁面或側邊列項目。例如、您可以輸入* key*來存取「金鑰管理伺服器」頁面。
 
 
 
+[[health-panel]]
 == 健全狀況面板
 
 |===
@@ -51,6 +53,7 @@ image::../media/grid_manager_dashboard.png[Grid Manager儀表板]
 |===
 
 
+[[available-storage-panel]]
 == 「可用儲存設備」面板
 
 |===
@@ -76,6 +79,7 @@ image::../media/grid_manager_dashboard.png[Grid Manager儀表板]
 |===
 
 
+[[information-lifecycle-management-ilm-panel]]
 == 資訊生命週期管理（ILM）面板
 
 |===
@@ -102,6 +106,7 @@ image::../media/grid_manager_dashboard.png[Grid Manager儀表板]
 |===
 
 
+[[protocol-operations-panel]]
 == 傳輸協定作業面板
 
 |===

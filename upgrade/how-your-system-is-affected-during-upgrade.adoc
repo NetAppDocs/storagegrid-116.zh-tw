@@ -15,6 +15,7 @@ summary: 您必須瞭StorageGRID 解升級過程中、您的不知道哪些系�
 
 
 
+[[storagegrid-upgrades-are-non-disruptive]]
 == 不中斷升級StorageGRID
 
 整個升級過程中、這個系統可以從用戶端應用程式擷取及擷取資料。StorageGRID網格節點在升級期間一次關閉一個節點、因此並非所有網格節點都無法使用。
@@ -29,6 +30,7 @@ summary: 您必須瞭StorageGRID 解升級過程中、您的不知道哪些系�
 
 
 
+[[appliance-firmware-is-upgraded]]
 == 應用裝置韌體已升級
 
 在升級過程中：StorageGRID
@@ -40,6 +42,7 @@ summary: 您必須瞭StorageGRID 解升級過程中、您的不知道哪些系�
 
 
 
+[[alerts-might-be-triggered]]
 == 可能會觸發警示
 
 當服務啟動和停止時、StorageGRID 以及當作業系統以混合版本環境運作時、可能會觸發警示（部分網格節點執行較早版本、而其他節點則已升級至較新版本）。升級完成後、可能會觸發其他警示。
@@ -54,12 +57,14 @@ summary: 您必須瞭StorageGRID 解升級過程中、您的不知道哪些系�
 
 
 
+[[many-snmp-notifications-are-generated]]
 == 會產生許多SNMP通知
 
 請注意、當網格節點在升級期間停止並重新啟動時、可能會產生大量的SNMP通知。若要避免過多通知、請取消選取「*啟用SNMP代理程式通知*」核取方塊（*組態*>*監控*>* SNMP代理程式*）、以在開始升級之前停用SNMP通知。然後在升級完成後重新啟用通知。
 
 
 
+[[configuration-changes-are-restricted]]
 == 組態變更受到限制
 
 
@@ -83,6 +88,7 @@ NOTE: 受限組態變更清單可從版本變更為版本。升級至其他Stora
 
 
 
+[[you-cannot-view-bucket-details-or-manage-buckets-from-the-tenant-manager]]
 == 您無法從租戶管理程式檢視庫位詳細資料或管理庫位
 
 在升級StorageGRID 至支援更新至支援更新的過程中（亦即、當系統以混合版本的環境運作時）、您無法使用租戶管理程式來檢視庫位詳細資料或管理庫位。下列其中一個錯誤會出現在Tenant Manager的「桶」頁面上：

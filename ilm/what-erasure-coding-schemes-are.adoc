@@ -44,6 +44,7 @@ NOTE: 如果儲存資源池包含兩個站台、則無法設定「刪除編碼�
 
 
 
+[[erasure-coding-schemes-for-storage-pools-containing-three-or-more-sites]]
 == 包含三個以上站台之儲存資源池的銷毀編碼配置
 
 下表說明StorageGRID 目前由支援的銷毀編碼方案、適用於包含三個以上站台的儲存資源池。所有這些方案都提供站台損失保護。一個站台可能會遺失、而且物件仍可存取。
@@ -207,6 +208,7 @@ NOTE: 如果您不確定要使用哪種方案、請選取4+2或6+3、或聯絡�
 
 
 
+[[erasure-coding-schemes-for-one-site-storage-pools]]
 == 單一站台儲存資源池的銷毀編碼配置
 
 只要站台有足夠的儲存節點、單一站台儲存池即可支援針對三個以上站台所定義的所有銷毀編碼方案。

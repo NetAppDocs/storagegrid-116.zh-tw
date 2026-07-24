@@ -19,6 +19,7 @@ summary: 如果您使用的是用戶端網路、StorageGRID 只有在明確設�
 
 
 
+[[example-1-gateway-node-only-accepts-https-s3-requests]]
 == 範例1：閘道節點僅接受HTTPS S3要求
 
 假設您希望閘道節點拒絕用戶端網路上除HTTPS S3要求以外的所有傳入流量。您可以執行下列一般步驟：
@@ -31,6 +32,7 @@ summary: 如果您使用的是用戶端網路、StorageGRID 只有在明確設�
 
 
 
+[[example-2-storage-node-sends-s3-platform-services-requests]]
 == 範例2：儲存節點傳送S3平台服務要求
 
 假設您想要從儲存節點啟用傳出S3平台服務流量、但想要防止任何傳入連線到用戶端網路上的該儲存節點。您可以執行以下一般步驟：

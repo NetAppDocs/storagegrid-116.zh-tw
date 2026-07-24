@@ -17,6 +17,7 @@ summary: 利用此功能、您的整套系統可將健全狀況和狀態訊息�
 
 
 
+[[information-included-in-autosupport-messages]]
 == 資訊包含在AutoSupport 消息中
 
 包含下列資訊的資訊：AutoSupport
@@ -43,6 +44,7 @@ image::../media/autosupport_disabled_message.png[無法使用的訊息AutoSuppor
 
 
 
+[[what-is-digital-advisor]]
 == 什麼是數位顧問？
 
 數位顧問是雲端型的，運用 NetApp 安裝基礎的預測分析和社群智慧。其持續風險評估、預測性警示、說明性指引及自動化行動、可協助您在問題發生之前預防問題發生、進而改善系統健全狀況並提高系統可用度。
@@ -53,6 +55,7 @@ https://docs.netapp.com/us-en/active-iq/index.html["數位顧問文件"^]
 
 
 
+[[protocols-for-sending-autosupport-messages]]
 == 傳送AutoSupport 資訊的通訊協定
 
 您可以從三種傳輸協定中選擇一種來傳送AutoSupport 功能性訊息：
@@ -68,6 +71,7 @@ https://docs.netapp.com/us-en/active-iq/index.html["數位顧問文件"^]
 
 
 
+[[autosupport-options]]
 == 選項AutoSupport
 
 您可以使用下列選項的任意組合、將AutoSupport 資訊傳送給技術支援人員：

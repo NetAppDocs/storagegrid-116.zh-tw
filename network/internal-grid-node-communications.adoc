@@ -20,6 +20,7 @@ NOTE: NetApp建議您在網格節點之間啟用網際網路控制訊息傳輸�
 
 
 
+[[guidelines-for-linux-based-nodes]]
 == Linux型節點準則
 
 如果企業網路原則限制存取任何這些連接埠、您可以使用部署組態參數、在部署時重新對應連接埠。如需連接埠重新對應和部署組態參數的詳細資訊、請參閱：
@@ -30,6 +31,7 @@ NOTE: NetApp建議您在網格節點之間啟用網際網路控制訊息傳輸�
 
 
 
+[[guidelines-for-vmware-based-nodes]]
 == VMware型節點的準則
 
 只有在需要定義VMware網路外部的防火牆限制時、才需設定下列連接埠。
@@ -38,6 +40,7 @@ NOTE: NetApp建議您在網格節點之間啟用網際網路控制訊息傳輸�
 
 
 
+[[guidelines-for-appliance-nodes]]
 == 應用裝置節點準則
 
 如果企業網路原則限制存取任何這些連接埠、您可以使用StorageGRID 《不可靠設備安裝程式》重新對應連接埠。如需應用裝置的連接埠重新對應的詳細資訊、請參閱：
@@ -50,6 +53,7 @@ NOTE: NetApp建議您在網格節點之間啟用網際網路控制訊息傳輸�
 
 
 
+[[storagegrid-internal-ports]]
 == 內部連接埠StorageGRID
 
 |===

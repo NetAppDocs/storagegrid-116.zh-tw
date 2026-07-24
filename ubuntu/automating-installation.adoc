@@ -25,6 +25,7 @@ summary: 您可以自動化StorageGRID 安裝支援服務和網格節點的組�
 
 
 
+[[automate-the-installation-and-configuration-of-the-storagegrid-host-service]]
 == 自動化StorageGRID 安裝及設定整套的支援服務
 
 您可以StorageGRID 使用Ansible、Puppet、Chef、Fabric或SaltStack等標準協調架構來自動化安裝支援服務。
@@ -46,12 +47,14 @@ summary: 您可以自動化StorageGRID 安裝支援服務和網格節點的組�
 
 
 
+[[example-ansible-role-and-playbook]]
 === Ansible角色與方針範例
 
 範例Ansible角色與方針隨附於/Extras資料夾中的安裝歸檔。Ansible教戰手冊說明「StorageGRID 不二」角色如何為主機做好準備、並將StorageGRID 之安裝在目標伺服器上。您可以視需要自訂角色或方針。
 
 
 
+[[automate-the-configuration-of-storagegrid]]
 == 自動化StorageGRID 功能組態
 
 部署完網格節點之後、您可以自動化StorageGRID 設定該系統。

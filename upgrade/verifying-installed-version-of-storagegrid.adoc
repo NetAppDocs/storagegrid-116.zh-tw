@@ -44,6 +44,7 @@ IMPORTANT: NetApp強烈建議您在StorageGRID 升級至下一個版本之前、
 
 
 
+[[example-upgrade-to-storagegrid-11-5-from-version-11-3-0-8]]
 == 範例：從StorageGRID 11.3.0.8版升級至5.2版
 
 以下範例顯示StorageGRID 從版本11.3.0.8升級至版本11.5的步驟、以準備StorageGRID 進行版本11.611.6.升級。

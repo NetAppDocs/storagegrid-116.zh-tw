@@ -15,6 +15,7 @@ summary: 此系統支援OpenStack Swift API的大部分作業。StorageGRID在�
 
 
 
+[[operations-supported-in-storagegrid]]
 == 支援的作業StorageGRID
 
 支援下列Swift API作業：
@@ -26,6 +27,7 @@ summary: 此系統支援OpenStack Swift API的大部分作業。StorageGRID在�
 
 
 
+[[common-response-headers-for-all-operations]]
 == 所有作業的通用回應標頭
 
 根據OpenStack Swift Object Storage API v1的定義、此系統可實作所有支援作業的通用標頭。StorageGRID

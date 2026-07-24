@@ -19,6 +19,7 @@ Grid Manager是瀏覽器型的圖形介面、可讓您設定、管理StorageGRID
 
 
 
+[[grid-manager-dashboard]]
 == Grid Manager儀表板
 
 第一次登入Grid Manager時、您可以使用儀表板來一目瞭然地監控系統活動。
@@ -35,12 +36,14 @@ image::../media/grid_manager_dashboard.png[Grid Manager中的儀表板]
 
 
 
+[[search-field]]
 == 搜尋欄位
 
 標頭列中的*搜尋*欄位可讓您快速瀏覽至Grid Manager中的特定頁面。例如、您可以輸入* km *來存取金鑰管理伺服器（KMS）頁面。您可以使用*搜尋*來尋找Grid Manager側邊列和組態、維護及支援功能表上的項目。
 
 
 
+[[alerts-menu]]
 == 警示功能表
 
 警示功能表提供易於使用的介面、可偵測、評估及解決StorageGRID 可能在執行過程中發生的問題。
@@ -63,6 +66,7 @@ image::../media/alerts_menu.png[警示功能表]
 
 
 
+[[nodes-page]]
 == 節點頁面
 
 「節點」頁面會顯示整個網格、網格中的每個站台、以及站台中的每個節點的相關資訊。
@@ -78,6 +82,7 @@ image::../media/nodes_menu.png[節點頁面主頁]
 
 
 
+[[tenants-page]]
 == 租戶頁面
 
 「租戶」頁面可讓您建立及監控StorageGRID 適用於您的作業系統的儲存租戶帳戶。您必須建立至少一個租戶帳戶、以指定誰可以儲存及擷取物件、以及哪些功能可供他們使用。
@@ -94,6 +99,7 @@ image::../media/tenants_menu_and_page.png[租戶功能表和頁面]
 
 
 
+[[ilm-menu]]
 == ILM功能表
 
 ILM功能表可讓您設定資訊生命週期管理（ILM）規則和原則、以管理資料的持久性和可用度。您也可以輸入物件識別碼、以檢視該物件的中繼資料。
@@ -107,6 +113,7 @@ image::../media/ilm_menu_and_page.png[ILM功能表與頁面]
 
 
 
+[[configuration-menu]]
 == 組態功能表
 
 「組態」功能表可讓您指定網路設定、安全性設定、系統設定、監控選項及存取控制選項。
@@ -125,6 +132,7 @@ image::../media/configuration_menu.png[組態功能表]
 
 
 
+[[maintenance-menu]]
 == 維護功能表
 
 「維護」功能表可讓您執行維護工作、系統維護和網路維護。
@@ -133,6 +141,7 @@ image::../media/maintenance_menu.png[維護功能表和頁面]
 
 
 
+[[tasks]]
 === 工作
 
 維護工作包括：
@@ -145,6 +154,7 @@ image::../media/maintenance_menu.png[維護功能表和頁面]
 
 
 
+[[system]]
 === 系統
 
 您可以執行的系統維護工作包括：
@@ -156,6 +166,7 @@ image::../media/maintenance_menu.png[維護功能表和頁面]
 
 
 
+[[network]]
 === 網路
 
 您可以執行的網路維護工作包括：
@@ -178,6 +189,7 @@ image::../media/maintenance_menu.png[維護功能表和頁面]
 
 
 
+[[support-menu]]
 == 支援功能表
 
 「支援」功能表提供的選項可協助技術支援人員分析及疑難排解您的系統。「Support（支援）」功能表有兩個部分：「Tools and警示（舊版）」。
@@ -186,6 +198,7 @@ image::../media/support_menu.png[支援功能表]
 
 
 
+[[tools]]
 === 工具
 
 從「支援」功能表的「工具」區段、您可以：
@@ -203,6 +216,7 @@ IMPORTANT: * Metrics *選項提供的工具、是專供技術支援使用。這�
 
 
 
+[[alarms-legacy]]
 === 警示（舊版）
 
 您可以從「支援」功能表的「警示（舊版）」區段中、檢閱目前、歷史和全域警示、設定自訂事件、以及設定舊版警示和AutoSupport 更新的電子郵件通知。
@@ -220,6 +234,7 @@ NOTE: 雖然舊版警示系統仍持續受到支援、但警示系統可提供�
 
 
 
+[[help-menu]]
 == 說明功能表
 
 「Help（說明）」選項可讓您存取StorageGRID 目前版本的「支援中心」及API文件。您也可以判斷StorageGRID 目前安裝的是哪個版本的更新版本。

@@ -21,6 +21,7 @@ summary: 系統強化是消除StorageGRID 儘可能多的安全風險的程序�
 
 
 
+[[general-considerations-for-hardening-storagegrid-systems]]
 == 強化StorageGRID 功能的一般考量
 
 強化StorageGRID 功能時、您必須考量下列事項：

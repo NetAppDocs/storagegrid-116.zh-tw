@@ -43,6 +43,8 @@ NOTE: 如果此程序中可用的組態選項不夠靈活、無法滿足您的�
 
 
 
+[[access-the-syslog-server-configuration-wizard]]
+[[Access-the-syslog-server-configuration-wizard]]
 == 存取syslog伺服器組態精靈
 
 .步驟
@@ -55,6 +57,7 @@ image::../media/audit-messages-main-page.png[稽核訊息主頁]
 
 
 
+[[enter-syslog-info]]
 === 輸入syslog資訊
 
 image::../media/enter-syslog-info.png[輸入syslog資訊]
@@ -105,6 +108,7 @@ NOTE: 如果您使用用戶端憑證、也必須使用用戶端私密金鑰。�
 
 
 
+[[manage-syslog-content]]
 === 管理系統記錄內容
 
 image::../media/manage-syslog-content.png[管理系統記錄內容]
@@ -460,6 +464,7 @@ local6.
 
 
 
+[[send-test-messages]]
 === 傳送測試訊息
 
 image::../media/send-test-messages.png[傳送測試訊息]
@@ -500,6 +505,7 @@ NOTE: 除非您選取包含外部syslog伺服器的目的地、否則您的「�
 
 
 
+[[select-audit-information-destinations]]
 == 選取稽核資訊目的地
 
 您可以指定安全性事件記錄、應用程式記錄和稽核訊息記錄的傳送位置。

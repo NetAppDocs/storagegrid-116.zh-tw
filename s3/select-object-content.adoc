@@ -25,6 +25,7 @@ summary: 您可以使用S3 SelectObjectContent要求、根據簡單的SQL陳述�
 
 
 
+[[request-syntax-example]]
 == 要求語法範例
 
 [source, asciidoc]
@@ -68,6 +69,7 @@ x-amz-expected-bucket-owner: ExpectedBucketOwner
 ----
 
 
+[[sql-query-example]]
 == SQL查詢範例
 
 此查詢會取得州名、2010年人口、2015年估計人口、以及美國統計資料的變更百分比。檔案中非狀態的記錄會被忽略。
@@ -95,6 +97,7 @@ POPESTIMATE2020
 ----
 
 
+[[aws-cli-usage-example]]
 == AWs-CLI使用範例
 
 [listing]

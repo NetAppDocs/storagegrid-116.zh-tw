@@ -15,6 +15,7 @@ summary: 升級StorageGRID 至新版的更新版的更新版的更新版的Grid 
 
 
 
+[[web-interface-does-not-respond-as-expected]]
 == Web介面未如預期回應
 
 Grid Manager或Tenant Manager在StorageGRID 升級完更新版的更新軟體後、可能無法如預期般回應。

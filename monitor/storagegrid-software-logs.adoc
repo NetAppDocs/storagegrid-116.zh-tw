@@ -18,6 +18,7 @@ NOTE: 如果您想要將記錄傳送到外部syslog伺服器、或是變更稽�
 
 
 
+[[general-storagegrid-logs]]
 == 一般StorageGRID 資訊記錄
 
 [cols="3a,3a,1a"]
@@ -56,6 +57,7 @@ NOTE: 檔案「/var/local/cal/kexec_cmd」通常存在於應用裝置節點上�
 |===
 
 
+[[server-manager-logs]]
 == 伺服器管理員記錄
 
 [cols="3a,3a,1a"]
@@ -91,6 +93,7 @@ NOTE: 檔案「/var/local/cal/kexec_cmd」通常存在於應用裝置節點上�
 |===
 
 
+[[logs-for-storagegrid-services]]
 == 記錄以供StorageGRID 支援服務之用
 
 [cols="3a,3a,2a"]
@@ -418,6 +421,7 @@ CLB服務的錯誤資訊。
 |===
 
 
+[[nms-logs]]
 == NMS記錄
 
 [cols="3a,3a,1a"]

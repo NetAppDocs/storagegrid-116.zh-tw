@@ -15,6 +15,7 @@ summary: 用戶端應用程式可以使用Swift REST API呼叫來連線至儲存
 
 
 
+[[swift-object-management]]
 == Swift物件管理
 
 在StorageGRID Swift物件被擷取到整個物件系統之後、這些物件會由系統作用中ILM原則中的資訊生命週期管理（ILM）規則來管理。ILM規則和原則決定StorageGRID 了如何建立及散佈物件資料複本、以及如何長期管理這些複本。例如、ILM規則可能會套用至特定Swift容器中的物件、並可能指定將多個物件複本儲存至數個資料中心、保留一段時間。
@@ -23,12 +24,14 @@ summary: 用戶端應用程式可以使用Swift REST API呼叫來連線至儲存
 
 
 
+[[conflicting-client-requests]]
 == 衝突的用戶端要求
 
 衝突的用戶端要求（例如兩個寫入同一個金鑰的用戶端）會以「最新致勝」的方式解決。「最新致勝」評估的時間取決於StorageGRID VMware系統何時完成指定的要求、而非Swift用戶端何時開始作業。
 
 
 
+[[consistency-guarantees-and-controls]]
 == 一致性保證與控管
 
 根據預設、StorageGRID 針對新建立的物件、提供寫入後讀取一致性、並在物件更新和執行前置作業時提供最終一致性。任何「Get」追蹤成功完成的「PUT」、都能讀取新寫入的資料。覆寫現有物件、更新中繼資料及刪除的動作最終一致。覆寫通常需要幾秒鐘或幾分鐘才能傳播、但可能需要15天的時間。

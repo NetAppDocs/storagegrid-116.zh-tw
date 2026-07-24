@@ -18,6 +18,7 @@
 
 
 
+[[about-the-repair-data-script]]
 == 關於 `repair-data` 指令碼
 
 若要還原物件資料、請執行「重新配對資料」指令碼。此指令碼會開始還原物件資料的程序、並與ILM掃描搭配使用、以確保符合ILM規則。

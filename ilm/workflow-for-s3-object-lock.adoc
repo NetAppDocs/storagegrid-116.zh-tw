@@ -19,6 +19,7 @@ image::../media/compliance_workflow.png[S3物件鎖定工作流程]
 
 
 
+[[grid-admin-tasks]]
 == 網格管理工作
 
 如工作流程圖所示、網格管理員必須先執行兩項高層級工作、S3租戶使用者才能使用S3物件鎖定：
@@ -29,6 +30,7 @@ image::../media/compliance_workflow.png[S3物件鎖定工作流程]
 
 
 
+[[tenant-user-tasks]]
 == 租戶使用者工作
 
 啟用全域S3物件鎖定設定之後、租戶即可執行下列工作：
@@ -42,5 +44,5 @@ image::../media/compliance_workflow.png[S3物件鎖定工作流程]
 .相關資訊
 * xref:../tenant/index.adoc[使用租戶帳戶]
 * xref:../s3/index.adoc[使用S3]
-* xref:../s3/operations-on-buckets.adoc#using-s3-object-lock-default-bucket-retention[使用S3物件鎖定預設儲存區保留]
+* xref:../s3/use-s3-object-lock-default-bucket-retention.adoc[使用S3物件鎖定預設儲存區保留]
 

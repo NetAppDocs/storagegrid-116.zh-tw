@@ -28,6 +28,7 @@ https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/Sto
 
 
 
+[[request-example]]
 == 申請範例
 
 此範例要求會修改名為「mybucket」之儲存區的法規遵循設定。在此範例中、「mybucket」中的物件現在將保留兩年（1、051、200分鐘）、而非一年、從物件進入網格開始。此庫位沒有合法持有。每個物件將在兩年後自動刪除。
@@ -78,6 +79,7 @@ LegalHold
 |===
 
 
+[[consistency-level-for-compliance-settings]]
 == 法規遵循設定的一致性層級
 
 當您更新S3儲存區的法規遵循設定、並提出「置放儲存區法規遵循」要求時StorageGRID 、即可嘗試更新整個網格的儲存區中繼資料。根據預設、StorageGRID 支援使用*強式全域*一致性層級、以保證所有資料中心站台及包含儲存庫中繼資料的所有儲存節點、在變更的法規遵循設定中、具有寫入後讀取一致性。
@@ -100,6 +102,7 @@ Consistency-Control: strong-site
 ----
 
 
+[[error-responses]]
 == 錯誤回應
 
 * 如果儲存區的建立不符合法規要求、回應的HTTP狀態代碼為「找不到404」。

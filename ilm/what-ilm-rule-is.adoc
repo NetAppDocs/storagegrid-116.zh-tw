@@ -28,6 +28,7 @@ ILM規則定義：
 
 
 
+[[elements-of-an-ilm-rule]]
 == ILM規則的元素
 
 ILM規則有三個元素：
@@ -39,6 +40,7 @@ ILM規則有三個元素：
 
 
 
+[[what-ilm-rule-filtering-is]]
 == 什麼是ILM規則篩選
 
 建立ILM規則時、您可以指定篩選條件、以識別規則所套用的物件。
@@ -68,6 +70,7 @@ image::../media/ilm_create_ilm_rule_wizard_1.png[ILM精靈：步驟1（共3步�
 
 
 
+[[what-ilm-rule-placement-instructions-are]]
 == 什麼是ILM規則放置指示
 
 放置指示可決定物件資料的儲存位置、時間及方式。ILM規則可以包含一或多個放置指示。每項放置指示均適用於單一時間段。
@@ -116,6 +119,7 @@ image:../media/icon_number_2.png["圖示編號2."]
 
 
 
+[[example-ilm-rule]]
 == ILM規則範例
 
 本範例ILM規則適用於屬於租戶A的物件它會為這些物件建立兩個複寫複本、並將每個複本儲存在不同的站台。這兩個複本都保留「Forever」、這表示StorageGRID 不會自動刪除。相反地StorageGRID 、在用戶端刪除要求刪除這些物件之前、或是在庫位生命週期到期之前、將會保留這些物件。

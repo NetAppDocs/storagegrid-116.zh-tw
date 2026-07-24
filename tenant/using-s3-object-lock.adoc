@@ -15,6 +15,7 @@ summary: 如果物件必須符合保留法規要求、您可以使用StorageGRID
 
 
 
+[[what-is-s3-object-lock]]
 == 什麼是S3物件鎖定？
 
 「物件鎖定」功能是物件保護解決方案、StorageGRID 相當於Amazon Simple Storage Service（Amazon S3）中的S3物件鎖定。
@@ -31,12 +32,13 @@ image::../media/s3_object_lock_architecture.png[S3物件鎖定架構]
 * *合法持有*：將合法持有套用至物件版本、會立即鎖定該物件。例如、您可能需要對與調查或法律爭議相關的物件保留法律。合法持有沒有到期日、但在明確移除之前、仍會保留到位。合法持有不受保留至日期的限制。
 
 
-您也可以 xref:../s3/operations-on-buckets.adoc#using-s3-object-lock-default-bucket-retention[指定儲存貯體的預設保留模式和預設保留期間]。這些物件會套用至新增至儲存區的每個物件、而這些物件並未指定其本身的保留設定。
+您還可以xref:../s3/use-s3-object-lock-default-bucket-retention.adoc[指定儲存貯體的預設保留模式和預設保留期間]。這些設定將套用於新增至儲存桶中但未指定自身保留設定的每個物件。
 
 如需這些設定的詳細資訊、請參閱 xref:../s3/using-s3-object-lock.adoc[使用S3物件鎖定]。
 
 
 
+[[manage-legacy-compliant-buckets]]
 == 管理符合舊規範的儲存庫
 
 S3物件鎖定功能取代先前StorageGRID 版本的Compliance功能。如果您使用StorageGRID 舊版的《不規則》建立了相容的儲存桶、您可以繼續管理這些儲存桶的設定、但是您無法再建立新的相容儲存桶。如需相關指示、請參閱NetApp知識庫文章。
@@ -45,6 +47,7 @@ https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/Sto
 
 
 
+[[s3-object-lock-workflow]]
 == S3物件鎖定工作流程
 
 工作流程圖顯示StorageGRID 使用S3物件鎖定功能的高階步驟。
@@ -57,12 +60,14 @@ image::../media/s3_object_lock_workflow_tenant.png[S3物件鎖定工作流程浮
 
 
 
+[[requirements-for-s3-object-lock]]
 == S3物件鎖定需求
 
 在啟用儲存區的S3物件鎖定之前、請先檢閱S3物件鎖定儲存區和物件的需求、以及啟用S3物件鎖定之儲存區中物件的生命週期。
 
 
 
+[[requirements-for-buckets-with-s3-object-lock-enabled]]
 === 啟用S3物件鎖定的儲存區需求
 
 * 如果StorageGRID 已針對整個S3物件鎖定設定啟用for the S廳 系統、您可以使用租戶管理程式、租戶管理API或S3 REST API來建立啟用S3物件鎖定的儲存區。
@@ -82,6 +87,7 @@ image::../media/compliant_bucket.png[符合範例的工作時段]
 
 
 
+[[requirements-for-objects-in-buckets-with-s3-object-lock-enabled]]
 === 啟用S3物件鎖定之儲存區中的物件需求
 
 * 為了保護物件版本、S3用戶端應用程式必須設定儲存區預設保留、或在每個上傳要求中指定保留設定。
@@ -92,6 +98,7 @@ image::../media/compliant_bucket.png[符合範例的工作時段]
 
 
 
+[[lifecycle-of-objects-in-buckets-with-s3-object-lock-enabled]]
 === 啟用S3物件鎖定的儲存區物件生命週期
 
 儲存在已啟用S3物件鎖定的儲存區中的每個物件都會經過三個階段：

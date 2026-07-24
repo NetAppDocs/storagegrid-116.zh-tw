@@ -18,6 +18,7 @@ summary: 安裝及設定StorageGRID 此產品時、您必須做出決策、並�
 
 
 
+[[information-needed-to-connect-to-santricity-system-manager-on-storage-controllers]]
 == 連線SANtricity 至儲存控制器上的「NetApp系統管理程式」所需的資訊
 
 您必須將應用裝置中的兩個儲存控制器（E2800系列控制器或EF570控制器）連接至SANtricity 您將用於「Euse System Manager」的管理網路。控制器位於每個應用裝置中、如下所示：
@@ -121,6 +122,7 @@ IP位址格式
 |===
 
 
+[[information-needed-to-connect-sg6000-cn-controller-to-admin-network]]
 == 將SG6000-CN-控制器連接至管理網路所需的資訊
 
 管理員網路for支援功能是選用的網路、可用於系統管理和維護。StorageGRID應用裝置會使用SG6000-CN-控制器上的下列1-GbE管理連接埠來連線至管理網路。
@@ -202,6 +204,7 @@ DHCP指派給管理網路連接埠的IP位址（如果在開機後可用）
 |===
 
 
+[[information-needed-to-connect-and-configure-1025-gbe-ports-on-sg6000-cn-controller]]
 == 連接及設定SG6000-CN-控制器上的10/25-GbE連接埠所需的資訊
 
 SG6000-CN-控制器上的四個10/25-GbE連接埠、可連接StorageGRID 至「Se Grid Network」和選用的「Client Network」。
@@ -258,6 +261,7 @@ SG6000-CN-控制器上的四個10/25-GbE連接埠、可連接StorageGRID 至「S
 |===
 
 
+[[information-needed-to-connect-sg6000-cn-controller-to-grid-network]]
 == 將SG6000-CN-控制器連接至Grid Network所需的資訊
 
 Grid Network for StorageGRID 效能不只是一項必要的網路、可用於所有內部StorageGRID 的資訊流量。應用裝置會使用SG6000-CN-控制器上的10/25-GbE連接埠、連接至Grid Network。
@@ -322,6 +326,7 @@ VLAN標記（如果已啟用VLAN標記）
 |===
 
 
+[[information-needed-to-connect-sg6000-cn-controller-to-client-network]]
 == 將SG6000-CN-控制器連接至用戶端網路所需的資訊
 
 Client Network for StorageGRID 推銷是選用的網路、通常用於提供用戶端傳輸協定存取網格。應用裝置會使用SG6000-CN-控制器上的10/25-GbE連接埠來連線至用戶端網路。
@@ -391,6 +396,7 @@ VLAN標記（如果啟用VLAN標記）
 |===
 
 
+[[information-needed-to-connect-sg6000-cn-controller-to-bmc-management-network]]
 == 將SG6000-CN-控制器連接至BMC管理網路所需的資訊
 
 您可以使用下列1-GbE管理連接埠來存取SG6000-CN-控制器上的BMC介面。此連接埠支援使用智慧型平台管理介面（IPMI）標準、透過乙太網路遠端管理控制器硬體。

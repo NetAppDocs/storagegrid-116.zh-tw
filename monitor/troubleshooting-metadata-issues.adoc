@@ -16,6 +16,7 @@ summary: 您可以執行數項工作、以協助判斷中繼資料問題的來�
 
 
 
+[[troubleshoot-the-low-metadata-storage-alert]]
 == 疑難排解低中繼資料儲存警示
 
 如果觸發*低中繼資料儲存*警示、您必須新增儲存節點。
@@ -73,6 +74,7 @@ NOTE: 由於整個網格的中繼資料容量受限於最小網站的中繼資�
 
 
 
+[[troubleshoot-the-services-status-cassandra-svst-alarm]]
 == 疑難排解服務：狀態- Cassandra（SVST）警示
 
 服務：狀態- Cassandra（SVST）警示表示您可能需要重建儲存節點的Cassandra資料庫。Cassandra是StorageGRID 做為中繼資料儲存區的用途。
@@ -182,6 +184,7 @@ Cassandra可以有多個項目；您必須找出最近的項目。
 
 
 
+[[troubleshoot-cassandra-out-of-memory-errors-smtt-alarm]]
 == 疑難排解Cassandra記憶體不足錯誤（SMtT警示）
 
 當Cassandra資料庫發生記憶體不足錯誤時、會觸發「事件總數」（SMT）警示。如果發生此錯誤、請聯絡技術支援部門以解決此問題。

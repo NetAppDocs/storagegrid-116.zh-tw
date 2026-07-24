@@ -15,6 +15,7 @@ Grid Manager提供多種選項、可協助您在StorageGRID 遇到問題時、�
 
 
 
+[[configure-autosupport]]
 == 設定AutoSupport 功能
 
 利用此功能、您的整套系統可將健全狀況和狀態訊息傳送給技術支援部門。AutoSupport StorageGRID使用NetApp可大幅加速問題的判斷與解決。AutoSupport技術支援也能監控系統的儲存需求、協助您判斷是否需要新增節點或站台。或者、您可以設定AutoSupport 要傳送至另一個目的地的消息。
@@ -25,6 +26,7 @@ image::../media/autosupport_accessing_settings.png[Grid Manager中的AutoSupport
 
 
 
+[[information-included-in-autosupport-messages]]
 === 資訊包含在AutoSupport 消息中
 
 包含下列資訊的資訊：AutoSupport
@@ -51,6 +53,7 @@ image::../media/autosupport_disabled_message.png[無法使用的訊息AutoSuppor
 
 
 
+[[use-digital-advisor]]
 === 使用Digital Advisor
 
 Active IQ 數位顧問採用雲端技術，運用 NetApp 安裝基礎的預測分析和社群智慧。其持續風險評估、預測性警示、說明性指引及自動化行動、可協助您在問題發生之前預防問題發生、進而改善系統健全狀況並提高系統可用度。
@@ -61,6 +64,7 @@ https://docs.netapp.com/us-en/active-iq/index.html["數位顧問文件"^]
 
 
 
+[[collect-storagegrid-logs]]
 == 收集StorageGRID 資料
 
 為了協助疑難排解問題、您可能需要收集記錄檔並將其轉送給技術支援部門。
@@ -73,12 +77,14 @@ image::../media/support_logs_select_nodes.png[記錄集合UI的快照]
 
 
 
+[[use-metrics-and-run-diagnostics]]
 == 使用指標並執行診斷
 
 疑難排解問題時、您可以與技術支援部門合作、檢閱StorageGRID 有關您的整套系統的詳細指標和圖表。您也可以執行預先建構的診斷查詢、主動評估StorageGRID 您的故障診斷系統的關鍵值。
 
 
 
+[[metrics-page]]
 === 「度量」頁面
 
 「指標」頁面可讓您存取Prometheus和Grafana使用者介面。Prometheus是開放原始碼軟體、可用來收集指標。Grafana是開放原始碼軟體、可用於指標視覺化。
@@ -101,6 +107,7 @@ image::../media/metrics_page_grafana.png[度量頁面Grafana]
 
 
 
+[[diagnostics-page]]
 === 診斷頁
 
 「診斷」頁面會針對網格的目前狀態、執行一組預先建構的診斷檢查。在範例中、所有診斷都會顯示正常狀態。

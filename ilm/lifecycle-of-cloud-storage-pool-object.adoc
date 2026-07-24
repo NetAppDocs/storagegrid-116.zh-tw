@@ -19,6 +19,7 @@ summary: 在實作雲端儲存資源池之前、請先檢閱儲存在每種類�
 
 
 
+[[s3-lifecycle-of-a-cloud-storage-pool-object]]
 == S3：Cloud Storage Pool物件的生命週期
 
 圖中顯示儲存在S3 Cloud Storage Pool中物件的生命週期階段。
@@ -71,6 +72,7 @@ NOTE: 如果StorageGRID 物件的一個或多個複本也存在於位於整個�
 
 
 
+[[azure-lifecycle-of-a-cloud-storage-pool-object]]
 == Azure：Cloud Storage Pool物件的生命週期
 
 圖中顯示儲存在Azure Cloud Storage Pool中物件的生命週期階段。

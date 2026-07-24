@@ -15,6 +15,7 @@ summary: 根據機型而定、每種機型StorageGRID 的《SESSG6000應用》�
 
 
 
+[[all-appliances-sg6000-cn-compute-controller]]
 == 所有應用裝置：SG6000-CN.運算控制器
 
 * 提供應用裝置的運算資源。
@@ -110,6 +111,7 @@ BMC管理連接埠
 |===
 
 
+[[sg6060-and-sg6060x-e2800-series-storage-controllers]]
 == SG6060與SG6060X：E2800系列儲存控制器
 
 * 兩個控制器可支援容錯移轉。
@@ -278,6 +280,7 @@ image::../media/e2800B_controller_with_callouts.gif[E2800B控制器上的連接�
 |===
 
 
+[[sgf6024-ef570-storage-controllers]]
 == SGF6024：EF570儲存控制器
 
 * 兩個控制器可支援容錯移轉。
@@ -344,6 +347,7 @@ image::../media/ef570_rear_connectors.gif[EF570後置連接器]
 |===
 
 
+[[sg6060-and-sg6060x-inputoutput-modules-for-optional-expansion-shelves]]
 == SG6060與SG6060X：可選擴充櫃的輸入/輸出模組
 
 擴充櫃包含兩個輸入/輸出模組（IOM）、可連接至儲存控制器或其他擴充櫃。

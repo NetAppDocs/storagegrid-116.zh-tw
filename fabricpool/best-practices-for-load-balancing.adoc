@@ -15,6 +15,7 @@ summary: 在將StorageGRID 「支援功能」附加為FabricPool 「支援功能
 
 
 
+[[what-is-load-balancing]]
 == 什麼是負載平衡？
 
 當資料從FabricPool 功能性分層到StorageGRID 功能性的系統時、StorageGRID 運算子會使用負載平衡器來管理擷取和擷取工作負載。負載平衡功能可在FabricPool 多個儲存節點之間分配功能豐富的功能、以最大化速度和連線容量。
@@ -23,13 +24,14 @@ summary: 在將StorageGRID 「支援功能」附加為FabricPool 「支援功能
 
 將用戶端流量轉送至儲存節點時、每個節點上的負載平衡器服務都會獨立運作。透過加權程序、負載平衡器服務會將更多要求路由傳送至CPU可用度較高的儲存節點。
 
-雖然推薦使用「VMware負載平衡器」服務、但StorageGRID 您可能想要改為整合協力廠商負載平衡器。如需相關資訊、請聯絡您的NetApp客戶代表或參閱 https://www.netapp.com/pdf.html?item=/media/17068-tr4626pdf.pdf["TR-4626：StorageGRID 不包括第三方和全域負載平衡器"^]。
+儘管 StorageGRID 負載平衡器服務是建議的負載平衡機制，但您也可以選擇整合第三方負載平衡器。有關資訊，請聯繫您的 NetApp 客戶代表或參閱 https://www.netapp.com/pdf.html?item=/media/17068-tr4626.pdf["TR-4626：StorageGRID 不包括第三方和全域負載平衡器"^]。
 
 
 NOTE: 閘道節點上的個別連線負載平衡器（CLB）服務已過時、不再建議搭配FabricPool 使用。
 
 
 
+[[best-practices-for-storagegrid-load-balancing]]
 == 最佳實務做法StorageGRID
 
 一般最佳實務做法StorageGRID 是、您的一套系統應該在負載平衡器服務中包含兩個或多個節點。例如、站台可能包含兩個閘道節點、或同時包含一個管理節點和一個閘道節點。無論您使用SG100或SG1000服務應用裝置、裸機節點或虛擬機器（VM）型節點、請確定每個負載平衡節點都有足夠的網路、硬體或虛擬化基礎架構。
@@ -38,6 +40,7 @@ NOTE: 閘道節點上的個別連線負載平衡器（CLB）服務已過時、�
 
 
 
+[[best-practices-for-the-load-balancer-endpoint-certificate]]
 == 負載平衡器端點憑證的最佳實務做法
 
 建立負載平衡器端點以搭配FabricPool 使用時、您應該使用HTTPS做為傳輸協定。支援但不建議使用不含TLS加密的功能進行通訊StorageGRID

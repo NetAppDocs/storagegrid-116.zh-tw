@@ -15,6 +15,7 @@ summary: 如果您為S3租戶帳戶啟用平台服務、則必須設定網格、
 
 
 
+[[what-are-platform-services]]
 == 什麼是平台服務？
 
 平台服務包括CloudMirror複寫、事件通知及搜尋整合服務。
@@ -51,6 +52,7 @@ NOTE: 雖然可在啟用S3物件鎖定的儲存區上設定Elasticsearch整合�
 
 
 
+[[recommendations-for-using-platform-services]]
 == 使用平台服務的建議
 
 在使用平台服務之前、請注意下列建議：

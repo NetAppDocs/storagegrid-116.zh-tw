@@ -19,6 +19,7 @@ summary: 「放入庫位一致性」要求可讓您指定要套用至庫位執�
 
 
 
+[[request]]
 == 申請
 
 「x-ntap-sg-consistency」參數必須包含下列其中一個值：
@@ -67,6 +68,7 @@ summary: 「放入庫位一致性」要求可讓您指定要套用至庫位執�
 
 
 
+[[request-example]]
 == 申請範例
 
 [source, subs="specialcharacters,quotes"]

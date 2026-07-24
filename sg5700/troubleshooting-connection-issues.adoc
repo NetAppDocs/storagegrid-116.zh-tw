@@ -15,6 +15,7 @@ summary: 如果StorageGRID 在安裝過程中遇到連線問題、您應該執�
 
 
 
+[[unable-to-connect-to-the-appliance]]
 == 無法連線至應用裝置
 
 如果您無法連線至應用裝置、可能是網路問題、或是硬體安裝未成功完成。

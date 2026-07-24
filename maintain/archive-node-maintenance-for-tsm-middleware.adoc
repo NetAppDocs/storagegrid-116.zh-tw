@@ -17,12 +17,14 @@ summary: 歸檔節點可設定為透過TSM中介軟體伺服器鎖定磁帶、�
 
 
 
+[[fault-with-archival-storage-devices]]
 == 歸檔儲存設備故障
 
 如果您確定歸檔節點透過Tivoli Storage Manager（TSM）存取的歸檔儲存設備有故障、請將歸檔節點離線、以限制StorageGRID 在該作業系統中顯示的警示數目。然後、您可以使用TSM伺服器或儲存設備的管理工具、或兩者、進一步診斷並解決問題。
 
 
 
+[[take-the-target-component-offline]]
 === 使目標元件離線
 
 在維護可能導致歸檔節點無法使用的TSM中介軟體伺服器之前、請先將目標元件離線、以限制TSM中介軟體伺服器無法使用時觸發的警示數目。
@@ -39,6 +41,7 @@ summary: 歸檔節點可設定為透過TSM中介軟體伺服器鎖定磁帶、�
 
 
 
+[[tivoli-storage-manager-administrative-tools]]
 == Tivoli Storage Manager管理工具
 
 dsmadmc工具是安裝在歸檔節點上之TSM中介軟體伺服器的管理主控台。您可以在伺服器的命令列輸入「dsmadmc」來存取工具。使用設定用於ARC服務的相同管理使用者名稱和密碼登入管理主控台。
@@ -49,6 +52,7 @@ dsmadmc工具是安裝在歸檔節點上之TSM中介軟體伺服器的管理主�
 
 
 
+[[object-permanently-unavailable]]
 == 物件永遠無法使用
 
 當歸檔節點向Tivoli Storage Manager（TSM）伺服器要求物件、且擷取失敗時、歸檔節點會在10秒的時間間隔內重試該要求。如果物件永久無法使用（例如、因為物件在磁帶上毀損）、TSM API無法向歸檔節點指出這一點、因此歸檔節點會繼續重試該要求。
@@ -63,6 +67,8 @@ dsmadmc工具是安裝在歸檔節點上之TSM中介軟體伺服器的管理主�
 
 
 
+[[determining-if-objects-are-permanently-unavailable]]
+[[determining_objects_permanently_unavailable]]
 === 判斷物件是否永久無法使用
 
 您可以使用TSM管理主控台提出要求、判斷物件是否永久無法使用。

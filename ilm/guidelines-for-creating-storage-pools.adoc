@@ -15,6 +15,7 @@ summary: 設定及使用儲存資源池時、請遵循下列準則。
 
 
 
+[[guidelines-for-all-storage-pools]]
 == 所有儲存資源池的準則
 
 * 包含預設儲存資源池「All Storage Node」、使用預設站台、All站台、以及預設儲存等級「All Storage Node」StorageGRID 。每當您新增資料中心站台時、所有儲存節點儲存池都會自動更新。
@@ -29,6 +30,7 @@ NOTE: 不建議使用「所有儲存節點」儲存資源池或「所有站台�
 
 
 
+[[guidelines-for-storage-pools-used-for-replicated-copies]]
 == 複寫複本所使用的儲存資源池準則
 
 * 為每個站台建立不同的儲存資源池。然後、在每個規則的放置指示中、指定一或多個站台專屬的儲存資源池。針對每個站台使用儲存資源池、可確保複寫的物件複本完全符合您的期望（例如、每個站台的每個物件都有一個複本、以保護站台損失）。
@@ -38,6 +40,7 @@ NOTE: 不建議使用「所有儲存節點」儲存資源池或「所有站台�
 
 
 
+[[guidelines-for-storage-pools-used-for-erasure-coded-copies]]
 == 用於銷毀編碼複本的儲存資源池準則
 
 * 您無法將歸檔節點用於銷毀編碼資料。
@@ -55,6 +58,7 @@ NOTE: 如果您的網格僅包含一個站台、就無法在「刪除編碼」�
 
 
 
+[[guidelines-for-storage-pools-used-for-archived-copies]]
 == 用於歸檔複本的儲存資源池準則
 
 * 您無法建立同時包含儲存節點和歸檔節點的儲存資源池。歸檔複本需要僅包含歸檔節點的儲存資源池。

@@ -15,6 +15,7 @@ summary: 在複製應用裝置節點之前、您必須先瞭解考量事項與�
 
 
 
+[[hardware-requirements-for-the-replacement-appliance]]
 == 更換應用裝置的硬體需求
 
 確保更換設備符合下列條件：
@@ -39,6 +40,7 @@ summary: 在複製應用裝置節點之前、您必須先瞭解考量事項與�
 
 
 
+[[prepare-to-clone-an-appliance-node]]
 == 準備複製應用裝置節點
 
 在複製應用裝置節點之前、您必須具備下列資訊：

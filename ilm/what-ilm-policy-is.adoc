@@ -15,6 +15,7 @@ summary: 資訊生命週期管理（ILM）原則是一組有序的ILM規則、�
 
 
 
+[[how-does-an-ilm-policy-evaluate-objects]]
 == ILM原則如何評估物件？
 
 適用於您的整個系統的有效ILM原則StorageGRID 可控制所有物件的放置、持續時間和資料保護。
@@ -28,6 +29,7 @@ summary: 資訊生命週期管理（ILM）原則是一組有序的ILM規則、�
 
 
 
+[[example-ilm-policy]]
 == ILM原則範例
 
 本範例ILM原則使用三個ILM規則。
@@ -44,6 +46,7 @@ image::../media/ilm_policy_and_rules.png[ILM原則與規則]
 
 
 
+[[what-are-proposed-active-and-historical-policies]]
 == 建議的、主動的和歷史的原則為何？
 
 每StorageGRID 個支援系統都必須有一個作用中的ILM原則。一個不完整的系統也可能有一個建議的ILM原則和任何數量的歷史原則。StorageGRID

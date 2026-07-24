@@ -9,12 +9,14 @@ IMPORTANT: 對於非ActiveDirectory或Azure的身分識別來源、StorageGRID �
 
 
 
+[[memberof-and-refint-overlays]]
 === memberOf和refert覆疊
 
 應啟用memberof和refert覆疊。如需詳細資訊、請參閱中的反轉群組成員資格維護指示http://www.openldap.org/doc/admin24/index.html["OpenLDAP文件：2.4版管理員指南"^]。
 
 
 
+[[indexing]]
 === 索引
 
 您必須使用指定的索引關鍵字來設定下列OpenLDAP屬性：

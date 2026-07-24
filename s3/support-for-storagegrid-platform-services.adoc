@@ -51,6 +51,7 @@ CloudMirror複寫
 
 
 
+[[recommendations-for-using-platform-services]]
 == 使用平台服務的建議
 
 在使用平台服務之前、您必須瞭解下列建議：

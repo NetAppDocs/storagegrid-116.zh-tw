@@ -44,6 +44,7 @@ SGF6024
 |===
 
 
+[[installation-and-deployment-tasks]]
 == 安裝與部署工作
 
 在StorageGRID 一個不完善的系統中新增一個不完善的儲存應用裝置StorageGRID 、主要包括四個步驟：

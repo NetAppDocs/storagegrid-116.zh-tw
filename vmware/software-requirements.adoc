@@ -15,6 +15,7 @@ summary: 您可以使用虛擬機器來裝載StorageGRID 任何類型的物件�
 
 
 
+[[vmware-vsphere-hypervisor]]
 == VMware vSphere Hypervisor
 
 您必須在準備好的實體伺服器上安裝VMware vSphere Hypervisor。安裝VMware軟體之前、必須正確設定硬體（包括韌體版本和BIOS設定）。
@@ -29,6 +30,7 @@ xref:../network/index.adoc[網路準則]
 
 
 
+[[esx-host-configuration-requirements]]
 == ESX主機組態需求
 
 
@@ -36,6 +38,7 @@ CAUTION: 您必須在每個ESX主機上正確設定網路時間傳輸協定（NT
 
 
 
+[[vmware-configuration-requirements]]
 == VMware組態需求
 
 您必須先安裝並設定VMware vSphere和vCenter、才能部署StorageGRID 架構節點。

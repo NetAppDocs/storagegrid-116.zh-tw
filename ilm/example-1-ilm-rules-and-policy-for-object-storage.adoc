@@ -18,6 +18,7 @@ CAUTION: 下列ILM規則和原則僅為範例。有許多方法可以設定ILM�
 
 
 
+[[ilm-rule-1-for-example-1-copy-object-data-to-two-data-centers]]
 == ILM規則1例如1：將物件資料複製到兩個資料中心
 
 此範例ILM規則會將物件資料複製到兩個資料中心的儲存資源池。
@@ -58,6 +59,7 @@ image::../media/ilm_rule_two_copies_two_data_centers.png[ILM規則1例如1：將
 
 
 
+[[ilm-rule-2-for-example-1-erasure-coding-profile-with-bucket-matching]]
 == ILM規則2（例如1）：符合儲存區比對的銷毀編碼設定檔
 
 本範例ILM規則使用「刪除編碼」設定檔和S3儲存區來判斷物件的儲存位置和時間長度。
@@ -100,6 +102,7 @@ image:../media/ilm_rule_ec_for_s3_bucket_finance_records.png["ILM規則2（例�
 
 
 
+[[ilm-policy-for-example-1]]
 == ILM原則（例如1）
 
 利用此系統、您可以設計精密複雜的ILM原則、但實際上大部分的ILM原則都很簡單。StorageGRID

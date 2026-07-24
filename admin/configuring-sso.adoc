@@ -15,6 +15,7 @@ summary: 啟用單一登入（SSO）時、如果使用者的認證是使用組�
 
 
 
+[[how-single-sign-on-works]]
 == 單一登入的運作方式
 
 支援使用安全聲明標記語言2.0（SAML 2.0）標準的單一登入（SSO）StorageGRID 。
@@ -23,6 +24,7 @@ summary: 啟用單一登入（SSO）時、如果使用者的認證是使用組�
 
 
 
+[[sign-in-when-sso-is-enabled]]
 === 啟用SSO時登入
 
 啟用SSO並登入StorageGRID 支援功能時、系統會將您重新導向至組織的SSO頁面、以驗證您的認證資料。
@@ -82,6 +84,7 @@ NOTE: 如果無法存取服務帳戶、您仍可登入、只要您是擁有Stora
 
 
 
+[[sign-out-when-sso-is-enabled]]
 === 啟用SSO時登出
 
 啟用SSO以StorageGRID 利執行功能時、登出時會發生什麼事取決於您登入的項目、以及登出的位置。

@@ -15,6 +15,7 @@ summary: 如果您在使用StorageGRID 無法修復的系統時遇到問題、�
 
 
 
+[[overview-of-problem-determination]]
 == 問題判斷總覽
 
 如果您遇到問題 xref:../admin/index.adoc[管理StorageGRID 一套系統]、您可以使用本圖所述的程序來識別及分析問題。在許多情況下、您可以自行解決問題；不過、您可能需要將某些問題提報給技術支援。
@@ -23,6 +24,7 @@ image::../media/problem_determination_methodology.gif[流程圖顯示問題判�
 
 
 
+[[define-the-problem]]
 === 定義問題
 
 解決問題的第一步是清楚定義問題。
@@ -84,6 +86,7 @@ image::../media/problem_determination_methodology.gif[流程圖顯示問題判�
 |===
 
 
+[[assess-the-risk-and-impact-on-the-system]]
 === 評估系統的風險與影響
 
 在您定義問題之後、請評估問題對StorageGRID VMware系統的風險和影響。例如、關鍵警示的存在並不代表系統不提供核心服務。
@@ -124,6 +127,7 @@ image::../media/problem_determination_methodology.gif[流程圖顯示問題判�
 |===
 
 
+[[collect-data]]
 === 收集資料
 
 在您定義問題並評估其風險與影響之後、請收集資料以供分析。最適合收集的資料類型取決於問題的本質。
@@ -407,6 +411,7 @@ ILM掃描率
 |===
 
 
+[[analyze-data]]
 === 分析資料
 
 請使用您收集的資訊來判斷問題的原因和可能的解決方案。
@@ -420,6 +425,7 @@ ILM掃描率
 
 
 
+[[escalation-information-checklist]]
 === 提報資訊檢查清單
 
 如果您無法自行解決問題、請聯絡技術支援部門。聯絡技術支援人員之前、請先收集下表所列的資訊、以利解決問題。

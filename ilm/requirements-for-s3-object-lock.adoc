@@ -15,6 +15,7 @@ summary: 您必須檢閱啟用全域S3物件鎖定設定的需求、建立相容
 
 
 
+[[requirements-for-using-the-global-s3-object-lock-setting]]
 == 使用全域S3物件鎖定設定的需求
 
 * 您必須先使用Grid Manager或Grid Management API啟用全域S3物件鎖定設定、任何S3租戶才能建立啟用S3物件鎖定的儲存區。
@@ -32,6 +33,7 @@ image::../media/compliance_fields_on_ilm_rules_page.png[ILM Rules頁面上的Com
 
 
 
+[[requirements-for-compliant-ilm-rules]]
 == 符合ILM規則的要求
 
 如果您要啟用全域S3物件鎖定設定、必須確保使用中ILM原則中的預設規則符合規定。相容的規則可同時滿足啟用S3物件鎖定的兩個儲存區需求、以及啟用舊版法規遵循的任何現有儲存區：
@@ -50,6 +52,7 @@ image::../media/compliant_rule_two_copies_forever.png[符合範例的規則永�
 
 
 
+[[requirements-for-active-and-proposed-ilm-policies]]
 == 主動式與建議的ILM原則需求
 
 當全域S3物件鎖定設定已啟用時、作用中和建議的ILM原則可以同時包含相容和不相容的規則。
@@ -68,6 +71,7 @@ image::../media/compliant_rule_two_copies_forever.png[符合範例的規則永�
 
 
 
+[[requirements-for-buckets-with-s3-object-lock-enabled]]
 == 啟用S3物件鎖定的儲存區需求
 
 * 如果StorageGRID 已針對整個S3物件鎖定設定啟用for the S廳 系統、您可以使用租戶管理程式、租戶管理API或S3 REST API來建立啟用S3物件鎖定的儲存區。
@@ -87,6 +91,7 @@ image::../media/compliant_bucket.png[符合範例的工作時段]
 
 
 
+[[requirements-for-objects-in-buckets-with-s3-object-lock-enabled]]
 == 啟用S3物件鎖定之儲存區中的物件需求
 
 * 為了保護物件版本、S3用戶端應用程式必須設定儲存區預設保留、或在每個上傳要求中指定保留設定。
@@ -97,6 +102,7 @@ image::../media/compliant_bucket.png[符合範例的工作時段]
 
 
 
+[[lifecycle-of-objects-in-buckets-with-s3-object-lock-enabled]]
 == 啟用S3物件鎖定的儲存區物件生命週期
 
 儲存在已啟用S3物件鎖定的儲存區中的每個物件都會經過三個階段：
@@ -127,5 +133,5 @@ image::../media/compliant_bucket.png[符合範例的工作時段]
 * xref:managing-objects-with-s3-object-lock.adoc#comparing-s3-object-lock-to-legacy-compliance[比較S3物件鎖定與舊版法規遵循]
 * xref:example-7-compliant-ilm-policy-for-s3-object-lock.adoc[範例7：S3物件鎖定的符合ILM原則]
 * xref:../audit/index.adoc[檢閱稽核記錄]
-* xref:../s3/operations-on-buckets.adoc#using-s3-object-lock-default-bucket-retention[使用S3物件鎖定預設儲存區保留]。
+* xref:../s3/use-s3-object-lock-default-bucket-retention.adoc[使用S3物件鎖定預設儲存區保留]。
 

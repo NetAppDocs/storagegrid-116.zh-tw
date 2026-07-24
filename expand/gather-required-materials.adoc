@@ -79,6 +79,7 @@ summary: 在執行擴充作業之前、請先收集相關資料、然後安裝�
 |===
 
 
+[[download-and-extract-the-storagegrid-installation-files]]
 == 下載並解壓縮StorageGRID 安裝檔案
 
 .[[download-and -extract -install-files]]
@@ -387,6 +388,7 @@ NOTE: 在設備安裝方面、只有在您需要避免網路流量時才需要�
 
 
 
+[[verify-hardware-and-networking]]
 == 驗證硬體與網路
 
 在開始擴充StorageGRID 您的作業系統之前、請先確認下列事項：

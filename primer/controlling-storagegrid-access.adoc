@@ -15,6 +15,7 @@ summary: 您可以透過StorageGRID 建立或匯入群組和使用者、並指�
 
 
 
+[[control-access-to-the-grid-manager]]
 == 控制對Grid Manager的存取
 
 您可以透過從身分識別聯盟服務匯入群組和使用者、或設定本機群組和本機使用者、來判斷誰可以存取Grid Manager和Grid Management API。
@@ -30,6 +31,7 @@ NOTE: 如果您想要使用另一項LDAP v3服務、請聯絡技術支援部門�
 
 
 
+[[enable-single-sign-on]]
 == 啟用單一登入
 
 支援使用安全聲明標記語言2.0（SAML 2.0）標準的單一登入（SSO）StorageGRID 。啟用SSO時、所有使用者必須先經過外部身分識別供應商的驗證、才能存取Grid Manager、租戶管理程式、Grid Management API或租戶管理API。本機使用者無法登入StorageGRID 到無法使用的功能。
@@ -38,6 +40,7 @@ NOTE: 如果您想要使用另一項LDAP v3服務、請聯絡技術支援部門�
 
 
 
+[[change-grid-passwords]]
 == 變更網格密碼
 
 許多安裝與維護程序、以及下載StorageGRID 「還原套件」時、都需要使用資源配置密碼。也需要通關密碼才能下載適用於StorageGRID 整個系統的網格拓撲資訊和加密金鑰備份。您可以視需要變更此通關密碼。

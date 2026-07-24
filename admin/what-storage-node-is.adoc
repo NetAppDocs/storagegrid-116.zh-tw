@@ -17,6 +17,7 @@ summary: 儲存節點可管理及儲存物件資料和中繼資料。每StorageG
 
 
 
+[[what-is-the-adc-service]]
 == 什麼是ADC服務？
 
 管理網域控制器（ADC）服務會驗證網格節點及其彼此的連線。每個站台的前三個儲存節點都會裝載此ADC服務。
@@ -31,12 +32,14 @@ ADC服務負責維護拓撲資訊、包括服務的位置和可用度。當網�
 
 
 
+[[what-is-the-dds-service]]
 == 什麼是DDS服務？
 
 由儲存節點代管的分散式資料儲存區（DDS）服務會與Cassandra資料庫介面、以執行StorageGRID 物件中繼資料的背景工作、這些中繼資料儲存在整個過程中。
 
 
 
+[[object-counts]]
 === 物件數
 
 DDS服務會追蹤擷取至StorageGRID 該系統的物件總數、以及透過每個系統支援的介面（S3或Swift）擷取的物件總數。
@@ -47,6 +50,7 @@ image::../media/dds_object_counts_queries.png[DDS總覽頁面]
 
 
 
+[[queries]]
 === 查詢
 
 您可以識別透過特定DDS服務對中繼資料儲存區執行查詢所需的平均時間、成功查詢的總數、以及因逾時問題而失敗的查詢總數。
@@ -59,12 +63,14 @@ image::../media/dds_object_counts_queries.png[DDS總覽頁面]
 
 
 
+[[consistency-guarantees-and-controls]]
 === 一致性保證與控管
 
 可確保新建立物件的寫入後讀取一致性。StorageGRID成功完成PUT作業之後的任何Get作業都能讀取新寫入的資料。覆寫現有物件、更新中繼資料及刪除資料、最終仍維持一致。
 
 
 
+[[what-is-the-ldr-service]]
 == 什麼是LDR服務？
 
 本機經銷路由器（LMR）服務由每個儲存節點代管、負責StorageGRID 處理針對此系統的內容傳輸。內容傳輸包含許多工作、包括資料儲存、路由傳送和要求處理。LdR服務StorageGRID 處理資料傳輸負載和資料流量功能、是整個過程中大部分的功能都是由整個系統努力完成。
@@ -84,6 +90,7 @@ LdR服務也會管理S3和Swift物件對應至StorageGRID 唯一的「內容控�
 
 
 
+[[queries]]
 === 查詢
 
 在擷取和歸檔作業期間、LdR查詢包括物件位置查詢。您可以識別執行查詢所需的平均時間、成功查詢的總數、以及因逾時問題而失敗的查詢總數。
@@ -96,12 +103,14 @@ LdR服務也會管理S3和Swift物件對應至StorageGRID 唯一的「內容控�
 
 
 
+[[ilm-activity]]
 === ILM活動
 
 資訊生命週期管理（ILM）指標可讓您監控評估ILM實作物件的速度。您可以在儀表板或*節點*>*儲存節點*>* ILM *上檢視這些度量。
 
 
 
+[[object-stores]]
 === 物件存放區
 
 LDR服務的基礎資料儲存區分為固定數量的物件存放區（也稱為儲存磁碟區）。每個物件存放區都是個別的掛載點。
@@ -116,6 +125,7 @@ image::../media/object_stores.png[物件存放區]
 
 
 
+[[metadata-protection]]
 === 中繼資料保護
 
 物件中繼資料是與物件相關的資訊或物件說明、例如物件修改時間或儲存位置。將物件中繼資料儲存在Cassandra資料庫中、該資料庫與LDR服務介面。StorageGRID

@@ -15,6 +15,7 @@ summary: 若要設定StorageGRID 從用戶端應用程式接受連線、需要�
 
 
 
+[[create-and-configure-s3-tenant-accounts]]
 == 建立及設定S3租戶帳戶
 
 S3 API用戶端必須先有S3租戶帳戶、才能將物件儲存及擷取StorageGRID 到支援區。每個租戶帳戶都有自己的帳戶ID、群組和使用者、以及容器和物件。
@@ -47,6 +48,7 @@ xref:../tenant/index.adoc[使用租戶帳戶]
 
 
 
+[[how-client-connections-can-be-configured]]
 == 如何設定用戶端連線
 
 網格管理員會做出組態選擇、影響S3用戶端連線StorageGRID 至以儲存及擷取資料的方式。建立連線所需的特定資訊取決於所選的組態。
@@ -85,6 +87,7 @@ xref:../admin/index.adoc[管理StorageGRID]
 
 
 
+[[summary-ip-addresses-and-ports-for-client-connections]]
 === 摘要：用於用戶端連線的IP位址和連接埠
 
 用戶端應用程式StorageGRID 會使用網格節點的IP位址和該節點上服務的連接埠號碼來連線至功能區。如果已設定高可用度（HA）群組、用戶端應用程式就可以使用HA群組的虛擬IP位址進行連線。
@@ -206,6 +209,7 @@ xref:../admin/index.adoc[管理StorageGRID]
 
 
 
+[[decide-to-use-https-or-http-connections]]
 === 決定使用HTTPS或HTTP連線
 
 使用負載平衡器端點進行用戶端連線時、必須使用為該端點指定的傳輸協定（HTTP或HTTPS）來建立連線。若要在用戶端連線至儲存節點或閘道節點上的CLB服務時使用HTTP、您必須啟用它的使用。
@@ -227,6 +231,7 @@ xref:benefits-of-active-idle-and-concurrent-http-connections.adoc[作用中、�
 
 
 
+[[endpoint-domain-names-for-s3-requests]]
 == S3要求的端點網域名稱
 
 在用戶端要求使用S3網域名稱之前、StorageGRID 管理員必須先將系統設定為接受在S3路徑樣式和S3虛擬託管樣式要求中使用S3網域名稱的連線。
@@ -263,6 +268,7 @@ xref:configuring-security-for-rest-api.adoc[設定REST API的安全性]
 
 
 
+[[test-your-s3-rest-api-configuration]]
 == 測試S3 REST API組態
 
 您可以使用Amazon Web Services命令列介面（AWS CLI）來測試您與系統的連線、並確認您可以讀取物件並將物件寫入系統。

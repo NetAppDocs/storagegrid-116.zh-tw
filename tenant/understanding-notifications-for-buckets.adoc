@@ -21,6 +21,7 @@ summary: 如果您想StorageGRID 要將有關特定事件的通知傳送至目�
 
 
 
+[[supported-notifications-and-messages]]
 == 支援的通知和訊息
 
 下列限制會遵循Amazon S3 API的事件通知：StorageGRID

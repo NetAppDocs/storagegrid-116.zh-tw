@@ -25,6 +25,7 @@ summary: 如果某個儲存區已啟用S3物件鎖定、您可以指定套用至
 
 
 
+[[get-object-lock-configuration]]
 == 取得物件鎖定組態
 
 「Get Object Lock Configuration」（取得物件鎖定組態）要求可讓您判斷是否已針對某個儲存區啟用「物件鎖定」、如果已啟用、請查看是否有針對該儲存區設定的預設保留模式和保留期間。
@@ -35,6 +36,7 @@ summary: 如果某個儲存區已啟用S3物件鎖定、您可以指定套用至
 
 
 
+[[request-example]]
 === 申請範例
 
 [listing, subs="specialcharacters,quotes"]
@@ -49,6 +51,7 @@ Authorization: _authorization string_
 ----
 
 
+[[response-example]]
 === 回應範例
 
 [listing]
@@ -73,6 +76,7 @@ Server: AmazonS3
 ----
 
 
+[[put-object-lock-configuration]]
 == 放置物件鎖定組態
 
 「放置物件鎖定組態」要求可讓您修改已啟用「物件鎖定」之儲存區的預設保留模式和預設保留期間。您也可以移除先前設定的預設保留設定。
@@ -87,6 +91,7 @@ Server: AmazonS3
 
 
 
+[[request-example]]
 === 申請範例
 
 [listing, subs="specialcharacters,quotes"]

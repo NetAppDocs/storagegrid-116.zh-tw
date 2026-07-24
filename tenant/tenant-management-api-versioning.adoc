@@ -53,6 +53,7 @@ https://hostname_or_ip_address/api/v3/authorize
 
 
 
+[[determine-which-api-versions-are-supported-in-current-release]]
 == 判斷目前版本支援哪些API版本
 
 使用下列API要求傳回支援的API主要版本清單：
@@ -72,6 +73,7 @@ GET https://{{IP-Address}}/api/versions
 ----
 
 
+[[specify-api-version-for-request]]
 == 指定要申請的API版本
 
 您可以使用路徑參數（`/API/v3）或標頭（'API-版本：3'）來指定API版本。如果您同時提供這兩個值、則標頭值會覆寫路徑值。

@@ -17,12 +17,14 @@ summary: 這個系統包含多種類型的網格節點、位於一或多個資�
 
 
 
+[[deployment-topologies]]
 == 部署拓撲
 
 此系統可部署至單一資料中心站台或多個資料中心站台。StorageGRID
 
 
 
+[[single-site]]
 === 單一站台
 
 在部署單一站台的StorageGRID 情況下、將會集中化整個過程中的基礎架構和運作。
@@ -31,6 +33,7 @@ image::../media/data_center_site_single.png[單一資料中心站台]
 
 
 
+[[multiple-sites]]
 === 多個站台
 
 在部署多個站台的情況下、StorageGRID 每個站台都能安裝不同類型和數量的支援資源。例如、一個資料中心可能需要比另一個資料中心更多的儲存設備。
@@ -43,12 +46,14 @@ image::../media/data_center_sites_multiple.png[多個資料中心站台]
 
 
 
+[[grid-node-redundancy]]
 === 網格節點備援
 
 在單一站台或多站台部署中、您可以選擇性地包含多個管理節點或閘道節點來提供備援。例如、您可以在單一站台或多個站台上安裝多個管理節點。不過StorageGRID 、每個功能完善的系統只能有一個主要管理節點。
 
 
 
+[[system-architecture]]
 == 系統架構
 
 下圖顯示StorageGRID 如何在一個E不到 位的系統中排列網格節點。
@@ -63,6 +68,7 @@ S3和Swift用戶端可連線至閘道節點或管理節點、以使用儲存節�
 
 
 
+[[grid-nodes-and-services]]
 == 網格節點和服務
 
 整個系統的基本建置區塊StorageGRID 是網格節點。節點包含服務、這些是軟體模組、可為網格節點提供一組功能。
@@ -82,6 +88,7 @@ S3和Swift用戶端可連線至閘道節點或管理節點、以使用儲存節�
 
 
 
+[[software-based-nodes]]
 === 軟體型節點
 
 以軟體為基礎的網格節點可透過下列方式部署：
@@ -108,6 +115,7 @@ S3和Swift用戶端可連線至閘道節點或管理節點、以使用儲存節�
 
 
 
+[[storagegrid-appliance-nodes]]
 === 應用裝置節點StorageGRID
 
 用作作業系統的各種硬體應用。StorageGRID StorageGRID有些應用裝置可做為儲存節點。其他應用裝置可做為管理節點或閘道節點。您可以將應用裝置節點與軟體型節點結合、或部署完全工程設計的全應用裝置網格、而這些網格不需依賴外部Hypervisor、儲存設備或運算硬體。
@@ -146,6 +154,7 @@ S3和Swift用戶端可連線至閘道節點或管理節點、以使用儲存節�
 
 
 
+[[primary-services-for-admin-nodes]]
 === 管理節點的主要服務
 
 下表顯示管理節點的主要服務、但此表並未列出所有節點服務。
@@ -216,6 +225,7 @@ Prometheus
 |===
 
 
+[[primary-services-for-storage-nodes]]
 === 儲存節點的主要服務
 
 下表顯示儲存節點的主要服務、但此表並未列出所有節點服務。
@@ -306,6 +316,7 @@ Cassandra Reaper
 |===
 
 
+[[primary-services-for-gateway-nodes]]
 === 閘道節點的主要服務
 
 下表顯示閘道節點的主要服務、但此表並未列出所有節點服務。
@@ -350,6 +361,7 @@ Cassandra Reaper
 |===
 
 
+[[primary-services-for-archive-nodes]]
 === 歸檔節點的主要服務
 
 下表顯示歸檔節點的主要服務、但此表並未列出所有節點服務。
@@ -374,6 +386,7 @@ Cassandra Reaper
 |===
 
 
+[[storagegrid-services]]
 === 支援服務StorageGRID
 
 以下是StorageGRID 完整的支援服務清單。

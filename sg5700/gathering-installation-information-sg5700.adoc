@@ -18,6 +18,7 @@ summary: 安裝及設定StorageGRID 此產品時、您必須做出決策、並�
 
 
 
+[[information-needed-to-connect-to-santricity-system-manager-on-e2800-controller]]
 == 連接SANtricity 到E2800控制器上的《E2800系統管理程式》所需的資訊
 
 您必須將E2800控制器連接至SANtricity 管理網路、以供使用以供執行《系統管理程式》。
@@ -89,6 +90,7 @@ IP位址格式
 |===
 
 
+[[information-needed-to-connect-e5700sg-controller-to-admin-network]]
 == 將E5700SG控制器連接至管理網路所需的資訊
 
 管理員網路for支援功能是選用的網路、可用於系統管理和維護。StorageGRID應用裝置使用E5700SG控制器上的1-GbE管理連接埠來連線至管理網路。
@@ -160,6 +162,7 @@ DHCP指派的管理連接埠1 IP位址（如果在開機後可用）
 |===
 
 
+[[information-needed-to-connect-and-configure-1025-gbe-ports-on-e5700sg-controller]]
 == 在E5700SG控制器上連接及設定10/25-GbE連接埠所需的資訊
 
 E5700SG控制器上的四個10/25-GbE連接埠可連接StorageGRID 至「Se Grid Network and Client Network」（英文）。
@@ -220,6 +223,7 @@ NOTE: 如需這些連接埠選項的詳細資訊、請參閱「E5700SG控制器�
 |===
 
 
+[[information-needed-to-connect-e5700sg-controller-to-grid-network]]
 == 將E5700SG控制器連接至Grid Network所需的資訊
 
 Grid Network for StorageGRID 效能不只是一項必要的網路、可用於所有內部StorageGRID 的資訊流量。應用裝置使用E5700SG控制器上的10/25-GbE連接埠來連線至Grid Network。
@@ -291,6 +295,7 @@ VLAN標記（如果已啟用VLAN標記）
 |===
 
 
+[[information-needed-to-connect-e5700sg-controller-to-client-network]]
 == 將E5700SG控制器連接至用戶端網路所需的資訊
 
 Client Network for StorageGRID 推銷是選用的網路、通常用於提供用戶端傳輸協定存取網格。應用裝置會使用E5700SG控制器上的10/25-GbE連接埠來連線至用戶端網路。

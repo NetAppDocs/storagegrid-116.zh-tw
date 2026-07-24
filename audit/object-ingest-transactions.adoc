@@ -17,6 +17,7 @@ summary: 您可以找出API專屬（S3或Swift）稽核訊息、在稽核記錄�
 
 
 
+[[s3-ingest-audit-messages]]
 == S3擷取最新稽核訊息
 
 |===
@@ -50,6 +51,7 @@ xref:orlm-object-rules-met.adoc[ORLM：符合物件規則]
 |===
 
 
+[[swift-ingest-audit-messages]]
 == 快速擷取稽核訊息
 
 |===

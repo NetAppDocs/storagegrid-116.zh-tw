@@ -106,6 +106,7 @@ image::../media/ilm_policy_simulation_results.gif[模擬結果]
 
 
 
+[[example-1-verify-rules-when-simulating-a-proposed-ilm-policy]]
 == 範例1：模擬提議的ILM原則時、請驗證規則
 
 此範例說明如何在模擬建議的原則時驗證規則。
@@ -145,6 +146,7 @@ image::../media/simulate_policy_screen.png[模擬原則畫面]
 
 
 
+[[example-2-reorder-rules-when-simulating-a-proposed-ilm-policy]]
 == 範例2：模擬提議的ILM原則時重新排序規則
 
 此範例說明如何在模擬原則時重新排序規則、以變更結果。
@@ -196,6 +198,7 @@ NOTE: 如果您停留在「設定原則」頁面、則可在進行變更後重�
 
 
 
+[[example-3-correct-a-rule-when-simulating-a-proposed-ilm-policy]]
 == 範例3：模擬提議的ILM原則時、請修正規則
 
 此範例說明如何模擬原則、修正原則中的規則、以及繼續模擬。

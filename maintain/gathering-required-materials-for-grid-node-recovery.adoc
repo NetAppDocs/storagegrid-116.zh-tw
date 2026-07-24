@@ -76,6 +76,8 @@ summary: 在執行維護程序之前、您必須確保擁有必要的資料來�
 |===
 
 
+[[download-and-extract-storagegrid-installation-files]]
+[[download-and-extract-install-files-recover]]
 == 下載並解壓縮StorageGRID 安裝檔案
 
 下載軟體並解壓縮檔案、除非您是 xref:recovering-from-storage-node-failures.adoc[在儲存節點上恢復故障的儲存磁碟區]。

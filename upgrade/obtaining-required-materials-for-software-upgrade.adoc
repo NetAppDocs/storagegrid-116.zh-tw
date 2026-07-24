@@ -81,6 +81,7 @@ xref:../admin/web-browser-requirements.adoc[支援的網頁瀏覽器]
 |===
 
 
+[[download-the-storagegrid-upgrade-files]]
 == 下載StorageGRID 更新檔
 
 您必須下載一或多個檔案、視節點安裝位置而定。
@@ -133,6 +134,7 @@ NOTE: SG100或SG1000不需要其他檔案。
 
 
 
+[[download-the-recovery-package]]
 == 下載恢復套件
 
 恢復套件檔案可讓您在StorageGRID 發生故障時還原整個系統。在變更StorageGRID 網格拓撲以變更作業系統或升級軟體之前、請先下載目前的「恢復套件」檔案。然後、在變更網格拓撲或升級軟體之後、下載新的恢復套件複本。

@@ -28,6 +28,7 @@ IMPORTANT: 除非文件中有特別指示、否則在修改任何儲存節點組
 
 
 
+[[ldr]]
 == LdR
 
 [cols="2a,1a,3a"]
@@ -60,6 +61,7 @@ HTAS
 |===
 
 
+[[ldr-data-store]]
 == LDR >資料儲存區
 
 [cols="2a,1a,3a"]
@@ -77,6 +79,7 @@ RCOR
 |===
 
 
+[[ldr-storage]]
 == LMR >儲存設備
 
 [cols="2a,1a,3a"]
@@ -112,6 +115,7 @@ SHCT
 |===
 
 
+[[ldr-verification]]
 == LMR >驗證
 
 [cols="2a,1a,3a"]
@@ -158,6 +162,7 @@ OQRT
 |===
 
 
+[[ldr-erasure-coding]]
 == LDR >銷毀編碼
 
 [cols="2a,1a,3a"]
@@ -220,6 +225,7 @@ RSMD..
 |===
 
 
+[[ldr-replication]]
 == LMR >複寫
 
 [cols="2a,1a,3a"]

@@ -15,6 +15,7 @@ summary: 身為網格管理員、您可以為StorageGRID 您的系統啟用S3物
 
 
 
+[[what-is-s3-object-lock]]
 == 什麼是S3物件鎖定？
 
 「物件鎖定」功能是物件保護解決方案、StorageGRID 相當於Amazon Simple Storage Service（Amazon S3）中的S3物件鎖定。
@@ -37,6 +38,7 @@ image::../media/s3_object_lock_architecture.png[S3物件鎖定架構]
 
 
 
+[[comparing-s3-object-lock-to-legacy-compliance]]
 == 比較S3物件鎖定與舊版法規遵循
 
 S3物件鎖定取代舊StorageGRID 版的Compliance功能。由於S3物件鎖定功能符合Amazon S3的要求、因此它取代了專屬StorageGRID 的「不符合要求」功能、這項功能現在稱為「舊有法規遵循」。
